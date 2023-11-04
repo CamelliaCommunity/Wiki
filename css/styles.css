@@ -1,0 +1,329 @@
+/* Import favorite font */
+@font-face {
+    font-family: 'Torus Pro';
+    src: url(fonts/TorusPro-Regular.ttf);
+}
+
+/* Global elements, such as headers, footers, and body. */
+/* very dark theme, tried to keep this simple */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Torus Pro SemiBold';
+    background-color: #111;
+    color: white;
+    min-height: 100vh;
+}
+
+/* align main content in the page using flexbox. this might not be flexible. */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* center items nested in main tag */
+main #centerItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+header {
+    background-color: #1D3F52;
+    width: auto;
+    height: 152px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+header .pageTitle {
+    font: normal normal 600 42px/21px "Torus Pro Semibold";
+    background-color:#2E2E38;
+    float:left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 389px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: auto; /* aligns entire row */
+}
+
+#navigationButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: auto; /* aligns entire row */
+}
+
+/* footer */
+footer {
+    background-color: #1D3F52;
+    margin-top: auto;
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+footer #footerText {
+    font: normal normal 600 32px/36px Torus Pro;
+}
+
+/* links */
+a {
+    color: #3BA5A5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3BD2A5;
+    text-decoration: none;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{width:17px;}
+::-webkit-scrollbar-thumb {background:#ffffff;border-radius:20px;border:6px solid transparent;background-clip:content-box;}
+::-webkit-scrollbar-track {background-color: transparent;}
+::-webkit-scrollbar-thumb:hover {background-color: #bbbbbb;}
+
+/* Fixed button code */
+.buttonDefault a {
+    font-family: 'Torus Pro Semibold';
+    background: #3BA5A5 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px -3px 6px #00000029;
+    text-shadow: 0px 3px 6px #00000029;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 25px;
+    width: 240px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+}
+
+.buttonDefault a:hover {
+    background: #3BD2A5 0% 0% no-repeat padding-box;
+    color:white;
+    box-shadow: inset 0px -3px 6px #00000029;
+    text-shadow: 0px 3px 6px #00000029;
+}
+
+/* adds a little line to the bottom of a button. a little jank but works */
+#specialLine a:hover::after {
+    background: #3BD2A5 0% 0% no-repeat padding-box;
+    content: "";
+    position: absolute;
+    margin-top: 64px;
+    width: 240px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+/* cards */
+.card {
+    background: #2E2E38 0% 0% no-repeat padding-box;
+    max-width: 1250px;
+    border-radius: 10px;
+    line-height: 32px;
+    /* for left and right sides */
+    margin-left: 121px;
+    margin-right: 121px;
+    margin-bottom: 24px; /* for end of page stuff */
+}
+
+/* we have to use this font size because its in the design, lol */
+.card h2 {
+    font: normal normal 600 32px/36px Torus Pro;
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+.card p {
+    font: normal normal 600 21px/36px Torus Pro;
+    padding: 24px;
+}
+
+.card h2:before {
+    content: "";
+    display: inline-block;
+    background: #6A9EFF 0% 0% no-repeat padding-box;
+    height: 22px;
+    margin-right: 5px;
+    width: 4px;
+    position: inherit;
+    border-radius: 2px;
+}
+
+#vertLine {
+    background: #3A3946 0% 0% no-repeat padding-box;
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 2px;
+}
+
+#horiLine {
+    background: #3A3946 0% 0% no-repeat padding-box;
+    width: 2px;
+    height: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+#flexyCard {
+    display: flex;
+    min-height: 480px;
+}
+
+#article {
+    flex: 1;
+}
+
+#aside {
+    flex: 0;
+    margin-left: 142px;
+    margin-right: 142px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+/* card background, or content, whatever you want to call it */
+.cardBackground {
+    background: #22222A 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    max-width: 1492px;
+    min-height: 734px;
+    margin-top: 62px;
+    margin-bottom: 62px;
+}
+
+.cardBackground h1 {
+    /* font: normal normal 600 42px/36px Torus Pro; */
+    font: normal normal 600 42px/21px "Torus Pro Semibold";
+    margin-top: 32px;
+    margin-left: 121px;
+    margin-bottom: 24px; /* used to be 24 px */
+}
+
+/* pictures */
+.picture figure {
+    background: #1D3F52 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 315px;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 24px; /* give room if last element */
+}
+
+.picture img {
+    border: 2px solid #6A9EFF;
+    border-radius: 10px;
+    margin-top: 24px;
+    margin-left: 40px;
+    margin-right: 40px;
+    transition: all 0.3s ease-out;
+}
+
+.picture img:hover {
+    border: 2px solid #3bd2a5;
+    transform:scale(1.02);
+    overflow:hidden;
+}
+
+.picture figcaption {
+    font: normal normal 600 32px/35px Torus Pro;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/* smaller screens/smartphones */
+@media screen and (max-width: 1416px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: space-between;
+        flex-direction: column;
+        height: auto;
+    }
+    header .pageTitle {
+        margin-top: 24px;
+        float: none;
+        font-size: 32px;
+        height: 84px;
+        border: 1px solid white;
+        border-radius: 10px;
+        max-width: 340px;
+        margin-bottom: 24px;
+    }
+    #navigationButtons {
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #navigationButtons {
+        flex-direction: column;
+    }
+}
+
+/* responsive for picture wrap pages */
+@media screen and (max-width: 1270px) {
+    #flexyCard {
+        flex-direction: column;
+    }
+    #aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #horiLine {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .card {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .cardBackground h1 {
+        margin-left: 24px;
+        line-height: 1;
+    }
+    .cardBackground {
+        width: 100%;
+    }
+}
+
+
+
+
