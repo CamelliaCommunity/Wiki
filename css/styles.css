@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Torus Pro';
-    src: url(https://github.com/papertek/papertek.github.io/blob/beta/fonts/TorusPro-Regular.ttf);
+    src: url(fonts/TorusPro-Regular.ttf) format('truetype'); /* Safari, Android, iOS */
 }
 
 :root {
