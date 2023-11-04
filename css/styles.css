@@ -169,6 +169,20 @@ a:hover {
     padding: 24px;
 }
 
+.card ul, ol {
+    /* padding: 24px; */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.card ol li {
+    padding: 8px;
+}
+
+.card ul li {
+    padding: 8px;
+}
+
 .card h2:before {
     content: "";
     display: inline-block;
@@ -232,6 +246,14 @@ a:hover {
     margin-top: 32px;
     margin-left: 121px;
     margin-bottom: 24px; /* used to be 24 px */
+}
+
+/* jank thing. might wanna refactor */
+.cardBackground #footNote {
+    color:lightgray;
+    margin-left: 121px;
+    margin-top: -20px;
+    position: absolute;
 }
 
 /* pictures */
@@ -337,6 +359,10 @@ img#sizingCSS {
     .cardBackground h1 {
         margin-left: 24px;
         line-height: 1;
+    }
+    .cardBackground #footNote {
+        margin-left: 24px;
+        margin-top: -24px;
     }
     .cardBackground {
         width: 100%;
