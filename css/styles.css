@@ -53,7 +53,6 @@ header {
 header .pageTitle {
     font: normal normal 600 42px/21px "Torus Pro Semibold";
     background-color:#2E2E38;
-    float:left;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +61,11 @@ header .pageTitle {
     border: 1px solid white;
     border-radius: 10px;
     margin: auto; /* aligns entire row */
+}
+
+/* for big titles */
+.pageTitle#smallerFont {
+    font: normal normal 600 32px/21px "Torus Pro Semibold";
 }
 
 #navigationButtons {
