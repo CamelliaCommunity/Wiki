@@ -1,7 +1,16 @@
 /* Import favorite font */
-@font-face {
+/* @font-face {
     font-family: 'Torus Pro';
     src: url(fonts/TorusPro-Regular.ttf);
+} */
+
+@font-face {
+    font-family: 'Torus Pro';
+    src: url(https://github.com/papertek/papertek.github.io/blob/beta/fonts/TorusPro-Regular.ttf);
+}
+
+:root {
+    --font-default: Torus Pro SemiBold,sans-serif;
 }
 
 /* Global elements, such as headers, footers, and body. */
@@ -17,7 +26,7 @@ html {
 }
 
 body {
-    font-family: 'Torus Pro SemiBold';
+    font-family: var(--font-default);
     background-color: #111;
     color: white;
     min-height: 100vh;
@@ -51,7 +60,7 @@ header {
 }
 
 header .pageTitle {
-    font: normal normal 600 42px/21px "Torus Pro Semibold";
+    font: normal normal 600 42px/21px var(--font-default);
     background-color:#2E2E38;
     display:flex;
     justify-content: center;
@@ -65,7 +74,7 @@ header .pageTitle {
 
 /* for big titles */
 .pageTitle#smallerFont {
-    font: normal normal 600 32px/21px "Torus Pro Semibold";
+    font: normal normal 600 32px/21px var(--font-default);
 }
 
 #navigationButtons {
@@ -89,7 +98,7 @@ footer {
 }
 
 footer #footerText {
-    font: normal normal 600 32px/36px Torus Pro;
+    font: normal normal 600 32px/36px var(--font-default);
 }
 
 /* links */
@@ -159,13 +168,13 @@ a:hover {
 
 /* we have to use this font size because its in the design, lol */
 .card h2 {
-    font: normal normal 600 32px/36px Torus Pro;
+    font: normal normal 600 32px/36px var(--font-default);
     padding-top: 24px;
     padding-left: 24px;
 }
 
 .card p {
-    font: normal normal 600 21px/36px Torus Pro;
+    font: normal normal 600 21px/36px var(--font-default);
     padding: 24px;
 }
 
@@ -241,7 +250,7 @@ a:hover {
 
 .cardBackground h1 {
     /* font: normal normal 600 42px/36px Torus Pro; */
-    font: normal normal 600 42px/21px "Torus Pro Semibold";
+    font: normal normal 600 42px/21px var(--font-default);
     margin-top: 32px;
     margin-left: 121px;
     margin-bottom: 24px; /* used to be 24 px */
@@ -284,7 +293,7 @@ a:hover {
 }
 
 .picture figcaption {
-    font: normal normal 600 32px/35px Torus Pro;
+    font: normal normal 600 32px/35px var(--font-default);
     text-align: center;
     margin-top: 7px;
     margin-bottom: 7px;
