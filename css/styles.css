@@ -269,6 +269,21 @@ a:hover {
     margin-bottom: 7px;
 }
 
+#flexRow {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    /* row-gap: 0px; */
+}
+
+/* jank width and height for big images */
+img#sizingCSS {
+    max-width: 78%;
+    max-height: 78%
+}
+
 /* smaller screens/smartphones */
 @media screen and (max-width: 1416px) {
     header {
