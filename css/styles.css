@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Torus Pro';
-    src: url(fonts/TorusPro-Regular.ttf) format('truetype'); /* Safari, Android, iOS */
+    src: url(fonts/TorusPro-Regular.otf); /* Safari, Android, iOS */
 }
 
 :root {
