@@ -12,7 +12,7 @@
 }
 
 :root {
-    --font-default: Torus Pro SemiBold,sans-serif;
+    --font-default: 'Torus Pro SemiBold', sans-serif;
 }
 
 /* Global elements, such as headers, footers, and body. */
