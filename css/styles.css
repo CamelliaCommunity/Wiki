@@ -14,16 +14,17 @@
 }
 
 @font-face {
-    font-family: 'Torus ProSemiBold';
+    font-family: 'Torus Pro SemiBold';
     src:
     url('../fonts/toruspro-semibold-webfont.woff2') format('woff2'), /* modern browsers */
     url('../fonts/toruspro-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-size: normal;
+	
 }
 
 :root {
-    --font-default: 'Torus ProSemiBold', sans-serif;
+    --font-default: 'Torus Pro SemiBold', sans-serif;
 }
 
 /* Global elements, such as headers, footers, and body. */
@@ -43,6 +44,12 @@ body {
     background-color: #111;
     color: white;
     min-height: 100vh;
+
+	-webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+	font-smooth: always;
+	backface-visibility: hidden;
 }
 
 /* align main content in the page using flexbox. this might not be flexible. */
