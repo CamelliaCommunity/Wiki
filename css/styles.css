@@ -6,7 +6,9 @@
 
 @font-face {
     font-family: 'Torus Pro';
-    src: url(fonts/TorusPro-Regular.otf); /* Safari, Android, iOS */
+    src: url('../fonts/TorusPro-Regular.otf') format('opentype'), /* Safari, Android, iOS */
+    url('../fonts/toruspro-regular-webfont.woff2') format('woff2'), /* modern browsers */
+    url('../fonts/toruspro-regular-webfont.woff') format('woff');
 }
 
 :root {
@@ -120,7 +122,7 @@ a:hover {
 
 /* Fixed button code */
 .buttonDefault a {
-    font-family: 'Torus Pro Semibold';
+    font-family: var(--font-default);
     background: #3BA5A5 0% 0% no-repeat padding-box;
     box-shadow: inset 0px -3px 6px #00000029;
     text-shadow: 0px 3px 6px #00000029;
