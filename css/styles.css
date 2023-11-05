@@ -222,6 +222,12 @@ a:hover {
     padding-left: 24px;
 }
 
+.card h3 {
+    font: normal normal 600 28px/36px var(--font-default);
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
 .card p {
     font: normal normal 600 21px/36px var(--font-default);
     padding: 24px;
@@ -286,10 +292,13 @@ a:hover {
     margin-bottom: auto;
 }
 
-/* highlighted text */
-mark#highlightText {
+mark {
     color: var(--highlightColor);
     background-color: rgba(255, 255, 255, 0);
+}
+
+#italic {
+    font-family: var(--font-semiBoldItalic);
 }
 
 /* card background, or content, whatever you want to call it */
