@@ -320,12 +320,13 @@ mark {
     margin-bottom: 24px; /* used to be 24 px */
 }
 
-/* jank thing. might wanna refactor */
+/* jank thing. might wanna fix */
 .cardBackground #footNote {
     color:lightgray;
     margin-left: 121px;
-    margin-top: -20px;
-    position: absolute;
+    /* margin-top: -20px; OLD */
+    margin-top: -18px;
+    /* position: absolute; */
 }
 
 /* pictures */
