@@ -20,11 +20,39 @@
     url('../fonts/toruspro-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-size: normal;
-	
+}
+
+@font-face {
+    font-family: 'Torus Pro SemiBold Italic';
+    src:
+    url('../fonts/toruspro-semibolditalic-webfont.woff2') format('woff2'), /* modern browsers */
+    url('../fonts/toruspro-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-size: normal;
 }
 
 :root {
     --font-default: 'Torus Pro SemiBold', sans-serif;
+    --font-semiBoldItalic: 'Torus Pro SemiBold Italic';
+    --font-regular: 'Torus Pro Regular', sans-serif;
+
+    /* colors */
+    --primaryColor: #3BA5A5;
+    --secondaryColor1: #6A9EFF;
+    --secondaryColor2: #1D3F52;
+    --hoverColor: #3BD2A5;
+    --errorColor: #EF4040;
+
+    /* cards */
+    --cardColor: #2E2E38;
+    --cardLinesColor: #3A3946;
+    --cardBackgroundColor: #22222A;
+    --borderColor: white;
+
+    /* text */
+    --textColorDefault: white;
+    --shadowColorDefault: #00000029;
+
 }
 
 /* Global elements, such as headers, footers, and body. */
@@ -42,7 +70,7 @@ html {
 body {
     font-family: var(--font-default);
     background-color: #111;
-    color: white;
+    color: var(--textColorDefault);
     min-height: 100vh;
 
 	-webkit-font-smoothing: subpixel-antialiased;
@@ -69,7 +97,7 @@ main #centerItem {
 
 /* header */
 header {
-    background-color: #1D3F52;
+    background-color: var(--secondaryColor2);
     width: auto;
     height: 152px;
     display: flex;
@@ -81,13 +109,13 @@ header {
 
 header .pageTitle {
     font: normal normal 600 42px/21px var(--font-default);
-    background-color:#2E2E38;
+    background-color:var(--cardColor);
     display:flex;
     justify-content: center;
     align-items: center;
     width: 389px;
     height: 100px;
-    border: 1px solid white;
+    border: 1px solid var(--borderColor);
     border-radius: 10px;
     margin: auto; /* aligns entire row */
 }
@@ -106,7 +134,7 @@ header .pageTitle {
 
 /* footer */
 footer {
-    background-color: #1D3F52;
+    background-color: var(--secondaryColor2);
     margin-top: auto;
     width: auto;
     height: 70px;
@@ -123,12 +151,12 @@ footer #footerText {
 
 /* links */
 a {
-    color: #3BA5A5;
+    color: var(--primaryColor);
     text-decoration: none;
 }
 
 a:hover {
-    color: #3BD2A5;
+    color: var(--hoverColor);
     text-decoration: none;
 }
 
@@ -141,10 +169,10 @@ a:hover {
 /* Fixed button code */
 .buttonDefault a {
     font-family: var(--font-default);
-    background: #3BA5A5 0% 0% no-repeat padding-box;
+    background: var(--primaryColor) 0% 0% no-repeat padding-box;
     box-shadow: inset 0px -3px 6px #00000029;
     text-shadow: 0px 3px 6px #00000029;
-    color: white;
+    color: var(--textColorDefault);
     text-decoration: none;
     font-size: 18px;
     border-radius: 25px;
@@ -157,15 +185,15 @@ a:hover {
 }
 
 .buttonDefault a:hover {
-    background: #3BD2A5 0% 0% no-repeat padding-box;
-    color:white;
+    background: var(--hoverColor) 0% 0% no-repeat padding-box;
+    color: var(--textColorDefault);
     box-shadow: inset 0px -3px 6px #00000029;
     text-shadow: 0px 3px 6px #00000029;
 }
 
 /* adds a little line to the bottom of a button. a little jank but works */
 #specialLine a:hover::after {
-    background: #3BD2A5 0% 0% no-repeat padding-box;
+    background: var(--hoverColor) 0% 0% no-repeat padding-box;
     content: "";
     position: absolute;
     margin-top: 64px;
@@ -176,7 +204,7 @@ a:hover {
 
 /* cards */
 .card {
-    background: #2E2E38 0% 0% no-repeat padding-box;
+    background: var(--cardColor) 0% 0% no-repeat padding-box;
     max-width: 1250px;
     border-radius: 10px;
     line-height: 32px;
@@ -215,7 +243,7 @@ a:hover {
 .card h2:before {
     content: "";
     display: inline-block;
-    background: #6A9EFF 0% 0% no-repeat padding-box;
+    background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
     height: 22px;
     margin-right: 5px;
     width: 4px;
@@ -224,7 +252,7 @@ a:hover {
 }
 
 #vertLine {
-    background: #3A3946 0% 0% no-repeat padding-box;
+    background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
     width: auto;
     margin-left: 8px;
     margin-right: 8px;
@@ -232,7 +260,7 @@ a:hover {
 }
 
 #horiLine {
-    background: #3A3946 0% 0% no-repeat padding-box;
+    background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
     width: 2px;
     height: auto;
     margin-top: 8px;
@@ -259,8 +287,8 @@ a:hover {
 
 /* card background, or content, whatever you want to call it */
 .cardBackground {
-    background: #22222A 0% 0% no-repeat padding-box;
-    border: 1px solid #FFFFFF;
+    background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--borderColor);
     border-radius: 10px;
     max-width: 1492px;
     min-height: 734px;
@@ -286,19 +314,19 @@ a:hover {
 
 /* pictures */
 .picture figure {
-    background: #1D3F52 0% 0% no-repeat padding-box;
+    background: var(--secondaryColor2) 0% 0% no-repeat padding-box;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     max-width: 315px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--borderColor);
     border-radius: 10px;
     margin-bottom: 24px; /* give room if last element */
 }
 
 .picture img {
-    border: 2px solid #6A9EFF;
+    border: 2px solid var(--secondaryColor1);
     border-radius: 10px;
     margin-top: 24px;
     margin-left: 40px;
@@ -307,7 +335,7 @@ a:hover {
 }
 
 .picture img:hover {
-    border: 2px solid #3bd2a5;
+    border: 2px solid var(--hoverColor);
     transform:scale(1.02);
     overflow:hidden;
 }
