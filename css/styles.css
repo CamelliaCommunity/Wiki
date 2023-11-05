@@ -41,6 +41,7 @@
     --secondaryColor1: #6A9EFF;
     --secondaryColor2: #1D3F52;
     --hoverColor: #3BD2A5;
+    --highlightColor: #6B9CCB;
     --errorColor: #EF4040;
 
     /* cards */
@@ -283,6 +284,10 @@ a:hover {
     margin-right: 142px;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+#highlightText {
+    color: var(--highlightColor);
 }
 
 /* card background, or content, whatever you want to call it */
