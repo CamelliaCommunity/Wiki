@@ -5,14 +5,25 @@
 } */
 
 @font-face {
-    font-family: 'Torus Pro';
-    src: url('../fonts/TorusPro-Regular.otf') format('opentype'), /* Safari, Android, iOS */
+    font-family: 'Torus Pro Regular';
+    src:
     url('../fonts/toruspro-regular-webfont.woff2') format('woff2'), /* modern browsers */
     url('../fonts/toruspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Torus ProSemiBold';
+    src:
+    url('../fonts/toruspro-semibold-webfont.woff2') format('woff2'), /* modern browsers */
+    url('../fonts/toruspro-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-size: normal;
 }
 
 :root {
-    --font-default: 'Torus Pro SemiBold', sans-serif;
+    --font-default: 'Torus ProSemiBold', sans-serif;
 }
 
 /* Global elements, such as headers, footers, and body. */
@@ -24,7 +35,7 @@ html {
 *, *:before, *:after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
