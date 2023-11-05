@@ -41,6 +41,7 @@
     --secondaryColor1: #6A9EFF;
     --secondaryColor2: #1D3F52;
     --hoverColor: #3BD2A5;
+    --highlightColor: #6B9CCB;
     --errorColor: #EF4040;
 
     /* cards */
@@ -221,6 +222,12 @@ a:hover {
     padding-left: 24px;
 }
 
+.card h3 {
+    font: normal normal 600 28px/36px var(--font-default);
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
 .card p {
     font: normal normal 600 21px/36px var(--font-default);
     padding: 24px;
@@ -283,6 +290,15 @@ a:hover {
     margin-right: 142px;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+mark {
+    color: var(--highlightColor);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#italic {
+    font-family: var(--font-semiBoldItalic);
 }
 
 /* card background, or content, whatever you want to call it */
