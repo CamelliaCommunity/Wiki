@@ -77,7 +77,6 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-	font-smooth: always;
 	backface-visibility: hidden;
 }
 
@@ -90,7 +89,7 @@ main {
 }
 
 /* center items nested in main tag */
-main #centerItem {
+main .centerItem {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,7 +192,7 @@ a:hover {
 }
 
 /* adds a little line to the bottom of a button. a little jank but works */
-#specialLine a:hover::after {
+.specialLine a:hover::after {
     background: var(--hoverColor) 0% 0% no-repeat padding-box;
     content: "";
     position: absolute;
@@ -258,7 +257,7 @@ a:hover {
     border-radius: 2px;
 }
 
-#vertLine {
+.vertLine {
     background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
     width: auto;
     margin-left: 8px;
@@ -266,7 +265,7 @@ a:hover {
     height: 2px;
 }
 
-#horiLine {
+.horiLine {
     background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
     width: 2px;
     height: auto;
@@ -297,7 +296,7 @@ mark {
     background-color: rgba(255, 255, 255, 0);
 }
 
-#italic {
+.italic {
     font-family: var(--font-semiBoldItalic);
 }
 
@@ -364,7 +363,7 @@ mark {
     margin-bottom: 7px;
 }
 
-#flexRow {
+.flexRow {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -374,7 +373,7 @@ mark {
 }
 
 /* jank width and height for big images */
-img#sizingCSS {
+img.sizingCSS {
     max-width: 78%;
     max-height: 78%
 }
@@ -384,7 +383,6 @@ img#sizingCSS {
     header {
         display: flex;
         justify-content: center;
-        align-items: space-between;
         flex-direction: column;
         height: auto;
     }
