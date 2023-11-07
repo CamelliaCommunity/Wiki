@@ -4,21 +4,18 @@
     font-family: 'Torus Pro SemiBold';
     src:
     url('../fonts/TorusPro-SemiBold.otf') format('otf'); /* modern browsers */
-    font-weight: normal;
-    font-size: normal;
+    font-weight: 600;
 }
 
 @font-face {
     font-family: 'Torus Pro SemiBold Italic';
     src: url('../fonts/TorusPro-SemiBoldItalic.otf') format('otf'); /* modern browsers */
-    font-weight: normal;
-    font-size: normal;
+    font-weight: 600;
 }
 
 :root {
     --font-default: 'Torus Pro SemiBold', sans-serif;
     --font-semiBoldItalic: 'Torus Pro SemiBold Italic';
-    --font-regular: 'Torus Pro Regular', sans-serif;
 
     /* colors */
     --primaryColor: #3BA5A5;
