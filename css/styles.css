@@ -1,32 +1,16 @@
 /* Import favorite font */
-/* @font-face {
-    font-family: 'Torus Pro';
-    src: url(fonts/TorusPro-Regular.ttf);
-} */
-
-@font-face {
-    font-family: 'Torus Pro Regular';
-    src:
-    url('../fonts/toruspro-regular-webfont.woff2') format('woff2'), /* modern browsers */
-    url('../fonts/toruspro-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-size: normal;
-}
 
 @font-face {
     font-family: 'Torus Pro SemiBold';
     src:
-    url('../fonts/toruspro-semibold-webfont.woff2') format('woff2'), /* modern browsers */
-    url('../fonts/toruspro-semibold-webfont.woff') format('woff');
+    url('../fonts/TorusPro-SemiBold.otf') format('otf'); /* modern browsers */
     font-weight: normal;
     font-size: normal;
 }
 
 @font-face {
     font-family: 'Torus Pro SemiBold Italic';
-    src:
-    url('../fonts/toruspro-semibolditalic-webfont.woff2') format('woff2'), /* modern browsers */
-    url('../fonts/toruspro-semibolditalic-webfont.woff') format('woff');
+    src: url('../fonts/TorusPro-SemiBoldItalic.otf') format('otf'); /* modern browsers */
     font-weight: normal;
     font-size: normal;
 }
