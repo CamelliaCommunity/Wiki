@@ -127,7 +127,7 @@ footer {
 }
 
 footer #footerText {
-    font: normal normal 600 32px/36px var(--font-default);
+    font: normal normal 600 24px/28px var(--font-default);
 }
 
 /* links */
