@@ -193,7 +193,6 @@ a:hover {
 }
 
 /* cards */
-
 .card {
     background: var(--cardColor) 0% 0% no-repeat padding-box;
     max-width: 1250px;
