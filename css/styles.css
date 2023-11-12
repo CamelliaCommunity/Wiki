@@ -185,6 +185,7 @@ a:hover {
 }
 
 /* cards */
+
 .card {
     background: var(--cardColor) 0% 0% no-repeat padding-box;
     max-width: 1250px;
@@ -197,38 +198,38 @@ a:hover {
 }
 
 /* we have to use this font size because its in the design, lol */
-.card h2 {
+.card h2, .miniCard h2 {
     font: normal normal 600 32px/36px var(--font-default);
     padding-top: 24px;
     padding-left: 24px;
 }
 
-.card h3 {
+.card h3, .miniCard h3 {
     font: normal normal 600 28px/36px var(--font-default);
     padding-top: 24px;
     padding-bottom: 8px;
 }
 
-.card p {
+.card p, .miniCard p {
     font: normal normal 600 21px/36px var(--font-default);
     padding: 24px;
 }
 
-.card ul, ol {
+.card ul ol, .miniCard ul, ol {
     /* padding: 24px; */
     padding-left: 40px;
     padding-right: 40px;
 }
 
-.card ol li {
+.card ol li, .miniCard ol li {
     padding: 8px;
 }
 
-.card ul li {
+.card ul li, .miniCard ul li {
     padding: 8px;
 }
 
-.card h2:before {
+.card h2:before, .miniCard h2:before {
     content: "";
     display: inline-block;
     background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
@@ -254,6 +255,38 @@ a:hover {
     margin-top: 8px;
     margin-bottom: 8px;
     margin-right: 8px;
+}
+
+.gridPanels {
+    display: grid;
+    margin-left: 121px;
+    margin-right: 121px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+}
+
+.gridPanels .card {
+    grid-column: 1/span 2;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.gridPanels .miniCard {
+    background: var(--cardColor) 0% 0% no-repeat padding-box;
+    min-height: 240px;
+    border-radius: 10px;
+    line-height: 32px;
+}
+
+.gridPanels .miniCard p {
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.gridPanels .miniCard h2 {
+    margin-bottom: 16px;
 }
 
 #flexyCard {
