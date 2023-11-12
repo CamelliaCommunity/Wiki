@@ -7,10 +7,10 @@ window.addEventListener('DOMContentLoaded', () => {
       const id = sectionEntry.target.getAttribute('id');
 
       if (sectionEntry.intersectionRatio != 0) {
-        document.querySelector(`nav li a[href="#${id}"]`)
+        document.querySelector(`div li a[href="#${id}"]`)
             .parentElement.classList.add('active');
       } else {
-        document.querySelector(`nav li a[href="#${id}"]`)
+        document.querySelector(`div li a[href="#${id}"]`)
             .parentElement.classList.remove('active');
       }
     });
