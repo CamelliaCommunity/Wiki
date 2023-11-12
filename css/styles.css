@@ -437,6 +437,10 @@ img.sizingCSS {
     #horiLine {
         display:none;
     }
+    .gridLayout {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 860px) {
