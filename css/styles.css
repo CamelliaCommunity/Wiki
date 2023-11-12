@@ -257,6 +257,8 @@ a:hover {
     margin-right: 8px;
 }
 
+/* grid layout. yes i know the code is stupid i might fix it up later. 
+i was mostly experimenting with figma design */
 .gridPanels {
     display: grid;
     margin-left: 121px;
