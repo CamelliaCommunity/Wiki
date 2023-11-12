@@ -426,6 +426,9 @@ mark {
   margin-top: 62px;
   margin-bottom: 62px;
 }
+.cardBackground .picture figure {
+  margin-top: 24px;
+}
 
 .cardBackground h1 {
   /* font: normal normal 600 42px/36px Torus Pro; */
