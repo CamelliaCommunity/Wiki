@@ -304,6 +304,7 @@ i was mostly experimenting with figma design */
     position: fixed;
     background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
     border: 1px solid var(--borderColor);
+    border-left: none;
     margin-top: 62px;
     border-radius: 0 10px 10px 0;
     width: 174px;
@@ -324,6 +325,7 @@ i was mostly experimenting with figma design */
 #contentWedge #wedgeItems {
     overflow-y: scroll; 
     padding-top: 42px;
+    padding-left: 4px;
     height: 100%;
 }
 
