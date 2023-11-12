@@ -332,7 +332,7 @@ i was mostly experimenting with figma design */
   float: left;
   position: fixed;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 1px solid var(--borderColor);
+  border: 2px solid var(--cardLinesColor);
   border-left: none;
   margin-top: 62px;
   border-radius: 0 10px 10px 0;
@@ -386,7 +386,7 @@ mark {
 /* card background, or content, whatever you want to call it */
 .cardBackground {
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 1px solid var(--borderColor);
+  border: 2px solid var(--cardLinesColor);
   border-radius: 10px;
   max-width: 1492px;
   min-height: 734px;
@@ -419,7 +419,7 @@ mark {
   justify-content: center;
   flex-direction: column;
   max-width: 315px;
-  border: 1px solid var(--borderColor);
+  border: 2px solid var(--borderColor);
   border-radius: 10px;
   margin-bottom: 24px; /* give room if last element */
 }
