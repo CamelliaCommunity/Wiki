@@ -329,6 +329,7 @@ i was mostly experimenting with figma design */
   display: grid;
   margin-left: 121px;
   margin-right: 121px;
+  margin-bottom: 24px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
 }
@@ -425,9 +426,6 @@ mark {
   min-height: 734px;
   margin-top: 62px;
   margin-bottom: 62px;
-}
-.cardBackground .picture figure {
-  margin-top: 24px;
 }
 
 .cardBackground h1 {
