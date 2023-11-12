@@ -85,7 +85,7 @@ main .centerItem {
 header {
   background-color: var(--secondaryColor2);
   width: auto;
-  height: 152px;
+  height: 114px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,8 +106,13 @@ header .pageTitle {
   margin: auto; /* aligns entire row */
 }
 
-header .pageTitleV2 {
+/* Wiki logo */
+header .wikiLogo {
+  margin: auto; /* aligns entire row */
+}
+header .wikiLogo a {
   font-size: 42px;
+  color: var(--borderColor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,9 +120,13 @@ header .pageTitleV2 {
   height: 100px;
   border: 8px solid var(--borderColor);
   border-radius: 50px;
-  margin: auto; /* aligns entire row */
+  transition: all 0.2s linear;
 }
-header .pageTitleV2 img {
+header .wikiLogo a:hover {
+  color: var(--pageBackground);
+  background-color: var(--borderColor);
+}
+header .wikiLogo img {
   padding-right: 8px;
 }
 
