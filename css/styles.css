@@ -323,7 +323,7 @@ ol {
   height: 2px;
 }
 
-/* grid layout. yes i know the code is stupid i might fix it up later. 
+/* grid layout. the code is not THAT stupid. i might fix it up later. 
 i was mostly experimenting with figma design */
 .gridLayout {
   display: grid;
