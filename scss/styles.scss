@@ -110,7 +110,7 @@ header .wikiLogo {
     height: 100px;
     border: 8px solid var(--borderColor);
     border-radius: 50px;
-    transition: all 0.2s linear;
+    transition: all 0.2s ease-out;
   }
 
   a:hover {
@@ -207,6 +207,10 @@ a:hover {
   color: var(--textColorDefault);
   box-shadow: inset 0px -3px 6px #00000029;
   text-shadow: 0px 3px 6px #00000029;
+}
+
+.buttonDefault a:active {
+  margin-top: 1px;
 }
 
 /* adds a little line to the bottom of a button. a little jank but works */
@@ -491,7 +495,8 @@ img.sizingCSS {
 /* temporary thing until layout is figured out */
 @media screen and (max-width: 1630px) {
   #contentWedge {
-    display: none;
+    margin-top: auto;
+    opacity: 40%;
   }
 }
 
@@ -517,6 +522,11 @@ img.sizingCSS {
 
   #navigationButtons {
     margin-bottom: 24px;
+  }
+
+  header .wikiLogo {
+    margin-bottom: 24px;
+    margin-top: 24px;
   }
 }
 
