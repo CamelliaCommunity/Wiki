@@ -1,20 +1,11 @@
 /* HEADS UP!!! DO NOT EDIT NORMAL .CSS FILES!!!!! */
 /* ONLY EDIT .SCSS FILES!!!!!!! */
-/* Import favorite font */
-@font-face {
-  font-family: "Torus Pro SemiBold";
-  src: url("../fonts/toruspro-semibold.woff2") format("woff2"), url("../fonts/toruspro-semibold.woff") format("woff");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Torus Pro SemiBold Italic";
-  src: url("../fonts/toruspro-semibolditalic.woff2") format("woff2"), url("../fonts/toruspro-semibolditalic.woff") format("woff");
-  font-weight: 600;
-}
+/* Import variables */
 :root {
   --font-default: "Torus Pro SemiBold", sans-serif;
   --font-semiBoldItalic: "Torus Pro SemiBold Italic";
   /* colors */
+  --pageBackground: #111;
   --primaryColor: #3BA5A5;
   --secondaryColor1: #6A9EFF;
   --secondaryColor2: #1D3F52;
@@ -31,6 +22,17 @@
   --shadowColorDefault: #00000029;
 }
 
+/* Import favorite font */
+@font-face {
+  font-family: "Torus Pro SemiBold";
+  src: url("../fonts/toruspro-semibold.woff2") format("woff2"), url("../fonts/toruspro-semibold.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Torus Pro SemiBold Italic";
+  src: url("../fonts/toruspro-semibolditalic.woff2") format("woff2"), url("../fonts/toruspro-semibolditalic.woff") format("woff");
+  font-weight: 600;
+}
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
 html {
@@ -45,7 +47,7 @@ html {
 
 body {
   font-family: var(--font-default);
-  background-color: #111;
+  background-color: var(--pageBackground);
   color: var(--textColorDefault);
   min-height: 100vh;
   -webkit-font-smoothing: subpixel-antialiased;

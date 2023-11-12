@@ -2,7 +2,7 @@
 /* ONLY EDIT .SCSS FILES!!!!!!! */
 
 /* Import variables */
-@import '/scss/variables.scss';
+@import './variables';
 
 /* Import favorite font */
 @font-face {
@@ -33,7 +33,7 @@ html {
 
 body {
     font-family: var(--font-default);
-    background-color: #111;
+    background-color: var(--pageBackground);
     color: var(--textColorDefault);
     min-height: 100vh;
 
