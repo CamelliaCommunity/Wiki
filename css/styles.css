@@ -39,7 +39,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -213,38 +215,46 @@ a:hover {
 }
 
 /* we have to use this font size because its in the design, lol */
-.card h2, .miniCard h2 {
+.card h2,
+.miniCard h2 {
   font: normal normal 600 32px/36px var(--font-default);
   padding-top: 24px;
   padding-left: 24px;
 }
 
-.card h3, .miniCard h3 {
+.card h3,
+.miniCard h3 {
   font: normal normal 600 28px/36px var(--font-default);
   padding-top: 24px;
   padding-bottom: 8px;
 }
 
-.card p, .miniCard p {
+.card p,
+.miniCard p {
   font: normal normal 600 21px/36px var(--font-default);
   padding: 24px;
 }
 
-.card ul ol, .miniCard ul, ol {
+.card ul ol,
+.miniCard ul,
+ol {
   /* padding: 24px; */
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.card ol li, .miniCard ol li {
+.card ol li,
+.miniCard ol li {
   padding: 8px;
 }
 
-.card ul li, .miniCard ul li {
+.card ul li,
+.miniCard ul li {
   padding: 8px;
 }
 
-.card h2:before, .miniCard h2:before {
+.card h2:before,
+.miniCard h2:before {
   content: "";
   display: inline-block;
   background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
