@@ -1,8 +1,10 @@
 /* HEADS UP!!! DO NOT EDIT NORMAL .CSS FILES!!!!! */
 /* ONLY EDIT .SCSS FILES!!!!!!! */
 
-/* Import favorite font */
+/* Import variables */
+@import '/scss/variables.scss';
 
+/* Import favorite font */
 @font-face {
     font-family: 'Torus Pro SemiBold';
     src: url('../fonts/toruspro-semibold.woff2') format('woff2'),
@@ -15,30 +17,6 @@
     src: url('../fonts/toruspro-semibolditalic.woff2') format('woff2'),
          url('../fonts/toruspro-semibolditalic.woff') format('woff');
     font-weight: 600;
-}
-
-:root {
-    --font-default: 'Torus Pro SemiBold', sans-serif;
-    --font-semiBoldItalic: 'Torus Pro SemiBold Italic';
-
-    /* colors */
-    --primaryColor: #3BA5A5;
-    --secondaryColor1: #6A9EFF;
-    --secondaryColor2: #1D3F52;
-    --hoverColor: #3BD2A5;
-    --highlightColor: #6B9CCB;
-    --errorColor: #EF4040;
-
-    /* cards */
-    --cardColor: #2E2E38;
-    --cardLinesColor: #3A3946;
-    --cardBackgroundColor: #22222A;
-    --borderColor: white;
-
-    /* text */
-    --textColorDefault: white;
-    --shadowColorDefault: #00000029;
-
 }
 
 /* Global elements, such as headers, footers, and body. */
