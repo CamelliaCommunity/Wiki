@@ -267,7 +267,7 @@ a:hover {
 .card p,
 .miniCard p {
   font: normal normal 600 21px/36px var(--font-default);
-  padding: 0 24px 24px 24px;
+  padding: 8px 24px 24px 24px;
 }
 
 .card ul,
@@ -336,23 +336,17 @@ i was mostly experimenting with figma design */
 
 .gridLayout .card {
   grid-column: 1/span 2;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .gridLayout .miniCard {
   background: var(--cardColor) 0% 0% no-repeat padding-box;
   min-height: 240px;
   border-radius: 10px;
-  line-height: 32px;
 }
 
 .gridLayout .miniCard p {
-  padding: 0;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 8px;
+  padding: 8px 24px 8px 24px;
 }
 
 /* jank ass wedge code */
