@@ -93,6 +93,22 @@ header .pageTitle {
   margin: auto; /* aligns entire row */
 }
 
+header .pageTitleV2 {
+  font-size: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 389px;
+  height: 100px;
+  border: 8px solid var(--borderColor);
+  border-radius: 50px;
+  margin: auto; /* aligns entire row */
+
+  img {
+    padding-right: 8px;
+  }
+}
+
 /* for big titles */
 .pageTitle#smallerFont {
   font: normal normal 600 32px/21px var(--font-default);
