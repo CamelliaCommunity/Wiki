@@ -259,7 +259,7 @@ a:hover {
 
 /* grid layout. yes i know the code is stupid i might fix it up later. 
 i was mostly experimenting with figma design */
-.gridPanels {
+.gridLayout {
     display: grid;
     margin-left: 121px;
     margin-right: 121px;
@@ -267,27 +267,27 @@ i was mostly experimenting with figma design */
     grid-gap: 8px;
 }
 
-.gridPanels .card {
+.gridLayout .card {
     grid-column: 1/span 2;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
 }
 
-.gridPanels .miniCard {
+.gridLayout .miniCard {
     background: var(--cardColor) 0% 0% no-repeat padding-box;
     min-height: 240px;
     border-radius: 10px;
     line-height: 32px;
 }
 
-.gridPanels .miniCard p {
+.gridLayout .miniCard p {
     padding: 0;
     padding-left: 24px;
     padding-right: 24px;
 }
 
-.gridPanels .miniCard h2 {
+.gridLayout .miniCard h2 {
     margin-bottom: 16px;
 }
 
