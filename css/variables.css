@@ -3,16 +3,16 @@
   --font-semiBoldItalic: "Torus Pro SemiBold Italic";
   /* colors */
   --pageBackground: #111;
-  --primaryColor: #3ba5a5;
-  --secondaryColor1: #6a9eff;
-  --secondaryColor2: #1d3f52;
-  --hoverColor: #3bd2a5;
-  --highlightColor: #6b9ccb;
+  --primaryColor: #f075c5;
+  --secondaryColor1: #b775f0;
+  --secondaryColor2: #661f57;
+  --hoverColor: #ff54a9;
+  --highlightColor: #cb6bab;
   --errorColor: #ef4040;
   /* cards */
-  --cardColor: #2e2e38;
-  --cardLinesColor: #3a3946;
-  --cardBackgroundColor: #22222a;
+  --cardColor: #382e37;
+  --cardLinesColor: #463942;
+  --cardBackgroundColor: #2a2228;
   --borderColor: white;
   /* text */
   --textColorDefault: white;

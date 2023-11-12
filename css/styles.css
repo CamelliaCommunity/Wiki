@@ -6,16 +6,16 @@
   --font-semiBoldItalic: "Torus Pro SemiBold Italic";
   /* colors */
   --pageBackground: #111;
-  --primaryColor: #3ba5a5;
-  --secondaryColor1: #6a9eff;
-  --secondaryColor2: #1d3f52;
-  --hoverColor: #3bd2a5;
-  --highlightColor: #6b9ccb;
+  --primaryColor: #f075c5;
+  --secondaryColor1: #b775f0;
+  --secondaryColor2: #661f57;
+  --hoverColor: #ff54a9;
+  --highlightColor: #cb6bab;
   --errorColor: #ef4040;
   /* cards */
-  --cardColor: #2e2e38;
-  --cardLinesColor: #3a3946;
-  --cardBackgroundColor: #22222a;
+  --cardColor: #382e37;
+  --cardLinesColor: #463942;
+  --cardBackgroundColor: #2a2228;
   --borderColor: white;
   /* text */
   --textColorDefault: white;
@@ -37,6 +37,7 @@
 /* very dark theme, tried to keep this simple */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -103,12 +104,14 @@ header .pageTitle {
   height: 100px;
   border: 1px solid var(--borderColor);
   border-radius: 10px;
-  margin: auto; /* aligns entire row */
+  margin: auto;
+  /* aligns entire row */
 }
 
 /* Wiki logo */
 header .wikiLogo {
-  margin: auto; /* aligns entire row */
+  margin: auto;
+  /* aligns entire row */
 }
 header .wikiLogo a {
   font-size: 42px;
@@ -139,7 +142,8 @@ header .wikiLogo img {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin: auto; /* aligns entire row */
+  margin: auto;
+  /* aligns entire row */
 }
 
 /* footer */
@@ -235,15 +239,18 @@ a:hover {
   /* for left and right sides */
   margin-left: 121px;
   margin-right: 121px;
-  margin-bottom: 24px; /* for end of page stuff */
+  margin-bottom: 24px;
+  /* for end of page stuff */
 }
 
 /* we have to use this font size because its in the design, lol */
 .card h2,
 .miniCard h2 {
   font: normal normal 600 32px/36px var(--font-default);
-  padding-top: 24px;
-  padding-left: 24px;
+  color: var(--textColorDefault);
+  background-color: var(--cardLinesColor);
+  padding: 18px;
+  border-radius: 10px 10px 0 0;
 }
 
 .card h3,
@@ -256,24 +263,21 @@ a:hover {
 .card p,
 .miniCard p {
   font: normal normal 600 21px/36px var(--font-default);
-  padding: 24px;
+  padding: 0 24px 24px 24px;
 }
 
-.card ul ol,
-.miniCard ul,
+.card ul,
 ol {
   /* padding: 24px; */
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.card ol li,
-.miniCard ol li {
+.card ol li {
   padding: 8px;
 }
 
-.card ul li,
-.miniCard ul li {
+.card ul li {
   padding: 8px;
 }
 
@@ -306,6 +310,15 @@ ol {
   margin-right: 8px;
 }
 
+.sectionLine {
+  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
+  width: auto;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  height: 2px;
+}
+
 /* grid layout. yes i know the code is stupid i might fix it up later. 
 i was mostly experimenting with figma design */
 .gridLayout {
@@ -334,10 +347,7 @@ i was mostly experimenting with figma design */
   padding: 0;
   padding-left: 24px;
   padding-right: 24px;
-}
-
-.gridLayout .miniCard h2 {
-  margin-bottom: 16px;
+  padding-bottom: 8px;
 }
 
 /* jank ass wedge code */
@@ -345,14 +355,13 @@ i was mostly experimenting with figma design */
   float: left;
   position: fixed;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 2px solid var(--cardLinesColor);
+  border: 4px solid var(--cardLinesColor);
   border-left: none;
   margin-top: 62px;
   border-radius: 0 10px 10px 0;
   width: 174px;
   height: 472px;
 }
-
 #contentWedge h2 {
   position: absolute;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
@@ -362,12 +371,19 @@ i was mostly experimenting with figma design */
   padding-left: 4px;
   padding-top: 4px;
 }
-
 #contentWedge #wedgeItems {
   overflow-y: scroll;
+  font-size: 18px;
   padding-top: 42px;
-  padding-left: 4px;
   height: 100%;
+}
+#contentWedge #wedgeSubItem {
+  font-size: 14px;
+  padding-left: 8px;
+  height: 100%;
+}
+#contentWedge li {
+  padding: 4px;
 }
 
 #flexyCard {
@@ -399,7 +415,7 @@ mark {
 /* card background, or content, whatever you want to call it */
 .cardBackground {
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 2px solid var(--cardLinesColor);
+  border: 4px solid var(--cardLinesColor);
   border-radius: 10px;
   max-width: 1492px;
   min-height: 734px;
@@ -412,7 +428,8 @@ mark {
   font: normal normal 600 42px/21px var(--font-default);
   margin-top: 32px;
   margin-left: 121px;
-  margin-bottom: 24px; /* used to be 24 px */
+  margin-bottom: 24px;
+  /* used to be 24 px */
 }
 
 /* jank thing. might wanna fix */
@@ -432,13 +449,14 @@ mark {
   justify-content: center;
   flex-direction: column;
   max-width: 315px;
-  border: 2px solid var(--borderColor);
+  border: 4px solid var(--borderColor);
   border-radius: 10px;
-  margin-bottom: 24px; /* give room if last element */
+  margin-bottom: 24px;
+  /* give room if last element */
 }
 
 .picture img {
-  border: 2px solid var(--secondaryColor1);
+  border: 4px solid var(--secondaryColor1);
   border-radius: 10px;
   margin-top: 24px;
   margin-left: 40px;
@@ -447,7 +465,7 @@ mark {
 }
 
 .picture img:hover {
-  border: 2px solid var(--hoverColor);
+  border: 4px solid var(--hoverColor);
   transform: scale(1.02);
   overflow: hidden;
 }
