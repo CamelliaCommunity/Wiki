@@ -48,6 +48,67 @@ html {
   box-sizing: border-box;
 }
 
+/* Scrollbar */
+/* Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hoverColor);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bbbbbb;
+}
+
+/* Firefox */
+* {
+  scrollbar-color: var(--hoverColor) transparent;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
+
+/* Edge */
+* {
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  width: 17px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--hoverColor);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
+
 body {
   font-family: var(--font-default);
   background-color: var(--pageBackground);
@@ -172,26 +233,6 @@ a {
 a:hover {
   color: var(--hoverColor);
   text-decoration: none;
-}
-
-/* scrollbar */
-::-webkit-scrollbar {
-  width: 17px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #ffffff;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #bbbbbb;
 }
 
 /* Fixed button code */
@@ -365,6 +406,8 @@ i was mostly experimenting with figma design */
   border-radius: 0 10px 10px 0;
   width: 174px;
   height: 472px;
+  opacity: 60%;
+  transition: opacity 0.25s ease-in-out;
 }
 #contentWedge h2 {
   position: absolute;
@@ -377,6 +420,7 @@ i was mostly experimenting with figma design */
 }
 #contentWedge #wedgeItems {
   overflow-y: scroll;
+  overflow: auto;
   font-size: 18px;
   padding-top: 42px;
   height: 100%;
@@ -388,6 +432,9 @@ i was mostly experimenting with figma design */
 }
 #contentWedge li {
   padding: 4px;
+}
+#contentWedge:hover {
+  opacity: 100%;
 }
 
 #wedgeItems a {
@@ -510,7 +557,10 @@ img.sizingCSS {
 @media screen and (max-width: 1630px) {
   #contentWedge {
     margin-top: auto;
-    opacity: 40%;
+  }
+  div.centerItem {
+    width: 75%;
+    margin: auto;
   }
 }
 /* smaller screens/smartphones */
@@ -537,6 +587,9 @@ img.sizingCSS {
   header .wikiLogo {
     margin-bottom: 24px;
     margin-top: 24px;
+  }
+  #contentWedge {
+    margin-top: -10%;
   }
 }
 @media screen and (max-width: 1024px) {
