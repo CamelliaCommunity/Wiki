@@ -1,3 +1,12 @@
+// this is the scroll thing that i wrote because
+// its cool - matt
+const nav = document.getElementsByTagName("header")[0];
+const main = document.getElementsByTagName("main")[0];
+const scrollDetect = () => {
+  const mTop = main.getBoundingClientRect().top + 10;
+  nav.classList[(mTop <= 0) ? "add" : "remove"]("sticky");
+};
+
 // Eaten from https://codepen.io/bramus/pen/ExaEqMJ
 // Code is a bit jank after testing. I'll prob find another method myself later
 
@@ -21,4 +30,8 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('section[id]').forEach((section) => {
     observer.observe(section);
   });
+
+  // for scroll detection for making nav sticky
+  scrollDetect();
 });
+document.addEventListener("scroll", scrollDetect);

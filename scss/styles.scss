@@ -90,14 +90,10 @@ html {
   border: 6px solid transparent;
   background-clip: content-box;
 }
-*::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #ffffff;
-}
+*::-webkit-scrollbar-track { background-color: transparent; }
+*::-webkit-scrollbar-thumb:hover { background-color: #ffffff; }
 
-/* rest of the stuff */
+
 body {
   font-family: var(--font-default);
   background-color: var(--pageBackground);
@@ -145,6 +141,67 @@ header {
   border-bottom-right-radius: 25px;
 }
 
+header, header nav {
+	// @include transition(all 0.5s ease-in-out);
+}
+
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 92px;
+  z-index: 1000;
+}
+
+header.sticky .wikiLogo a {
+  border-radius: 0;
+  border: none;
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-size: 42px;
+  width: 100%;
+//   @include transition(all 0.2s ease-in-out);
+
+  &:hover {
+    background: none;
+    color: unset;
+  }
+
+  img {
+    width: 64px;
+  }
+}
+
+header.sticky .wikiLogo a {
+  height: unset;
+  position: unset;
+}
+
+header.sticky #navigationButtons {
+  gap: 4px;
+}
+header.sticky #navigationButtons .buttonDefault a {
+  border-radius: 0;
+  width: 240px;
+  height: 56px;
+}
+
+header.sticky #navigationButtons .buttonDefault:first-child a {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+header.sticky #navigationButtons .buttonDefault:last-child a {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
+  background: none;
+}
+
 header .pageTitle {
   font: normal normal 600 42px/21px var(--font-default);
   background-color: var(--cardColor);
@@ -174,7 +231,9 @@ header .wikiLogo {
     height: 100px;
     border: 8px solid var(--borderColor);
     border-radius: 50px;
-    @include transition(all 0.2s ease-in-out);
+    // @include transition(all 0.2s ease-in-out);
+	@include transition(width 0.2s ease-in-out);
+
   }
 
   a:hover {
@@ -403,6 +462,8 @@ i was mostly experimenting with figma design */
   height: 472px;
   opacity: 60%;
   transition: opacity 0.25s ease-in-out;
+  left: 0;
+  margin: 10% 0;
 
   h2 {
     position: absolute;
@@ -552,20 +613,27 @@ img.sizingCSS {
   max-height: 78%;
 }
 
+/* jank code to keep the max-width from cardBackground to stay put while also fixing scaling..? */
+@media screen and (max-width: 1920px) and (min-width: 1630px) {
+  .cardBackground {
+	width: 75%;
+  }
+}
+
 /* temporary thing until layout is figured out */
 @media screen and (max-width: 1630px) {
   #contentWedge {
-    margin-top: auto;
+	margin: 8% 0;
   }
   div.centerItem {
-    width: 75%;
+    width: 70%;
     margin: auto;
   }
 }
 
 /* smaller screens/smartphones */
 @media screen and (max-width: 1416px) {
-  header {
+  header:not(.sticky) {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -583,7 +651,7 @@ img.sizingCSS {
     margin-bottom: 24px;
   }
 
-  #navigationButtons {
+  header:not(.sticky) #navigationButtons {
     margin-bottom: 24px;
   }
 
@@ -592,9 +660,9 @@ img.sizingCSS {
     margin-top: 24px;
   }
 
-  #contentWedge {
-    margin-top: -10%;
-  }
+//   #contentWedge {
+//     margin-top: -10%;
+//   }
 }
 
 @media screen and (max-width: 1024px) {
@@ -647,13 +715,5 @@ img.sizingCSS {
 
   .cardBackground {
     width: 100%;
-  }
-
-  .gridLayout {
-    margin: 24px;
-
-    p {
-      text-align: center;
-    }
   }
 }
