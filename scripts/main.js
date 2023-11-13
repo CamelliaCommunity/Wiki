@@ -9,6 +9,7 @@ const scrollDetect = () => {
 
 // Eaten from https://codepen.io/bramus/pen/ExaEqMJ
 // Code is a bit jank after testing. I'll prob find another method myself later
+// This highlights sections of a document
 window.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries) => {
     // For each loop (array-like thing)
