@@ -73,7 +73,7 @@ main .centerItem {
 header {
   background-color: var(--secondaryColor2);
   width: auto;
-  height: 128px;
+  height: 148px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,7 +412,7 @@ mark {
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
   border: 4px solid var(--cardLinesColor);
   border-radius: 10px;
-  max-width: 1492px;
+  max-width: 1446px;
   min-height: 734px;
   margin-top: 62px;
   margin-bottom: 62px;
@@ -420,8 +420,8 @@ mark {
 
 .cardBackground h1 {
   /* font: normal normal 600 42px/36px Torus Pro; */
-  font: normal normal 600 42px/21px var(--font-default);
-  margin-top: 32px;
+  font-size: 42px;
+  margin-top: 24px;
   margin-left: 121px;
   margin-bottom: 24px;
   /* used to be 24 px */
