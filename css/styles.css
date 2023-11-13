@@ -109,6 +109,7 @@ html {
   background-color: #ffffff;
 }
 
+/* rest of the stuff */
 body {
   font-family: var(--font-default);
   background-color: var(--pageBackground);
@@ -620,6 +621,9 @@ img.sizingCSS {
     margin-left: 24px;
     margin-right: 24px;
   }
+  .card p {
+    text-align: center;
+  }
   .cardBackground h1 {
     margin-left: 24px;
     line-height: 1;
@@ -630,5 +634,11 @@ img.sizingCSS {
   }
   .cardBackground {
     width: 100%;
+  }
+  .gridLayout {
+    margin: 24px;
+  }
+  .gridLayout p {
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */
