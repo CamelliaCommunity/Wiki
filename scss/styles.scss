@@ -90,9 +90,12 @@ html {
   border: 6px solid transparent;
   background-clip: content-box;
 }
-*::-webkit-scrollbar-track { background-color: transparent; }
-*::-webkit-scrollbar-thumb:hover { background-color: #ffffff; }
-
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
+}
 
 body {
   font-family: var(--font-default);
@@ -141,10 +144,10 @@ header {
   border-bottom-right-radius: 25px;
 }
 
-header, header nav {
-	// @include transition(all 0.5s ease-in-out);
+header,
+header nav {
+  // @include transition(all 0.5s ease-in-out);
 }
-
 
 header.sticky {
   position: fixed;
@@ -163,7 +166,7 @@ header.sticky .wikiLogo a {
   position: absolute;
   font-size: 42px;
   width: 100%;
-//   @include transition(all 0.2s ease-in-out);
+  //   @include transition(all 0.2s ease-in-out);
 
   &:hover {
     background: none;
@@ -232,8 +235,7 @@ header .wikiLogo {
     border: 8px solid var(--borderColor);
     border-radius: 50px;
     // @include transition(all 0.2s ease-in-out);
-	@include transition(width 0.2s ease-in-out);
-
+    @include transition(width 0.2s ease-in-out);
   }
 
   a:hover {
@@ -616,14 +618,14 @@ img.sizingCSS {
 /* jank code to keep the max-width from cardBackground to stay put while also fixing scaling..? */
 @media screen and (max-width: 1920px) and (min-width: 1630px) {
   .cardBackground {
-	width: 75%;
+    width: 75%;
   }
 }
 
 /* temporary thing until layout is figured out */
 @media screen and (max-width: 1630px) {
   #contentWedge {
-	margin: 8% 0;
+    margin: 8% 0;
   }
   div.centerItem {
     width: 70%;
@@ -660,9 +662,9 @@ img.sizingCSS {
     margin-top: 24px;
   }
 
-//   #contentWedge {
-//     margin-top: -10%;
-//   }
+  //   #contentWedge {
+  //     margin-top: -10%;
+  //   }
 }
 
 @media screen and (max-width: 1024px) {
