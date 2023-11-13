@@ -144,11 +144,6 @@ header {
   border-bottom-right-radius: 25px;
 }
 
-// header,
-// header nav {
-//   @include transition(all 0.2s ease-in-out);
-// }
-
 header.sticky {
   position: fixed;
   top: 0;
