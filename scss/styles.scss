@@ -19,14 +19,6 @@
   font-weight: 600;
 }
 
-@mixin transition($x...) {
-  -webkit-transition: $x;
-  -moz-transition: $x;
-  -ms-transition: $x;
-  -o-transition: $x;
-  transition: $x;
-}
-
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
 html {
