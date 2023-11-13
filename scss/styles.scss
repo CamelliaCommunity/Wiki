@@ -1,38 +1,32 @@
 /* HEADS UP!!! DO NOT EDIT NORMAL .CSS FILES!!!!! */
 /* ONLY EDIT .SCSS FILES!!!!!!! */
+
 /* Import variables */
-:root {
-  --font-default: "Torus Pro SemiBold", sans-serif;
-  --font-semiBoldItalic: "Torus Pro SemiBold Italic";
-  /* colors */
-  --pageBackground: #111;
-  --primaryColor: #f075c5;
-  --secondaryColor1: #b775f0;
-  --secondaryColor2: #661f57;
-  --hoverColor: #ff54a9;
-  --highlightColor: #cb6bab;
-  --errorColor: #ef4040;
-  /* cards */
-  --cardColor: #382e37;
-  --cardLinesColor: #463942;
-  --cardBackgroundColor: #2a2228;
-  --borderColor: white;
-  /* text */
-  --textColorDefault: white;
-  --shadowColorDefault: #00000029;
-}
+@import "./variables.scss";
 
 /* Import favorite font */
 @font-face {
   font-family: "Torus Pro SemiBold";
-  src: url("../fonts/toruspro-semibold.woff2") format("woff2"), url("../fonts/toruspro-semibold.woff") format("woff");
+  src: url("../fonts/toruspro-semibold.woff2") format("woff2"),
+    url("../fonts/toruspro-semibold.woff") format("woff");
   font-weight: 600;
 }
+
 @font-face {
   font-family: "Torus Pro SemiBold Italic";
-  src: url("../fonts/toruspro-semibolditalic.woff2") format("woff2"), url("../fonts/toruspro-semibolditalic.woff") format("woff");
+  src: url("../fonts/toruspro-semibolditalic.woff2") format("woff2"),
+    url("../fonts/toruspro-semibolditalic.woff") format("woff");
   font-weight: 600;
 }
+
+@mixin transition($x...) {
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}
+
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
 html {
@@ -53,18 +47,15 @@ html {
 ::-webkit-scrollbar {
   width: 17px;
 }
-
 ::-webkit-scrollbar-thumb {
   background: var(--hoverColor);
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
 }
-
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background-color: #bbbbbb;
 }
@@ -80,7 +71,6 @@ html {
   border: 6px solid transparent;
   background-clip: content-box;
 }
-
 *::-webkit-scrollbar-thumb:hover {
   background-color: #ffffff;
 }
@@ -100,11 +90,9 @@ html {
   border: 6px solid transparent;
   background-clip: content-box;
 }
-
 *::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
 *::-webkit-scrollbar-thumb:hover {
   background-color: #ffffff;
 }
@@ -114,6 +102,7 @@ body {
   background-color: var(--pageBackground);
   color: var(--textColorDefault);
   min-height: 100vh;
+
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -155,7 +144,7 @@ header {
   align-items: center;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  transition: all 0.2s ease-in-out;
+  @include transition(all 0.2s ease-in-out);
 }
 
 /* sticky header when user scrolls */
@@ -164,7 +153,7 @@ header.sticky {
   top: 0;
   width: 100%;
   height: 92px;
-  transition: all 0.2s ease-in-out;
+  @include transition(all 0.2s ease-in-out);
 }
 
 header.sticky .wikiLogo a {
@@ -175,13 +164,15 @@ header.sticky .wikiLogo a {
   height: unset;
   font-size: 42px;
   width: 100%;
-}
-header.sticky .wikiLogo a:hover {
-  background: none;
-  color: unset;
-}
-header.sticky .wikiLogo a img {
-  width: 64px;
+
+  &:hover {
+    background: none;
+    color: unset;
+  }
+
+  img {
+    width: 64px;
+  }
 }
 
 header.sticky #navigationButtons {
@@ -198,7 +189,6 @@ header.sticky #navigationButtons .buttonDefault:first-child a {
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
 }
-
 header.sticky #navigationButtons .buttonDefault:last-child a {
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -227,25 +217,28 @@ header .pageTitle {
 header .wikiLogo {
   margin: auto;
   /* aligns entire row */
-}
-header .wikiLogo a {
-  font-size: 42px;
-  color: var(--borderColor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 389px;
-  height: 100px;
-  border: 8px solid var(--borderColor);
-  border-radius: 50px;
-  transition: color 0.3s, background-color 0.3s ease-in-out;
-}
-header .wikiLogo a:hover {
-  color: var(--pageBackground);
-  background-color: var(--borderColor);
-}
-header .wikiLogo img {
-  padding-right: 8px;
+
+  a {
+    font-size: 42px;
+    color: var(--borderColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 389px;
+    height: 100px;
+    border: 8px solid var(--borderColor);
+    border-radius: 50px;
+    @include transition(color 0.3s, background-color 0.3s ease-in-out);
+  }
+
+  a:hover {
+    color: var(--pageBackground);
+    background-color: var(--borderColor);
+  }
+
+  img {
+    padding-right: 8px;
+  }
 }
 
 /* for big titles */
@@ -293,8 +286,8 @@ a:hover {
 .buttonDefault a {
   font-family: var(--font-default);
   background: var(--primaryColor) 0% 0% no-repeat padding-box;
-  box-shadow: inset 0px -3px 6px rgba(0, 0, 0, 0.1607843137);
-  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: inset 0px -3px 6px #00000029;
+  text-shadow: 0px 3px 6px #00000029;
   color: var(--textColorDefault);
   text-decoration: none;
   font-size: 18px;
@@ -310,8 +303,8 @@ a:hover {
 .buttonDefault a:hover {
   background: var(--hoverColor) 0% 0% no-repeat padding-box;
   color: var(--textColorDefault);
-  box-shadow: inset 0px -3px 6px rgba(0, 0, 0, 0.1607843137);
-  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  box-shadow: inset 0px -3px 6px #00000029;
+  text-shadow: 0px 3px 6px #00000029;
 }
 
 .buttonDefault a:active {
@@ -347,6 +340,8 @@ a:hover {
 .miniCard h2 {
   font: normal normal 600 32px/36px var(--font-default);
   color: var(--textColorDefault);
+  // padding-top: 24px;
+  // padding-left: 24px;
   background-color: var(--cardLinesColor);
   padding: 18px;
   border-radius: 10px 10px 0 0;
@@ -430,7 +425,7 @@ i was mostly experimenting with figma design */
 }
 
 .gridLayout .card {
-  grid-column: 1/span 2;
+  grid-column: 1 / span 2;
   margin: 0;
   padding: 0;
 }
@@ -462,39 +457,44 @@ i was mostly experimenting with figma design */
   bottom: 0; /* keep it to the bottom left of page */
   left: 0;
   opacity: 60%;
-  transition: opacity 0.25s ease-in-out;
-}
-#contentWedge h2 {
-  position: absolute;
-  background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  z-index: 2;
-  width: 90%;
-  font-size: 32px;
-  padding-left: 4px;
-  padding-top: 4px;
-}
-#contentWedge #wedgeItems {
-  overflow-y: scroll;
-  overflow: auto;
-  font-size: 18px;
-  padding-top: 42px;
-  height: 100%;
-}
-#contentWedge #wedgeSubItem {
-  font-size: 14px;
-  padding-left: 8px;
-  height: 100%;
-}
-#contentWedge li {
-  padding: 4px;
-}
-#contentWedge:hover {
-  opacity: 100%;
+  @include transition(opacity 0.25s ease-in-out);
+
+  h2 {
+    position: absolute;
+    background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
+    z-index: 2;
+    width: 90%;
+    font-size: 32px;
+    padding-left: 4px;
+    padding-top: 4px;
+  }
+
+  #wedgeItems {
+    overflow-y: scroll;
+    overflow: auto;
+    font-size: 18px;
+    padding-top: 42px;
+    height: 100%;
+  }
+
+  #wedgeSubItem {
+    font-size: 14px;
+    padding-left: 8px;
+    height: 100%;
+  }
+
+  li {
+    padding: 4px;
+  }
+
+  &:hover {
+    opacity: 100%;
+  }
 }
 
 #wedgeItems a {
   display: block;
-  transition: all 0.2s ease-in-out;
+  @include transition(all 0.2s ease-in-out);
 }
 
 #wedgeItems li.active > a {
@@ -576,7 +576,7 @@ mark {
   margin-top: 24px;
   margin-left: 40px;
   margin-right: 40px;
-  transition: all 0.3s ease-in-out;
+  @include transition(all 0.3s ease-in-out);
 }
 
 .picture img:hover {
@@ -597,8 +597,7 @@ mark {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
   /* row-gap: 0px; */
 }
 
@@ -616,14 +615,17 @@ img.sizingCSS {
     flex-direction: column;
     height: auto;
   }
+
   header.sticky {
     display: flex;
     flex-direction: column;
     height: auto;
+
+    #navigationButtons {
+      margin-bottom: 24px;
+    }
   }
-  header.sticky #navigationButtons {
-    margin-bottom: 24px;
-  }
+
   header .pageTitle {
     margin-top: 24px;
     float: none;
@@ -634,75 +636,92 @@ img.sizingCSS {
     max-width: 340px;
     margin-bottom: 24px;
   }
+
   header .wikiLogo a {
     font-size: 32px;
     height: 84px;
     max-width: 340px;
     border-width: 4px;
   }
+
   header:not(.sticky) #navigationButtons {
     margin-bottom: 24px;
   }
+
   header .wikiLogo {
     margin-bottom: 24px;
     margin-top: 24px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   #navigationButtons {
     flex-direction: column;
   }
+
   header.sticky #navigationButtons {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-  header.sticky #navigationButtons a {
-    border-radius: 30px !important;
+
+    a {
+      // this is the only time important is used because it's being overridden by javascript, im guessing
+      border-radius: 30px !important;
+    }
   }
 }
+
 /* responsive for picture wrap pages */
 @media screen and (max-width: 1270px) {
   #flexyCard {
     flex-direction: column;
   }
+
   #aside {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   #horiLine {
     display: none;
   }
+
   .gridLayout {
     display: flex;
     flex-direction: column;
   }
 }
+
 @media screen and (max-width: 860px) {
   .card {
     margin-left: 24px;
     margin-right: 24px;
+
+    p {
+      text-align: center;
+    }
   }
-  .card p {
-    text-align: center;
-  }
+
   .cardBackground h1 {
     margin-left: 24px;
     line-height: 1;
   }
+
   .cardBackground #footNote {
     margin-left: 24px;
     margin-top: -24px;
   }
+
   .cardBackground {
     width: 100%;
   }
 }
+
 /* remove sticky header as it takes up too much space on small screens */
 @media screen and (max-width: 514px) {
   header.sticky {
     display: none;
   }
-}/*# sourceMappingURL=styles.css.map */
+}

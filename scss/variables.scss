@@ -1,0 +1,23 @@
+:root {
+  --font-default: "Torus Pro SemiBold", sans-serif;
+  --font-semiBoldItalic: "Torus Pro SemiBold Italic";
+
+  /* colors */
+  --pageBackground: #111;
+  --primaryColor: #f075c5;
+  --secondaryColor1: #b775f0;
+  --secondaryColor2: #661f57;
+  --hoverColor: #ff54a9;
+  --highlightColor: #cb6bab;
+  --errorColor: #ef4040;
+
+  /* cards */
+  --cardColor: #382e37;
+  --cardLinesColor: #463942;
+  --cardBackgroundColor: #2a2228;
+  --borderColor: white;
+
+  /* text */
+  --textColorDefault: white;
+  --shadowColorDefault: #00000029;
+}
