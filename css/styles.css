@@ -155,6 +155,7 @@ header {
   border-bottom-right-radius: 25px;
 }
 
+/* sticky header when user scrolls */
 header.sticky {
   position: sticky;
   top: 0;
@@ -209,6 +210,7 @@ header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
   background: none;
 }
 
+/* logos and titles for header */
 header .pageTitle {
   font: normal normal 600 42px/21px var(--font-default);
   background-color: var(--cardColor);
@@ -238,6 +240,7 @@ header .wikiLogo a {
   height: 100px;
   border: 8px solid var(--borderColor);
   border-radius: 50px;
+  transition: color 0.3s, background-color 0.3s ease-in-out;
 }
 header .wikiLogo a:hover {
   color: var(--pageBackground);
@@ -699,7 +702,7 @@ img.sizingCSS {
     width: 100%;
   }
 }
-/* responsiveness for sticky header */
+/* remove sticky header as it takes up too much space on small screens */
 @media screen and (max-width: 514px) {
   header.sticky {
     display: none;
