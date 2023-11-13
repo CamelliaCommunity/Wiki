@@ -668,6 +668,7 @@ img.sizingCSS {
     align-items: center;
 
     a {
+      // this is the only time important is used because it's being overridden by javascript, im guessing
       border-radius: 30px !important;
     }
   }
