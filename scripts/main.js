@@ -1,15 +1,14 @@
-// this is the scroll thing that i wrote because
-// its cool - matt
-const nav = document.getElementsByTagName("header")[0];
-const main = document.getElementsByTagName("main")[0];
+// Adding sticky to the header when user scrolls
+// Created by matt
+const nav = document.getElementsByTagName('header')[0];
+const main = document.getElementsByTagName('main')[0];
 const scrollDetect = () => {
   const mTop = main.getBoundingClientRect().top + 10;
-  nav.classList[(mTop <= 0) ? "add" : "remove"]("sticky");
+  nav.classList[(mTop <= 0) ? 'add' : 'remove']('sticky');
 };
 
 // Eaten from https://codepen.io/bramus/pen/ExaEqMJ
 // Code is a bit jank after testing. I'll prob find another method myself later
-
 window.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries) => {
     // For each loop (array-like thing)
@@ -34,4 +33,4 @@ window.addEventListener('DOMContentLoaded', () => {
   // for scroll detection for making nav sticky
   scrollDetect();
 });
-document.addEventListener("scroll", scrollDetect);
+document.addEventListener('scroll', scrollDetect);

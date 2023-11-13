@@ -457,14 +457,13 @@ i was mostly experimenting with figma design */
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
   border: 4px solid var(--cardLinesColor);
   border-left: none;
-  margin-top: 62px;
   border-radius: 0 10px 10px 0;
   width: 174px;
   height: 472px;
+  bottom: 0; /* keep it to the bottom left of page */
+  left: 0;
   opacity: 60%;
   transition: opacity 0.25s ease-in-out;
-  left: 0;
-  margin: 10% 0;
 }
 #contentWedge h2 {
   position: absolute;
@@ -610,22 +609,6 @@ img.sizingCSS {
   max-height: 78%;
 }
 
-/* jank code to keep the max-width from cardBackground to stay put while also fixing scaling..? */
-@media screen and (max-width: 1920px) and (min-width: 1630px) {
-  .cardBackground {
-    width: 75%;
-  }
-}
-/* temporary thing until layout is figured out */
-@media screen and (max-width: 1630px) {
-  #contentWedge {
-    margin: 8% 0;
-  }
-  div.centerItem {
-    width: 70%;
-    margin: auto;
-  }
-}
 /* smaller screens/smartphones */
 @media screen and (max-width: 1416px) {
   header:not(.sticky) {
@@ -652,6 +635,12 @@ img.sizingCSS {
     max-width: 340px;
     margin-bottom: 24px;
   }
+  header .wikiLogo a {
+    font-size: 32px;
+    height: 84px;
+    max-width: 340px;
+    border-width: 4px;
+  }
   header:not(.sticky) #navigationButtons {
     margin-bottom: 24px;
   }
@@ -663,6 +652,15 @@ img.sizingCSS {
 @media screen and (max-width: 1024px) {
   #navigationButtons {
     flex-direction: column;
+  }
+  header.sticky #navigationButtons {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  header.sticky #navigationButtons a {
+    border-radius: 30px !important;
   }
 }
 /* responsive for picture wrap pages */
@@ -701,5 +699,11 @@ img.sizingCSS {
   }
   .cardBackground {
     width: 100%;
+  }
+}
+/* responsiveness for sticky header */
+@media screen and (max-width: 514px) {
+  header.sticky {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
