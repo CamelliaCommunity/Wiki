@@ -19,6 +19,14 @@
   font-weight: 600;
 }
 
+@mixin transition($x...) {
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}
+
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
 html {
@@ -110,7 +118,7 @@ header .wikiLogo {
     height: 100px;
     border: 8px solid var(--borderColor);
     border-radius: 50px;
-    transition: all 0.2s ease-out;
+    @include transition(all 0.2s ease-in-out);
   }
 
   a:hover {
@@ -388,7 +396,7 @@ i was mostly experimenting with figma design */
 
 #wedgeItems a {
   display: block;
-  transition: all 0.2s ease-in-out;
+  @include transition(all 0.2s ease-in-out);
 }
 
 #wedgeItems li.active > a {
@@ -470,7 +478,7 @@ mark {
   margin-top: 24px;
   margin-left: 40px;
   margin-right: 40px;
-  transition: all 0.3s ease-out;
+  @include transition(all 0.3s ease-in-out);
 }
 
 .picture img:hover {

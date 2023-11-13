@@ -123,7 +123,7 @@ header .wikiLogo a {
   height: 100px;
   border: 8px solid var(--borderColor);
   border-radius: 50px;
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease-in-out;
 }
 header .wikiLogo a:hover {
   color: var(--pageBackground);
@@ -474,7 +474,7 @@ mark {
   margin-top: 24px;
   margin-left: 40px;
   margin-right: 40px;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .picture img:hover {
