@@ -172,6 +172,7 @@ header.sticky .wikiLogo a {
   position: absolute;
   font-size: 42px;
   width: 100%;
+  transition: width 0.2s ease-in-out;
 }
 header.sticky .wikiLogo a:hover {
   background: none;
@@ -239,7 +240,6 @@ header .wikiLogo a {
   height: 100px;
   border: 8px solid var(--borderColor);
   border-radius: 50px;
-  transition: width 0.2s ease-in-out;
 }
 header .wikiLogo a:hover {
   color: var(--pageBackground);
@@ -633,6 +633,14 @@ img.sizingCSS {
     justify-content: center;
     flex-direction: column;
     height: auto;
+  }
+  header.sticky {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  header.sticky #navigationButtons {
+    margin-bottom: 24px;
   }
   header .pageTitle {
     margin-top: 24px;
