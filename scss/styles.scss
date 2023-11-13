@@ -19,6 +19,14 @@
   font-weight: 600;
 }
 
+@mixin transition($x...) {
+  -webkit-transition: $x;
+  -moz-transition: $x;
+  -ms-transition: $x;
+  -o-transition: $x;
+  transition: $x;
+}
+
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
 html {
@@ -384,6 +392,15 @@ i was mostly experimenting with figma design */
   li {
     padding: 4px;
   }
+}
+
+#wedgeItems a {
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+#wedgeItems li.active > a {
+  color: var(--textColorDefault);
 }
 
 #flexyCard {

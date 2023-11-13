@@ -1,4 +1,5 @@
 // Eaten from https://codepen.io/bramus/pen/ExaEqMJ
+// Code is a bit jank after testing. I'll prob find another method myself later
 
 window.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries) => {
@@ -6,11 +7,11 @@ window.addEventListener('DOMContentLoaded', () => {
     entries.forEach((sectionEntry) => {
       const id = sectionEntry.target.getAttribute('id');
 
-      if (sectionEntry.intersectionRatio != 0) {
-        document.querySelector(`div li a[href="#${id}"]`)
+      if (sectionEntry.intersectionRatio > 0) {
+        document.querySelector(`nav li a[href="#${id}"]`)
             .parentElement.classList.add('active');
       } else {
-        document.querySelector(`div li a[href="#${id}"]`)
+        document.querySelector(`nav li a[href="#${id}"]`)
             .parentElement.classList.remove('active');
       }
     });

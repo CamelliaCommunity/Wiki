@@ -390,6 +390,15 @@ i was mostly experimenting with figma design */
   padding: 4px;
 }
 
+#wedgeItems a {
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+#wedgeItems li.active > a {
+  color: var(--textColorDefault);
+}
+
 #flexyCard {
   display: flex;
   min-height: 480px;
