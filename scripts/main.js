@@ -14,13 +14,13 @@ const scrollToTop = document.getElementById('scrollToTop');
 
 // Check if theres a id with scrollToTop
 if (scrollToTop) {
-  // When the user scrolls down 20px from the top of the document, show the
+  // When the user scrolls down 400px(?) from the top of the document, show the
   // button
   window.addEventListener('scroll', showButton);
 
   function showButton() {
-    if (document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 400 ||
+        document.documentElement.scrollTop > 400) {
       scrollToTop.style.display = 'block';
     } else {
       scrollToTop.style.display = 'none';

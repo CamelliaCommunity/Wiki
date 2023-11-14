@@ -499,7 +499,9 @@ i was mostly experimenting with figma design */
   position: fixed;
   bottom: 0; /* keep it to the bottom right of page */
   right: 0;
+  margin: 32px;
   opacity: 60%;
+  cursor: pointer;
   transition: opacity 0.25s ease-in-out;
 }
 #scrollToTop .buttonDefault a {
@@ -508,7 +510,6 @@ i was mostly experimenting with figma design */
   width: 80px;
   height: 80px;
   border-radius: 40px;
-  margin: 32px;
 }
 #scrollToTop:hover {
   opacity: 100%;
