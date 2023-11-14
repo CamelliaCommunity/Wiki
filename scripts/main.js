@@ -8,6 +8,9 @@ const scrollToTop = document.getElementById('scrollToTop');
 if (scrollToTop) {
   // When the user scrolls down 400px(?) from the top of the document, show the
   // button
+
+  scrollToTop.style.display = 'none';  // Fix button showing when page is loaded
+
   const showButton = () => {
     scrollToTop.style.display = (window.scrollY > 400) ? 'block' : 'none';
   };
