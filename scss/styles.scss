@@ -47,15 +47,18 @@ html {
 ::-webkit-scrollbar {
   width: 17px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--hoverColor);
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
 }
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background-color: #bbbbbb;
 }
@@ -71,6 +74,7 @@ html {
   border: 6px solid transparent;
   background-clip: content-box;
 }
+
 *::-webkit-scrollbar-thumb:hover {
   background-color: #ffffff;
 }
@@ -115,14 +119,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-/* i guess this is why people use wrappers */
-main#getRidOfStupidFlexDisplay {
-  display: block;
-  flex-direction: none;
-  justify-content: none;
-  align-items: none;
 }
 
 /* center items nested in main tag */
@@ -501,6 +497,30 @@ i was mostly experimenting with figma design */
   color: var(--textColorDefault);
 }
 
+/* scroll to top button */
+#scrollToTop {
+  float: right;
+  position: fixed;
+  bottom: 0; /* keep it to the bottom right of page */
+  right: 0;
+  margin: 32px;
+  opacity: 60%;
+  cursor: pointer;
+  @include transition(opacity 0.25s ease-in-out);
+
+  .buttonDefault a {
+    font-size: 32px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+  }
+
+  &:hover {
+    opacity: 100%;
+  }
+}
+
 #flexyCard {
   display: flex;
   min-height: 480px;
@@ -652,6 +672,11 @@ img.sizingCSS {
     margin-bottom: 24px;
     margin-top: 24px;
   }
+
+  /* since phones are weird there technically isnt hovering */
+  #contentWedge:hover {
+    opacity: 60%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -716,6 +741,11 @@ img.sizingCSS {
 
   .cardBackground {
     width: 100%;
+  }
+
+  .gridLayout {
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }
 

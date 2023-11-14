@@ -128,14 +128,6 @@ main {
   align-items: center;
 }
 
-/* i guess this is why people use wrappers */
-main#getRidOfStupidFlexDisplay {
-  display: block;
-  flex-direction: none;
-  justify-content: none;
-  align-items: none;
-}
-
 /* center items nested in main tag */
 main .centerItem {
   display: flex;
@@ -501,6 +493,28 @@ i was mostly experimenting with figma design */
   color: var(--textColorDefault);
 }
 
+/* scroll to top button */
+#scrollToTop {
+  float: right;
+  position: fixed;
+  bottom: 0; /* keep it to the bottom right of page */
+  right: 0;
+  margin: 32px;
+  opacity: 60%;
+  cursor: pointer;
+  transition: opacity 0.25s ease-in-out;
+}
+#scrollToTop .buttonDefault a {
+  font-size: 32px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+#scrollToTop:hover {
+  opacity: 100%;
+}
+
 #flexyCard {
   display: flex;
   min-height: 480px;
@@ -647,6 +661,10 @@ img.sizingCSS {
     margin-bottom: 24px;
     margin-top: 24px;
   }
+  /* since phones are weird there technically isnt hovering */
+  #contentWedge:hover {
+    opacity: 60%;
+  }
 }
 @media screen and (max-width: 1024px) {
   #navigationButtons {
@@ -698,6 +716,10 @@ img.sizingCSS {
   }
   .cardBackground {
     width: 100%;
+  }
+  .gridLayout {
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }
 /* remove sticky header as it takes up too much space on small screens */
