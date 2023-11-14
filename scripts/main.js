@@ -7,6 +7,33 @@ const scrollDetect = () => {
   nav.classList[(mTop <= 0) ? 'add' : 'remove']('sticky');
 };
 
+// Add a 'scroll to top' button
+// Eaten from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+// Get the button
+const scrollToTop = document.getElementById('scrollToTop');
+
+// Check if theres a id with scrollToTop
+if (scrollToTop) {
+  // When the user scrolls down 20px from the top of the document, show the
+  // button
+  window.addEventListener('scroll', showButton);
+
+  function showButton() {
+    if (document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20) {
+      scrollToTop.style.display = 'block';
+    } else {
+      scrollToTop.style.display = 'none';
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  scrollToTop.addEventListener('click', function() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  });
+}
+
 // Eaten from https://codepen.io/bramus/pen/ExaEqMJ
 // Code is a bit jank after testing. I'll prob find another method myself later
 // This highlights sections of a document
