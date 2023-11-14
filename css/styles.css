@@ -450,7 +450,7 @@ i was mostly experimenting with figma design */
   border-left: none;
   border-radius: 0 10px 10px 0;
   width: 174px;
-  height: 472px;
+  height: 753px;
   bottom: 0; /* keep it to the bottom left of page */
   left: 0;
   opacity: 60%;
@@ -662,7 +662,13 @@ img.sizingCSS {
     margin-top: 24px;
   }
   /* since phones are weird there technically isnt hovering */
+  #contentWedge {
+    height: 472px;
+  }
   #contentWedge:hover {
+    opacity: 60%;
+  }
+  #scrollToTop:hover {
     opacity: 60%;
   }
 }
@@ -722,9 +728,18 @@ img.sizingCSS {
     margin-right: 24px;
   }
 }
-/* remove sticky header as it takes up too much space on small screens */
+/* update sticky header as it takes up too much space on small screens */
 @media screen and (max-width: 514px) {
-  header.sticky {
+  header.sticky .wikiLogo {
     display: none;
+  }
+  header.sticky #navigationButtons .buttonDefault a {
+    font-size: 16px;
+    width: 120px;
+    height: 42px;
+  }
+  header.sticky #navigationButtons {
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }/*# sourceMappingURL=styles.css.map */
