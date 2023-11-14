@@ -28,13 +28,13 @@ if (scrollToTop) {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((sectionEntry) => {
     const id = sectionEntry.target.getAttribute('id');
-    const headerLink =
+    const wedgeLink =
         document.querySelector(`nav li a[href="#${id}"]`).parentElement;
 
     if (sectionEntry.isIntersecting) {
-      headerLink.classList.add('active');
+      wedgeLink.classList.add('active');
     } else {
-      headerLink.classList.remove('active');
+      wedgeLink.classList.remove('active');
     }
   });
 });
