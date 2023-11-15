@@ -610,6 +610,16 @@ em {
   margin-right: 121px;
 }
 
+/* this is for markdown footnotes */
+.footnote {
+  color: var(--highlightColor);
+  background-color: var(--pageBackground);
+  border-radius: 10px;
+  padding: 4px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+
 /* pictures */
 .picture figure {
   background: var(--secondaryColor2) 0% 0% no-repeat padding-box;
