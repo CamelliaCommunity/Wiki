@@ -364,7 +364,7 @@ code {
   font: normal normal 600 28px/36px var(--font-default);
   padding-top: 24px;
   padding-bottom: 8px;
-  text-align: center;
+  padding-left: 24px;
 }
 
 .card p,
