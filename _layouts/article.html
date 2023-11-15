@@ -1,0 +1,21 @@
+---
+layout: "wrapper"
+---
+
+<!-- Main Page -->
+<main>
+  <div id="contentWedge">
+    <h2>Contents</h2>
+    <nav id="wedgeItems">
+      <ul></ul>
+      <!-- In javascript, there will be new items listed here with each <h2> -->
+    </nav>
+  </div>
+  <div class="cardBackground">
+    <div>
+      <h1>{{ page.title }}</h1>
+      <p id="footNote">Written by {{ page.author }}</p>
+    </div>
+    <div class="card">{{ content }}</div>
+  </div>
+</main>
