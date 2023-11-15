@@ -5,7 +5,6 @@ categories: articles
 author: papertek
 description: this is a description for the test article. follow this layout to know about things
 ---
-<!-- Welcome to Jekyll! -->
 
 ## LETS TEST THIS OUT RIGHT NOW
 
