@@ -51,7 +51,7 @@ We have cut down *many* rules and combined some to make things more sane for new
 ### Chinese Thread
 
 ---
-After some pestering from server members, we’ve created the new Chinese thread: <https://discord.com/channels/435720333786480641/1168752239561678868/1168752239561678868>. Camellia的行政人员都想让我写一个好笑的信息，因此我现在想说他们都是有特别毛病的人-
+After some pestering from server members, we’ve created the new [Chinese thread](https://discord.com/channels/435720333786480641/1168752239561678868/1168752239561678868). Camellia的行政人员都想让我写一个好笑的信息，因此我现在想说他们都是有特别毛病的人-
 
 ### Aesthetic Changes
 
