@@ -631,22 +631,6 @@ em {
 }
 
 /* for regular document images */
-img {
-  float: right;
-  width: 20%;
-  height: 20%;
-  border: 4px solid var(--secondaryColor1);
-  border-radius: 10px;
-  margin: 24px;
-  transition: all 0.3s ease-in-out;
-}
-
-img:hover {
-  border: 4px solid var(--hoverColor);
-  transform: scale(1.02);
-  overflow: hidden;
-}
-
 /* pictures */
 .picture figure {
   background: var(--secondaryColor2) 0% 0% no-repeat padding-box;
