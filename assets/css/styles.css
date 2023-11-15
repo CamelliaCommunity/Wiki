@@ -220,6 +220,7 @@ header .pageTitle {
 header .wikiLogo {
   margin: auto;
   /* aligns entire row */
+  /* ensure stupid image isnt messed up with the global images style */
 }
 header .wikiLogo a {
   font-size: 42px;
@@ -238,7 +239,16 @@ header .wikiLogo a:hover {
   background-color: var(--borderColor);
 }
 header .wikiLogo img {
+  float: none;
   padding-right: 8px;
+  width: 64px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+header .wikiLogo img:hover {
+  border: none;
 }
 
 /* for big titles */
