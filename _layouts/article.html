@@ -15,6 +15,12 @@ layout: "wrapper"
     <div>
       <h1>{{ page.title }}</h1>
       <p id="footNote">Written by {{ page.author }}</p>
+      <p id="footNoteRight">
+        <a
+          href="https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }}"
+          >Edit This Page!</a
+        >
+      </p>
     </div>
     <div class="card">{{ content }}</div>
   </div>

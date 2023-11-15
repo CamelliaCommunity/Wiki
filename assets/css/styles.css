@@ -595,12 +595,19 @@ em {
   /* used to be 24 px */
 }
 
-/* jank thing. might wanna fix */
+/* footnote */
 .cardBackground #footNote {
   color: lightgray;
+  float: left;
   margin-left: 121px;
   /* margin-top: -20px; OLD */
-  position: absolute;
+}
+
+/* footnote but on the right side */
+.cardBackground #footNoteRight {
+  color: lightgray;
+  float: right;
+  margin-right: 121px;
 }
 
 /* pictures */

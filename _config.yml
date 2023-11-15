@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   The Camellia Wiki includes the focus on Camellia, his works, and rhythm games he has associated with. We encourage you to take a look!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: J6chocomint
 github_username: papertek
 
 # Build settings
