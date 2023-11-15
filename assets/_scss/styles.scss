@@ -149,6 +149,7 @@ header.sticky {
   top: 0;
   width: 100%;
   height: 92px;
+  z-index: 1; // ensure its above the weird footnote at the top
   @include transition(all 0.2s ease-in-out);
 }
 
@@ -278,6 +279,19 @@ a:hover {
   text-decoration: none;
 }
 
+/* placeholder colors for code blocks */
+pre {
+  background-color: black;
+  margin: 16px;
+  padding: 16px;
+  border: solid 4px gray;
+  border-radius: 25px;
+}
+
+code {
+  color: rgb(46, 238, 46);
+}
+
 /* Fixed button code */
 .buttonDefault a {
   font-family: var(--font-default);
@@ -328,6 +342,7 @@ a:hover {
   margin-left: 121px;
   margin-right: 121px;
   margin-bottom: 24px;
+  margin-top: 34px; // instead of relying on header, use this
   /* for end of page stuff */
 }
 
@@ -348,6 +363,7 @@ a:hover {
   font: normal normal 600 28px/36px var(--font-default);
   padding-top: 24px;
   padding-bottom: 8px;
+  text-align: center; // center text for now
 }
 
 .card p,
@@ -361,14 +377,23 @@ ol {
   /* padding: 24px; */
   padding-left: 40px;
   padding-right: 40px;
+  font-size: 18px;
 }
 
 .card ol li {
-  padding: 8px;
+  // padding: 8px;
+
+  p {
+    font-size: 18px;
+  }
 }
 
 .card ul li {
-  padding: 8px;
+  // padding: 8px;
+
+  p {
+    font-size: 18px;
+  }
 }
 
 .card h2:before,
@@ -389,6 +414,16 @@ ol {
   margin-left: 8px;
   margin-right: 8px;
   height: 2px;
+}
+
+/* lets dupe vertLine because there *is* a way to change its color */
+hr {
+  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
+  width: auto;
+  margin-left: 8px;
+  margin-right: 8px;
+  height: 2px;
+  border: 0;
 }
 
 .horiLine {
@@ -416,6 +451,7 @@ i was mostly experimenting with figma design */
   margin-left: 121px;
   margin-right: 121px;
   margin-bottom: 24px;
+  margin-top: 34px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
 }
@@ -481,10 +517,18 @@ i was mostly experimenting with figma design */
 
   li {
     padding: 4px;
+
+    &:last-child .vertLine {
+      display: none;
+    }
   }
 
   &:hover {
     opacity: 100%;
+  }
+
+  .vertLine {
+    margin-top: 4px;
   }
 }
 
@@ -543,7 +587,8 @@ mark {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.italic {
+.italic,
+em {
   font-family: var(--font-semiBoldItalic);
 }
 
@@ -563,7 +608,7 @@ mark {
   font-size: 42px;
   margin-left: 121px;
   margin-top: 34px;
-  margin-bottom: 34px;
+  // margin-bottom: 34px;
   /* used to be 24 px */
 }
 
@@ -572,8 +617,8 @@ mark {
   color: lightgray;
   margin-left: 121px;
   /* margin-top: -20px; OLD */
-  margin-top: -18px;
-  /* position: absolute; */
+  // margin-top: -18px;
+  position: absolute;
 }
 
 /* pictures */

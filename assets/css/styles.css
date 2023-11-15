@@ -10,7 +10,7 @@
   --secondaryColor1: #b775f0;
   --secondaryColor2: #661f57;
   --hoverColor: #ff54a9;
-  --highlightColor: #cb6bab;
+  --highlightColor: rgb(202, 156, 255);
   --errorColor: #ef4040;
   /* cards */
   --cardColor: #382e37;
@@ -156,6 +156,7 @@ header.sticky {
   top: 0;
   width: 100%;
   height: 92px;
+  z-index: 1;
   transition: all 0.2s ease-in-out;
 }
 
@@ -281,6 +282,19 @@ a:hover {
   text-decoration: none;
 }
 
+/* placeholder colors for code blocks */
+pre {
+  background-color: black;
+  margin: 16px;
+  padding: 16px;
+  border: solid 4px gray;
+  border-radius: 25px;
+}
+
+code {
+  color: rgb(46, 238, 46);
+}
+
 /* Fixed button code */
 .buttonDefault a {
   font-family: var(--font-default);
@@ -331,6 +345,7 @@ a:hover {
   margin-left: 121px;
   margin-right: 121px;
   margin-bottom: 24px;
+  margin-top: 34px;
   /* for end of page stuff */
 }
 
@@ -349,6 +364,7 @@ a:hover {
   font: normal normal 600 28px/36px var(--font-default);
   padding-top: 24px;
   padding-bottom: 8px;
+  text-align: center;
 }
 
 .card p,
@@ -362,14 +378,15 @@ ol {
   /* padding: 24px; */
   padding-left: 40px;
   padding-right: 40px;
+  font-size: 18px;
 }
 
-.card ol li {
-  padding: 8px;
+.card ol li p {
+  font-size: 18px;
 }
 
-.card ul li {
-  padding: 8px;
+.card ul li p {
+  font-size: 18px;
 }
 
 .card h2:before,
@@ -390,6 +407,16 @@ ol {
   margin-left: 8px;
   margin-right: 8px;
   height: 2px;
+}
+
+/* lets dupe vertLine because there *is* a way to change its color */
+hr {
+  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
+  width: auto;
+  margin-left: 8px;
+  margin-right: 8px;
+  height: 2px;
+  border: 0;
 }
 
 .horiLine {
@@ -417,6 +444,7 @@ i was mostly experimenting with figma design */
   margin-left: 121px;
   margin-right: 121px;
   margin-bottom: 24px;
+  margin-top: 34px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
 }
@@ -480,8 +508,14 @@ i was mostly experimenting with figma design */
 #contentWedge li {
   padding: 4px;
 }
+#contentWedge li:last-child .vertLine {
+  display: none;
+}
 #contentWedge:hover {
   opacity: 100%;
+}
+#contentWedge .vertLine {
+  margin-top: 4px;
 }
 
 #wedgeItems a {
@@ -537,7 +571,8 @@ mark {
   background-color: rgba(255, 255, 255, 0);
 }
 
-.italic {
+.italic,
+em {
   font-family: var(--font-semiBoldItalic);
 }
 
@@ -557,7 +592,6 @@ mark {
   font-size: 42px;
   margin-left: 121px;
   margin-top: 34px;
-  margin-bottom: 34px;
   /* used to be 24 px */
 }
 
@@ -566,8 +600,7 @@ mark {
   color: lightgray;
   margin-left: 121px;
   /* margin-top: -20px; OLD */
-  margin-top: -18px;
-  /* position: absolute; */
+  position: absolute;
 }
 
 /* pictures */
