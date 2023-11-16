@@ -31,7 +31,7 @@ github_username: papertek
 # theme: minima
 plugins:
   - jekyll-feed
-permalink: /:categories/:title
+permalink: /wiki/:categories/:title
 
 jekyll_compose:
   default_front_matter:
@@ -55,6 +55,8 @@ defaults:
       layout: "default"
 collections:
   articles:
+    output: true
+  legacy:
     output: true
 # Exclude from processing.
 # The following items will not be processed, by default.
