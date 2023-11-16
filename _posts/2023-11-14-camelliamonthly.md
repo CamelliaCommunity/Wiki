@@ -4,7 +4,7 @@ title: Camellia Monthly
 date: 2023-11-14 23:55 -0600
 category: posts
 author: Camellia Server Staff
-description: Camellia Monthly!
+description: Camellia Monthly articles
 ---
 
 ## October 2023
