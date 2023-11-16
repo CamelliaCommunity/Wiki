@@ -1,9 +1,10 @@
 ---
 layout: article
-title:  "Article Test"
+title:  "Article Example"
 categories: articles
 author: papertek
-description: this is a description for the test article. follow this layout to know about things
+description: this is a description for an example article. follow this layout to know about things
+include: Example Post
 ---
 
 ## LETS TEST THIS OUT RIGHT NOW
@@ -18,26 +19,26 @@ But
 
 loreim3
 
-## another test
+## another header2
 
 loreim4
 
-## another test
+## another header2
 
 loreim4
 
-## another test
+## another header2
 
 loreim4
 
-## another test
+## another header2
 
 loreim4
 
-## another test
+## another header2
 
 loreim4
 
-## another test
+## another header2
 
 loreim4
