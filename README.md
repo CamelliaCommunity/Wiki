@@ -11,7 +11,7 @@ Quality checkers will go ahead and merge your code if it's good!
 
 This project uses .scss (sassy CSS)! Please be sure to know how scss works
 before contributing to styles. [Install the .scss extension](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)!
-You could also review how to install Sass [here](https://sass-lang.com/install/). The way I installed it personally was using node.js in the command line by typing `npm install -g sass`.
+You could also review how to install Sass [here](https://sass-lang.com/install/). I installed it personally by using node.js in the command line by typing `npm install -g sass`.
 
 ## BE SURE TO KNOW HOW JEKYLL WORKS
 
@@ -19,4 +19,4 @@ Before contributing, learn how to use markdown and install [Jekyll](https://jeky
 
 ## TESTING LOCALLY
 
-Before testing locally, you must have Jekyll (and Sassy CSS, if you want to contribute to styles) installed properly. Once that is handled, open the terminal and type `bundle exec jekyll serve` in order to build the site on a local server. Afterward, browse to http://localhost:4000/ to view the website locally. If you still need help, review [Jekyll Docs](https://jekyllrb.com/docs/)
+Before testing locally, you must have Jekyll (and Sassy CSS, if you want to contribute to styles) installed properly. Once that is handled, open the terminal and type `bundle exec jekyll serve` in order to build the site on a local server. Afterward, browse to http://localhost:4000/ to view the website locally. If you still need help, review [Jekyll Docs](https://jekyllrb.com/docs/)!
