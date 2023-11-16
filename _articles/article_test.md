@@ -4,6 +4,7 @@ title:  "Article Test"
 categories: articles
 author: papertek
 description: this is a description for the test article. follow this layout to know about things
+include: Example Post
 ---
 
 ## LETS TEST THIS OUT RIGHT NOW
