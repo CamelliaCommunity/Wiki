@@ -7,3 +7,7 @@ description: Read about the server and all of its contents. Includes events, his
 ---
 <!-- Items to include: -->
 <!-- Article Test -->
+
+## Camellia Monthly
+
+Camellia Monthly was created in an attempt to increase activity and offer engagement with the community. You can read October's issue [here]({{ site.baseurl }}{% post_url 2023-11-14-camelliamonthly %})!
