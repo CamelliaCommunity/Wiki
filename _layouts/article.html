@@ -2,6 +2,26 @@
 layout: "wrapper"
 ---
 
+<!-- Add stupid styling -->
+<style>
+  header .wikiLogo img {
+    width: 64px;
+    height: auto;
+  }
+  img {
+    float: right;
+    border: 4px solid var(--secondaryColor1);
+    border-radius: 10px;
+    margin: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  img:hover {
+    border: 4px solid var(--hoverColor);
+    transform: scale(1.02);
+    overflow: hidden;
+  }
+</style>
+
 <!-- Main Page -->
 <main>
   <div id="contentWedge">
@@ -15,6 +35,13 @@ layout: "wrapper"
     <div>
       <h1>{{ page.title }}</h1>
       <p id="footNote">Written by {{ page.author }}</p>
+      <p id="footNoteRight">
+        <a
+          href="https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }}"
+          target="_blank"
+          >Edit This Page!</a
+        >
+      </p>
     </div>
     <div class="card">{{ content }}</div>
   </div>

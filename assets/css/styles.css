@@ -220,6 +220,7 @@ header .pageTitle {
 header .wikiLogo {
   margin: auto;
   /* aligns entire row */
+  /* ensure stupid image isnt messed up with the global images style */
 }
 header .wikiLogo a {
   font-size: 42px;
@@ -238,7 +239,16 @@ header .wikiLogo a:hover {
   background-color: var(--borderColor);
 }
 header .wikiLogo img {
+  float: none;
   padding-right: 8px;
+  width: 64px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+header .wikiLogo img:hover {
+  border: none;
 }
 
 /* for big titles */
@@ -364,7 +374,7 @@ code {
   font: normal normal 600 28px/36px var(--font-default);
   padding-top: 24px;
   padding-bottom: 8px;
-  text-align: center;
+  padding-left: 24px;
 }
 
 .card p,
@@ -595,14 +605,32 @@ em {
   /* used to be 24 px */
 }
 
-/* jank thing. might wanna fix */
+/* footnote */
 .cardBackground #footNote {
   color: lightgray;
+  float: left;
   margin-left: 121px;
   /* margin-top: -20px; OLD */
-  position: absolute;
 }
 
+/* footnote but on the right side */
+.cardBackground #footNoteRight {
+  color: lightgray;
+  float: right;
+  margin-right: 121px;
+}
+
+/* this is for markdown footnotes */
+.footnote {
+  color: var(--highlightColor);
+  background-color: var(--pageBackground);
+  border-radius: 10px;
+  padding: 4px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+
+/* for regular document images */
 /* pictures */
 .picture figure {
   background: var(--secondaryColor2) 0% 0% no-repeat padding-box;
@@ -751,7 +779,9 @@ img.sizingCSS {
   }
   .cardBackground #footNote {
     margin-left: 24px;
-    margin-top: -24px;
+  }
+  .cardBackground #footNoteRight {
+    margin-right: 24px;
   }
   .cardBackground {
     width: 100%;

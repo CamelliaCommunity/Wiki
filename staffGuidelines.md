@@ -92,7 +92,8 @@ please use the FAQ commands on bigotry (?bigot) or punish them accordingly.
 
 I have noticed staff members complain and some people being afraid of becoming staff members due to how large this server is. Never fear; this part of the guidelines will guide you on certain things!
 
-<h3 class="centerItem">Moderation of content that falls into a "gray" area</h3>
+### Moderation of content that falls into a "gray" area
+
 ---
 
 1. The posted content is illegal (i.e., drugs, potential piracy).
@@ -103,7 +104,8 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 1. The content being posted implies anything that breaks the server rules in a malicious tone.
 
-<h3 class="centerItem">Cross-Banning Users</h3>
+### Cross-Banning Users
+
 ---
 
 *In extreme circumstances, we may ban individuals for their actions in other communities even if they have not breached any rules in this server. This will only happen if all of the following conditions are met.*
@@ -114,7 +116,8 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 1. The user is not currently on the server but poses a probable risk to the server environment, or the user is already on the server.
 
-<h3 class="centerItem">Handling situations that could be overwhelming</h3>
+### Handling situations that could be overwhelming
+
 ---
 
 *Given how people are, when taking action against something, it's possible to get targeted for harassment. If handling the situation becomes out of hand, you should consider one of these options; remember to use good judgment on what to do!*
@@ -127,7 +130,8 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 1. Listen to what people say and tell them what they want to hear(unless otherwise). Try to be patient with them so they can feel comfortable with what's happening. By doing this method, it should be easier to diverge a heated topic/discussion and talk about something else.
 
-<h3 class="centerItem">Disciplinary actions and what happens after</h3>
+### Disciplinary actions and what happens after
+
 ---
 
 *When people don't listen, you need to take action. Here's how to make yourself look less 1984 and more like Mad Max (a more respected kind of staff member).*
@@ -142,7 +146,8 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 ## Part 4: Moderation Terminology and AutoMod
 
-<h3 class="centerItem">Common Terminology</h3>
+### Common Terminology
+
 ---
 
 *Using Wick, the moderation bot, there are a couple of commands. These commands are: /warn /kick /ban, and /infractions. We want to generalize terms we use when referring to moderation in general, so keep these in mind.*
@@ -159,7 +164,8 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 * This list will be added to eventually.
 
-<h3 class="centerItem">Wick's AutoMod</h3>
+### Wick's AutoMod
+
 ---
 
 * Each infraction given by John Wick is a total of 5 warning points.
@@ -174,7 +180,8 @@ I have noticed staff members complain and some people being afraid of becoming s
   
 *Please be sure to mention any event handling so it could be under the radar! Events should also be scheduled days in advance so more members can notice something is going on!*
 
-<h3 class="centerItem">Event posts</h3>
+### Event posts
+
 ---
 
 <u>Events: What's considered</u>
@@ -207,7 +214,8 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 * Staff-related events
 
-<h3 class="centerItem">Announcement posts</h3>
+### Announcement posts
+
 ---
 
 When creating announcements for any *important* reason, these guidelines must be followed. Before posting, make sure the post is approved by a number of staff members, and make sure to do a self-check here.
@@ -238,7 +246,8 @@ As a part of the staff team it's important to take note of how the promotion pro
 
 After two warning messages, it's guaranteed demotion on the third!
 
-<h3 class="centerItem">Secondary Roles</h3>
+### Secondary Roles
+
 ---
 
 <u>Probationary and Trial Roles</u>
@@ -281,7 +290,8 @@ After two warning messages, it's guaranteed demotion on the third!
 
 * Staff members may have this role if they consistently contribute to event creation.
 
-<h3 class="centerItem">Promotion: What is considered</h3>
+### Promotion: What is considered
+
 ---
 
 * Being helpful and engaging with server members.
@@ -298,7 +308,8 @@ After two warning messages, it's guaranteed demotion on the third!
 
 * Leading the server in the best direction for the sake of Camellia and server members.
 
-<h3 class="centerItem">Demotion: What is considered</h3>
+### Demotion: What is considered
+
 ---
 
 * Extreme inactivity.
@@ -317,4 +328,4 @@ After two warning messages, it's guaranteed demotion on the third!
 
 ---
 
-<h3 class="centerItem">Any questions? Bring them up in the staff chats</h3>
+### Any questions? Bring them up in the staff chats

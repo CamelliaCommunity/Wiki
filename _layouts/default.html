@@ -10,9 +10,16 @@ layout: "wrapper"
       <h2>Hey, you!</h2>
       <p>
         this is a default layout and should not be used. please specify a layout
-        to use in order for this page to load correctly!
+        to use in order to load this page correctly!
       </p>
       {{ content }}
+      <div class="picture centerItem">
+        <figure>
+          <img class="sizingCSS" src={{ "assets/images/404.png" | relative_url
+          }} alt="pageInvalid" />
+          <figcaption>Page Invalid!</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </main>

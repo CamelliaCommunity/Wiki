@@ -4,25 +4,60 @@ layout: post
 ---
 
 <style type="text/css" media="screen">
-  .container {
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     margin: 10px auto;
     max-width: 600px;
-    text-align: center;
   }
   #footNote {
     display: none;
   }
+  #listContainer {
+    width: 400px;
+    /* margin-right: 32px; */
+    font-size: 24px;
+    text-align: left;
+    font-family: var(--font-semiBoldItalic);
+    margin-bottom: 24px;
+  }
+  h2::before {
+    display: none !important;
+  }
+  h2 {
+    text-align: center;
+    font-family: var(--font-semiBoldItalic) !important;
+    font-size: 42px !important;
+    color: var(--errorColor) !important;
+  }
+  .picture img {
+    margin-bottom: 24px;
+  }
+  figure {
+    margin-top: 24px;
+  }
 </style>
 
-<div class="container">
-  <h2>404</h2>
-  <p>Page not found :(</p>
+<h2>404</h2>
+<div id="container">
+  <p><u>Page not found :(</u></p>
   <p>The requested page could not be found.</p>
+  <p>Invalid pages could happen for a number of reasons including:</p>
+  <ul id="listContainer">
+    <li>Having the wrong html path</li>
+    <li>A broken button</li>
+    <li>Bad luck</li>
+  </ul>
+  <div class="buttonDefault">
+    <a href="/index.html">Click to Go Home</a>
+  </div>
   <div class="picture centerItem">
     <figure>
       <img class="sizingCSS" src={{ "assets/images/404.png" | relative_url }}
-      alt="404" />
-      <br />
+      alt="pageInvalid" />
     </figure>
   </div>
 </div>

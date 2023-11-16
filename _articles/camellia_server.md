@@ -6,7 +6,7 @@ author: papertek
 description: Read about the server and all of its contents. Includes events, history and more!
 ---
 <!-- Items to include: -->
-<!-- Camellia Monthly -->
+<!-- Article Test -->
 
 ## Camellia Monthly
 
