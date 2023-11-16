@@ -8,7 +8,6 @@ description: The one and only Camellia! Here, you can find information about Cam
 
 ## Introduction
 
-THIS IS TEST TEXT
 Camellia, also known as Cametek, KamelCamellia, or real life name Masaya Oya (大箭将也), is a musician who originates from Tokyo, Japan. He is currently 31 years old.
 
 ## Biography

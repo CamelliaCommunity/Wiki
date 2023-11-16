@@ -3,7 +3,7 @@
   <head>
     <!-- Meta tags defines metadata for an HTML document -->
     <meta charset="UTF-8" />
-    <meta name="description" content="{{page.title}}" />
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <meta
       name="keywords"
       content="{{ site.title }}, {{ page.author }}, {{ page.title }}"
