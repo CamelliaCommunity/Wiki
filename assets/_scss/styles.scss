@@ -773,50 +773,6 @@ img.sizingCSS {
 }
 
 @media screen and (max-width: 1416px) {
-  // header:not(.sticky) {
-  //   display: flex;
-  //   justify-content: center;
-  //   flex-direction: column;
-  //   height: auto;
-  // }
-
-  // header.sticky {
-  //   display: flex;
-  //   flex-direction: column;
-  //   height: auto;
-
-  //   #navigationButtons {
-  //     margin-bottom: 24px;
-  //   }
-  // }
-
-  // header .pageTitle {
-  //   margin-top: 24px;
-  //   float: none;
-  //   font-size: 32px;
-  //   height: 84px;
-  //   border: 1px solid white;
-  //   border-radius: 10px;
-  //   max-width: 340px;
-  //   margin-bottom: 24px;
-  // }
-
-  // header .wikiLogo a {
-  //   font-size: 32px;
-  //   height: 84px;
-  //   max-width: 340px;
-  //   border-width: 4px;
-  // }
-
-  // header:not(.sticky) #navigationButtons {
-  //   margin-bottom: 24px;
-  // }
-
-  // header .wikiLogo {
-  //   margin-bottom: 24px;
-  //   margin-top: 24px;
-  // }
-
   /* since phones are weird there technically isnt hovering */
   #contentWedge {
     height: 472px;
@@ -830,24 +786,6 @@ img.sizingCSS {
     opacity: 60%;
   }
 }
-
-// @media screen and (max-width: 1024px) {
-//   #navigationButtons {
-//     flex-direction: column;
-//   }
-
-//   header.sticky #navigationButtons {
-//     flex-wrap: wrap;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-
-//     a {
-//       // this is the only time important is used because it's being overridden by javascript, im guessing
-//       border-radius: 30px !important;
-//     }
-//   }
-// }
 
 /* responsive for picture wrap pages */
 @media screen and (max-width: 1270px) {
