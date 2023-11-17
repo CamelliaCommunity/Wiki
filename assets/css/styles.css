@@ -138,11 +138,12 @@ main .centerItem {
 /* header */
 header {
   background-color: var(--secondaryColor2);
-  position: sticky;
+  position: fixed;
   top: 0;
-  width: auto;
+  width: 100%;
   height: 148px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-bottom-left-radius: 25px;
@@ -150,9 +151,58 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
+/* logos and titles for header */
+header .pageTitle {
+  font: normal normal 600 42px/21px var(--font-default);
+  background-color: var(--cardColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 389px;
+  height: 100px;
+  border: 1px solid var(--borderColor);
+  border-radius: 10px;
+  margin: auto;
+  /* aligns entire row */
+}
+
+/* Wiki logo */
+header .wikiLogo {
+  margin: auto;
+  /* ensure stupid image isnt messed up with the global images style */
+}
+header .wikiLogo a {
+  font-size: 42px;
+  color: var(--borderColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 389px;
+  height: 100px;
+  border: 8px solid var(--borderColor);
+  border-radius: 50px;
+  transition: all 0.3s, background-color, 0.3s ease-in-out;
+}
+header .wikiLogo a:hover {
+  color: var(--pageBackground);
+  background-color: var(--borderColor);
+}
+header .wikiLogo img {
+  float: none;
+  padding-right: 8px;
+  width: 64px;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+header .wikiLogo img:hover {
+  border: none;
+}
+
 /* sticky header when user scrolls */
 header.sticky {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 92px;
@@ -161,13 +211,11 @@ header.sticky {
 }
 
 header.sticky .wikiLogo a {
-  border-radius: 0;
   border: none;
   top: 0;
   left: 0;
-  height: unset;
+  height: 92px;
   font-size: 42px;
-  width: 100%;
 }
 header.sticky .wikiLogo a:hover {
   background: none;
@@ -198,57 +246,7 @@ header.sticky #navigationButtons .buttonDefault:last-child a {
 }
 
 header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
-  background: none;
-}
-
-/* logos and titles for header */
-header .pageTitle {
-  font: normal normal 600 42px/21px var(--font-default);
-  background-color: var(--cardColor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 389px;
-  height: 100px;
-  border: 1px solid var(--borderColor);
-  border-radius: 10px;
-  margin: auto;
-  /* aligns entire row */
-}
-
-/* Wiki logo */
-header .wikiLogo {
-  margin: auto;
-  /* aligns entire row */
-  /* ensure stupid image isnt messed up with the global images style */
-}
-header .wikiLogo a {
-  font-size: 42px;
-  color: var(--borderColor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 389px;
-  height: 100px;
-  border: 8px solid var(--borderColor);
-  border-radius: 50px;
-  transition: color 0.3s, background-color 0.3s ease-in-out;
-}
-header .wikiLogo a:hover {
-  color: var(--pageBackground);
-  background-color: var(--borderColor);
-}
-header .wikiLogo img {
-  float: none;
-  padding-right: 8px;
-  width: 64px;
-  height: auto;
-  border: none;
-  border-radius: 0;
-  margin: 0;
-}
-header .wikiLogo img:hover {
-  border: none;
+  display: none;
 }
 
 /* for big titles */
@@ -261,7 +259,13 @@ header .wikiLogo img:hover {
   flex-direction: row;
   gap: 20px;
   margin: auto;
-  /* aligns entire row */
+  transition: position 0.2s, border-radius, 0.2s ease-in-out;
+}
+#navigationButtons .buttonDefault a {
+  transition: position 0.2s, border-radius, 0.2s ease-in-out;
+}
+#navigationButtons .buttonDefault a:hover {
+  transition: all 0s ease-out;
 }
 
 /* footer */
@@ -593,7 +597,7 @@ em {
   border-radius: 10px;
   max-width: 1486px;
   min-height: 734px;
-  margin-top: 62px;
+  margin-top: 210px;
   margin-bottom: 62px;
 }
 
@@ -630,7 +634,6 @@ em {
   padding-top: 1px;
 }
 
-/* for regular document images */
 /* pictures */
 .picture figure {
   background: var(--secondaryColor2) 0% 0% no-repeat padding-box;
@@ -684,44 +687,56 @@ img.sizingCSS {
 }
 
 /* smaller screens/smartphones */
-@media screen and (max-width: 1416px) {
-  header:not(.sticky) {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: auto;
+@media screen and (max-width: 1475px) {
+  header .wikiLogo a {
+    width: 100%;
+    height: 92px;
+    border: none;
   }
+  header #navigationButtons {
+    gap: 4px;
+  }
+}
+@media screen and (max-width: 1330px) {
   header.sticky {
-    display: flex;
-    flex-direction: column;
-    height: auto;
+    height: 148px;
   }
-  header.sticky #navigationButtons {
-    margin-bottom: 24px;
+  header.sticky #navigationButtons .buttonDefault a {
+    height: 50px;
   }
-  header .pageTitle {
-    margin-top: 24px;
-    float: none;
-    font-size: 32px;
-    height: 84px;
-    border: 1px solid white;
-    border-radius: 10px;
-    max-width: 340px;
-    margin-bottom: 24px;
-  }
+}
+@media screen and (max-width: 1000px) {
   header .wikiLogo a {
     font-size: 32px;
-    height: 84px;
-    max-width: 340px;
-    border-width: 4px;
+    height: 48px;
   }
-  header:not(.sticky) #navigationButtons {
-    margin-bottom: 24px;
+  header .wikiLogo a img {
+    width: 48px;
+    height: auto;
   }
-  header .wikiLogo {
-    margin-bottom: 24px;
-    margin-top: 24px;
+  header #navigationButtons .buttonDefault.specialLine a:hover::after {
+    display: none;
   }
+  header #navigationButtons .buttonDefault a {
+    font-size: 16px;
+    width: 150px;
+    height: 32px;
+  }
+  header.sticky .wikiLogo a {
+    font-size: 32px;
+    height: 48px;
+  }
+  header.sticky .wikiLogo a img {
+    width: 48px;
+    height: auto;
+  }
+  header.sticky #navigationButtons .buttonDefault a {
+    font-size: 16px;
+    width: 150px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 1416px) {
   /* since phones are weird there technically isnt hovering */
   #contentWedge {
     height: 472px;
@@ -731,20 +746,6 @@ img.sizingCSS {
   }
   #scrollToTop:hover {
     opacity: 60%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  #navigationButtons {
-    flex-direction: column;
-  }
-  header.sticky #navigationButtons {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  header.sticky #navigationButtons a {
-    border-radius: 30px !important;
   }
 }
 /* responsive for picture wrap pages */
@@ -792,17 +793,33 @@ img.sizingCSS {
   }
 }
 /* update sticky header as it takes up too much space on small screens */
-@media screen and (max-width: 514px) {
-  header.sticky .wikiLogo {
-    display: none;
-  }
-  header.sticky #navigationButtons .buttonDefault a {
-    font-size: 16px;
-    width: 120px;
-    height: 42px;
+@media screen and (max-width: 625px) {
+  header #navigationButtons {
+    flex-direction: column;
   }
   header.sticky #navigationButtons {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    flex-direction: column;
+  }
+  header.sticky #navigationButtons .buttonDefault a {
+    border-radius: 32px;
+  }
+  header.sticky #navigationButtons .buttonDefault:last-child a {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+  header.sticky #navigationButtons .buttonDefault:first-child a {
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+  }
+}
+@media screen and (max-width: 422px) {
+  header {
+    height: auto;
+  }
+  header #navigationButtons a {
+    margin-bottom: 4px;
+  }
+  header.sticky {
+    height: auto;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -66,6 +66,11 @@ window.addEventListener('DOMContentLoaded', function() {
 // Created by matt
 const scrollDetect = () => {
   header.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
+
+  // Check if user has scrolled a certain amount of pixels to the top
+  if (window.scrollY <= 200) {
+    header.classList.remove('sticky');
+  }
 };
 
 window.addEventListener('scroll', scrollDetect);
