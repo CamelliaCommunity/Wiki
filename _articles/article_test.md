@@ -2,7 +2,7 @@
 layout: article
 title:  "Article Example"
 categories: articles
-author: papertek
+author: ItMePeachy
 description: this is a description for an example article. follow this layout to know about things
 include: Example Post
 ---
