@@ -290,6 +290,10 @@ header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
   font: normal normal 600 32px/21px var(--font-default);
 }
 
+.makeBig {
+  font-size: 32.44px !important;
+}
+
 #navigationButtons {
   display: flex;
   flex-wrap: wrap;
@@ -883,27 +887,23 @@ img.sizingCSS {
     max-width: 1136px;
     min-height: 330px;
   }
+  #titleContainer {
+    min-width: auto;
+  }
 }
 @media screen and (max-width: 860px) {
-  .card {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
   .card p {
     text-align: center;
   }
-  .cardBackground h1 {
-    margin-left: 24px;
-    line-height: 1;
+  .card .cardContents {
+    width: 100%;
   }
-  .cardBackground #footNote {
-    margin-left: 24px;
-  }
-  .cardBackground #footNoteRight {
-    margin-right: 24px;
+  #contentWedge {
+    width: 174px;
   }
   .cardBackground {
     width: 100%;
+    padding: 8px;
   }
 }
 /* update sticky header as it takes up too much space on small screens */
@@ -924,6 +924,22 @@ img.sizingCSS {
   header.sticky #navigationButtons .buttonDefault:first-child a {
     border-top-left-radius: 32px;
     border-bottom-left-radius: 32px;
+  }
+  /* temporary fix */
+  .cardHeader h2 {
+    line-height: normal;
+    font-size: 18px;
+  }
+  .cardHeader h2::before {
+    line-height: normal;
+    height: 13px;
+  }
+  .cardHeader a {
+    line-height: normal;
+    font-size: 14px;
+  }
+  .makeBig {
+    font-size: 18px !important;
   }
 }
 @media screen and (max-width: 422px) {

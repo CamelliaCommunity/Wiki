@@ -15,10 +15,6 @@ layout: "wrapper"
   .miniCard .centerItem a:last-child::after {
     display: none;
   }
-
-  .makeBig {
-    font-size: 32.44px !important;
-  }
 </style>
 
 <main>
@@ -54,7 +50,9 @@ layout: "wrapper"
       {% for article in site.articles %}
       <div class="miniCard">
         <div class="cardHeader">
-          <h2><a class="makeBig" href="{{ article.url }}">{{ article.title }}</a></h2>
+          <h2>
+            <a class="makeBig" href="{{ article.url }}">{{ article.title }}</a>
+          </h2>
         </div>
         <p>{{ article.description }}</p>
         <p class="centerItem">
