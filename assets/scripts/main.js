@@ -23,55 +23,29 @@ if (scrollToTop) {
   });
 }
 
-// Eaten from https://codepen.io/bramus/pen/ExaEqMJ
-// Highlight of Contents wedge when user is in a new section of the page
-// Combined pieces of code to display new sections and to highlight them
-const sections = document.querySelectorAll('h2[id]');
-const wedgeItems = document.getElementById('wedgeItems');
-// Scroll to item
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((sectionEntry) => {
-    const id = sectionEntry.target.getAttribute('id');
-    const wedgeLink =
-        document.querySelector(`nav li a[href="#${id}"]`).parentElement;
-    if (sectionEntry.isIntersecting) {
-      wedgeLink.classList.add('active');
-    } else {
-      wedgeLink.classList.remove('active');
-    }
-  });
-});
-
-// Display the sections in the content wedge
-sections.forEach(section => {
-  const id = section.getAttribute('id');
-  const listItem = document.createElement('li');
-  const link = document.createElement('a');
-  link.href = `#${id}`;
-  link.textContent = section.textContent;
-  listItem.appendChild(link);
-  wedgeItems.querySelector('ul').appendChild(listItem);
-
-  const vertLine = document.createElement('div');
-  vertLine.classList.add('vertLine');
-  listItem.appendChild(vertLine);
-
-  // Track all sections that have an id applied
-  observer.observe(section);
-});
-
 // Add the sticky class to header when user scrolls
 // Created by matt
 const scrollDetect = () => {
   header.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
 
   // Check if user has scrolled a certain amount of pixels to the top
-  if (window.scrollY <= 200) {
+  // Used to be 200 then 198
+  if (window.scrollY <= 60) {
     header.classList.remove('sticky');
   }
 };
 
 window.addEventListener('scroll', scrollDetect);
+
+// Select all h2 elements within the cardContents class and apply the cardHeader
+// class
+const h2Elements = document.querySelectorAll('.cardContents h2');
+h2Elements.forEach((h2) => {
+  const div = document.createElement('div');
+  div.classList.add('cardHeader');
+  h2.parentNode.insertBefore(div, h2);
+  div.appendChild(h2);
+});
 
 // Test code
 sections.forEach(section => {

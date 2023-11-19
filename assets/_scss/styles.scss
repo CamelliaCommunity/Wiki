@@ -103,8 +103,15 @@ html {
 
 body {
   font-family: var(--font-default);
-  background-color: var(--pageBackground);
+  font-size: 16px;
+  background: linear-gradient(
+      180deg,
+      rgba(246, 65, 141, 0.2) 0%,
+      rgba(48, 37, 41, 0.2) 100%
+    ),
+    #111;
   color: var(--textColorDefault);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   min-height: 100vh;
 
   -webkit-font-smoothing: subpixel-antialiased;
@@ -119,6 +126,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  h1 {
+    font-family: var(--font-semiBoldItalic);
+    // margin-top: 224px;
+  }
 }
 
 /* center items nested in main tag */
@@ -126,6 +138,30 @@ main .centerItem {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  font-size: 36.49px;
+}
+
+h2 {
+  font-size: 32.44px;
+}
+
+h3 {
+  font-size: 28.83px;
+}
+
+h4 {
+  font-size: 25.63px;
+}
+
+h5 {
+  font-size: 22.78px;
+}
+
+h6 {
+  font-size: 20.25px;
 }
 
 /* header */
@@ -162,6 +198,7 @@ header .pageTitle {
 /* Wiki logo */
 header .wikiLogo {
   margin: auto; // aligns entire row
+  text-shadow: none;
 
   a {
     font-size: 42px;
@@ -205,6 +242,10 @@ header.sticky {
   height: 92px;
   z-index: 1; // ensure its above the weird footnote at the top
   @include transition(all 0.2s ease-in-out);
+
+  #navigationButtons .buttonDefault a:hover {
+    @include transition(all 0s ease-out);
+  }
 }
 
 header.sticky .wikiLogo a {
@@ -252,6 +293,10 @@ header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
   font: normal normal 600 32px/21px var(--font-default);
 }
 
+.makeBig {
+  font-size: 32.44px !important;
+}
+
 #navigationButtons {
   display: flex;
   flex-wrap: wrap;
@@ -272,7 +317,6 @@ header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
 footer {
   background-color: var(--secondaryColor2);
   margin-top: auto;
-  width: auto;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -287,12 +331,12 @@ footer #footerText {
 
 /* links */
 a {
-  color: var(--primaryColor);
+  color: var(--linkColor);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--hoverColor);
+  color: var(--linkHover);
   text-decoration: none;
 }
 
@@ -352,78 +396,163 @@ code {
 /* cards */
 .card {
   background: var(--cardColor) 0% 0% no-repeat padding-box;
-  max-width: 1250px;
-  border-radius: 10px;
-  line-height: 32px;
-  /* for left and right sides */
-  margin-left: 121px;
-  margin-right: 121px;
-  margin-bottom: 24px;
-  margin-top: 34px; // instead of relying on header, use this
-  /* for end of page stuff */
+  max-width: 1136px;
+  min-height: 330px;
+  border-radius: 30px;
+  line-height: 26px;
 }
 
-/* we have to use this font size because its in the design, lol */
-.card h2,
-.miniCard h2 {
-  font: normal normal 600 32px/36px var(--font-default);
+.miniCard {
+  background: var(--cardColor) 0% 0% no-repeat padding-box;
+  max-width: 556px;
+  border-radius: 30px;
+  line-height: 26px;
+}
+
+.miniCard .cardHeader {
+  margin-bottom: 32px;
+}
+
+.cardHeader {
+  font-family: var(--font-default);
   color: var(--textColorDefault);
-  // padding-top: 24px;
-  // padding-left: 24px;
-  background-color: var(--cardLinesColor);
-  padding: 18px;
-  border-radius: 10px 10px 0 0;
+  background: linear-gradient(
+      180deg,
+      rgba(102, 31, 87, 0.3) 0%,
+      rgba(187, 58, 159, 0.12) 50.52%,
+      rgba(217, 130, 198, 0) 100%
+    ),
+    var(--secondaryColor2);
+  display: flex;
+  // border-top: 1px solid var(--borderColor2);
+  border-top: 3px solid var(--borderColor2);
+  border-bottom: 3px solid var(--borderColor2);
+  height: 102px;
+  width: 100%;
+
+  &:first-of-type {
+    border-top: 1px solid var(--borderColor2);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
+
+  p,
+  a {
+    font-size: 21px;
+    margin: 4px;
+    align-self: center;
+    justify-self: flex-end;
+  }
+
+  /* hacky way to fix padding on card headers */
+  p {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  a:first-of-type {
+    margin-left: auto;
+  }
+
+  a:last-of-type {
+    margin-right: 46px;
+  }
 }
 
-.card h3,
-.miniCard h3 {
-  font: normal normal 600 28px/36px var(--font-default);
-  padding-top: 24px;
-  padding-bottom: 8px;
-  padding-left: 24px; // add padding for now
-  // text-align: center; // center text for now
+.card .cardHeader {
+  display: flex;
+  margin-bottom: 32px;
 }
 
 .card p,
 .miniCard p {
-  font: normal normal 600 21px/36px var(--font-default);
-  padding: 8px 24px 24px 24px;
-}
-
-.card ul,
-ol {
-  /* padding: 24px; */
-  padding-left: 40px;
-  padding-right: 40px;
+  font-family: var(--font-default);
   font-size: 18px;
+  padding-left: 48px;
+  padding-right: 48px;
+  line-height: normal; // remove this later
 }
 
-.card ol li {
-  // padding: 8px;
-
-  p {
-    font-size: 18px;
-  }
+.card h3,
+.miniCard h3 {
+  margin-left: 32px;
+  margin-bottom: 8px;
 }
 
-.card ul li {
-  // padding: 8px;
+.card h4,
+.miniCard h4 {
+  margin-left: 32px;
+  margin-bottom: 8px;
+}
 
-  p {
-    font-size: 18px;
+.card h2,
+.miniCard h2 {
+  font-family: var(--font-default);
+  font-size: 32.44px;
+  margin-left: 46px;
+  align-self: center;
+}
+
+.miniCard p {
+  padding-bottom: 16px;
+}
+
+.card p:first-child {
+  padding-top: 0;
+}
+
+li p {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.card ol,
+.card ul {
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-bottom: 32px;
+  line-height: 26px;
+
+  li:last-child p {
+    padding-bottom: 0;
   }
 }
 
 .card h2:before,
+.card h2:before,
+.miniCard h2:before,
 .miniCard h2:before {
   content: "";
   display: inline-block;
   background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
   height: 22px;
-  margin-right: 5px;
+  margin-right: 8px;
   width: 4px;
   position: inherit;
   border-radius: 2px;
+}
+
+.card h3:before,
+.card h3:before,
+.miniCard h3:before,
+.miniCard h3:before {
+  content: "";
+  display: inline-block;
+  background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
+  height: 20px;
+  margin-right: 8px;
+  width: 4px;
+  position: inherit;
+  border-radius: 2px;
+}
+
+.cardContents {
+  p {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    line-height: 26px;
+  }
 }
 
 .vertLine {
@@ -431,15 +560,16 @@ ol {
   width: auto;
   margin-left: 8px;
   margin-right: 8px;
-  height: 2px;
+  height: 3px;
 }
 
 /* lets dupe vertLine because there *is* a way to change its color */
 hr {
   background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
   width: auto;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 8px;
   height: 2px;
   border: 0;
 }
@@ -466,65 +596,49 @@ hr {
 i was mostly experimenting with figma design */
 .gridLayout {
   display: grid;
-  margin-left: 121px;
-  margin-right: 121px;
-  margin-bottom: 24px;
-  margin-top: 34px;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 8px;
+  grid-gap: 32px;
 }
 
 .gridLayout .card {
   grid-column: 1 / span 2;
   margin: 0;
   padding: 0;
-}
+  line-height: normal;
 
-.gridLayout .miniCard {
-  background: var(--cardColor) 0% 0% no-repeat padding-box;
-  min-height: 240px;
-  border-radius: 10px;
-}
-
-.gridLayout .miniCard p {
-  padding: 0 24px 14px 24px;
-}
-
-.gridLayout .miniCard h2 {
-  margin-bottom: 8px;
+  .cardHeader {
+    margin-bottom: 48px;
+  }
 }
 
 /* jank ass wedge code */
 #contentWedge {
-  float: left;
   position: fixed;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 4px solid var(--cardLinesColor);
+  border: 3px solid var(--secondaryColor2);
   border-left: none;
-  border-radius: 0 10px 10px 0;
-  width: 174px;
-  height: 753px;
+  border-radius: 0 30px 30px 0;
+  width: 283px;
+  // min-height: 1056px;
+  // bottom: -374px;
+  height: 680px;
   bottom: 0; /* keep it to the bottom left of page */
   left: 0;
   opacity: 60%;
   @include transition(opacity 0.25s ease-in-out);
 
   h2 {
-    position: absolute;
-    background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-    z-index: 2;
-    width: 90%;
-    font-size: 32px;
-    padding-left: 4px;
-    padding-top: 4px;
+    padding-top: 16px;
+    padding-left: 16px;
   }
 
   #wedgeItems {
     overflow-y: scroll;
     overflow: auto;
     font-size: 18px;
-    padding-top: 42px;
     height: 100%;
+    padding-left: 34px;
+    padding-top: 16px;
   }
 
   #wedgeSubItem {
@@ -534,11 +648,27 @@ i was mostly experimenting with figma design */
   }
 
   li {
-    padding: 4px;
+    margin-bottom: 16px;
 
     &:last-child .vertLine {
       display: none;
     }
+  }
+
+  li::marker {
+    // content: "•";
+    color: var(--linkColor);
+    @include transition(all 0.2s ease-in-out);
+  }
+
+  li:hover::marker {
+    // content: "•";
+    color: var(--linkHover);
+  }
+
+  li.active::marker {
+    // content: "•";
+    color: white;
   }
 
   &:hover {
@@ -546,7 +676,9 @@ i was mostly experimenting with figma design */
   }
 
   .vertLine {
-    margin-top: 4px;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 
@@ -612,40 +744,51 @@ em {
 
 /* card background, or content, whatever you want to call it */
 .cardBackground {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 4px solid var(--cardLinesColor);
-  border-radius: 10px;
-  max-width: 1486px;
-  min-height: 734px;
-  // margin-top: 62px;
-  margin-top: 210px; // make margin top massive because of the header
-  margin-bottom: 62px;
+  box-sizing: border-box;
+  border: 3px solid var(--secondaryColor2);
+  border-radius: 40px;
+  padding: 40px;
+  margin-bottom: 72px;
+  min-height: 727px;
 }
 
-.cardBackground h1 {
-  /* font: normal normal 600 42px/36px Torus Pro; */
-  font-size: 42px;
-  margin-left: 121px;
-  margin-top: 34px;
-  // margin-bottom: 34px;
-  /* used to be 24 px */
+/* footnote, or the author */
+
+#titleContainer {
+  display: flex;
+  flex-direction: column;
+  // background: red;
+  min-width: 76rem;
+  // min-height: 130px;
+  margin-top: 207px;
+
+  h1 {
+    align-self: center;
+    margin-bottom: 16px;
+  }
+
+  #footNote {
+    margin-bottom: 30px;
+    color: lightgray;
+    align-self: center;
+  }
+
+  /* footnote but on the right side */
+  #footNoteRight {
+    color: lightgray;
+    align-self: flex-end;
+    margin-right: 42px;
+    margin-bottom: 8px;
+  }
 }
 
-/* footnote */
-.cardBackground #footNote {
-  color: lightgray;
-  float: left;
-  margin-left: 121px;
-  /* margin-top: -20px; OLD */
-  // margin-top: -18px;
-  // position: absolute;
-}
-
-/* footnote but on the right side */
-.cardBackground #footNoteRight {
-  color: lightgray;
-  float: right;
-  margin-right: 121px;
+#notAFullTitleContainer h1 {
+  margin-top: 224px;
+  margin-bottom: 77px;
 }
 
 /* this is for markdown footnotes */
@@ -806,39 +949,36 @@ img.sizingCSS {
   .gridLayout {
     display: flex;
     flex-direction: column;
+
+    .miniCard {
+      max-width: 1136px;
+      min-height: 330px;
+    }
+  }
+
+  #titleContainer {
+    min-width: auto;
   }
 }
 
 @media screen and (max-width: 860px) {
   .card {
-    margin-left: 24px;
-    margin-right: 24px;
-
     p {
       text-align: center;
     }
+
+    .cardContents {
+      width: 100%;
+    }
   }
 
-  .cardBackground h1 {
-    margin-left: 24px;
-    line-height: 1;
-  }
-
-  .cardBackground #footNote {
-    margin-left: 24px;
-  }
-
-  .cardBackground #footNoteRight {
-    margin-right: 24px;
+  #contentWedge {
+    width: 174px;
   }
 
   .cardBackground {
     width: 100%;
-  }
-
-  .gridLayout {
-    margin-left: 24px;
-    margin-right: 24px;
+    padding: 8px;
   }
 }
 
@@ -860,6 +1000,26 @@ img.sizingCSS {
       border-top-left-radius: 32px;
       border-bottom-left-radius: 32px;
     }
+  }
+
+  /* temporary fix */
+  .cardHeader h2 {
+    line-height: normal;
+    font-size: 18px;
+  }
+
+  .cardHeader h2::before {
+    line-height: normal;
+    height: 13px;
+  }
+
+  .cardHeader a {
+    line-height: normal;
+    font-size: 14px;
+  }
+
+  .makeBig {
+    font-size: 18px !important;
   }
 }
 

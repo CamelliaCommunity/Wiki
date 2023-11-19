@@ -3,7 +3,7 @@ layout: article
 title:  "Camellia"
 categories: articles
 author: JoshuaGreatXD
-description: The one and only Camellia! Here, you can find information about Camellia's background, accomplishments, and fun facts, too!
+description: The one and only Camellia! Here, you can find information about Camellia's background, accomplishments, and fun facts!
 include: Albums
 ---
 
