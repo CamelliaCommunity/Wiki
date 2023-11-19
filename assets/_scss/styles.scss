@@ -418,22 +418,20 @@ code {
   color: var(--textColorDefault);
   background: linear-gradient(
       180deg,
-      rgba(168, 64, 107, 0) 0%,
-      rgba(246, 65, 141, 0.08) 51.04%,
-      rgba(91, 63, 75, 0.2) 100%,
-      rgba(91, 63, 75, 0.2) 100%
+      rgba(102, 31, 87, 0.3) 0%,
+      rgba(187, 58, 159, 0.12) 50.52%,
+      rgba(217, 130, 198, 0) 100%
     ),
     var(--secondaryColor2);
-
   display: flex;
+  // border-top: 1px solid var(--borderColor2);
   border-top: 3px solid var(--borderColor2);
   border-bottom: 3px solid var(--borderColor2);
   height: 102px;
-  margin-bottom: 48px;
   width: 100%;
 
   &:first-of-type {
-    border-top: none;
+    border-top: 1px solid var(--borderColor2);
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
   }
@@ -603,6 +601,10 @@ i was mostly experimenting with figma design */
   margin: 0;
   padding: 0;
   line-height: normal;
+
+  .cardHeader {
+    margin-bottom: 48px;
+  }
 }
 
 /* jank ass wedge code */
