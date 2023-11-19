@@ -184,7 +184,7 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 ---
 
-<u>Events: What's considered</u>
+#### Events: What's considered
 
 * Server game nights
 
@@ -194,7 +194,7 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 * Q&A sessions
 
-<u>Events: Important events to create</u>
+#### Events: Important events to create
 
 * Camellia song premieres
 
@@ -204,7 +204,7 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 * Anything involving Camellia!
 
-<u>Events: What's not considered</u>
+#### Events: What's not considered
 
 * Joke events (rare expectations)
 
@@ -220,7 +220,7 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 When creating announcements for any *important* reason, these guidelines must be followed. Before posting, make sure the post is approved by a number of staff members, and make sure to do a self-check here.
 
-<u>Announcements: Tone of delivery</u>
+#### Announcements: Tone of delivery
 
 * Posts must be neutral to the reader. No bias should show or any favoring to certain topics. Only on rare occasions should this rule be voided.
 
@@ -230,7 +230,7 @@ When creating announcements for any *important* reason, these guidelines must be
 
 * Be sure to preview your posts in any of the staff chats before posting. Make sure it's good enough!
 
-<u>Announcements: Keeping consistency</u>
+#### Announcements: Keeping consistency
 
 * All posts are to be written in United States English. Different spellings for different words will occur, so be mindful of spelling. Words included but not limited to are: color, center, skillful, analyze, etc.
 
@@ -250,7 +250,7 @@ After two warning messages, it's guaranteed demotion on the third!
 
 ---
 
-<u>Probationary and Trial Roles</u>
+#### Probationary and Trial Roles
 
 * All new staff members will start with the Helper role and a designated secondary role. These roles are called Trial Staff and Probationary Staff.
 
@@ -258,7 +258,7 @@ After two warning messages, it's guaranteed demotion on the third!
 
 * Probationary Staff are given to competent individuals who have proven their readiness to join the staff team. This is a way to evaluate performance before fully committing to their role.
 
-<u>Auxiliary Staff Role</u>
+#### Auxiliary Staff Role
 
 * This role is given to members selected from the Auxiliary Staff applications.
 
@@ -266,7 +266,7 @@ After two warning messages, it's guaranteed demotion on the third!
 
 * Think of this as a wait-list for becoming a staff member.
 
-<u>Challenges Judge Role</u>
+#### Challenges Judge Role
 
 * This role is only given to members who have contributed to production events. It is also given to members who wish to contribute.
 
@@ -274,7 +274,7 @@ After two warning messages, it's guaranteed demotion on the third!
 
 * Production Judges also function as a minor helper for the production channels.
 
-<u>Minecraft Helper Role</u>
+#### Minecraft Helper Role
 
 * This role is only given to members who have contributed anything Minecraft-related.
 
@@ -282,7 +282,7 @@ After two warning messages, it's guaranteed demotion on the third!
 
 * Staff members may have this role if they consistently contribute to Minecraft-related stuff.
 
-<u>Event Organizer Role</u>
+#### Event Organizer Role
 
 * This role is only given to members who have contributed to server events.
 

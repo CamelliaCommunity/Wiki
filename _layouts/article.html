@@ -2,13 +2,16 @@
 layout: "wrapper"
 ---
 
+<!-- Apply contend wedge script -->
+<script src= {{ "assets/scripts/articles.js" | relative_url }} defer=""></script>
+
 <!-- Add stupid styling -->
 <style>
   img {
     float: right;
     border: 4px solid var(--secondaryColor1);
     border-radius: 10px;
-    margin: 24px;
+    margin-left: 24px;
     transition: all 0.3s ease-in-out;
   }
   img:hover {
@@ -22,23 +25,26 @@ layout: "wrapper"
 <main>
   <div id="contentWedge">
     <h2>Contents</h2>
+    <div class="vertLine"></div>
     <nav id="wedgeItems">
-      <ul></ul>
+      <ol></ol>
       <!-- In javascript, there will be new items listed here with each <h2> -->
     </nav>
   </div>
+  <div id="titleContainer">
+    <h1>{{ page.title }}</h1>
+    <p id="footNote">Written by {{ page.author }}</p>
+    <p id="footNoteRight">
+      <a
+        href="https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }}"
+        target="_blank"
+        >Edit This Page!</a
+      >
+    </p>
+  </div>
   <div class="cardBackground">
-    <div>
-      <h1>{{ page.title }}</h1>
-      <p id="footNote">Written by {{ page.author }}</p>
-      <p id="footNoteRight">
-        <a
-          href="https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }}"
-          target="_blank"
-          >Edit This Page!</a
-        >
-      </p>
+    <div class="card">
+      <div class="cardContents">{{ content }}</div>
     </div>
-    <div class="card">{{ content }}</div>
   </div>
 </main>

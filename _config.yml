@@ -37,15 +37,15 @@ jekyll_compose:
   default_front_matter:
     posts:
       category: posts
-      author: Insert a awesome author!
+      author: a awesome author!
       description: Insert a awesome description!
     drafts:
-      author: Insert a awesome author!
+      author: a awesome author!
       description: Insert a awesome description!
     articles:
       layout: article
       category: articles
-      author: Insert a awesome author!
+      author: a awesome author!
       description: Insert a awesome description!
 
 defaults:

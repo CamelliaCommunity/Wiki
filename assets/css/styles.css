@@ -14,12 +14,15 @@
   --errorColor: #ef4040;
   /* cards */
   --cardColor: #382e37;
-  --cardLinesColor: #463942;
+  --cardLinesColor: #868b9c;
   --cardBackgroundColor: #2a2228;
   --borderColor: white;
+  --borderColor2: #8b5580;
   /* text */
   --textColorDefault: white;
   --shadowColorDefault: #00000029;
+  --linkColor: #53dcdc;
+  --linkHover: #88e7e7;
 }
 
 /* Import favorite font */
@@ -111,8 +114,10 @@ html {
 
 body {
   font-family: var(--font-default);
-  background-color: var(--pageBackground);
+  font-size: 16px;
+  background: linear-gradient(180deg, rgba(246, 65, 141, 0.2) 0%, rgba(48, 37, 41, 0.2) 100%), #111;
   color: var(--textColorDefault);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   min-height: 100vh;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -127,12 +132,39 @@ main {
   justify-content: center;
   align-items: center;
 }
+main h1 {
+  font-family: var(--font-semiBoldItalic);
+}
 
 /* center items nested in main tag */
 main .centerItem {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+h1 {
+  font-size: 36.49px;
+}
+
+h2 {
+  font-size: 32.44px;
+}
+
+h3 {
+  font-size: 28.83px;
+}
+
+h4 {
+  font-size: 25.63px;
+}
+
+h5 {
+  font-size: 22.78px;
+}
+
+h6 {
+  font-size: 20.25px;
 }
 
 /* header */
@@ -169,6 +201,7 @@ header .pageTitle {
 /* Wiki logo */
 header .wikiLogo {
   margin: auto;
+  text-shadow: none;
   /* ensure stupid image isnt messed up with the global images style */
 }
 header .wikiLogo a {
@@ -208,6 +241,9 @@ header.sticky {
   height: 92px;
   z-index: 1;
   transition: all 0.2s ease-in-out;
+}
+header.sticky #navigationButtons .buttonDefault a:hover {
+  transition: all 0s ease-out;
 }
 
 header.sticky .wikiLogo a {
@@ -272,7 +308,6 @@ header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
 footer {
   background-color: var(--secondaryColor2);
   margin-top: auto;
-  width: auto;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -287,12 +322,12 @@ footer #footerText {
 
 /* links */
 a {
-  color: var(--primaryColor);
+  color: var(--linkColor);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--hoverColor);
+  color: var(--linkHover);
   text-decoration: none;
 }
 
@@ -352,67 +387,146 @@ code {
 /* cards */
 .card {
   background: var(--cardColor) 0% 0% no-repeat padding-box;
-  max-width: 1250px;
-  border-radius: 10px;
-  line-height: 32px;
-  /* for left and right sides */
-  margin-left: 121px;
-  margin-right: 121px;
-  margin-bottom: 24px;
-  margin-top: 34px;
-  /* for end of page stuff */
+  max-width: 1136px;
+  min-height: 330px;
+  border-radius: 30px;
+  line-height: 26px;
 }
 
-/* we have to use this font size because its in the design, lol */
-.card h2,
-.miniCard h2 {
-  font: normal normal 600 32px/36px var(--font-default);
+.miniCard {
+  background: var(--cardColor) 0% 0% no-repeat padding-box;
+  max-width: 556px;
+  border-radius: 30px;
+  line-height: 26px;
+}
+
+.miniCard .cardHeader {
+  margin-bottom: 32px;
+}
+
+.cardHeader {
+  font-family: var(--font-default);
   color: var(--textColorDefault);
-  background-color: var(--cardLinesColor);
-  padding: 18px;
-  border-radius: 10px 10px 0 0;
+  background: linear-gradient(180deg, rgba(168, 64, 107, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%, rgba(91, 63, 75, 0.2) 100%), var(--secondaryColor2);
+  display: flex;
+  border-top: 3px solid var(--borderColor2);
+  border-bottom: 3px solid var(--borderColor2);
+  height: 102px;
+  margin-bottom: 48px;
+  width: 100%;
+  /* hacky way to fix padding on card headers */
+}
+.cardHeader:first-of-type {
+  border-top: none;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.cardHeader p,
+.cardHeader a {
+  font-size: 21px;
+  margin: 4px;
+  align-self: center;
+  justify-self: flex-end;
+}
+.cardHeader p {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.cardHeader a:first-of-type {
+  margin-left: auto;
+}
+.cardHeader a:last-of-type {
+  margin-right: 46px;
 }
 
-.card h3,
-.miniCard h3 {
-  font: normal normal 600 28px/36px var(--font-default);
-  padding-top: 24px;
-  padding-bottom: 8px;
-  padding-left: 24px;
+.card .cardHeader {
+  display: flex;
+  margin-bottom: 32px;
 }
 
 .card p,
 .miniCard p {
-  font: normal normal 600 21px/36px var(--font-default);
-  padding: 8px 24px 24px 24px;
+  font-family: var(--font-default);
+  font-size: 18px;
+  padding-left: 48px;
+  padding-right: 48px;
+  line-height: normal;
 }
 
-.card ul,
-ol {
-  /* padding: 24px; */
-  padding-left: 40px;
-  padding-right: 40px;
-  font-size: 18px;
+.card h3,
+.miniCard h3 {
+  margin-left: 32px;
+  margin-bottom: 8px;
 }
 
-.card ol li p {
-  font-size: 18px;
+.card h4,
+.miniCard h4 {
+  margin-left: 32px;
+  margin-bottom: 8px;
 }
 
-.card ul li p {
-  font-size: 18px;
+.card h2,
+.miniCard h2 {
+  font-family: var(--font-default);
+  font-size: 32.44px;
+  margin-left: 46px;
+  align-self: center;
+}
+
+.miniCard p {
+  padding-bottom: 16px;
+}
+
+.card p:first-child {
+  padding-top: 0;
+}
+
+li p {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.card ol,
+.card ul {
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-bottom: 32px;
+  line-height: 26px;
 }
 
 .card h2:before,
+.card h2:before,
+.miniCard h2:before,
 .miniCard h2:before {
   content: "";
   display: inline-block;
   background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
   height: 22px;
-  margin-right: 5px;
+  margin-right: 8px;
   width: 4px;
   position: inherit;
   border-radius: 2px;
+}
+
+.card h3:before,
+.card h3:before,
+.miniCard h3:before,
+.miniCard h3:before {
+  content: "";
+  display: inline-block;
+  background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
+  height: 20px;
+  margin-right: 8px;
+  width: 4px;
+  position: inherit;
+  border-radius: 2px;
+}
+
+.cardContents p {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  line-height: 26px;
 }
 
 .vertLine {
@@ -420,15 +534,16 @@ ol {
   width: auto;
   margin-left: 8px;
   margin-right: 8px;
-  height: 2px;
+  height: 3px;
 }
 
 /* lets dupe vertLine because there *is* a way to change its color */
 hr {
   background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
   width: auto;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 8px;
   height: 2px;
   border: 0;
 }
@@ -455,64 +570,42 @@ hr {
 i was mostly experimenting with figma design */
 .gridLayout {
   display: grid;
-  margin-left: 121px;
-  margin-right: 121px;
-  margin-bottom: 24px;
-  margin-top: 34px;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 8px;
+  grid-gap: 32px;
 }
 
 .gridLayout .card {
   grid-column: 1/span 2;
   margin: 0;
   padding: 0;
-}
-
-.gridLayout .miniCard {
-  background: var(--cardColor) 0% 0% no-repeat padding-box;
-  min-height: 240px;
-  border-radius: 10px;
-}
-
-.gridLayout .miniCard p {
-  padding: 0 24px 14px 24px;
-}
-
-.gridLayout .miniCard h2 {
-  margin-bottom: 8px;
+  line-height: normal;
 }
 
 /* jank ass wedge code */
 #contentWedge {
-  float: left;
   position: fixed;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 4px solid var(--cardLinesColor);
+  border: 3px solid var(--secondaryColor2);
   border-left: none;
-  border-radius: 0 10px 10px 0;
-  width: 174px;
-  height: 753px;
+  border-radius: 0 30px 30px 0;
+  width: 283px;
+  height: 680px;
   bottom: 0; /* keep it to the bottom left of page */
   left: 0;
   opacity: 60%;
   transition: opacity 0.25s ease-in-out;
 }
 #contentWedge h2 {
-  position: absolute;
-  background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  z-index: 2;
-  width: 90%;
-  font-size: 32px;
-  padding-left: 4px;
-  padding-top: 4px;
+  padding-top: 16px;
+  padding-left: 16px;
 }
 #contentWedge #wedgeItems {
   overflow-y: scroll;
   overflow: auto;
   font-size: 18px;
-  padding-top: 42px;
   height: 100%;
+  padding-left: 34px;
+  padding-top: 16px;
 }
 #contentWedge #wedgeSubItem {
   font-size: 14px;
@@ -520,16 +613,28 @@ i was mostly experimenting with figma design */
   height: 100%;
 }
 #contentWedge li {
-  padding: 4px;
+  margin-bottom: 16px;
 }
 #contentWedge li:last-child .vertLine {
   display: none;
+}
+#contentWedge li::marker {
+  color: var(--linkColor);
+  transition: all 0.2s ease-in-out;
+}
+#contentWedge li:hover::marker {
+  color: var(--linkHover);
+}
+#contentWedge li.active::marker {
+  color: white;
 }
 #contentWedge:hover {
   opacity: 100%;
 }
 #contentWedge .vertLine {
-  margin-top: 4px;
+  margin-top: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 #wedgeItems a {
@@ -592,36 +697,45 @@ em {
 
 /* card background, or content, whatever you want to call it */
 .cardBackground {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 4px solid var(--cardLinesColor);
-  border-radius: 10px;
-  max-width: 1486px;
-  min-height: 734px;
-  margin-top: 210px;
-  margin-bottom: 62px;
+  box-sizing: border-box;
+  border: 3px solid var(--secondaryColor2);
+  border-radius: 40px;
+  padding: 40px;
+  margin-bottom: 72px;
+  min-height: 727px;
 }
 
-.cardBackground h1 {
-  /* font: normal normal 600 42px/36px Torus Pro; */
-  font-size: 42px;
-  margin-left: 121px;
-  margin-top: 34px;
-  /* used to be 24 px */
+/* footnote, or the author */
+#titleContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 76rem;
+  margin-top: 207px;
+  /* footnote but on the right side */
 }
-
-/* footnote */
-.cardBackground #footNote {
+#titleContainer h1 {
+  align-self: center;
+  margin-bottom: 16px;
+}
+#titleContainer #footNote {
+  margin-bottom: 30px;
   color: lightgray;
-  float: left;
-  margin-left: 121px;
-  /* margin-top: -20px; OLD */
+  align-self: center;
+}
+#titleContainer #footNoteRight {
+  color: lightgray;
+  align-self: flex-end;
+  margin-right: 42px;
+  margin-bottom: 8px;
 }
 
-/* footnote but on the right side */
-.cardBackground #footNoteRight {
-  color: lightgray;
-  float: right;
-  margin-right: 121px;
+#notAFullTitleContainer h1 {
+  margin-top: 224px;
+  margin-bottom: 77px;
 }
 
 /* this is for markdown footnotes */
@@ -765,6 +879,10 @@ img.sizingCSS {
     display: flex;
     flex-direction: column;
   }
+  .gridLayout .miniCard {
+    max-width: 1136px;
+    min-height: 330px;
+  }
 }
 @media screen and (max-width: 860px) {
   .card {
@@ -786,10 +904,6 @@ img.sizingCSS {
   }
   .cardBackground {
     width: 100%;
-  }
-  .gridLayout {
-    margin-left: 24px;
-    margin-right: 24px;
   }
 }
 /* update sticky header as it takes up too much space on small screens */
