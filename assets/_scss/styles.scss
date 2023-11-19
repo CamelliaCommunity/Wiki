@@ -512,6 +512,10 @@ li p {
   padding-right: 56px;
   padding-bottom: 32px;
   line-height: 26px;
+
+  li:last-child p {
+    padding-bottom: 0;
+  }
 }
 
 .card h2:before,

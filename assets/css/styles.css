@@ -496,6 +496,10 @@ li p {
   padding-bottom: 32px;
   line-height: 26px;
 }
+.card ol li:last-child p,
+.card ul li:last-child p {
+  padding-bottom: 0;
+}
 
 .card h2:before,
 .card h2:before,
