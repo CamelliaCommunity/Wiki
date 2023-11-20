@@ -52,3 +52,19 @@ sections.forEach((section) => {
   // Track all sections that have an id applied
   observer.observe(section);
 });
+
+const images = document.querySelectorAll('p > img:not(header img)');
+images.forEach((image) => {
+  const figure = document.createElement('figure');
+  const figcaption = document.createElement('figcaption');
+  figcaption.textContent = image.alt;
+  figure.appendChild(image.cloneNode(true));
+  figure.appendChild(figcaption);
+  image.replaceWith(figure);
+});
+
+// Test code
+sections.forEach(section => {
+  const id = section.getAttribute('id');
+  console.log(id);
+});

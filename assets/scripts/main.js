@@ -46,9 +46,3 @@ h2Elements.forEach((h2) => {
   h2.parentNode.insertBefore(div, h2);
   div.appendChild(h2);
 });
-
-// Test code
-sections.forEach(section => {
-  const id = section.getAttribute('id');
-  console.log(id);
-});
