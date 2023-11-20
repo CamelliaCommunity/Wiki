@@ -106,7 +106,7 @@ Congratulations that you made it this far! Now that you've understood everything
 
 Once the repository is forked and its contents are edited, create a pull request that merges items into the beta branch. NEVER create a pull request to merge in the main branch. If you do that, you should feel bad.
 
-This is for contribution. Almost all articles and posts are editable for the user. If you see ways to improve documents, don't hesitate to contribute!
+This is it for contribution. Almost all articles and posts are editable for the user. If you see ways to improve documents, don't hesitate to contribute!
 
 ## References
 
