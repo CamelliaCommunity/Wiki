@@ -3,7 +3,7 @@ layout: article
 title:  "How to Contribute"
 categories: articles
 author: papertek
-description: Read this to figure out how to contribute. Includes a tutorial and more!
+description: Read this to figure out how to contribute. Includes directions, guidelines, and more!
 ---
 
 ## Introduction
