@@ -71,6 +71,12 @@ To include a post within an article, you must add `include: (post name)` in the 
 
 While articles and posts have very similar layouts, they function differently. Articles are supposed to be used *only* when the document content is very long and there are different sections. Article layouts have features such as content wedges and IDs applied to headers. Posts are meant for smaller bits of information that usually don't have a scrollbar. This includes quick, small messages and similar. Eventually, navigating between posts and articles will be better. You are free to contribute code whenever!
 
+### Disclaimer
+
+---
+
+As a *temporary* solution to display things correctly on the Homepage, some posts may have the article layout applied to them. *THIS IS ONLY IF ABSOLUTELY NECESSARY. DO NOT DO IT YOURSELF UNLESS YOU HAVE PERMISSION*.
+
 ## Code Contribution
 
 When contributing, you may need to familiarize yourself with GitHub and [git](https://git-scm.com/). GitHub is made for merging and collaborating code between developers.
