@@ -9,4 +9,12 @@ description: Insert a awesome description!
 
 ## \[diffraction\]
 
+Released in 2014, diffraction blah blah blah blah
+
 - [Blast your headz with the railgun]()
+
+## Another Album
+
+Released in 2015, blah blah blah
+
+- [Song name](#)
