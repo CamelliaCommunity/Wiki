@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Albums
+title: Discography
 date: 2023-11-16 08:57 -0600
 category: posts
-author: Insert a awesome author!
+author: a awesome author!
 description: Insert a awesome description!
 ---
 
-## Loreim Ipsum
+## \[diffraction\]
+
+- [Blast your headz with the railgun]()
