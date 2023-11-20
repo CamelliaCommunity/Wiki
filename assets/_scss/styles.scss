@@ -95,9 +95,11 @@ html {
   border: 6px solid transparent;
   background-clip: content-box;
 }
+
 *::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
 *::-webkit-scrollbar-thumb:hover {
   background-color: #ffffff;
 }
@@ -105,11 +107,9 @@ html {
 body {
   font-family: var(--font-default);
   font-size: 16px;
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(246, 65, 141, 0.2) 0%,
-      rgba(48, 37, 41, 0.2) 100%
-    ),
+      rgba(48, 37, 41, 0.2) 100%),
     #111;
   color: var(--textColorDefault);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -280,6 +280,7 @@ header.sticky #navigationButtons .buttonDefault:first-child a {
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
 }
+
 header.sticky #navigationButtons .buttonDefault:last-child a {
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -417,12 +418,10 @@ code {
 .cardHeader {
   font-family: var(--font-default);
   color: var(--textColorDefault);
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(102, 31, 87, 0.3) 0%,
       rgba(187, 58, 159, 0.12) 50.52%,
-      rgba(217, 130, 198, 0) 100%
-    ),
+      rgba(217, 130, 198, 0) 100%),
     var(--secondaryColor2);
   display: flex;
   // border-top: 1px solid var(--borderColor2);
@@ -615,16 +614,19 @@ i was mostly experimenting with figma design */
 /* jank ass wedge code */
 #contentWedge {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
   border: 3px solid var(--secondaryColor2);
   border-left: none;
   border-radius: 0 30px 30px 0;
   width: 283px;
-  // min-height: 1056px;
-  // bottom: -374px;
   height: 680px;
-  bottom: 0; /* keep it to the bottom left of page */
+  // min-height: 1056px;
+  /* keep it to the bottom left of page */
   left: 0;
+  bottom: 80px;
+  // bottom: -374px;
   opacity: 60%;
   @include transition(opacity 0.25s ease-in-out);
 
@@ -638,48 +640,59 @@ i was mostly experimenting with figma design */
     overflow: auto;
     font-size: 18px;
     height: 100%;
-    padding-left: 34px;
-    padding-top: 16px;
-  }
+    padding: 16px 8px 16px 34px;
 
-  #wedgeSubItem {
-    font-size: 14px;
-    padding-left: 8px;
-    height: 100%;
-  }
-
-  li {
-    margin-bottom: 16px;
-
-    &:last-child .vertLine {
-      display: none;
+    .vertLine {
+      margin-top: 10px;
+      margin-left: 16px;
+      margin-right: 16px;
     }
-  }
 
-  li::marker {
-    // content: "•";
-    color: var(--linkColor);
-    @include transition(all 0.2s ease-in-out);
-  }
+    ol {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
 
-  li:hover::marker {
-    // content: "•";
-    color: var(--linkHover);
-  }
+      li {
+        &:last-child .vertLine {
+          display: none;
+        }
 
-  li.active::marker {
-    // content: "•";
-    color: white;
-  }
+        &:hover {
+          // to whoever added this
+          // this doesn't do shit
+          opacity: 100%;
+        }
 
-  &:hover {
-    opacity: 100%;
-  }
+        &::marker {
+          color: var(--linkColor);
+          @include transition(all 0.2s ease-in-out);
+        }
 
-  .vertLine {
-    margin-top: 10px;
-    margin-left: 16px;
-    margin-right: 16px;
+        &:hover::marker {
+          color: var(--linkHover);
+        }
+
+        &.active::marker {
+          color: white;
+        }
+
+        ul {
+          margin-top: 8px;
+          padding-left: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        
+          li {
+            &::marker {
+              // yes these spaces are supposed to be here
+              content: "•  ";
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -688,7 +701,7 @@ i was mostly experimenting with figma design */
   @include transition(all 0.2s ease-in-out);
 }
 
-#wedgeItems li.active > a {
+#wedgeItems li.active>a {
   color: var(--textColorDefault);
 }
 
@@ -696,7 +709,8 @@ i was mostly experimenting with figma design */
 #scrollToTop {
   float: right;
   position: fixed;
-  bottom: 0; /* keep it to the bottom right of page */
+  bottom: 0;
+  /* keep it to the bottom right of page */
   right: 0;
   margin: 32px;
   opacity: 60%;
@@ -924,10 +938,12 @@ figure.articlePicture {
       font-size: 32px;
       height: 48px;
     }
+
     .wikiLogo a img {
       width: 48px;
       height: auto;
     }
+
     #navigationButtons .buttonDefault.specialLine a:hover::after {
       display: none;
     }
@@ -944,10 +960,12 @@ figure.articlePicture {
       font-size: 32px;
       height: 48px;
     }
+
     .wikiLogo a img {
       width: 48px;
       height: auto;
     }
+
     #navigationButtons .buttonDefault a {
       font-size: 16px;
       width: 150px;
@@ -957,6 +975,7 @@ figure.articlePicture {
 }
 
 @media screen and (max-width: 1416px) {
+
   /* since phones are weird there technically isnt hovering */
   #contentWedge {
     height: 472px;
@@ -1028,15 +1047,19 @@ figure.articlePicture {
   header #navigationButtons {
     flex-direction: column;
   }
+
   header.sticky #navigationButtons {
     flex-direction: column;
+
     .buttonDefault a {
       border-radius: 32px;
     }
+
     .buttonDefault:last-child a {
       border-top-right-radius: 32px;
       border-bottom-right-radius: 32px;
     }
+
     .buttonDefault:first-child a {
       border-top-left-radius: 32px;
       border-bottom-left-radius: 32px;
@@ -1072,6 +1095,7 @@ figure.articlePicture {
       margin-bottom: 4px;
     }
   }
+
   header.sticky {
     height: auto;
   }
