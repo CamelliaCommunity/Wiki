@@ -53,7 +53,9 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
-const images = document.querySelectorAll('p > img:not(header img)');
+// Look for images within a "p" element, give them a figure and figcaption
+// element. the alt text will display as figcaption
+const images = document.querySelectorAll('p > img');
 images.forEach((image) => {
   const figure = document.createElement('figure');
   const figcaption = document.createElement('figcaption');
