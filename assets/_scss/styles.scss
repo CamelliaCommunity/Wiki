@@ -857,21 +857,28 @@ img.sizingCSS {
 /* markdown support for images */
 
 // this class is only applied in the javascript
-// make everything important cos wonk
-figure.makeSmaller {
-  float: none !important;
-  margin-left: 0 !important;
+figure.centerImage {
+  float: none;
+  text-align: center;
+  margin-left: 0;
 
   figcaption {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+figure.floatImage {
+  float: right;
+  margin-left: 24px;
+
+  figcaption {
+    margin-bottom: 12px;
+    text-align: center;
   }
 }
 
 figure.articlePicture {
-  text-align: center;
-  float: right;
-  margin-left: 24px;
-
   img {
     border: 4px solid var(--secondaryColor1);
     border-radius: 10px;
@@ -883,11 +890,6 @@ figure.articlePicture {
   img:hover {
     border: 4px solid var(--hoverColor);
     transform: scale(1.01);
-  }
-
-  figcaption {
-    margin-bottom: 12px;
-    text-align: center;
   }
 }
 

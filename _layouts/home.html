@@ -26,24 +26,20 @@ layout: "wrapper"
       <div class="card">
         <div class="cardHeader">
           <h2>Most notable Articles</h2>
-          <a href="#">Discography</a>
+          <a href="{% link _posts/2023-11-16-discography.md %}">Discography</a>
           <p>•</p>
           <a href="#">Featured Rhythm Games</a>
           <p>•</p>
           <a href="#">Fun Facts</a>
         </div>
         <p>
-          You're one of- you're one of the most well known gays that keep coming
-          in every stream, after you get banned thousands of times to suck my
-          virtual dick every stream. Because you fantasize about me ass naked
-          with abs chiseling, in a Urien thong. While I committed tyrant
-          slaughter down your fucking throat, while I put you in all type of
-          aegis reflector setups, where you can't get out, you're forced to suck
-          a dick, you're forced to get pounded in your virtual ass. Then I bust
-          matrix juice all down your throat till you choke, spit up, everything
-          you grubbed on. And it's just gonna erupt with green juices, and to
-          the point and you're just caught an eternity- you're just caught in an
-          eternity of matrix juice erupting out of your throat.
+          You're one of- you're one of the most well known gays that keep coming in every stream, after you get banned
+          thousands of times to suck my virtual dick every stream. Because you fantasize about me ass naked with abs
+          chiseling, in a Urien thong. While I committed tyrant slaughter down your fucking throat, while I put you in
+          all type of aegis reflector setups, where you can't get out, you're forced to suck a dick, you're forced to
+          get pounded in your virtual ass. Then I bust matrix juice all down your throat till you choke, spit up,
+          everything you grubbed on. And it's just gonna erupt with green juices, and to the point and you're just
+          caught an eternity- you're just caught in an eternity of matrix juice erupting out of your throat.
         </p>
       </div>
 
@@ -55,15 +51,14 @@ layout: "wrapper"
         <p>{{ article.description }}</p>
         <p class="centerItem">
           <!-- display posts linked inside article markdown -->
-          {% assign post_linked = false %} {% for post in site.posts %} {% if
-          article.include contains post.title %} {% assign post_linked = true %}
+          {% assign post_linked = false %} {% for post in site.posts %} {% if article.include contains post.title %} {%
+          assign post_linked = true %}
           <a href="{{ post.url }}">{{ post.title }}</a>{% endif %} {% endfor %}
         </p>
       </div>
-      {% endfor %} {% for post in site.posts %} {% assign post_linked = false %}
-      {% for article in site.articles %} {% if article.include contains
-      post.title %} {% assign post_linked = true %} {% break %} {% endif %} {%
-      endfor %} {% unless post_linked %}
+      {% endfor %} {% for post in site.posts %} {% assign post_linked = false %} {% for article in site.articles %} {%
+      if article.include contains post.title %} {% assign post_linked = true %} {% break %} {% endif %} {% endfor %} {%
+      unless post_linked %}
       <div class="miniCard">
         <div class="cardHeader">
           <h2>{{ post.title }}</h2>

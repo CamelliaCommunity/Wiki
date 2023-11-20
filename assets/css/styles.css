@@ -860,19 +860,25 @@ img.sizingCSS {
 }
 
 /* markdown support for images */
-figure.makeSmaller {
-  float: none !important;
-  margin-left: 0 !important;
+figure.centerImage {
+  float: none;
+  text-align: center;
+  margin-left: 0;
 }
-figure.makeSmaller figcaption {
-  margin-bottom: 0 !important;
+figure.centerImage figcaption {
+  margin-bottom: 0;
+  text-align: center;
 }
 
-figure.articlePicture {
-  text-align: center;
+figure.floatImage {
   float: right;
   margin-left: 24px;
 }
+figure.floatImage figcaption {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
 figure.articlePicture img {
   border: 4px solid var(--secondaryColor1);
   border-radius: 10px;
@@ -885,10 +891,6 @@ figure.articlePicture img {
 figure.articlePicture img:hover {
   border: 4px solid var(--hoverColor);
   transform: scale(1.01);
-}
-figure.articlePicture figcaption {
-  margin-bottom: 12px;
-  text-align: center;
 }
 
 /* smaller screens/smartphones */

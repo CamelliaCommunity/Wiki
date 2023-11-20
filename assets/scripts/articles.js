@@ -67,7 +67,9 @@ images.forEach((image) => {
   figure.classList.add('articlePicture');  // Add the .articlePicture class
 
   if (image.width > 340) {
-    figure.classList.add('makeSmaller');
+    figure.classList.add('centerImage');
+  } else {
+    figure.classList.add('floatImage')
   }
 
   image.replaceWith(figure);
