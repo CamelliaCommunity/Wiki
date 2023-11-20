@@ -52,3 +52,29 @@ sections.forEach((section) => {
   // Track all sections that have an id applied
   observer.observe(section);
 });
+
+// Look for images within a "p" element, give them a figure and figcaption
+// element. the alt text will display as figcaption
+// We will also look for images within figures, if the image is wider than
+// 340 pixels, it will remove the float and margins
+const images = document.querySelectorAll('p > img');
+images.forEach((image) => {
+  const figure = document.createElement('figure');
+  const figcaption = document.createElement('figcaption');
+  figcaption.textContent = image.alt;
+  figure.appendChild(image.cloneNode(true));
+  figure.appendChild(figcaption);
+  figure.classList.add('articlePicture');  // Add the .articlePicture class
+
+  if (image.width > 340) {
+    figure.classList.add('makeSmaller');
+  }
+
+  image.replaceWith(figure);
+});
+
+// Test code
+sections.forEach(section => {
+  const id = section.getAttribute('id');
+  console.log(id);
+});
