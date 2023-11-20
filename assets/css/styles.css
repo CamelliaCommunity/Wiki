@@ -862,6 +862,7 @@ img.sizingCSS {
 /* markdown support for images */
 figure {
   float: right;
+  text-align: center;
   margin-left: 24px;
 }
 figure img {
