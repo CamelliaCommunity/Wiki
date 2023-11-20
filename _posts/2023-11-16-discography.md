@@ -7,14 +7,18 @@ author: a awesome author!
 description: Insert a awesome description!
 ---
 
-## \[diffraction\]
+## 2014
+
+### \[diffraction\]
 
 Released in 2014, diffraction blah blah blah blah
 
-- [Blast your headz with the railgun]()
+- [Blast your headz with the railgun](#)
 
-## Another Album
+## 2013
 
-Released in 2015, blah blah blah
+### Another Album/Single
+
+Released in 2013, blah blah blah
 
 - [Song name](#)
