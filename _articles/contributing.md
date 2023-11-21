@@ -47,7 +47,7 @@ When users click "Edit This Page!", they are sent to the page's GitHub, where th
 
 To add articles, you must create a new markdown file within the `_articles` folder. This allows the website to see the article and display it on the homepage. It must contain "front matter" to display content properly on the site.[^2] Front matter is the metadata and settings of a document. *Every article file should have the layout of `article`, and every post file should have the layout of `post`. More on posts later*.
 
-Since this site is relatively new and a work in progress, some front-matter contents may need to be fixed. Every document's main front matter elements are *`layout, title, categories, author, and description`*. An example for this markdown document is listed below.
+Since this site is relatively new and a work in progress, some front-matter contents may need to be fixed. Every document's main front matter elements are *`layout, title, categories, author, and description`*. An example for this is shown below.
 
 ```md
 ---
