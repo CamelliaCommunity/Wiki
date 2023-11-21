@@ -1,57 +1,84 @@
-// Script for adding content wedge with each h2 element
-
+createWedge();
 
 // Eaten from https://codepen.io/bramus/pen/ExaEqMJ
 // Highlight Contents wedge when user is in a new section of the page
 // Combined code to display new sections and highlight them
-const sections = document.querySelectorAll('h2[id]');
-const sectionsh3 = document.querySelectorAll('h3[id]');
-const wedgeItems = document.getElementById('wedgeItems');
-// Scroll to item
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((sectionEntry) => {
-    const id = sectionEntry.target.getAttribute('id');
-    const wedgeLink =
-        document.querySelector(`nav li a[href="#${id}"]`).parentElement;
-    if (sectionEntry.isIntersecting) {
-      wedgeLink.classList.add('active');
-    } else {
-      wedgeLink.classList.remove('active');
-    }
+function createWedge() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((sectionEntry) => {
+      const id = sectionEntry.target.getAttribute('id');
+      const wedgeLink =
+          document.querySelector(`nav li a[href="#${id}"]`).parentElement;
+
+      if (sectionEntry.isIntersecting)
+        wedgeLink.classList.add('active');
+      else
+        wedgeLink.classList.remove('active');
+    });
   });
-});
 
-// Display the sections in the content wedge
-sections.forEach((section) => {
-  const id = section.getAttribute('id');
-  const listItem = document.createElement('li');
-  const link = document.createElement('a');
-  link.href = `#${id}`;
-  link.textContent = section.textContent;
-  listItem.appendChild(link);
+  const cardContents = document.getElementsByClassName('cardContents')[0];
+  const wedgeItems = document.getElementById('wedgeItems').querySelector('ol');
 
-  // const subList = document.createElement('ul');
+  let lastHeader = null;
+  let currentList = null;
 
-  // Append the h3 sections as subitems
-  // sectionsh3.forEach((h3Section) => {
-  //   const h3Id = h3Section.getAttribute('id');
-  //   const h3ListItem = document.createElement('li');
-  //   const h3Link = document.createElement('a');
-  //   h3Link.href = `#${h3Id}`;
-  //   h3Link.textContent = h3Section.textContent;
-  //   h3ListItem.appendChild(h3Link);
-  //   subList.appendChild(h3ListItem);
+  /*
+   * Loop through all children of the cardContents
+   * so we know which h3s belong to which h2s
+   */
+  for (const child of cardContents.children) {
+    if (child.classList.contains('cardHeader')) {
+      if (currentList) {
+        lastHeader.appendChild(currentList);
+        currentList = null;
+        lastHeader = null;
+      }
 
-  //   // Track all h3 sections that have an id applied
-  //   observer.observe(h3Section);
-  // });
+      const h2 = child.querySelector('h2');
 
-  // listItem.appendChild(subList);
-  wedgeItems.querySelector('ol').appendChild(listItem);
+      const id = h2.getAttribute('id');
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = `#${id}`;
+      link.textContent = h2.textContent;
+      listItem.appendChild(link);
+      wedgeItems.appendChild(listItem);
 
-  // Track all sections that have an id applied
-  observer.observe(section);
-});
+      lastHeader = listItem;
+      observer.observe(h2);
+    }
+
+    if (child.tagName == 'H3') {
+      if (!lastHeader)  // in case someone puts an h3 before an h2
+        continue;
+
+      if (currentList == null) currentList = document.createElement('ul');
+
+      const subId = child.getAttribute('id');
+      const subItem = document.createElement('li');
+      const subLink = document.createElement('a');
+      subLink.href = `#${subId}`;
+      subLink.textContent = child.textContent;
+      subItem.appendChild(subLink);
+      currentList.appendChild(subItem);
+
+      observer.observe(child);
+    }
+  }
+
+  // add the last header and list to the wedge
+  if (lastHeader) {
+    wedgeItems.appendChild(lastHeader);
+
+    if (currentList) {
+      lastHeader.appendChild(currentList);
+      currentList = null;
+    }
+
+    lastHeader = null;
+  }
+}
 
 // Look for images within a "p" element, give them a figure and figcaption
 // element. the alt text will display as figcaption
@@ -64,15 +91,8 @@ images.forEach((image) => {
   figcaption.textContent = image.alt;
   figure.appendChild(image.cloneNode(true));
   figure.appendChild(figcaption);
-  figure.classList.add('articlePicture');  // Add the .articlePicture class
 
   figure.classList.add(image.width > 340 ? 'centerImage' : 'floatImage');
 
   image.replaceWith(figure);
-});
-
-// Test code
-sections.forEach(section => {
-  const id = section.getAttribute('id');
-  console.log(id);
 });
