@@ -42,7 +42,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 170px;
+  scroll-padding-top: 130px;
 }
 
 *,
