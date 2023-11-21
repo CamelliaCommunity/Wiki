@@ -2,7 +2,7 @@
 /* ONLY EDIT .SCSS FILES!!!!!!! */
 
 /* Import variables */
-@import "./variables.scss";
+@import "./variables", "./highlights";
 
 /* Import favorite font */
 @font-face {
@@ -336,19 +336,6 @@ a {
 a:hover {
   color: var(--linkHover);
   text-decoration: none;
-}
-
-/* placeholder colors for code blocks */
-pre {
-  background-color: black;
-  margin: 16px;
-  padding: 16px;
-  border: solid 4px gray;
-  border-radius: 25px;
-}
-
-code {
-  color: rgb(46, 238, 46);
 }
 
 /* Fixed button code */
@@ -805,12 +792,13 @@ em {
 
 /* this is for markdown footnotes */
 .footnote {
+  display: inline;
   color: var(--highlightColor);
   background-color: var(--pageBackground);
   border-radius: 10px;
   padding: 4px;
-  padding-bottom: 1px;
-  padding-top: 1px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 /* pictures */
