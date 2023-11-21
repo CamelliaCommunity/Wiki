@@ -7,7 +7,8 @@ function createWedge() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((sectionEntry) => {
       const id = sectionEntry.target.getAttribute('id');
-      const wedgeLink = document.querySelector(`nav li a[href="#${id}"]`).parentElement;
+      const wedgeLink =
+          document.querySelector(`nav li a[href="#${id}"]`).parentElement;
 
       if (sectionEntry.isIntersecting)
         wedgeLink.classList.add('active');
@@ -27,14 +28,14 @@ function createWedge() {
    * so we know which h3s belong to which h2s
    */
   for (const child of cardContents.children) {
-    if (child.classList.contains("cardHeader")) {
+    if (child.classList.contains('cardHeader')) {
       if (currentList) {
         lastHeader.appendChild(currentList);
         currentList = null;
         lastHeader = null;
       }
 
-      const h2 = child.querySelector("h2");
+      const h2 = child.querySelector('h2');
 
       const id = h2.getAttribute('id');
       const listItem = document.createElement('li');
@@ -48,12 +49,11 @@ function createWedge() {
       observer.observe(h2);
     }
 
-    if (child.tagName == "H3") {
-      if (!lastHeader) // in case someone puts an h3 before an h2
+    if (child.tagName == 'H3') {
+      if (!lastHeader)  // in case someone puts an h3 before an h2
         continue;
 
-      if (currentList == null)
-        currentList = document.createElement('ul');
+      if (currentList == null) currentList = document.createElement('ul');
 
       const subId = child.getAttribute('id');
       const subItem = document.createElement('li');
@@ -91,7 +91,7 @@ images.forEach((image) => {
   figcaption.textContent = image.alt;
   figure.appendChild(image.cloneNode(true));
   figure.appendChild(figcaption);
-  figure.classList.add('articlePicture'); // Add the .articlePicture class
+  // figure.classList.add('articlePicture');  // Add the .articlePicture class
 
   figure.classList.add(image.width > 340 ? 'centerImage' : 'floatImage');
 

@@ -7,8 +7,7 @@
 /* Import favorite font */
 @font-face {
   font-family: "Torus Pro SemiBold";
-  src: url("../fonts/toruspro-semibold.woff2") format("woff2"),
-    url("../fonts/toruspro-semibold.woff") format("woff");
+  src: url("../fonts/toruspro-semibold.woff2") format("woff2"), url("../fonts/toruspro-semibold.woff") format("woff");
   font-weight: 600;
 }
 
@@ -107,10 +106,7 @@ html {
 body {
   font-family: var(--font-default);
   font-size: 16px;
-  background: linear-gradient(180deg,
-      rgba(246, 65, 141, 0.2) 0%,
-      rgba(48, 37, 41, 0.2) 100%),
-    #111;
+  background: linear-gradient(180deg, rgba(246, 65, 141, 0.2) 0%, rgba(48, 37, 41, 0.2) 100%), #111;
   color: var(--textColorDefault);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   min-height: 100vh;
@@ -418,10 +414,12 @@ code {
 .cardHeader {
   font-family: var(--font-default);
   color: var(--textColorDefault);
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       rgba(102, 31, 87, 0.3) 0%,
       rgba(187, 58, 159, 0.12) 50.52%,
-      rgba(217, 130, 198, 0) 100%),
+      rgba(217, 130, 198, 0) 100%
+    ),
     var(--secondaryColor2);
   display: flex;
   // border-top: 1px solid var(--borderColor2);
@@ -683,7 +681,7 @@ i was mostly experimenting with figma design */
           display: flex;
           flex-direction: column;
           gap: 8px;
-        
+
           li {
             &::marker {
               // yes these spaces are supposed to be here
@@ -701,7 +699,7 @@ i was mostly experimenting with figma design */
   @include transition(all 0.2s ease-in-out);
 }
 
-#wedgeItems li.active>a {
+#wedgeItems li.active > a {
   color: var(--textColorDefault);
 }
 
@@ -863,6 +861,7 @@ em {
 }
 
 /* jank width and height for big images */
+/* may remove eventually */
 img.sizingCSS {
   max-width: 78%;
   max-height: 78%;
@@ -871,6 +870,27 @@ img.sizingCSS {
 /* markdown support for images */
 
 // this class is only applied in the javascript
+// figure.centerImage {
+//   float: none;
+//   text-align: center;
+//   margin-left: 0;
+
+//   figcaption {
+//     margin-bottom: 0;
+//     text-align: center;
+//   }
+// }
+
+// figure.floatImage {
+//   float: right;
+//   margin-left: 24px;
+
+//   figcaption {
+//     margin-bottom: 12px;
+//     text-align: center;
+//   }
+// }
+
 figure.centerImage {
   float: none;
   text-align: center;
@@ -879,6 +899,19 @@ figure.centerImage {
   figcaption {
     margin-bottom: 0;
     text-align: center;
+  }
+
+  img {
+    border: 4px solid var(--secondaryColor1);
+    border-radius: 10px;
+    // max-width: 50%; // We are going to need a standard of width and height images
+    // let's comment this out for now
+    @include transition(all 0.3s ease);
+  }
+
+  img:hover {
+    border: 4px solid var(--hoverColor);
+    transform: scale(1.01);
   }
 }
 
@@ -890,9 +923,7 @@ figure.floatImage {
     margin-bottom: 12px;
     text-align: center;
   }
-}
 
-figure.articlePicture {
   img {
     border: 4px solid var(--secondaryColor1);
     border-radius: 10px;
@@ -975,7 +1006,6 @@ figure.articlePicture {
 }
 
 @media screen and (max-width: 1416px) {
-
   /* since phones are weird there technically isnt hovering */
   #contentWedge {
     height: 472px;
