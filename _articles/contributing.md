@@ -47,7 +47,19 @@ When users click "Edit This Page!", they are sent to the page's GitHub, where th
 
 To add articles, you must create a new markdown file within the `_articles` folder. This allows the website to see the article and display it on the homepage. It must contain "front matter" to display content properly on the site.[^2] Front matter is the metadata and settings of a document. *Every article file should have the layout of `article`, and every post file should have the layout of `post`. More on posts later*.
 
-Since this site is relatively new and a work in progress, some front-matter contents may need to be fixed. Every document's main front matter elements are *`layout, title, categories, author, and description`*. More ways to include metadata will be coming soon!
+Since this site is relatively new and a work in progress, some front-matter contents may need to be fixed. Every document's main front matter elements are *`layout, title, categories, author, and description`*. An example for this markdown document is listed below.
+
+```md
+---
+layout: article
+title:  "How to Contribute"
+categories: articles
+author: papertek
+description: Read this to figure out how to contribute. Includes directions, guidelines, and more!
+---
+```
+
+More ways to include metadata will be coming soon!
 
 ### Posts
 
@@ -64,6 +76,19 @@ You could also "include" posts within articles! When a post is included in an ar
 To include a post within an article, you must add `include: (post name)` in the article's front matter. Once done, it will be displayed on the article pages' card, just like magic!
 
 ![Article Page with a Post attached](/assets/images/articleImages/contributing/examplepost.png)
+
+Markdown example of using `include` in the front matter.
+
+```md
+---
+layout: article
+title:  "Article Example"
+categories: articles
+author: ItMePeachy
+description: this is a description for an example article. follow this layout to know about things
+include: Example Post
+---
+```
 
 ### When to use Articles and Posts
 
