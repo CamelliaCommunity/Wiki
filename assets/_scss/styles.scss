@@ -604,7 +604,8 @@ i was mostly experimenting with figma design */
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
   border: 3px solid var(--secondaryColor2);
   border-left: none;
-  border-radius: 0 30px 30px 0;
+  border-bottom: none;
+  border-radius: 0 30px 0 0;
   width: 283px;
   height: 680px;
   // min-height: 1056px;
