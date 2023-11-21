@@ -91,7 +91,6 @@ images.forEach((image) => {
   figcaption.textContent = image.alt;
   figure.appendChild(image.cloneNode(true));
   figure.appendChild(figcaption);
-  // figure.classList.add('articlePicture');  // Add the .articlePicture class
 
   figure.classList.add(image.width > 340 ? 'centerImage' : 'floatImage');
 
