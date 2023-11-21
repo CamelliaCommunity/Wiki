@@ -646,17 +646,20 @@ i was mostly experimenting with figma design */
   padding-top: 16px;
   padding-left: 16px;
 }
+#contentWedge .vertLine {
+  margin-top: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+#contentWedge:hover {
+  opacity: 100%;
+}
 #contentWedge #wedgeItems {
   overflow-y: scroll;
   overflow: auto;
   font-size: 18px;
   height: 100%;
   padding: 16px 8px 16px 34px;
-}
-#contentWedge #wedgeItems .vertLine {
-  margin-top: 10px;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 #contentWedge #wedgeItems ol {
   display: flex;
@@ -665,9 +668,6 @@ i was mostly experimenting with figma design */
 }
 #contentWedge #wedgeItems ol li:last-child .vertLine {
   display: none;
-}
-#contentWedge #wedgeItems ol li:hover {
-  opacity: 100%;
 }
 #contentWedge #wedgeItems ol li::marker {
   color: var(--linkColor);

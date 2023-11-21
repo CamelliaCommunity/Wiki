@@ -633,18 +633,22 @@ i was mostly experimenting with figma design */
     padding-left: 16px;
   }
 
+  .vertLine {
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  &:hover {
+    opacity: 100%;
+  }
+
   #wedgeItems {
     overflow-y: scroll;
     overflow: auto;
     font-size: 18px;
     height: 100%;
     padding: 16px 8px 16px 34px;
-
-    .vertLine {
-      margin-top: 10px;
-      margin-left: 16px;
-      margin-right: 16px;
-    }
 
     ol {
       display: flex;
@@ -654,12 +658,6 @@ i was mostly experimenting with figma design */
       li {
         &:last-child .vertLine {
           display: none;
-        }
-
-        &:hover {
-          // to whoever added this
-          // this doesn't do shit
-          opacity: 100%;
         }
 
         &::marker {
