@@ -634,7 +634,7 @@ i was mostly experimenting with figma design */
   height: 680px;
   /* keep it to the bottom left of page */
   left: 0;
-  bottom: 80px;
+  bottom: 0;
   opacity: 60%;
   -webkit-transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;

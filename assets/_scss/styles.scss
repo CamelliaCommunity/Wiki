@@ -623,7 +623,8 @@ i was mostly experimenting with figma design */
   // min-height: 1056px;
   /* keep it to the bottom left of page */
   left: 0;
-  bottom: 80px;
+  bottom: 0;
+  // bottom: 80px;
   // bottom: -374px;
   opacity: 60%;
   @include transition(opacity 0.25s ease-in-out);
