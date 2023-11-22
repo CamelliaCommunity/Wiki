@@ -8,8 +8,8 @@
   /* colors */
   --pageBackground: #111;
   --primaryColor: #f075c5;
-  --secondaryColor1: #b775f0;
-  --secondaryColor2: #661f57;
+  --secondaryColor: #b775f0;
+  --tertiaryColor: #661f57;
   --hoverColor: #ff54a9;
   --highlightColor: rgb(202, 156, 255);
   --errorColor: #ef4040;
@@ -28,13 +28,12 @@
 
 /* placeholder colors for code blocks */
 code {
-  color: rgb(46, 238, 46);
+  color: #c3e88d;
 }
 
 div.highlighter-rouge,
 figure.highlight {
   position: relative;
-  margin-bottom: 1em;
   background: #263238;
   border: solid 4px gray;
   border-radius: 25px;
@@ -493,7 +492,7 @@ h6 {
 
 /* header */
 header {
-  background-color: var(--secondaryColor2);
+  background-color: var(--tertiaryColor);
   position: fixed;
   top: 0;
   width: 100%;
@@ -662,7 +661,7 @@ header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
 
 /* footer */
 footer {
-  background-color: var(--secondaryColor2);
+  background-color: var(--tertiaryColor);
   margin-top: auto;
   height: 70px;
   display: flex;
@@ -747,10 +746,42 @@ a:hover {
   margin-bottom: 32px;
 }
 
+blockquote {
+  position: relative;
+  background: var(--cardBackgroundColor);
+  border-left: solid 4px var(--tertiaryColor);
+  line-height: 1.8;
+  border-radius: 10px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  /* we really want to fix this */
+}
+blockquote p {
+  font-family: var(--font-semiBoldItalic) !important;
+  padding: 1em !important;
+}
+
+blockquote.disclaimer {
+  border-left: solid 4px #ffff00;
+  background: rgba(255, 255, 0, 0.1568627451);
+}
+
+blockquote.caution {
+  border-left: solid 4px #ef0400;
+  background: rgba(239, 4, 0, 0.1568627451);
+}
+
+blockquote.tip {
+  border-top: solid 4px var(--secondaryColor);
+  border-left: none;
+  background: rgba(183, 117, 240, 0.4235294118);
+}
+
 .cardHeader {
   font-family: var(--font-default);
   color: var(--textColorDefault);
-  background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%), var(--secondaryColor2);
+  background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%), var(--tertiaryColor);
   display: flex;
   border-top: 3px solid var(--borderColor2);
   border-bottom: 3px solid var(--borderColor2);
@@ -846,7 +877,7 @@ li p {
 .miniCard h2:before {
   content: "";
   display: inline-block;
-  background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
+  background: var(--secondaryColor) 0% 0% no-repeat padding-box;
   height: 22px;
   margin-right: 8px;
   width: 4px;
@@ -860,7 +891,7 @@ li p {
 .miniCard h3:before {
   content: "";
   display: inline-block;
-  background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
+  background: var(--secondaryColor) 0% 0% no-repeat padding-box;
   height: 20px;
   margin-right: 8px;
   width: 4px;
@@ -936,7 +967,7 @@ i was mostly experimenting with figma design */
   display: flex;
   flex-direction: column;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 3px solid var(--secondaryColor2);
+  border: 3px solid var(--tertiaryColor);
   border-left: none;
   border-bottom: none;
   border-radius: 0 30px 0 0;
@@ -1078,7 +1109,7 @@ em {
   flex-direction: column;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
   box-sizing: border-box;
-  border: 3px solid var(--secondaryColor2);
+  border: 3px solid var(--tertiaryColor);
   border-radius: 40px;
   padding: 40px;
   margin-bottom: 72px;
@@ -1127,7 +1158,7 @@ em {
 
 /* pictures */
 .picture figure {
-  background: var(--secondaryColor2) 0% 0% no-repeat padding-box;
+  background: var(--tertiaryColor) 0% 0% no-repeat padding-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1141,7 +1172,7 @@ em {
 }
 
 .picture img {
-  border: 4px solid var(--secondaryColor1);
+  border: 4px solid var(--secondaryColor);
   border-radius: 10px;
   margin-top: 24px;
   margin-left: 40px;
@@ -1193,7 +1224,7 @@ figure.centerImage figcaption {
   text-align: center;
 }
 figure.centerImage img {
-  border: 4px solid var(--secondaryColor1);
+  border: 4px solid var(--secondaryColor);
   border-radius: 10px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1215,7 +1246,7 @@ figure.floatImage figcaption {
   text-align: center;
 }
 figure.floatImage img {
-  border: 4px solid var(--secondaryColor1);
+  border: 4px solid var(--secondaryColor);
   border-radius: 10px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
