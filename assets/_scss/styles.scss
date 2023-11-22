@@ -2,7 +2,7 @@
 /* ONLY EDIT .SCSS FILES!!!!!!! */
 
 /* Import variables */
-@import "./variables.scss";
+@import "./variables", "./highlights", "./mobile";
 
 /* Import favorite font */
 @font-face {
@@ -31,7 +31,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 170px;
+  scroll-padding-top: 130px;
 }
 
 *,
@@ -163,7 +163,7 @@ h6 {
 
 /* header */
 header {
-  background-color: var(--secondaryColor2);
+  background-color: var(--tertiaryColor);
   position: fixed;
   top: 0;
   width: 100%;
@@ -313,7 +313,7 @@ header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
 
 /* footer */
 footer {
-  background-color: var(--secondaryColor2);
+  background-color: var(--tertiaryColor);
   margin-top: auto;
   height: 70px;
   display: flex;
@@ -336,19 +336,6 @@ a {
 a:hover {
   color: var(--linkHover);
   text-decoration: none;
-}
-
-/* placeholder colors for code blocks */
-pre {
-  background-color: black;
-  margin: 16px;
-  padding: 16px;
-  border: solid 4px gray;
-  border-radius: 25px;
-}
-
-code {
-  color: rgb(46, 238, 46);
 }
 
 /* Fixed button code */
@@ -411,6 +398,42 @@ code {
   margin-bottom: 32px;
 }
 
+.albumCard {
+}
+
+blockquote {
+  position: relative;
+  background: var(--cardBackgroundColor);
+  border-left: solid 4px var(--tertiaryColor);
+  line-height: 1.8;
+  border-radius: 10px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+
+  /* we really want to fix this */
+  p {
+    font-family: var(--font-semiBoldItalic) !important;
+    padding: 1em !important;
+  }
+}
+
+blockquote.disclaimer {
+  border-left: solid 4px #ffff00;
+  background: #ffff0028;
+}
+
+blockquote.caution {
+  border-left: solid 4px #ef0400;
+  background: #ef040028;
+}
+
+blockquote.tip {
+  border-top: solid 4px var(--secondaryColor);
+  border-left: none;
+  background: #b775f06c;
+}
+
 .cardHeader {
   font-family: var(--font-default);
   color: var(--textColorDefault);
@@ -420,7 +443,7 @@ code {
       rgba(187, 58, 159, 0.12) 50.52%,
       rgba(217, 130, 198, 0) 100%
     ),
-    var(--secondaryColor2);
+    var(--tertiaryColor);
   display: flex;
   // border-top: 1px solid var(--borderColor2);
   border-top: 3px solid var(--borderColor2);
@@ -522,7 +545,7 @@ li p {
 .miniCard h2:before {
   content: "";
   display: inline-block;
-  background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
+  background: var(--secondaryColor) 0% 0% no-repeat padding-box;
   height: 22px;
   margin-right: 8px;
   width: 4px;
@@ -536,7 +559,7 @@ li p {
 .miniCard h3:before {
   content: "";
   display: inline-block;
-  background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
+  background: var(--secondaryColor) 0% 0% no-repeat padding-box;
   height: 20px;
   margin-right: 8px;
   width: 4px;
@@ -615,15 +638,17 @@ i was mostly experimenting with figma design */
   display: flex;
   flex-direction: column;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 3px solid var(--secondaryColor2);
+  border: 3px solid var(--tertiaryColor);
   border-left: none;
-  border-radius: 0 30px 30px 0;
+  border-bottom: none;
+  border-radius: 0 30px 0 0;
   width: 283px;
   height: 680px;
   // min-height: 1056px;
   /* keep it to the bottom left of page */
   left: 0;
-  bottom: 80px;
+  bottom: 0;
+  // bottom: 80px;
   // bottom: -374px;
   opacity: 60%;
   @include transition(opacity 0.25s ease-in-out);
@@ -633,18 +658,22 @@ i was mostly experimenting with figma design */
     padding-left: 16px;
   }
 
+  .vertLine {
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  &:hover {
+    opacity: 100%;
+  }
+
   #wedgeItems {
     overflow-y: scroll;
     overflow: auto;
     font-size: 18px;
     height: 100%;
     padding: 16px 8px 16px 34px;
-
-    .vertLine {
-      margin-top: 10px;
-      margin-left: 16px;
-      margin-right: 16px;
-    }
 
     ol {
       display: flex;
@@ -654,12 +683,6 @@ i was mostly experimenting with figma design */
       li {
         &:last-child .vertLine {
           display: none;
-        }
-
-        &:hover {
-          // to whoever added this
-          // this doesn't do shit
-          opacity: 100%;
         }
 
         &::marker {
@@ -762,7 +785,7 @@ em {
   flex-direction: column;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
   box-sizing: border-box;
-  border: 3px solid var(--secondaryColor2);
+  border: 3px solid var(--tertiaryColor);
   border-radius: 40px;
   padding: 40px;
   margin-bottom: 72px;
@@ -806,17 +829,18 @@ em {
 
 /* this is for markdown footnotes */
 .footnote {
+  display: inline;
   color: var(--highlightColor);
   background-color: var(--pageBackground);
   border-radius: 10px;
   padding: 4px;
-  padding-bottom: 1px;
-  padding-top: 1px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 /* pictures */
 .picture figure {
-  background: var(--secondaryColor2) 0% 0% no-repeat padding-box;
+  background: var(--tertiaryColor) 0% 0% no-repeat padding-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -830,7 +854,7 @@ em {
 }
 
 .picture img {
-  border: 4px solid var(--secondaryColor1);
+  border: 4px solid var(--secondaryColor);
   border-radius: 10px;
   margin-top: 24px;
   margin-left: 40px;
@@ -881,7 +905,7 @@ figure.centerImage {
   }
 
   img {
-    border: 4px solid var(--secondaryColor1);
+    border: 4px solid var(--secondaryColor);
     border-radius: 10px;
     // max-width: 50%; // We are going to need a standard of width and height images
     // let's comment this out for now
@@ -904,7 +928,7 @@ figure.floatImage {
   }
 
   img {
-    border: 4px solid var(--secondaryColor1);
+    border: 4px solid var(--secondaryColor);
     border-radius: 10px;
     // max-width: 50%; // We are going to need a standard of width and height images
     // let's comment this out for now
@@ -917,7 +941,7 @@ figure.floatImage {
   }
 }
 
-/* smaller screens/smartphones */
+/* smaller screens */
 @media screen and (max-width: 1475px) {
   header {
     .wikiLogo a {
@@ -983,6 +1007,8 @@ figure.floatImage {
     }
   }
 }
+
+/* smaller screens/smartphones (to be removed or reworked later) */
 
 @media screen and (max-width: 1416px) {
   /* since phones are weird there technically isnt hovering */

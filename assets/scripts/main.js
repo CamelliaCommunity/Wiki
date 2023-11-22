@@ -46,3 +46,18 @@ h2Elements.forEach((h2) => {
   h2.parentNode.insertBefore(div, h2);
   div.appendChild(h2);
 });
+
+
+// Test code
+// const IMAGES = document.querySelectorAll('img');
+
+// for (let i = 0; i < IMAGES.length; i++) {
+//   let imgSrc = IMAGES[i].getAttribute('src');
+//   imgSrc = imgSrc.slice(0, -8)
+
+//   console.log(imgSrc);
+// }
+
+// function makeSrcset(imgSrc) {
+//   let markup = [];
+// }

@@ -6,11 +6,9 @@ author: papertek
 description: Read this to figure out how to contribute. Includes directions, guidelines, and more!
 ---
 
-## Introduction
+## Our Standards
 
 You want to help with this site and contribute? That's awesome! Let's get started with some basics.
-
-## Our Standards
 
 Our standards remain the same or similar when you read the announcements section of the [Staff Guidelines]({% link staffGuidelines.md %}). To point things out, the important parts of the Staff Guidelines will be listed here and reworded for ease of use.
 
@@ -47,7 +45,19 @@ When users click "Edit This Page!", they are sent to the page's GitHub, where th
 
 To add articles, you must create a new markdown file within the `_articles` folder. This allows the website to see the article and display it on the homepage. It must contain "front matter" to display content properly on the site.[^2] Front matter is the metadata and settings of a document. *Every article file should have the layout of `article`, and every post file should have the layout of `post`. More on posts later*.
 
-Since this site is relatively new and a work in progress, some front-matter contents may need to be fixed. Every document's main front matter elements are *`layout, title, categories, author, and description`*. More ways to include metadata will be coming soon!
+Since this site is relatively new and a work in progress, some front-matter contents may need to be fixed. Every document's main front matter elements are *`layout, title, categories, author, and description`*. An example for this is shown below.
+
+```md
+---
+layout: article
+title:  "How to Contribute"
+categories: articles
+author: papertek
+description: Read this to figure out how to contribute. Includes directions, guidelines, and more!
+---
+```
+
+More ways to include metadata will be coming soon!
 
 ### Posts
 
@@ -65,17 +75,86 @@ To include a post within an article, you must add `include: (post name)` in the 
 
 ![Article Page with a Post attached](/assets/images/articleImages/contributing/examplepost.png)
 
+Markdown example of using `include` in the front matter.
+
+```md
+---
+layout: article
+title:  "Article Example"
+categories: articles
+author: ItMePeachy
+description: this is a description for an example article. follow this layout to know about things
+include: Example Post
+---
+```
+
 ### When to use Articles and Posts
 
 ---
 
 While articles and posts have very similar layouts, they function differently. Articles are supposed to be used *only* when the document content is very long and there are different sections. Article layouts have features such as content wedges and IDs applied to headers. Posts are meant for smaller bits of information that usually don't have a scrollbar. This includes quick, small messages and similar. Eventually, navigating between posts and articles will be better. You are free to contribute code whenever!
 
-### Disclaimer
+> As a *temporary* solution to display things correctly on the Homepage, some posts may have the article layout applied to them. *THIS IS ONLY IF ABSOLUTELY NECESSARY. DO NOT DO IT YOURSELF UNLESS YOU HAVE PERMISSION*.
+{: .disclaimer }
+
+## Styles
+
+While this site has markdown support, it also has a extended version of markdown called [kramdown](https://kramdown.gettalong.org/index.html). Kramdown is a library for parsing and converting superset of Markdown.[^3]  Essentially, kramdown is the same as markdown but expanded. What kramdown offers is adding CSS classes or IDs to specific parts of a document. Examples will be listed below.
+
+### Codeblocks
 
 ---
 
-As a *temporary* solution to display things correctly on the Homepage, some posts may have the article layout applied to them. *THIS IS ONLY IF ABSOLUTELY NECESSARY. DO NOT DO IT YOURSELF UNLESS YOU HAVE PERMISSION*.
+This is a code block example! If you're familar with Discord's markdown then you should reconize this.
+
+```md
+\```ruby
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+
+# => prints 'Hi, Tom' to STDOUT
+\```
+```
+
+By removing the backslashes and specifying the programming language, it would be correctly displayed as a code block. To review more on this, visit the kramdown cheat sheet [here](https://kramdown.gettalong.org/quickref.html).
+
+### Blockquotes
+
+---
+
+Blockquotes are preferred to be only used in articles, they function as a way to give a "heads up" to the reader. Examples for default blockquotes and styles will be listed below.
+
+> This is a default blockquote
+
+> This is a disclaimer blockquote.
+{: .disclaimer }
+
+> This is a caution blockquote.
+{: .caution }
+
+> This is a tip blockquote.
+{: .tip }
+
+To use blockquotes, you must type a > before a sentence. To apply different attributes (classes), you must type the attribute and class name \{: (class/ID name)\}.
+
+To give you an example of what blockquotes should look like in markdown, it will be listed below.
+
+```md
+> This is a default blockquote
+
+> This is a disclaimer blockquote.
+{: .disclaimer }
+
+> This is a caution blockquote.
+{: .caution }
+
+> This is a tip blockquote.
+{: .tip }
+```
+
+To learn more about blockquotes, please visit the kramdown cheat sheet [here](https://kramdown.gettalong.org/quickref.html).
 
 ## Code Contribution
 
@@ -119,3 +198,5 @@ This is it for contribution. Almost all articles and posts are editable for the 
 [^1]: [What is Markdown?](https://www.knowledgehut.com/blog/web-development/what-is-markdown)
 
 [^2]: [Front Matter](https://frontmatter.codes/docs/markdown)
+
+[^3]: [kramdown](https://kramdown.gettalong.org/index.html)

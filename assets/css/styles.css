@@ -8,8 +8,8 @@
   /* colors */
   --pageBackground: #111;
   --primaryColor: #f075c5;
-  --secondaryColor1: #b775f0;
-  --secondaryColor2: #661f57;
+  --secondaryColor: #b775f0;
+  --tertiaryColor: #661f57;
   --hoverColor: #ff54a9;
   --highlightColor: rgb(202, 156, 255);
   --errorColor: #ef4040;
@@ -26,6 +26,327 @@
   --linkHover: #88e7e7;
 }
 
+/* placeholder colors for code blocks */
+code {
+  color: #c3e88d;
+}
+
+div.highlighter-rouge,
+figure.highlight {
+  position: relative;
+  background: #263238;
+  border: solid 4px gray;
+  border-radius: 25px;
+  color: #eff;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  line-height: 1.8;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+div.highlighter-rouge > pre,
+div.highlighter-rouge pre.highlight,
+figure.highlight > pre,
+figure.highlight pre.highlight {
+  margin: 0;
+  padding: 1em;
+}
+
+.highlight table {
+  margin-bottom: 0;
+  font-size: 1em;
+  border: 0;
+}
+
+.highlight table td {
+  padding: 0;
+  width: calc(100% - 1em);
+  border: 0;
+}
+
+.highlight table td.gutter,
+.highlight table td.rouge-gutter {
+  padding-right: 1em;
+  width: 1em;
+  color: #b2ccd6;
+  border-right: 1px solid #b2ccd6;
+  text-align: right;
+}
+
+.highlight table td.code,
+.highlight table td.rouge-code {
+  padding-left: 1em;
+}
+
+.highlight table pre {
+  margin: 0;
+}
+
+.highlight pre {
+  width: 100%;
+}
+
+.highlight .hll {
+  background-color: #eff;
+}
+
+.highlight .c {
+  color: #b2ccd6;
+}
+
+.highlight .err {
+  color: #f07178;
+}
+
+.highlight .k {
+  color: #c792ea;
+}
+
+.highlight .l {
+  color: #f78c6c;
+}
+
+.highlight .n {
+  color: #eff;
+}
+
+.highlight .o {
+  color: #89ddff;
+}
+
+.highlight .p {
+  color: #eff;
+}
+
+.highlight .cm {
+  color: #b2ccd6;
+}
+
+.highlight .cp {
+  color: #b2ccd6;
+}
+
+.highlight .c1 {
+  color: #b2ccd6;
+}
+
+.highlight .cs {
+  color: #b2ccd6;
+}
+
+.highlight .gd {
+  color: #f07178;
+}
+
+.highlight .ge {
+  font-style: italic;
+}
+
+.highlight .gh {
+  color: #eff;
+  font-weight: bold;
+}
+
+.highlight .gi {
+  color: #c3e88d;
+}
+
+.highlight .gp {
+  color: #b2ccd6;
+  font-weight: bold;
+}
+
+.highlight .gs {
+  font-weight: bold;
+}
+
+.highlight .gu {
+  color: #89ddff;
+  font-weight: bold;
+}
+
+.highlight .kc {
+  color: #c792ea;
+}
+
+.highlight .kd {
+  color: #c792ea;
+}
+
+.highlight .kn {
+  color: #89ddff;
+}
+
+.highlight .kp {
+  color: #c792ea;
+}
+
+.highlight .kr {
+  color: #c792ea;
+}
+
+.highlight .kt {
+  color: #ffcb6b;
+}
+
+.highlight .ld {
+  color: #c3e88d;
+}
+
+.highlight .m {
+  color: #f78c6c;
+}
+
+.highlight .s {
+  color: #c3e88d;
+}
+
+.highlight .na {
+  color: #82aaff;
+}
+
+.highlight .nb {
+  color: #eff;
+}
+
+.highlight .nc {
+  color: #ffcb6b;
+}
+
+.highlight .no {
+  color: #f07178;
+}
+
+.highlight .nd {
+  color: #89ddff;
+}
+
+.highlight .ni {
+  color: #eff;
+}
+
+.highlight .ne {
+  color: #f07178;
+}
+
+.highlight .nf {
+  color: #82aaff;
+}
+
+.highlight .nl {
+  color: #eff;
+}
+
+.highlight .nn {
+  color: #ffcb6b;
+}
+
+.highlight .nx {
+  color: #82aaff;
+}
+
+.highlight .py {
+  color: #eff;
+}
+
+.highlight .nt {
+  color: #89ddff;
+}
+
+.highlight .nv {
+  color: #f07178;
+}
+
+.highlight .ow {
+  color: #89ddff;
+}
+
+.highlight .w {
+  color: #eff;
+}
+
+.highlight .mf {
+  color: #f78c6c;
+}
+
+.highlight .mh {
+  color: #f78c6c;
+}
+
+.highlight .mi {
+  color: #f78c6c;
+}
+
+.highlight .mo {
+  color: #f78c6c;
+}
+
+.highlight .sb {
+  color: #c3e88d;
+}
+
+.highlight .sc {
+  color: #eff;
+}
+
+.highlight .sd {
+  color: #b2ccd6;
+}
+
+.highlight .s2 {
+  color: #c3e88d;
+}
+
+.highlight .se {
+  color: #f78c6c;
+}
+
+.highlight .sh {
+  color: #c3e88d;
+}
+
+.highlight .si {
+  color: #f78c6c;
+}
+
+.highlight .sx {
+  color: #c3e88d;
+}
+
+.highlight .sr {
+  color: #c3e88d;
+}
+
+.highlight .s1 {
+  color: #c3e88d;
+}
+
+.highlight .ss {
+  color: #c3e88d;
+}
+
+.highlight .bp {
+  color: #eff;
+}
+
+.highlight .vc {
+  color: #f07178;
+}
+
+.highlight .vg {
+  color: #f07178;
+}
+
+.highlight .vi {
+  color: #f07178;
+}
+
+.highlight .il {
+  color: #f78c6c;
+}
+
+/* for mobile layout and stuff */
 /* Import favorite font */
 @font-face {
   font-family: "Torus Pro SemiBold";
@@ -42,7 +363,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 170px;
+  scroll-padding-top: 130px;
 }
 
 *,
@@ -171,7 +492,7 @@ h6 {
 
 /* header */
 header {
-  background-color: var(--secondaryColor2);
+  background-color: var(--tertiaryColor);
   position: fixed;
   top: 0;
   width: 100%;
@@ -340,7 +661,7 @@ header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
 
 /* footer */
 footer {
-  background-color: var(--secondaryColor2);
+  background-color: var(--tertiaryColor);
   margin-top: auto;
   height: 70px;
   display: flex;
@@ -363,19 +684,6 @@ a {
 a:hover {
   color: var(--linkHover);
   text-decoration: none;
-}
-
-/* placeholder colors for code blocks */
-pre {
-  background-color: black;
-  margin: 16px;
-  padding: 16px;
-  border: solid 4px gray;
-  border-radius: 25px;
-}
-
-code {
-  color: rgb(46, 238, 46);
 }
 
 /* Fixed button code */
@@ -438,10 +746,42 @@ code {
   margin-bottom: 32px;
 }
 
+blockquote {
+  position: relative;
+  background: var(--cardBackgroundColor);
+  border-left: solid 4px var(--tertiaryColor);
+  line-height: 1.8;
+  border-radius: 10px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  /* we really want to fix this */
+}
+blockquote p {
+  font-family: var(--font-semiBoldItalic) !important;
+  padding: 1em !important;
+}
+
+blockquote.disclaimer {
+  border-left: solid 4px #ffff00;
+  background: rgba(255, 255, 0, 0.1568627451);
+}
+
+blockquote.caution {
+  border-left: solid 4px #ef0400;
+  background: rgba(239, 4, 0, 0.1568627451);
+}
+
+blockquote.tip {
+  border-top: solid 4px var(--secondaryColor);
+  border-left: none;
+  background: rgba(183, 117, 240, 0.4235294118);
+}
+
 .cardHeader {
   font-family: var(--font-default);
   color: var(--textColorDefault);
-  background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%), var(--secondaryColor2);
+  background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%), var(--tertiaryColor);
   display: flex;
   border-top: 3px solid var(--borderColor2);
   border-bottom: 3px solid var(--borderColor2);
@@ -537,7 +877,7 @@ li p {
 .miniCard h2:before {
   content: "";
   display: inline-block;
-  background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
+  background: var(--secondaryColor) 0% 0% no-repeat padding-box;
   height: 22px;
   margin-right: 8px;
   width: 4px;
@@ -551,7 +891,7 @@ li p {
 .miniCard h3:before {
   content: "";
   display: inline-block;
-  background: var(--secondaryColor1) 0% 0% no-repeat padding-box;
+  background: var(--secondaryColor) 0% 0% no-repeat padding-box;
   height: 20px;
   margin-right: 8px;
   width: 4px;
@@ -627,14 +967,15 @@ i was mostly experimenting with figma design */
   display: flex;
   flex-direction: column;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 3px solid var(--secondaryColor2);
+  border: 3px solid var(--tertiaryColor);
   border-left: none;
-  border-radius: 0 30px 30px 0;
+  border-bottom: none;
+  border-radius: 0 30px 0 0;
   width: 283px;
   height: 680px;
   /* keep it to the bottom left of page */
   left: 0;
-  bottom: 80px;
+  bottom: 0;
   opacity: 60%;
   -webkit-transition: opacity 0.25s ease-in-out;
   -moz-transition: opacity 0.25s ease-in-out;
@@ -646,17 +987,20 @@ i was mostly experimenting with figma design */
   padding-top: 16px;
   padding-left: 16px;
 }
+#contentWedge .vertLine {
+  margin-top: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+#contentWedge:hover {
+  opacity: 100%;
+}
 #contentWedge #wedgeItems {
   overflow-y: scroll;
   overflow: auto;
   font-size: 18px;
   height: 100%;
   padding: 16px 8px 16px 34px;
-}
-#contentWedge #wedgeItems .vertLine {
-  margin-top: 10px;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 #contentWedge #wedgeItems ol {
   display: flex;
@@ -665,9 +1009,6 @@ i was mostly experimenting with figma design */
 }
 #contentWedge #wedgeItems ol li:last-child .vertLine {
   display: none;
-}
-#contentWedge #wedgeItems ol li:hover {
-  opacity: 100%;
 }
 #contentWedge #wedgeItems ol li::marker {
   color: var(--linkColor);
@@ -768,7 +1109,7 @@ em {
   flex-direction: column;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
   box-sizing: border-box;
-  border: 3px solid var(--secondaryColor2);
+  border: 3px solid var(--tertiaryColor);
   border-radius: 40px;
   padding: 40px;
   margin-bottom: 72px;
@@ -806,17 +1147,18 @@ em {
 
 /* this is for markdown footnotes */
 .footnote {
+  display: inline;
   color: var(--highlightColor);
   background-color: var(--pageBackground);
   border-radius: 10px;
   padding: 4px;
-  padding-bottom: 1px;
-  padding-top: 1px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 /* pictures */
 .picture figure {
-  background: var(--secondaryColor2) 0% 0% no-repeat padding-box;
+  background: var(--tertiaryColor) 0% 0% no-repeat padding-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -830,7 +1172,7 @@ em {
 }
 
 .picture img {
-  border: 4px solid var(--secondaryColor1);
+  border: 4px solid var(--secondaryColor);
   border-radius: 10px;
   margin-top: 24px;
   margin-left: 40px;
@@ -882,7 +1224,7 @@ figure.centerImage figcaption {
   text-align: center;
 }
 figure.centerImage img {
-  border: 4px solid var(--secondaryColor1);
+  border: 4px solid var(--secondaryColor);
   border-radius: 10px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -904,7 +1246,7 @@ figure.floatImage figcaption {
   text-align: center;
 }
 figure.floatImage img {
-  border: 4px solid var(--secondaryColor1);
+  border: 4px solid var(--secondaryColor);
   border-radius: 10px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -917,7 +1259,7 @@ figure.floatImage img:hover {
   transform: scale(1.01);
 }
 
-/* smaller screens/smartphones */
+/* smaller screens */
 @media screen and (max-width: 1475px) {
   header .wikiLogo a {
     width: 100%;
@@ -967,6 +1309,7 @@ figure.floatImage img:hover {
     height: 32px;
   }
 }
+/* smaller screens/smartphones (to be removed or reworked later) */
 @media screen and (max-width: 1416px) {
   /* since phones are weird there technically isnt hovering */
   #contentWedge {
