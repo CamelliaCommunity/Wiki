@@ -442,7 +442,7 @@ header .header-shared h1 a img {
   }
   header.sticky h1 a {
     padding: 0px;
-    border: 0px solid var(--borderColor);
+    border: 0px solid transparent;
   }
   header.sticky h1 a:hover {
     color: var(--borderColor);
