@@ -386,6 +386,7 @@ header .header-shared h1 a img {
 @media screen and not (max-width: 1024px) {
   header {
     height: 150px;
+    border-radius: 0 0 25px 25px;
   }
   header .header-shared {
     flex-direction: row;
