@@ -1,0 +1,49 @@
+header {
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  background-color: var(--tertiaryColor);
+  transition: height 0.2s ease-in-out;
+
+  .header-shared {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    transition: transform 0.2s;
+    overflow: hidden;
+
+    h1 {
+      text-shadow: none;
+
+      a {
+        color: var(--borderColor);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        transition: font-size 0.2s;
+
+        img {
+          width: font-size 0.2s;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * These files are split like this so 
+ * that we don't have to spam !important
+ */
+
+@media screen and not (max-width: 1024px) {
+  @import "./desktop";
+}
+
+@media screen and (max-width: 1024px) {
+  @import "./mobile";
+}
