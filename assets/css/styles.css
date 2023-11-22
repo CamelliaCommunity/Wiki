@@ -346,7 +346,199 @@ figure.highlight pre.highlight {
   color: #f78c6c;
 }
 
-/* for mobile layout and stuff */
+header {
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  background-color: var(--tertiaryColor);
+  transition: height 0.2s;
+}
+header .header-shared {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+header .header-shared h1 {
+  text-shadow: none;
+}
+header .header-shared h1 a {
+  color: var(--borderColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  transition: font-size 0.2s;
+}
+header .header-shared h1 a img {
+  width: font-size 0.2s;
+}
+
+/*
+ * These files are split like this so 
+ * that we don't have to spam !important
+ */
+@media screen and not (max-width: 1024px) {
+  header {
+    height: 150px;
+    border-radius: 0 0 25px 25px;
+  }
+  header .header-shared {
+    flex-direction: row;
+    min-height: 100%;
+    justify-content: space-between;
+  }
+  header .header-shared h1 {
+    margin: auto;
+  }
+  header .header-shared h1 a {
+    gap: 8px;
+    font-size: 42px;
+    border: 8px solid var(--borderColor);
+    height: 100px;
+    border-radius: 50px;
+    padding: 0 20px;
+    transition: all 0.2s;
+  }
+  header .header-shared h1 a img {
+    width: 64px;
+  }
+  header .header-shared h1 a:hover {
+    color: var(--pageBackground);
+    background-color: var(--borderColor);
+  }
+  header .header-shared #navigationButtons > div {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header .header-shared #navigationButtons > div a {
+    transition: all 0.2s;
+  }
+}
+@media screen and (not (max-width: 1024px)) and (max-width: 1500px) {
+  header .header-shared h1 a {
+    padding: 0px;
+    border: 0px solid var(--borderColor);
+  }
+  header .header-shared h1 a:hover {
+    color: var(--borderColor);
+    background-color: transparent;
+  }
+  header .header-shared #navigationButtons > div a {
+    width: 150px;
+  }
+  header .header-shared #navigationButtons > div a:hover::after {
+    width: 150px;
+  }
+}
+@media screen and not (max-width: 1024px) {
+  header.sticky {
+    height: 100px;
+  }
+  header.sticky h1 a {
+    padding: 0px;
+    border: 0px solid transparent;
+  }
+  header.sticky h1 a:hover {
+    color: var(--borderColor);
+    background-color: transparent;
+  }
+  header.sticky #navigationButtons {
+    gap: 4px;
+  }
+  header.sticky #navigationButtons > div a {
+    border-radius: 0px;
+  }
+  header.sticky #navigationButtons > div:first-child a {
+    border-radius: 25px 0 0 25px;
+  }
+  header.sticky #navigationButtons > div:last-child a {
+    border-radius: 0 25px 25px 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100px;
+    transition: all 0.2s;
+  }
+  header .header-shared {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+    gap: 10px;
+  }
+  header .header-shared h1 a {
+    gap: 5px;
+    font-size: 28px;
+  }
+  header .header-shared h1 a img {
+    width: 32px;
+  }
+  header .header-shared #navigationButtons {
+    margin: 0;
+    gap: 2px;
+  }
+  header .header-shared #navigationButtons > div:first-child,
+  header .header-shared #navigationButtons > div:last-child {
+    display: none;
+  }
+  header .header-shared #navigationButtons > div {
+    width: 140px;
+    height: 32px;
+  }
+  header .header-shared #navigationButtons > div a {
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    width: 140px;
+    height: 32px;
+    font-size: 14px;
+  }
+  header .header-shared #navigationButtons > div a:hover::after {
+    width: 140px;
+  }
+  header .header-shared #navigationButtons > div:nth-child(2) a {
+    border-radius: 20px 5px 5px 20px;
+  }
+  header .header-shared #navigationButtons > div:nth-child(3) a {
+    border-radius: 5px 20px 20px 5px;
+  }
+  header .header-mobile-scroll {
+    transition: transform 0.2s;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  header .header-mobile-scroll h1 {
+    text-shadow: none;
+  }
+  header .header-mobile-scroll h1 a {
+    color: var(--borderColor);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+  }
+  header .header-mobile-scroll h1 a img {
+    width: 32px;
+  }
+  header.sticky {
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  }
+  header.sticky .header-shared {
+    transform: translateY(-100px);
+  }
+  header.sticky .header-mobile-scroll {
+    transform: translateY(-100px);
+  }
+}
 /* Import favorite font */
 @font-face {
   font-family: "Torus Pro SemiBold";
@@ -490,140 +682,6 @@ h6 {
   font-size: 20.25px;
 }
 
-/* header */
-header {
-  background-color: var(--tertiaryColor);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 148px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-/* logos and titles for header */
-header .pageTitle {
-  font: normal normal 600 42px/21px var(--font-default);
-  background-color: var(--cardColor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 389px;
-  height: 100px;
-  border: 1px solid var(--borderColor);
-  border-radius: 10px;
-  margin: auto;
-  /* aligns entire row */
-}
-
-/* Wiki logo */
-header .wikiLogo {
-  margin: auto;
-  text-shadow: none;
-  /* ensure stupid image isnt messed up with the global images style */
-}
-header .wikiLogo a {
-  font-size: 42px;
-  color: var(--borderColor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 389px;
-  height: 100px;
-  border: 8px solid var(--borderColor);
-  border-radius: 50px;
-  -webkit-transition: all 0.3s, background-color, 0.3s ease-in-out;
-  -moz-transition: all 0.3s, background-color, 0.3s ease-in-out;
-  -ms-transition: all 0.3s, background-color, 0.3s ease-in-out;
-  -o-transition: all 0.3s, background-color, 0.3s ease-in-out;
-  transition: all 0.3s, background-color, 0.3s ease-in-out;
-}
-header .wikiLogo a:hover {
-  color: var(--pageBackground);
-  background-color: var(--borderColor);
-}
-header .wikiLogo img {
-  float: none;
-  padding-right: 8px;
-  width: 64px;
-  height: auto;
-  border: none;
-  border-radius: 0;
-  margin: 0;
-}
-header .wikiLogo img:hover {
-  border: none;
-}
-
-/* sticky header when user scrolls */
-header.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 92px;
-  z-index: 1;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-header.sticky #navigationButtons .buttonDefault a:hover {
-  -webkit-transition: all 0s ease-out;
-  -moz-transition: all 0s ease-out;
-  -ms-transition: all 0s ease-out;
-  -o-transition: all 0s ease-out;
-  transition: all 0s ease-out;
-}
-
-header.sticky .wikiLogo a {
-  border: none;
-  top: 0;
-  left: 0;
-  height: 92px;
-  font-size: 42px;
-}
-header.sticky .wikiLogo a:hover {
-  background: none;
-  color: unset;
-}
-header.sticky .wikiLogo a img {
-  width: 64px;
-}
-
-header.sticky #navigationButtons {
-  gap: 4px;
-}
-
-header.sticky #navigationButtons .buttonDefault a {
-  border-radius: 0;
-  width: 240px;
-  height: 56px;
-}
-
-header.sticky #navigationButtons .buttonDefault:first-child a {
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-}
-
-header.sticky #navigationButtons .buttonDefault:last-child a {
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-}
-
-header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
-  display: none;
-}
-
 /* for big titles */
 .pageTitle#smallerFont {
   font: normal normal 600 32px/21px var(--font-default);
@@ -638,24 +696,12 @@ header.sticky #navigationButtons .buttonDefault.specialLine a:hover::after {
   flex-wrap: wrap;
   gap: 20px;
   margin: auto;
-  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
 #navigationButtons .buttonDefault a {
-  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
 #navigationButtons .buttonDefault a:hover {
-  -webkit-transition: all 0s ease-out;
-  -moz-transition: all 0s ease-out;
-  -ms-transition: all 0s ease-out;
-  -o-transition: all 0s ease-out;
   transition: all 0s ease-out;
 }
 
@@ -977,10 +1023,6 @@ i was mostly experimenting with figma design */
   left: 0;
   bottom: 0;
   opacity: 60%;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -ms-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
 }
 #contentWedge h2 {
@@ -1012,10 +1054,6 @@ i was mostly experimenting with figma design */
 }
 #contentWedge #wedgeItems ol li::marker {
   color: var(--linkColor);
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 #contentWedge #wedgeItems ol li:hover::marker {
@@ -1037,10 +1075,6 @@ i was mostly experimenting with figma design */
 
 #wedgeItems a {
   display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -1058,10 +1092,6 @@ i was mostly experimenting with figma design */
   margin: 32px;
   opacity: 60%;
   cursor: pointer;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -ms-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
 }
 #scrollToTop .buttonDefault a {
@@ -1177,10 +1207,6 @@ em {
   margin-top: 24px;
   margin-left: 40px;
   margin-right: 40px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1202,7 +1228,8 @@ em {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 24px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
   /* row-gap: 0px; */
 }
 
@@ -1226,10 +1253,6 @@ figure.centerImage figcaption {
 figure.centerImage img {
   border: 4px solid var(--secondaryColor);
   border-radius: 10px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 figure.centerImage img:hover {
@@ -1248,10 +1271,6 @@ figure.floatImage figcaption {
 figure.floatImage img {
   border: 4px solid var(--secondaryColor);
   border-radius: 10px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 figure.floatImage img:hover {
@@ -1259,56 +1278,6 @@ figure.floatImage img:hover {
   transform: scale(1.01);
 }
 
-/* smaller screens */
-@media screen and (max-width: 1475px) {
-  header .wikiLogo a {
-    width: 100%;
-    height: 92px;
-    border: none;
-  }
-  header #navigationButtons {
-    gap: 4px;
-  }
-}
-@media screen and (max-width: 1330px) {
-  header.sticky {
-    height: 148px;
-  }
-  header.sticky #navigationButtons .buttonDefault a {
-    height: 50px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  header .wikiLogo a {
-    font-size: 32px;
-    height: 48px;
-  }
-  header .wikiLogo a img {
-    width: 48px;
-    height: auto;
-  }
-  header #navigationButtons .buttonDefault.specialLine a:hover::after {
-    display: none;
-  }
-  header #navigationButtons .buttonDefault a {
-    font-size: 16px;
-    width: 150px;
-    height: 32px;
-  }
-  header.sticky .wikiLogo a {
-    font-size: 32px;
-    height: 48px;
-  }
-  header.sticky .wikiLogo a img {
-    width: 48px;
-    height: auto;
-  }
-  header.sticky #navigationButtons .buttonDefault a {
-    font-size: 16px;
-    width: 150px;
-    height: 32px;
-  }
-}
 /* smaller screens/smartphones (to be removed or reworked later) */
 @media screen and (max-width: 1416px) {
   /* since phones are weird there technically isnt hovering */
@@ -1363,49 +1332,46 @@ figure.floatImage img:hover {
   }
 }
 /* update sticky header as it takes up too much space on small screens */
-@media screen and (max-width: 630px) {
+/* @media screen and (max-width: 630px) {
   header #navigationButtons {
     flex-direction: column;
   }
+
   header.sticky #navigationButtons {
     flex-direction: column;
+
+    .buttonDefault a {
+      border-radius: 32px;
+    }
+
+    .buttonDefault:last-child a {
+      border-top-right-radius: 32px;
+      border-bottom-right-radius: 32px;
+    }
+
+    .buttonDefault:first-child a {
+      border-top-left-radius: 32px;
+      border-bottom-left-radius: 32px;
+    }
   }
-  header.sticky #navigationButtons .buttonDefault a {
-    border-radius: 32px;
-  }
-  header.sticky #navigationButtons .buttonDefault:last-child a {
-    border-top-right-radius: 32px;
-    border-bottom-right-radius: 32px;
-  }
-  header.sticky #navigationButtons .buttonDefault:first-child a {
-    border-top-left-radius: 32px;
-    border-bottom-left-radius: 32px;
-  }
-  /* temporary fix */
+
+  /* temporary fix
   .cardHeader h2 {
     line-height: normal;
     font-size: 18px;
   }
+
   .cardHeader h2::before {
     line-height: normal;
     height: 13px;
   }
+
   .cardHeader a {
     line-height: normal;
     font-size: 14px;
   }
+
   .makeBig {
     font-size: 18px !important;
   }
-}
-@media screen and (max-width: 422px) {
-  header {
-    height: auto;
-  }
-  header #navigationButtons a {
-    margin-bottom: 4px;
-  }
-  header.sticky {
-    height: auto;
-  }
-}/*# sourceMappingURL=styles.css.map */
+} *//*# sourceMappingURL=styles.css.map */
