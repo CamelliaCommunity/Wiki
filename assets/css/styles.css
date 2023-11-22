@@ -354,7 +354,7 @@ header {
   width: 100%;
   top: 0;
   background-color: var(--tertiaryColor);
-  transition: height 0.2s;
+  transition: height 0.2s ease-in-out;
 }
 header .header-shared {
   display: flex;
@@ -385,7 +385,7 @@ header .header-shared h1 a img {
  */
 @media screen and not (max-width: 1024px) {
   header {
-    height: 150px;
+    height: 148px;
     border-radius: 0 0 25px 25px;
   }
   header .header-shared {
@@ -395,6 +395,7 @@ header .header-shared h1 a img {
   }
   header .header-shared h1 {
     margin: auto;
+    /* some values are changed to my liking - john */
   }
   header .header-shared h1 a {
     gap: 8px;
@@ -402,22 +403,21 @@ header .header-shared h1 a img {
     border: 8px solid var(--borderColor);
     height: 100px;
     border-radius: 50px;
-    padding: 0 20px;
-    transition: all 0.2s;
+    padding: 0 18px;
+    transition: all 0.2s ease-in-out;
   }
   header .header-shared h1 a img {
-    width: 64px;
+    width: 56px;
   }
   header .header-shared h1 a:hover {
     color: var(--pageBackground);
     background-color: var(--borderColor);
   }
   header .header-shared #navigationButtons > div {
-    width: -moz-fit-content;
     width: fit-content;
   }
   header .header-shared #navigationButtons > div a {
-    transition: all 0.2s;
+    transition: all 0.2s ease-in-out;
   }
 }
 @media screen and (not (max-width: 1024px)) and (max-width: 1500px) {
@@ -464,7 +464,7 @@ header .header-shared h1 a img {
 @media screen and (max-width: 1024px) {
   header {
     height: 100px;
-    transition: all 0.2s;
+    transition: all 0.2s ease-in-out;
   }
   header .header-shared {
     flex-direction: column;
@@ -696,12 +696,24 @@ h6 {
   flex-wrap: wrap;
   gap: 20px;
   margin: auto;
+  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
 #navigationButtons .buttonDefault a {
+  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
 #navigationButtons .buttonDefault a:hover {
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -ms-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
   transition: all 0s ease-out;
 }
 
@@ -1023,6 +1035,10 @@ i was mostly experimenting with figma design */
   left: 0;
   bottom: 0;
   opacity: 60%;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
 }
 #contentWedge h2 {
@@ -1054,6 +1070,10 @@ i was mostly experimenting with figma design */
 }
 #contentWedge #wedgeItems ol li::marker {
   color: var(--linkColor);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 #contentWedge #wedgeItems ol li:hover::marker {
@@ -1075,6 +1095,10 @@ i was mostly experimenting with figma design */
 
 #wedgeItems a {
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -1092,6 +1116,10 @@ i was mostly experimenting with figma design */
   margin: 32px;
   opacity: 60%;
   cursor: pointer;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
 }
 #scrollToTop .buttonDefault a {
@@ -1207,6 +1235,10 @@ em {
   margin-top: 24px;
   margin-left: 40px;
   margin-right: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1228,8 +1260,7 @@ em {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
   /* row-gap: 0px; */
 }
 
@@ -1253,6 +1284,10 @@ figure.centerImage figcaption {
 figure.centerImage img {
   border: 4px solid var(--secondaryColor);
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 figure.centerImage img:hover {
@@ -1271,6 +1306,10 @@ figure.floatImage figcaption {
 figure.floatImage img {
   border: 4px solid var(--secondaryColor);
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 figure.floatImage img:hover {

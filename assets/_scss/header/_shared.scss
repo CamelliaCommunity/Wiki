@@ -1,38 +1,38 @@
 header {
-    position: fixed;
-    overflow: hidden;
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  background-color: var(--tertiaryColor);
+  transition: height 0.2s ease-in-out;
+
+  .header-shared {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    top: 0;
-    background-color: var(--tertiaryColor);
-    transition: height 0.2s;
+    align-items: center;
+    transition: transform 0.2s;
+    overflow: hidden;
 
-    .header-shared {
+    h1 {
+      text-shadow: none;
+
+      a {
+        color: var(--borderColor);
         display: flex;
-        width: 100%;
         align-items: center;
-        transition: transform 0.2s;
-        overflow: hidden;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        transition: font-size 0.2s;
 
-        h1 {
-            text-shadow: none;
-
-            a {
-                color: var(--borderColor);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                margin: 0;
-                transition: font-size 0.2s;
-
-                img {
-                    width: font-size 0.2s;
-                }
-            }
+        img {
+          width: font-size 0.2s;
         }
+      }
     }
+  }
 }
 
 /*
@@ -41,9 +41,9 @@ header {
  */
 
 @media screen and not (max-width: 1024px) {
-    @import "./desktop";
+  @import "./desktop";
 }
 
 @media screen and (max-width: 1024px) {
-    @import "./mobile";
+  @import "./mobile";
 }
