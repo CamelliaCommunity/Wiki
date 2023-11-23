@@ -1123,6 +1123,7 @@ i was mostly experimenting with figma design */
   -ms-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
+  z-index: 1;
 }
 #scrollToTop .buttonDefault a {
   font-size: 32px;
@@ -1299,6 +1300,7 @@ figure.centerImage img:hover {
 
 figure.floatImage {
   float: right;
+  text-align: center;
   margin-left: 24px;
 }
 figure.floatImage figcaption {
@@ -1337,7 +1339,7 @@ figure.floatImage img:hover {
     transform: none !important;
   }
 }
-/* responsive for picture wrap pages */
+/* responsive for picture wrap pages (and grid layout) */
 @media screen and (max-width: 1270px) {
   #flexyCard {
     flex-direction: column;
@@ -1362,62 +1364,33 @@ figure.floatImage img:hover {
     min-width: auto;
   }
 }
-@media screen and (max-width: 860px) {
-  .card p {
-    text-align: center;
-  }
-  .card .cardContents {
+/* responsive stuff. yay! */
+@media screen and (max-width: 1074px) {
+  img {
     width: 100%;
+    height: auto;
+  }
+  figure.floatImage {
+    margin-left: 0;
   }
   #contentWedge {
     width: 174px;
+  }
+  /* give codeblocks a scrollbar */
+  div pre.highlight {
+    overflow-y: auto;
+  }
+  .card .cardContents {
+    width: 100%;
   }
   .cardBackground {
     width: 100%;
     padding: 8px;
   }
 }
-/* update sticky header as it takes up too much space on small screens */
-/* @media screen and (max-width: 630px) {
-  header #navigationButtons {
-    flex-direction: column;
+/* temporary thing until the hamburger */
+@media screen and (max-width: 632px) {
+  #contentWedge {
+    display: none;
   }
-
-  header.sticky #navigationButtons {
-    flex-direction: column;
-
-    .buttonDefault a {
-      border-radius: 32px;
-    }
-
-    .buttonDefault:last-child a {
-      border-top-right-radius: 32px;
-      border-bottom-right-radius: 32px;
-    }
-
-    .buttonDefault:first-child a {
-      border-top-left-radius: 32px;
-      border-bottom-left-radius: 32px;
-    }
-  }
-
-  /* temporary fix
-  .cardHeader h2 {
-    line-height: normal;
-    font-size: 18px;
-  }
-
-  .cardHeader h2::before {
-    line-height: normal;
-    height: 13px;
-  }
-
-  .cardHeader a {
-    line-height: normal;
-    font-size: 14px;
-  }
-
-  .makeBig {
-    font-size: 18px !important;
-  }
-} *//*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
