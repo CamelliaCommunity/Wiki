@@ -355,6 +355,7 @@ header {
   top: 0;
   background-color: var(--tertiaryColor);
   transition: height 0.2s ease-in-out;
+  z-index: 1;
 }
 header .header-shared {
   display: flex;
