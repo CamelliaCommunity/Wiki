@@ -528,6 +528,7 @@ i was mostly experimenting with figma design */
   // bottom: -374px;
   opacity: 60%;
   @include transition(opacity 0.25s ease-in-out);
+  z-index: 1;
 
   h2 {
     padding-top: 16px;
@@ -831,6 +832,12 @@ figure.floatImage {
 
   #scrollToTop:hover {
     opacity: 60%;
+  }
+
+  /* noodles */
+  img:hover {
+    border: 4px solid var(--secondaryColor)!important;
+    transform: none!important;
   }
 }
 

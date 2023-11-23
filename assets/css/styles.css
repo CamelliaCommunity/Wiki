@@ -1041,6 +1041,7 @@ i was mostly experimenting with figma design */
   -ms-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
+  z-index: 1;
 }
 #contentWedge h2 {
   padding-top: 16px;
@@ -1329,6 +1330,11 @@ figure.floatImage img:hover {
   }
   #scrollToTop:hover {
     opacity: 60%;
+  }
+  /* noodles */
+  img:hover {
+    border: 4px solid var(--secondaryColor) !important;
+    transform: none !important;
   }
 }
 /* responsive for picture wrap pages */
