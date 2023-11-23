@@ -1360,8 +1360,16 @@ figure.floatImage img:hover {
     max-width: 1136px;
     min-height: 330px;
   }
+  #notAFullTitleContainer {
+    text-align: center;
+  }
   #titleContainer {
+    text-align: center;
     min-width: auto;
+  }
+  #titleContainer #footNoteRight {
+    align-self: center;
+    margin-right: 0;
   }
 }
 /* responsive stuff. yay! */
@@ -1386,6 +1394,21 @@ figure.floatImage img:hover {
   .cardBackground {
     width: 100%;
     padding: 8px;
+  }
+  .cardHeader {
+    flex-wrap: wrap;
+    min-height: 102px;
+    height: auto;
+  }
+  .cardHeader h2 {
+    align-self: center;
+  }
+  .cardHeader a {
+    align-self: center;
+    justify-self: flex-end;
+  }
+  .cardHeader a:first-of-type {
+    margin-left: auto;
   }
 }
 /* temporary thing until the hamburger */

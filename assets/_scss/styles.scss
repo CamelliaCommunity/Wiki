@@ -869,8 +869,18 @@ figure.floatImage {
     }
   }
 
+  #notAFullTitleContainer {
+    text-align: center;
+  }
+
   #titleContainer {
+    text-align: center;
     min-width: auto;
+
+    #footNoteRight {
+      align-self: center;
+      margin-right: 0;
+    }
   }
 }
 
@@ -903,6 +913,25 @@ figure.floatImage {
   .cardBackground {
     width: 100%;
     padding: 8px;
+  }
+
+  .cardHeader {
+    flex-wrap: wrap;
+    min-height: 102px;
+    height: auto;
+
+    h2 {
+      align-self: center;
+    }
+
+    a {
+      align-self: center;
+      justify-self: flex-end;
+    }
+
+    a:first-of-type {
+      margin-left: auto;
+    }
   }
 }
 
