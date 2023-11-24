@@ -933,6 +933,8 @@ figure.floatImage {
 
     h2 {
       align-self: center;
+      margin-left: 16px;
+      margin-right: 16px;
     }
 
     a {
@@ -941,7 +943,11 @@ figure.floatImage {
     }
 
     a:first-of-type {
-      margin-left: auto;
+      margin-left: 0;
+    }
+
+    a:last-of-type {
+      margin-right: 0;
     }
   }
 }

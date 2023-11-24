@@ -1415,13 +1415,18 @@ figure.floatImage img:hover {
   }
   .cardHeader h2 {
     align-self: center;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   .cardHeader a {
     align-self: center;
     justify-self: flex-end;
   }
   .cardHeader a:first-of-type {
-    margin-left: auto;
+    margin-left: 0;
+  }
+  .cardHeader a:last-of-type {
+    margin-right: 0;
   }
 }
 /* temporary thing until the hamburger */
