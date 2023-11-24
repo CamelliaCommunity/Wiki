@@ -274,8 +274,19 @@ a:hover {
   margin-bottom: 32px;
 }
 
-// .albumCard {
-// }
+.albumContainer {
+  display: flex;
+  flex-direction: column;
+  background: red;
+
+  img {
+    width: 156px;
+    height: auto;
+  }
+  ol {
+    align-self: center;
+  }
+}
 
 blockquote {
   position: relative;

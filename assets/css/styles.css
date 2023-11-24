@@ -805,6 +805,19 @@ a:hover {
   margin-bottom: 32px;
 }
 
+.albumContainer {
+  display: flex;
+  flex-direction: column;
+  background: red;
+}
+.albumContainer img {
+  width: 156px;
+  height: auto;
+}
+.albumContainer ol {
+  align-self: center;
+}
+
 blockquote {
   position: relative;
   background: var(--cardBackgroundColor);
