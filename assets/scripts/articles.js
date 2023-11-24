@@ -79,24 +79,3 @@ function createWedge() {
     lastHeader = null;
   }
 }
-
-// Look for images within a "p" element, give them a figure and figcaption
-// element. the alt text will display as figcaption
-// We will also look for images within figures, if the image is wider than
-// 340 pixels, it will remove the float and margins.
-const images = document.querySelectorAll('p > img');
-images.forEach((image) => {
-  const figure = document.createElement('figure');
-  const figcaption = document.createElement('figcaption');
-  figcaption.textContent = image.alt;
-  figure.appendChild(image.cloneNode(true));
-  figure.appendChild(figcaption);
-
-  // Event listener so this runs *after* the page is loaded, a bit hacky but oh
-  // well
-  window.addEventListener('load', () => {
-    figure.classList.add(image.width > 340 ? 'centerImage' : 'floatImage');
-  });
-
-  image.replaceWith(figure);
-});
