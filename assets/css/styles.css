@@ -1423,10 +1423,10 @@ figure.floatImage img:hover {
     justify-self: flex-end;
   }
   .cardHeader a:first-of-type {
-    margin-left: 0;
+    margin-left: 4px;
   }
   .cardHeader a:last-of-type {
-    margin-right: 0;
+    margin-right: 4px;
   }
 }
 /* temporary thing until the hamburger */
