@@ -1,6 +1,6 @@
 ---
 layout: albumLayout
-title: post albumTest
+title: albumTest
 date: 2023-11-23 05:54 -0600
 category: posts
 author: a awesome author!

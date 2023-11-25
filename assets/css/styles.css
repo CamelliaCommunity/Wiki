@@ -657,6 +657,7 @@ main .centerItem {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -827,11 +828,12 @@ blockquote {
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 32px;
+  padding-top: 1em;
   /* we really want to fix this */
 }
 blockquote p {
   font-family: var(--font-semiBoldItalic) !important;
-  padding: 1em !important;
+  padding: 0 1em 1em 1em !important;
 }
 
 blockquote.disclaimer {
