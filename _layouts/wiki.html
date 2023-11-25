@@ -1,0 +1,43 @@
+---
+layout: "wrapper"
+---
+
+<!-- Apply contend wedge script -->
+<script src= {{ "assets/scripts/articles.js" | relative_url }} defer=""></script>
+
+<!-- Main Page -->
+<main>
+  <div id="contentWedge">
+    <h2>Contents</h2>
+    <div class="vertLine"></div>
+    <nav id="wedgeItems">
+      <ol></ol>
+      <!-- In javascript, there will be new items listed here with each <h2> -->
+    </nav>
+  </div>
+  <div id="titleContainer">
+    <h1>{{ page.title }}</h1>
+    <p id="footNote">Written by {{ page.author }}</p>
+    <p id="footNoteRight">
+      <a
+        href="https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }}"
+        target="_blank"
+        >Edit This Page!</a
+      >
+    </p>
+  </div>
+  <div class="cardBackground">
+    <div class="card">
+      <div class="cardContents">{{ content }}</div>
+    </div>
+    <div class="miniCard">
+      <div class="cardContents">
+        {% for post in site.posts %}
+        <!-- Code removed for brevity -->
+        {% assign excerptParts = post.excerpt | split: "<!-- excerpt-start -->" %}
+        {{ excerptParts[1] | strip_newlines | truncatewords: 50 }}
+    {% endfor %}
+  </div>
+    </div>
+  </div>
+</main>
