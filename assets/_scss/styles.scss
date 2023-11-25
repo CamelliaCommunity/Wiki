@@ -292,8 +292,26 @@ a:hover {
     flex-direction: column;
     margin-left: 16px;
 
+    h5 {
+      margin-bottom: 8px;
+    }
+
     ol {
       padding: 0;
+      padding-left: 16px;
+    }
+
+    hr {
+      background: #604f5e 0% 0% no-repeat padding-box;
+      height: 4px;
+      width: 333px;
+      margin-left: 0;
+      margin-top: 8px;
+      border-radius: 6px;
+    }
+
+    p {
+      padding-left: 0;
     }
   }
 }

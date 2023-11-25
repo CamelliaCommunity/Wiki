@@ -822,8 +822,23 @@ a:hover {
   flex-direction: column;
   margin-left: 16px;
 }
+.albumContainer .albumContentsContainer h5 {
+  margin-bottom: 8px;
+}
 .albumContainer .albumContentsContainer ol {
   padding: 0;
+  padding-left: 16px;
+}
+.albumContainer .albumContentsContainer hr {
+  background: #604f5e 0% 0% no-repeat padding-box;
+  height: 4px;
+  width: 333px;
+  margin-left: 0;
+  margin-top: 8px;
+  border-radius: 6px;
+}
+.albumContainer .albumContentsContainer p {
+  padding-left: 0;
 }
 
 blockquote {
