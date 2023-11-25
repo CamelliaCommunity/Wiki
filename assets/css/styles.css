@@ -808,15 +808,22 @@ a:hover {
 
 .albumContainer {
   display: flex;
-  flex-direction: column;
-  background: red;
+  flex-direction: row;
 }
 .albumContainer img {
   width: 156px;
-  height: auto;
+  height: 156px;
+  margin-left: 32px;
+  border-radius: 20px;
+  border: 5px solid var(--borderColor2);
 }
-.albumContainer ol {
-  align-self: center;
+.albumContainer .albumContentsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.albumContainer .albumContentsContainer ol {
+  padding: 0;
 }
 
 blockquote {
