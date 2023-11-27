@@ -48,6 +48,30 @@ h2Elements.forEach((h2) => {
 });
 
 
+// Look for images within a "p" element, give them a figure and figcaption
+// element. the alt text will display as figcaption
+// We will also look for images within figures, if the image is wider than
+// 370 pixels, it will remove the float and margins.
+const images = document.querySelectorAll('p > img');
+
+if (images) {
+  images.forEach((image) => {
+    const figure = document.createElement('figure');
+    const figcaption = document.createElement('figcaption');
+    figcaption.textContent = image.alt;
+    figure.appendChild(image.cloneNode(true));
+    figure.appendChild(figcaption);
+
+    // Event listener so this runs *after* the page is loaded, a bit hacky but
+    // oh well
+    window.addEventListener('load', () => {
+      figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
+    });
+
+    image.replaceWith(figure);
+  });
+}
+
 // Test code
 // const IMAGES = document.querySelectorAll('img');
 

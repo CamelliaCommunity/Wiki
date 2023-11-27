@@ -1,0 +1,53 @@
+---
+layout: "wrapper"
+---
+
+<!-- Apply contend wedge script -->
+<!-- <script src= {{ "assets/scripts/articles.js" | relative_url }} defer=""></script> -->
+<style>
+  #contentWedge {
+    display: none;
+  }
+</style>
+
+<!-- Main Page -->
+<main>
+  <div id="contentWedge">
+    <h2>Contents</h2>
+    <div class="vertLine"></div>
+    <nav id="wedgeItems">
+      <ol></ol>
+      <!-- In javascript, there will be new items listed here with each <h2> -->
+    </nav>
+  </div>
+  <div id="titleContainer">
+    <h1>{{ page.title }}</h1>
+    <p id="footNote">Written by {{ page.author }}</p>
+    <p id="footNoteRight">
+      <a href="https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }}" target="_blank"
+        >Edit This Page!</a
+      >
+    </p>
+  </div>
+  <div class="cardBackground">
+    <div class="card">
+      <div class="cardContents">{{ content }}</div>
+
+      <div class="albumContainer">
+        <img src="/assets/images/placeholder.jpg" alt="zamboli the cat" />
+        <div class="albumContentsContainer">
+          <h5>Dualive [4/26]</h5>
+          <ol>
+            <li>Quarks - Intro</li>
+            <li>Quarks - Dualive</li>
+            <li>Quarks - You and Me</li>
+            <li>Ryu* feat. kradness - Infinity Rise (Camellia's “Inf+1” Remix)</li>
+            <li>kors k feat. kradness - Brightness (Camellia's “Vividness” Remix)</li>
+          </ol>
+          <hr />
+          <p>Released under かめるかめりあ for M3-37</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

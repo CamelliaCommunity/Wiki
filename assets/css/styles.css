@@ -657,6 +657,7 @@ main .centerItem {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -805,6 +806,41 @@ a:hover {
   margin-bottom: 32px;
 }
 
+.albumContainer {
+  display: flex;
+  flex-direction: row;
+}
+.albumContainer img {
+  width: 156px;
+  height: 156px;
+  margin-left: 32px;
+  border-radius: 20px;
+  border: 5px solid var(--borderColor2);
+}
+.albumContainer .albumContentsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.albumContainer .albumContentsContainer h5 {
+  margin-bottom: 8px;
+}
+.albumContainer .albumContentsContainer ol {
+  padding: 0;
+  padding-left: 16px;
+}
+.albumContainer .albumContentsContainer hr {
+  background: #604f5e 0% 0% no-repeat padding-box;
+  height: 4px;
+  width: 333px;
+  margin-left: 0;
+  margin-top: 8px;
+  border-radius: 6px;
+}
+.albumContainer .albumContentsContainer p {
+  padding-left: 0;
+}
+
 blockquote {
   position: relative;
   background: var(--cardBackgroundColor);
@@ -814,11 +850,12 @@ blockquote {
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 32px;
+  padding-top: 1em;
   /* we really want to fix this */
 }
 blockquote p {
   font-family: var(--font-semiBoldItalic) !important;
-  padding: 1em !important;
+  padding: 0 1em 1em 1em !important;
 }
 
 blockquote.disclaimer {
@@ -1268,8 +1305,8 @@ em {
 }
 
 /* jank width and height for big images */
-/* may remove eventually */
-img.sizingCSS {
+/* needs to be removed eventually */
+.resizeImage figure img {
   max-width: 78%;
   max-height: 78%;
 }
@@ -1402,13 +1439,18 @@ figure.floatImage img:hover {
   }
   .cardHeader h2 {
     align-self: center;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   .cardHeader a {
     align-self: center;
     justify-self: flex-end;
   }
   .cardHeader a:first-of-type {
-    margin-left: auto;
+    margin-left: 4px;
+  }
+  .cardHeader a:last-of-type {
+    margin-right: 4px;
   }
 }
 /* temporary thing until the hamburger */
