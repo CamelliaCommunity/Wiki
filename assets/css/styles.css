@@ -1305,8 +1305,8 @@ em {
 }
 
 /* jank width and height for big images */
-/* may remove eventually */
-img.sizingCSS {
+/* needs to be removed eventually */
+.resizeImage figure img {
   max-width: 78%;
   max-height: 78%;
 }

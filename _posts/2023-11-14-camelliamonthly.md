@@ -11,10 +11,8 @@ description: Camellia Monthly articles
 
 The spooky month is officially over, but what isn’t? Camellia Monthly!
 
-<div class="flexRow picture">
-    <img class="sizingCSS" src="https://cdn.discordapp.com/attachments/483188272256778250/1171244862767640637/camelliaHeaderOctober2023.png?ex=655bf9c7&is=654984c7&hm=3e8853d9725f6b50c27babef2dc8bddbf2262003fc00644cf118f27c88e23392&"
-         alt="monthlyoctober2023logo">
-</div>
+![October 2023 Monthly Logo](https://cdn.discordapp.com/attachments/483188272256778250/1171244862767640637/camelliaHeaderOctober2023.png?ex=655bf9c7&is=654984c7&hm=3e8853d9725f6b50c27babef2dc8bddbf2262003fc00644cf118f27c88e23392&)
+{: .resizeImage }
 
 ### We Drew Camellia Together, Again
 
@@ -62,10 +60,8 @@ It’s time to spice things up with new-level role names and colors! We hope thi
 
 It's time to get spooky, everyone, because Halloween is near, and your September monthly is here!
 
-<div class="flexRow picture">
-    <img class="sizingCSS" src="https://cdn.discordapp.com/attachments/483188272256778250/1158307165078048808/camelliaHeaderSeptember2023.png?ex=651bc51c&is=651a739c&hm=1f7fd63de19b6af5e5f0f47c4e0661163e1ccb7a767895260efb99641f8bd354&"
-         alt="monthlyseptember2023logo">
-</div>
+![September 2023 Monthly Logo](https://cdn.discordapp.com/attachments/483188272256778250/1158307165078048808/camelliaHeaderSeptember2023.png?ex=651bc51c&is=651a739c&hm=1f7fd63de19b6af5e5f0f47c4e0661163e1ccb7a767895260efb99641f8bd354&)
+{: .resizeImage }
 
 ### Happy Birthday, Camellia
 
