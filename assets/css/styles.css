@@ -1311,6 +1311,13 @@ em {
   max-height: 78%;
 }
 
+/* legacy code for resizing images */
+/* needs to be removed eventually */
+.sizingCSS {
+  max-width: 78%;
+  max-height: 78%;
+}
+
 /* markdown support for images */
 figure.centerImage {
   float: none;
