@@ -7,15 +7,22 @@ description: The one and only Camellia! Here, you can find information about Cam
 include: Discography, Featured Rhythm Games, Fun Facts, Music Usage
 ---
 
-## Introduction
-
-Camellia, also known as Cametek, KamelCamellia, or real life name Masaya Oya (大箭将也), is a musician who originates from Tokyo, Japan. He is currently 31 years old.
-
 ## Biography
 
 ![Camellia](/assets/images/articleImages/camellia/camellia.png)
+Camellia, also known as Cametek, KamelCamellia, or real life name Masaya Oya (大箭将也), is a musician who originates from Tokyo, Japan. He is currently 31 years old.
 
-Camellia is a musician who is based on electronic-type music. Born September 28, 1992, in Asahikawa, Hokkaido, Japan, he began creating music at ten by making tracks for [Yume 2kki.](https://yume.wiki/2kki/Yume_2kki_Wiki)[^1] Ever since, he has made hundreds of songs, with his discography having 28 albums and 4 EPs.[^2] During the early 2010s, Camellia began making [VOCALOID](https://en.wikipedia.org/wiki/Vocaloid) songs and music for [Touhou Project.](https://en.wikipedia.org/wiki/Touhou_Project)[^3] He joined numerous [BEMANI](https://en.wikipedia.org/wiki/Bemani) music contests and began composing for rhythm games in 2012.[^4] He gained much recognition among the rhythm gaming community, being popular in certain rhythm games like [osu!](https://osu.ppy.sh/home), [Beat Saber](https://beatsaber.com/), [A Dance of Fire and Ice](https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice), alongside being featured in other rhythm or music-focused games like [Friday Night Funkin'](https://friday-nightfunkin.io/), [Geometry Dash](https://store.steampowered.com/app/322170/Geometry_Dash), [RoBeats!](https://robeats.fandom.com/wiki/Robeats_Wiki), and more.
+Born September 28, 1992, in Asahikawa, Hokkaido, Japan, he began creating music at ten by making tracks for [Yume 2kki.](https://yume.wiki/2kki/Yume_2kki_Wiki)[^1] Ever since, he has made hundreds of songs, with his discography having 28 albums and 4 EPs.[^2] During the early 2010s, Camellia began making [VOCALOID](https://en.wikipedia.org/wiki/Vocaloid) songs and music for [Touhou Project.](https://en.wikipedia.org/wiki/Touhou_Project)[^3] He joined numerous [BEMANI](https://en.wikipedia.org/wiki/Bemani) music contests and began composing for rhythm games in 2012.[^4] He gained much recognition among the rhythm gaming community, being popular in certain rhythm games like [osu!](https://osu.ppy.sh/home), [Beat Saber](https://beatsaber.com/), [A Dance of Fire and Ice](https://store.steampowered.com/app/977950/A_Dance_of_Fire_and_Ice), alongside being featured in other rhythm or music-focused games like [Friday Night Funkin'](https://friday-nightfunkin.io/), [Geometry Dash](https://store.steampowered.com/app/322170/Geometry_Dash), [RoBeats!](https://robeats.fandom.com/wiki/Robeats_Wiki), and more.
+
+## Youtube
+
+Camellia joined Youtube on March 22nd, 2009 and has amassed over 375k subscribes as of November 28th, 2023. However, most of his songs, especially older songs, aren't uploaded on his channel but can be found through other sources such as the [Camellia - Topic](https://www.youtube.com/channel/UCRjVmUQ3CW1kH6vP1VGskWA) channel and Camellia's official [site](https://cametek.jp/release.html). The oldest video on his channel is [neogenesis(promptedgenesis mix](https://youtu.be/qnn3sxoL8OM?si=K9SgdHaZ5C3VvOI3), uploaded on June 5th, 2010. Ever since, he has uploaded 170 videos as of November 28th, 2023, with his most viewed video being his [MEGALOVANIA remix](https://youtu.be/9X7I3bW49S8?si=dd1QnVgArdXBQmqW), sitting at over 15 million views. Some of his songs also feature other Youtubers, sometimes in the form of vocal samples, such as [The8BitDrummer](https://www.youtube.com/@The8BitDrummer) with his "FRICKING JUMPING BEANS!" line on Camellia's [We Could Get More Machinegun Psystyle! -And More Genre Switches-](https://youtu.be/Rp8uQzSXXRc?si=RBVso_r6Fl34LHg7) track, and [BTMC](https://www.youtube.com/@BTMCLive) with his "LET'S FUCKING GO!" line on Camellia's [WYSI](https://youtu.be/1qBWa6dWBRk?si=OR7eRwiGps8hhznm) track.
+
+### Collaborations
+
+---
+
+Camellia has his fair share of collaborations. He's collabed with several [VTubers](https://en.wikipedia.org/wiki/VTuber), namely [Hololive's](https://hololivepro.com/en/) [Shishiro Botan](https://www.youtube.com/@ShishiroBotan) with their [Lioness' Pride](https://youtu.be/npVP58NvdQ8?si=hio1yOv7D5FLl8HU) track, [Mori Calliope](http://www.youtube.com/@MoriCalliope) with their [Dead on Arrival](https://youtu.be/SwOat0JYPAY?si=beILURnIUcQvvOSF) track. and [NIJISANJI EN's](https://www.nijisanji.jp/en/talents) [Rosemi Lovelock](https://www.youtube.com/@Rosemi_Lovelock) with their [ROSE ME](https://youtu.be/f91RW3Mk8Dk?si=QPXVdIy_6q0dJreP) track, among several other recognizable individuals.
 
 ## Trivia
 
