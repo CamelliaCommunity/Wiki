@@ -799,25 +799,9 @@ em {
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 24px;
-  /* row-gap: 0px; */
-}
-
-/* jank width and height for big images */
-/* needs to be removed eventually */
-.resizeImage figure img {
-  max-width: 78%;
-  max-height: 78%;
-}
-
-/* legacy code for resizing images */
-/* needs to be removed eventually */
-.sizingCSS {
-  max-width: 78%;
-  max-height: 78%;
 }
 
 /* markdown support for images */
-
 // this class is only applied in the javascript
 figure.centerImage {
   float: none;
