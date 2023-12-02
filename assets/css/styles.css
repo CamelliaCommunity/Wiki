@@ -382,7 +382,7 @@ header.headerOld .header-shared h1 a img {
 
 header.headerV2 {
   position: fixed;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -440,7 +440,11 @@ header.headerV2 .header-inner #search-container input#search-input:focus-visible
 }
 header.headerV2 .header-inner #search-container #results-container {
   z-index: 1;
+  margin-left: 24px;
   position: absolute;
+}
+header.headerV2 .header-inner #search-container #results-container li::marker {
+  content: "→";
 }
 
 /*

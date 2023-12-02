@@ -38,7 +38,7 @@ header.headerOld {
 
 header.headerV2 {
   position: fixed;
-  overflow: hidden;
+  overflow: visible; // temp
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -113,7 +113,12 @@ header.headerV2 {
 
       #results-container {
         z-index: 1;
+        margin-left: 24px;
         position: absolute;
+
+        li::marker {
+          content: "\2192 "; // placeholder
+        }
       }
     }
   }

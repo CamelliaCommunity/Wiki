@@ -5,10 +5,22 @@ layout: none
   {% for post in site.posts %}
     {
       "title"    : "{{ post.title | escape }}",
+      "author"    : "{{ post.author | escape }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date }}"
     } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+  {% endfor %},
+
+  {% for article in site.articles %}
+  {
+    "title"    : "{{ article.title | escape }}",
+    "author"    : "{{ article.author | escape }}",
+    "category" : "{{ article.category }}",
+    "tags"     : "{{ article.tags | join: ', ' }}",
+    "url"      : "{{ article.baseurl }}{{ article.url }}",
+    "date"     : "{{ article.date }}"
+  } {% unless forloop.last %},{% endunless %}
+{% endfor %}
 ]
