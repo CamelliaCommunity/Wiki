@@ -1323,6 +1323,8 @@ figure.centerImage {
   float: none;
   text-align: center;
   margin-left: 0;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 figure.centerImage figcaption {
   margin-bottom: 0;
@@ -1331,6 +1333,8 @@ figure.centerImage figcaption {
 figure.centerImage img {
   border: 4px solid var(--secondaryColor);
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -1354,6 +1358,8 @@ figure.floatImage figcaption {
 figure.floatImage img {
   border: 4px solid var(--secondaryColor);
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
