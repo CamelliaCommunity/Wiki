@@ -1,4 +1,4 @@
-header {
+header.headerOld {
   position: fixed;
   overflow: hidden;
   display: flex;
@@ -31,6 +31,89 @@ header {
         img {
           width: font-size 0.2s;
         }
+      }
+    }
+  }
+}
+
+header.headerV2 {
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  transition: height 0.2s ease-in-out;
+  z-index: 1;
+  background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  .header-inner {
+    display: flex;
+    width: 1644px;
+    height: 92px;
+    align-items: center;
+    padding: 14px 32px;
+    justify-content: space-between;
+    transition: transform 0.2s;
+    overflow: hidden;
+
+    border-radius: 0px 0px 25px 25px;
+    background: linear-gradient(
+        180deg,
+        rgba(246, 65, 141, 0) 0%,
+        rgba(246, 65, 141, 0.08) 51.04%,
+        rgba(91, 63, 75, 0.2) 100%
+      ),
+      var(--Triary, #661f57);
+
+    h1 {
+      text-shadow: none;
+      // font-size: 42px;
+      // font-style: normal;
+
+      a {
+        color: var(--borderColor);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 0;
+        transition: font-size 0.2s;
+
+        img {
+          width: font-size 0.2s;
+          margin-right: 12px;
+        }
+      }
+    }
+
+    #search-container {
+      input#search-input {
+        width: 454px;
+        height: 52px;
+
+        border-radius: 30px;
+        border: 3px solid var(--NewPink, #f06c9b);
+        background: var(--Card-Content-Background, #382e37);
+
+        padding-left: 24px;
+        color: #808080;
+        text-align: left;
+        font-family: Author; // add fonts later
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 494;
+
+        &:focus-visible {
+          outline: none;
+        }
+      }
+
+      #results-container {
+        z-index: 1;
+        position: absolute;
       }
     }
   }

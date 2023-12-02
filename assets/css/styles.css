@@ -346,7 +346,7 @@ figure.highlight pre.highlight {
   color: #f78c6c;
 }
 
-header {
+header.headerOld {
   position: fixed;
   overflow: hidden;
   display: flex;
@@ -357,17 +357,17 @@ header {
   transition: height 0.2s ease-in-out;
   z-index: 1;
 }
-header .header-shared {
+header.headerOld .header-shared {
   display: flex;
   width: 100%;
   align-items: center;
   transition: transform 0.2s;
   overflow: hidden;
 }
-header .header-shared h1 {
+header.headerOld .header-shared h1 {
   text-shadow: none;
 }
-header .header-shared h1 a {
+header.headerOld .header-shared h1 a {
   color: var(--borderColor);
   display: flex;
   align-items: center;
@@ -376,8 +376,71 @@ header .header-shared h1 a {
   margin: 0;
   transition: font-size 0.2s;
 }
-header .header-shared h1 a img {
+header.headerOld .header-shared h1 a img {
   width: font-size 0.2s;
+}
+
+header.headerV2 {
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  transition: height 0.2s ease-in-out;
+  z-index: 1;
+  background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header.headerV2 .header-inner {
+  display: flex;
+  width: 1644px;
+  height: 92px;
+  align-items: center;
+  padding: 14px 32px;
+  justify-content: space-between;
+  transition: transform 0.2s;
+  overflow: hidden;
+  border-radius: 0px 0px 25px 25px;
+  background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--Triary, #661f57);
+}
+header.headerV2 .header-inner h1 {
+  text-shadow: none;
+}
+header.headerV2 .header-inner h1 a {
+  color: var(--borderColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  transition: font-size 0.2s;
+}
+header.headerV2 .header-inner h1 a img {
+  width: font-size 0.2s;
+  margin-right: 12px;
+}
+header.headerV2 .header-inner #search-container input#search-input {
+  width: 454px;
+  height: 52px;
+  border-radius: 30px;
+  border: 3px solid var(--NewPink, #f06c9b);
+  background: var(--Card-Content-Background, #382e37);
+  padding-left: 24px;
+  color: #808080;
+  text-align: left;
+  font-family: Author;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 494;
+}
+header.headerV2 .header-inner #search-container input#search-input:focus-visible {
+  outline: none;
+}
+header.headerV2 .header-inner #search-container #results-container {
+  z-index: 1;
+  position: absolute;
 }
 
 /*
@@ -385,20 +448,20 @@ header .header-shared h1 a img {
  * that we don't have to spam !important
  */
 @media screen and not (max-width: 1024px) {
-  header {
+  header.headerOld {
     height: 148px;
     border-radius: 0 0 25px 25px;
   }
-  header .header-shared {
+  header.headerOld .header-shared {
     flex-direction: row;
     min-height: 100%;
     justify-content: space-between;
   }
-  header .header-shared h1 {
+  header.headerOld .header-shared h1 {
     margin: auto;
     /* some values are changed to my liking - john */
   }
-  header .header-shared h1 a {
+  header.headerOld .header-shared h1 a {
     gap: 8px;
     font-size: 42px;
     border: 8px solid var(--borderColor);
@@ -407,107 +470,113 @@ header .header-shared h1 a img {
     padding: 0 18px;
     transition: all 0.2s ease-in-out;
   }
-  header .header-shared h1 a img {
+  header.headerOld .header-shared h1 a img {
     width: 56px;
   }
-  header .header-shared h1 a:hover {
+  header.headerOld .header-shared h1 a:hover {
     color: var(--pageBackground);
     background-color: var(--borderColor);
   }
-  header .header-shared #navigationButtons > div {
+  header.headerOld .header-shared #navigationButtons > div {
     width: fit-content;
   }
-  header .header-shared #navigationButtons > div a {
+  header.headerOld .header-shared #navigationButtons > div a {
     transition: all 0.2s ease-in-out;
   }
 }
 @media screen and (not (max-width: 1024px)) and (max-width: 1500px) {
-  header .header-shared h1 a {
+  header.headerOld .header-shared h1 a {
     padding: 0px;
     border: 0px solid var(--borderColor);
   }
-  header .header-shared h1 a:hover {
+  header.headerOld .header-shared h1 a:hover {
     color: var(--borderColor);
     background-color: transparent;
   }
-  header .header-shared #navigationButtons > div a {
+  header.headerOld .header-shared #navigationButtons > div a {
     width: 150px;
   }
-  header .header-shared #navigationButtons > div a:hover::after {
+  header.headerOld .header-shared #navigationButtons > div a:hover::after {
     width: 150px;
   }
 }
 @media screen and not (max-width: 1024px) {
-  header.sticky {
+  header.headerOld.sticky {
     height: 100px;
   }
-  header.sticky h1 a {
+  header.headerOld.sticky h1 a {
     padding: 0px;
     border: 0px solid transparent;
   }
-  header.sticky h1 a:hover {
+  header.headerOld.sticky h1 a:hover {
     color: var(--borderColor);
     background-color: transparent;
   }
-  header.sticky #navigationButtons {
+  header.headerOld.sticky #navigationButtons {
     gap: 4px;
   }
-  header.sticky #navigationButtons > div a {
+  header.headerOld.sticky #navigationButtons > div a {
     border-radius: 0px;
   }
-  header.sticky #navigationButtons > div:first-child a {
+  header.headerOld.sticky #navigationButtons > div:first-child a {
     border-radius: 25px 0 0 25px;
   }
-  header.sticky #navigationButtons > div:last-child a {
+  header.headerOld.sticky #navigationButtons > div:last-child a {
     border-radius: 0 25px 25px 0;
+  }
+  header.headerV2 {
+    height: 100px;
+    border-radius: 0px 0px 25px 25px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
 @media screen and (max-width: 1024px) {
-  header {
+  header.headerOld {
     height: 100px;
     transition: all 0.2s ease-in-out;
   }
-  header .header-shared {
+  header.headerOld .header-shared {
     flex-direction: column;
     justify-content: center;
     min-height: 100px;
     gap: 10px;
   }
-  header .header-shared h1 a {
+  header.headerOld .header-shared h1 a {
     gap: 5px;
     font-size: 28px;
   }
-  header .header-shared h1 a img {
+  header.headerOld .header-shared h1 a img {
     width: 32px;
   }
-  header .header-shared #navigationButtons {
+  header.headerOld .header-shared #navigationButtons {
     margin: 0;
     gap: 2px;
   }
-  header .header-shared #navigationButtons > div:first-child,
-  header .header-shared #navigationButtons > div:last-child {
+  header.headerOld .header-shared #navigationButtons > div:first-child,
+  header.headerOld .header-shared #navigationButtons > div:last-child {
     display: none;
   }
-  header .header-shared #navigationButtons > div {
+  header.headerOld .header-shared #navigationButtons > div {
     width: 140px;
     height: 32px;
   }
-  header .header-shared #navigationButtons > div a {
+  header.headerOld .header-shared #navigationButtons > div a {
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     width: 140px;
     height: 32px;
     font-size: 14px;
   }
-  header .header-shared #navigationButtons > div a:hover::after {
+  header.headerOld .header-shared #navigationButtons > div a:hover::after {
     width: 140px;
   }
-  header .header-shared #navigationButtons > div:nth-child(2) a {
+  header.headerOld .header-shared #navigationButtons > div:nth-child(2) a {
     border-radius: 20px 5px 5px 20px;
   }
-  header .header-shared #navigationButtons > div:nth-child(3) a {
+  header.headerOld .header-shared #navigationButtons > div:nth-child(3) a {
     border-radius: 5px 20px 20px 5px;
   }
-  header .header-mobile-scroll {
+  header.headerOld .header-mobile-scroll {
     transition: transform 0.2s;
     min-height: 50px;
     display: flex;
@@ -516,27 +585,27 @@ header .header-shared h1 a img {
     align-items: center;
     padding: 0 10px;
   }
-  header .header-mobile-scroll h1 {
+  header.headerOld .header-mobile-scroll h1 {
     text-shadow: none;
   }
-  header .header-mobile-scroll h1 a {
+  header.headerOld .header-mobile-scroll h1 a {
     color: var(--borderColor);
     display: flex;
     align-items: center;
     gap: 5px;
     font-size: 20px;
   }
-  header .header-mobile-scroll h1 a img {
+  header.headerOld .header-mobile-scroll h1 a img {
     width: 32px;
   }
-  header.sticky {
+  header.headerOld.sticky {
     height: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   }
-  header.sticky .header-shared {
+  header.headerOld.sticky .header-shared {
     transform: translateY(-100px);
   }
-  header.sticky .header-mobile-scroll {
+  header.headerOld.sticky .header-mobile-scroll {
     transform: translateY(-100px);
   }
 }
