@@ -16,7 +16,10 @@
 
     <!-- Page title CSS, and Scripts -->
     <link rel="stylesheet" href= {{ "assets/css/styles.css" | relative_url }} />
-    <script src= {{ "assets/scripts/main.js" | relative_url }} defer=""></script>
+    <script src="{{ "assets/scripts/main.js" | relative_url }}" defer=""></script>
+    <script src="{{ "assets/scripts/search-script.js" | relative_url }}" type="text/javascript"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
     <title>{{page.title}} | {{site.title}}</title>
   </head>
 
@@ -31,4 +34,13 @@
     {{ content }}
     {% include footer.html %}
   </body>
+
+<!-- Configuration -->
+<script>
+  SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: './search.json'
+  })
+  </script>
 </html>
