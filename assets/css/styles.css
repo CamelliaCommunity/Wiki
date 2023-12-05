@@ -380,112 +380,6 @@ header.headerOld .header-shared h1 a img {
   width: font-size 0.2s;
 }
 
-header.headerV2 {
-  position: fixed;
-  overflow: visible;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  top: 0;
-  transition: height 0.2s ease-in-out;
-  z-index: 1;
-  background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-header.headerV2 .header-inner {
-  display: flex;
-  width: 1644px;
-  height: 100%;
-  align-items: center;
-  padding: 14px 32px;
-  justify-content: space-between;
-  transition: transform 0.2s;
-  overflow: hidden;
-  border-right: 2px solid rgba(255, 255, 255, 0.2);
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--Triary, #661f57);
-}
-header.headerV2 .header-inner h1 {
-  text-shadow: none;
-}
-header.headerV2 .header-inner h1 a {
-  color: var(--borderColor);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin: 0;
-  transition: font-size 0.2s;
-}
-header.headerV2 .header-inner h1 a img {
-  width: font-size 0.2s;
-  margin-right: 12px;
-}
-header.headerV2 .header-inner #search-container {
-  /* Change the white to any color */
-  /*Change text in autofill textbox*/
-}
-header.headerV2 .header-inner #search-container input:-webkit-autofill,
-header.headerV2 .header-inner #search-container input:-webkit-autofill:hover,
-header.headerV2 .header-inner #search-container input:-webkit-autofill:focus,
-header.headerV2 .header-inner #search-container input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px var(--Card-Content-Background, #382e37) inset !important;
-}
-header.headerV2 .header-inner #search-container input:-webkit-autofill {
-  -webkit-text-fill-color: white !important;
-}
-header.headerV2 .header-inner #search-container #main-bar {
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  width: 454px;
-  height: 52px;
-  border-radius: 30px;
-  border: 3px solid var(--NewPink, #f06c9b);
-  background: var(--Card-Content-Background, #382e37);
-  padding-left: 24px;
-}
-header.headerV2 .header-inner #search-container #main-bar .searchBtn {
-  text-align: center;
-  flex-shrink: 0;
-  width: 58px;
-  height: 46px;
-  color: white;
-  border: none;
-  border-radius: 0px 25px 25px 0px;
-  background: var(--Card-Divisor, #453641);
-}
-header.headerV2 .header-inner #search-container #main-bar .searchBtn .ph-bold.ph-magnifying-glass {
-  font-size: 28px;
-}
-header.headerV2 .header-inner #search-container:focus-visible {
-  outline: none;
-}
-header.headerV2 .header-inner #search-container input#search-input {
-  width: 100%;
-  height: 100%;
-  color: #808080;
-  background: none;
-  text-align: left;
-  border: none;
-  font-family: Author;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 494;
-}
-header.headerV2 .header-inner #search-container input#search-input:focus-visible {
-  outline: none;
-}
-header.headerV2 .header-inner #search-container #results-container {
-  z-index: 1;
-  margin-left: 24px;
-  position: absolute;
-}
-header.headerV2 .header-inner #search-container #results-container li::marker {
-  content: "→";
-}
-
 /*
  * These files are split like this so 
  * that we don't have to spam !important
@@ -568,7 +462,136 @@ header.headerV2 .header-inner #search-container #results-container li::marker {
     border-radius: 0 25px 25px 0;
   }
   header.headerV2 {
+    position: fixed;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     height: 88px;
+    width: 100%;
+    top: 0;
+    transition: height 0.2s ease-in-out;
+    z-index: 1;
+    background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  header.headerV2 .header-inner {
+    display: flex;
+    width: 1644px;
+    height: 100%;
+    align-items: center;
+    padding: 14px 32px;
+    justify-content: space-between;
+    transition: transform 0.2s;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--Triary, #661f57);
+  }
+  header.headerV2 .header-inner h1 {
+    text-shadow: none;
+  }
+  header.headerV2 .header-inner h1 a {
+    color: var(--borderColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    transition: font-size 0.2s;
+  }
+  header.headerV2 .header-inner h1 a img {
+    width: font-size 0.2s;
+    margin-right: 12px;
+  }
+  header.headerV2 .header-inner #search-container {
+    /* Change the white to any color */
+    /*Change text in autofill textbox*/
+  }
+  header.headerV2 .header-inner #search-container input:-webkit-autofill,
+  header.headerV2 .header-inner #search-container input:-webkit-autofill:hover,
+  header.headerV2 .header-inner #search-container input:-webkit-autofill:focus,
+  header.headerV2 .header-inner #search-container input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--Card-Content-Background, #382e37) inset !important;
+  }
+  header.headerV2 .header-inner #search-container input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+  }
+  header.headerV2 .header-inner #search-container #main-bar {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    width: 454px;
+    height: 52px;
+    border-radius: 30px;
+    border: 3px solid var(--NewPink, #f06c9b);
+    background: var(--Card-Content-Background, #382e37);
+    padding-left: 24px;
+  }
+  header.headerV2 .header-inner #search-container #main-bar .searchBtn {
+    text-align: center;
+    flex-shrink: 0;
+    width: 58px;
+    height: 46px;
+    color: white;
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    background: var(--Card-Divisor, #453641);
+  }
+  header.headerV2 .header-inner #search-container #main-bar .searchBtn .ph-bold.ph-magnifying-glass {
+    font-size: 28px;
+  }
+  header.headerV2 .header-inner #search-container:focus-visible {
+    outline: none;
+  }
+  header.headerV2 .header-inner #search-container input#search-input {
+    width: 100%;
+    height: 100%;
+    color: #808080;
+    background: none;
+    text-align: left;
+    border: none;
+    font-family: Author;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 494;
+  }
+  header.headerV2 .header-inner #search-container input#search-input:focus-visible {
+    outline: none;
+  }
+  header.headerV2 .header-inner #search-container #results-container {
+    z-index: 1;
+    margin-left: 24px;
+    position: absolute;
+  }
+  header.headerV2 .header-inner #search-container #results-container li::marker {
+    content: "→";
+  }
+  header.headerV2.sticky {
+    height: 64px;
+    /* spam important for now until my head stops hurting!!! */
+  }
+  header.headerV2.sticky .logo {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 281;
+    line-height: normal;
+  }
+  header.headerV2.sticky .logo img {
+    width: 44px;
+  }
+  header.headerV2.sticky #main-bar {
+    flex-shrink: 0;
+    width: 342px !important;
+    height: 42px !important;
+  }
+  header.headerV2.sticky #main-bar .searchBtn {
+    flex-shrink: 0;
+    width: 48px !important;
+    height: 36px !important;
+  }
+  header.headerV2.sticky #main-bar .searchBtn .ph-bold.ph-magnifying-glass {
+    font-size: 24px !important;
   }
 }
 @media screen and (max-width: 1024px) {
