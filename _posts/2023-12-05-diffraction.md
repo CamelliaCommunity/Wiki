@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "\[diffraction\]"
+title: "[diffraction]"
 categories: posts
 author: KatGrrrl
-description: \[diffraction\] album page
+description: [diffraction] album page
 ---
 
 ## Overview
