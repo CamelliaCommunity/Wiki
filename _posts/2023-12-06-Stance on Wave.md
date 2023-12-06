@@ -43,4 +43,3 @@ It is the fifth [Vocaloid](https://en.wikipedia.org/wiki/Vocaloid) album by *Cam
 ## External Links
 
 * [Website](https://cametek.jp/stance/)
-* 
