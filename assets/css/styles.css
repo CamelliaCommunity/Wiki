@@ -4,25 +4,20 @@
 /* Import variables */
 :root {
   --font-default: "Author", sans-serif;
-  /* colors */
-  --pageBackground: #111;
-  --primaryColor: #f075c5;
-  --secondaryColor: #b775f0;
-  --tertiaryColor: #661f57;
-  --hoverColor: #ff54a9;
-  --highlightColor: rgb(202, 156, 255);
-  --errorColor: #ef4040;
+  /* new colors */
+  --colorPrimary: #f06c9b;
+  --colorSecondary: #b775f0;
+  --colorTriary: #661f57;
+  --colorLinks: #1ad1cb;
+  --colorLinksHover: #88e7e7;
+  --colorBorderTertiary: #854c68;
   /* cards */
-  --cardColor: #382e37;
-  --cardLinesColor: #868b9c;
-  --cardBackgroundColor: #2a2228;
-  --borderColor: white;
-  --borderColor2: #8b5580;
-  /* text */
-  --textColorDefault: white;
-  --shadowColorDefault: #00000029;
-  --linkColor: #53dcdc;
-  --linkHover: #88e7e7;
+  --colorCards: #382e37;
+  --colorCardDivisor: #453641;
+  --colorContentContainer: #2a2228;
+  /* misc */
+  --colorGray: #808080;
+  --colorWhite: #ffffff;
 }
 
 /* placeholder colors for code blocks */
@@ -831,7 +826,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--hoverColor);
+  background: var(--colorPrimary);
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
@@ -847,7 +842,7 @@ html {
 
 /* Firefox */
 * {
-  scrollbar-color: var(--hoverColor) transparent;
+  scrollbar-color: var(--colorPrimary) transparent;
   scrollbar-width: thin;
 }
 
@@ -871,7 +866,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-  background: var(--hoverColor);
+  background: var(--colorPrimary);
   border-radius: 20px;
   border: 6px solid transparent;
   background-clip: content-box;
@@ -882,14 +877,14 @@ html {
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #ffffff;
+  background-color: var(--colorGray);
 }
 
 body {
   font-family: var(--font-default);
   font-size: 16px;
-  background: linear-gradient(180deg, rgba(246, 65, 141, 0.2) 0%, rgba(48, 37, 41, 0.2) 100%), #111;
-  color: var(--textColorDefault);
+  background: linear-gradient(180deg, rgba(240, 108, 155, 0.2) 0%, rgba(48, 37, 41, 0.2) 100%), #111;
+  color: var(--colorWhite);
   min-height: 100vh;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -937,6 +932,10 @@ h6 {
   font-size: 20.25px;
 }
 
+p {
+  font-size: 18px;
+}
+
 #navigationButtons {
   display: flex;
   flex-wrap: wrap;
@@ -965,7 +964,7 @@ h6 {
 
 /* footer */
 footer {
-  background-color: var(--tertiaryColor);
+  background-color: var(--colorTriary);
   margin-top: auto;
   height: 70px;
   display: flex;
@@ -976,27 +975,27 @@ footer {
 }
 
 footer #footerText {
-  font: normal normal 600 24px/28px var(--font-default);
+  font-size: 20.25px;
+  font-style: normal;
+  font-weight: 596;
 }
 
 /* links */
 a {
-  color: var(--linkColor);
+  color: var(--colorLinks);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--linkHover);
+  color: var(--colorLinksHover);
   text-decoration: none;
 }
 
 /* Fixed button code */
 .buttonDefault a {
-  font-family: var(--font-default);
-  background: var(--primaryColor) 0% 0% no-repeat padding-box;
+  background: var(--colorPrimary) 0% 0% no-repeat padding-box;
   box-shadow: inset 0px -3px 6px rgba(0, 0, 0, 0.1607843137);
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
-  color: var(--textColorDefault);
   text-decoration: none;
   font-size: 18px;
   border-radius: 25px;
@@ -1032,7 +1031,7 @@ a:hover {
 
 /* cards */
 .card {
-  background: var(--cardColor) 0% 0% no-repeat padding-box;
+  background: var(--colorCards) 0% 0% no-repeat padding-box;
   max-width: 827px;
   min-height: 330px;
   border-radius: 30px;
@@ -1040,7 +1039,7 @@ a:hover {
 }
 
 .miniCard {
-  background: var(--cardColor) 0% 0% no-repeat padding-box;
+  background: var(--colorCards) 0% 0% no-repeat padding-box;
   max-width: 556px;
   border-radius: 30px;
   line-height: 26px;
@@ -1059,7 +1058,7 @@ a:hover {
   height: 156px;
   margin-left: 32px;
   border-radius: 20px;
-  border: 5px solid var(--borderColor2);
+  border: 5px solid var(--colorBorderTertiary);
 }
 .albumContainer .albumContentsContainer {
   display: flex;
@@ -1087,8 +1086,8 @@ a:hover {
 
 blockquote {
   position: relative;
-  background: var(--cardBackgroundColor);
-  border-left: solid 4px var(--tertiaryColor);
+  background: var(--colorContentContainer);
+  border-left: solid 4px var(--colorTriary);
   line-height: 1.8;
   border-radius: 10px;
   margin-left: 32px;
@@ -1098,7 +1097,7 @@ blockquote {
   /* we really want to fix this */
 }
 blockquote p {
-  font-family: var(--font-semiBoldItalic) !important;
+  font-style: italic;
   padding: 0 1em 1em 1em !important;
 }
 
@@ -1113,24 +1112,22 @@ blockquote.caution {
 }
 
 blockquote.tip {
-  border-top: solid 4px var(--secondaryColor);
+  border-top: solid 4px var(--colorSecondary);
   border-left: none;
   background: rgba(183, 117, 240, 0.4235294118);
 }
 
 .cardHeader {
-  font-family: var(--font-default);
-  color: var(--textColorDefault);
-  background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%), var(--tertiaryColor);
+  background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%), var(--colorTriary);
   display: flex;
-  border-top: 3px solid var(--borderColor2);
-  border-bottom: 3px solid var(--borderColor2);
+  border-top: 3px solid var(--colorBorderTertiary);
+  border-bottom: 3px solid var(--colorBorderTertiary);
   height: 102px;
   width: 100%;
   /* hacky way to fix padding on card headers */
 }
 .cardHeader:first-of-type {
-  border-top: 1px solid var(--borderColor2);
+  border-top: 1px solid var(--colorBorderTertiary);
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
@@ -1159,8 +1156,6 @@ blockquote.tip {
 
 .card p,
 .miniCard p {
-  font-family: var(--font-default);
-  font-size: 18px;
   padding-left: 48px;
   padding-right: 48px;
   line-height: normal;
@@ -1180,8 +1175,6 @@ blockquote.tip {
 
 .card h2,
 .miniCard h2 {
-  font-family: var(--font-default);
-  font-size: 32.44px;
   margin-left: 46px;
   align-self: center;
 }
@@ -1217,7 +1210,7 @@ li p {
 .miniCard h2:before {
   content: "";
   display: inline-block;
-  background: var(--secondaryColor) 0% 0% no-repeat padding-box;
+  background: var(--colorSecondary) 0% 0% no-repeat padding-box;
   height: 20px;
   margin-right: 8px;
   width: 4px;
@@ -1231,7 +1224,7 @@ li p {
 .miniCard h3:before {
   content: "";
   display: inline-block;
-  background: var(--secondaryColor) 0% 0% no-repeat padding-box;
+  background: var(--colorSecondary) 0% 0% no-repeat padding-box;
   height: 17px;
   margin-right: 8px;
   width: 4px;
@@ -1247,7 +1240,7 @@ li p {
 }
 
 .vertLine {
-  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
+  background: var(--colorGray) 0% 0% no-repeat padding-box;
   width: auto;
   margin-left: 8px;
   margin-right: 8px;
@@ -1256,7 +1249,7 @@ li p {
 
 /* lets dupe vertLine because there *is* a way to change its color */
 hr {
-  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
+  background: var(--colorGray) 0% 0% no-repeat padding-box;
   width: auto;
   margin-left: 32px;
   margin-right: 32px;
@@ -1266,7 +1259,7 @@ hr {
 }
 
 .horiLine {
-  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
+  background: var(--colorGray) 0% 0% no-repeat padding-box;
   width: 2px;
   height: auto;
   margin-top: 8px;
@@ -1275,7 +1268,7 @@ hr {
 }
 
 .sectionLine {
-  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
+  background: var(--colorGray) 0% 0% no-repeat padding-box;
   width: auto;
   margin-top: 8px;
   margin-left: 8px;
@@ -1306,7 +1299,7 @@ i was mostly experimenting with figma design */
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
-  background: var(--Card-Divisor, #453641);
+  background: var(--colorCardDivisor);
   border-radius: 30px;
   width: 283px;
   height: auto;
@@ -1342,7 +1335,7 @@ i was mostly experimenting with figma design */
   display: none;
 }
 #contentWedge #wedgeContainer #wedgeItems ol li::marker {
-  color: var(--linkColor);
+  color: var(--colorLinks);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -1350,7 +1343,7 @@ i was mostly experimenting with figma design */
   transition: all 0.2s ease-in-out;
 }
 #contentWedge #wedgeContainer #wedgeItems ol li:hover::marker {
-  color: var(--linkHover);
+  color: var(--colorLinksHover);
 }
 #contentWedge #wedgeContainer #wedgeItems ol li.active::marker {
   color: white;
@@ -1380,7 +1373,7 @@ i was mostly experimenting with figma design */
 }
 
 #wedgeItems li.active > a {
-  color: var(--textColorDefault);
+  color: var(--colorWhite);
 }
 
 /* scroll to top button */
@@ -1401,6 +1394,7 @@ i was mostly experimenting with figma design */
   z-index: 1;
 }
 #scrollToTop .buttonDefault a {
+  color: var(--colorWhite);
   font-size: 32px;
   text-align: center;
   width: 80px;
@@ -1429,13 +1423,13 @@ i was mostly experimenting with figma design */
 }
 
 mark {
-  color: var(--highlightColor);
+  color: var(--colorSecondary);
   background-color: rgba(255, 255, 255, 0);
 }
 
 .italic,
 em {
-  font-family: var(--font-semiBoldItalic);
+  font-style: italic;
 }
 
 /* card background, or content, whatever you want to call it */
@@ -1445,9 +1439,9 @@ em {
   flex-direction: row;
   gap: 10px;
   flex-shrink: 0;
-  background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
+  background: var(--colorContentContainer) 0% 0% no-repeat padding-box;
   box-sizing: border-box;
-  border: 3px solid var(--tertiaryColor);
+  border: 3px solid var(--colorTriary);
   border-radius: 40px;
   padding: 48px;
   margin-bottom: 72px;
@@ -1489,8 +1483,8 @@ em {
 /* this is for markdown footnotes */
 .footnote {
   display: inline;
-  color: var(--highlightColor);
-  background-color: var(--pageBackground);
+  color: var(--colorSecondary);
+  background-color: var(--colorContentContainer);
   border-radius: 10px;
   padding: 4px;
   padding-bottom: 0px;
@@ -1499,13 +1493,13 @@ em {
 
 /* pictures */
 .picture figure {
-  background: var(--tertiaryColor) 0% 0% no-repeat padding-box;
+  background: var(--colorTriary) 0% 0% no-repeat padding-box;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   max-width: 315px;
-  border: 4px solid var(--borderColor);
+  border: 4px solid var(--colorBorder);
   border-radius: 10px;
   margin-bottom: 24px;
   /* give room if last element */
@@ -1513,7 +1507,7 @@ em {
 }
 
 .picture img {
-  border: 4px solid var(--secondaryColor);
+  border: 4px solid var(--colorSecondary);
   border-radius: 10px;
   margin-top: 24px;
   margin-left: 40px;
@@ -1526,13 +1520,12 @@ em {
 }
 
 .picture img:hover {
-  border: 4px solid var(--hoverColor);
+  border: 4px solid var(--colorPrimary);
   transform: scale(1.02);
   overflow: hidden;
 }
 
 .picture figcaption {
-  font: normal normal 600 32px/35px var(--font-default);
   text-align: center;
   margin-top: 7px;
   margin-bottom: 7px;
@@ -1559,7 +1552,7 @@ figure.centerImage figcaption {
   text-align: center;
 }
 figure.centerImage img {
-  border: 4px solid var(--secondaryColor);
+  border: 4px solid var(--colorSecondary);
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -1570,7 +1563,7 @@ figure.centerImage img {
   transition: all 0.3s ease;
 }
 figure.centerImage img:hover {
-  border: 4px solid var(--hoverColor);
+  border: 4px solid var(--colorPrimary);
   transform: scale(1.01);
 }
 
@@ -1584,7 +1577,7 @@ figure.floatImage figcaption {
   text-align: center;
 }
 figure.floatImage img {
-  border: 4px solid var(--secondaryColor);
+  border: 4px solid var(--colorSecondary);
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -1595,8 +1588,13 @@ figure.floatImage img {
   transition: all 0.3s ease;
 }
 figure.floatImage img:hover {
-  border: 4px solid var(--hoverColor);
+  border: 4px solid var(--colorPrimary);
   transform: scale(1.01);
+}
+
+/* give codeblocks a scrollbar */
+div pre.highlight {
+  overflow-y: auto;
 }
 
 /* smaller screens/smartphones (to be removed or reworked later) */
@@ -1607,7 +1605,7 @@ figure.floatImage img:hover {
   }
   /* noodles */
   img:hover {
-    border: 4px solid var(--secondaryColor) !important;
+    border: 4px solid var(--colorSecondary) !important;
     transform: none !important;
   }
 }
