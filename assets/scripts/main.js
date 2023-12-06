@@ -30,7 +30,7 @@ const scrollDetect = () => {
 
   // Check if user has scrolled a certain amount of pixels to the top
   // Used to be 200 then 198
-  if (window.scrollY <= 60) {
+  if (window.scrollY <= 222) {
     header.classList.remove('sticky');
   }
 };
