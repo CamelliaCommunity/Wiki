@@ -1211,7 +1211,7 @@ li p {
   width: auto;
   margin-left: 8px;
   margin-right: 8px;
-  height: 3px;
+  height: 1px;
 }
 
 /* lets dupe vertLine because there *is* a way to change its color */
@@ -1221,13 +1221,13 @@ hr {
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 8px;
-  height: 2px;
+  height: 1px;
   border: 0;
 }
 
 .horiLine {
   background: var(--colorGray) 0% 0% no-repeat padding-box;
-  width: 2px;
+  width: 1px;
   height: auto;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -1263,13 +1263,11 @@ i was mostly experimenting with figma design */
 
 /* jank ass wedge code */
 #contentWedge {
-  display: flex;
   flex-shrink: 0;
   flex-direction: column;
   background: var(--colorCardDivisor);
   border-radius: 30px;
   width: 283px;
-  /* keep it to the bottom left of page */
 }
 #contentWedge #wedgeContainer {
   position: sticky;
@@ -1629,7 +1627,7 @@ div pre.highlight {
   }
   .cardHeader {
     flex-wrap: wrap;
-    min-height: 102px;
+    min-height: 84px;
     height: auto;
   }
   .cardHeader h2 {

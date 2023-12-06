@@ -46,11 +46,6 @@ html {
   min-height: 10px;
 }
 
-// ::-webkit-scrollbar-track {
-//   background-color: #3e313b;
-//   width: 100%;
-// }
-
 ::-webkit-scrollbar-thumb:hover {
   background-color: #bbbbbb;
 }
@@ -461,7 +456,7 @@ li p {
   width: auto;
   margin-left: 8px;
   margin-right: 8px;
-  height: 3px;
+  height: 1px;
 }
 
 /* lets dupe vertLine because there *is* a way to change its color */
@@ -471,13 +466,13 @@ hr {
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 8px;
-  height: 2px;
+  height: 1px;
   border: 0;
 }
 
 .horiLine {
   background: var(--colorGray) 0% 0% no-repeat padding-box;
-  width: 2px;
+  width: 1px;
   height: auto;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -514,17 +509,11 @@ i was mostly experimenting with figma design */
 
 /* jank ass wedge code */
 #contentWedge {
-  display: flex;
   flex-shrink: 0;
   flex-direction: column;
   background: var(--colorCardDivisor);
   border-radius: 30px;
   width: 283px;
-  // height: auto;
-  // min-height: 1056px;
-  /* keep it to the bottom left of page */
-  // bottom: 80px;
-  // bottom: -374px;
 
   #wedgeContainer {
     position: sticky;
@@ -891,10 +880,6 @@ div pre.highlight {
     margin-left: 8px;
   }
 
-  // #contentWedge {
-  //   width: 174px;
-  // }
-
   /* give codeblocks a scrollbar */
   div pre.highlight {
     overflow-y: auto;
@@ -913,7 +898,7 @@ div pre.highlight {
 
   .cardHeader {
     flex-wrap: wrap;
-    min-height: 102px;
+    min-height: 84px;
     height: auto;
 
     h2 {
