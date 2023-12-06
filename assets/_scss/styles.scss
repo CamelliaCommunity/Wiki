@@ -18,7 +18,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 130px;
+  scroll-padding-top: 102px;
 }
 
 *,
@@ -229,7 +229,7 @@ a:hover {
 /* cards */
 .card {
   background: var(--cardColor) 0% 0% no-repeat padding-box;
-  max-width: 1136px;
+  max-width: 827px;
   min-height: 330px;
   border-radius: 30px;
   line-height: 26px;
@@ -521,86 +521,84 @@ i was mostly experimenting with figma design */
 
 /* jank ass wedge code */
 #contentWedge {
-  position: fixed;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
-  background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 3px solid var(--tertiaryColor);
-  border-left: none;
-  border-bottom: none;
-  border-radius: 0 30px 0 0;
+  background: var(--Card-Divisor, #453641);
+  border-radius: 30px;
   width: 283px;
-  height: 680px;
+  height: auto;
   // min-height: 1056px;
   /* keep it to the bottom left of page */
-  left: 0;
-  bottom: 0;
   // bottom: 80px;
   // bottom: -374px;
-  opacity: 60%;
-  @include transition(opacity 0.25s ease-in-out);
-  z-index: 1;
 
-  h2 {
-    padding-top: 16px;
-    padding-left: 16px;
-  }
+  #wedgeContainer {
+    position: sticky;
+    h2 {
+      font-weight: 596;
+      padding-top: 16px;
+      padding-left: 16px;
+    }
 
-  .vertLine {
-    margin-top: 10px;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
+    .vertLine {
+      margin-top: 4px;
+      margin-left: 16px;
+      margin-right: 16px;
+      height: 2px;
+    }
 
-  &:hover {
-    opacity: 100%;
-  }
+    #wedgeItems {
+      overflow-y: scroll;
+      overflow: auto;
+      font-size: 18px;
+      height: 100%;
+      padding: 16px 16px 16px 34px;
 
-  #wedgeItems {
-    overflow-y: scroll;
-    overflow: auto;
-    font-size: 18px;
-    height: 100%;
-    padding: 16px 8px 16px 34px;
+      ol {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
 
-    ol {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+        li {
+          &:last-child .vertLine {
+            display: none;
+          }
 
-      li {
-        &:last-child .vertLine {
-          display: none;
-        }
+          &::marker {
+            color: var(--linkColor);
+            @include transition(all 0.2s ease-in-out);
+          }
 
-        &::marker {
-          color: var(--linkColor);
-          @include transition(all 0.2s ease-in-out);
-        }
+          &:hover::marker {
+            color: var(--linkHover);
+          }
 
-        &:hover::marker {
-          color: var(--linkHover);
-        }
+          &.active::marker {
+            color: white;
+          }
 
-        &.active::marker {
-          color: white;
-        }
+          ul {
+            margin-top: 8px;
+            padding-left: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
 
-        ul {
-          margin-top: 8px;
-          padding-left: 16px;
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-
-          li {
-            &::marker {
-              // yes these spaces are supposed to be here
-              content: "•  ";
+            li {
+              &::marker {
+                // yes these spaces are supposed to be here
+                content: "•  ";
+              }
             }
           }
         }
       }
+    }
+
+    &.sticky {
+      top: 64px;
+      position: sticky;
     }
   }
 }
@@ -671,14 +669,19 @@ em {
 .cardBackground {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 10px;
+  flex-shrink: 0;
+
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
   box-sizing: border-box;
   border: 3px solid var(--tertiaryColor);
   border-radius: 40px;
-  padding: 40px;
+  padding: 48px;
   margin-bottom: 72px;
   min-height: 727px;
+
+  padding: 48px;
 }
 
 /* footnote, or the author */
@@ -828,14 +831,6 @@ figure.floatImage {
 
 @media screen and (max-width: 1416px) {
   /* since phones are weird there technically isnt hovering */
-  #contentWedge {
-    height: 472px;
-
-    &:hover {
-      opacity: 60%;
-    }
-  }
-
   #scrollToTop:hover {
     opacity: 60%;
   }
@@ -899,9 +894,9 @@ figure.floatImage {
     margin-left: 8px;
   }
 
-  #contentWedge {
-    width: 174px;
-  }
+  // #contentWedge {
+  //   width: 174px;
+  // }
 
   /* give codeblocks a scrollbar */
   div pre.highlight {

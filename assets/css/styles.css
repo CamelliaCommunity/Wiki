@@ -813,7 +813,7 @@ header.headerOld .header-shared h1 a img {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 130px;
+  scroll-padding-top: 102px;
 }
 
 *,
@@ -1033,7 +1033,7 @@ a:hover {
 /* cards */
 .card {
   background: var(--cardColor) 0% 0% no-repeat padding-box;
-  max-width: 1136px;
+  max-width: 827px;
   min-height: 330px;
   border-radius: 30px;
   line-height: 26px;
@@ -1303,55 +1303,45 @@ i was mostly experimenting with figma design */
 
 /* jank ass wedge code */
 #contentWedge {
-  position: fixed;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
-  background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 3px solid var(--tertiaryColor);
-  border-left: none;
-  border-bottom: none;
-  border-radius: 0 30px 0 0;
+  background: var(--Card-Divisor, #453641);
+  border-radius: 30px;
   width: 283px;
-  height: 680px;
+  height: auto;
   /* keep it to the bottom left of page */
-  left: 0;
-  bottom: 0;
-  opacity: 60%;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -ms-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
-  transition: opacity 0.25s ease-in-out;
-  z-index: 1;
 }
-#contentWedge h2 {
+#contentWedge #wedgeContainer {
+  position: sticky;
+}
+#contentWedge #wedgeContainer h2 {
+  font-weight: 596;
   padding-top: 16px;
   padding-left: 16px;
 }
-#contentWedge .vertLine {
-  margin-top: 10px;
+#contentWedge #wedgeContainer .vertLine {
+  margin-top: 4px;
   margin-left: 16px;
   margin-right: 16px;
+  height: 2px;
 }
-#contentWedge:hover {
-  opacity: 100%;
-}
-#contentWedge #wedgeItems {
+#contentWedge #wedgeContainer #wedgeItems {
   overflow-y: scroll;
   overflow: auto;
   font-size: 18px;
   height: 100%;
-  padding: 16px 8px 16px 34px;
+  padding: 16px 16px 16px 34px;
 }
-#contentWedge #wedgeItems ol {
+#contentWedge #wedgeContainer #wedgeItems ol {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-#contentWedge #wedgeItems ol li:last-child .vertLine {
+#contentWedge #wedgeContainer #wedgeItems ol li:last-child .vertLine {
   display: none;
 }
-#contentWedge #wedgeItems ol li::marker {
+#contentWedge #wedgeContainer #wedgeItems ol li::marker {
   color: var(--linkColor);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1359,21 +1349,25 @@ i was mostly experimenting with figma design */
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-#contentWedge #wedgeItems ol li:hover::marker {
+#contentWedge #wedgeContainer #wedgeItems ol li:hover::marker {
   color: var(--linkHover);
 }
-#contentWedge #wedgeItems ol li.active::marker {
+#contentWedge #wedgeContainer #wedgeItems ol li.active::marker {
   color: white;
 }
-#contentWedge #wedgeItems ol li ul {
+#contentWedge #wedgeContainer #wedgeItems ol li ul {
   margin-top: 8px;
   padding-left: 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-#contentWedge #wedgeItems ol li ul li::marker {
+#contentWedge #wedgeContainer #wedgeItems ol li ul li::marker {
   content: "•  ";
+}
+#contentWedge #wedgeContainer.sticky {
+  top: 64px;
+  position: sticky;
 }
 
 #wedgeItems a {
@@ -1448,14 +1442,17 @@ em {
 .cardBackground {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 10px;
+  flex-shrink: 0;
   background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
   box-sizing: border-box;
   border: 3px solid var(--tertiaryColor);
   border-radius: 40px;
-  padding: 40px;
+  padding: 48px;
   margin-bottom: 72px;
   min-height: 727px;
+  padding: 48px;
 }
 
 /* footnote, or the author */
@@ -1605,12 +1602,6 @@ figure.floatImage img:hover {
 /* smaller screens/smartphones (to be removed or reworked later) */
 @media screen and (max-width: 1416px) {
   /* since phones are weird there technically isnt hovering */
-  #contentWedge {
-    height: 472px;
-  }
-  #contentWedge:hover {
-    opacity: 60%;
-  }
   #scrollToTop:hover {
     opacity: 60%;
   }
@@ -1661,9 +1652,6 @@ figure.floatImage img:hover {
   }
   figure.floatImage {
     margin-left: 8px;
-  }
-  #contentWedge {
-    width: 174px;
   }
   /* give codeblocks a scrollbar */
   div pre.highlight {
