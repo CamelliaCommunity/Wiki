@@ -808,7 +808,7 @@ header.headerOld .header-shared h1 a img {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 94px;
+  scroll-padding-top: 92px;
 }
 
 *,
@@ -1271,11 +1271,11 @@ i was mostly experimenting with figma design */
 }
 #contentWedge #wedgeContainer {
   position: sticky;
-  padding: 16px 16px 16px 34px;
+  padding: 16px;
 }
-#contentWedge #wedgeContainer .vertLine {
+#contentWedge #wedgeContainer hr {
   margin-top: 4px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   margin-left: 0;
   margin-right: 0;
   height: 2px;
@@ -1285,15 +1285,13 @@ i was mostly experimenting with figma design */
   overflow-y: scroll;
   overflow: auto;
   font-size: 18px;
+  font-weight: 500;
   max-height: calc(100vh - 144px);
 }
 #contentWedge #wedgeContainer #wedgeItems ol {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-#contentWedge #wedgeContainer #wedgeItems ol li:last-child .vertLine {
-  display: none;
+  gap: 10px;
 }
 #contentWedge #wedgeContainer #wedgeItems ol li::marker {
   color: var(--colorLinks);
