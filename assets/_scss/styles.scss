@@ -30,65 +30,55 @@ html {
 }
 
 /* Scrollbar */
-/* Chrome, Safari, Edge */
+/* Common styles for Chrome, Safari, Edge */
 ::-webkit-scrollbar {
-  width: 17px;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 100px;
+  background-color: #3e313b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--colorPrimary);
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
+  background: #7d727a;
+  border: 2px solid #7d727a00;
+  -webkit-border-radius: 100px;
+  background-clip: padding-box;
+  min-height: 10px;
 }
 
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
+// ::-webkit-scrollbar-track {
+//   background-color: #3e313b;
+//   width: 100%;
+// }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #bbbbbb;
 }
 
 /* Firefox */
-* {
-  scrollbar-color: var(--colorPrimary) transparent;
-  scrollbar-width: thin;
-}
+// * {
+//   scrollbar-color: var(--colorPrimary) transparent;
+//   scrollbar-width: thin;
+// }
 
-*::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
+// *::-webkit-scrollbar-thumb {
+//   border-radius: 20px;
+//   border: 6px solid transparent;
+//   background-clip: content-box;
+// }
 
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #ffffff;
-}
+// *::-webkit-scrollbar-thumb:hover {
+//   background-color: #ffffff;
+// }
 
 /* Edge */
-* {
-  -ms-overflow-style: none;
-}
+// * {
+//   -ms-overflow-style: none;
+// }
 
-*::-webkit-scrollbar {
-  width: 17px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: var(--colorPrimary);
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-*::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background-color: var(--colorGray);
-}
+// *::-webkit-scrollbar-thumb:hover {
+//   background-color: var(--colorGray);
+// }
 
 body {
   font-family: var(--font-default);
@@ -525,7 +515,7 @@ i was mostly experimenting with figma design */
   background: var(--colorCardDivisor);
   border-radius: 30px;
   width: 283px;
-  height: auto;
+  // height: auto;
   // min-height: 1056px;
   /* keep it to the bottom left of page */
   // bottom: 80px;
@@ -533,16 +523,19 @@ i was mostly experimenting with figma design */
 
   #wedgeContainer {
     position: sticky;
+    padding: 16px 16px 16px 34px;
+
     h2 {
       font-weight: 596;
-      padding-top: 16px;
-      padding-left: 16px;
+      // padding-top: 16px;
+      // padding-left: 16px;
     }
 
     .vertLine {
       margin-top: 4px;
-      margin-left: 16px;
-      margin-right: 16px;
+      margin-bottom: 4px;
+      margin-left: 0;
+      margin-right: 0;
       height: 2px;
     }
 
@@ -550,8 +543,7 @@ i was mostly experimenting with figma design */
       overflow-y: scroll;
       overflow: auto;
       font-size: 18px;
-      height: 100%;
-      padding: 16px 16px 16px 34px;
+      max-height: calc(100vh - 144px);
 
       ol {
         display: flex;
