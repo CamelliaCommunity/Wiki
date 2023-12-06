@@ -10,22 +10,8 @@
 }
 
 /* Import variables */
-@import "./variables", "./highlights";
+@import "./variables", "./highlights", "./author";
 @import "./header/shared";
-
-/* Import favorite font */
-@font-face {
-  font-family: "Torus Pro SemiBold";
-  src: url("../fonts/toruspro-semibold.woff2") format("woff2"), url("../fonts/toruspro-semibold.woff") format("woff");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Torus Pro SemiBold Italic";
-  src: url("../fonts/toruspro-semibolditalic.woff2") format("woff2"),
-    url("../fonts/toruspro-semibolditalic.woff") format("woff");
-  font-weight: 600;
-}
 
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
@@ -124,11 +110,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  h1 {
-    font-family: var(--font-semiBoldItalic);
-    // margin-top: 224px;
-  }
 }
 
 /* center items nested in main tag */
@@ -161,15 +142,6 @@ h5 {
 
 h6 {
   font-size: 20.25px;
-}
-
-/* for big titles */
-.pageTitle#smallerFont {
-  font: normal normal 600 32px/21px var(--font-default);
-}
-
-.makeBig {
-  font-size: 32.44px !important;
 }
 
 #navigationButtons {
@@ -715,18 +687,18 @@ em {
 #titleContainer {
   display: flex;
   flex-direction: column;
-  // background: red;
   min-width: 76rem;
-  // min-height: 130px;
-  margin-top: 207px;
+  margin-top: 164px;
 
   h1 {
     align-self: center;
-    margin-bottom: 16px;
+    font-size: 42px;
+    font-style: italic;
+    margin-bottom: 8px;
   }
 
   #footNote {
-    margin-bottom: 30px;
+    margin-bottom: 58px;
     color: lightgray;
     align-self: center;
   }
@@ -735,14 +707,13 @@ em {
   #footNoteRight {
     color: lightgray;
     align-self: flex-end;
-    margin-right: 42px;
-    margin-bottom: 8px;
+    margin-right: 48px;
   }
 }
 
 #notAFullTitleContainer h1 {
-  margin-top: 224px;
-  margin-bottom: 77px;
+  margin-top: 164px;
+  margin-bottom: 76px;
 }
 
 /* this is for markdown footnotes */

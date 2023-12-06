@@ -3,8 +3,7 @@
 /* ONLY EDIT .SCSS FILES!!!!!!! */
 /* Import variables */
 :root {
-  --font-default: "Torus Pro SemiBold", sans-serif;
-  --font-semiBoldItalic: "Torus Pro SemiBold Italic";
+  --font-default: "Author", sans-serif;
   /* colors */
   --pageBackground: #111;
   --primaryColor: #f075c5;
@@ -346,6 +345,142 @@ figure.highlight pre.highlight {
   color: #f78c6c;
 }
 
+/**
+ * @license
+ *
+ * Font Family: Author
+ * Designed by: Satya Rajpurohit
+ * URL: https://www.fontshare.com/fonts/author
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Author Variable(Variable font)
+ * Author Variable Italic(Variable font)
+ * Author Extralight
+ * Author Extralight Italic
+ * Author Light
+ * Author Light Italic
+ * Author Regular
+ * Author Italic
+ * Author Medium
+ * Author Medium Italic
+ * Author Semibold
+ * Author Semibold Italic
+ * Author Bold
+ * Author Bold Italic
+ *
+*/
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+@font-face {
+  font-family: "Author-Variable";
+  src: url("../fonts/Author-Variable.woff2") format("woff2"), url("../fonts/Author-Variable.woff") format("woff"), url("../fonts/Author-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+  * This is a variable font
+  * You can controll variable axes as shown below:
+  * font-variation-settings: 'wght' 700.0;
+  *
+  * available axes:
+
+  * 'wght' (range from 200.0 to 700.0)
+
+  */
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-Extralight.woff2") format("woff2"), url("../fonts/Author-Extralight.woff") format("woff"), url("../fonts/Author-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-ExtralightItalic.woff2") format("woff2"), url("../fonts/Author-ExtralightItalic.woff") format("woff"), url("../fonts/Author-ExtralightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-Light.woff2") format("woff2"), url("../fonts/Author-Light.woff") format("woff"), url("../fonts/Author-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-LightItalic.woff2") format("woff2"), url("../fonts/Author-LightItalic.woff") format("woff"), url("../fonts/Author-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-Regular.woff2") format("woff2"), url("../fonts/Author-Regular.woff") format("woff"), url("../fonts/Author-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-Italic.woff2") format("woff2"), url("../fonts/Author-Italic.woff") format("woff"), url("../fonts/Author-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-Medium.woff2") format("woff2"), url("../fonts/Author-Medium.woff") format("woff"), url("../fonts/Author-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-MediumItalic.woff2") format("woff2"), url("../fonts/Author-MediumItalic.woff") format("woff"), url("../fonts/Author-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-Semibold.woff2") format("woff2"), url("../fonts/Author-Semibold.woff") format("woff"), url("../fonts/Author-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-SemiboldItalic.woff2") format("woff2"), url("../fonts/Author-SemiboldItalic.woff") format("woff"), url("../fonts/Author-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-Bold.woff2") format("woff2"), url("../fonts/Author-Bold.woff") format("woff"), url("../fonts/Author-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Author";
+  src: url("../fonts/Author-BoldItalic.woff2") format("woff2"), url("../fonts/Author-BoldItalic.woff") format("woff"), url("../fonts/Author-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
 header.headerOld {
   position: fixed;
   overflow: hidden;
@@ -490,6 +625,8 @@ header.headerOld .header-shared h1 a img {
   }
   header.headerV2 .header-inner h1 {
     text-shadow: none;
+    font-size: 42px;
+    font-weight: 281;
   }
   header.headerV2 .header-inner h1 a {
     color: var(--borderColor);
@@ -551,7 +688,7 @@ header.headerOld .header-shared h1 a img {
     background: none;
     text-align: left;
     border: none;
-    font-family: Author;
+    font-family: "Author", sans-serif;
     font-size: 18px;
     font-style: italic;
     font-weight: 494;
@@ -574,7 +711,6 @@ header.headerOld .header-shared h1 a img {
   header.headerV2.sticky .logo {
     font-size: 32px;
     font-style: normal;
-    font-weight: 281;
     line-height: normal;
   }
   header.headerV2.sticky .logo img {
@@ -671,17 +807,6 @@ header.headerOld .header-shared h1 a img {
   header.headerOld.sticky .header-mobile-scroll {
     transform: translateY(-100px);
   }
-}
-/* Import favorite font */
-@font-face {
-  font-family: "Torus Pro SemiBold";
-  src: url("../fonts/toruspro-semibold.woff2") format("woff2"), url("../fonts/toruspro-semibold.woff") format("woff");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Torus Pro SemiBold Italic";
-  src: url("../fonts/toruspro-semibolditalic.woff2") format("woff2"), url("../fonts/toruspro-semibolditalic.woff") format("woff");
-  font-weight: 600;
 }
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
@@ -780,9 +905,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-main h1 {
-  font-family: var(--font-semiBoldItalic);
-}
 
 /* center items nested in main tag */
 main .centerItem {
@@ -814,15 +936,6 @@ h5 {
 
 h6 {
   font-size: 20.25px;
-}
-
-/* for big titles */
-.pageTitle#smallerFont {
-  font: normal normal 600 32px/21px var(--font-default);
-}
-
-.makeBig {
-  font-size: 32.44px !important;
 }
 
 #navigationButtons {
@@ -1351,28 +1464,29 @@ em {
   display: flex;
   flex-direction: column;
   min-width: 76rem;
-  margin-top: 207px;
+  margin-top: 164px;
   /* footnote but on the right side */
 }
 #titleContainer h1 {
   align-self: center;
-  margin-bottom: 16px;
+  font-size: 42px;
+  font-style: italic;
+  margin-bottom: 8px;
 }
 #titleContainer #footNote {
-  margin-bottom: 30px;
+  margin-bottom: 58px;
   color: lightgray;
   align-self: center;
 }
 #titleContainer #footNoteRight {
   color: lightgray;
   align-self: flex-end;
-  margin-right: 42px;
-  margin-bottom: 8px;
+  margin-right: 48px;
 }
 
 #notAFullTitleContainer h1 {
-  margin-top: 224px;
-  margin-bottom: 77px;
+  margin-top: 164px;
+  margin-bottom: 76px;
 }
 
 /* this is for markdown footnotes */

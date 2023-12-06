@@ -134,8 +134,8 @@ header.headerV2 {
 
     h1 {
       text-shadow: none;
-      // font-size: 42px;
-      // font-style: normal;
+      font-size: 42px;
+      font-weight: 281;
 
       a {
         color: var(--borderColor);
@@ -207,7 +207,7 @@ header.headerV2 {
         background: none;
         text-align: left;
         border: none;
-        font-family: Author; // add fonts later
+        font-family: "Author", sans-serif;
         font-size: 18px;
         font-style: italic;
         font-weight: 494;
@@ -233,10 +233,8 @@ header.headerV2 {
     height: 64px;
 
     .logo {
-      // font-family: Author;
       font-size: 32px;
       font-style: normal;
-      font-weight: 281;
       line-height: normal;
 
       img {
