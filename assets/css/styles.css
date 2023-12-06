@@ -1161,10 +1161,30 @@ li p {
 
 .card ol,
 .card ul {
-  padding-left: 56px;
-  padding-right: 56px;
-  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  margin-right: 24px;
   line-height: 26px;
+  background: var(--colorCardDivisor);
+  border-radius: 30px;
+}
+.card ol li,
+.card ul li {
+  padding: 10px;
+  border-bottom: 1px solid var(--colorGray);
+}
+.card ol li::marker,
+.card ul li::marker {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: italic;
+}
+.card ol li:last-child,
+.card ul li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
 }
 .card ol li:last-child p,
 .card ul li:last-child p {

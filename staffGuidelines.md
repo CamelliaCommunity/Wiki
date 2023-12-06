@@ -37,29 +37,20 @@ If you would like to apply for Helper, refer here. Have fun reading~*
 
 1. Punish people accordingly if they break the rules. The template
 for punishing someone is *VERBAL WARNING -> INFRACTION -> TEMPMUTE -> KICK -> 8-DAY BAN -> INDEF BAN.* The template may vary based on how severely someone is acting. Use good judgment when punishing someone. If staff members cannot decide on a consensus for a member, a verbal warning should be given by default.
-
 1. Try to be nice. This place is supposed to welcome everyone regardless of who they are.
-
 1. Try not to be an arbitrary person or make arbitrary decisions in
 a situation; doing this is not ideal.
-
 1. Try not to be arrogant and avoid brown-nosing. Doing this makes
 you look stupid and does not fall within the ideals of the staff team. Remind yourself that we are all one!
-
 1. Treat others how you want to be treated, and try to be approachable to other members.
-
 1. Before making server changes or creating events, please mention it to other staff members so it can be noticed!
-
 1. Contact another staff member if you're feeling burnt out and/or
 you need help with moderating. The staff team looks for
 consistent contribution, not overloaded. Make sure to contact another staff member if you need to.
-
 1. Try to mention your actions and anything relevant regarding a
 particular member and/or punishments. This is for transparency's sake.
-
 1. Listen to the room in certain situations; forcefully changing a
 sensitive topic in a channel will only leave people confused and the situation unresolved. Your job is to please all parties. Only in extreme cases should sensitive topics be forcefully shifted.
-
 1. Political/religious talk is not allowed on the main channels.
 This server has many people with differing opinions. If anyone
 is talking about political situations, redirect them to
@@ -69,23 +60,14 @@ please use the FAQ commands on bigotry (?bigot) or punish them accordingly.
 ## Part 2: Expectations
 
 1. You are expected not to take server rules and guidelines lightly. Always remember to refer to these guidelines and look in the server rules if you need a refresher. Remember, you have a significant influence on members and outsiders.
-
 1. You are expected to know basic moderation commands (For Discord). For using John Wick, basic commands are !warn !timeout add !purge and !kick.
-
 1. You are expected to know basic FAQ commands pinned in #mod-commands. Please read them!
-
 1. You are expected to help people when implied or asked (but don't create too much noise!).
-
 1. You are expected to use your best judgment when it comes to punishing someone or warning them.
-
 1. You are expected to be civil in and outside the community's central server. (This includes neighboring servers, other platforms associated with Camellia, etc.) Do not play middle, either! This ruins staff credibility.
-
 1. You are expected to look at the suggestion channels and suggestions in general. If a member suggests something for the server, please repost it in the suggestion channels or bring it up in the staff chat to be noticed.
-
 1. You are expected to help lead the server in the best direction for you and its members.
-
 1. You are expected to be present when needed.
-
 1. You are expected to be cool. (Be cool!)
 
 ## Part 3: General Advice
@@ -97,11 +79,8 @@ I have noticed staff members complain and some people being afraid of becoming s
 ---
 
 1. The posted content is illegal (i.e., drugs, potential piracy).
-
 1. The posted content is reported in the ticket channels.
-
 1. The content being posted violates Discord's [Terms of Service](https://discord.com/terms) or [Community Guidelines](https://discord.com/guidelines).
-
 1. The content being posted implies anything that breaks the server rules in a malicious tone.
 
 ### Cross-Banning Users
@@ -111,9 +90,7 @@ I have noticed staff members complain and some people being afraid of becoming s
 *In extreme circumstances, we may ban individuals for their actions in other communities even if they have not breached any rules in this server. This will only happen if all of the following conditions are met.*
 
 1. The user has broken Discord's [Terms of Service](https://discord.com/terms) or [Community Guidelines](https://discord.com/guidelines).
-
 1. The Admins are confident of any evidence sent regarding such behavior of the user.
-
 1. The user is not currently on the server but poses a probable risk to the server environment, or the user is already on the server.
 
 ### Handling situations that could be overwhelming
@@ -123,11 +100,8 @@ I have noticed staff members complain and some people being afraid of becoming s
 *Given how people are, when taking action against something, it's possible to get targeted for harassment. If handling the situation becomes out of hand, you should consider one of these options; remember to use good judgment on what to do!*
 
 1. Contact other staff members about the situation and provide a chat link to give insight and possible backup. If you're unsure how to handle a situation, contact someone higher up.
-
 1. Ignore the perpetrators, and try not to engage in unneeded arguments or discussions without reason.
-
 1. Try to de-escalate by reassuring people that this action was needed or is being re-evaluated.
-
 1. Listen to what people say and tell them what they want to hear(unless otherwise). Try to be patient with them so they can feel comfortable with what's happening. By doing this method, it should be easier to diverge a heated topic/discussion and talk about something else.
 
 ### Disciplinary actions and what happens after
@@ -137,11 +111,8 @@ I have noticed staff members complain and some people being afraid of becoming s
 *When people don't listen, you need to take action. Here's how to make yourself look less 1984 and more like Mad Max (a more respected kind of staff member).*
 
 1. Always put a reason for anything. This includes warnings, bans, and kicks.
-
 1. If members have questions about their punishment, try to make messages short and straightforward on why they were punished, and avoid arguments if you can!
-
 1. If someone complains about their punishment not being listed in the rules, remind them about reading the room/common sense. Alternatively, ignore them (I really like doing this one personally!).
-
 1. If someone doesn't listen after an infraction, time them out for 10 minutes minimum.
 
 ## Part 4: Moderation Terminology and AutoMod
@@ -153,15 +124,10 @@ I have noticed staff members complain and some people being afraid of becoming s
 *Using Wick, the moderation bot, there are a couple of commands. These commands are: /warn /kick /ban, and /infractions. We want to generalize terms we use when referring to moderation in general, so keep these in mind.*
 
 * \[Warn/Infraction\]: A server warning issued by the bot to keep track of how many infractions somebody has. The bot will punish a member automatically based on several infractions.
-
 * \[Verbal\]: This refers to a verbal warning; verbal warnings could also be called "soft warnings" and are issued before severe action is taken. FAQ Commands are included.
-
 * \[Restriction/Restricted\]: A restricted user cannot use a specific chat category or channel. These are issued when users can't stay on topic or provide unwanted discussion/noise.
-
 * \[Timeout/Mute\]: Users that cannot speak in chats for a specified time.
-
 * \[Noise\]: Could be used for people talking too much. Example: "Stop creating noise, please." This could also be used instead of saying, "Shut the fuck up."
-
 * This list will be added to eventually.
 
 ### Wick's AutoMod
@@ -169,9 +135,7 @@ I have noticed staff members complain and some people being afraid of becoming s
 ---
 
 * Each infraction given by John Wick is a total of 5 warning points.
-
 * 15 warning points give 1-hour timeouts. 25 warning points give 1-day timeouts, and 35 warning points kick members.
-
 * AutoMod also has a heating system. Each rule is defined with a certain percentage of heat before it warns a member. For example, if a user is spamming similar messages, heat is added by 22%. A member needs to send approximately 4.50 messages before getting punished, and so on.
 
 ## Part 5: Events and Announcements
@@ -187,31 +151,22 @@ I have noticed staff members complain and some people being afraid of becoming s
 #### Events: What's considered
 
 * Server game nights
-
 * Server watch parties (for Camellia streams, sets, etc.)
-
 * Server milestones, challenges, etc.
-
 * Q&A sessions
 
 #### Events: Important events to create
 
 * Camellia song premieres
-
 * Camellia sets
-
 * Music fests featuring Camellia
-
 * Anything involving Camellia!
 
 #### Events: What's not considered
 
 * Joke events (rare expectations)
-
 * Sets that don't include Camellia
-
 * Other Discord events
-
 * Staff-related events
 
 ### Announcement posts
@@ -223,21 +178,15 @@ When creating announcements for any *important* reason, these guidelines must be
 #### Announcements: Tone of delivery
 
 * Posts must be neutral to the reader. No bias should show or any favoring to certain topics. Only on rare occasions should this rule be voided.
-
 * Grammar and styling should be consistent with previous posts. When creating a post, be sure to check grammar with built-in text editors.
-
 * Posts must be easy to digest and understandable for readers. Be sure to avoid any complex or abrupt sentences.
-
 * Be sure to preview your posts in any of the staff chats before posting. Make sure it's good enough!
 
 #### Announcements: Keeping consistency
 
 * All posts are to be written in United States English. Different spellings for different words will occur, so be mindful of spelling. Words included but not limited to are: color, center, skillful, analyze, etc.
-
 * Posts regarding challenges, contests, and Camellia Monthly must follow [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119). It is also encouraged to use [proper markdown](https://gist.github.com/matthewzring/9f7bbfd102003963f9be7dbcf7d40e51) for posts.
-
 * Trademarks must be correctly typed, including games, media, music, etc. Examples include YouTube, Discord, etc.
-
 * Dates must be followed with a specified time (if possible). Dates could be written with [Discord integration](https://r.3v.fi/discord-timestamps) or with HH:MM TIMEZONE. Avoid using GMT; use UTC for ease of use. Date formatting should follow something like this: June 5, 2022 (00:40 UTC-5).
 
 ## Part 6: Promotion Process and Roles
@@ -253,41 +202,31 @@ After two warning messages, it's guaranteed demotion on the third!
 #### Probationary and Trial Roles
 
 * All new staff members will start with the Helper role and a designated secondary role. These roles are called Trial Staff and Probationary Staff.
-
 * Trial Staff will be given to staff members who would normally be denied in the application process but are given a chance to prove themselves to the Admins. Trial Staff is also used as a learning experience for new staff members!
-
 * Probationary Staff are given to competent individuals who have proven their readiness to join the staff team. This is a way to evaluate performance before fully committing to their role.
 
 #### Auxiliary Staff Role
 
 * This role is given to members selected from the Auxiliary Staff applications.
-
 * Auxiliary Staff functions as stand-in staff members. When there's a staff position open, Auxiliary Staff will take the open position when needed.
-
 * Think of this as a wait-list for becoming a staff member.
 
 #### Challenges Judge Role
 
 * This role is only given to members who have contributed to production events. It is also given to members who wish to contribute.
-
 * As the name suggests, it's for production judges. Their purpose is to judge song submissions during production events.
-
 * Production Judges also function as a minor helper for the production channels.
 
 #### Minecraft Helper Role
 
 * This role is only given to members who have contributed anything Minecraft-related.
-
 * This includes builders for the server, programming contribution, and server moderation.
-
 * Staff members may have this role if they consistently contribute to Minecraft-related stuff.
 
 #### Event Organizer Role
 
 * This role is only given to members who have contributed to server events.
-
 * This means \*any\* event that comes into mind, with the permission of creating events as well.
-
 * Staff members may have this role if they consistently contribute to event creation.
 
 ### Promotion: What is considered
@@ -295,17 +234,11 @@ After two warning messages, it's guaranteed demotion on the third!
 ---
 
 * Being helpful and engaging with server members.
-
 * Showing competence in managing behavioral situations.
-
 * Learning how to work individually and using teamwork.
-
 * Having a sense of self-awareness and professionalism.
-
 * Knowing the consequences of acting unprofessional in a public space.
-
 * Following and using basic staff resources such as the Staff Guidelines, bot commands, and FAQ commands.
-
 * Leading the server in the best direction for the sake of Camellia and server members.
 
 ### Demotion: What is considered
@@ -313,17 +246,11 @@ After two warning messages, it's guaranteed demotion on the third!
 ---
 
 * Extreme inactivity.
-
 * Uncooperative/immature behavior during staff discussions.
-
 * Not treating others as you wish to be treated.
-
 * Leaking any confidential information from the staff channels.
-
 * Multiple breaches in the Staff Guidelines and Server Rules.
-
 * Being incompetent and showing no respect for server and staff members.
-
 * Bypassing AutoMod and its features. (Banned topics do not apply).
 
 ---

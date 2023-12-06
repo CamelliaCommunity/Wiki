@@ -404,10 +404,38 @@ li p {
 
 .card ol,
 .card ul {
-  padding-left: 56px;
-  padding-right: 56px;
-  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  margin-right: 24px;
   line-height: 26px;
+  background: var(--colorCardDivisor);
+  border-radius: 30px;
+
+  li {
+    // margin-bottom: 8px;
+    padding: 10px;
+    border-bottom: 1px solid var(--colorGray);
+  }
+
+  li::marker {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  // li:first-child {
+  //   border-top-left-radius: 30px;
+  //   border-top-right-radius: 30px;
+  // }
+
+  li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    // border-bottom-left-radius: 30px;
+    // border-bottom-right-radius: 30px;
+  }
 
   li:last-child p {
     padding-bottom: 0;
