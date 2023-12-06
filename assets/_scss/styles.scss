@@ -18,7 +18,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 102px;
+  scroll-padding-top: 94px;
 }
 
 *,
@@ -111,26 +111,32 @@ main .centerItem {
 
 h1 {
   font-size: 36.49px;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 32.44px;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 28.83px;
+  font-weight: 600;
 }
 
 h4 {
   font-size: 25.63px;
+  font-weight: 600;
 }
 
 h5 {
   font-size: 22.78px;
+  font-weight: 600;
 }
 
 h6 {
   font-size: 20.25px;
+  font-weight: 600;
 }
 
 p {
@@ -168,7 +174,6 @@ footer {
 footer #footerText {
   font-size: 20.25px;
   font-style: normal;
-  font-weight: 596;
 }
 
 /* links */
@@ -327,7 +332,7 @@ blockquote.tip {
   // border-top: 1px solid var(--borderColor2);
   border-top: 3px solid var(--colorBorderTertiary);
   border-bottom: 3px solid var(--colorBorderTertiary);
-  height: 102px;
+  height: 84px;
   width: 100%;
 
   &:first-of-type {
@@ -525,12 +530,6 @@ i was mostly experimenting with figma design */
     position: sticky;
     padding: 16px 16px 16px 34px;
 
-    h2 {
-      font-weight: 596;
-      // padding-top: 16px;
-      // padding-left: 16px;
-    }
-
     .vertLine {
       margin-top: 4px;
       margin-bottom: 4px;
@@ -693,14 +692,16 @@ em {
 
   #footNote {
     margin-bottom: 58px;
-    color: lightgray;
+    color: gray;
+    font-weight: 600;
     align-self: center;
   }
 
   /* footnote but on the right side */
   #footNoteRight {
-    color: lightgray;
+    color: gray;
     align-self: flex-end;
+    font-weight: 600;
     margin-right: 48px;
   }
 }
