@@ -115,22 +115,22 @@ header.headerV2 {
   .header-inner {
     display: flex;
     width: 1644px;
-    height: 100%;
+    height: 80px;
     align-items: center;
     padding: 14px 32px;
     justify-content: space-between;
     transition: transform 0.2s;
     overflow: hidden;
 
-    border-right: 2px solid rgba(255, 255, 255, 0.2);
-    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0px 0px 25px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(
         180deg,
         rgba(246, 65, 141, 0) 0%,
         rgba(246, 65, 141, 0.08) 51.04%,
         rgba(91, 63, 75, 0.2) 100%
       ),
-      var(--Triary, #661f57);
+      var(--colorTriary);
 
     h1 {
       text-shadow: none;
@@ -174,8 +174,8 @@ header.headerV2 {
         height: 52px;
 
         border-radius: 30px;
-        border: 3px solid var(--NewPink, #f06c9b);
-        background: var(--Card-Content-Background, #382e37);
+        border: 3px solid var(--colorPrimary);
+        background: var(--colorCards);
         padding-left: 24px;
 
         .searchBtn {
@@ -187,7 +187,7 @@ header.headerV2 {
           border: none;
 
           border-radius: 0px 25px 25px 0px;
-          background: var(--Card-Divisor, #453641);
+          background: var(--colorCardDivisor);
 
           .ph-bold.ph-magnifying-glass {
             font-size: 28px;
@@ -220,10 +220,56 @@ header.headerV2 {
       #results-container {
         z-index: 1;
         margin-left: 24px;
+        margin-right: 24px;
+        margin-top: 22px;
         position: absolute;
 
+        display: flex;
+        width: 406px;
+        max-height: 408px;
+        overflow: auto;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+        border-radius: 0px 0px 30px 30px;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        background: linear-gradient(
+            180deg,
+            rgba(246, 65, 141, 0) 0%,
+            rgba(246, 65, 141, 0.08) 51.04%,
+            rgba(91, 63, 75, 0.2) 100%
+          ),
+          var(--colorCards);
+
         li::marker {
-          content: "\2192 "; // placeholder
+          content: "";
+        }
+
+        .searchItem {
+          width: 100%;
+          a {
+            color: white;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            padding: 10px;
+            gap: 8px;
+
+            font-size: 20.25px;
+            font-style: normal;
+            font-weight: 600;
+
+            border-radius: 15px;
+            background: var(--colorCardDivisor);
+
+            &:hover {
+              background: var(--colorCardDivisorHover);
+            }
+          }
         }
       }
     }
