@@ -225,7 +225,7 @@ a:hover {
   background: var(--colorCards) 0% 0% no-repeat padding-box;
   max-width: 827px;
   min-height: 330px;
-  border-radius: 30px;
+  border-radius: 35px;
   line-height: 26px;
 }
 
@@ -332,8 +332,8 @@ blockquote.tip {
 
   &:first-of-type {
     border-top: 1px solid var(--colorBorderTertiary);
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
   }
 
   p,
@@ -540,7 +540,7 @@ i was mostly experimenting with figma design */
   flex-shrink: 0;
   flex-direction: column;
   background: var(--colorCardDivisor);
-  border-radius: 30px;
+  border-radius: 35px;
   width: 283px;
 
   #wedgeContainer {
