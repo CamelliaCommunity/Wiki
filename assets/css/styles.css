@@ -45,6 +45,9 @@ div.highlighter-rouge pre.highlight,
 figure.highlight > pre,
 figure.highlight pre.highlight {
   margin: 0;
+}
+
+div.highlight {
   padding: 1em;
 }
 
@@ -1617,10 +1620,6 @@ div pre.highlight {
   }
   figure.floatImage {
     margin-left: 8px;
-  }
-  /* give codeblocks a scrollbar */
-  div pre.highlight {
-    overflow-y: auto;
   }
   .cardBackground {
     width: 100%;
