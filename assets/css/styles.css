@@ -477,28 +477,31 @@ figure.highlight pre.highlight {
   font-display: swap;
   font-style: italic;
 }
-header.headerOld {
+header {
   position: fixed;
-  overflow: hidden;
+  overflow: visible;
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 100%;
   top: 0;
-  background-color: var(--tertiaryColor);
+  background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: height 0.2s ease-in-out;
   z-index: 1;
 }
-header.headerOld .header-shared {
+header .header-shared {
   display: flex;
   width: 100%;
   align-items: center;
+  justify-content: center;
   transition: transform 0.2s;
   overflow: hidden;
 }
-header.headerOld .header-shared h1 {
+header .header-shared h1 {
   text-shadow: none;
 }
-header.headerOld .header-shared h1 a {
+header .header-shared h1 a {
   color: var(--borderColor);
   display: flex;
   align-items: center;
@@ -507,8 +510,9 @@ header.headerOld .header-shared h1 a {
   margin: 0;
   transition: font-size 0.2s;
 }
-header.headerOld .header-shared h1 a img {
+header .header-shared h1 a img {
   width: font-size 0.2s;
+  margin-right: 12px;
 }
 
 /*
@@ -516,141 +520,67 @@ header.headerOld .header-shared h1 a img {
  * that we don't have to spam !important
  */
 @media screen and not (max-width: 1024px) {
-  header.headerOld {
-    height: 148px;
-    border-radius: 0 0 25px 25px;
-  }
-  header.headerOld .header-shared {
-    flex-direction: row;
-    min-height: 100%;
-    justify-content: space-between;
-  }
-  header.headerOld .header-shared h1 {
-    margin: auto;
-    /* some values are changed to my liking - john */
-  }
-  header.headerOld .header-shared h1 a {
-    gap: 8px;
-    font-size: 42px;
-    border: 8px solid var(--borderColor);
-    height: 100px;
-    border-radius: 50px;
-    padding: 0 18px;
-    transition: all 0.2s ease-in-out;
-  }
-  header.headerOld .header-shared h1 a img {
-    width: 56px;
-  }
-  header.headerOld .header-shared h1 a:hover {
-    color: var(--pageBackground);
-    background-color: var(--borderColor);
-  }
-  header.headerOld .header-shared #navigationButtons > div {
-    width: fit-content;
-  }
-  header.headerOld .header-shared #navigationButtons > div a {
-    transition: all 0.2s ease-in-out;
-  }
-}
-@media screen and (not (max-width: 1024px)) and (max-width: 1500px) {
-  header.headerOld .header-shared h1 a {
-    padding: 0px;
-    border: 0px solid var(--borderColor);
-  }
-  header.headerOld .header-shared h1 a:hover {
-    color: var(--borderColor);
-    background-color: transparent;
-  }
-  header.headerOld .header-shared #navigationButtons > div a {
-    width: 150px;
-  }
-  header.headerOld .header-shared #navigationButtons > div a:hover::after {
-    width: 150px;
-  }
-}
-@media screen and not (max-width: 1024px) {
-  header.headerOld.sticky {
-    height: 100px;
-  }
-  header.headerOld.sticky h1 a {
-    padding: 0px;
-    border: 0px solid transparent;
-  }
-  header.headerOld.sticky h1 a:hover {
-    color: var(--borderColor);
-    background-color: transparent;
-  }
-  header.headerOld.sticky #navigationButtons {
-    gap: 4px;
-  }
-  header.headerOld.sticky #navigationButtons > div a {
-    border-radius: 0px;
-  }
-  header.headerOld.sticky #navigationButtons > div:first-child a {
-    border-radius: 25px 0 0 25px;
-  }
-  header.headerOld.sticky #navigationButtons > div:last-child a {
-    border-radius: 0 25px 25px 0;
-  }
-  header.headerV2 {
-    position: fixed;
-    overflow: visible;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  header {
     height: 88px;
-    width: 100%;
-    top: 0;
-    transition: height 0.2s ease-in-out;
-    z-index: 1;
-    background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
-  header.headerV2 .header-inner {
+  header .header-shared {
+    flex-direction: row;
+    /* very very jank weird searchbar code */
+  }
+  header .header-shared .header-inner {
     display: flex;
     width: 1644px;
-    height: 80px;
-    align-items: center;
-    padding: 14px 32px;
+    padding: 12px 32px;
     justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
     transition: transform 0.2s;
-    overflow: hidden;
     border-radius: 0px 0px 25px 25px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorTriary);
   }
-  header.headerV2 .header-inner h1 {
-    text-shadow: none;
+  header .header-shared h1 {
     font-size: 42px;
     font-weight: 281;
   }
-  header.headerV2 .header-inner h1 a {
+  header .header-shared #navigationButtons > div {
+    width: fit-content;
+  }
+  header .header-shared #navigationButtons > div a {
+    transition: all 0.2s ease-in-out;
+  }
+}
+@media screen and (not (max-width: 1024px)) and (max-width: 1500px) {
+  header .header-shared h1 a {
+    padding: 0px;
+    border: 0px solid var(--borderColor);
+  }
+  header .header-shared h1 a:hover {
     color: var(--borderColor);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin: 0;
-    transition: font-size 0.2s;
+    background-color: transparent;
   }
-  header.headerV2 .header-inner h1 a img {
-    width: font-size 0.2s;
-    margin-right: 12px;
+  header .header-shared #navigationButtons > div a {
+    width: 150px;
   }
-  header.headerV2 .header-inner #search-container {
+  header .header-shared #navigationButtons > div a:hover::after {
+    width: 150px;
+  }
+}
+@media screen and not (max-width: 1024px) {
+  header .header-shared #search-container {
     /* Change the white to any color */
     /*Change text in autofill textbox*/
   }
-  header.headerV2 .header-inner #search-container input:-webkit-autofill,
-  header.headerV2 .header-inner #search-container input:-webkit-autofill:hover,
-  header.headerV2 .header-inner #search-container input:-webkit-autofill:focus,
-  header.headerV2 .header-inner #search-container input:-webkit-autofill:active {
+  header .header-shared #search-container input:-webkit-autofill,
+  header .header-shared #search-container input:-webkit-autofill:hover,
+  header .header-shared #search-container input:-webkit-autofill:focus,
+  header .header-shared #search-container input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px var(--Card-Content-Background, #382e37) inset !important;
   }
-  header.headerV2 .header-inner #search-container input:-webkit-autofill {
+  header .header-shared #search-container input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
   }
-  header.headerV2 .header-inner #search-container #main-bar {
+  header .header-shared #search-container #main-bar {
     display: flex;
     flex-direction: row;
     flex-shrink: 0;
@@ -661,7 +591,7 @@ header.headerOld .header-shared h1 a img {
     background: var(--colorCards);
     padding-left: 24px;
   }
-  header.headerV2 .header-inner #search-container #main-bar .searchBtn {
+  header .header-shared #search-container #main-bar .searchBtn {
     text-align: center;
     flex-shrink: 0;
     width: 58px;
@@ -671,13 +601,13 @@ header.headerOld .header-shared h1 a img {
     border-radius: 0px 25px 25px 0px;
     background: var(--colorCardDivisor);
   }
-  header.headerV2 .header-inner #search-container #main-bar .searchBtn .ph-bold.ph-magnifying-glass {
+  header .header-shared #search-container #main-bar .searchBtn .ph-bold.ph-magnifying-glass {
     font-size: 28px;
   }
-  header.headerV2 .header-inner #search-container:focus-visible {
+  header .header-shared #search-container:focus-visible {
     outline: none;
   }
-  header.headerV2 .header-inner #search-container input#search-input {
+  header .header-shared #search-container input#search-input {
     width: 100%;
     height: 100%;
     color: #808080;
@@ -689,36 +619,40 @@ header.headerOld .header-shared h1 a img {
     font-style: italic;
     font-weight: 494;
   }
-  header.headerV2 .header-inner #search-container input#search-input:focus-visible {
+  header .header-shared #search-container input#search-input:focus-visible {
     outline: none;
   }
-  header.headerV2 .header-inner #search-container #results-container {
+  header .header-shared #search-container #results-unfuck {
     z-index: 1;
     margin-left: 24px;
     margin-right: 24px;
     margin-top: 22px;
     position: absolute;
     display: flex;
+    flex-direction: column;
     width: 406px;
     max-height: 408px;
-    overflow: auto;
-    padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
     border-radius: 0px 0px 30px 30px;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards);
+    padding: 16px;
   }
-  header.headerV2 .header-inner #search-container #results-container li::marker {
+  header .header-shared #search-container #results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    overflow: auto;
+  }
+  header .header-shared #search-container #results-container li::marker {
     content: "";
   }
-  header.headerV2 .header-inner #search-container #results-container .searchItem {
+  header .header-shared #search-container #results-container .searchItem {
     width: 100%;
   }
-  header.headerV2 .header-inner #search-container #results-container .searchItem a {
+  header .header-shared #search-container #results-container .searchItem a {
     color: white;
     display: flex;
     justify-content: center;
@@ -731,81 +665,98 @@ header.headerOld .header-shared h1 a img {
     border-radius: 15px;
     background: var(--colorCardDivisor);
   }
-  header.headerV2 .header-inner #search-container #results-container .searchItem a:hover {
+  header .header-shared #search-container #results-container .searchItem a:hover {
     background: var(--colorCardDivisorHover);
   }
-  header.headerV2.sticky {
+  header.sticky {
     height: 64px;
-    /* spam important for now until my head stops hurting!!! */
   }
-  header.headerV2.sticky .logo {
+  header.sticky .header-inner {
+    height: 100%;
+    border-bottom: none;
+  }
+  header.sticky .logo {
     font-size: 32px;
     font-style: normal;
     line-height: normal;
   }
-  header.headerV2.sticky .logo img {
+  header.sticky .logo img {
     width: 44px;
   }
-  header.headerV2.sticky #main-bar {
-    flex-shrink: 0;
-    width: 342px !important;
-    height: 42px !important;
+  header.sticky #navigationButtons {
+    gap: 4px;
   }
-  header.headerV2.sticky #main-bar .searchBtn {
-    flex-shrink: 0;
-    width: 48px !important;
-    height: 36px !important;
+  header.sticky #navigationButtons > div a {
+    border-radius: 0px;
   }
-  header.headerV2.sticky #main-bar .searchBtn .ph-bold.ph-magnifying-glass {
-    font-size: 24px !important;
+  header.sticky #navigationButtons > div:first-child a {
+    border-radius: 25px 0 0 25px;
+  }
+  header.sticky #navigationButtons > div:last-child a {
+    border-radius: 0 25px 25px 0;
+  }
+  header.sticky .header-inner #search-container #results-container {
+    margin-top: 10px;
+  }
+  header.sticky .header-inner #search-container #main-bar {
+    flex-shrink: 0;
+    height: 42px;
+  }
+  header.sticky .header-inner #search-container #main-bar .searchBtn {
+    flex-shrink: 0;
+    width: 48px;
+    height: 36px;
+  }
+  header.sticky .header-inner #search-container #main-bar .searchBtn .ph-bold.ph-magnifying-glass {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 1024px) {
-  header.headerOld {
+  header {
     height: 100px;
     transition: all 0.2s ease-in-out;
   }
-  header.headerOld .header-shared {
+  header .header-shared {
     flex-direction: column;
     justify-content: center;
     min-height: 100px;
     gap: 10px;
   }
-  header.headerOld .header-shared h1 a {
+  header .header-shared h1 a {
     gap: 5px;
     font-size: 28px;
   }
-  header.headerOld .header-shared h1 a img {
+  header .header-shared h1 a img {
     width: 32px;
   }
-  header.headerOld .header-shared #navigationButtons {
+  header .header-shared #navigationButtons {
     margin: 0;
     gap: 2px;
   }
-  header.headerOld .header-shared #navigationButtons > div:first-child,
-  header.headerOld .header-shared #navigationButtons > div:last-child {
+  header .header-shared #navigationButtons > div:first-child,
+  header .header-shared #navigationButtons > div:last-child {
     display: none;
   }
-  header.headerOld .header-shared #navigationButtons > div {
+  header .header-shared #navigationButtons > div {
     width: 140px;
     height: 32px;
   }
-  header.headerOld .header-shared #navigationButtons > div a {
+  header .header-shared #navigationButtons > div a {
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     width: 140px;
     height: 32px;
     font-size: 14px;
   }
-  header.headerOld .header-shared #navigationButtons > div a:hover::after {
+  header .header-shared #navigationButtons > div a:hover::after {
     width: 140px;
   }
-  header.headerOld .header-shared #navigationButtons > div:nth-child(2) a {
+  header .header-shared #navigationButtons > div:nth-child(2) a {
     border-radius: 20px 5px 5px 20px;
   }
-  header.headerOld .header-shared #navigationButtons > div:nth-child(3) a {
+  header .header-shared #navigationButtons > div:nth-child(3) a {
     border-radius: 5px 20px 20px 5px;
   }
-  header.headerOld .header-mobile-scroll {
+  header .header-mobile-scroll {
     transition: transform 0.2s;
     min-height: 50px;
     display: flex;
@@ -814,27 +765,27 @@ header.headerOld .header-shared h1 a img {
     align-items: center;
     padding: 0 10px;
   }
-  header.headerOld .header-mobile-scroll h1 {
+  header .header-mobile-scroll h1 {
     text-shadow: none;
   }
-  header.headerOld .header-mobile-scroll h1 a {
+  header .header-mobile-scroll h1 a {
     color: var(--borderColor);
     display: flex;
     align-items: center;
     gap: 5px;
     font-size: 20px;
   }
-  header.headerOld .header-mobile-scroll h1 a img {
+  header .header-mobile-scroll h1 a img {
     width: 32px;
   }
-  header.headerOld.sticky {
+  header.sticky {
     height: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   }
-  header.headerOld.sticky .header-shared {
+  header.sticky .header-shared {
     transform: translateY(-100px);
   }
-  header.headerOld.sticky .header-mobile-scroll {
+  header.sticky .header-mobile-scroll {
     transform: translateY(-100px);
   }
 }

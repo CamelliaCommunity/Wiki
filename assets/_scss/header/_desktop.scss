@@ -1,33 +1,35 @@
-header.headerOld {
-  height: 148px;
-  border-radius: 0 0 25px 25px;
+header {
+  height: 88px;
 
   .header-shared {
     flex-direction: row;
-    min-height: 100%;
-    justify-content: space-between;
+    // min-height: 100%;
+    // justify-content: space-between;
+
+    .header-inner {
+      display: flex;
+      width: 1644px;
+      // height: 80px;
+      padding: 12px 32px;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+
+      border-radius: 0px 0px 25px 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      background: linear-gradient(
+          180deg,
+          rgba(246, 65, 141, 0) 0%,
+          rgba(246, 65, 141, 0.08) 51.04%,
+          rgba(91, 63, 75, 0.2) 100%
+        ),
+        var(--colorTriary);
+    }
 
     h1 {
-      margin: auto;
-      /* some values are changed to my liking - john */
-      a {
-        gap: 8px;
-        font-size: 42px;
-        border: 8px solid var(--borderColor);
-        height: 100px;
-        border-radius: 50px;
-        padding: 0 18px;
-        transition: all 0.2s ease-in-out;
-
-        img {
-          width: 56px;
-        }
-
-        &:hover {
-          color: var(--pageBackground);
-          background-color: var(--borderColor);
-        }
-      }
+      font-size: 42px;
+      font-weight: 281;
     }
 
     #navigationButtons {
@@ -63,96 +65,8 @@ header.headerOld {
         }
       }
     }
-  }
 
-  &.sticky {
-    height: 100px;
-
-    h1 {
-      a {
-        padding: 0px;
-        border: 0px solid transparent;
-
-        &:hover {
-          color: var(--borderColor);
-          background-color: transparent;
-        }
-      }
-    }
-
-    #navigationButtons {
-      gap: 4px;
-
-      > div a {
-        border-radius: 0px;
-      }
-
-      > div:first-child a {
-        border-radius: 25px 0 0 25px;
-      }
-
-      > div:last-child a {
-        border-radius: 0 25px 25px 0;
-      }
-    }
-  }
-}
-
-header.headerV2 {
-  position: fixed;
-  overflow: visible; // temp
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 88px;
-  width: 100%;
-  top: 0;
-  transition: height 0.2s ease-in-out;
-  z-index: 1;
-  background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-  .header-inner {
-    display: flex;
-    width: 1644px;
-    height: 80px;
-    align-items: center;
-    padding: 14px 32px;
-    justify-content: space-between;
-    transition: transform 0.2s;
-    overflow: hidden;
-
-    border-radius: 0px 0px 25px 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(
-        180deg,
-        rgba(246, 65, 141, 0) 0%,
-        rgba(246, 65, 141, 0.08) 51.04%,
-        rgba(91, 63, 75, 0.2) 100%
-      ),
-      var(--colorTriary);
-
-    h1 {
-      text-shadow: none;
-      font-size: 42px;
-      font-weight: 281;
-
-      a {
-        color: var(--borderColor);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        margin: 0;
-        transition: font-size 0.2s;
-
-        img {
-          width: font-size 0.2s;
-          margin-right: 12px;
-        }
-      }
-    }
-
+    /* very very jank weird searchbar code */
     #search-container {
       /* Change the white to any color */
       input:-webkit-autofill,
@@ -217,7 +131,7 @@ header.headerV2 {
         }
       }
 
-      #results-container {
+      #results-unfuck {
         z-index: 1;
         margin-left: 24px;
         margin-right: 24px;
@@ -225,14 +139,10 @@ header.headerV2 {
         position: absolute;
 
         display: flex;
+        flex-direction: column;
         width: 406px;
         max-height: 408px;
-        overflow: auto;
-        padding: 16px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-
+        // padding: 16px;
         border-radius: 0px 0px 30px 30px;
         border-right: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -245,12 +155,34 @@ header.headerV2 {
           ),
           var(--colorCards);
 
+        // padding-left: 16px;
+        // padding-right: 16px;
+
+        // &:first-child {
+        //   padding-top: 16px;
+        // }
+
+        // &:last-child {
+        //   padding-bottom: 16px;
+        // }
+
+        padding: 16px;
+      }
+
+      #results-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        overflow: auto;
+
         li::marker {
           content: "";
         }
 
         .searchItem {
           width: 100%;
+
           a {
             color: white;
             display: flex;
@@ -278,6 +210,11 @@ header.headerV2 {
   &.sticky {
     height: 64px;
 
+    .header-inner {
+      height: 100%;
+      border-bottom: none;
+    }
+
     .logo {
       font-size: 32px;
       font-style: normal;
@@ -288,19 +225,41 @@ header.headerV2 {
       }
     }
 
-    /* spam important for now until my head stops hurting!!! */
-    #main-bar {
-      flex-shrink: 0;
-      width: 342px !important;
-      height: 42px !important;
+    #navigationButtons {
+      gap: 4px;
 
-      .searchBtn {
-        flex-shrink: 0;
-        width: 48px !important;
-        height: 36px !important;
+      > div a {
+        border-radius: 0px;
+      }
 
-        .ph-bold.ph-magnifying-glass {
-          font-size: 24px !important;
+      > div:first-child a {
+        border-radius: 25px 0 0 25px;
+      }
+
+      > div:last-child a {
+        border-radius: 0 25px 25px 0;
+      }
+    }
+
+    .header-inner {
+      #search-container {
+        #results-container {
+          margin-top: 10px;
+        }
+
+        #main-bar {
+          flex-shrink: 0;
+          height: 42px;
+
+          .searchBtn {
+            flex-shrink: 0;
+            width: 48px;
+            height: 36px;
+
+            .ph-bold.ph-magnifying-glass {
+              font-size: 24px;
+            }
+          }
         }
       }
     }
