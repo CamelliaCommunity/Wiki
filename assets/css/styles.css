@@ -1541,12 +1541,6 @@ em {
   transition: all 0.3s ease-in-out;
 }
 
-.picture img:hover {
-  border: 4px solid var(--colorPrimary);
-  transform: scale(1.02);
-  overflow: hidden;
-}
-
 .picture figcaption {
   text-align: center;
   margin-top: 7px;
@@ -1568,14 +1562,17 @@ figure.centerImage {
   margin-left: 0;
   padding-left: 32px;
   padding-right: 32px;
+  padding: 6px;
+  border: 2px dashed var(--colorGray);
+  border-radius: 10px;
 }
 figure.centerImage figcaption {
+  font-weight: 500;
   margin-bottom: 0;
   text-align: center;
 }
 figure.centerImage img {
-  border: 4px solid var(--colorSecondary);
-  border-radius: 10px;
+  border-radius: 6px;
   width: 100%;
   height: 100%;
   -webkit-transition: all 0.3s ease;
@@ -1583,24 +1580,24 @@ figure.centerImage img {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-figure.centerImage img:hover {
-  border: 4px solid var(--colorPrimary);
-  transform: scale(1.01);
 }
 
 figure.floatImage {
   float: right;
   text-align: center;
-  margin-left: 24px;
+  margin-left: 10px;
+  padding: 6px 6px 6px 6px;
+  border: 2px dashed var(--colorGray);
+  border-radius: 10px;
+  width: 30%;
+  height: 30%;
 }
 figure.floatImage figcaption {
-  margin-bottom: 12px;
+  font-weight: 500;
   text-align: center;
 }
 figure.floatImage img {
-  border: 4px solid var(--colorSecondary);
-  border-radius: 10px;
+  border-radius: 6px;
   width: 100%;
   height: 100%;
   -webkit-transition: all 0.3s ease;
@@ -1608,10 +1605,6 @@ figure.floatImage img {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-figure.floatImage img:hover {
-  border: 4px solid var(--colorPrimary);
-  transform: scale(1.01);
 }
 
 /* give codeblocks a scrollbar */
@@ -1624,11 +1617,6 @@ div pre.highlight {
   /* since phones are weird there technically isnt hovering */
   #scrollToTop:hover {
     opacity: 60%;
-  }
-  /* noodles */
-  img:hover {
-    border: 4px solid var(--colorSecondary) !important;
-    transform: none !important;
   }
 }
 /* responsive for picture wrap pages (and grid layout) */
