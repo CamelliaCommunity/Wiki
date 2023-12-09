@@ -527,11 +527,50 @@ header .header-shared h1 a img {
     height: 88px;
   }
   header .header-shared {
+    min-height: 100%;
     flex-direction: row;
+    justify-content: space-evenly;
     /* very very jank weird searchbar code */
+  }
+  header .header-shared #hamburgerBtn {
+    position: absolute;
+    text-align: center;
+    flex-shrink: 0;
+    color: white;
+    border: none;
+    background: none;
+  }
+  header .header-shared #hamburgerBtn .ph-bold.ph-list {
+    font-size: 42px;
+  }
+  header .header-shared #twoBotans {
+    position: absolute;
+    display: flex;
+    gap: 18px;
+  }
+  header .header-shared #githubBtn {
+    text-align: center;
+    flex-shrink: 0;
+    color: white;
+    border: none;
+    background: none;
+  }
+  header .header-shared #githubBtn .ph-bold.ph-github-logo {
+    font-size: 32px;
+  }
+  header .header-shared #discordBtn {
+    text-align: center;
+    flex-shrink: 0;
+    color: white;
+    border: none;
+    background: none;
+  }
+  header .header-shared #discordBtn .ph-bold.ph-discord-logo {
+    font-size: 32px;
   }
   header .header-shared .header-inner {
     display: flex;
+    align-self: flex-start;
     width: 1644px;
     padding: 12px 32px;
     justify-content: space-between;
@@ -578,7 +617,7 @@ header .header-shared h1 a img {
   header .header-shared #search-container input:-webkit-autofill:hover,
   header .header-shared #search-container input:-webkit-autofill:focus,
   header .header-shared #search-container input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px var(--Card-Content-Background, #382e37) inset !important;
+    -webkit-box-shadow: 0 0 0 30px var(--colorContentContainer) inset !important;
   }
   header .header-shared #search-container input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
@@ -627,6 +666,7 @@ header .header-shared h1 a img {
   }
   header .header-shared #search-container #results-unfuck {
     z-index: 1;
+    padding: 16px;
     margin-left: 24px;
     margin-right: 24px;
     margin-top: 22px;
@@ -640,7 +680,6 @@ header .header-shared h1 a img {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards);
-    padding: 16px;
   }
   header .header-shared #search-container #results-container {
     display: flex;
@@ -674,10 +713,6 @@ header .header-shared h1 a img {
   header.sticky {
     height: 64px;
   }
-  header.sticky .header-inner {
-    height: 100%;
-    border-bottom: none;
-  }
   header.sticky .logo {
     font-size: 32px;
     font-style: normal;
@@ -698,8 +733,12 @@ header .header-shared h1 a img {
   header.sticky #navigationButtons > div:last-child a {
     border-radius: 0 25px 25px 0;
   }
-  header.sticky .header-inner #search-container #results-container {
-    margin-top: 10px;
+  header.sticky .header-inner {
+    height: 100%;
+    border-bottom: none;
+  }
+  header.sticky .header-inner #search-container #results-unfuck {
+    margin-top: 11px;
   }
   header.sticky .header-inner #search-container #main-bar {
     flex-shrink: 0;

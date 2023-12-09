@@ -2,13 +2,69 @@ header {
   height: 88px;
 
   .header-shared {
+    min-height: 100%;
     flex-direction: row;
-    // min-height: 100%;
-    // justify-content: space-between;
+    justify-content: space-evenly;
+
+    #hamburgerBtn {
+      position: absolute; // this is temp. this is only to keep the innerheader
+      // aligned correctly. we want to shift the buttons instead of the entire inner
+      // header
+
+      text-align: center;
+      flex-shrink: 0;
+      // margin-left: 48px;
+      // margin-right: 48px;
+      color: white;
+      border: none;
+      background: none;
+
+      .ph-bold.ph-list {
+        font-size: 42px;
+      }
+    }
+
+    #twoBotans {
+      position: absolute; // this is temp. this is only to keep the innerheader
+      // aligned correctly. we want to shift the buttons instead of the entire inner
+      // header
+
+      display: flex;
+      gap: 18px;
+    }
+
+    #githubBtn {
+      text-align: center;
+      flex-shrink: 0;
+      // margin-left: 28px;
+      color: white;
+      border: none;
+      background: none;
+
+      .ph-bold.ph-github-logo {
+        font-size: 32px;
+      }
+    }
+
+    #discordBtn {
+      text-align: center;
+      flex-shrink: 0;
+      // margin-left: 28px;
+      // margin-right: 18px;
+      color: white;
+      border: none;
+      background: none;
+
+      .ph-bold.ph-discord-logo {
+        font-size: 32px;
+      }
+    }
 
     .header-inner {
       display: flex;
-      width: 1644px;
+      align-self: flex-start;
+      width: 1644px; //TEMP
+      // width: 100%;
       // height: 80px;
       padding: 12px 32px;
       justify-content: space-between;
@@ -73,7 +129,7 @@ header {
       input:-webkit-autofill:hover,
       input:-webkit-autofill:focus,
       input:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 30px var(--Card-Content-Background, #382e37) inset !important;
+        -webkit-box-shadow: 0 0 0 30px var(--colorContentContainer) inset !important;
       }
       /*Change text in autofill textbox*/
       input:-webkit-autofill {
@@ -133,6 +189,7 @@ header {
 
       #results-unfuck {
         z-index: 1;
+        padding: 16px;
         margin-left: 24px;
         margin-right: 24px;
         margin-top: 22px;
@@ -142,7 +199,6 @@ header {
         flex-direction: column;
         width: 406px;
         max-height: 408px;
-        // padding: 16px;
         border-radius: 0px 0px 30px 30px;
         border-right: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -154,19 +210,6 @@ header {
             rgba(91, 63, 75, 0.2) 100%
           ),
           var(--colorCards);
-
-        // padding-left: 16px;
-        // padding-right: 16px;
-
-        // &:first-child {
-        //   padding-top: 16px;
-        // }
-
-        // &:last-child {
-        //   padding-bottom: 16px;
-        // }
-
-        padding: 16px;
       }
 
       #results-container {
@@ -210,11 +253,6 @@ header {
   &.sticky {
     height: 64px;
 
-    .header-inner {
-      height: 100%;
-      border-bottom: none;
-    }
-
     .logo {
       font-size: 32px;
       font-style: normal;
@@ -242,9 +280,12 @@ header {
     }
 
     .header-inner {
+      height: 100%;
+      border-bottom: none;
+
       #search-container {
-        #results-container {
-          margin-top: 10px;
+        #results-unfuck {
+          margin-top: 11px;
         }
 
         #main-bar {
