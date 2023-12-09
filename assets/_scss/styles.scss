@@ -402,43 +402,52 @@ li p {
   padding-right: 0 !important;
 }
 
+/* lists */
 .card ol,
 .card ul {
-  padding-left: 32px;
-  padding-right: 32px;
+  // padding: 10px;
+  padding-left: 0;
+  list-style-type: none;
+  margin-left: 32px;
+  margin-right: 32px;
   margin-bottom: 32px;
-  margin-left: 24px;
-  margin-right: 24px;
-  line-height: 26px;
   background: var(--colorCardDivisor);
-  border-radius: 30px;
+  border-radius: 10px;
 
   li {
-    // margin-bottom: 8px;
+    font-style: italic;
+    position: relative;
+    font-size: 18px;
     padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-bottom: 1px solid var(--colorGray);
   }
 
-  li::marker {
-    font-size: 20px;
-    font-weight: 500;
-    font-style: italic;
+  li::before {
+    content: "\25CF";
+    font-size: 12px;
+    padding-right: 10px;
+    // position: absolute;
+    left: 0;
   }
-
-  // li:first-child {
-  //   border-top-left-radius: 30px;
-  //   border-top-right-radius: 30px;
-  // }
 
   li:last-child {
     margin-bottom: 0;
     border-bottom: none;
-    // border-bottom-left-radius: 30px;
-    // border-bottom-right-radius: 30px;
   }
+}
 
-  li:last-child p {
-    padding-bottom: 0;
+/* add a counter to ordered lists */
+.card {
+  ol {
+    counter-reset: item;
+
+    li::before {
+      font-size: 18px;
+      content: counter(item) "\002E";
+      counter-increment: item;
+    }
   }
 }
 

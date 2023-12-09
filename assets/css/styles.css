@@ -1187,36 +1187,48 @@ li p {
   padding-right: 0 !important;
 }
 
+/* lists */
 .card ol,
 .card ul {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 0;
+  list-style-type: none;
+  margin-left: 32px;
+  margin-right: 32px;
   margin-bottom: 32px;
-  margin-left: 24px;
-  margin-right: 24px;
-  line-height: 26px;
   background: var(--colorCardDivisor);
-  border-radius: 30px;
+  border-radius: 10px;
 }
 .card ol li,
 .card ul li {
+  font-style: italic;
+  position: relative;
+  font-size: 18px;
   padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-bottom: 1px solid var(--colorGray);
 }
-.card ol li::marker,
-.card ul li::marker {
-  font-size: 20px;
-  font-weight: 500;
-  font-style: italic;
+.card ol li::before,
+.card ul li::before {
+  content: "●";
+  font-size: 12px;
+  padding-right: 10px;
+  left: 0;
 }
 .card ol li:last-child,
 .card ul li:last-child {
   margin-bottom: 0;
   border-bottom: none;
 }
-.card ol li:last-child p,
-.card ul li:last-child p {
-  padding-bottom: 0;
+
+/* add a counter to ordered lists */
+.card ol {
+  counter-reset: item;
+}
+.card ol li::before {
+  font-size: 18px;
+  content: counter(item) ".";
+  counter-increment: item;
 }
 
 .card h2:before,
