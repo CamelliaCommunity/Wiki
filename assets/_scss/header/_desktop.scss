@@ -138,7 +138,7 @@ header {
         margin-top: 22px;
         position: absolute;
 
-        display: none; // in main.js, we will make this display as flex
+        display: none; // in main.js, we will make this display as flex when there are items in #results-unfuck
         flex-direction: column;
         width: 406px;
         max-height: 408px;
