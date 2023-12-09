@@ -126,7 +126,7 @@ By removing the backslashes and specifying the programming language, it would be
 
 Blockquotes are preferred to be only used in articles, they function as a way to give a "heads up" to the reader. Examples for default blockquotes and styles will be listed below.
 
-> This is a default blockquote
+> This is a default blockquote.
 
 > This is a disclaimer blockquote.
 {: .disclaimer }
