@@ -628,7 +628,7 @@ header .header-shared h1 a img {
     margin-right: 24px;
     margin-top: 22px;
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 406px;
     max-height: 408px;
@@ -1621,9 +1621,6 @@ div pre.highlight {
   /* give codeblocks a scrollbar */
   div pre.highlight {
     overflow-y: auto;
-  }
-  .card .cardContents {
-    width: 100%;
   }
   .cardBackground {
     width: 100%;

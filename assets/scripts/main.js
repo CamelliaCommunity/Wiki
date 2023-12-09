@@ -72,6 +72,28 @@ if (images) {
   });
 }
 
+// searchbar code for hiding and showing search container
+// made by papertek and reinoblassed
+document.querySelector('#search-input').addEventListener('keyup', () => {
+  console.log('keyup');
+
+  // Get the results-unfuck element by its id
+  const resultsUnfuck = document.getElementById('results-unfuck');
+
+  // Get all li elements inside the results-container
+  const resultListedItems =
+      document.getElementById('results-container').innerHTML;
+
+  // Check if there are any li elements
+  if (!resultListedItems == '') {
+    // If there are li elements, show the results-unfuck element
+    resultsUnfuck.style.display = 'flex';
+  } else {
+    // If there are no li elements, hide the results-unfuck element
+    resultsUnfuck.style.display = 'none';
+  }
+});
+
 // Test code
 // const IMAGES = document.querySelectorAll('img');
 

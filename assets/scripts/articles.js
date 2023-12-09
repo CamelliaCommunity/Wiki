@@ -94,23 +94,3 @@ const pinWedgeContent = () => {
 };
 
 window.addEventListener('scroll', pinWedgeContent);
-
-// WEIRD FUCKY SHIT
-
-// // Get the results-unfuck element by its id
-// const resultsUnfuck = document.getElementById('results-unfuck');
-
-// // Get all li elements inside the results-container
-// const resultListedItems =
-//     document.querySelectorAll('#results-container .searchItem');
-
-// console.log(resultListedItems);
-
-// // Check if there are any li elements
-// if (resultListedItems > 0) {
-//   // If there are li elements, show the results-unfuck element
-//   resultsUnfuck.style.display = 'flex';
-// } else {
-//   // If there are no li elements, hide the results-unfuck element
-//   resultsUnfuck.style.display = 'none';
-// }
