@@ -990,6 +990,7 @@ a:hover {
 /* Fixed button code */
 .buttonDefault a {
   background: var(--colorLinks) 0% 0% no-repeat padding-box;
+  color: var(--colorWhite);
   box-shadow: inset 0px -3px 6px rgba(0, 0, 0, 0.1607843137);
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   text-decoration: none;
@@ -1005,7 +1006,7 @@ a:hover {
 
 .buttonDefault a:hover {
   background: var(--colorLinksHover) 0% 0% no-repeat padding-box;
-  color: var(--textColorDefault);
+  color: var(--colorWhite);
   box-shadow: inset 0px -3px 6px rgba(0, 0, 0, 0.1607843137);
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
