@@ -406,13 +406,11 @@ blockquote.tip {
 .miniCard h2 {
   margin-left: 32px;
   margin-right: 32px;
+  line-height: initial;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   align-self: center;
-}
-
-.miniCard h2 {
-  overflow: hidden;
 }
 
 .miniCard:last-child {
