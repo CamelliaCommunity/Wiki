@@ -19,24 +19,43 @@ layout: "wrapper"
   .makeBig {
     font-size: 32.44px !important;
   }
+
+  #titleContainer #footNote {
+    color: white;
+    margin-bottom: 76px;
+  }
 </style>
 
 <main>
-  <div id="notAFullTitleContainer">
-    <h1>Welcome to the Camellia Info Dump (WIP)</h1>
+  <div id="titleContainer">
+    <h1>Welcome to the Camellia Wiki</h1>
+    <p id="footNote">where most of Camellia's work is documented. Including the fandom.</p>
   </div>
   <div class="cardBackground">
+    <div id="contentWedge">
+      <div id="wedgeContainer">
+        <h2>Contents</h2>
+        <hr />
+        <nav id="wedgeItems">
+          <ol></ol>
+          <!-- In javascript, there will be new items listed here with each <h2> -->
+        </nav>
+      </div>
+    </div>
     <div class="gridLayout">
       <div class="card">
         <div class="cardHeader">
           <h2>Let's Get Started!</h2>
-          <a href="{% link _posts/2023-11-22-funfacts.md %}">Fun Facts</a>
-          <p>•</p>
-          <a href="{% link _posts/2023-11-22-featuredgames.md %}">Featured Rhythm Games</a>
-          <p>•</p>
-          <a href="{% link _posts/2023-11-16-discography.md %}">Discography</a>
         </div>
-        <p>Welcome to the Camellia Wiki!</p>
+        <p>
+          The Header has important buttons to keep in mind. The navigation bar, the search bar, the GitHub button, and
+          the Discord button.
+        </p>
+        <p>
+          Each of these buttons serve a purpose with navigation, including navigating you out of the site! It is
+          recommended to use this homepage or to use the navigation bar when exploring the site. If you know what you’re
+          looking for, use the search bar in the header to search for a article. You can search author names too!
+        </p>
       </div>
 
       {% for article in site.articles %}
