@@ -1762,7 +1762,6 @@ div pre.highlight {
   .cardHeader {
     flex-wrap: wrap;
     min-height: 84px;
-    height: auto;
   }
   .cardHeader h2 {
     align-self: center;
