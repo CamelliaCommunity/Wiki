@@ -47,15 +47,15 @@ layout: "wrapper"
         </div>
       </div>
       <div class="gridLayout">
-        {% for article in site.articles %}
+        {% for post in site.categories.postsWiki %}
         <div class="miniCard">
           <div class="cardContents">
             <div class="cardHeader">
-              <h2>{{ article.title }}</h2>
+              <h2>{{ post.title }}</h2>
             </div>
-            <p>{{ article.description }}</p>
+            <p>{{ post.description }}</p>
             <div class="buttonDefault">
-              <a href="{{ article.url }}">Click Here to View </a>
+              <a href="{{ post.url }}">Click Here to View </a>
             </div>
           </div>
         </div>
@@ -69,18 +69,18 @@ layout: "wrapper"
         <nav id="navWedgeItems">
           <h3>News</h3>
           <ol>
-            {% for article in site.articles %}
+            {% for post in site.categories.postsNews %}
             <div class="buttonDefault">
-              <a href="{{ article.url }}"
-                >{{ article.title }}
-                <div class="author">Written by {{ article.author }}</div></a
+              <a href="{{ post.url }}"
+                >{{ post.title }}
+                <div class="author">Written by {{ post.author }}</div></a
               >
             </div>
             {% endfor %}
           </ol>
           <h3>Blog Posts</h3>
           <ol>
-            {% for post in site.posts %}
+            {% for post in site.categories.postsBlog %}
             <div class="buttonDefault">
               <a href="{{ post.url }}"
                 >{{ post.title }}

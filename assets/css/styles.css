@@ -1469,6 +1469,7 @@ i was mostly experimenting with figma design */
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+  width: 100%;
   overflow: auto;
 }
 #navWedge #navWedgeContainer #navWedgeItems ol .buttonDefault a {
@@ -1477,6 +1478,7 @@ i was mostly experimenting with figma design */
   align-items: center;
   text-align: center;
   height: 100%;
+  width: 100%;
   padding: 10px;
   gap: 8px;
 }
