@@ -34,7 +34,7 @@ highlighter: rouge
 # theme: minima
 plugins:
   - jekyll-feed
-permalink: /wiki/:categories/:title
+permalink: /:title
 
 jekyll_compose:
   default_front_matter:

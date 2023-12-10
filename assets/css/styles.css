@@ -1037,6 +1037,18 @@ a:hover {
   line-height: 26px;
   margin-block-end: 10px;
 }
+.miniCard .cardContents p {
+  padding-bottom: 16px;
+}
+.miniCard .buttonDefault a {
+  font-style: italic;
+  width: 100%;
+}
+.miniCard .buttonDefault {
+  margin-left: 32px;
+  margin-right: 32px;
+  padding-bottom: 32px;
+}
 
 .miniCard .cardHeader {
   margin-bottom: 32px;
@@ -1552,7 +1564,6 @@ em {
   flex-direction: column;
   min-width: 76rem;
   margin-top: 164px;
-  /* footnote but on the right side */
 }
 #titleContainer h1 {
   align-self: center;
@@ -1566,11 +1577,31 @@ em {
   font-weight: 600;
   align-self: center;
 }
-#titleContainer #footNoteRight {
-  color: gray;
+#titleContainer #notesContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  /* footnote but on the right side */
+  /* footnote but on the left side */
+}
+#titleContainer #notesContainer #footNoteRight {
   align-self: flex-end;
+  text-align: right;
   font-weight: 600;
   margin-right: 48px;
+}
+#titleContainer #notesContainer #footNoteLeft {
+  align-self: flex-end;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 48px;
+}
+#titleContainer #notesContainer #breadcrumbs {
+  display: flex;
+  align-self: flex-end;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 48px;
 }
 
 #notAFullTitleContainer h1 {
@@ -1593,6 +1624,40 @@ em {
 .footnotes ol li p,
 .footnotes ul li p {
   padding-bottom: 0;
+}
+.footnotes ol li,
+.footnotes ul li {
+  padding-left: 0;
+}
+.footnotes li::before {
+  display: none;
+}
+.footnotes ol {
+  counter-reset: item;
+}
+.footnotes ol li p::before {
+  font-size: 18px;
+  content: counter(item) ".";
+  counter-increment: item;
+}
+.footnotes li p {
+  font-style: italic;
+  position: relative;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid var(--colorGray);
+}
+.footnotes li p::before {
+  content: "●";
+  font-size: 12px;
+  padding-right: 10px;
+  left: 0;
+}
+.footnotes li p:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 /* pictures */
@@ -1762,6 +1827,9 @@ div pre.highlight {
 /* temporary thing until the hamburger */
 @media screen and (max-width: 750px) {
   #contentWedge {
+    display: none;
+  }
+  #navWedge {
     display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

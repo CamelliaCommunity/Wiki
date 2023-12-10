@@ -12,11 +12,15 @@ layout: "wrapper"
   <div id="titleContainer">
     <h1>{{ page.title }}</h1>
     <p id="footNote">Written by {{ page.author }}</p>
-    <p id="footNoteRight">
-      <a href="https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }}" target="_blank"
+    <div id="notesContainer">
+      {% include breadcrumbs.html %}
+      <a
+        id="footNoteRight"
+        href="https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }}"
+        target="_blank"
         >Edit This Page!</a
       >
-    </p>
+    </div>
   </div>
   <div class="cardBackground">
     <div class="card">
