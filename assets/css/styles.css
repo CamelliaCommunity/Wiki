@@ -1467,7 +1467,6 @@ i was mostly experimenting with figma design */
 #navWedge #navWedgeContainer #navWedgeItems ol {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
   width: 100%;
   overflow: auto;
