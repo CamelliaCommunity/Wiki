@@ -533,9 +533,13 @@ header .header-shared h1 a img {
     /* very very jank weird searchbar code */
   }
   header .header-shared #hamburgerBtn {
-    position: absolute;
     text-align: center;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
+    /* gap: 10px; */
+    color: white;
+    border: none;
+    background: none;
+    width: 150px;
     color: white;
     border: none;
     background: none;
@@ -544,9 +548,11 @@ header .header-shared h1 a img {
     font-size: 42px;
   }
   header .header-shared #twoBotans {
-    position: absolute;
     display: flex;
-    gap: 18px;
+    /* padding: 20px; */
+    width: 150px;
+    /* gap: 20px; */
+    justify-content: space-evenly;
   }
   header .header-shared #githubBtn {
     text-align: center;
@@ -571,7 +577,7 @@ header .header-shared h1 a img {
   header .header-shared .header-inner {
     display: flex;
     align-self: flex-start;
-    width: 1644px;
+    flex: 1;
     padding: 12px 32px;
     justify-content: space-between;
     align-items: center;

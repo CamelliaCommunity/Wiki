@@ -7,12 +7,13 @@ header {
     justify-content: space-evenly;
 
     #hamburgerBtn {
-      position: absolute; // this is temp. this is only to keep the innerheader
-      // aligned correctly. we want to shift the buttons instead of the entire inner
-      // header
-
       text-align: center;
-      flex-shrink: 0;
+      /* flex-shrink: 0; */
+      /* gap: 10px; */
+      color: white;
+      border: none;
+      background: none;
+      width: 150px;
       // margin-left: 48px;
       // margin-right: 48px;
       color: white;
@@ -25,12 +26,11 @@ header {
     }
 
     #twoBotans {
-      position: absolute; // this is temp. this is only to keep the innerheader
-      // aligned correctly. we want to shift the buttons instead of the entire inner
-      // header
-
       display: flex;
-      gap: 18px;
+      /* padding: 20px; */
+      width: 150px;
+      /* gap: 20px; */
+      justify-content: space-evenly;
     }
 
     #githubBtn {
@@ -63,9 +63,7 @@ header {
     .header-inner {
       display: flex;
       align-self: flex-start;
-      width: 1644px; //TEMP
-      // width: 100%;
-      // height: 80px;
+      flex: 1;
       padding: 12px 32px;
       justify-content: space-between;
       align-items: center;
