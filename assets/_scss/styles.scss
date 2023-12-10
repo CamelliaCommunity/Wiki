@@ -184,30 +184,29 @@ a:hover {
 
 /* Fixed button code */
 .buttonDefault a {
-  background: var(--colorPrimary) 0% 0% no-repeat padding-box;
+  background: var(--colorCardDivisor) 0% 0% no-repeat padding-box;
   color: var(--colorWhite);
-  box-shadow: inset 0px -3px 6px #00000029;
-  text-shadow: 0px 3px 6px #00000029;
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 25px;
+  font-size: 20.25px;
+  font-weight: 600;
+  border-radius: 15px;
   width: 240px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
+
+  .author {
+    color: var(--colorGray);
+    font-size: 16px;
+    font-weight: 596;
+  }
 }
 
 .buttonDefault a:hover {
-  background: var(--colorLinksHover) 0% 0% no-repeat padding-box;
+  background: var(--colorCardDivisorHover) 0% 0% no-repeat padding-box;
   color: var(--colorWhite);
-  box-shadow: inset 0px -3px 6px #00000029;
-  text-shadow: 0px 3px 6px #00000029;
-}
-
-.buttonDefault a:active {
-  margin-top: 1px;
 }
 
 /* adds a little line to the bottom of a button. a little jank but works */
@@ -706,40 +705,14 @@ i was mostly experimenting with figma design */
         gap: 8px;
         overflow: auto;
 
-        li::marker {
-          content: "";
-        }
-
-        .navItem {
-          width: 100%;
-
-          a {
-            color: white;
-            text-align: center;
-            display: flex;
-            padding: 10px;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            align-self: stretch;
-
-            font-size: 20.25px;
-            font-style: normal;
-            font-weight: 600;
-
-            border-radius: 15px;
-            background: var(--colorCardDivisor);
-
-            .author {
-              color: var(--colorGray);
-              font-size: 16px;
-              font-weight: 596;
-            }
-
-            &:hover {
-              background: var(--colorCardDivisorHover);
-            }
-          }
+        .buttonDefault a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          height: 100%;
+          padding: 10px;
+          gap: 8px;
         }
       }
     }

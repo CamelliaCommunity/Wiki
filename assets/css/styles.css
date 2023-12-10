@@ -692,24 +692,18 @@ header .header-shared h1 a img {
   header .header-shared #search-container #results-container li::marker {
     content: "";
   }
-  header .header-shared #search-container #results-container .searchItem {
+  header .header-shared #search-container #results-container .buttonDefault {
     width: 100%;
   }
-  header .header-shared #search-container #results-container .searchItem a {
-    color: white;
+  header .header-shared #search-container #results-container .buttonDefault a {
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
     padding: 10px;
     gap: 8px;
-    font-size: 20.25px;
-    font-style: normal;
-    font-weight: 600;
-    border-radius: 15px;
-    background: var(--colorCardDivisor);
-  }
-  header .header-shared #search-container #results-container .searchItem a:hover {
-    background: var(--colorCardDivisorHover);
   }
   header.sticky {
     height: 64px;
@@ -991,13 +985,12 @@ a:hover {
 
 /* Fixed button code */
 .buttonDefault a {
-  background: var(--colorPrimary) 0% 0% no-repeat padding-box;
+  background: var(--colorCardDivisor) 0% 0% no-repeat padding-box;
   color: var(--colorWhite);
-  box-shadow: inset 0px -3px 6px rgba(0, 0, 0, 0.1607843137);
-  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 25px;
+  font-size: 20.25px;
+  font-weight: 600;
+  border-radius: 15px;
   width: 240px;
   height: 50px;
   display: flex;
@@ -1005,16 +998,15 @@ a:hover {
   justify-content: center;
   border: none;
 }
-
-.buttonDefault a:hover {
-  background: var(--colorLinksHover) 0% 0% no-repeat padding-box;
-  color: var(--colorWhite);
-  box-shadow: inset 0px -3px 6px rgba(0, 0, 0, 0.1607843137);
-  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+.buttonDefault a .author {
+  color: var(--colorGray);
+  font-size: 16px;
+  font-weight: 596;
 }
 
-.buttonDefault a:active {
-  margin-top: 1px;
+.buttonDefault a:hover {
+  background: var(--colorCardDivisorHover) 0% 0% no-repeat padding-box;
+  color: var(--colorWhite);
 }
 
 /* adds a little line to the bottom of a button. a little jank but works */
@@ -1467,34 +1459,14 @@ i was mostly experimenting with figma design */
   gap: 8px;
   overflow: auto;
 }
-#navWedge #navWedgeContainer #navWedgeItems ol li::marker {
-  content: "";
-}
-#navWedge #navWedgeContainer #navWedgeItems ol .navItem {
-  width: 100%;
-}
-#navWedge #navWedgeContainer #navWedgeItems ol .navItem a {
-  color: white;
-  text-align: center;
+#navWedge #navWedgeContainer #navWedgeItems ol .buttonDefault a {
   display: flex;
-  padding: 10px;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 10px;
   gap: 8px;
-  align-self: stretch;
-  font-size: 20.25px;
-  font-style: normal;
-  font-weight: 600;
-  border-radius: 15px;
-  background: var(--colorCardDivisor);
-}
-#navWedge #navWedgeContainer #navWedgeItems ol .navItem a .author {
-  color: var(--colorGray);
-  font-size: 16px;
-  font-weight: 596;
-}
-#navWedge #navWedgeContainer #navWedgeItems ol .navItem a:hover {
-  background: var(--colorCardDivisorHover);
 }
 #navWedge #navWedgeContainer.sticky {
   top: 64px;

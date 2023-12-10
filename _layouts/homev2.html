@@ -67,23 +67,23 @@ layout: "wrapper"
           <h3>News</h3>
           <ol>
             {% for article in site.articles %}
-            <li class="navItem">
+            <div class="buttonDefault">
               <a href="{{ article.url }}"
-                >{{ article.title }} <br />
+                >{{ article.title }}
                 <div class="author">Written by {{ article.author }}</div></a
               >
-            </li>
+            </div>
             {% endfor %}
           </ol>
           <h3>Blog Posts</h3>
           <ol>
             {% for post in site.posts %}
-            <li class="navItem">
+            <div class="buttonDefault">
               <a href="{{ post.url }}"
-                >{{ post.title }}<br />
+                >{{ post.title }}
                 <div class="author">Written by {{ post.author }}</div></a
               >
-            </li>
+            </div>
             {% endfor %}
           </ol>
         </nav>

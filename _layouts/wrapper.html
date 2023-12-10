@@ -41,7 +41,7 @@
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: "{{ './search.json' | relative_url }}",
-  searchResultTemplate: '<li class ="searchItem"><a href="{{ site.url }}{url}">{title}</a>{{ post.author }}</li>'
+  searchResultTemplate: '<div class ="buttonDefault"><a href="{{ site.url }}{url}">{title}</a></div>'
   })
   </script>
 </html>
