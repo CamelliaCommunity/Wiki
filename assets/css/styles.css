@@ -1339,10 +1339,6 @@ i was mostly experimenting with figma design */
   }
 }
 
-.gridLayout .card {
-  grid-column: 1/span 2;
-}
-
 /* jank ass wedge code */
 #contentWedge {
   flex-shrink: 0;
@@ -1415,6 +1411,91 @@ i was mostly experimenting with figma design */
 
 #wedgeItems li.active > a {
   color: var(--colorWhite);
+}
+
+/* homepage content wedge */
+#navWedge {
+  flex-shrink: 0;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards);
+  border-radius: 35px;
+  width: 283px;
+}
+#navWedge #navWedgeContainer {
+  position: sticky;
+  padding: 16px;
+}
+#navWedge #navWedgeContainer hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
+  height: 2px;
+}
+#navWedge #navWedgeContainer #navWedgeItems {
+  display: block;
+  overflow-y: scroll;
+  overflow: auto;
+  font-size: 18px;
+  font-weight: 500;
+  max-height: calc(100vh - 144px);
+}
+#navWedge #navWedgeContainer #navWedgeItems h3:first-child {
+  margin-top: 0;
+}
+#navWedge #navWedgeContainer #navWedgeItems h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+#navWedge #navWedgeContainer #navWedgeItems h3::before {
+  content: "";
+  display: inline-block;
+  background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+  height: 17px;
+  margin-right: 8px;
+  width: 4px;
+  position: inherit;
+  border-radius: 2px;
+}
+#navWedge #navWedgeContainer #navWedgeItems ol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  overflow: auto;
+}
+#navWedge #navWedgeContainer #navWedgeItems ol li::marker {
+  content: "";
+}
+#navWedge #navWedgeContainer #navWedgeItems ol .navItem {
+  width: 100%;
+}
+#navWedge #navWedgeContainer #navWedgeItems ol .navItem a {
+  color: white;
+  text-align: center;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  font-size: 20.25px;
+  font-style: normal;
+  font-weight: 600;
+  border-radius: 15px;
+  background: var(--colorCardDivisor);
+}
+#navWedge #navWedgeContainer #navWedgeItems ol .navItem a .author {
+  color: var(--colorGray);
+  font-size: 16px;
+  font-weight: 596;
+}
+#navWedge #navWedgeContainer #navWedgeItems ol .navItem a:hover {
+  background: var(--colorCardDivisorHover);
+}
+#navWedge #navWedgeContainer.sticky {
+  top: 64px;
+  position: sticky;
 }
 
 /* scroll to top button */

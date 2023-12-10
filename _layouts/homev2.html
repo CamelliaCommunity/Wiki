@@ -59,12 +59,28 @@ layout: "wrapper"
         {% endfor %}
       </div>
     </div>
-    <div id="contentWedge">
-      <div id="wedgeContainer">
-        <h2>Contents</h2>
+    <div id="navWedge">
+      <div id="navWedgeContainer">
+        <h3>Community Posts</h3>
         <hr />
-        <nav id="wedgeItems">
-          <ol></ol>
+        <nav id="navWedgeItems">
+          <h3>News</h3>
+          <ol>
+            {% for article in site.articles %}
+            <li class="navItem">
+              <a href="{{ article.url }}"
+                >{{ article.title }} <br />
+                <div class="author">Written by {{ article.author }}</div></a
+              >
+            </li>
+            {% endfor %}
+          </ol>
+          <h3>Blog Posts</h3>
+          <ol>
+            <!-- {% for post in site.posts %}
+            <li class="navItem"><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %} -->
+          </ol>
           <!-- In javascript, there will be new items listed here with each <h2> -->
         </nav>
       </div>
