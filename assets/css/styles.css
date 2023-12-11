@@ -1179,6 +1179,7 @@ blockquote.tip {
 
 /* i didnt want to do this but oh well. */
 /* i dont see another way for now -john */
+/* since minicard is only in the homepage, apply this */
 .miniCard h3 {
   margin-top: -16px;
   margin-left: 32px;
@@ -1606,6 +1607,7 @@ mark {
 
 .italic,
 em {
+  display: contents;
   font-style: italic;
 }
 
