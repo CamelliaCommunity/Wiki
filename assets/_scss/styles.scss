@@ -196,6 +196,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   border: none;
+  @include transition(position 0.2s, border-radius, 0.2s ease-in-out);
 
   .author {
     color: var(--colorGray);
@@ -207,6 +208,7 @@ a:hover {
 .buttonDefault a:hover {
   background: var(--colorCardDivisorHover) 0% 0% no-repeat padding-box;
   color: var(--colorWhite);
+  @include transition(all 0s ease-out);
 }
 
 /* adds a little line to the bottom of a button. a little jank but works */
