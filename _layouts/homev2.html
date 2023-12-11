@@ -57,11 +57,16 @@ layout: "wrapper"
             <div class="buttonDefault">
               <a href="{{ post.url }}">Click Here to View </a>
             </div>
-            {% for post in site.posts %} {% if post.include contains post.title %}
+            {% assign includedCategories = post.include | split: ', ' %} {% assign includedPosts =
+            site.categories.postsInclude | where_exp: "incPost", "includedCategories contains incPost.title" %} {% if
+            includedPosts.size > 0 %}
             <h3>What's also Included</h3>
             <hr />
-
-            <p><a href="{{ post.url }}">{{ post.title }}</a>{% endif %} {% endfor %}</p>
+            <ul>
+              {% for includedPost in includedPosts %}
+              <li><a href="{{ includedPost.url }}">{{ includedPost.title }}</a></li>
+              {% endfor %} {% endif %}
+            </ul>
           </div>
         </div>
         {% endfor %}

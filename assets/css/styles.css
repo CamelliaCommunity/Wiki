@@ -1191,7 +1191,6 @@ blockquote.tip {
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   align-self: center;
 }
 
@@ -1804,6 +1803,9 @@ div pre.highlight {
   }
   figure.floatImage {
     margin-left: 8px;
+  }
+  .card .cardContents {
+    width: 100%;
   }
   .cardBackground {
     width: 100%;
