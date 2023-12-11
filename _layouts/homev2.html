@@ -57,6 +57,11 @@ layout: "wrapper"
             <div class="buttonDefault">
               <a href="{{ post.url }}">Click Here to View </a>
             </div>
+            {% for post in site.posts %} {% if post.include contains post.title %}
+            <h3>What's also Included</h3>
+            <hr />
+
+            <p><a href="{{ post.url }}">{{ post.title }}</a>{% endif %} {% endfor %}</p>
           </div>
         </div>
         {% endfor %}
