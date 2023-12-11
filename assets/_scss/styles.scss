@@ -616,7 +616,7 @@ hr {
 
 /* grid layout. the code is not THAT stupid. i might fix it up later. 
 i was mostly experimenting with figma design */
-.gridLayout {
+.masonryLayout {
   --masonry-gap: 10px;
   --masonry-brick-width: 304px;
   column-gap: var(--masonry-gap);
@@ -1113,7 +1113,8 @@ div pre.highlight {
     display: none;
   }
 
-  // .gridLayout {
+  // .masonryLayout
+  //  {
   //   display: flex;
   //   flex-direction: column;
 
