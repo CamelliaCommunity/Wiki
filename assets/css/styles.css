@@ -1172,8 +1172,15 @@ blockquote.tip {
   line-height: normal;
 }
 
-.card h3,
+.card h3 {
+  margin-left: 32px;
+  margin-bottom: 8px;
+}
+
+/* i didnt want to do this but oh well. */
+/* i dont see another way for now -john */
 .miniCard h3 {
+  margin-top: -16px;
   margin-left: 32px;
   margin-bottom: 8px;
 }
@@ -1220,6 +1227,8 @@ li p {
 }
 .card ol li,
 .card ul li {
+  display: flex;
+  align-items: center;
   font-style: italic;
   position: relative;
   font-size: 18px;
@@ -1228,10 +1237,15 @@ li p {
   margin-right: 10px;
   border-bottom: 1px solid var(--colorGray);
 }
+.card ol li a,
+.card ul li a {
+  display: contents;
+}
 .card ol li::before,
 .card ul li::before {
   content: "●";
-  font-size: 12px;
+  align-self: flex-start;
+  font-size: 10px;
   padding-right: 10px;
   left: 0;
 }
@@ -1246,6 +1260,56 @@ li p {
   counter-reset: item;
 }
 .card ol li::before {
+  font-size: 18px;
+  content: counter(item) ".";
+  counter-increment: item;
+}
+
+.miniCard ol,
+.miniCard ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+.miniCard ol li,
+.miniCard ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  line-height: 26px;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+}
+.miniCard ol li a,
+.miniCard ul li a {
+  display: contents;
+}
+.miniCard ol li::before,
+.miniCard ul li::before {
+  content: "●";
+  font-size: 10px;
+  padding-right: 10px;
+  color: var(--colorLinks);
+  left: 0;
+}
+.miniCard ol li:first-child,
+.miniCard ul li:first-child {
+  padding-top: 0;
+}
+.miniCard ol li:last-child,
+.miniCard ul li:last-child {
+  padding-bottom: 32px;
+}
+
+/* add a counter to ordered lists */
+.miniCard ol {
+  counter-reset: item;
+}
+.miniCard ol li::before {
   font-size: 18px;
   content: counter(item) ".";
   counter-increment: item;

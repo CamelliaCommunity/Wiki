@@ -390,8 +390,15 @@ blockquote.tip {
   line-height: normal; // remove this later
 }
 
-.card h3,
+.card h3 {
+  margin-left: 32px;
+  margin-bottom: 8px;
+}
+
+/* i didnt want to do this but oh well. */
+/* i dont see another way for now -john */
 .miniCard h3 {
+  margin-top: -16px;
   margin-left: 32px;
   margin-bottom: 8px;
 }
@@ -438,6 +445,8 @@ li p {
   border-radius: 10px;
 
   li {
+    display: flex;
+    align-items: center;
     font-style: italic;
     position: relative;
     font-size: 18px;
@@ -445,13 +454,17 @@ li p {
     margin-left: 10px;
     margin-right: 10px;
     border-bottom: 1px solid var(--colorGray);
+
+    a {
+      display: contents;
+    }
   }
 
   li::before {
     content: "\25CF";
-    font-size: 12px;
+    align-self: flex-start;
+    font-size: 10px;
     padding-right: 10px;
-    // position: absolute;
     left: 0;
   }
 
@@ -463,6 +476,58 @@ li p {
 
 /* add a counter to ordered lists */
 .card {
+  ol {
+    counter-reset: item;
+
+    li::before {
+      font-size: 18px;
+      content: counter(item) "\002E";
+      counter-increment: item;
+    }
+  }
+}
+
+.miniCard ol,
+.miniCard ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+
+  li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    line-height: 26px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+
+    a {
+      display: contents;
+    }
+  }
+
+  li::before {
+    content: "\25CF";
+    font-size: 10px;
+    padding-right: 10px;
+    color: var(--colorLinks);
+    left: 0;
+  }
+
+  li:first-child {
+    padding-top: 0;
+  }
+  li:last-child {
+    padding-bottom: 32px;
+  }
+}
+
+/* add a counter to ordered lists */
+.miniCard {
   ol {
     counter-reset: item;
 
