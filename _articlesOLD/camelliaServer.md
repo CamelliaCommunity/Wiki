@@ -2,8 +2,8 @@
 layout: article
 title:  "Camellia Server"
 categories: articles
-author: papertek
-description: Read about the server and all of its contents. Includes events, history and more!
+author: JoshuaGreatXD
+description: The one and only Camellia! Here, you can find information about Camellia's background, accomplishments, and fun facts!
 include: Camellia Monthly, Meetings
 ---
 
