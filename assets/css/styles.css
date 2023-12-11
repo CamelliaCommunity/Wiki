@@ -962,20 +962,6 @@ p {
   -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
-#navigationButtons .buttonDefault a {
-  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  transition: position 0.2s, border-radius, 0.2s ease-in-out;
-}
-#navigationButtons .buttonDefault a:hover {
-  -webkit-transition: all 0s ease-out;
-  -moz-transition: all 0s ease-out;
-  -ms-transition: all 0s ease-out;
-  -o-transition: all 0s ease-out;
-  transition: all 0s ease-out;
-}
 
 /* footer */
 footer {
@@ -1650,7 +1636,6 @@ em {
   padding: 48px;
   margin-bottom: 72px;
   min-height: 727px;
-  padding: 48px;
 }
 
 /* footnote, or the author */
@@ -1676,6 +1661,7 @@ em {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+  border-radius: 15px;
   /* footnote but on the right side */
   /* footnote but on the left side */
 }
