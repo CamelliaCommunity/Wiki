@@ -39,17 +39,12 @@ permalink: /:title
 jekyll_compose:
   default_front_matter:
     posts:
-      category: posts
-      author: a awesome author!
-      description: Insert a awesome description!
+      category: pages
+      author: no author!
+      description: Insert an awesome description!
     drafts:
-      author: a awesome author!
-      description: Insert a awesome description!
-    articles:
-      layout: article
-      category: articles
-      author: a awesome author!
-      description: Insert a awesome description!
+      author: no author!
+      description: Insert an awesome description!
 
 defaults:
   - scope:
