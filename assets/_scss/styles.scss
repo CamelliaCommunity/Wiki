@@ -1092,11 +1092,6 @@ figure.floatImage {
   }
 }
 
-/* give codeblocks a scrollbar */
-div pre.highlight {
-  overflow-y: auto;
-}
-
 /* smaller screens/smartphones (to be removed or reworked later) */
 
 @media screen and (max-width: 1416px) {

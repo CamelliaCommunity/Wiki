@@ -8,6 +8,11 @@ code {
   color: #c3e88d;
 }
 
+/* give codeblocks a scrollbar */
+div pre.highlight {
+  overflow-y: auto;
+}
+
 // highlights and code blocks
 div.highlighter-rouge,
 figure.highlight {

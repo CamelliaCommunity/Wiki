@@ -26,6 +26,11 @@ code {
   color: #c3e88d;
 }
 
+/* give codeblocks a scrollbar */
+div pre.highlight {
+  overflow-y: auto;
+}
+
 div.highlighter-rouge,
 figure.highlight {
   position: relative;
@@ -1923,11 +1928,6 @@ figure.floatImage img {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-/* give codeblocks a scrollbar */
-div pre.highlight {
-  overflow-y: auto;
 }
 
 /* smaller screens/smartphones (to be removed or reworked later) */
