@@ -77,7 +77,6 @@ header {
       position: absolute;
       left: -500px; // in main.js, we will make this display as flex when the menu button is pressed
       margin-top: 506px;
-      // left: 0;
 
       display: flex;
       width: 406px;
@@ -99,6 +98,12 @@ header {
 
       &.active {
         left: 0;
+      }
+
+      /* weirdness being applied in the js */
+      /* workaround for now */
+      &.sticky {
+        margin-top: 482px;
       }
 
       #navWedgeContainer {
@@ -322,6 +327,7 @@ header {
           ),
           var(--colorCards);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        transition: 0.2s;
       }
 
       #results-container {
@@ -389,6 +395,7 @@ header {
       #search-container {
         #results-unfuck {
           margin-top: 11px;
+          transition: 0.2s;
         }
 
         #main-bar {

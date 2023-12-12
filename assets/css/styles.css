@@ -602,9 +602,14 @@ header .header-shared h1 a img {
     background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards, #382e37);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     transition: 0.4s;
+    /* weirdness being applied in the js */
+    /* workaround for now */
   }
   header .header-shared #navSidebar.active {
     left: 0;
+  }
+  header .header-shared #navSidebar.sticky {
+    margin-top: 482px;
   }
   header .header-shared #navSidebar #navWedgeContainer {
     position: sticky;
@@ -779,6 +784,7 @@ header .header-shared h1 a img {
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.2s;
   }
   header .header-shared #search-container #results-container {
     display: flex;
@@ -832,6 +838,7 @@ header .header-shared h1 a img {
   }
   header.sticky .header-inner #search-container #results-unfuck {
     margin-top: 11px;
+    transition: 0.2s;
   }
   header.sticky .header-inner #search-container #main-bar {
     flex-shrink: 0;
