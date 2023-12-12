@@ -928,8 +928,8 @@ header .header-shared h1 a img {
     border-radius: 0 25px 25px 0;
   }
   header.sticky .header-inner {
-    height: 100%;
-    border-bottom: none;
+    height: initial;
+    padding: 8px 32px;
   }
   header.sticky .header-inner #search-container #results-unfuck {
     margin-top: 11px;

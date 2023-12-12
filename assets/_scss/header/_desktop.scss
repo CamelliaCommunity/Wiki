@@ -390,8 +390,8 @@ header {
     }
 
     .header-inner {
-      height: 100%;
-      border-bottom: none;
+      height: initial;
+      padding: 8px 32px;
 
       #search-container {
         #results-unfuck {
