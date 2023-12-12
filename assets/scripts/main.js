@@ -98,6 +98,11 @@ searchInput.addEventListener('keyup', () => {
 // better ux(?) for the search container
 // made by papertek
 
+// this is pretty jank, i know. one issue im having is when the user still
+// clicks results-unfuck, the container still hides.
+// i have tried other methods but i think this one is the one that works best
+// if theres any other contributor willing to take this please do, lol
+
 // add event listener to show results-unfuck when the user clicks inside it
 resultsUnfuck.addEventListener('click', () => {
   resultsUnfuck.style.display = 'flex';
@@ -107,8 +112,6 @@ resultsUnfuck.addEventListener('click', () => {
 searchInput.addEventListener('blur', () => {
   // delay hiding results-unfuck. this is to allow time for click events being
   // processed
-
-  // this is pretty jank, i know
   setTimeout(() => {
     // check if clicked element is not within search input or results
     // container
