@@ -6,57 +6,69 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
 
+    #btnContainer {
+      text-align: center;
+      width: 150px;
+    }
+
     #hamburgerBtn {
       text-align: center;
-      /* flex-shrink: 0; */
-      /* gap: 10px; */
+      cursor: pointer;
+      flex-shrink: 0;
       color: white;
       border: none;
       background: none;
-      width: 150px;
-      // margin-left: 48px;
-      // margin-right: 48px;
-      color: white;
-      border: none;
-      background: none;
+      border-radius: 32px;
+      padding: 4px;
 
       .ph-bold.ph-list {
         font-size: 42px;
+      }
+
+      &:hover {
+        background: var(--colorCardDivisorHover);
       }
     }
 
     #twoBotans {
       display: flex;
-      /* padding: 20px; */
       width: 150px;
-      /* gap: 20px; */
       justify-content: space-evenly;
     }
 
     #githubBtn {
       text-align: center;
       flex-shrink: 0;
-      // margin-left: 28px;
       color: white;
       border: none;
       background: none;
+      border-radius: 25px;
+      padding: 4px;
 
       .ph-bold.ph-github-logo {
         font-size: 32px;
+      }
+
+      &:hover {
+        background: var(--colorCardDivisorHover);
       }
     }
 
     #discordBtn {
       text-align: center;
       flex-shrink: 0;
-      // margin-left: 28px;
-      // margin-right: 18px;
       color: white;
       border: none;
       background: none;
+      border-radius: 25px;
+      padding: 4px;
 
       .ph-bold.ph-discord-logo {
         font-size: 32px;
+      }
+
+      &:hover {
+        background: var(--colorCardDivisorHover);
       }
     }
 

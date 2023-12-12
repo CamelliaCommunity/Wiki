@@ -533,26 +533,29 @@ header .header-shared h1 a img {
     /* navigation bar */
     /* very very jank weird searchbar code */
   }
+  header .header-shared #btnContainer {
+    text-align: center;
+    width: 150px;
+  }
   header .header-shared #hamburgerBtn {
     text-align: center;
-    /* flex-shrink: 0; */
-    /* gap: 10px; */
+    cursor: pointer;
+    flex-shrink: 0;
     color: white;
     border: none;
     background: none;
-    width: 150px;
-    color: white;
-    border: none;
-    background: none;
+    border-radius: 32px;
+    padding: 4px;
   }
   header .header-shared #hamburgerBtn .ph-bold.ph-list {
     font-size: 42px;
   }
+  header .header-shared #hamburgerBtn:hover {
+    background: var(--colorCardDivisorHover);
+  }
   header .header-shared #twoBotans {
     display: flex;
-    /* padding: 20px; */
     width: 150px;
-    /* gap: 20px; */
     justify-content: space-evenly;
   }
   header .header-shared #githubBtn {
@@ -561,9 +564,14 @@ header .header-shared h1 a img {
     color: white;
     border: none;
     background: none;
+    border-radius: 25px;
+    padding: 4px;
   }
   header .header-shared #githubBtn .ph-bold.ph-github-logo {
     font-size: 32px;
+  }
+  header .header-shared #githubBtn:hover {
+    background: var(--colorCardDivisorHover);
   }
   header .header-shared #discordBtn {
     text-align: center;
@@ -571,9 +579,14 @@ header .header-shared h1 a img {
     color: white;
     border: none;
     background: none;
+    border-radius: 25px;
+    padding: 4px;
   }
   header .header-shared #discordBtn .ph-bold.ph-discord-logo {
     font-size: 32px;
+  }
+  header .header-shared #discordBtn:hover {
+    background: var(--colorCardDivisorHover);
   }
   header .header-shared #navSidebar {
     position: absolute;
