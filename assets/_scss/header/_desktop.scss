@@ -303,6 +303,7 @@ header {
         }
       }
 
+      // in theory i would like this to move with the header when the header collapses instead of it transitioning weirdly
       #results-unfuck {
         z-index: 1;
         padding: 16px;
