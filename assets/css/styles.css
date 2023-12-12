@@ -494,13 +494,12 @@ header {
   z-index: 1;
   /* navigation bar */
 }
-header #sidebar {
+header #navSidebar {
   position: absolute;
   left: 0;
   margin-top: 88px;
   display: flex;
   width: 406px;
-  padding: 16px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -508,6 +507,64 @@ header #sidebar {
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards, #382e37);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+header #navSidebar #navWedgeContainer {
+  position: sticky;
+  padding: 16px;
+  width: 100%;
+}
+header #navSidebar #navWedgeContainer hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
+  height: 2px;
+}
+header #navSidebar #navWedgeContainer #navWedgeItems {
+  display: block;
+  overflow-y: scroll;
+  overflow: auto;
+  font-size: 18px;
+  font-weight: 500;
+  max-height: calc(100vh - 144px);
+}
+header #navSidebar #navWedgeContainer #navWedgeItems h3:first-child {
+  margin-top: 0;
+}
+header #navSidebar #navWedgeContainer #navWedgeItems h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+header #navSidebar #navWedgeContainer #navWedgeItems h3::before {
+  content: "";
+  display: inline-block;
+  background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+  height: 17px;
+  margin-right: 8px;
+  width: 4px;
+  position: inherit;
+  border-radius: 2px;
+}
+header #navSidebar #navWedgeContainer #navWedgeItems ol {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  overflow: auto;
+}
+header #navSidebar #navWedgeContainer #navWedgeItems ol .buttonDefault a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  gap: 8px;
+}
+header #navSidebar #navWedgeContainer.sticky {
+  top: 64px;
+  position: sticky;
 }
 header .header-shared {
   display: flex;
