@@ -1048,9 +1048,8 @@ sup {
 figure.centerImage {
   float: none;
   text-align: center;
-  margin-left: 0;
-  padding-left: 32px;
-  padding-right: 32px;
+  margin-left: 32px;
+  margin-right: 32px;
   padding: 6px;
   border: 2px dashed var(--colorGray);
   border-radius: 10px;
