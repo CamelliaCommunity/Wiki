@@ -25,7 +25,8 @@ if (scrollToTop) {
   });
 }
 
-// Add the sticky class to header when user scrolls
+// Add the sticky class to header when user scrolls (also adds to the sidebar,
+// remove later?)
 // Created by matt
 const scrollDetect = () => {
   header.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
@@ -104,8 +105,8 @@ searchInput.addEventListener('keyup', () => {
 
 /* this is pretty jank, i know. one issue im having is when the user still
  * clicks results-unfuck, the container still hides. i have tried other methods
- * but i think this one is the one that works best if theres any other
- * contributor willing to take this please do, lol */
+ * but i think this one is the one that works best. if theres any other
+ * contributor willing to fix this please do lol */
 
 // add event listener to show results-unfuck when the user clicks inside it
 resultsUnfuck.addEventListener('click', () => {
@@ -132,7 +133,6 @@ searchInput.addEventListener('blur', () => {
 /* add event listener to toggle 'active' class when clicking the hamburger
  * button */
 hamburgerBtn.addEventListener('click', function(event) {
-  console.log('Button clicked!');
   navSidebar.classList.toggle('active');
   // stop click event from propagating to the document body
   event.stopPropagation();
@@ -141,7 +141,7 @@ hamburgerBtn.addEventListener('click', function(event) {
 /* add global click event listener to hide navSidebar when clicking outside of
  * it */
 document.addEventListener('click', function(event) {
-  // Check if clicked element is not inside the navSidebar or is not the
+  // check if clicked element is not inside the navSidebar or is not the
   // hamburgerBtn
   if (!navSidebar.contains(event.target) && event.target !== hamburgerBtn) {
     navSidebar.classList.remove('active');

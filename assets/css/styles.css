@@ -547,7 +547,7 @@ header .header-shared h1 a img {
     border-radius: 32px;
     padding: 4px;
   }
-  header .header-shared #hamburgerBtn .ph-bold.ph-list {
+  header .header-shared #hamburgerBtn .ph-bold.ph-caret-circle-down {
     font-size: 42px;
   }
   header .header-shared #hamburgerBtn:hover {
