@@ -501,7 +501,7 @@ div.highlight {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.3); /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -519,6 +519,8 @@ div.highlight {
   width: 80%;
   max-width: 700px;
   text-align: center;
+  font-size: 18px;
+  font-weight: 500;
   color: #ccc;
   padding: 10px 0;
   height: 150px;
@@ -552,7 +554,6 @@ div.highlight {
 /* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
   right: 35px;
   color: #f1f1f1;
   font-size: 40px;

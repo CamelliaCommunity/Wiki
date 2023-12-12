@@ -224,6 +224,9 @@ window.onclick = function(event) {
   }
 };
 
+// When the user scrolls, close the modal
+window.addEventListener('scroll', closeAndHideModal);
+
 // Function to close and hide the modal
 function closeAndHideModal() {
   const modal = document.getElementById('myModal');
