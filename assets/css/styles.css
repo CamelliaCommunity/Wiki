@@ -686,7 +686,7 @@ header .header-shared h1 a img {
   header .header-shared #navSidebar {
     position: absolute;
     left: -406px;
-    margin-top: 65.7em;
+    margin-top: calc(100vh + 88px);
     height: 100vh;
     display: flex;
     width: 406px;
@@ -705,7 +705,7 @@ header .header-shared h1 a img {
     left: 0;
   }
   header .header-shared #navSidebar.sticky {
-    margin-top: 64.2em;
+    margin-top: calc(100vh + 64px);
   }
   header .header-shared #navSidebar #navWedgeContainer {
     position: sticky;
