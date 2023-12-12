@@ -9,7 +9,7 @@ description: mikUbiquity album page
 ## Overview
 
 ![CTCD-003](/assets/images/camellia/albums/CTCD-003.jpg)
-*mikUbiquity* is a doujin album by [かめりあ](/_articles/camellia.md) (Camellia) released on 2011-10-30 (M3-28) by the circle [かめるかめりあ](#).
+*mikUbiquity* is a doujin album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2011-10-30 (M3-28) by the circle [かめるかめりあ](#).
 
 It is the third [Vocaloid](https://en.wikipedia.org/wiki/Vocaloid) album by *Camellia*. On 2019-12-31 the CD was re-released as part of the *Camellia Archives* series of re-releases.
 
