@@ -10,7 +10,7 @@
 }
 
 /* Import variables */
-@import "./variables", "./highlights", "./author";
+@import "./variables", "./highlights", "./author", "./modals";
 @import "./header/shared";
 
 /* Global elements, such as headers, footers, and body. */
@@ -613,8 +613,7 @@ hr {
   height: 2px;
 }
 
-/* grid layout. the code is not THAT stupid. i might fix it up later. 
-i was mostly experimenting with figma design */
+/* masonry layout. this is cool */
 .masonryLayout {
   --masonry-gap: 10px;
   --masonry-brick-width: 304px;
@@ -1079,7 +1078,6 @@ figure.floatImage {
   height: 30%;
 
   figcaption {
-    // position: absolute;
     font-weight: 500;
     text-align: center;
   }
