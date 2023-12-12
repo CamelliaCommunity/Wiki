@@ -98,10 +98,10 @@ searchInput.addEventListener('keyup', () => {
 // better ux(?) for the search container
 // made by papertek
 
-// this is pretty jank, i know. one issue im having is when the user still
-// clicks results-unfuck, the container still hides.
-// i have tried other methods but i think this one is the one that works best
-// if theres any other contributor willing to take this please do, lol
+/* this is pretty jank, i know. one issue im having is when the user still
+ * clicks results-unfuck, the container still hides. i have tried other methods
+ * but i think this one is the one that works best if theres any other
+ * contributor willing to take this please do, lol */
 
 // add event listener to show results-unfuck when the user clicks inside it
 resultsUnfuck.addEventListener('click', () => {
@@ -123,9 +123,27 @@ searchInput.addEventListener('blur', () => {
 });
 
 /* add functionality to the navigation sidebar */
-document.getElementById('hamburgerBtn').addEventListener('click', function() {
+// made by papertek
+const navSidebar = document.getElementById('navSidebar');
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+
+/* add event listener to toggle 'active' class when clicking the hamburger
+ * button */
+hamburgerBtn.addEventListener('click', function(event) {
   console.log('Button clicked!');
-  document.getElementById('navSidebar').classList.toggle('active');
+  navSidebar.classList.toggle('active');
+  // stop click event from propagating to the document body
+  event.stopPropagation();
+});
+
+/* add global click event listener to hide navSidebar when clicking outside of
+ * it */
+document.addEventListener('click', function(event) {
+  // Check if clicked element is not inside the navSidebar or is not the
+  // hamburgerBtn
+  if (!navSidebar.contains(event.target) && event.target !== hamburgerBtn) {
+    navSidebar.classList.remove('active');
+  }
 });
 
 // Test code

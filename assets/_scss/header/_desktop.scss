@@ -243,8 +243,12 @@ header {
         background: var(--colorCards);
         padding-left: 24px;
 
+        // not really a button right now but we might change that eventually
         .searchBtn {
-          text-align: center;
+          // text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           flex-shrink: 0;
           width: 58px;
           height: 46px;

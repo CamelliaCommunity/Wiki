@@ -717,7 +717,9 @@ header .header-shared h1 a img {
     padding-left: 24px;
   }
   header .header-shared #search-container #main-bar .searchBtn {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
     width: 58px;
     height: 46px;
