@@ -8,7 +8,7 @@ description: ハニージンジャーエール album page
 
 ## Overview
 
-![CTCD-001](/assets/images/CTCD-001.png)
+![CTCD-001](/assets/images/camellia/albums/CTCD-001.png)
 ハニージンジャーエール is a doujin album by [かめりあ](/_articles/camellia.md) (Camellia) released on 2010-10-31 (M3-26) by the circle [かめるかめりあ](#).
 
 It is the first [Vocaloid](https://en.wikipedia.org/wiki/Vocaloid) album by *Camellia*. On 2019-12-31 the CD was re-released as part of the *Camellia Archives* series of re-releases.
