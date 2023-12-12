@@ -8,6 +8,11 @@ code {
   color: #c3e88d;
 }
 
+/* give codeblocks a scrollbar */
+div pre.highlight {
+  overflow-y: auto;
+}
+
 // highlights and code blocks
 div.highlighter-rouge,
 figure.highlight {
@@ -29,6 +34,10 @@ div.highlighter-rouge pre.highlight,
 figure.highlight > pre,
 figure.highlight pre.highlight {
   margin: 0;
+  // padding: 1em;
+}
+
+div.highlight {
   padding: 1em;
 }
 

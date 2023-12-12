@@ -1,19 +1,29 @@
-<header class="headerV2">
-  <div class="header-inner">
-    <h1 class="logo">
-      <a href="/index.html">
-        <img src="/assets/images/caramel.png" alt="camellia wiki logo" />
-        Camellia • Wiki
-      </a>
-    </h1>
-
-    <div id="search-container">
-      <input type="text" id="search-input" placeholder="search..." />
-      <ul id="results-container"></ul>
+<header>
+  <div class="header-shared">
+    <div id="btnContainer">
+      <button id="hamburgerBtn"><i class="ph-bold ph-list"></i></button>
     </div>
+    <div class="header-inner">
+      <h1 class="logo">
+        <a href="/index.html">
+          <img src="/assets/images/caramel.png" alt="camellia wiki logo" />
+          Camellia • Wiki
+        </a>
+      </h1>
+      {% include searchbar.html %}
+    </div>
+    <div id="twoBotans">
+      <a id="githubBtn" href="https://github.com/papertek/papertek.github.io" target="_blank"
+        ><i class="ph-bold ph-github-logo"></i
+      ></a>
+      <a id="discordBtn" href="https://discord.com/invite/camellia" target="_blank"
+        ><i class="ph-bold ph-discord-logo"></i
+      ></a>
+    </div>
+    {% include sidebar.html %}
   </div>
 
-  <!-- <div class="header-mobile-scrollV2">
+  <!-- <div class="header-mobile-scroll">
     <h1 class="logo">
       <a href="/index.html">
         <img src="/assets/images/caramel.png" alt="camellia wiki logo" />

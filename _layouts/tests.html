@@ -13,10 +13,7 @@ layout: "wrapper"
         <h2>You will find Tests Here</h2>
       </div>
       <div class="cardContents">
-        <p>
-          Located at the bottom are useful tests used throughout this site.
-          Click a buttons to view the page.
-        </p>
+        <p>Located at the bottom are useful tests used throughout this site. Click a buttons to view the page.</p>
       </div>
       <div class="centerItem">
         <nav id="navigationButtons">
@@ -32,6 +29,11 @@ layout: "wrapper"
           <div class="buttonDefault">
             <a href="/tests/pictureWrapTest.html">Picture Wrap Test</a>
           </div>
+          {% for post in site.categories.tests %}
+          <div class="buttonDefault">
+            <a href="{{ post.url }}">{{ post.title }} </a>
+          </div>
+          {% endfor %}
         </nav>
       </div>
     </div>

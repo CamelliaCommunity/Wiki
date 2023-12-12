@@ -161,7 +161,7 @@
       sortMiddleware: function() {
         return 0
       },
-      noResultsText: 'No results found',
+      noResultsText: 'No results found!',
       limit: 10,
       fuzzy: !1,
       debounceTime: null,

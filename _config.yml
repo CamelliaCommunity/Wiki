@@ -34,31 +34,23 @@ highlighter: rouge
 # theme: minima
 plugins:
   - jekyll-feed
-permalink: /wiki/:categories/:title
+permalink: /:title
 
 jekyll_compose:
   default_front_matter:
     posts:
-      category: posts
-      author: a awesome author!
-      description: Insert a awesome description!
+      category: pages
+      author: no author!
+      description: Insert an awesome description!
     drafts:
-      author: a awesome author!
-      description: Insert a awesome description!
-    articles:
-      layout: article
-      category: articles
-      author: a awesome author!
-      description: Insert a awesome description!
+      author: no author!
+      description: Insert an awesome description!
 
 defaults:
   - scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-collections:
-  articles:
-    output: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
