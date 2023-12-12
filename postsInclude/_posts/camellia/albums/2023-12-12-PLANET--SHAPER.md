@@ -41,4 +41,3 @@ Total Length: 01:07:32
 
 * [Website](https://cametek.jp/planetshaper/)
 * [Bandcamp](https://cametek.bandcamp.com/album/planet-shaper)
-* 
