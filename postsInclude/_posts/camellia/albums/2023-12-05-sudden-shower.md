@@ -9,7 +9,7 @@ description: sudden shower album page
 ## Overview
 
 ![CTCD-009](/assets/images/camellia/albums/CTCD-009.jpg)
-*sudden shower* is a doujin album by [かめりあ](/_articles/camellia.md) (Camellia) released on 2014-08-17 (Comiket 86) by the circle [かめるかめりあ](#).
+*sudden shower* is a doujin album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2014-08-17 (Comiket 86) by the circle [かめるかめりあ](#).
 
 It is the third intrumental album by *Camellia*. On 2019-12-31 the CD was re-released as part of the *Camellia Archives* series of re-releases.
 
