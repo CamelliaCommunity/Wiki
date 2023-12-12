@@ -8,7 +8,7 @@ description: Stance on Wave album page
 
 ## Overview
 
-![CTCD-006](/assets/images/CTCD-006.jpg)
+![CTCD-006](/assets/images/camellia/albums/CTCD-006.jpg)
 *Stance on Wave* is a doujin album by [かめりあ](/_articles/camellia.md) (Camellia) released on 2013-08-12 (Comiket 84) by the circle [かめるかめりあ](#).
 
 It is the fifth [Vocaloid](https://en.wikipedia.org/wiki/Vocaloid) album by *Camellia*. On 2019-12-31 the CD was re-released as part of the *Camellia Archives* series of re-releases.
