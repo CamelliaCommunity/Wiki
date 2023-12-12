@@ -74,15 +74,16 @@ if (images) {
 
 // searchbar code for hiding and showing search container
 // made by papertek and reinoblassed
-document.querySelector('#search-input').addEventListener('keyup', () => {
+const searchInput = document.querySelector('#search-input');
+const resultsUnfuck = document.getElementById(
+    'results-unfuck');  // Get the results-unfuck element by its id
+const resultsContainer = document.getElementById('results-container');
+
+searchInput.addEventListener('keyup', () => {
   console.log('keyup');
 
-  // Get the results-unfuck element by its id
-  const resultsUnfuck = document.getElementById('results-unfuck');
-
   // Get all li elements inside the results-container
-  const resultListedItems =
-      document.getElementById('results-container').innerHTML;
+  const resultListedItems = resultsContainer.innerHTML;
 
   // Check if there are any li elements
   if (!resultListedItems == '') {
@@ -92,6 +93,30 @@ document.querySelector('#search-input').addEventListener('keyup', () => {
     // If there are no li elements, hide the results-unfuck element
     resultsUnfuck.style.display = 'none';
   }
+});
+
+// better ux(?) for the search container
+// made by papertek
+
+// add event listener to show results-unfuck when the user clicks inside it
+resultsUnfuck.addEventListener('click', () => {
+  resultsUnfuck.style.display = 'flex';
+});
+
+// add event listener to hide results-unfuck when search input loses focus
+searchInput.addEventListener('blur', () => {
+  // delay hiding results-unfuck. this is to allow time for click events being
+  // processed
+
+  // this is pretty jank, i know
+  setTimeout(() => {
+    // check if clicked element is not within search input or results
+    // container
+    if (!searchInput.contains(document.activeElement) &&
+        !resultsUnfuck.contains(document.activeElement)) {
+      resultsUnfuck.style.display = 'none';
+    }
+  }, 100);
 });
 
 /* add functionality to the navigation sidebar */
