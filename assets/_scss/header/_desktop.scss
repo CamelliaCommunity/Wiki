@@ -76,7 +76,9 @@ header {
     #navSidebar {
       position: absolute;
       left: -406px; // in main.js, we will make this display as flex when the menu button is pressed
-      margin-top: 506px;
+      // margin-top: 506px;
+      margin-top: 68em; // testing purpose
+      height: 1000px;
 
       display: flex;
       width: 406px;
@@ -103,7 +105,8 @@ header {
       /* weirdness being applied in the js */
       /* workaround for now */
       &.sticky {
-        margin-top: 482px;
+        // margin-top: 482px;
+        margin-top: 66.5em; // testing purpose
       }
 
       #navWedgeContainer {

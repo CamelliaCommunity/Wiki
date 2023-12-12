@@ -148,6 +148,11 @@ document.addEventListener('click', function(event) {
   }
 });
 
+/* when a user scrolls hide the nav sidebar */
+window.addEventListener('scroll', function(event) {
+  navSidebar.classList.remove('active');
+});
+
 /* modal images for each images in card contents */
 /* eaten from
  * https://www.w3schools.com/howto/howto_css_modal_images.asp
