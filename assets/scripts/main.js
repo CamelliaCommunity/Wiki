@@ -94,6 +94,12 @@ document.querySelector('#search-input').addEventListener('keyup', () => {
   }
 });
 
+/* add functionality to the navigation sidebar */
+document.getElementById('hamburgerBtn').addEventListener('click', function() {
+  console.log('Button clicked!');
+  document.getElementById('navSidebar').classList.toggle('active');
+});
+
 // Test code
 // const IMAGES = document.querySelectorAll('img');
 
