@@ -166,7 +166,6 @@ cardContentsElements.forEach((cardContentsElement) => {
     // Generate unique IDs for the modal and its components
     const uniqueModalId = `myModal${index}`;
     const uniqueImgId = `img${index}`;
-    const uniqueModalImgId = `modalImg${index}`;
     const uniqueCaptionId = `caption${index}`;
 
     // Assign the unique IDs to the image and modal components
