@@ -148,6 +148,88 @@ document.addEventListener('click', function(event) {
   }
 });
 
+/* modal images for each images in card contents */
+/* eaten from
+ * https://www.w3schools.com/howto/howto_css_modal_images.asp
+ * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img */
+
+// Get all elements with the class .cardContents
+const cardContentsElements = document.querySelectorAll('.cardContents');
+
+// Iterate through each .cardContents element
+cardContentsElements.forEach((cardContentsElement) => {
+  // Get all images within the current .cardContents element
+  const images = cardContentsElement.querySelectorAll('img');
+
+  // Iterate through each image and assign a unique ID
+  images.forEach((image, index) => {
+    // Generate unique IDs for the modal and its components
+    const uniqueModalId = `myModal${index}`;
+    const uniqueImgId = `img${index}`;
+    const uniqueModalImgId = `modalImg${index}`;
+    const uniqueCaptionId = `caption${index}`;
+
+    // Assign the unique IDs to the image and modal components
+    image.id = uniqueImgId;
+
+    // Create the modal, image, and caption elements
+    const modal = document.createElement('div');
+    modal.id = uniqueModalId;
+    modal.classList.add('modal');
+
+    const modalImg = document.createElement('img');
+    modalImg.classList.add('modal-content');  // Apply the 'modal-content' class
+
+    const captionText = document.createElement('div');
+    captionText.id = uniqueCaptionId;
+    captionText.classList.add('caption');  // Apply the 'caption' class
+
+    // Set up the modal elements
+    modal.appendChild(modalImg);
+    modal.appendChild(captionText);
+
+    // Append the modal to the document body
+    document.body.appendChild(modal);
+
+    // Add a click event listener to each image
+    image.onclick = function() {
+      const modal = document.getElementById('myModal');
+      const modalImg = document.getElementById('imageModal');
+      const captionText = document.getElementById('caption');
+
+      // Set the modal content based on the clicked image
+      modalImg.src = image.src;
+      captionText.innerHTML = image.alt;
+
+      // Set the modal to display
+      modal.style.display = 'block';
+    };
+  });
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName('close')[0];
+
+// Add click event listener to close the modal when <span> is clicked
+span.onclick = function() {
+  closeAndHideModal();
+};
+
+// Add click event listener to close the modal when clicking outside the modal
+// content
+window.onclick = function(event) {
+  const modal = document.getElementById('myModal');
+  if (event.target === modal) {
+    closeAndHideModal();
+  }
+};
+
+// Function to close and hide the modal
+function closeAndHideModal() {
+  const modal = document.getElementById('myModal');
+  modal.style.display = 'none';
+}
+
 // Test code
 // const IMAGES = document.querySelectorAll('img');
 

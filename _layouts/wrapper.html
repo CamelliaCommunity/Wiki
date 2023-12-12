@@ -24,18 +24,19 @@
 
   <!-- Main body of the page -->
   <body>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01" />
-      <div id="caption"></div>
-    </div>
     <div id="scrollToTop">
       <div class="buttonDefault" title="Go to top">
         <a>↑</a>
       </div>
     </div>
-    {% include header.html %} {{ content }} {% include footer.html %}
+    {% include header.html %} {{ content }}
+    <!-- The Modal, leave here to avoid clashing with other stuff -->
+    <div id="myModal" class="modal">
+      <span class="close"><i class="ph-bold ph-x"></i></span>
+      <img class="modal-content" id="imageModal" />
+      <div id="caption"></div>
+    </div>
+    {% include footer.html %}
   </body>
 
   <!-- Configuration -->
