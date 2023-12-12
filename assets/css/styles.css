@@ -1157,14 +1157,13 @@ p {
 
 /* footer */
 footer {
-  background-color: var(--colorTriary);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
   margin-top: auto;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
 }
 
 footer #footerText {
