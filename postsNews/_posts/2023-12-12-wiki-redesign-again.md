@@ -19,6 +19,6 @@ Issues or oversights are still there, they may have slipped through review. A go
 
 The code snippet is provided below for you to see :)
 
-![Jank Code Showcase](https://cdn.discordapp.com/attachments/1035069784435474462/1184341485873807380/k0oihdD.png?ex=658b9ef6&is=657929f6&hm=fbd07f12cdb543d17390c393f1ff2b95c1b83995165861868df0a4267d1c56c8&)
+![Jank Code Showcase](https://cdn.discordapp.com/attachments/1035069784435474462/1184342673981722664/nn6BFFL.png?ex=658ba011&is=65792b11&hm=1dc60041a91825fbd6d0eb48e4b83b7301c72b85eacc516ee925a8a2e7b47c22&)
 
 I hope you like the new wiki changes! I tried to mimic other wikis and news sites and I think I did that pretty well. This has been a big learning experience personally relating to designing and implementing new stuff. I would like to thank the contributors who have given me feedback and helped me with questions and design choices. Hopefully things only get better from here!
