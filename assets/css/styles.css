@@ -863,7 +863,7 @@ header .header-shared h1 a img {
   header .header-shared #search-container input#search-input:focus-visible {
     outline: none;
   }
-  header .header-shared #search-container #results-unfrick {
+  header .header-shared #search-container #results-fixstuff {
     z-index: 1;
     padding: 16px;
     margin-left: 24px;
@@ -932,7 +932,7 @@ header .header-shared h1 a img {
     height: initial;
     padding: 8px 32px;
   }
-  header.sticky .header-inner #search-container #results-unfrick {
+  header.sticky .header-inner #search-container #results-fixstuff {
     margin-top: 12px;
     transition: 0.2s;
   }
