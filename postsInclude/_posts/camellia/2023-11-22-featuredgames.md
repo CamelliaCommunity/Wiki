@@ -31,7 +31,7 @@ Xronier
 Venomous Firefly
 超☆超☆光☆速☆出☆前☆最☆速!!! スピード★スター★かなで
 Believe (y)our Wings {GRA5P WAVES}/{V:IVID RAYS}
-* Erm, could it be a Spatiotemporal ShockWAVE Syndrome...?
+Erm, could it be a Spatiotemporal ShockWAVE Syndrome...?
 GALAXY BURST
 Xronial Xero
 ツマミ戦隊 タテレンジャー
@@ -49,6 +49,3 @@ Voice 7 Voice!!!!!!!
 999 (RoughSketch - 666 (Camellia's Rejected Remix))
 
 You may wonder why 999 is included even though it's not in Sound Voltex. It's because it was originally suppose to be part of the game before it was rejected because of either being too fast for the charters to chart (due to MAYHEM by RoughSketch being 998 BPM), or some other reasons.
-
-*This is the end of the page! More Progress will be done soon!*
-
