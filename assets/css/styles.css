@@ -696,13 +696,13 @@ header .header-shared h1 a img {
     border-radius: 0px 30px 30px 0px;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards, #382e37);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     transition: 0.4s;
     /* weirdness being applied in the js */
     /* workaround for now */
   }
   header .header-shared #navSidebar.active {
     left: 0;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   }
   header .header-shared #navSidebar.sticky {
     margin-top: calc(100vh + 64px);
@@ -2002,6 +2002,7 @@ figure.floatImage {
   float: right;
   text-align: center;
   margin-left: 10px;
+  margin-bottom: 32px;
   padding: 6px 6px 6px 6px;
   border: 2px dashed var(--colorGray);
   border-radius: 10px;
