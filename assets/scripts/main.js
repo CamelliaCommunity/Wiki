@@ -80,7 +80,7 @@ if (images) {
 // searchbar code for hiding and showing search container
 // made by papertek and reinoblassed
 const searchInput = document.querySelector('#search-input');
-const resultsUnfrick = document.getElementById(
+const resultsFixstuff = document.getElementById(
     'results-fixstuff');  // Get the results-fixstuff element by its id
 const resultsContainer = document.getElementById('results-container');
 
@@ -93,10 +93,10 @@ searchInput.addEventListener('keyup', () => {
   // Check if there are any li elements
   if (!resultListedItems == '') {
     // If there are li elements, show the results-fixstuff element
-    resultsUnfrick.style.display = 'flex';
+    resultsFixstuff.style.display = 'flex';
   } else {
     // If there are no li elements, hide the results-fixstuff element
-    resultsUnfrick.style.display = 'none';
+    resultsFixstuff.style.display = 'none';
   }
 });
 
@@ -109,8 +109,8 @@ searchInput.addEventListener('keyup', () => {
  * contributor willing to fix this please do lol */
 
 // add event listener to show results-fixstuff when the user clicks inside it
-resultsUnfrick.addEventListener('click', () => {
-  resultsUnfrick.style.display = 'flex';
+resultsFixstuff.addEventListener('click', () => {
+  resultsFixstuff.style.display = 'flex';
 });
 
 // add event listener to hide results-fixstuff when search input loses focus
@@ -121,8 +121,8 @@ searchInput.addEventListener('blur', () => {
     // check if clicked element is not within search input or results
     // container
     if (!searchInput.contains(document.activeElement) &&
-        !resultsUnfrick.contains(document.activeElement)) {
-      resultsUnfrick.style.display = 'none';
+        !resultsFixstuff.contains(document.activeElement)) {
+      resultsFixstuff.style.display = 'none';
     }
   }, 100);
 });
