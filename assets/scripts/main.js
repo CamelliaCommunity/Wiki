@@ -80,8 +80,8 @@ if (images) {
 // searchbar code for hiding and showing search container
 // made by papertek and reinoblassed
 const searchInput = document.querySelector('#search-input');
-const resultsUnfuck = document.getElementById(
-    'results-unfuck');  // Get the results-unfuck element by its id
+const resultsUnfrick = document.getElementById(
+    'results-unfrick');  // Get the results-unfrick element by its id
 const resultsContainer = document.getElementById('results-container');
 
 searchInput.addEventListener('keyup', () => {
@@ -92,11 +92,11 @@ searchInput.addEventListener('keyup', () => {
 
   // Check if there are any li elements
   if (!resultListedItems == '') {
-    // If there are li elements, show the results-unfuck element
-    resultsUnfuck.style.display = 'flex';
+    // If there are li elements, show the results-unfrick element
+    resultsUnfrick.style.display = 'flex';
   } else {
-    // If there are no li elements, hide the results-unfuck element
-    resultsUnfuck.style.display = 'none';
+    // If there are no li elements, hide the results-unfrick element
+    resultsUnfrick.style.display = 'none';
   }
 });
 
@@ -104,25 +104,25 @@ searchInput.addEventListener('keyup', () => {
 // made by papertek
 
 /* this is pretty jank, i know. one issue im having is when the user still
- * clicks results-unfuck, the container still hides. i have tried other methods
+ * clicks results-unfrick, the container still hides. i have tried other methods
  * but i think this one is the one that works best. if theres any other
  * contributor willing to fix this please do lol */
 
-// add event listener to show results-unfuck when the user clicks inside it
-resultsUnfuck.addEventListener('click', () => {
-  resultsUnfuck.style.display = 'flex';
+// add event listener to show results-unfrick when the user clicks inside it
+resultsUnfrick.addEventListener('click', () => {
+  resultsUnfrick.style.display = 'flex';
 });
 
-// add event listener to hide results-unfuck when search input loses focus
+// add event listener to hide results-unfrick when search input loses focus
 searchInput.addEventListener('blur', () => {
-  // delay hiding results-unfuck. this is to allow time for click events being
+  // delay hiding results-unfrick. this is to allow time for click events being
   // processed
   setTimeout(() => {
     // check if clicked element is not within search input or results
     // container
     if (!searchInput.contains(document.activeElement) &&
-        !resultsUnfuck.contains(document.activeElement)) {
-      resultsUnfuck.style.display = 'none';
+        !resultsUnfrick.contains(document.activeElement)) {
+      resultsUnfrick.style.display = 'none';
     }
   }, 100);
 });

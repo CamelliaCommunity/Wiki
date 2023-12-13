@@ -307,7 +307,7 @@ header {
       }
 
       // in theory i would like this to move with the header when the header collapses instead of it transitioning weirdly
-      #results-unfuck {
+      #results-unfrick {
         z-index: 1;
         padding: 16px;
         margin-left: 24px;
@@ -315,7 +315,7 @@ header {
         margin-top: 22px;
         position: absolute;
 
-        display: none; // in main.js, we will make this display as flex when there are items in #results-unfuck
+        display: none; // in main.js, we will make this display as flex when there are items in #results-unfrick
         flex-direction: column;
         width: 406px;
         max-height: 408px;
@@ -397,7 +397,7 @@ header {
       padding: 8px 32px;
 
       #search-container {
-        #results-unfuck {
+        #results-unfrick {
           margin-top: 12px;
           transition: 0.2s;
         }
