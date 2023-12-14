@@ -1951,6 +1951,7 @@ em {
   text-align: right;
   font-weight: 600;
   margin-right: 48px;
+  margin-left: 14px;
 }
 #titleContainer #notesContainer #footNoteLeft {
   align-self: flex-end;
