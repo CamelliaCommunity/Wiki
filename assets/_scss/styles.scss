@@ -679,7 +679,8 @@ hr {
         font-weight: 600;
 
         li {
-          margin-left: 16px;
+          // margin-left: 16px; // keeping lists sane
+          margin-left: 1em;
 
           &::marker {
             color: var(--colorLinks);
