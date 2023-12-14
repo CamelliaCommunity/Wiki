@@ -28,7 +28,7 @@ code {
 
 /* give codeblocks a scrollbar */
 div pre.highlight {
-  overflow-y: auto;
+  overflow: auto;
 }
 
 div.highlighter-rouge,
@@ -50,6 +50,7 @@ div.highlighter-rouge pre.highlight,
 figure.highlight > pre,
 figure.highlight pre.highlight {
   margin: 0;
+  overflow: auto;
 }
 
 div.highlight {

@@ -10,7 +10,7 @@ code {
 
 /* give codeblocks a scrollbar */
 div pre.highlight {
-  overflow-y: auto;
+  overflow: auto;
 }
 
 // highlights and code blocks
@@ -35,6 +35,8 @@ figure.highlight > pre,
 figure.highlight pre.highlight {
   margin: 0;
   // padding: 1em;
+  // white-space: pre-wrap; // we dont want to use this
+  overflow: auto;
 }
 
 div.highlight {
