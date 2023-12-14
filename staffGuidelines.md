@@ -253,6 +253,5 @@ After two warning messages, it's guaranteed demotion on the third!
 * Being incompetent and showing no respect for server and staff members.
 * Bypassing AutoMod and its features. (Banned topics do not apply).
 
----
-
-### Any questions? Bring them up in the staff chats
+Any questions? Bring them up in the staff chats!!
+{: .centerItem .makeBig }

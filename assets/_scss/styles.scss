@@ -96,12 +96,17 @@ main {
   align-items: center;
 }
 
-/* center items nested in main tag */
+/* classes for text */
 main .centerItem {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+main .makeBig {
+  font-size: 25.63px;
+  font-weight: 600;
 }
 
 h1 {
