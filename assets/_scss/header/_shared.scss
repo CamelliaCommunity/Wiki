@@ -37,6 +37,100 @@ header {
         }
       }
     }
+
+    /* navigation bar */
+    #navSidebar {
+      position: absolute;
+      height: 100vh;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+
+      border-radius: 0px 30px 30px 0px;
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      background: linear-gradient(
+          180deg,
+          rgba(246, 65, 141, 0) 0%,
+          rgba(246, 65, 141, 0.08) 51.04%,
+          rgba(91, 63, 75, 0.2) 100%
+        ),
+        var(--colorCards, #382e37);
+      transition: 0.4s;
+
+      &.active {
+        left: 0;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+      }
+
+      #navWedgeContainer {
+        position: sticky;
+        padding: 16px;
+        width: 100%;
+
+        hr {
+          margin-top: 8px;
+          margin-bottom: 8px;
+          margin-left: 0;
+          margin-right: 0;
+          height: 2px;
+        }
+
+        #navWedgeItems {
+          display: block;
+          overflow-y: scroll;
+          overflow: auto;
+          font-size: 18px;
+          font-weight: 500;
+          max-height: calc(100vh - 144px);
+
+          h3:first-child {
+            margin-top: 0;
+          }
+
+          h3 {
+            margin-top: 8px;
+            margin-bottom: 8px;
+          }
+
+          h3::before {
+            content: "";
+            display: inline-block;
+            background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+            height: 17px;
+            margin-right: 8px;
+            width: 4px;
+            position: inherit;
+            border-radius: 2px;
+          }
+
+          ol {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+            overflow: auto;
+
+            .buttonDefault a {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+              height: 100%;
+              width: 100%;
+              padding: 10px;
+              gap: 8px;
+            }
+          }
+        }
+
+        &.sticky {
+          top: 64px;
+          position: sticky;
+        }
+      }
+    }
   }
 }
 
