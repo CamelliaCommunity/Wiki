@@ -169,6 +169,10 @@ header {
         margin-top: calc(100vh + 64px); // testing purpose
       }
 
+      .hideMe {
+        display: none;
+      }
+
       #navWedgeContainer {
         position: sticky;
         padding: 16px;
