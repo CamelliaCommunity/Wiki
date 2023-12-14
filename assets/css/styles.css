@@ -1058,7 +1058,7 @@ header .header-shared h1 a img {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   }
   header .header-shared #navSidebar.sticky {
-    margin-top: calc(100vh + 64px);
+    margin-top: calc(100vh + 52px);
   }
   header .header-shared #navSidebar #navWedgeContainer {
     position: sticky;
@@ -1115,7 +1115,7 @@ header .header-shared h1 a img {
     gap: 8px;
   }
   header .header-shared #navSidebar #navWedgeContainer.sticky {
-    top: 64px;
+    top: 52px;
     position: sticky;
   }
 }
