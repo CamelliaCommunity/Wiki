@@ -4,6 +4,7 @@ title: "ハニージンジャーエール"
 categories: posts
 author: KatGrrrl
 description: ハニージンジャーエール album page
+permalink: camellia/discography/:title
 ---
 
 ## Overview

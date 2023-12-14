@@ -5,6 +5,7 @@ date: 2023-11-16 08:57 -0600
 category: posts
 author: a awesome author!
 description: Insert a awesome description!
+permalink: camellia/:title
 ---
 
 ## 2010

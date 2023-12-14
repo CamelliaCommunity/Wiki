@@ -4,6 +4,7 @@ title: "diffraction"
 categories: posts
 author: KatGrrrl
 description: diffraction album page
+permalink: camellia/discography/:title
 ---
 
 ## Overview

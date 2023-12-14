@@ -5,6 +5,7 @@ date: 2023-11-25 02:26 -0600
 category: posts
 author: shiosama
 description: View this for frequent questions directed towards Camellia.
+permalink: camellia/:title
 ---
 
 ## Regarding Usage of Camellia's Music

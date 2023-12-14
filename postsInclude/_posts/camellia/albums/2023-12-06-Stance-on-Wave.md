@@ -4,6 +4,7 @@ title: "Stance on Wave"
 categories: posts
 author: KatGrrrl
 description: Stance on Wave album page
+permalink: camellia/discography/:title
 ---
 
 ## Overview

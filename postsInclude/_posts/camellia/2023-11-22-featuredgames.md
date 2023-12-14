@@ -5,6 +5,7 @@ date: 2023-11-22 17:04 -0600
 category: posts
 author: TidalWaveTsunami
 description: This is where we will talk about Camellia's featuring in rhythm games.
+permalink: camellia/:title
 ---
 
 ## Rhythm Games

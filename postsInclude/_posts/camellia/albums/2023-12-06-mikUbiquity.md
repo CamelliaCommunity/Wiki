@@ -4,6 +4,7 @@ title: "mikUbiquity"
 categories: posts
 author: KatGrrrl
 description: mikUbiquity album page
+permalink: camellia/discography/:title
 ---
 
 ## Overview
