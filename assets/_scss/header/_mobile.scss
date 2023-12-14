@@ -120,8 +120,6 @@ header {
     #navSidebar {
       left: -100%; // in main.js, we will make this display as flex when the menu button is pressed
       margin-top: calc(100vh + 52px); // testing purpose
-
-      display: flex;
       width: 100%;
 
       /* weirdness being applied in the js */

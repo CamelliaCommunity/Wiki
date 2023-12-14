@@ -1009,7 +1009,6 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
   header .header-shared #navSidebar {
     left: -100%;
     margin-top: calc(100vh + 52px);
-    display: flex;
     width: 100%;
     /* weirdness being applied in the js */
     /* workaround for now */
