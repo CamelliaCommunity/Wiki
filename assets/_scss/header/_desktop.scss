@@ -72,6 +72,66 @@ header {
       }
     }
 
+    .header-inner {
+      display: flex;
+      align-self: flex-start;
+      flex: 1;
+      padding: 12px 32px;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+
+      border-radius: 0px 0px 25px 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      background: linear-gradient(
+          180deg,
+          rgba(246, 65, 141, 0) 0%,
+          rgba(246, 65, 141, 0.08) 51.04%,
+          rgba(91, 63, 75, 0.2) 100%
+        ),
+        var(--colorTriary);
+    }
+
+    h1 {
+      font-size: 42px;
+      font-weight: 281;
+    }
+
+    #navigationButtons {
+      > div {
+        width: fit-content;
+
+        a {
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1500px) {
+      h1 {
+        a {
+          padding: 0px;
+          border: 0px solid var(--borderColor);
+
+          &:hover {
+            color: var(--borderColor);
+            background-color: transparent;
+          }
+        }
+      }
+
+      #navigationButtons {
+        > div a {
+          width: 150px;
+
+          &:hover::after {
+            width: 150px;
+          }
+        }
+      }
+    }
+
     /* navigation bar */
     #navSidebar {
       position: absolute;
@@ -173,66 +233,6 @@ header {
         &.sticky {
           top: 64px;
           position: sticky;
-        }
-      }
-    }
-
-    .header-inner {
-      display: flex;
-      align-self: flex-start;
-      flex: 1;
-      padding: 12px 32px;
-      justify-content: space-between;
-      align-items: center;
-      flex-shrink: 0;
-      transition: transform 0.2s;
-
-      border-radius: 0px 0px 25px 25px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      background: linear-gradient(
-          180deg,
-          rgba(246, 65, 141, 0) 0%,
-          rgba(246, 65, 141, 0.08) 51.04%,
-          rgba(91, 63, 75, 0.2) 100%
-        ),
-        var(--colorTriary);
-    }
-
-    h1 {
-      font-size: 42px;
-      font-weight: 281;
-    }
-
-    #navigationButtons {
-      > div {
-        width: fit-content;
-
-        a {
-          transition: all 0.2s ease-in-out;
-        }
-      }
-    }
-
-    @media screen and (max-width: 1500px) {
-      h1 {
-        a {
-          padding: 0px;
-          border: 0px solid var(--borderColor);
-
-          &:hover {
-            color: var(--borderColor);
-            background-color: transparent;
-          }
-        }
-      }
-
-      #navigationButtons {
-        > div a {
-          width: 150px;
-
-          &:hover::after {
-            width: 150px;
-          }
         }
       }
     }

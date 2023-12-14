@@ -683,6 +683,47 @@ header .header-shared h1 a img {
   header .header-shared #discordBtn:hover {
     background: var(--colorCardDivisorHover);
   }
+  header .header-shared .header-inner {
+    display: flex;
+    align-self: flex-start;
+    flex: 1;
+    padding: 12px 32px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+    border-radius: 0px 0px 25px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorTriary);
+  }
+  header .header-shared h1 {
+    font-size: 42px;
+    font-weight: 281;
+  }
+  header .header-shared #navigationButtons > div {
+    width: fit-content;
+  }
+  header .header-shared #navigationButtons > div a {
+    transition: all 0.2s ease-in-out;
+  }
+}
+@media screen and (not (max-width: 1024px)) and (max-width: 1500px) {
+  header .header-shared h1 a {
+    padding: 0px;
+    border: 0px solid var(--borderColor);
+  }
+  header .header-shared h1 a:hover {
+    color: var(--borderColor);
+    background-color: transparent;
+  }
+  header .header-shared #navigationButtons > div a {
+    width: 150px;
+  }
+  header .header-shared #navigationButtons > div a:hover::after {
+    width: 150px;
+  }
+}
+@media screen and not (max-width: 1024px) {
   header .header-shared #navSidebar {
     position: absolute;
     left: -406px;
@@ -765,47 +806,6 @@ header .header-shared h1 a img {
     top: 64px;
     position: sticky;
   }
-  header .header-shared .header-inner {
-    display: flex;
-    align-self: flex-start;
-    flex: 1;
-    padding: 12px 32px;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
-    transition: transform 0.2s;
-    border-radius: 0px 0px 25px 25px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorTriary);
-  }
-  header .header-shared h1 {
-    font-size: 42px;
-    font-weight: 281;
-  }
-  header .header-shared #navigationButtons > div {
-    width: fit-content;
-  }
-  header .header-shared #navigationButtons > div a {
-    transition: all 0.2s ease-in-out;
-  }
-}
-@media screen and (not (max-width: 1024px)) and (max-width: 1500px) {
-  header .header-shared h1 a {
-    padding: 0px;
-    border: 0px solid var(--borderColor);
-  }
-  header .header-shared h1 a:hover {
-    color: var(--borderColor);
-    background-color: transparent;
-  }
-  header .header-shared #navigationButtons > div a {
-    width: 150px;
-  }
-  header .header-shared #navigationButtons > div a:hover::after {
-    width: 150px;
-  }
-}
-@media screen and not (max-width: 1024px) {
   header .header-shared #search-container {
     /* Change the white to any color */
     /*Change text in autofill textbox*/
@@ -953,80 +953,170 @@ header .header-shared h1 a img {
   /* john note: none of this is updated with the current header design */
   /* we still need a proper mobile header design! */
   header {
-    height: 100px;
+    height: 52px;
     transition: all 0.2s ease-in-out;
   }
   header .header-shared {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    min-height: 100px;
+    min-height: 100%;
     gap: 10px;
+    /* navigation bar */
   }
-  header .header-shared h1 a {
+  header .header-shared #hamburgerBtn {
+    text-align: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    color: white;
+    border: none;
+    background: none;
+    border-radius: 32px;
+    padding: 4px;
+    margin-left: 10px;
+  }
+  header .header-shared #hamburgerBtn .ph-bold.ph-list {
+    font-size: 32px;
+  }
+  header .header-shared #hamburgerBtn:hover {
+    background: var(--colorCardDivisorHover);
+  }
+  header .header-shared #twoBotans {
+    display: none;
+  }
+  header .header-shared #main-bar {
+    display: none;
+  }
+  header .header-shared .header-inner {
+    background: var(--colorTriary);
+    display: flex;
+    align-self: flex-start;
+    flex: 1;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+    border-radius: 0px 0px 10px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorTriary);
+  }
+  header .header-shared .header-inner h1 a {
     gap: 5px;
-    font-size: 28px;
+    font-size: 24px;
+    font-weight: 300;
   }
-  header .header-shared h1 a img {
+  header .header-shared .header-inner h1 a img {
+    margin-right: 8px;
     width: 32px;
   }
-  header .header-shared #navigationButtons {
+  header .header-shared .header-inner #navigationButtons {
     margin: 0;
     gap: 2px;
   }
-  header .header-shared #navigationButtons > div:first-child,
-  header .header-shared #navigationButtons > div:last-child {
+  header .header-shared .header-inner #navigationButtons > div:first-child,
+  header .header-shared .header-inner #navigationButtons > div:last-child {
     display: none;
   }
-  header .header-shared #navigationButtons > div {
+  header .header-shared .header-inner #navigationButtons > div {
     width: 140px;
     height: 32px;
   }
-  header .header-shared #navigationButtons > div a {
+  header .header-shared .header-inner #navigationButtons > div a {
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     width: 140px;
     height: 32px;
     font-size: 14px;
   }
-  header .header-shared #navigationButtons > div a:hover::after {
+  header .header-shared .header-inner #navigationButtons > div a:hover::after {
     width: 140px;
   }
-  header .header-shared #navigationButtons > div:nth-child(2) a {
+  header .header-shared .header-inner #navigationButtons > div:nth-child(2) a {
     border-radius: 20px 5px 5px 20px;
   }
-  header .header-shared #navigationButtons > div:nth-child(3) a {
+  header .header-shared .header-inner #navigationButtons > div:nth-child(3) a {
     border-radius: 5px 20px 20px 5px;
   }
-  header .header-mobile-scroll {
-    transition: transform 0.2s;
-    min-height: 50px;
+  header .header-shared #navSidebar {
+    position: absolute;
+    left: -100%;
+    margin-top: calc(100vh + 52px);
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 0px 30px 30px 0px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards, #382e37);
+    transition: 0.4s;
+    /* weirdness being applied in the js */
+    /* workaround for now */
   }
-  header .header-mobile-scroll h1 {
-    text-shadow: none;
+  header .header-shared #navSidebar.active {
+    left: 0;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   }
-  header .header-mobile-scroll h1 a {
-    color: var(--borderColor);
+  header .header-shared #navSidebar.sticky {
+    margin-top: calc(100vh + 64px);
+  }
+  header .header-shared #navSidebar #navWedgeContainer {
+    position: sticky;
+    padding: 16px;
+    width: 100%;
+  }
+  header .header-shared #navSidebar #navWedgeContainer hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 2px;
+  }
+  header .header-shared #navSidebar #navWedgeContainer #navWedgeItems {
+    display: block;
+    overflow-y: scroll;
+    overflow: auto;
+    font-size: 18px;
+    font-weight: 500;
+    max-height: calc(100vh - 144px);
+  }
+  header .header-shared #navSidebar #navWedgeContainer #navWedgeItems h3:first-child {
+    margin-top: 0;
+  }
+  header .header-shared #navSidebar #navWedgeContainer #navWedgeItems h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  header .header-shared #navSidebar #navWedgeContainer #navWedgeItems h3::before {
+    content: "";
+    display: inline-block;
+    background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+    height: 17px;
+    margin-right: 8px;
+    width: 4px;
+    position: inherit;
+    border-radius: 2px;
+  }
+  header .header-shared #navSidebar #navWedgeContainer #navWedgeItems ol {
     display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    overflow: auto;
+  }
+  header .header-shared #navSidebar #navWedgeContainer #navWedgeItems ol .buttonDefault a {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 5px;
-    font-size: 20px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    gap: 8px;
   }
-  header .header-mobile-scroll h1 a img {
-    width: 32px;
-  }
-  header.sticky {
-    height: 50px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  }
-  header.sticky .header-shared {
-    transform: translateY(-100px);
-  }
-  header.sticky .header-mobile-scroll {
-    transform: translateY(-100px);
+  header .header-shared #navSidebar #navWedgeContainer.sticky {
+    top: 64px;
+    position: sticky;
   }
 }
 /* Global elements, such as headers, footers, and body. */
