@@ -45,10 +45,10 @@ header {
  * that we don't have to spam !important
  */
 
-@media screen and not (max-width: 1024px) {
+@media screen and not (max-width: 1124px) {
   @import "./desktop";
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
   @import "./mobile";
 }

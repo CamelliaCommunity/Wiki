@@ -1123,7 +1123,7 @@ figure.floatImage {
 }
 
 /* responsive for picture wrap pages (and grid layout) */
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1226px) {
   #flexyCard {
     flex-direction: column;
   }
@@ -1144,7 +1144,7 @@ figure.floatImage {
 
   #titleContainer {
     text-align: center;
-    min-width: auto;
+    min-width: 100%;
 
     #footNoteRight {
       align-self: center;
@@ -1205,6 +1205,7 @@ figure.floatImage {
   #contentWedge {
     display: none;
   }
+
   #navWedge {
     display: none;
   }
