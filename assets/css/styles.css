@@ -1637,6 +1637,10 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-weight: 600;
+}
+#contentWedge #wedgeContainer #wedgeItems ol li {
+  margin-left: 16px;
 }
 #contentWedge #wedgeContainer #wedgeItems ol li::marker {
   color: var(--colorLinks);
@@ -1653,8 +1657,8 @@ hr {
   color: white;
 }
 #contentWedge #wedgeContainer #wedgeItems ol li ul {
+  font-weight: 500;
   margin-top: 8px;
-  padding-left: 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
