@@ -1034,7 +1034,7 @@ header .header-shared h1 a img {
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 92px;
+  scroll-padding-top: 87px;
 }
 
 *,
