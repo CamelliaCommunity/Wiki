@@ -84,8 +84,6 @@ const resultsFixstuff = document.getElementById(
 const resultsContainer = document.getElementById('results-container');
 
 searchInput.addEventListener('keyup', () => {
-  console.log('keyup');
-
   // Get all li elements inside the results-container
   const resultListedItems = resultsContainer.innerHTML;
 
@@ -107,8 +105,8 @@ searchInput.addEventListener('keyup', () => {
  * methods but i think this one is the one that works best. if theres any other
  * contributor willing to fix this please do lol */
 
-// add event listener to show results-fixstuff when the user clicks inside it
-resultsFixstuff.addEventListener('click', () => {
+// when a user clicks the searchbar it will display the search container
+searchInput.addEventListener('click', () => {
   resultsFixstuff.style.display = 'flex';
 });
 
