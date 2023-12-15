@@ -560,6 +560,7 @@ header .header-shared {
   transition: transform 0.2s;
   overflow: hidden;
   /* navigation bar */
+  /* the rest of the styles are split between mobile and desktop */
 }
 header .header-shared h1 {
   text-shadow: none;
