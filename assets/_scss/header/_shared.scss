@@ -69,6 +69,28 @@ header {
         padding: 16px;
         width: 100%;
 
+        #navHeader {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          align-self: stretch;
+
+          align-items: center;
+
+          #sidebarX {
+            display: flex;
+            align-items: center;
+            color: var(--colorWhite);
+            background: none;
+            border: none;
+            font-size: 32px;
+
+            &:hover {
+              color: var(--colorGray);
+            }
+          }
+        }
+
         hr {
           margin-top: 8px;
           margin-bottom: 8px;

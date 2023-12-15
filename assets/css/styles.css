@@ -598,6 +598,24 @@ header .header-shared #navSidebar #navWedgeContainer {
   padding: 16px;
   width: 100%;
 }
+header .header-shared #navSidebar #navWedgeContainer #navHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  align-items: center;
+}
+header .header-shared #navSidebar #navWedgeContainer #navHeader #sidebarX {
+  display: flex;
+  align-items: center;
+  color: var(--colorWhite);
+  background: none;
+  border: none;
+  font-size: 32px;
+}
+header .header-shared #navSidebar #navWedgeContainer #navHeader #sidebarX:hover {
+  color: var(--colorGray);
+}
 header .header-shared #navSidebar #navWedgeContainer hr {
   margin-top: 8px;
   margin-bottom: 8px;

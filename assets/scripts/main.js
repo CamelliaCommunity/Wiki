@@ -4,6 +4,7 @@ const main = document.querySelector('main');
 const scrollToTop = document.getElementById('scrollToTop');
 const navSidebar = document.getElementById('navSidebar');
 const hamburgerBtn = document.getElementById('hamburgerBtn');
+const sidebarX = document.getElementById('sidebarX');
 
 // Eaten from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 // If scrollToTop element is found, run this code
@@ -30,13 +31,11 @@ if (scrollToTop) {
 // Created by matt
 const scrollDetect = () => {
   header.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
-  navSidebar.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
 
   // Check if user has scrolled a certain amount of pixels to the top
   // Used to be 200 then 198
   if (window.scrollY <= 222) {
     header.classList.remove('sticky');
-    navSidebar.classList.remove('sticky')
   }
 };
 
@@ -136,6 +135,11 @@ hamburgerBtn.addEventListener('click', function(event) {
   navSidebar.classList.toggle('active');
   // stop click event from propagating to the document body
   event.stopPropagation();
+});
+
+/* when a user click the x close the sidebar */
+sidebarX.addEventListener('click', function() {
+  navSidebar.classList.remove('active');
 });
 
 /* add global click event listener to hide navSidebar when clicking outside of
