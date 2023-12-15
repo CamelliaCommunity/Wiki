@@ -600,10 +600,8 @@ header .header-shared #navSidebar #navWedgeContainer {
 }
 header .header-shared #navSidebar #navWedgeContainer #navHeader {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
   align-items: center;
+  gap: 10px;
 }
 header .header-shared #navSidebar #navWedgeContainer #navHeader #sidebarX {
   display: flex;

@@ -71,11 +71,8 @@ header {
 
         #navHeader {
           display: flex;
-          align-items: flex-start;
-          gap: 10px;
-          align-self: stretch;
-
           align-items: center;
+          gap: 10px;
 
           #sidebarX {
             display: flex;
