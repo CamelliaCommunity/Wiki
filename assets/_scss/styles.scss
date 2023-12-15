@@ -1215,3 +1215,16 @@ figure.floatImage {
     margin-right: 0;
   }
 }
+
+/* we are going to rework this later in another file */
+/* we also fix spacing later */
+@media screen and (max-width: 1140px) {
+  #contentWedge {
+    #wedgeContainer {
+      &.sticky {
+        top: 30px;
+        position: sticky;
+      }
+    }
+  }
+}
