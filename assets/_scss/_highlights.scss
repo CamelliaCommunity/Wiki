@@ -8,16 +8,11 @@ code {
   color: #c3e88d;
 }
 
-/* give codeblocks a scrollbar */
-div pre.highlight {
-  overflow: auto;
-}
-
 // highlights and code blocks
 div.highlighter-rouge,
 figure.highlight {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   border: solid 4px gray;
   border-radius: 25px;
   color: #eff;
@@ -29,13 +24,14 @@ figure.highlight {
   margin-bottom: 32px;
 }
 
+/* give codeblocks a scrollbar */
 div.highlighter-rouge > pre,
 div.highlighter-rouge pre.highlight,
 figure.highlight > pre,
 figure.highlight pre.highlight {
   margin: 0;
   // padding: 1em;
-  // white-space: pre-wrap; // we dont want to use this
+  white-space: pre-wrap; // we dont want to use this
   overflow: auto;
 }
 
