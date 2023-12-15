@@ -228,7 +228,7 @@ a:hover {
 .card {
   background: var(--colorCards) 0% 0% no-repeat padding-box;
   max-width: 827px;
-  min-height: 330px;
+  height: fit-content;
   border-radius: 35px;
   line-height: 26px;
 }
