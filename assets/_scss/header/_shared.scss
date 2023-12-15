@@ -57,7 +57,7 @@ header {
           rgba(246, 65, 141, 0.08) 51.04%,
           rgba(91, 63, 75, 0.2) 100%
         ),
-        var(--colorCards, #382e37);
+        var(--colorCards);
       transition: 0.4s;
 
       &.active {
