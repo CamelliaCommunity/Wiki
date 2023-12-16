@@ -25,65 +25,59 @@
 }
 
 /* responsive stuff. yay! */
-
-/* temporary thing until the hamburger */
+/* everything under important is temporary. we'll split stuff later in another update */
 @media screen and (max-width: 750px) {
-  img {
-    width: 100%;
-    height: auto;
-  }
-
   figure.floatImage {
-    margin-left: 8px;
+    margin-left: 8px !important;
   }
 
   .card {
     .cardContents {
-      width: 100%;
+      width: 100% !important;
     }
   }
 
   .cardBackground {
     width: 100%;
-    padding: 8px !important; // temporary thing
-    flex-direction: column !important; // temporary thing
+    padding: 8px !important;
+    flex-direction: column !important;
   }
 
   .cardHeader {
-    flex-wrap: wrap;
-    min-height: 84px;
+    flex-wrap: wrap !important;
+    min-height: 84px !important;
 
     h2 {
-      align-self: center;
-      margin-left: 16px;
-      margin-right: 16px;
+      align-self: center !important;
+      margin-left: 16px !important;
+      margin-right: 16px !important;
     }
 
     a {
-      align-self: center;
-      justify-self: flex-end;
+      align-self: center !important;
+      justify-self: flex-end !important;
     }
 
     a:first-of-type {
-      margin-left: 4px;
+      margin-left: 4px !important;
     }
 
     a:last-of-type {
-      margin-right: 4px;
+      margin-right: 4px !important;
     }
   }
 
   #contentWedge {
-    width: 100% !important; // temporary thing
+    width: 100% !important;
   }
 
   #navWedge {
-    display: none;
+    display: none !important;
   }
 
   figure.centerImage {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
