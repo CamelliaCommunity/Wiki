@@ -537,12 +537,7 @@ div.highlight {
   }
 }
 /* smaller screens/smartphones (to be removed or reworked later) */
-@media screen and (max-width: 1416px) {
-  /* since phones are weird there technically isnt hovering */
-  #scrollToTop:hover {
-    opacity: 60%;
-  }
-}
+/* everything under important is temporary. we'll split stuff later in another update */
 /* responsive for picture wrap pages (and grid layout) */
 @media screen and (max-width: 1226px) {
   #flexyCard {
@@ -558,7 +553,6 @@ div.highlight {
   }
 }
 /* responsive stuff. yay! */
-/* everything under important is temporary. we'll split stuff later in another update */
 @media screen and (max-width: 750px) {
   figure.floatImage {
     margin-left: 8px !important;
