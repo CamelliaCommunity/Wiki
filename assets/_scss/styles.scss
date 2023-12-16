@@ -9,9 +9,10 @@
   transition: $x;
 }
 
-/* Import variables */
-@import "./variables", "./highlights", "./author", "./modals";
-@import "./header/shared";
+/* Import files */
+@import "./variables", "./highlights", "./author", "./modals", "./mediaQueries";
+
+@import "./header/shared", "./titleContainer/shared";
 
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
@@ -885,69 +886,6 @@ em {
 
 /* footnote, or the author */
 
-#titleContainer {
-  display: flex;
-  flex-direction: column;
-  min-width: 76rem;
-  // min-width: 70rem;
-  margin-top: 164px;
-
-  h1 {
-    align-self: center;
-    font-size: 42px;
-    font-style: italic;
-    margin-bottom: 8px;
-  }
-
-  #footNote {
-    margin-bottom: 58px;
-    color: gray;
-    font-weight: 600;
-    align-self: center;
-  }
-
-  #notesContainer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 18px;
-    // background: var(--colorCardDivisor);
-    // padding: 8px 24px 8px 24px;
-    // margin-bottom: 10px;
-    border-radius: 15px;
-
-    /* footnote but on the right side */
-    #footNoteRight {
-      align-self: flex-end;
-      text-align: right;
-      font-weight: 600;
-      margin-right: 48px;
-
-      margin-left: 14px;
-    }
-    /* footnote but on the left side */
-    #footNoteLeft {
-      align-self: flex-end;
-      text-align: left;
-      font-weight: 600;
-      margin-left: 48px;
-    }
-
-    #breadcrumbs {
-      display: flex;
-      align-self: flex-end;
-      text-align: left;
-      font-weight: 600;
-      margin-left: 48px;
-    }
-  }
-}
-
-#notAFullTitleContainer h1 {
-  font-style: italic;
-  margin-top: 164px;
-  margin-bottom: 76px;
-}
-
 /* this is for markdown footnotes */
 .footnote {
   display: inline;
@@ -1118,121 +1056,5 @@ figure.floatImage {
 
   img:hover {
     opacity: 0.7;
-  }
-}
-
-/* smaller screens/smartphones (to be removed or reworked later) */
-
-@media screen and (max-width: 1416px) {
-  /* since phones are weird there technically isnt hovering */
-  #scrollToTop:hover {
-    opacity: 60%;
-  }
-}
-
-/* responsive for picture wrap pages (and grid layout) */
-@media screen and (max-width: 1226px) {
-  #flexyCard {
-    flex-direction: column;
-  }
-
-  #aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #horiLine {
-    display: none;
-  }
-
-  #notAFullTitleContainer {
-    text-align: center;
-  }
-
-  #titleContainer {
-    text-align: center;
-    min-width: 100%;
-
-    #footNoteRight {
-      align-self: center;
-      margin-right: 0;
-    }
-  }
-}
-
-/* responsive stuff. yay! */
-@media screen and (max-width: 1074px) {
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  figure.floatImage {
-    margin-left: 8px;
-  }
-
-  .card {
-    .cardContents {
-      width: 100%;
-    }
-  }
-
-  .cardBackground {
-    width: 100%;
-    padding: 8px;
-  }
-
-  .cardHeader {
-    flex-wrap: wrap;
-    min-height: 84px;
-
-    h2 {
-      align-self: center;
-      margin-left: 16px;
-      margin-right: 16px;
-    }
-
-    a {
-      align-self: center;
-      justify-self: flex-end;
-    }
-
-    a:first-of-type {
-      margin-left: 4px;
-    }
-
-    a:last-of-type {
-      margin-right: 4px;
-    }
-  }
-}
-
-/* temporary thing until the hamburger */
-@media screen and (max-width: 750px) {
-  #contentWedge {
-    display: none;
-  }
-
-  #navWedge {
-    display: none;
-  }
-
-  figure.centerImage {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-/* we are going to rework this later in another file */
-/* we also fix spacing later */
-@media screen and (max-width: 1140px) {
-  #contentWedge {
-    #wedgeContainer {
-      &.sticky {
-        top: 30px;
-        position: sticky;
-      }
-    }
   }
 }

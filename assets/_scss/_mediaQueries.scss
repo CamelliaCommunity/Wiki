@@ -1,0 +1,100 @@
+/* smaller screens/smartphones (to be removed or reworked later) */
+
+@media screen and (max-width: 1416px) {
+  /* since phones are weird there technically isnt hovering */
+  #scrollToTop:hover {
+    opacity: 60%;
+  }
+}
+
+/* responsive for picture wrap pages (and grid layout) */
+@media screen and (max-width: 1226px) {
+  #flexyCard {
+    flex-direction: column;
+  }
+
+  #aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #horiLine {
+    display: none;
+  }
+}
+
+/* responsive stuff. yay! */
+
+/* temporary thing until the hamburger */
+@media screen and (max-width: 750px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  figure.floatImage {
+    margin-left: 8px;
+  }
+
+  .card {
+    .cardContents {
+      width: 100%;
+    }
+  }
+
+  .cardBackground {
+    width: 100%;
+    padding: 8px !important; // temporary thing
+  }
+
+  .cardHeader {
+    flex-wrap: wrap;
+    min-height: 84px;
+
+    h2 {
+      align-self: center;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    a {
+      align-self: center;
+      justify-self: flex-end;
+    }
+
+    a:first-of-type {
+      margin-left: 4px;
+    }
+
+    a:last-of-type {
+      margin-right: 4px;
+    }
+  }
+
+  #contentWedge {
+    display: none;
+  }
+
+  #navWedge {
+    display: none;
+  }
+
+  figure.centerImage {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* we are going to rework this later in another file */
+/* we also fix spacing later */
+@media screen and (max-width: 1140px) {
+  #contentWedge {
+    #wedgeContainer {
+      &.sticky {
+        top: 30px;
+        position: sticky;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* HEADS UP!!! DO NOT EDIT NORMAL .CSS FILES!!!!! */
 /* ONLY EDIT .SCSS FILES!!!!!!! */
-/* Import variables */
+/* Import files */
 :root {
   --font-default: "Author", sans-serif;
   /* new colors */
@@ -536,6 +536,82 @@ div.highlight {
     width: 100%;
   }
 }
+/* smaller screens/smartphones (to be removed or reworked later) */
+@media screen and (max-width: 1416px) {
+  /* since phones are weird there technically isnt hovering */
+  #scrollToTop:hover {
+    opacity: 60%;
+  }
+}
+/* responsive for picture wrap pages (and grid layout) */
+@media screen and (max-width: 1226px) {
+  #flexyCard {
+    flex-direction: column;
+  }
+  #aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #horiLine {
+    display: none;
+  }
+}
+/* responsive stuff. yay! */
+/* temporary thing until the hamburger */
+@media screen and (max-width: 750px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  figure.floatImage {
+    margin-left: 8px;
+  }
+  .card .cardContents {
+    width: 100%;
+  }
+  .cardBackground {
+    width: 100%;
+    padding: 8px !important;
+  }
+  .cardHeader {
+    flex-wrap: wrap;
+    min-height: 84px;
+  }
+  .cardHeader h2 {
+    align-self: center;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .cardHeader a {
+    align-self: center;
+    justify-self: flex-end;
+  }
+  .cardHeader a:first-of-type {
+    margin-left: 4px;
+  }
+  .cardHeader a:last-of-type {
+    margin-right: 4px;
+  }
+  #contentWedge {
+    display: none;
+  }
+  #navWedge {
+    display: none;
+  }
+  figure.centerImage {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* we are going to rework this later in another file */
+/* we also fix spacing later */
+@media screen and (max-width: 1140px) {
+  #contentWedge #wedgeContainer.sticky {
+    top: 30px;
+    position: sticky;
+  }
+}
 header {
   position: fixed;
   overflow: visible;
@@ -1032,6 +1108,104 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
   }
   header .header-shared #navSidebar.sticky {
     margin-top: calc(100vh + 52px);
+  }
+}
+#titleContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 76rem;
+  margin-top: 164px;
+}
+#titleContainer h1 {
+  align-self: center;
+  font-size: 42px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+#titleContainer #footNote {
+  margin-bottom: 58px;
+  color: gray;
+  font-weight: 600;
+  align-self: center;
+}
+#titleContainer #notesContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  border-radius: 15px;
+  /* footnote but on the right side */
+  /* footnote but on the left side */
+}
+#titleContainer #notesContainer #footNoteRight {
+  align-self: flex-end;
+  text-align: right;
+  font-weight: 600;
+  margin-left: 14px;
+  margin-right: 48px;
+}
+#titleContainer #notesContainer #footNoteLeft {
+  align-self: flex-end;
+  text-align: left;
+  font-weight: 600;
+}
+#titleContainer #notesContainer #breadcrumbs {
+  display: flex;
+  align-self: flex-end;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 48px;
+}
+
+#notAFullTitleContainer h1 {
+  font-style: italic;
+  margin-top: 164px;
+  margin-bottom: 76px;
+}
+
+@media screen and not (max-width: 1226px) {
+  #titleContainer #footNote {
+    margin-bottom: 58px;
+    color: gray;
+    font-weight: 600;
+    align-self: center;
+  }
+  #titleContainer #notesContainer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    border-radius: 15px;
+    /* footnote but on the right side */
+    /* footnote but on the left side */
+  }
+  #titleContainer #notesContainer #footNoteRight {
+    align-self: flex-end;
+    text-align: right;
+    font-weight: 600;
+  }
+  #titleContainer #notesContainer #footNoteLeft {
+    align-self: flex-end;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 48px;
+  }
+  #titleContainer #notesContainer #breadcrumbs {
+    display: flex;
+    align-self: flex-end;
+    text-align: left;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 1226px) {
+  #notAFullTitleContainer {
+    text-align: center;
+  }
+  #titleContainer {
+    text-align: center;
+    min-width: 100%;
+  }
+  #titleContainer #footNoteRight {
+    align-self: center;
+    margin-right: 0;
   }
 }
 /* Global elements, such as headers, footers, and body. */
@@ -1835,59 +2009,6 @@ em {
 }
 
 /* footnote, or the author */
-#titleContainer {
-  display: flex;
-  flex-direction: column;
-  min-width: 76rem;
-  margin-top: 164px;
-}
-#titleContainer h1 {
-  align-self: center;
-  font-size: 42px;
-  font-style: italic;
-  margin-bottom: 8px;
-}
-#titleContainer #footNote {
-  margin-bottom: 58px;
-  color: gray;
-  font-weight: 600;
-  align-self: center;
-}
-#titleContainer #notesContainer {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  border-radius: 15px;
-  /* footnote but on the right side */
-  /* footnote but on the left side */
-}
-#titleContainer #notesContainer #footNoteRight {
-  align-self: flex-end;
-  text-align: right;
-  font-weight: 600;
-  margin-right: 48px;
-  margin-left: 14px;
-}
-#titleContainer #notesContainer #footNoteLeft {
-  align-self: flex-end;
-  text-align: left;
-  font-weight: 600;
-  margin-left: 48px;
-}
-#titleContainer #notesContainer #breadcrumbs {
-  display: flex;
-  align-self: flex-end;
-  text-align: left;
-  font-weight: 600;
-  margin-left: 48px;
-}
-
-#notAFullTitleContainer h1 {
-  font-style: italic;
-  margin-top: 164px;
-  margin-bottom: 76px;
-}
-
 /* this is for markdown footnotes */
 .footnote {
   display: inline;
@@ -2048,94 +2169,4 @@ figure.floatImage img {
 }
 figure.floatImage img:hover {
   opacity: 0.7;
-}
-
-/* smaller screens/smartphones (to be removed or reworked later) */
-@media screen and (max-width: 1416px) {
-  /* since phones are weird there technically isnt hovering */
-  #scrollToTop:hover {
-    opacity: 60%;
-  }
-}
-/* responsive for picture wrap pages (and grid layout) */
-@media screen and (max-width: 1226px) {
-  #flexyCard {
-    flex-direction: column;
-  }
-  #aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #horiLine {
-    display: none;
-  }
-  #notAFullTitleContainer {
-    text-align: center;
-  }
-  #titleContainer {
-    text-align: center;
-    min-width: 100%;
-  }
-  #titleContainer #footNoteRight {
-    align-self: center;
-    margin-right: 0;
-  }
-}
-/* responsive stuff. yay! */
-@media screen and (max-width: 1074px) {
-  img {
-    width: 100%;
-    height: auto;
-  }
-  figure.floatImage {
-    margin-left: 8px;
-  }
-  .card .cardContents {
-    width: 100%;
-  }
-  .cardBackground {
-    width: 100%;
-    padding: 8px;
-  }
-  .cardHeader {
-    flex-wrap: wrap;
-    min-height: 84px;
-  }
-  .cardHeader h2 {
-    align-self: center;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-  .cardHeader a {
-    align-self: center;
-    justify-self: flex-end;
-  }
-  .cardHeader a:first-of-type {
-    margin-left: 4px;
-  }
-  .cardHeader a:last-of-type {
-    margin-right: 4px;
-  }
-}
-/* temporary thing until the hamburger */
-@media screen and (max-width: 750px) {
-  #contentWedge {
-    display: none;
-  }
-  #navWedge {
-    display: none;
-  }
-  figure.centerImage {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-/* we are going to rework this later in another file */
-/* we also fix spacing later */
-@media screen and (max-width: 1140px) {
-  #contentWedge #wedgeContainer.sticky {
-    top: 30px;
-    position: sticky;
-  }
 }/*# sourceMappingURL=styles.css.map */

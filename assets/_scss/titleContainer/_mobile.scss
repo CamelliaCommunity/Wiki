@@ -1,0 +1,13 @@
+#notAFullTitleContainer {
+  text-align: center;
+}
+
+#titleContainer {
+  text-align: center;
+  min-width: 100%;
+
+  #footNoteRight {
+    align-self: center;
+    margin-right: 0;
+  }
+}
