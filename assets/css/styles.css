@@ -1998,6 +1998,9 @@ figure.centerImage figcaption {
   font-weight: 500;
   margin-bottom: 0;
   text-align: center;
+  background: var(--colorCardDivisor);
+  border-radius: 6px;
+  margin-top: -2px;
 }
 figure.centerImage img {
   cursor: pointer;
@@ -2028,6 +2031,9 @@ figure.floatImage {
 figure.floatImage figcaption {
   font-weight: 500;
   text-align: center;
+  background: var(--colorCardDivisor);
+  border-radius: 6px;
+  margin-top: -2px;
 }
 figure.floatImage img {
   cursor: pointer;
