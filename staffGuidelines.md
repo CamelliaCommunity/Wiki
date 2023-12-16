@@ -76,16 +76,12 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 ### Moderation of content that falls into a "gray" area
 
----
-
 1. The posted content is illegal (i.e., drugs, potential piracy).
 1. The posted content is reported in the ticket channels.
 1. The content being posted violates Discord's [Terms of Service](https://discord.com/terms) or [Community Guidelines](https://discord.com/guidelines).
 1. The content being posted implies anything that breaks the server rules in a malicious tone.
 
 ### Cross-Banning Users
-
----
 
 *In extreme circumstances, we may ban individuals for their actions in other communities even if they have not breached any rules in this server. This will only happen if all of the following conditions are met.*
 
@@ -95,8 +91,6 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 ### Handling situations that could be overwhelming
 
----
-
 *Given how people are, when taking action against something, it's possible to get targeted for harassment. If handling the situation becomes out of hand, you should consider one of these options; remember to use good judgment on what to do!*
 
 1. Contact other staff members about the situation and provide a chat link to give insight and possible backup. If you're unsure how to handle a situation, contact someone higher up.
@@ -105,8 +99,6 @@ I have noticed staff members complain and some people being afraid of becoming s
 1. Listen to what people say and tell them what they want to hear(unless otherwise). Try to be patient with them so they can feel comfortable with what's happening. By doing this method, it should be easier to diverge a heated topic/discussion and talk about something else.
 
 ### Disciplinary actions and what happens after
-
----
 
 *When people don't listen, you need to take action. Here's how to make yourself look less 1984 and more like Mad Max (a more respected kind of staff member).*
 
@@ -119,8 +111,6 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 ### Common Terminology
 
----
-
 *Using Wick, the moderation bot, there are a couple of commands. These commands are: /warn /kick /ban, and /infractions. We want to generalize terms we use when referring to moderation in general, so keep these in mind.*
 
 * \[Warn/Infraction\]: A server warning issued by the bot to keep track of how many infractions somebody has. The bot will punish a member automatically based on several infractions.
@@ -131,8 +121,6 @@ I have noticed staff members complain and some people being afraid of becoming s
 * This list will be added to eventually.
 
 ### Wick's AutoMod
-
----
 
 * Each infraction given by John Wick is a total of 5 warning points.
 * 15 warning points give 1-hour timeouts. 25 warning points give 1-day timeouts, and 35 warning points kick members.
@@ -145,8 +133,6 @@ I have noticed staff members complain and some people being afraid of becoming s
 *Please be sure to mention any event handling so it could be under the radar! Events should also be scheduled days in advance so more members can notice something is going on!*
 
 ### Event posts
-
----
 
 #### Events: What's considered
 
@@ -171,8 +157,6 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 ### Announcement posts
 
----
-
 When creating announcements for any *important* reason, these guidelines must be followed. Before posting, make sure the post is approved by a number of staff members, and make sure to do a self-check here.
 
 #### Announcements: Tone of delivery
@@ -196,8 +180,6 @@ As a part of the staff team it's important to take note of how the promotion pro
 After two warning messages, it's guaranteed demotion on the third!
 
 ### Secondary Roles
-
----
 
 #### Probationary and Trial Roles
 
@@ -231,8 +213,6 @@ After two warning messages, it's guaranteed demotion on the third!
 
 ### Promotion: What is considered
 
----
-
 * Being helpful and engaging with server members.
 * Showing competence in managing behavioral situations.
 * Learning how to work individually and using teamwork.
@@ -242,8 +222,6 @@ After two warning messages, it's guaranteed demotion on the third!
 * Leading the server in the best direction for the sake of Camellia and server members.
 
 ### Demotion: What is considered
-
----
 
 * Extreme inactivity.
 * Uncooperative/immature behavior during staff discussions.

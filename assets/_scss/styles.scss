@@ -398,7 +398,10 @@ blockquote.tip {
 .card h3 {
   margin-left: 32px;
   margin-right: 32px;
+  padding-bottom: 8px;
   margin-bottom: 8px;
+
+  border-bottom: solid 1px var(--colorGray);
 }
 
 /* i didnt want to do this but oh well. */

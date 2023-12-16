@@ -12,8 +12,6 @@ permalink: camellia/:title
 
 ### October
 
----
-
 #### [ハニージンジャーエール](#)
 
 Released on 2010-10-31 by かめるかめりあ
@@ -33,8 +31,6 @@ Released on 2010-10-31 by かめるかめりあ
 
 ### May
 
----
-
 #### [TRIPPERS](#)
 
 Released on 2011-05-01 by かめるかめりあ
@@ -51,8 +47,6 @@ Released on 2011-05-01 by かめるかめりあ
 - [unconsciousness world](#)
 
 ### October
-
----
 
 #### [mikUbiquity](#)
 
@@ -72,8 +66,6 @@ Released on 2011-10-30 by かめるかめりあ
 ## 2012
 
 ### July
-
----
 
 #### [Michno-sequence](#)
 
@@ -95,8 +87,6 @@ Released on 2012-07-08 by かめるかめりあ
 ## 2013
 
 ### August
-
----
 
 #### [Stance on Wave](#)
 
@@ -120,8 +110,6 @@ Released on 2013-08-12 by かめるかめりあ
 
 ### December
 
----
-
 #### [paroxysm](#)
 
 Released on 2013-12-31 by かめるかめりあ
@@ -138,8 +126,6 @@ Released on 2013-12-31 by かめるかめりあ
 ## 2014
 
 ### April
-
----
 
 #### [[diffraction]](#)
 
@@ -159,9 +145,7 @@ Released on 2014-04-27 by かめるかめりあ
 - [dream transfer](#)
   [/dev/null](#)
 
-## August
-
----
+### August
 
 #### [sudden shower](#)
 
@@ -199,8 +183,6 @@ Released 2014-08-17 by Confetto
 - [ませまてぃっく♥ま+ま=まじっく！(L×o÷n＝g♥V±e∽r!)](#)
 
 ### December
-
----
 
 #### [dreamless wanderer](#)
 
