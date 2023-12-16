@@ -80,8 +80,8 @@
   #contentWedge {
     #wedgeContainer {
       &.sticky {
-        top: 30px;
-        position: sticky;
+        top: 30px !important;
+        position: sticky !important;
       }
     }
   }

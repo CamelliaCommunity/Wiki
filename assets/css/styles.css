@@ -599,8 +599,8 @@ div.highlight {
 /* we also fix spacing later */
 @media screen and (max-width: 1140px) {
   #contentWedge #wedgeContainer.sticky {
-    top: 30px;
-    position: sticky;
+    top: 30px !important;
+    position: sticky !important;
   }
 }
 header {
@@ -1105,7 +1105,6 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
   display: flex;
   flex-direction: column;
   min-width: 76rem;
-  margin-top: 164px;
 }
 #titleContainer h1 {
   align-self: center;
@@ -1153,7 +1152,10 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
   margin-bottom: 76px;
 }
 
-@media screen and not (max-width: 1226px) {
+@media screen and not (max-width: 1140px) {
+  #titleContainer {
+    margin-top: 164px;
+  }
   #titleContainer #footNote {
     margin-bottom: 58px;
     color: gray;
@@ -1186,13 +1188,14 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
     font-weight: 600;
   }
 }
-@media screen and (max-width: 1226px) {
+@media screen and (max-width: 1140px) {
   #notAFullTitleContainer {
     text-align: center;
   }
   #titleContainer {
     text-align: center;
     min-width: 100%;
+    margin-top: 124px;
   }
   #titleContainer #footNoteRight {
     align-self: center;
