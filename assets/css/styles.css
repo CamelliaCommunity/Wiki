@@ -2117,7 +2117,7 @@ figure.centerImage figcaption {
   text-align: center;
   background: var(--colorCardDivisor);
   border-radius: 6px;
-  margin-top: -2px;
+  margin-top: -3px;
 }
 figure.centerImage img {
   cursor: pointer;
@@ -2150,7 +2150,7 @@ figure.floatImage figcaption {
   text-align: center;
   background: var(--colorCardDivisor);
   border-radius: 6px;
-  margin-top: -2px;
+  margin-top: -3px;
 }
 figure.floatImage img {
   cursor: pointer;
