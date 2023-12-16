@@ -46,6 +46,7 @@
   .cardBackground {
     width: 100%;
     padding: 8px !important; // temporary thing
+    flex-direction: column !important; // temporary thing
   }
 
   .cardHeader {
@@ -73,7 +74,7 @@
   }
 
   #contentWedge {
-    display: none;
+    width: 100% !important; // temporary thing
   }
 
   #navWedge {

@@ -573,6 +573,7 @@ div.highlight {
   .cardBackground {
     width: 100%;
     padding: 8px !important;
+    flex-direction: column !important;
   }
   .cardHeader {
     flex-wrap: wrap;
@@ -594,7 +595,7 @@ div.highlight {
     margin-right: 4px;
   }
   #contentWedge {
-    display: none;
+    width: 100% !important;
   }
   #navWedge {
     display: none;
