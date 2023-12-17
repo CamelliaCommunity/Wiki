@@ -16,8 +16,16 @@ header {
     width: 100%;
     align-items: center;
     justify-content: center;
-    transition: transform 0.2s;
+    // transition: transform 0.2s;
     overflow: hidden;
+
+    .header-inner {
+      transition: all 0.2s ease-in-out;
+
+      #search-container {
+        transition: all 0.2s ease-in-out;
+      }
+    }
 
     h1 {
       text-shadow: none;

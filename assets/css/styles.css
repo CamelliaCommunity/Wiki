@@ -621,10 +621,15 @@ header .header-shared {
   width: 100%;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s;
   overflow: hidden;
   /* navigation bar */
   /* the rest of the styles are split between mobile and desktop */
+}
+header .header-shared .header-inner {
+  transition: all 0.2s ease-in-out;
+}
+header .header-shared .header-inner #search-container {
+  transition: all 0.2s ease-in-out;
 }
 header .header-shared h1 {
   text-shadow: none;
@@ -811,13 +816,9 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
-    transition: all 0.2s ease-in-out;
     border-radius: 0px 0px 25px 25px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorTriary);
-  }
-  header .header-shared .header-inner .logo a img {
-    transition: all 0.2s ease-in-out;
   }
   header .header-shared h1 {
     font-size: 42px;

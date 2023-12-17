@@ -80,7 +80,7 @@ header {
       justify-content: space-between;
       align-items: center;
       flex-shrink: 0;
-      transition: all 0.2s ease-in-out;
+      // transition: all 0.2s ease-in-out;
 
       border-radius: 0px 0px 25px 25px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -92,11 +92,11 @@ header {
         ),
         var(--colorTriary);
 
-      .logo {
-        a img {
-          transition: all 0.2s ease-in-out;
-        }
-      }
+      // .logo {
+      //   a img {
+      //     transition: all 0.2s ease-in-out;
+      //   }
+      // }
     }
 
     h1 {
