@@ -31,11 +31,13 @@ if (scrollToTop) {
 // Created by matt
 const scrollDetect = () => {
   header.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
+  navSidebar.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
 
   // Check if user has scrolled a certain amount of pixels to the top
   // Used to be 200 then 198
   if (window.scrollY <= 222) {
     header.classList.remove('sticky');
+    navSidebar.classList.remove('sticky');
   }
 };
 
@@ -50,7 +52,6 @@ h2Elements.forEach((h2) => {
   h2.parentNode.insertBefore(div, h2);
   div.appendChild(h2);
 });
-
 
 // Look for images within a "p" element, give them a figure and figcaption
 // element. the alt text will display as figcaption
@@ -131,6 +132,17 @@ searchInput.addEventListener('blur', () => {
  * button */
 hamburgerBtn.addEventListener('click', function(event) {
   navSidebar.classList.toggle('active');
+
+  // if (navSidebar.classList.contains('active')) {
+  //   // document.body.style.overflowY = 'hidden';
+  //   document.getElementById('myModal').style.display = 'block';
+  //   document.getElementById('myModal').style.zIndex = '0';
+  // } else {
+  //   // document.body.style.overflowY = 'visible';
+  //   document.getElementById('myModal').style.display = 'none';
+  //   document.getElementById('myModal').style.zIndex = '1';
+  // }
+
   // stop click event from propagating to the document body
   event.stopPropagation();
 });
@@ -151,7 +163,7 @@ document.addEventListener('click', function(event) {
 });
 
 /* when a user scrolls hide the nav sidebar */
-window.addEventListener('scroll', function(event) {
+window.addEventListener('scroll', function() {
   navSidebar.classList.remove('active');
 });
 
