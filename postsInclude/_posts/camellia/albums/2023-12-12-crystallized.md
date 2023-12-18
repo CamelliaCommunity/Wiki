@@ -4,6 +4,7 @@ title: "crystallized"
 categories: posts
 author: KatGrrrl
 description: crystallized album page
+permalink: camellia/discography/:title
 ---
 
 ## Overview
