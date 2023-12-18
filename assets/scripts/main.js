@@ -59,25 +59,27 @@ h2Elements.forEach((h2) => {
 // 370 pixels, it will remove the float and margins.
 
 document.addEventListener('DOMContentLoaded', () => {
-	// a better way of doing this. maybe. - thecodingguy ('for' tip provided by jiminp)
-	for (const image of document.querySelectorAll('p > img')) {
-		const figure = document.createElement('figure');
-		const figcaption = document.createElement('figcaption');
-		figcaption.textContent = image.alt;
+  // a better way of doing this. maybe. - thecodingguy ('for' tip provided by
+  // jiminp)
+  for (const image of document.querySelectorAll('p > img')) {
+    const figure = document.createElement('figure');
+    const figcaption = document.createElement('figcaption');
+    figcaption.textContent = image.alt;
 
-		figure.appendChild(image.cloneNode(true));
-		figure.appendChild(figcaption);
+    figure.appendChild(image.cloneNode(true));
+    figure.appendChild(figcaption);
 
-		figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
+    figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
 
-		image.replaceWith(figure);
-	};
+    image.replaceWith(figure);
+  };
 });
 
 // searchbar code for hiding and showing search container
 // made by papertek and reinoblassed, fixed by thecodingguy
 const searchInput = document.querySelector('#search-input');
-const resultsFixstuff = document.getElementById('results-fixstuff');  // Get the results-fixstuff element by its id
+const resultsFixstuff = document.getElementById(
+    'results-fixstuff');  // Get the results-fixstuff element by its id
 const resultsContainer = document.getElementById('results-container');
 
 searchInput.addEventListener('keyup', () => {
@@ -92,16 +94,17 @@ searchInput.addEventListener('keyup', () => {
 // better ux(?) for the search container
 // made by papertek, fixed by thecodingguy
 // add event listener to hide results-fixstuff when search input loses focus
-document.addEventListener("click", (evt) => {
-	if (!evt || !evt.target) return;
-	
-	// For search bar
-	const isSearchStuff = (el) => [searchInput, resultsFixstuff, resultsContainer].includes(el);
-	const isSearchOpen = (resultsFixstuff.style.display != "none");
-	if (isSearchOpen && !isSearchStuff(evt.target))
-		resultsFixstuff.style.display = "none";
-	else if (!isSearchOpen && isSearchStuff(evt.target))
-		resultsFixstuff.style.display = "flex";
+document.addEventListener('click', (evt) => {
+  if (!evt || !evt.target) return;
+
+  // For search bar
+  const isSearchStuff =
+      (el) => [searchInput, resultsFixstuff, resultsContainer].includes(el);
+  const isSearchOpen = (resultsFixstuff.style.display != 'none');
+  if (isSearchOpen && !isSearchStuff(evt.target))
+    resultsFixstuff.style.display = 'none';
+  else if (!isSearchOpen && isSearchStuff(evt.target))
+    resultsFixstuff.style.display = 'flex';
 })
 
 /* add functionality to the navigation sidebar */
@@ -151,56 +154,59 @@ window.addEventListener('scroll', function() {
  * https://www.w3schools.com/howto/howto_css_modal_images.asp
  * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img */
 
-// Get all elements with the class .cardContents
-const cardContentsElements = document.querySelectorAll('.cardContents');
+document.addEventListener('DOMContentLoaded', () => {
+  // Get all elements with the class .cardContents
+  const cardContentsElements = document.querySelectorAll('.cardContents');
 
-// Iterate through each .cardContents element
-cardContentsElements.forEach((cardContentsElement) => {
-  // Get all images within the current .cardContents element
-  const images = cardContentsElement.querySelectorAll('img');
+  // Iterate through each .cardContents element
+  cardContentsElements.forEach((cardContentsElement) => {
+    // Get all images within the current .cardContents element
+    const images = cardContentsElement.querySelectorAll('img');
 
-  // Iterate through each image and assign a unique ID
-  images.forEach((image, index) => {
-    // Generate unique IDs for the modal and its components
-    const uniqueModalId = `myModal${index}`;
-    const uniqueImgId = `img${index}`;
-    const uniqueCaptionId = `caption${index}`;
+    // Iterate through each image and assign a unique ID
+    images.forEach((image, index) => {
+      // Generate unique IDs for the modal and its components
+      const uniqueModalId = `myModal${index}`;
+      const uniqueImgId = `img${index}`;
+      const uniqueCaptionId = `caption${index}`;
 
-    // Assign the unique IDs to the image and modal components
-    image.id = uniqueImgId;
+      // Assign the unique IDs to the image and modal components
+      image.id = uniqueImgId;
 
-    // Create the modal, image, and caption elements
-    const modal = document.createElement('div');
-    modal.id = uniqueModalId;
-    modal.classList.add('modal');
+      // Create the modal, image, and caption elements
+      const modal = document.createElement('div');
+      modal.id = uniqueModalId;
+      modal.classList.add('modal');
 
-    const modalImg = document.createElement('img');
-    modalImg.classList.add('modal-content');  // Apply the 'modal-content' class
+      const modalImg = document.createElement('img');
+      modalImg.classList.add(
+          'modal-content');  // Apply the 'modal-content' class
 
-    const captionText = document.createElement('div');
-    captionText.id = uniqueCaptionId;
-    captionText.classList.add('caption');  // Apply the 'caption' class
+      const captionText = document.createElement('div');
+      captionText.id = uniqueCaptionId;
+      captionText.classList.add('caption');  // Apply the 'caption' class
 
-    // Set up the modal elements
-    modal.appendChild(modalImg);
-    modal.appendChild(captionText);
+      // Set up the modal elements
+      modal.appendChild(modalImg);
+      modal.appendChild(captionText);
 
-    // Append the modal to the document body
-    document.body.appendChild(modal);
+      // Append the modal to the document body
+      document.body.appendChild(modal);
 
-    // Add a click event listener to each image
-    image.onclick = function() {
-      const modal = document.getElementById('myModal');
-      const modalImg = document.getElementById('imageModal');
-      const captionText = document.getElementById('caption');
+      // Add a click event listener to each image
+      image.onclick = function() {
+        const modal = document.getElementById('myModal');
+        const modalImg = document.getElementById('imageModal');
+        const captionText = document.getElementById('caption');
 
-      // Set the modal content based on the clicked image
-      modalImg.src = image.src;
-      captionText.innerHTML = image.alt;
+        // Set the modal content based on the clicked image
+        modalImg.src = image.src;
+        captionText.innerHTML = image.alt;
 
-      // Set the modal to display
-      modal.style.display = 'block';
-    };
+        // Set the modal to display
+        modal.style.display = 'block';
+      };
+    });
   });
 });
 
