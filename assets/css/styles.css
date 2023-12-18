@@ -628,8 +628,11 @@ header .header-shared {
 header .header-shared .header-inner {
   transition: all 0.2s ease-in-out;
 }
-header .header-shared .header-inner #search-container {
-  transition: all 0.2s ease-in-out;
+header .header-shared .header-inner #search-container #main-bar {
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+header .header-shared .header-inner #search-container #main-bar .searchBtn {
+  transition: inherit;
 }
 header .header-shared h1 {
   text-shadow: none;

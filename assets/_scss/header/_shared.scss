@@ -22,8 +22,12 @@ header {
     .header-inner {
       transition: all 0.2s ease-in-out;
 
-      #search-container {
-        transition: all 0.2s ease-in-out;
+      #search-container #main-bar {
+        transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+
+        .searchBtn {
+          transition: inherit;
+        }
       }
     }
 
