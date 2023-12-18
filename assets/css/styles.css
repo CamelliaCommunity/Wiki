@@ -966,7 +966,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
     gap: 8px;
   }
   header.sticky {
-    height: 64px;
+    height: 68px;
   }
   header.sticky .logo {
     font-size: 32px;
@@ -994,7 +994,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
     padding: 8px 32px;
   }
   header.sticky .header-inner #search-container #results-fixstuff {
-    margin-top: 12px;
+    margin-top: 16px;
     transition: 0.2s;
   }
   header.sticky .header-inner #search-container #main-bar {

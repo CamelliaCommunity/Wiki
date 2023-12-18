@@ -276,7 +276,8 @@ header {
   }
 
   &.sticky {
-    height: 64px;
+    // height: 64px;
+    height: 68px; // crap?
 
     .logo {
       font-size: 32px;
@@ -311,7 +312,8 @@ header {
 
       #search-container {
         #results-fixstuff {
-          margin-top: 12px;
+          // margin-top: 12px;
+          margin-top: 16px; // crap?
           transition: 0.2s;
         }
 
