@@ -80,7 +80,6 @@ header {
       justify-content: space-between;
       align-items: center;
       flex-shrink: 0;
-      // transition: all 0.2s ease-in-out;
 
       border-radius: 0px 0px 25px 25px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -91,12 +90,6 @@ header {
           rgba(91, 63, 75, 0.2) 100%
         ),
         var(--colorTriary);
-
-      // .logo {
-      //   a img {
-      //     transition: all 0.2s ease-in-out;
-      //   }
-      // }
     }
 
     h1 {
@@ -198,6 +191,7 @@ header {
 
           .ph-bold.ph-magnifying-glass {
             font-size: 28px;
+            transition: font-size 0.2s;
           }
         }
       }
@@ -291,7 +285,7 @@ header {
 
       img {
         width: 44px;
-        // transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; // may wanna clean this
       }
     }
 

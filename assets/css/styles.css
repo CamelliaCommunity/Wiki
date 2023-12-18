@@ -634,12 +634,8 @@ header .header-shared .header-inner #search-container #main-bar {
 header .header-shared .header-inner #search-container #main-bar .searchBtn {
   transition: inherit;
 }
-header .header-shared img {
-  transition: all 0.5s ease;
-}
 header .header-shared h1 {
   text-shadow: none;
-  transition: all 0.2s ease-in-out;
 }
 header .header-shared h1 a {
   color: var(--borderColor);
@@ -648,9 +644,12 @@ header .header-shared h1 a {
   justify-content: center;
   height: 100%;
   margin: 0;
+  transition: font-size 0.2s;
 }
 header .header-shared h1 a img {
+  width: 54px;
   margin-right: 12px;
+  transition: all 0.2s ease-in-out;
 }
 header .header-shared #navSidebar {
   position: absolute;
@@ -904,6 +903,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
   }
   header .header-shared #search-container #main-bar .searchBtn .ph-bold.ph-magnifying-glass {
     font-size: 28px;
+    transition: font-size 0.2s;
   }
   header .header-shared #search-container:focus-visible {
     outline: none;
@@ -975,6 +975,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
   }
   header.sticky .logo img {
     width: 44px;
+    transition: all 0.2s ease-in-out;
   }
   header.sticky #navigationButtons {
     gap: 4px;

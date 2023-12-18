@@ -31,13 +31,8 @@ header {
       }
     }
 
-    img {
-      transition: all 0.5s ease;
-    }
-
     h1 {
       text-shadow: none;
-      transition: all 0.2s ease-in-out;
 
       a {
         color: var(--borderColor);
@@ -46,11 +41,12 @@ header {
         justify-content: center;
         height: 100%;
         margin: 0;
-        // transition: font-size 0.2s;
+        transition: font-size 0.2s;
 
         img {
-          // width: font-size 0.2s;
+          width: 54px;
           margin-right: 12px;
+          transition: all 0.2s ease-in-out;
         }
       }
     }
