@@ -4,6 +4,7 @@ title: "PLANET//SHAPER"
 categories: posts
 author: KatGrrrl
 description: PLANET//SHAPER album page
+permalink: camellia/discography/:title
 ---
 
 ## Overview
