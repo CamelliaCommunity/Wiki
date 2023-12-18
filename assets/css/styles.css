@@ -873,7 +873,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
   header .header-shared #search-container input:-webkit-autofill:hover,
   header .header-shared #search-container input:-webkit-autofill:focus,
   header .header-shared #search-container input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px var(--colorContentContainer) inset !important;
+    -webkit-box-shadow: 0 0 0 30px var(--colorCards) inset !important;
   }
   header .header-shared #search-container input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
