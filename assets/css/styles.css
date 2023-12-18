@@ -634,8 +634,12 @@ header .header-shared .header-inner #search-container #main-bar {
 header .header-shared .header-inner #search-container #main-bar .searchBtn {
   transition: inherit;
 }
+header .header-shared img {
+  transition: all 0.5s ease;
+}
 header .header-shared h1 {
   text-shadow: none;
+  transition: all 0.2s ease-in-out;
 }
 header .header-shared h1 a {
   color: var(--borderColor);
@@ -644,10 +648,8 @@ header .header-shared h1 a {
   justify-content: center;
   height: 100%;
   margin: 0;
-  transition: font-size 0.2s;
 }
 header .header-shared h1 a img {
-  width: font-size 0.2s;
   margin-right: 12px;
 }
 header .header-shared #navSidebar {
