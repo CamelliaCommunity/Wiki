@@ -112,18 +112,12 @@ searchInput.addEventListener('click', () => {
 });
 
 // add event listener to hide results-fixstuff when search input loses focus
-searchInput.addEventListener('blur', () => {
-  // delay hiding results-fixstuff. this is to allow time for click events being
-  // processed
-  setTimeout(() => {
-    // check if clicked element is not within search input or results
-    // container
-    if (!searchInput.contains(document.activeElement) &&
-        !resultsFixstuff.contains(document.activeElement)) {
-      resultsFixstuff.style.display = 'none';
-    }
-  }, 100);
-});
+document.addEventListener("click", (evt) => {
+	if (!evt.target) return;
+	if (resultsFixstuff.style.display != "none" &&
+		![searchInput, resultsFixstuff, resultsContainer].includes(evt.target))
+		resultsFixstuff.style.display = "none";
+})
 
 /* add functionality to the navigation sidebar */
 // made by papertek
