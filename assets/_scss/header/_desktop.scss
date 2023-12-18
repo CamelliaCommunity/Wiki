@@ -140,7 +140,8 @@ header {
       /* weirdness being applied in the js */
       /* workaround for now */
       &.sticky {
-        margin-top: calc(100vh + 64px); // testing purpose
+        // margin-top: calc(100vh + 64px);
+        margin-top: calc(100vh + 68px);
       }
 
       .hideMe {

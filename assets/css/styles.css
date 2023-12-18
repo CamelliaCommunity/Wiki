@@ -860,7 +860,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
     /* workaround for now */
   }
   header .header-shared #navSidebar.sticky {
-    margin-top: calc(100vh + 64px);
+    margin-top: calc(100vh + 68px);
   }
   header .header-shared #navSidebar .hideMe {
     display: none;
