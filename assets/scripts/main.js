@@ -34,7 +34,7 @@ const scrollDetect = () => {
   navSidebar.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
 
   // Check if user has scrolled a certain amount of pixels to the top
-  // Used to be 200 then 198
+  // Used to be 200 then 198... not anymore, its 222 !!!
   if (window.scrollY <= 222) {
     header.classList.remove('sticky');
     navSidebar.classList.remove('sticky');
