@@ -15,16 +15,12 @@ Our standards remain the same or similar when you read the announcements section
 
 ### Tone of Delivery
 
----
-
 - Posts must be neutral to the reader. No bias should show or any favoring to specific topics. Only on rare occasions should this rule be voided.
 - Grammar and styling should be consistent with previous documents. When creating or editing a copy, please check grammar with [built-in text editors](https://wordcounter.net/).
 - Documents must be easy to digest and understandable for readers. Be sure to avoid any complex or abrupt sentences. If you see a problem with a document, remember "Edit This Page!" is there for you to use!
 - Try to [preview](https://dillinger.io/) your documents on a local site before contributing. If you are unable to, don't worry! We will look at it for you.
 
 ### Keeping Consistency
-
----
 
 - All posts are to be written in United States English. Different spellings for different words will occur, so be mindful of spelling. Terms including but not limited to are: color, center, skillful, analyze, etc.
 - Documents must follow [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119). It is also encouraged to use [proper markdown](https://www.markdownguide.org/cheat-sheet/) for writing.
@@ -41,8 +37,6 @@ In theory, it should be effortless to contribute to articles and posts like the 
 When users click "Edit This Page!", they are sent to the page's GitHub, where they can edit the Markdown contents easily.
 
 ### Articles
-
----
 
 To add articles, you must create a new markdown file within the `_articles` folder. This allows the website to see the article and display it on the homepage. It must contain "front matter" to display content properly on the site.[^2] Front matter is the metadata and settings of a document. *Every article file should have the layout of `article`, and every post file should have the layout of `post`. More on posts later*.
 
@@ -62,13 +56,9 @@ More ways to include metadata will be coming soon!
 
 ### Posts
 
----
-
 To add posts, you must create a new markdown file within the `_posts` folder, but there's a catch! Posts are preferable to be created using [Jekyll::Compose](https://github.com/jekyll/jekyll-compose). To use Jekyll Compose, you must type `bundle exec jekyll post "My New Post"`. This will automatically create a post for you in the `_posts` folder. As you can see, there are a few benefits, including automatically generating the front matter for you! Once this is handled, posts will show up on the homepage, ready to be read by users.
 
 ### Linking posts to Articles
-
----
 
 You could also "include" posts within articles! When a post is included in an article, it will not show up on the homepage.
 
@@ -91,8 +81,6 @@ include: Example Post
 
 ### When to use Articles and Posts
 
----
-
 While articles and posts have very similar layouts, they function differently. Articles are supposed to be used *only* when the document content is very long and there are different sections. Article layouts have features such as content wedges and IDs applied to headers. Posts are meant for smaller bits of information that usually don't have a scrollbar. This includes quick, small messages and similar. Eventually, navigating between posts and articles will be better. You are free to contribute code whenever!
 
 > As a *temporary* solution to display things correctly on the Homepage, some posts may have the article layout applied to them. *THIS IS ONLY IF ABSOLUTELY NECESSARY. DO NOT DO IT YOURSELF UNLESS YOU HAVE PERMISSION*.
@@ -103,8 +91,6 @@ While articles and posts have very similar layouts, they function differently. A
 While this site has markdown support, it also has a extended version of markdown called [kramdown](https://kramdown.gettalong.org/index.html). Kramdown is a library for parsing and converting superset of Markdown.[^3]  Essentially, kramdown is the same as markdown but expanded. What kramdown offers is adding CSS classes or IDs to specific parts of a document. Examples will be listed below.
 
 ### Codeblocks
-
----
 
 This is a code block example! If you're familar with Discord's markdown then you should reconize this.
 
@@ -122,8 +108,6 @@ print_hi('Tom')
 By removing the backslashes and specifying the programming language, it would be correctly displayed as a code block. To review more on this, visit the kramdown cheat sheet [here](https://kramdown.gettalong.org/quickref.html).
 
 ### Blockquotes
-
----
 
 Blockquotes are preferred to be only used in articles, they function as a way to give a "heads up" to the reader. Examples for default blockquotes and styles will be listed below.
 
@@ -168,21 +152,15 @@ Here are some crucial parts of the readme you must remember when contributing co
 
 ### Do not edit CSS files
 
----
-
 This project uses .scss (Sassy CSS)! Please be sure to know how SCSS works
 before contributing to styles. [Install the .scss extension](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)!
 You could also review how to install Sass [here](https://sass-lang.com/install/). I installed it personally by using node.js in the command line and typing `npm install -g sass`.
 
 ### Install Jekyll
 
----
-
 Assuming you know how to program, install [Jekyll](https://jekyllrb.com/docs/installation/) and its prerequisites.
 
 ### Testing Locally
-
----
 
 Once Jekyll is installed (and Sassy CSS, if you want to contribute to styles), open the terminal and type `bundle exec jekyll serve` to build the site on a local server. Afterward, browse to <http://localhost:4000/> to view the website locally. If you still need help, review [Jekyll Docs](https://jekyllrb.com/docs/)!
 

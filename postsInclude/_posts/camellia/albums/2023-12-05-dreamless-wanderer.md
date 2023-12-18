@@ -4,6 +4,7 @@ title: "dreamless wanderer"
 categories: posts
 author: KatGrrrl
 description: dreamless wanderer album page
+permalink: camellia/discography/:title
 ---
 
 ## Overview

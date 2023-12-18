@@ -2,97 +2,170 @@
 /* we still need a proper mobile header design! */
 
 header {
-  height: 100px;
+  height: 52px;
   transition: all 0.2s ease-in-out;
 
   .header-shared {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    min-height: 100px;
+    // min-height: 100px;
+    min-height: 100%;
     gap: 10px;
 
-    h1 {
-      a {
-        gap: 5px;
-        font-size: 28px;
+    // #btnContainer {
+    //   text-align: center;
+    //   width: 150px;
+    // }
 
-        img {
-          width: 32px;
-        }
+    #hamburgerBtn {
+      text-align: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      color: white;
+      border: none;
+      background: none;
+      border-radius: 32px;
+      padding: 4px;
+      margin-left: 10px;
+
+      .ph-bold.ph-list {
+        font-size: 32px;
+      }
+
+      &:hover {
+        background: var(--colorCardDivisorHover);
       }
     }
 
-    #navigationButtons {
-      margin: 0;
-      gap: 2px;
+    #twoBotans {
+      display: none;
+    }
 
-      > div:first-child,
-      > div:last-child {
-        display: none;
-      }
+    #main-bar {
+      display: none;
+    }
 
-      > div {
-        width: 140px;
-        height: 32px;
+    .header-inner {
+      background: var(--colorTriary);
 
+      display: flex;
+      align-self: flex-start;
+      flex: 1;
+      padding: 8px 16px;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+      transition: transform 0.2s;
+
+      border-radius: 0px 0px 10px 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      background: linear-gradient(
+          180deg,
+          rgba(246, 65, 141, 0) 0%,
+          rgba(246, 65, 141, 0.08) 51.04%,
+          rgba(91, 63, 75, 0.2) 100%
+        ),
+        var(--colorTriary);
+
+      h1 {
         a {
-          text-shadow: 0 2px 2px rgba($color: #000000, $alpha: 0.25);
-          width: 140px;
-          height: 32px;
-          font-size: 14px;
+          gap: 5px;
+          // font-size: 28px;
+          font-size: 24px;
+          font-weight: 300;
 
-          &:hover::after {
-            width: 140px;
+          img {
+            margin-right: 8px;
+            width: 32px;
           }
         }
       }
 
-      > div:nth-child(2) a {
-        border-radius: 20px 5px 5px 20px;
-      }
+      #navigationButtons {
+        margin: 0;
+        gap: 2px;
 
-      > div:nth-child(3) a {
-        border-radius: 5px 20px 20px 5px;
-      }
-    }
-  }
+        > div:first-child,
+        > div:last-child {
+          display: none;
+        }
 
-  .header-mobile-scroll {
-    transition: transform 0.2s;
-    min-height: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
+        > div {
+          width: 140px;
+          height: 32px;
 
-    h1 {
-      text-shadow: none;
+          a {
+            text-shadow: 0 2px 2px rgba($color: #000000, $alpha: 0.25);
+            width: 140px;
+            height: 32px;
+            font-size: 14px;
 
-      a {
-        color: var(--borderColor);
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font-size: 20px;
+            &:hover::after {
+              width: 140px;
+            }
+          }
+        }
 
-        img {
-          width: 32px;
+        > div:nth-child(2) a {
+          border-radius: 20px 5px 5px 20px;
+        }
+
+        > div:nth-child(3) a {
+          border-radius: 5px 20px 20px 5px;
         }
       }
     }
+
+    /* navigation bar */
+    #navSidebar {
+      left: -100%; // in main.js, we will make this display as flex when the menu button is pressed
+      margin-top: calc(100vh + 52px); // testing purpose
+      width: 100%;
+
+      /* weirdness being applied in the js */
+      /* workaround for now */
+      &.sticky {
+        margin-top: calc(100vh + 52px); // testing purpose
+      }
+    }
   }
 
-  &.sticky {
-    height: 50px;
-    box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 0.25);
+  // .header-mobile-scroll {
+  //   transition: transform 0.2s;
+  //   min-height: 50px;
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   padding: 0 10px;
 
-    .header-shared {
-      transform: translateY(-100px);
-    }
+  //   h1 {
+  //     text-shadow: none;
 
-    .header-mobile-scroll {
-      transform: translateY(-100px);
-    }
-  }
+  //     a {
+  //       color: var(--borderColor);
+  //       display: flex;
+  //       align-items: center;
+  //       gap: 5px;
+  //       font-size: 20px;
+
+  //       img {
+  //         width: 32px;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &.sticky {
+  //   height: 50px;
+  //   box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 0.25);
+
+  //   .header-shared {
+  //     transform: translateY(-100px);
+  //   }
+
+  //   .header-mobile-scroll {
+  //     transform: translateY(-100px);
+  //   }
+  // }
 }

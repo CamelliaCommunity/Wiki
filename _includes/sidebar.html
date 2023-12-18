@@ -1,6 +1,9 @@
 <div id="navSidebar">
   <div id="navWedgeContainer">
-    <h3>Main Menu</h3>
+    <div id="navHeader">
+      <button id="sidebarX"><i class="ph ph-x"></i></button>
+      <h3>Main Menu</h3>
+    </div>
     <hr />
     <nav id="navWedgeItems">
       <h3>Site Navigation</h3>
@@ -29,6 +32,28 @@
             <div class="author">Specific Pages for testing stuff</div></a
           >
         </div>
+      </ol>
+      <h3 class="hideMe">News</h3>
+      <ol class="hideMe">
+        {% for post in site.categories.postsNews %}
+        <div class="buttonDefault hideMe">
+          <a href="{{ post.url }}"
+            >{{ post.title }}
+            <div class="author">Written by {{ post.author }}</div></a
+          >
+        </div>
+        {% endfor %}
+      </ol>
+      <h3 class="hideMe">Blog Posts</h3>
+      <ol class="hideMe">
+        {% for post in site.categories.postsBlog %}
+        <div class="buttonDefault hideMe">
+          <a href="{{ post.url }}"
+            >{{ post.title }}
+            <div class="author">Written by {{ post.author }}</div></a
+          >
+        </div>
+        {% endfor %}
       </ol>
     </nav>
   </div>

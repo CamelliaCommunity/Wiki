@@ -4,6 +4,7 @@ title: "sudden shower"
 categories: posts
 author: KatGrrrl
 description: sudden shower album page
+permalink: camellia/discography/:title
 ---
 
 ## Overview

@@ -10,3 +10,7 @@ description: Insert a awesome description!
 ## Example Post
 
 This is an example post that is suppose to link under the Article Test minicard. If you see this page that means it works!
+
+```js
+sdfkljsdalkfalfsdalkfjlkfjlksfjlksdajf;lsdjflk;sdjfdsjfl;kjds;lfjsdlkfjsdlfhdAAAAAAAAAAAAAAAAAAAAAA
+```

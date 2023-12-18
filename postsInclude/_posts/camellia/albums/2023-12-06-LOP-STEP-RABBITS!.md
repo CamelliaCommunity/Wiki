@@ -4,6 +4,7 @@ title: "LOP STEP RABBITS!"
 categories: posts
 author: KatGrrrl
 description: LOP STEP RABBITS! album page
+permalink: camellia/discography/:title
 ---
 
 ## Overview
@@ -35,4 +36,4 @@ Total Length: 21:49
 ## External Links
 
 * [Website](https://kc-rabbits.tumblr.com/)
-* 
+*

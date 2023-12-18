@@ -4,6 +4,7 @@ const main = document.querySelector('main');
 const scrollToTop = document.getElementById('scrollToTop');
 const navSidebar = document.getElementById('navSidebar');
 const hamburgerBtn = document.getElementById('hamburgerBtn');
+const sidebarX = document.getElementById('sidebarX');
 
 // Eaten from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 // If scrollToTop element is found, run this code
@@ -33,10 +34,10 @@ const scrollDetect = () => {
   navSidebar.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
 
   // Check if user has scrolled a certain amount of pixels to the top
-  // Used to be 200 then 198
+  // Used to be 200 then 198... not anymore, its 222 !!!
   if (window.scrollY <= 222) {
     header.classList.remove('sticky');
-    navSidebar.classList.remove('sticky')
+    navSidebar.classList.remove('sticky');
   }
 };
 
@@ -51,7 +52,6 @@ h2Elements.forEach((h2) => {
   h2.parentNode.insertBefore(div, h2);
   div.appendChild(h2);
 });
-
 
 // Look for images within a "p" element, give them a figure and figcaption
 // element. the alt text will display as figcaption
@@ -80,23 +80,21 @@ if (images) {
 // searchbar code for hiding and showing search container
 // made by papertek and reinoblassed
 const searchInput = document.querySelector('#search-input');
-const resultsUnfuck = document.getElementById(
-    'results-unfuck');  // Get the results-unfuck element by its id
+const resultsFixstuff = document.getElementById(
+    'results-fixstuff');  // Get the results-fixstuff element by its id
 const resultsContainer = document.getElementById('results-container');
 
 searchInput.addEventListener('keyup', () => {
-  console.log('keyup');
-
   // Get all li elements inside the results-container
   const resultListedItems = resultsContainer.innerHTML;
 
   // Check if there are any li elements
   if (!resultListedItems == '') {
-    // If there are li elements, show the results-unfuck element
-    resultsUnfuck.style.display = 'flex';
+    // If there are li elements, show the results-fixstuff element
+    resultsFixstuff.style.display = 'flex';
   } else {
-    // If there are no li elements, hide the results-unfuck element
-    resultsUnfuck.style.display = 'none';
+    // If there are no li elements, hide the results-fixstuff element
+    resultsFixstuff.style.display = 'none';
   }
 });
 
@@ -104,28 +102,22 @@ searchInput.addEventListener('keyup', () => {
 // made by papertek
 
 /* this is pretty jank, i know. one issue im having is when the user still
- * clicks results-unfuck, the container still hides. i have tried other methods
- * but i think this one is the one that works best. if theres any other
+ * clicks results-fixstuff, the container still hides. i have tried other
+ * methods but i think this one is the one that works best. if theres any other
  * contributor willing to fix this please do lol */
 
-// add event listener to show results-unfuck when the user clicks inside it
-resultsUnfuck.addEventListener('click', () => {
-  resultsUnfuck.style.display = 'flex';
+// when a user clicks the searchbar it will display the search container
+searchInput.addEventListener('click', () => {
+  resultsFixstuff.style.display = 'flex';
 });
 
-// add event listener to hide results-unfuck when search input loses focus
-searchInput.addEventListener('blur', () => {
-  // delay hiding results-unfuck. this is to allow time for click events being
-  // processed
-  setTimeout(() => {
-    // check if clicked element is not within search input or results
-    // container
-    if (!searchInput.contains(document.activeElement) &&
-        !resultsUnfuck.contains(document.activeElement)) {
-      resultsUnfuck.style.display = 'none';
-    }
-  }, 100);
-});
+// add event listener to hide results-fixstuff when search input loses focus
+document.addEventListener("click", (evt) => {
+	if (!evt.target) return;
+	if (resultsFixstuff.style.display != "none" &&
+		![searchInput, resultsFixstuff, resultsContainer].includes(evt.target))
+		resultsFixstuff.style.display = "none";
+})
 
 /* add functionality to the navigation sidebar */
 // made by papertek
@@ -134,8 +126,24 @@ searchInput.addEventListener('blur', () => {
  * button */
 hamburgerBtn.addEventListener('click', function(event) {
   navSidebar.classList.toggle('active');
+
+  // if (navSidebar.classList.contains('active')) {
+  //   // document.body.style.overflowY = 'hidden';
+  //   document.getElementById('myModal').style.display = 'block';
+  //   document.getElementById('myModal').style.zIndex = '0';
+  // } else {
+  //   // document.body.style.overflowY = 'visible';
+  //   document.getElementById('myModal').style.display = 'none';
+  //   document.getElementById('myModal').style.zIndex = '1';
+  // }
+
   // stop click event from propagating to the document body
   event.stopPropagation();
+});
+
+/* when a user click the x close the sidebar */
+sidebarX.addEventListener('click', function() {
+  navSidebar.classList.remove('active');
 });
 
 /* add global click event listener to hide navSidebar when clicking outside of
@@ -149,7 +157,7 @@ document.addEventListener('click', function(event) {
 });
 
 /* when a user scrolls hide the nav sidebar */
-window.addEventListener('scroll', function(event) {
+window.addEventListener('scroll', function() {
   navSidebar.classList.remove('active');
 });
 

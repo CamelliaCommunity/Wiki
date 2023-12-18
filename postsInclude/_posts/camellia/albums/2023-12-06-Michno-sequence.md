@@ -4,6 +4,7 @@ title: "Michno-sequence"
 categories: posts
 author: KatGrrrl
 description: Michno-sequence album page
+permalink: camellia/discography/:title
 ---
 
 ## Overview

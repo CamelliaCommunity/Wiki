@@ -1,0 +1,88 @@
+/* smaller screens/smartphones (to be reworked later) */
+/* everything under important is temporary. we'll split stuff later in another update */
+
+/* responsive for picture wrap pages (and grid layout) */
+@media screen and (max-width: 1226px) {
+  #flexyCard {
+    flex-direction: column;
+  }
+
+  #aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #horiLine {
+    display: none;
+  }
+}
+
+/* responsive stuff. yay! */
+@media screen and (max-width: 750px) {
+  figure.floatImage {
+    margin-left: 8px !important;
+  }
+
+  .card {
+    .cardContents {
+      width: 100% !important;
+    }
+  }
+
+  .cardBackground {
+    width: 100%;
+    padding: 8px !important;
+    flex-direction: column !important;
+  }
+
+  .cardHeader {
+    flex-wrap: wrap !important;
+    min-height: 84px !important;
+
+    h2 {
+      align-self: center !important;
+      margin-left: 16px !important;
+      margin-right: 16px !important;
+    }
+
+    a {
+      align-self: center !important;
+      justify-self: flex-end !important;
+    }
+
+    a:first-of-type {
+      margin-left: 4px !important;
+    }
+
+    a:last-of-type {
+      margin-right: 4px !important;
+    }
+  }
+
+  #contentWedge {
+    width: 100% !important;
+  }
+
+  #navWedge {
+    display: none !important;
+  }
+
+  figure.centerImage {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* we are going to rework this later in another file */
+/* we also fix spacing later */
+@media screen and (max-width: 1140px) {
+  #contentWedge {
+    #wedgeContainer {
+      &.sticky {
+        top: 30px !important;
+        position: sticky !important;
+      }
+    }
+  }
+}

@@ -72,111 +72,6 @@ header {
       }
     }
 
-    /* navigation bar */
-    #navSidebar {
-      position: absolute;
-      left: -406px; // in main.js, we will make this display as flex when the menu button is pressed
-      // margin-top: 506px;
-      margin-top: calc(100vh + 88px); // testing purpose
-      height: 100vh;
-
-      display: flex;
-      width: 406px;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 8px;
-
-      border-radius: 0px 30px 30px 0px;
-      border-right: 1px solid rgba(255, 255, 255, 0.2);
-      background: linear-gradient(
-          180deg,
-          rgba(246, 65, 141, 0) 0%,
-          rgba(246, 65, 141, 0.08) 51.04%,
-          rgba(91, 63, 75, 0.2) 100%
-        ),
-        var(--colorCards, #382e37);
-      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-      transition: 0.4s;
-
-      &.active {
-        left: 0;
-      }
-
-      /* weirdness being applied in the js */
-      /* workaround for now */
-      &.sticky {
-        // margin-top: 482px;
-        margin-top: calc(100vh + 64px); // testing purpose
-      }
-
-      #navWedgeContainer {
-        position: sticky;
-        padding: 16px;
-        width: 100%;
-
-        hr {
-          margin-top: 8px;
-          margin-bottom: 8px;
-          margin-left: 0;
-          margin-right: 0;
-          height: 2px;
-        }
-
-        #navWedgeItems {
-          display: block;
-          overflow-y: scroll;
-          overflow: auto;
-          font-size: 18px;
-          font-weight: 500;
-          max-height: calc(100vh - 144px);
-
-          h3:first-child {
-            margin-top: 0;
-          }
-
-          h3 {
-            margin-top: 8px;
-            margin-bottom: 8px;
-          }
-
-          h3::before {
-            content: "";
-            display: inline-block;
-            background: var(--colorSecondary) 0% 0% no-repeat padding-box;
-            height: 17px;
-            margin-right: 8px;
-            width: 4px;
-            position: inherit;
-            border-radius: 2px;
-          }
-
-          ol {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            width: 100%;
-            overflow: auto;
-
-            .buttonDefault a {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              text-align: center;
-              height: 100%;
-              width: 100%;
-              padding: 10px;
-              gap: 8px;
-            }
-          }
-        }
-
-        &.sticky {
-          top: 64px;
-          position: sticky;
-        }
-      }
-    }
-
     .header-inner {
       display: flex;
       align-self: flex-start;
@@ -185,7 +80,6 @@ header {
       justify-content: space-between;
       align-items: center;
       flex-shrink: 0;
-      transition: transform 0.2s;
 
       border-radius: 0px 0px 25px 25px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -237,6 +131,24 @@ header {
       }
     }
 
+    /* navigation bar */
+    #navSidebar {
+      left: -406px; // in main.js, we will make this display as flex when the menu button is pressed
+      margin-top: calc(100vh + 88px);
+      width: 406px;
+
+      /* weirdness being applied in the js */
+      /* workaround for now */
+      &.sticky {
+        // margin-top: calc(100vh + 64px);
+        margin-top: calc(100vh + 68px);
+      }
+
+      .hideMe {
+        display: none;
+      }
+    }
+
     /* very very jank weird searchbar code */
     #search-container {
       /* Change the white to any color */
@@ -244,7 +156,7 @@ header {
       input:-webkit-autofill:hover,
       input:-webkit-autofill:focus,
       input:-webkit-autofill:active {
-        -webkit-box-shadow: 0 0 0 30px var(--colorContentContainer) inset !important;
+        -webkit-box-shadow: 0 0 0 30px var(--colorCards) inset !important;
       }
       /*Change text in autofill textbox*/
       input:-webkit-autofill {
@@ -280,6 +192,7 @@ header {
 
           .ph-bold.ph-magnifying-glass {
             font-size: 28px;
+            transition: font-size 0.2s;
           }
         }
       }
@@ -307,7 +220,7 @@ header {
       }
 
       // in theory i would like this to move with the header when the header collapses instead of it transitioning weirdly
-      #results-unfuck {
+      #results-fixstuff {
         z-index: 1;
         padding: 16px;
         margin-left: 24px;
@@ -315,7 +228,7 @@ header {
         margin-top: 22px;
         position: absolute;
 
-        display: none; // in main.js, we will make this display as flex when there are items in #results-unfuck
+        display: none; // in main.js, we will make this display as flex when there are items in #results-fixstuff
         flex-direction: column;
         width: 406px;
         max-height: 408px;
@@ -364,7 +277,8 @@ header {
   }
 
   &.sticky {
-    height: 64px;
+    // height: 64px;
+    height: 68px; // crap?
 
     .logo {
       font-size: 32px;
@@ -373,6 +287,7 @@ header {
 
       img {
         width: 44px;
+        transition: all 0.2s ease-in-out; // may wanna clean this
       }
     }
 
@@ -397,8 +312,9 @@ header {
       padding: 8px 32px;
 
       #search-container {
-        #results-unfuck {
-          margin-top: 12px;
+        #results-fixstuff {
+          // margin-top: 12px;
+          margin-top: 16px; // crap?
           transition: 0.2s;
         }
 
