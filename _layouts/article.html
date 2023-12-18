@@ -7,26 +7,30 @@ layout: "wrapper"
 
 <!-- Main Page -->
 <main>
-  <div id="contentWedge">
-    <h2>Contents</h2>
-    <div class="vertLine"></div>
-    <nav id="wedgeItems">
-      <ol></ol>
-      <!-- In javascript, there will be new items listed here with each <h2> -->
-    </nav>
-  </div>
   <div id="titleContainer">
     <h1>{{ page.title }}</h1>
     <p id="footNote">Written by {{ page.author }}</p>
-    <p id="footNoteRight">
+    <div id="notesContainer">
+      {% include breadcrumbs.html %}
       <a
+        id="footNoteRight"
         href="https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }}"
         target="_blank"
         >Edit This Page!</a
       >
-    </p>
+    </div>
   </div>
   <div class="cardBackground">
+    <div id="contentWedge">
+      <div id="wedgeContainer">
+        <h2>Contents</h2>
+        <hr />
+        <nav id="wedgeItems">
+          <ol></ol>
+          <!-- In javascript, there will be new items listed here with each <h2> -->
+        </nav>
+      </div>
+    </div>
     <div class="card">
       <div class="cardContents">{{ content }}</div>
     </div>

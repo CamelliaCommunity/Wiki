@@ -1,37 +1,34 @@
 <header>
   <div class="header-shared">
-    <h1 class="logo italic">
+    <div id="btnContainer">
+      <button id="hamburgerBtn"><i class="ph-bold ph-list"></i></button>
+    </div>
+    <div class="header-inner">
+      <h1 class="logo">
+        <a href="/index.html">
+          <img src="/assets/images/caramel.png" alt="camellia wiki logo" />
+          Camellia • Wiki
+        </a>
+      </h1>
+      {% include searchbar.html %}
+    </div>
+    <div id="twoBotans">
+      <a id="githubBtn" href="https://github.com/papertek/papertek.github.io" target="_blank"
+        ><i class="ph-bold ph-github-logo"></i
+      ></a>
+      <a id="discordBtn" href="https://discord.com/invite/camellia" target="_blank"
+        ><i class="ph-bold ph-discord-logo"></i
+      ></a>
+    </div>
+    {% include sidebar.html %}
+  </div>
+
+  <!-- <div class="header-mobile-scroll">
+    <h1 class="logo">
       <a href="/index.html">
         <img src="/assets/images/caramel.png" alt="camellia wiki logo" />
         Camellia • Wiki
       </a>
     </h1>
-
-    <nav id="navigationButtons">
-      <div class="buttonDefault specialLine">
-        <a href="/index.html">Articles</a>
-      </div>
-
-      <div class="buttonDefault specialLine">
-        <a href="/camelliaEvents.html">Camellia Events</a>
-      </div>
-
-      <div class="buttonDefault specialLine">
-        <a href="/staffGuidelines.html">Staff Guidelines</a>
-      </div>
-
-      <div class="buttonDefault specialLine">
-        <a href="/tests.html">Site Tests</a>
-      </div>
-    </nav>
-  </div>
-
-  <div class="header-mobile-scroll">
-    <h1 class="logo italic">
-      <a href="/index.html">
-        <img src="/assets/images/caramel.png" alt="camellia wiki logo" />
-        Camellia • Wiki
-      </a>
-    </h1>
-  </div>
+  </div> -->
 </header>

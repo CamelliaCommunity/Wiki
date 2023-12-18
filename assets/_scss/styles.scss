@@ -9,30 +9,17 @@
   transition: $x;
 }
 
-/* Import variables */
-@import "./variables", "./highlights";
-@import "./header/shared";
+/* Import files */
+@import "./variables", "./highlights", "./author", "./modals", "./mediaQueries";
 
-/* Import favorite font */
-@font-face {
-  font-family: "Torus Pro SemiBold";
-  src: url("../fonts/toruspro-semibold.woff2") format("woff2"), url("../fonts/toruspro-semibold.woff") format("woff");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Torus Pro SemiBold Italic";
-  src: url("../fonts/toruspro-semibolditalic.woff2") format("woff2"),
-    url("../fonts/toruspro-semibolditalic.woff") format("woff");
-  font-weight: 600;
-}
+@import "./header/shared", "./titleContainer/shared";
 
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 130px;
+  scroll-padding-top: 87px;
 }
 
 *,
@@ -44,20 +31,20 @@ html {
 }
 
 /* Scrollbar */
-/* Chrome, Safari, Edge */
+/* Common styles for Chrome, Safari, Edge */
 ::-webkit-scrollbar {
-  width: 17px;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 100px;
+  background-color: #3e313b;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--hoverColor);
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
+  background: #7d727a;
+  border: 2px solid #7d727a00;
+  -webkit-border-radius: 100px;
+  background-clip: padding-box;
+  min-height: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -65,51 +52,35 @@ html {
 }
 
 /* Firefox */
-* {
-  scrollbar-color: var(--hoverColor) transparent;
-  scrollbar-width: thin;
-}
+// * {
+//   scrollbar-color: var(--colorPrimary) transparent;
+//   scrollbar-width: thin;
+// }
 
-*::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
+// *::-webkit-scrollbar-thumb {
+//   border-radius: 20px;
+//   border: 6px solid transparent;
+//   background-clip: content-box;
+// }
 
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #ffffff;
-}
+// *::-webkit-scrollbar-thumb:hover {
+//   background-color: #ffffff;
+// }
 
 /* Edge */
-* {
-  -ms-overflow-style: none;
-}
+// * {
+//   -ms-overflow-style: none;
+// }
 
-*::-webkit-scrollbar {
-  width: 17px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: var(--hoverColor);
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-
-*::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background-color: #ffffff;
-}
+// *::-webkit-scrollbar-thumb:hover {
+//   background-color: var(--colorGray);
+// }
 
 body {
   font-family: var(--font-default);
   font-size: 16px;
-  background: linear-gradient(180deg, rgba(246, 65, 141, 0.2) 0%, rgba(48, 37, 41, 0.2) 100%), #111;
-  color: var(--textColorDefault);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, rgba(240, 108, 155, 0.2) 0%, rgba(48, 37, 41, 0.2) 100%), #111;
+  color: var(--colorWhite);
   min-height: 100vh;
 
   -webkit-font-smoothing: subpixel-antialiased;
@@ -124,14 +95,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  h1 {
-    font-family: var(--font-semiBoldItalic);
-    // margin-top: 224px;
-  }
 }
 
-/* center items nested in main tag */
+/* classes for text */
 main .centerItem {
   display: flex;
   justify-content: center;
@@ -139,37 +105,43 @@ main .centerItem {
   flex-wrap: wrap;
 }
 
+main .makeBig {
+  font-size: 25.63px;
+  font-weight: 600;
+}
+
 h1 {
   font-size: 36.49px;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 32.44px;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 28.83px;
+  font-weight: 600;
 }
 
 h4 {
   font-size: 25.63px;
+  font-weight: 600;
 }
 
 h5 {
   font-size: 22.78px;
+  font-weight: 600;
 }
 
 h6 {
   font-size: 20.25px;
+  font-weight: 600;
 }
 
-/* for big titles */
-.pageTitle#smallerFont {
-  font: normal normal 600 32px/21px var(--font-default);
-}
-
-.makeBig {
-  font-size: 32.44px !important;
+p {
+  font-size: 18px;
 }
 
 #navigationButtons {
@@ -190,58 +162,56 @@ h6 {
 
 /* footer */
 footer {
-  background-color: var(--tertiaryColor);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
   margin-top: auto;
-  height: 70px;
+  height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
 }
 
 footer #footerText {
-  font: normal normal 600 24px/28px var(--font-default);
+  font-size: 20.25px;
+  font-style: normal;
 }
 
 /* links */
 a {
-  color: var(--linkColor);
+  color: var(--colorLinks);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--linkHover);
+  color: var(--colorLinksHover);
   text-decoration: none;
 }
 
 /* Fixed button code */
 .buttonDefault a {
-  font-family: var(--font-default);
-  background: var(--primaryColor) 0% 0% no-repeat padding-box;
-  box-shadow: inset 0px -3px 6px #00000029;
-  text-shadow: 0px 3px 6px #00000029;
-  color: var(--textColorDefault);
+  background: var(--colorCardDivisor) 0% 0% no-repeat padding-box;
+  color: var(--colorWhite);
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 25px;
+  font-size: 20.25px;
+  font-weight: 600;
+  border-radius: 15px;
   width: 240px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
+
+  .author {
+    color: var(--colorGray);
+    font-size: 16px;
+    font-weight: 596;
+  }
 }
 
 .buttonDefault a:hover {
-  background: var(--hoverColor) 0% 0% no-repeat padding-box;
-  color: var(--textColorDefault);
-  box-shadow: inset 0px -3px 6px #00000029;
-  text-shadow: 0px 3px 6px #00000029;
-}
-
-.buttonDefault a:active {
-  margin-top: 1px;
+  background: var(--colorCardDivisorHover) 0% 0% no-repeat padding-box;
+  color: var(--colorWhite);
 }
 
 /* adds a little line to the bottom of a button. a little jank but works */
@@ -257,22 +227,41 @@ a:hover {
 
 /* cards */
 .card {
-  background: var(--cardColor) 0% 0% no-repeat padding-box;
-  max-width: 1136px;
-  min-height: 330px;
-  border-radius: 30px;
+  background: var(--colorCards) 0% 0% no-repeat padding-box;
+  max-width: 827px;
+  height: fit-content;
+  border-radius: 35px;
   line-height: 26px;
 }
 
 .miniCard {
-  background: var(--cardColor) 0% 0% no-repeat padding-box;
-  max-width: 556px;
+  background: var(--colorCards) 0% 0% no-repeat padding-box;
+  // max-width: 556px;
+  // max-width: 412px;
+  height: fit-content;
+  block-size: fit-content;
   border-radius: 30px;
   line-height: 26px;
+  margin-block-end: 10px;
+
+  .cardContents p {
+    padding-bottom: 16px;
+  }
+
+  .buttonDefault a {
+    font-style: italic;
+    width: 100%;
+  }
+
+  .buttonDefault {
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-bottom: 32px; // temp
+  }
 }
 
 .miniCard .cardHeader {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .albumContainer {
@@ -284,7 +273,7 @@ a:hover {
     height: 156px;
     margin-left: 32px;
     border-radius: 20px;
-    border: 5px solid var(--borderColor2);
+    border: 5px solid var(--colorBorderTertiary);
   }
 
   .albumContentsContainer {
@@ -318,8 +307,8 @@ a:hover {
 
 blockquote {
   position: relative;
-  background: var(--cardBackgroundColor);
-  border-left: solid 4px var(--tertiaryColor);
+  background: var(--colorCardDivisor);
+  border-left: solid 4px var(--colorSecondary);
   line-height: 1.8;
   border-radius: 10px;
   margin-left: 32px;
@@ -329,7 +318,7 @@ blockquote {
 
   /* we really want to fix this */
   p {
-    font-family: var(--font-semiBoldItalic) !important;
+    font-style: italic;
     padding: 0 1em 1em 1em !important;
   }
 }
@@ -345,32 +334,30 @@ blockquote.caution {
 }
 
 blockquote.tip {
-  border-top: solid 4px var(--secondaryColor);
+  border-top: solid 4px var(--colorSecondary);
   border-left: none;
   background: #b775f06c;
 }
 
 .cardHeader {
-  font-family: var(--font-default);
-  color: var(--textColorDefault);
   background: linear-gradient(
       180deg,
       rgba(102, 31, 87, 0.3) 0%,
       rgba(187, 58, 159, 0.12) 50.52%,
       rgba(217, 130, 198, 0) 100%
     ),
-    var(--tertiaryColor);
+    var(--colorTriary);
   display: flex;
   // border-top: 1px solid var(--borderColor2);
-  border-top: 3px solid var(--borderColor2);
-  border-bottom: 3px solid var(--borderColor2);
-  height: 102px;
+  border-top: 3px solid var(--colorBorderTertiary);
+  border-bottom: 3px solid var(--colorBorderTertiary);
+  height: 84px;
   width: 100%;
 
   &:first-of-type {
-    border-top: 1px solid var(--borderColor2);
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+    border-top: 1px solid var(--colorBorderTertiary);
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
   }
 
   p,
@@ -403,15 +390,25 @@ blockquote.tip {
 
 .card p,
 .miniCard p {
-  font-family: var(--font-default);
-  font-size: 18px;
   padding-left: 48px;
   padding-right: 48px;
   line-height: normal; // remove this later
 }
 
-.card h3,
+.card h3 {
+  margin-left: 32px;
+  margin-right: 32px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+
+  border-bottom: solid 1px var(--colorGray);
+}
+
+/* i didnt want to do this but oh well. */
+/* i dont see another way for now -john */
+/* since minicard is only in the homepage, apply this */
 .miniCard h3 {
+  margin-top: -16px;
   margin-left: 32px;
   margin-bottom: 8px;
 }
@@ -424,14 +421,16 @@ blockquote.tip {
 
 .card h2,
 .miniCard h2 {
-  font-family: var(--font-default);
-  font-size: 32.44px;
-  margin-left: 46px;
+  margin-left: 32px;
+  margin-right: 32px;
+  line-height: initial;
+  overflow: hidden;
+  text-overflow: ellipsis;
   align-self: center;
 }
 
-.miniCard p {
-  padding-bottom: 16px;
+.miniCard:last-child {
+  margin-bottom: 0;
 }
 
 .card p:first-child {
@@ -443,15 +442,109 @@ li p {
   padding-right: 0 !important;
 }
 
+/* lists */
 .card ol,
 .card ul {
-  padding-left: 56px;
-  padding-right: 56px;
-  padding-bottom: 32px;
-  line-height: 26px;
+  // padding: 10px;
+  padding-left: 0;
+  list-style-type: none;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  background: var(--colorCardDivisor);
+  border-radius: 10px;
 
-  li:last-child p {
-    padding-bottom: 0;
+  li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid var(--colorGray);
+
+    a {
+      display: contents;
+    }
+  }
+
+  li::before {
+    content: "\25CF";
+    align-self: flex-start;
+    font-size: 10px;
+    padding-right: 10px;
+    left: 0;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+/* add a counter to ordered lists */
+.card {
+  ol {
+    counter-reset: item;
+
+    li::before {
+      font-size: 18px;
+      content: counter(item) "\002E";
+      counter-increment: item;
+    }
+  }
+}
+
+.miniCard ol,
+.miniCard ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+
+  li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    line-height: 26px;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+
+    a {
+      display: contents;
+    }
+  }
+
+  li::before {
+    content: "\25CF";
+    font-size: 10px;
+    padding-right: 10px;
+    color: var(--colorLinks);
+    left: 0;
+  }
+
+  li:first-child {
+    padding-top: 0;
+  }
+  li:last-child {
+    padding-bottom: 32px;
+  }
+}
+
+/* add a counter to ordered lists */
+.miniCard {
+  ol {
+    counter-reset: item;
+
+    li::before {
+      font-size: 18px;
+      content: counter(item) "\002E";
+      counter-increment: item;
+    }
   }
 }
 
@@ -461,8 +554,8 @@ li p {
 .miniCard h2:before {
   content: "";
   display: inline-block;
-  background: var(--secondaryColor) 0% 0% no-repeat padding-box;
-  height: 22px;
+  background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+  height: 20px;
   margin-right: 8px;
   width: 4px;
   position: inherit;
@@ -475,8 +568,8 @@ li p {
 .miniCard h3:before {
   content: "";
   display: inline-block;
-  background: var(--secondaryColor) 0% 0% no-repeat padding-box;
-  height: 20px;
+  background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+  height: 17px;
   margin-right: 8px;
   width: 4px;
   position: inherit;
@@ -493,27 +586,27 @@ li p {
 }
 
 .vertLine {
-  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
+  background: var(--colorGray) 0% 0% no-repeat padding-box;
   width: auto;
   margin-left: 8px;
   margin-right: 8px;
-  height: 3px;
+  height: 1px;
 }
 
 /* lets dupe vertLine because there *is* a way to change its color */
 hr {
-  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
+  background: var(--colorGray) 0% 0% no-repeat padding-box;
   width: auto;
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 8px;
-  height: 2px;
+  height: 1px;
   border: 0;
 }
 
 .horiLine {
-  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
-  width: 2px;
+  background: var(--colorGray) 0% 0% no-repeat padding-box;
+  width: 1px;
   height: auto;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -521,7 +614,7 @@ hr {
 }
 
 .sectionLine {
-  background: var(--cardLinesColor) 0% 0% no-repeat padding-box;
+  background: var(--colorGray) 0% 0% no-repeat padding-box;
   width: auto;
   margin-top: 8px;
   margin-left: 8px;
@@ -529,107 +622,103 @@ hr {
   height: 2px;
 }
 
-/* grid layout. the code is not THAT stupid. i might fix it up later. 
-i was mostly experimenting with figma design */
-.gridLayout {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 32px;
-}
+/* masonry layout. this is cool */
+.masonryLayout {
+  --masonry-gap: 10px;
+  --masonry-brick-width: 304px;
+  column-gap: var(--masonry-gap);
+  column-fill: initial;
+  column-width: var(--masonry-brick-width);
 
-.gridLayout .card {
-  grid-column: 1 / span 2;
-  margin: 0;
-  padding: 0;
-  line-height: normal;
+  > *:not(.card) {
+    break-inside: avoid;
+    margin-bottom: var(--masonry-gap);
+  }
 
-  .cardHeader {
-    margin-bottom: 48px;
+  @supports (grid-template-rows: masonry) {
+    display: grid;
+    gap: var(--masonry-gap);
+    grid-template-rows: masonry;
+    grid-template-columns: repeat(auto-fill, minmax(var(--masonry-brick-width), 1fr));
+    align-tracks: stretch;
+
+    > *:not(.card) {
+      margin-bottom: initial;
+    }
   }
 }
 
 /* jank ass wedge code */
 #contentWedge {
-  position: fixed;
-  display: flex;
+  flex-shrink: 0;
   flex-direction: column;
-  background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
-  border: 3px solid var(--tertiaryColor);
-  border-left: none;
-  border-bottom: none;
-  border-radius: 0 30px 0 0;
+  background: var(--colorCardDivisor);
+  border-radius: 35px;
   width: 283px;
-  height: 680px;
-  // min-height: 1056px;
-  /* keep it to the bottom left of page */
-  left: 0;
-  bottom: 0;
-  // bottom: 80px;
-  // bottom: -374px;
-  opacity: 60%;
-  @include transition(opacity 0.25s ease-in-out);
-  z-index: 1;
 
-  h2 {
-    padding-top: 16px;
-    padding-left: 16px;
-  }
+  #wedgeContainer {
+    position: sticky;
+    padding: 16px;
 
-  .vertLine {
-    margin-top: 10px;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
+    hr {
+      margin-top: 4px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      margin-right: 0;
+      height: 2px;
+    }
 
-  &:hover {
-    opacity: 100%;
-  }
+    #wedgeItems {
+      display: block;
+      overflow-y: scroll;
+      overflow: auto;
+      font-size: 18px;
+      font-weight: 500;
+      max-height: calc(100vh - 144px);
 
-  #wedgeItems {
-    overflow-y: scroll;
-    overflow: auto;
-    font-size: 18px;
-    height: 100%;
-    padding: 16px 8px 16px 34px;
+      ol {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-weight: 600;
 
-    ol {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
+        li {
+          margin-left: 1em;
 
-      li {
-        &:last-child .vertLine {
-          display: none;
-        }
+          &::marker {
+            color: var(--colorLinks);
+            @include transition(all 0.2s ease-in-out);
+          }
 
-        &::marker {
-          color: var(--linkColor);
-          @include transition(all 0.2s ease-in-out);
-        }
+          &:hover::marker {
+            color: var(--colorLinksHover);
+          }
 
-        &:hover::marker {
-          color: var(--linkHover);
-        }
+          &.active::marker {
+            color: white;
+          }
 
-        &.active::marker {
-          color: white;
-        }
+          ul {
+            font-weight: 500;
+            margin-top: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
 
-        ul {
-          margin-top: 8px;
-          padding-left: 16px;
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-
-          li {
-            &::marker {
-              // yes these spaces are supposed to be here
-              content: "•  ";
+            li {
+              &::marker {
+                // yes these spaces are supposed to be here
+                content: "•  ";
+              }
             }
           }
         }
       }
+    }
+
+    &.sticky {
+      top: 64px;
+      position: sticky;
     }
   }
 }
@@ -640,7 +729,88 @@ i was mostly experimenting with figma design */
 }
 
 #wedgeItems li.active > a {
-  color: var(--textColorDefault);
+  color: var(--colorWhite);
+}
+
+/* homepage content wedge */
+#navWedge {
+  flex-shrink: 0;
+  flex-direction: column;
+  background: linear-gradient(
+      180deg,
+      rgba(246, 65, 141, 0) 0%,
+      rgba(246, 65, 141, 0.08) 51.04%,
+      rgba(91, 63, 75, 0.2) 100%
+    ),
+    var(--colorCards);
+  border-radius: 35px;
+  width: 283px;
+
+  #navWedgeContainer {
+    position: sticky;
+    padding: 16px;
+
+    hr {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: 0;
+      margin-right: 0;
+      height: 2px;
+    }
+
+    #navWedgeItems {
+      display: block;
+      overflow-y: scroll;
+      overflow: auto;
+      font-size: 18px;
+      font-weight: 500;
+      max-height: calc(100vh - 144px);
+
+      h3:first-child {
+        margin-top: 0;
+      }
+
+      h3 {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      h3::before {
+        content: "";
+        display: inline-block;
+        background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+        height: 17px;
+        margin-right: 8px;
+        width: 4px;
+        position: inherit;
+        border-radius: 2px;
+      }
+
+      ol {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        overflow: auto;
+
+        .buttonDefault a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          height: 100%;
+          width: 100%;
+          padding: 10px;
+          gap: 8px;
+        }
+      }
+    }
+
+    &.sticky {
+      top: 64px;
+      position: sticky;
+    }
+  }
 }
 
 /* scroll to top button */
@@ -657,10 +827,11 @@ i was mostly experimenting with figma design */
   z-index: 1;
 
   .buttonDefault a {
+    color: var(--colorWhite);
     font-size: 32px;
     text-align: center;
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
     border-radius: 40px;
   }
 
@@ -687,84 +858,112 @@ i was mostly experimenting with figma design */
 }
 
 mark {
-  color: var(--highlightColor);
+  color: var(--colorSecondary);
   background-color: rgba(255, 255, 255, 0);
 }
 
 .italic,
 em {
-  font-family: var(--font-semiBoldItalic);
+  display: contents;
+  font-style: italic;
 }
 
 /* card background, or content, whatever you want to call it */
 .cardBackground {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  background: var(--cardBackgroundColor) 0% 0% no-repeat padding-box;
+  flex-direction: row;
+  gap: 10px;
+  flex-shrink: 0;
+
+  background: var(--colorContentContainer) 0% 0% no-repeat padding-box;
   box-sizing: border-box;
-  border: 3px solid var(--tertiaryColor);
+  border: 4px solid var(--colorTriary);
   border-radius: 40px;
-  padding: 40px;
+  padding: 48px;
   margin-bottom: 72px;
   min-height: 727px;
 }
 
 /* footnote, or the author */
 
-#titleContainer {
-  display: flex;
-  flex-direction: column;
-  // background: red;
-  min-width: 76rem;
-  // min-height: 130px;
-  margin-top: 207px;
-
-  h1 {
-    align-self: center;
-    margin-bottom: 16px;
-  }
-
-  #footNote {
-    margin-bottom: 30px;
-    color: lightgray;
-    align-self: center;
-  }
-
-  /* footnote but on the right side */
-  #footNoteRight {
-    color: lightgray;
-    align-self: flex-end;
-    margin-right: 42px;
-    margin-bottom: 8px;
-  }
-}
-
-#notAFullTitleContainer h1 {
-  margin-top: 224px;
-  margin-bottom: 77px;
-}
-
 /* this is for markdown footnotes */
 .footnote {
   display: inline;
-  color: var(--highlightColor);
-  background-color: var(--pageBackground);
+  color: var(--colorSecondary);
+  // background-color: var(--colorContentContainer);
   border-radius: 10px;
-  padding: 4px;
+  // padding: 4px;
+  // padding-left: 4px;
+  // padding-right: 4px;
   padding-bottom: 0px;
   padding-top: 0px;
 }
 
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.5em;
+}
+
+.footnotes {
+  ol li p,
+  ul li p {
+    padding-bottom: 0;
+  }
+
+  ol li,
+  ul li {
+    padding-left: 0;
+  }
+
+  li::before {
+    display: none;
+  }
+
+  ol {
+    counter-reset: item;
+
+    li p::before {
+      font-size: 18px;
+      content: counter(item) "\002E";
+      counter-increment: item;
+    }
+  }
+
+  li p {
+    font-style: italic;
+    position: relative;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid var(--colorGray);
+  }
+
+  li p::before {
+    content: "\25CF";
+    font-size: 12px;
+    padding-right: 10px;
+    // position: absolute;
+    left: 0;
+  }
+
+  li p:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
 /* pictures */
 .picture figure {
-  background: var(--tertiaryColor) 0% 0% no-repeat padding-box;
+  background: var(--colorTriary) 0% 0% no-repeat padding-box;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   max-width: 315px;
-  border: 4px solid var(--borderColor);
+  border: 4px solid var(--colorBorder);
   border-radius: 10px;
   margin-bottom: 24px;
   /* give room if last element */
@@ -772,7 +971,7 @@ em {
 }
 
 .picture img {
-  border: 4px solid var(--secondaryColor);
+  border: 4px solid var(--colorSecondary);
   border-radius: 10px;
   margin-top: 24px;
   margin-left: 40px;
@@ -780,14 +979,7 @@ em {
   @include transition(all 0.3s ease-in-out);
 }
 
-.picture img:hover {
-  border: 4px solid var(--hoverColor);
-  transform: scale(1.02);
-  overflow: hidden;
-}
-
 .picture figcaption {
-  font: normal normal 600 32px/35px var(--font-default);
   text-align: center;
   margin-top: 7px;
   margin-bottom: 7px;
@@ -799,198 +991,71 @@ em {
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 24px;
-  /* row-gap: 0px; */
-}
-
-/* jank width and height for big images */
-/* needs to be removed eventually */
-.resizeImage figure img {
-  max-width: 78%;
-  max-height: 78%;
-}
-
-/* legacy code for resizing images */
-/* needs to be removed eventually */
-.sizingCSS {
-  max-width: 78%;
-  max-height: 78%;
 }
 
 /* markdown support for images */
-
 // this class is only applied in the javascript
 figure.centerImage {
   float: none;
   text-align: center;
-  margin-left: 0;
+  margin-left: 32px;
+  margin-right: 32px;
+  padding: 6px;
+  border: 2px dashed var(--colorGray);
+  border-radius: 10px;
 
   figcaption {
+    font-weight: 500;
     margin-bottom: 0;
     text-align: center;
+
+    background: var(--colorCardDivisor);
+    border-radius: 6px;
+    margin-top: -3px; // small hack
   }
 
   img {
-    border: 4px solid var(--secondaryColor);
-    border-radius: 10px;
-    // max-width: 50%; // We are going to need a standard of width and height images
-    // let's comment this out for now
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
     @include transition(all 0.3s ease);
   }
 
   img:hover {
-    border: 4px solid var(--hoverColor);
-    transform: scale(1.01);
+    opacity: 0.7;
   }
 }
 
 figure.floatImage {
   float: right;
   text-align: center;
-  margin-left: 24px;
+  margin-left: 10px;
+  margin-bottom: 32px;
+  padding: 6px 6px 6px 6px;
+  border: 2px dashed var(--colorGray);
+  border-radius: 10px;
+  width: 30%;
+  height: 30%;
 
   figcaption {
-    margin-bottom: 12px;
+    font-weight: 500;
     text-align: center;
+
+    background: var(--colorCardDivisor);
+    border-radius: 6px;
+    margin-top: -3px; // small hack
   }
 
   img {
-    border: 4px solid var(--secondaryColor);
-    border-radius: 10px;
-    // max-width: 50%; // We are going to need a standard of width and height images
-    // let's comment this out for now
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
     @include transition(all 0.3s ease);
   }
 
   img:hover {
-    border: 4px solid var(--hoverColor);
-    transform: scale(1.01);
-  }
-}
-
-/* smaller screens/smartphones (to be removed or reworked later) */
-
-@media screen and (max-width: 1416px) {
-  /* since phones are weird there technically isnt hovering */
-  #contentWedge {
-    height: 472px;
-
-    &:hover {
-      opacity: 60%;
-    }
-  }
-
-  #scrollToTop:hover {
-    opacity: 60%;
-  }
-
-  /* noodles */
-  img:hover {
-    border: 4px solid var(--secondaryColor) !important;
-    transform: none !important;
-  }
-}
-
-/* responsive for picture wrap pages (and grid layout) */
-@media screen and (max-width: 1270px) {
-  #flexyCard {
-    flex-direction: column;
-  }
-
-  #aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #horiLine {
-    display: none;
-  }
-
-  .gridLayout {
-    display: flex;
-    flex-direction: column;
-
-    .miniCard {
-      max-width: 1136px;
-      min-height: 330px;
-    }
-  }
-
-  #notAFullTitleContainer {
-    text-align: center;
-  }
-
-  #titleContainer {
-    text-align: center;
-    min-width: auto;
-
-    #footNoteRight {
-      align-self: center;
-      margin-right: 0;
-    }
-  }
-}
-
-/* responsive stuff. yay! */
-@media screen and (max-width: 1074px) {
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  figure.floatImage {
-    margin-left: 8px;
-  }
-
-  #contentWedge {
-    width: 174px;
-  }
-
-  /* give codeblocks a scrollbar */
-  div pre.highlight {
-    overflow-y: auto;
-  }
-
-  .card {
-    .cardContents {
-      width: 100%;
-    }
-  }
-
-  .cardBackground {
-    width: 100%;
-    padding: 8px;
-  }
-
-  .cardHeader {
-    flex-wrap: wrap;
-    min-height: 102px;
-    height: auto;
-
-    h2 {
-      align-self: center;
-      margin-left: 16px;
-      margin-right: 16px;
-    }
-
-    a {
-      align-self: center;
-      justify-self: flex-end;
-    }
-
-    a:first-of-type {
-      margin-left: 4px;
-    }
-
-    a:last-of-type {
-      margin-right: 4px;
-    }
-  }
-}
-
-/* temporary thing until the hamburger */
-@media screen and (max-width: 632px) {
-  #contentWedge {
-    display: none;
+    opacity: 0.7;
   }
 }

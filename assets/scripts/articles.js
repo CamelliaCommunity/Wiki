@@ -79,3 +79,18 @@ function createWedge() {
     lastHeader = null;
   }
 }
+
+const wedgeContainer = document.querySelector('#wedgeContainer');
+// Add the sticky class to content wedge when user scrolls
+// Created by matt
+const pinWedgeContent = () => {
+  wedgeContainer.classList.toggle(
+      'sticky', main.getBoundingClientRect().top <= 0);
+
+  // Check if user has scrolled a certain amount of pixels from the top
+  if (window.scrollY <= 298) {
+    wedgeContainer.classList.remove('sticky');
+  }
+};
+
+window.addEventListener('scroll', pinWedgeContent);
