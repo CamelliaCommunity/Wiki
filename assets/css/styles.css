@@ -536,7 +536,7 @@ div.highlight {
     width: 100%;
   }
 }
-/* smaller screens/smartphones (to be removed or reworked later) */
+/* smaller screens/smartphones (to be reworked later) */
 /* everything under important is temporary. we'll split stuff later in another update */
 /* responsive for picture wrap pages (and grid layout) */
 @media screen and (max-width: 1226px) {
@@ -746,7 +746,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
  * These files are split like this so 
  * that we don't have to spam !important
  */
-@media screen and not (max-width: 1140px) {
+@media screen and not (max-width: 1230px) {
   header {
     height: 88px;
   }
@@ -835,7 +835,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
     transition: all 0.2s ease-in-out;
   }
 }
-@media screen and (not (max-width: 1140px)) and (max-width: 1500px) {
+@media screen and (not (max-width: 1230px)) and (max-width: 1500px) {
   header .header-shared h1 a {
     padding: 0px;
     border: 0px solid var(--borderColor);
@@ -851,7 +851,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
     width: 150px;
   }
 }
-@media screen and not (max-width: 1140px) {
+@media screen and not (max-width: 1230px) {
   header .header-shared #navSidebar {
     left: -406px;
     margin-top: calc(100vh + 88px);
@@ -1010,7 +1010,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1230px) {
   /* john note: none of this is updated with the current header design */
   /* we still need a proper mobile header design! */
   header {
@@ -1159,7 +1159,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
   margin-bottom: 76px;
 }
 
-@media screen and not (max-width: 1140px) {
+@media screen and not (max-width: 1230px) {
   #titleContainer {
     margin-top: 164px;
   }
@@ -1195,7 +1195,7 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
     font-weight: 600;
   }
 }
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1230px) {
   #notAFullTitleContainer {
     text-align: center;
   }

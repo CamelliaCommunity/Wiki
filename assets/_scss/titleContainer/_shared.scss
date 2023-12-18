@@ -55,10 +55,10 @@
   margin-bottom: 76px;
 }
 
-@media screen and not (max-width: 1140px) {
+@media screen and not (max-width: 1230px) {
   @import "./desktop.scss";
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1230px) {
   @import "./mobile.scss";
 }

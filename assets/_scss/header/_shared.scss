@@ -172,10 +172,10 @@ header {
  * that we don't have to spam !important
  */
 
-@media screen and not (max-width: 1140px) {
+@media screen and not (max-width: 1230px) {
   @import "./desktop";
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1230px) {
   @import "./mobile";
 }
