@@ -132,35 +132,35 @@ I have noticed staff members complain and some people being afraid of becoming s
   
 *Please be sure to mention any event handling so other staff could know! Events should also be scheduled days in advance so more members can notice something is going on!*
 
-*If you need an idea on where to create events. Scroll to the top of the channel list and locate the Event Button. You can see a screenshot example below.*
+*If you need an idea of where to create events. Scroll to the top of the channel list and locate the Event Button. You can see a screenshot example below.*
 
 ![Click the Event Button!](/assets/images/staffGuidelines/eventstuf.png)
 {: .centerItem }
 
-*What Discord events do is basically create a calender date for an event start date and an event ending date. It also adjusts to timezones, making things easier for everyone!*
+*Discord events create a calendar date for an event start date and an event ending date. It also adjusts to time zones, making things easier for everyone!*
 
 ### Event Posts
 
-If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, with each event, the general idea of event hosting should be as followed.
+If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, the general idea of event hosting should be as follows. Please keep a mental note of each contribution you've made. These contributions will be asked for when necessary.
 
 #### Events: Hosting Requirements
 
-* Make sure events are organized and planned ahead, be sure you are appealing to community interests.
-* Promote and participate in the event you're hosting, this is get community members interested in them.
+* Make sure events are organized and planned. Be sure you are appealing to community interests.
+* Promote and participate in the event you're hosting. This is to get community members interested in them.
 * Make events easy to participate in and as welcoming as possible. Your goal is to create retention!
 
 #### Events: Camellia Specific
 
-When Camellia does something awesome, it is preferred to create a Discord event for it. In this section of the guidelines there should be a image demonstrating how to create Discord events.
+When Camellia does something awesome, it is preferred to create a Discord event so it can be marked in the calendar. There should be an image demonstrating how to create Discord events above.
 
-We keep an eye out for these specifically.
+When making events about Camellia, you should keep an eye out for these.
 
 * Camellia song premieres (on his YouTube channel)
 * Camellia DJ sets/events
 * Music fests featuring Camellia (VRChat, Comiket, etc.)
 * Anything involving Camellia!
 
-> Staff members are expected to contribute with events at least once every 4 months. This is to ensure that consistent contribution requirements are met.
+> Staff members are expected to contribute to events at least once every 4 months. This is to ensure that consistent contribution requirements are met.
 {: .disclaimer }
 
 ### Announcement posts
