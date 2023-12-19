@@ -23,15 +23,12 @@ mistakes.*
 not, the guidelines are updated to resolve mistakes we have made
 in the past.*
 
-*Any significant instance of drama, discussion, and feedback is
-considered when writing these guidelines. If you would like to be
-a part of the staff team, you must follow these guidelines to a
-degree. If you would like to contribute, that's great! Leave your
-feedback in [#💡server-direction](https://discord.com/channels/435720333786480641/1034240760154947584)
-where it will be considered.
-If you would like to apply for Helper, refer here. Have fun reading~*
+*Any significant instance of drama, discussion, and feedback is considered when writing these guidelines. If you would like to be a part of the staff team, you must follow these guidelines to a degree. If you would like to contribute, that's great! Leave your feedback in [#💡server-direction](https://discord.com/channels/435720333786480641/1034240760154947584) where it will be considered. Have fun reading~*
 
-*A reminder that anything said in the staff chats is to be kept in the staff chats unless stated otherwise by an Admin. Failure to do so will lead to demotion.*
+> A reminder that anything said in the staff chats is to be kept in the staff chats unless stated otherwise by an Admin. Failure to do so will lead to demotion.
+{: .caution }
+> All staff must engage with server members or document Camellia activities to maintain a healthy community and their position.
+{: .disclaimer }
 
 ## Part 1: The Dos
 
@@ -48,7 +45,7 @@ you look stupid and does not fall within the ideals of the staff team. Remind yo
 you need help with moderating. The staff team looks for
 consistent contribution, not overloaded. Make sure to contact another staff member if you need to.
 1. Try to mention your actions and anything relevant regarding a
-particular member and/or punishments. This is for transparency's sake.
+particular member, events, and/or punishments. This is for transparency's sake.
 1. Listen to the room in certain situations; forcefully changing a
 sensitive topic in a channel will only leave people confused and the situation unresolved. Your job is to please all parties. Only in extreme cases should sensitive topics be forcefully shifted.
 1. Political/religious talk is not allowed on the main channels.
@@ -143,6 +140,9 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, the general idea of event hosting should be as follows. Please keep a mental note of each contribution you've made. These contributions will be asked for when necessary.
 
+> To submit a contribution form, please refer to [this link](https://forms.gle/EdpTu9BF3BtdYgm5A).
+{: .tip }
+
 #### Events: Hosting Requirements
 
 * Make sure events are organized and planned. Be sure you are appealing to community interests.
@@ -187,6 +187,9 @@ As a part of the staff team it's important to take note of how the promotion pro
 
 After two warning messages, it's guaranteed demotion on the third!
 
+> To submit a staff application, please refer to [this link](https://forms.gle/czoe1Eb843SXanGr8).
+{: .tip }
+
 ### Secondary Roles
 
 #### Probationary and Trial Roles
@@ -204,6 +207,9 @@ After two warning messages, it's guaranteed demotion on the third!
 #### Community Contributor Role
 
 This role is given to members who were selected from the Community Contributor Applications. Community Contributors are recommended to follow this criteria.
+
+> To submit a Contributor application, please refer to [this link](https://forms.gle/qbtPq3nVck9S2z426).
+{: .tip }
 
 * Review server directions and feedback for understanding on what the community wants/needs.
 * Read and review the [event]({{ site.baseurl }}#event-posts) posts section.
