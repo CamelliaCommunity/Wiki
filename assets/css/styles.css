@@ -1275,6 +1275,21 @@ main .centerItem {
   align-items: center;
   flex-wrap: wrap;
 }
+main .centerItem figure {
+  align-self: center;
+  margin-bottom: 0;
+}
+
+main .itemWithSmallFigure {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main .itemWithSmallFigure figure {
+  width: 70%;
+  align-self: center;
+  margin-bottom: 0;
+}
 
 main .makeBig {
   font-size: 25.63px;
