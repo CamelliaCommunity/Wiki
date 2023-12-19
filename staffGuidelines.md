@@ -138,7 +138,7 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 ### Event Posts
 
-If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, the general idea of event hosting should be as follows. Please keep a mental note of each contribution you've made. These contributions will be asked for when necessary.
+If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, the general idea of event hosting should be as follows. Please keep a mental note of each contribution you've made. These contributions will be asked for when necessary and are usually asked for every 4 months.
 
 > To submit a contribution form, please refer to [this link](https://forms.gle/EdpTu9BF3BtdYgm5A).
 {: .tip }
