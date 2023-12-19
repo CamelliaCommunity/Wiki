@@ -1436,6 +1436,7 @@ a:hover {
   border-radius: 30px;
   line-height: 26px;
   margin-block-end: 10px;
+  padding-bottom: 32px;
 }
 .miniCard .cardContents p {
   padding-bottom: 16px;
@@ -1447,7 +1448,6 @@ a:hover {
 .miniCard .buttonDefault {
   margin-left: 32px;
   margin-right: 32px;
-  padding-bottom: 32px;
 }
 
 .miniCard .cardHeader {
@@ -1574,11 +1574,10 @@ blockquote.tip {
   border-bottom: solid 1px var(--colorGray);
 }
 
-/* i didnt want to do this but oh well. */
-/* i dont see another way for now -john */
+/* its pretty weird to look at for now but it works -john */
 /* since minicard is only in the homepage, apply this */
 .miniCard h3 {
-  margin-top: -16px;
+  margin-top: 16px;
   margin-left: 32px;
   margin-bottom: 8px;
 }
@@ -1668,7 +1667,6 @@ li p {
   list-style-type: none;
   margin-left: 32px;
   margin-right: 32px;
-  margin-bottom: 32px;
 }
 .miniCard ol li,
 .miniCard ul li {
@@ -1699,7 +1697,7 @@ li p {
 }
 .miniCard ol li:last-child,
 .miniCard ul li:last-child {
-  padding-bottom: 32px;
+  padding-bottom: 0;
 }
 
 /* add a counter to ordered lists */
