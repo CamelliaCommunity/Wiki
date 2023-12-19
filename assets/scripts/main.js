@@ -58,22 +58,23 @@ h2Elements.forEach((h2) => {
 // We will also look for images within figures, if the image is wider than
 // 370 pixels, it will remove the float and margins.
 
-document.addEventListener('DOMContentLoaded', () => {
-  // a better way of doing this. maybe. - thecodingguy ('for' tip provided by
-  // jiminp)
-  for (const image of document.querySelectorAll('p > img')) {
-    const figure = document.createElement('figure');
-    const figcaption = document.createElement('figcaption');
-    figcaption.textContent = image.alt;
+// we were going to use an event listener for page content loaded but it doesnt
+// work properly - john
 
-    figure.appendChild(image.cloneNode(true));
-    figure.appendChild(figcaption);
+// a better way of doing this. maybe. - thecodingguy ('for'
+// tip provided by jiminp)
+for (const image of document.querySelectorAll('p > img')) {
+  const figure = document.createElement('figure');
+  const figcaption = document.createElement('figcaption');
+  figcaption.textContent = image.alt;
 
-    figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
+  figure.appendChild(image.cloneNode(true));
+  figure.appendChild(figcaption);
 
-    image.replaceWith(figure);
-  };
-});
+  figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
+
+  image.replaceWith(figure);
+};
 
 // searchbar code for hiding and showing search container
 // made by papertek and reinoblassed, fixed by thecodingguy
@@ -154,61 +155,61 @@ window.addEventListener('scroll', function() {
  * https://www.w3schools.com/howto/howto_css_modal_images.asp
  * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img */
 
-document.addEventListener('DOMContentLoaded', () => {
-  // Get all elements with the class .cardContents
-  const cardContentsElements = document.querySelectorAll('.cardContents');
 
-  // Iterate through each .cardContents element
-  cardContentsElements.forEach((cardContentsElement) => {
-    // Get all images within the current .cardContents element
-    const images = cardContentsElement.querySelectorAll('img');
+// Get all elements with the class .cardContents
+const cardContentsElements = document.querySelectorAll('.cardContents');
 
-    // Iterate through each image and assign a unique ID
-    images.forEach((image, index) => {
-      // Generate unique IDs for the modal and its components
-      const uniqueModalId = `myModal${index}`;
-      const uniqueImgId = `img${index}`;
-      const uniqueCaptionId = `caption${index}`;
+// we were going to use an event listener for page content loaded but it doesnt
+// work Iterate through each .cardContents element
+cardContentsElements.forEach((cardContentsElement) => {
+  // Get all images within the current .cardContents element
+  const images = cardContentsElement.querySelectorAll('img');
 
-      // Assign the unique IDs to the image and modal components
-      image.id = uniqueImgId;
+  // Iterate through each image and assign a unique ID
+  images.forEach((image, index) => {
+    // Generate unique IDs for the modal and its components
+    const uniqueModalId = `myModal${index}`;
+    const uniqueImgId = `img${index}`;
+    const uniqueCaptionId = `caption${index}`;
 
-      // Create the modal, image, and caption elements
-      const modal = document.createElement('div');
-      modal.id = uniqueModalId;
-      modal.classList.add('modal');
+    // Assign the unique IDs to the image and modal components
+    image.id = uniqueImgId;
 
-      const modalImg = document.createElement('img');
-      modalImg.classList.add(
-          'modal-content');  // Apply the 'modal-content' class
+    // Create the modal, image, and caption elements
+    const modal = document.createElement('div');
+    modal.id = uniqueModalId;
+    modal.classList.add('modal');
 
-      const captionText = document.createElement('div');
-      captionText.id = uniqueCaptionId;
-      captionText.classList.add('caption');  // Apply the 'caption' class
+    const modalImg = document.createElement('img');
+    modalImg.classList.add('modal-content');  // Apply the 'modal-content' class
 
-      // Set up the modal elements
-      modal.appendChild(modalImg);
-      modal.appendChild(captionText);
+    const captionText = document.createElement('div');
+    captionText.id = uniqueCaptionId;
+    captionText.classList.add('caption');  // Apply the 'caption' class
 
-      // Append the modal to the document body
-      document.body.appendChild(modal);
+    // Set up the modal elements
+    modal.appendChild(modalImg);
+    modal.appendChild(captionText);
 
-      // Add a click event listener to each image
-      image.onclick = function() {
-        const modal = document.getElementById('myModal');
-        const modalImg = document.getElementById('imageModal');
-        const captionText = document.getElementById('caption');
+    // Append the modal to the document body
+    document.body.appendChild(modal);
 
-        // Set the modal content based on the clicked image
-        modalImg.src = image.src;
-        captionText.innerHTML = image.alt;
+    // Add a click event listener to each image
+    image.onclick = function() {
+      const modal = document.getElementById('myModal');
+      const modalImg = document.getElementById('imageModal');
+      const captionText = document.getElementById('caption');
 
-        // Set the modal to display
-        modal.style.display = 'block';
-      };
-    });
+      // Set the modal content based on the clicked image
+      modalImg.src = image.src;
+      captionText.innerHTML = image.alt;
+
+      // Set the modal to display
+      modal.style.display = 'block';
+    };
   });
 });
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName('close')[0];
