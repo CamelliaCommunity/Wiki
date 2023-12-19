@@ -143,6 +143,9 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, the general idea of event hosting should be as follows. Please keep a mental note of each contribution you've made. These contributions will be asked for when necessary.
 
+> To submit a contribution form, please refer to [this link](https://forms.gle/EdpTu9BF3BtdYgm5A).
+{: .tip }
+
 #### Events: Hosting Requirements
 
 * Make sure events are organized and planned. Be sure you are appealing to community interests.
@@ -187,6 +190,9 @@ As a part of the staff team it's important to take note of how the promotion pro
 
 After two warning messages, it's guaranteed demotion on the third!
 
+> To submit a staff application, please refer to [this link](https://forms.gle/czoe1Eb843SXanGr8).
+{: .tip }
+
 ### Secondary Roles
 
 #### Probationary and Trial Roles
@@ -204,6 +210,9 @@ After two warning messages, it's guaranteed demotion on the third!
 #### Community Contributor Role
 
 This role is given to members who were selected from the Community Contributor Applications. Community Contributors are recommended to follow this criteria.
+
+> To submit a Contributor application, please refer to [this link](https://forms.gle/qbtPq3nVck9S2z426).
+{: .tip }
 
 * Review server directions and feedback for understanding on what the community wants/needs.
 * Read and review the [event]({{ site.baseurl }}#event-posts) posts section.
