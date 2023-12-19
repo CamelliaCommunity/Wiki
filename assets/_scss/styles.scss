@@ -103,6 +103,23 @@ main .centerItem {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  figure {
+    align-self: center;
+    margin-bottom: 0;
+  }
+}
+
+main .itemWithSmallFigure {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  figure {
+    width: 70%; // maybe bad thing?
+    align-self: center;
+    margin-bottom: 0;
+  }
 }
 
 main .makeBig {

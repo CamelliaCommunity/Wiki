@@ -128,32 +128,40 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 ## Part 5: Events and Announcements
 
-*Creating events should be easy to do; keep in mind, though, it's ideal to have specific events hosted when a new Camellia song premieres or an event Camellia is featured in.*  
+*Creating events should be easy to do; keep in mind, though, it's ideal to have Discord events hosted when a new Camellia song premieres or an event Camellia is featured in.*  
   
-*Please be sure to mention any event handling so it could be under the radar! Events should also be scheduled days in advance so more members can notice something is going on!*
+*Please be sure to mention any event handling so other staff could know! Events should also be scheduled days in advance so more members can notice something is going on!*
 
-### Event posts
+*If you need an idea on where to create events. Scroll to the top of the channel list and locate the Event Button. You can see a screenshot example below.*
 
-#### Events: What's considered
+![Click the Event Button!](/assets/images/staffGuidelines/eventstuf.png)
+{: .centerItem }
 
-* Server game nights
-* Server watch parties (for Camellia streams, sets, etc.)
-* Server milestones, challenges, etc.
-* Q&A sessions
+*What Discord events do is basically create a calender date for an event start date and an event ending date. It also adjusts to timezones, making things easier for everyone!*
 
-#### Events: Important events to create
+### Event Posts
 
-* Camellia song premieres
-* Camellia sets
-* Music fests featuring Camellia
+If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, with each event, the general idea of event hosting should be as followed.
+
+#### Events: Hosting Requirements
+
+* Make sure events are organized and planned ahead, be sure you are appealing to community interests.
+* Promote and participate in the event you're hosting, this is get community members interested in them.
+* Make events easy to participate in and as welcoming as possible. Your goal is to create retention!
+
+#### Events: Camellia Specific
+
+When Camellia does something awesome, it is preferred to create a Discord event for it. In this section of the guidelines there should be a image demonstrating how to create Discord events.
+
+We keep an eye out for these specifically.
+
+* Camellia song premieres (on his YouTube channel)
+* Camellia DJ sets/events
+* Music fests featuring Camellia (VRChat, Comiket, etc.)
 * Anything involving Camellia!
 
-#### Events: What's not considered
-
-* Joke events (rare expectations)
-* Sets that don't include Camellia
-* Other Discord events
-* Staff-related events
+> Staff members are expected to contribute with events at least once every 4 months. This is to ensure that consistent contribution requirements are met.
+{: .disclaimer }
 
 ### Announcement posts
 
@@ -193,23 +201,13 @@ After two warning messages, it's guaranteed demotion on the third!
 * Auxiliary Staff functions as stand-in staff members. When there's a staff position open, Auxiliary Staff will take the open position when needed.
 * Think of this as a wait-list for becoming a staff member.
 
-#### Challenges Judge Role
+#### Community Contributor Role
 
-* This role is only given to members who have contributed to production events. It is also given to members who wish to contribute.
-* As the name suggests, it's for production judges. Their purpose is to judge song submissions during production events.
-* Production Judges also function as a minor helper for the production channels.
+This role is given to members who were selected from the Community Contributor Applications. Community Contributors are recommended to follow this criteria.
 
-#### Minecraft Helper Role
-
-* This role is only given to members who have contributed anything Minecraft-related.
-* This includes builders for the server, programming contribution, and server moderation.
-* Staff members may have this role if they consistently contribute to Minecraft-related stuff.
-
-#### Event Organizer Role
-
-* This role is only given to members who have contributed to server events.
-* This means \*any\* event that comes into mind, with the permission of creating events as well.
-* Staff members may have this role if they consistently contribute to event creation.
+* Review server directions and feedback for understanding on what the community wants/needs.
+* Read and review the [event]({{ site.baseurl }}#event-posts) posts section.
+* Talk and communicate with server members as well as work with staff members for creating something awesome!
 
 ### Promotion: What is considered
 
@@ -223,7 +221,7 @@ After two warning messages, it's guaranteed demotion on the third!
 
 ### Demotion: What is considered
 
-* Extreme inactivity.
+* No contribution/extreme inactivity.
 * Uncooperative/immature behavior during staff discussions.
 * Not treating others as you wish to be treated.
 * Leaking any confidential information from the staff channels.
