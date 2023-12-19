@@ -27,7 +27,7 @@ in the past.*
 
 > A reminder that anything said in the staff chats is to be kept in the staff chats unless stated otherwise by an Admin. Failure to do so will lead to demotion.
 {: .caution }
-> All staff must engage with server members or document Camellia activities to maintain a healthy community and their position.
+> All staff must engage with server members, contribute, or document Camellia activities to maintain a healthy community and their position.
 {: .disclaimer }
 
 ## Part 1: The Dos
