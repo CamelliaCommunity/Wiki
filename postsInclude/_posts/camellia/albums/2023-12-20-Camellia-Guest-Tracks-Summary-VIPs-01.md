@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Camellia "Guest Tracks" Summary & VIPs 01"
+title: "Camellia \"Guest Tracks\" Summary & VIPs 01"
 categories: posts
 author: KatGrrrl
-description: Camellia "Guest Tracks" Summary & VIPs 01 album page
+description: Camellia \"Guest Tracks\" Summary & VIPs 01 album page
 permalink: camellia/discography/:title
 ---
 
 ## Overview
 
 ![CTCD-015](/assets/images/camellia/albums/CTCD-015.png)
-*Camellia "Guest Tracks" Summary & VIPs 01* is a doujin compilation album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2017-04-30 (M3-39) by the circle [かめるかめりあ](#).
+*Camellia \"Guest Tracks\" Summary & VIPs 01* is a doujin compilation album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2017-04-30 (M3-39) by the circle [かめるかめりあ](#).
 
 It is a compilation of *Camellia* guest tracks, about half of them are new remixes for this release.
 
