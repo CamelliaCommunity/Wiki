@@ -23,15 +23,12 @@ mistakes.*
 not, the guidelines are updated to resolve mistakes we have made
 in the past.*
 
-*Any significant instance of drama, discussion, and feedback is
-considered when writing these guidelines. If you would like to be
-a part of the staff team, you must follow these guidelines to a
-degree. If you would like to contribute, that's great! Leave your
-feedback in [#💡server-direction](https://discord.com/channels/435720333786480641/1034240760154947584)
-where it will be considered.
-If you would like to apply for Helper, refer here. Have fun reading~*
+*Any significant instance of drama, discussion, and feedback is considered when writing these guidelines. If you would like to be a part of the staff team, you must follow these guidelines to a degree. If you would like to contribute, that's great! Leave your feedback in [#💡server-direction](https://discord.com/channels/435720333786480641/1034240760154947584) where it will be considered. Have fun reading~*
 
-*A reminder that anything said in the staff chats is to be kept in the staff chats unless stated otherwise by an Admin. Failure to do so will lead to demotion.*
+> A reminder that anything said in the staff chats is to be kept in the staff chats unless stated otherwise by an Admin. Failure to do so will lead to demotion.
+{: .caution }
+> All staff must engage with server members, contribute, or document Camellia activities to maintain a healthy community and their position.
+{: .disclaimer }
 
 ## Part 1: The Dos
 
@@ -48,7 +45,7 @@ you look stupid and does not fall within the ideals of the staff team. Remind yo
 you need help with moderating. The staff team looks for
 consistent contribution, not overloaded. Make sure to contact another staff member if you need to.
 1. Try to mention your actions and anything relevant regarding a
-particular member and/or punishments. This is for transparency's sake.
+particular member, events, and/or punishments. This is for transparency's sake.
 1. Listen to the room in certain situations; forcefully changing a
 sensitive topic in a channel will only leave people confused and the situation unresolved. Your job is to please all parties. Only in extreme cases should sensitive topics be forcefully shifted.
 1. Political/religious talk is not allowed on the main channels.
@@ -128,32 +125,43 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 ## Part 5: Events and Announcements
 
-*Creating events should be easy to do; keep in mind, though, it's ideal to have specific events hosted when a new Camellia song premieres or an event Camellia is featured in.*  
+*Creating events should be easy to do; keep in mind, though, it's ideal to have Discord events hosted when a new Camellia song premieres or an event Camellia is featured in.*  
   
-*Please be sure to mention any event handling so it could be under the radar! Events should also be scheduled days in advance so more members can notice something is going on!*
+*Please be sure to mention any event handling so other staff could know! Events should also be scheduled days in advance so more members can notice something is going on!*
 
-### Event posts
+*If you need an idea of where to create events. Scroll to the top of the channel list and locate the Event Button. You can see a screenshot example below.*
 
-#### Events: What's considered
+![Click the Event Button!](/assets/images/staffGuidelines/eventstuf.png)
+{: .centerItem }
 
-* Server game nights
-* Server watch parties (for Camellia streams, sets, etc.)
-* Server milestones, challenges, etc.
-* Q&A sessions
+*Discord events create a calendar date for an event start date and an event ending date. It also adjusts to time zones, making things easier for everyone!*
 
-#### Events: Important events to create
+### Event Posts
 
-* Camellia song premieres
-* Camellia sets
-* Music fests featuring Camellia
+If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, the general idea of event hosting should be as follows. Please keep a mental note of each contribution you've made (or fill out a contribution form!). These contributions will be asked for when necessary and are usually asked for every 4 months.
+
+> To submit a contribution form, please refer to [this link](https://forms.gle/EdpTu9BF3BtdYgm5A).
+{: .tip }
+
+#### Events: Hosting Requirements
+
+* Make sure events are organized and planned. Be sure you are appealing to community interests.
+* Promote and participate in the event you're hosting. This is to get community members interested in them.
+* Make events easy to participate in and as welcoming as possible. Your goal is to create retention!
+
+#### Events: Camellia Specific
+
+When Camellia does something awesome, it is preferred to create a Discord event so it can be marked in the calendar. There should be an image demonstrating how to create Discord events above.
+
+When making events about Camellia, you should keep an eye out for these.
+
+* Camellia song premieres (on his YouTube channel)
+* Camellia DJ sets/events
+* Music fests featuring Camellia (VRChat, Comiket, etc.)
 * Anything involving Camellia!
 
-#### Events: What's not considered
-
-* Joke events (rare expectations)
-* Sets that don't include Camellia
-* Other Discord events
-* Staff-related events
+> Staff members are expected to contribute to events at least once every 4 months. This is to ensure that consistent contribution requirements are met.
+{: .disclaimer }
 
 ### Announcement posts
 
@@ -179,6 +187,9 @@ As a part of the staff team it's important to take note of how the promotion pro
 
 After two warning messages, it's guaranteed demotion on the third!
 
+> To submit a staff application, please refer to [this link](https://forms.gle/czoe1Eb843SXanGr8).
+{: .tip }
+
 ### Secondary Roles
 
 #### Probationary and Trial Roles
@@ -193,23 +204,16 @@ After two warning messages, it's guaranteed demotion on the third!
 * Auxiliary Staff functions as stand-in staff members. When there's a staff position open, Auxiliary Staff will take the open position when needed.
 * Think of this as a wait-list for becoming a staff member.
 
-#### Challenges Judge Role
+#### Community Contributor Role
 
-* This role is only given to members who have contributed to production events. It is also given to members who wish to contribute.
-* As the name suggests, it's for production judges. Their purpose is to judge song submissions during production events.
-* Production Judges also function as a minor helper for the production channels.
+This role is given to members who were selected from the Community Contributor Applications. Community Contributors must follow this criteria.
 
-#### Minecraft Helper Role
+> To submit a Contributor application, please refer to [this link](https://forms.gle/qbtPq3nVck9S2z426).
+{: .tip }
 
-* This role is only given to members who have contributed anything Minecraft-related.
-* This includes builders for the server, programming contribution, and server moderation.
-* Staff members may have this role if they consistently contribute to Minecraft-related stuff.
-
-#### Event Organizer Role
-
-* This role is only given to members who have contributed to server events.
-* This means \*any\* event that comes into mind, with the permission of creating events as well.
-* Staff members may have this role if they consistently contribute to event creation.
+* Review server directions and feedback for understanding on what the community wants/needs.
+* Read and review the [event]({{ site.baseurl }}#event-posts) posts section.
+* Talk and communicate with server members as well as work with staff members for creating something awesome!
 
 ### Promotion: What is considered
 
@@ -223,7 +227,7 @@ After two warning messages, it's guaranteed demotion on the third!
 
 ### Demotion: What is considered
 
-* Extreme inactivity.
+* No contribution/extreme inactivity.
 * Uncooperative/immature behavior during staff discussions.
 * Not treating others as you wish to be treated.
 * Leaking any confidential information from the staff channels.

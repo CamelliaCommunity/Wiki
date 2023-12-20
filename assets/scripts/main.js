@@ -28,7 +28,7 @@ if (scrollToTop) {
 
 // Add the sticky class to header when user scrolls (also adds to the sidebar,
 // remove later?)
-// Created by matt
+// Created by thecodingguy
 const scrollDetect = () => {
   header.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
   navSidebar.classList.toggle('sticky', main.getBoundingClientRect().top <= 0);
@@ -57,28 +57,27 @@ h2Elements.forEach((h2) => {
 // element. the alt text will display as figcaption
 // We will also look for images within figures, if the image is wider than
 // 370 pixels, it will remove the float and margins.
-const images = document.querySelectorAll('p > img');
 
-if (images) {
-  images.forEach((image) => {
-    const figure = document.createElement('figure');
-    const figcaption = document.createElement('figcaption');
-    figcaption.textContent = image.alt;
-    figure.appendChild(image.cloneNode(true));
-    figure.appendChild(figcaption);
+// we were going to use an event listener for page content loaded but it doesnt
+// work properly - john
 
-    // Event listener so this runs *after* the page is loaded, a bit hacky but
-    // oh well
-    window.addEventListener('load', () => {
-      figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
-    });
+// a better way of doing this. maybe. - thecodingguy ('for'
+// tip provided by jiminp)
+for (const image of document.querySelectorAll('p > img')) {
+  const figure = document.createElement('figure');
+  const figcaption = document.createElement('figcaption');
+  figcaption.textContent = image.alt;
 
-    image.replaceWith(figure);
-  });
-}
+  figure.appendChild(image.cloneNode(true));
+  figure.appendChild(figcaption);
+
+  figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
+
+  image.replaceWith(figure);
+};
 
 // searchbar code for hiding and showing search container
-// made by papertek and reinoblassed
+// made by papertek and reinoblassed, fixed by thecodingguy
 const searchInput = document.querySelector('#search-input');
 const resultsFixstuff = document.getElementById(
     'results-fixstuff');  // Get the results-fixstuff element by its id
@@ -89,34 +88,24 @@ searchInput.addEventListener('keyup', () => {
   const resultListedItems = resultsContainer.innerHTML;
 
   // Check if there are any li elements
-  if (!resultListedItems == '') {
-    // If there are li elements, show the results-fixstuff element
-    resultsFixstuff.style.display = 'flex';
-  } else {
-    // If there are no li elements, hide the results-fixstuff element
-    resultsFixstuff.style.display = 'none';
-  }
+  // show, otherwise hide if none
+  resultsFixstuff.style.display = !resultListedItems == '' ? 'flex' : 'none';
 });
 
 // better ux(?) for the search container
-// made by papertek
-
-/* this is pretty jank, i know. one issue im having is when the user still
- * clicks results-fixstuff, the container still hides. i have tried other
- * methods but i think this one is the one that works best. if theres any other
- * contributor willing to fix this please do lol */
-
-// when a user clicks the searchbar it will display the search container
-searchInput.addEventListener('click', () => {
-  resultsFixstuff.style.display = 'flex';
-});
-
+// made by papertek, fixed by thecodingguy
 // add event listener to hide results-fixstuff when search input loses focus
-document.addEventListener("click", (evt) => {
-	if (!evt.target) return;
-	if (resultsFixstuff.style.display != "none" &&
-		![searchInput, resultsFixstuff, resultsContainer].includes(evt.target))
-		resultsFixstuff.style.display = "none";
+document.addEventListener('click', (evt) => {
+  if (!evt || !evt.target) return;
+
+  // For search bar
+  const isSearchStuff =
+      (el) => [searchInput, resultsFixstuff, resultsContainer].includes(el);
+  const isSearchOpen = (resultsFixstuff.style.display != 'none');
+  if (isSearchOpen && !isSearchStuff(evt.target))
+    resultsFixstuff.style.display = 'none';
+  else if (!isSearchOpen && isSearchStuff(evt.target))
+    resultsFixstuff.style.display = 'flex';
 })
 
 /* add functionality to the navigation sidebar */
@@ -166,10 +155,12 @@ window.addEventListener('scroll', function() {
  * https://www.w3schools.com/howto/howto_css_modal_images.asp
  * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img */
 
+
 // Get all elements with the class .cardContents
 const cardContentsElements = document.querySelectorAll('.cardContents');
 
-// Iterate through each .cardContents element
+// we were going to use an event listener for page content loaded but it doesnt
+// work Iterate through each .cardContents element
 cardContentsElements.forEach((cardContentsElement) => {
   // Get all images within the current .cardContents element
   const images = cardContentsElement.querySelectorAll('img');
@@ -218,6 +209,7 @@ cardContentsElements.forEach((cardContentsElement) => {
     };
   });
 });
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName('close')[0];
