@@ -107,6 +107,7 @@ main .centerItem {
   figure {
     align-self: center;
     margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
@@ -910,11 +911,7 @@ em {
 .footnote {
   display: inline;
   color: var(--colorSecondary);
-  // background-color: var(--colorContentContainer);
   border-radius: 10px;
-  // padding: 4px;
-  // padding-left: 4px;
-  // padding-right: 4px;
   padding-bottom: 0px;
   padding-top: 0px;
 }
@@ -1013,19 +1010,14 @@ sup {
 }
 
 /* markdown support for images */
-// this class is only applied in the javascript
-figure.centerImage {
-  float: none;
+figure {
   text-align: center;
-  margin-left: 32px;
-  margin-right: 32px;
-  padding: 6px;
   border: 2px dashed var(--colorGray);
   border-radius: 10px;
+  padding: 6px;
 
   figcaption {
     font-weight: 500;
-    margin-bottom: 0;
     text-align: center;
 
     background: var(--colorCardDivisor);
@@ -1046,35 +1038,17 @@ figure.centerImage {
   }
 }
 
+// this class is only applied in the javascript
+figure.centerImage {
+  float: none;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
 figure.floatImage {
   float: right;
-  text-align: center;
   margin-left: 10px;
   margin-bottom: 32px;
-  padding: 6px 6px 6px 6px;
-  border: 2px dashed var(--colorGray);
-  border-radius: 10px;
   width: 30%;
   height: 30%;
-
-  figcaption {
-    font-weight: 500;
-    text-align: center;
-
-    background: var(--colorCardDivisor);
-    border-radius: 6px;
-    margin-top: -3px; // small hack
-  }
-
-  img {
-    cursor: pointer;
-    border-radius: 6px;
-    width: 100%;
-    height: 100%;
-    @include transition(all 0.3s ease);
-  }
-
-  img:hover {
-    opacity: 0.7;
-  }
 }
