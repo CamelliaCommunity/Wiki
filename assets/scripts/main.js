@@ -71,7 +71,9 @@ for (const image of document.querySelectorAll('p > img')) {
   figure.appendChild(image.cloneNode(true));
   figure.appendChild(figcaption);
 
-  figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
+  document.addEventListener('DOMContentLoaded', function() {
+    figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
+  });
 
   image.replaceWith(figure);
 };

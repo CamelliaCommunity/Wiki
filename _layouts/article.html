@@ -4,6 +4,7 @@ layout: "wrapper"
 
 <!-- Apply contend wedge script -->
 <script src= {{ "assets/scripts/articles.js" | relative_url }} defer=""></script>
+<!-- https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }} -->
 
 <!-- Main Page -->
 <main>
@@ -12,12 +13,7 @@ layout: "wrapper"
     <p id="footNote">Written by {{ page.author }}</p>
     <div id="notesContainer">
       {% include breadcrumbs.html %}
-      <a
-        id="footNoteRight"
-        href="https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }}"
-        target="_blank"
-        >Edit This Page!</a
-      >
+      <a id="footNoteRight" href="{{ site.url }}/admin/" target="_blank">Edit This Page!</a>
     </div>
   </div>
   <div class="cardBackground">
