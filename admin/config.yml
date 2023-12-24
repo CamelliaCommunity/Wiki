@@ -2,7 +2,7 @@ backend:
   repo: papertek/papertek.github.io
   api_root: https://api.github.com
   site_domain: papertek.github.io # location.hostname (or cms.netlify.com when on localhost)
-  base_url: https://papertek.github.io # https://api.netlify.com (GitHub, Bitbucket)
+  base_url: https://api.netlify.com # https://api.netlify.com (GitHub, Bitbucket)
   branch: beta # Branch to update (optional; defaults to master)
 
   auth_provider:
