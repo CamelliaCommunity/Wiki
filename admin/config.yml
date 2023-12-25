@@ -1,14 +1,9 @@
 backend:
-  repo: papertek/papertek.github.io
-  api_root: https://api.github.com
-  site_domain: papertek.github.io # location.hostname (or cms.netlify.com when on localhost)
-  base_url: https://api.netlify.com # https://api.netlify.com (GitHub, Bitbucket)
-  branch: beta # Branch to update (optional; defaults to master)
-
-  auth_provider:
   name: github
-  token_url: /auth/github
-  client_id: 191268c74e83eed70cdc
+  repo: papertek/papertek.github.io
+  branch: beta
+  site_domain: camelliawikibeta.netlify.app
+  site_url: https://papertek.github.io/
 
 # This line should *not* be indented
 publish_mode: editorial_workflow
