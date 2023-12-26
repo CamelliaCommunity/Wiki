@@ -9,6 +9,9 @@ description: Read this to figure out how to contribute. Includes directions, gui
 
 ## Our Standards
 
+> This page has not been updated in a while. If you're a contributor, please update this page to recent standards!
+{: .caution }
+
 You want to help with this site and contribute? That's awesome! Let's get started with some basics.
 
 Our standards remain the same or similar when you read the announcements section of the [Staff Guidelines]({% link staffGuidelines.md %}). To point things out, the important parts of the Staff Guidelines will be listed here and reworded for ease of use.

@@ -4,6 +4,9 @@ backend:
   branch: beta
   site_domain: authcwiki.netlify.app
   site_url: https://papertek.github.io/
+  open_authoring: true
+
+logo_url: /assets/images/logoLightMode.png
 
 # This line should *not* be indented
 publish_mode: editorial_workflow
@@ -65,6 +68,15 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Category", name: "category", widget: "hidden", default: "pages" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "legacyFiles"
+    label: "Legacy Files"
+    folder: "/"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
