@@ -13,4 +13,6 @@ Well, let's put it this way. It makes things easier for everyone, especially nor
 
 !["Edit this Page!" Button](/assets/images/uploads/editpage.png "\"Edit this Page!\" Button")
 
-Hope you have fun using this new feature. It took a while to get it right, but it's here!
+Hope you have fun using this new feature. It took a while to get it right, but it's here! 
+
+The new editor supports rich text and markdown. It's still recommended to use markdown, as that's the base for every post on this site. But if you want to learn about Rich Text, please refer to other posts before doing so.
