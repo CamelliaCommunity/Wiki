@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Implemented a CMS!
+title: Implementing a CMS
 date: 2023-12-26T01:57:20.939Z
 category: pages
 author: papertek
-description: "I have implemented a Content Management System so people could
+description: "We implemented a Content Management System so people could
   contribute easier. "
 ---
 ## What is a CMS?
@@ -15,4 +15,4 @@ Well, let's put it this way. It makes things easier for everyone, especially nor
 
 Hope you have fun using this new feature. It took a while to get it right, but it's here! 
 
-The new editor supports rich text and markdown. It's still recommended to use markdown, as that's the base for every post on this site. But if you want to learn about Rich Text, please refer to other posts before doing so.
+It's still recommended to use markdown, as that's the base for every post on this site. But if you want to learn about Rich Text, please refer to other posts before doing so. If you're going to read into what CMS this site uses, check it out [here](https://decapcms.org/). This news post is the first post using this new editor! It's enjoyable to use.
