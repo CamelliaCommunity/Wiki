@@ -4,7 +4,7 @@ title: why i like stardew valley :3
 date: 1984-06-08T21:46:36.916Z
 category: pages
 author: peachy
-description: here is a blog post on why Stardew valley is my favorite game and
+description: here is a blog post on why Stardew Valley is my favorite game and
   why its 50000 times better than osu will ever be :3
 ---
 ## Intro
