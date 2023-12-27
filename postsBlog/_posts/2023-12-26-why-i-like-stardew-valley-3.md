@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why I like Stardew Valley
+title: Why I like Stardew Valley!
 date: 2023-12-27T01:00:05.334Z
 category: pages
 author: ItMePeachy
