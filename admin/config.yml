@@ -64,7 +64,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Layout", name: "layout", widget: "string", default: "article" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Category", name: "category", widget: "hidden", default: "pages" }
