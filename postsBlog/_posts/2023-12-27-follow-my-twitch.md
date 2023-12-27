@@ -6,13 +6,15 @@ category: pages
 author: naska_link
 description: I need more followers
 ---
+## Hi
+
 Hey guys, I am a very cool epic stream, and you should follow my Twitch: <https://www.twitch.tv/naska_link>\
 \
-I stream almost every day, epic gaming content and it would be very sugoi of you to do it.
+I stream almost every day, epic gaming content, and it would be very sugoi of you to do it.
 
 
 
-# Reasons you should follow:
+## Reasons you should follow:
 
 1. I am *epic*
 2. You're *epic*
