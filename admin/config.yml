@@ -60,7 +60,7 @@ collections:
 
   - name: "includedPosts"
     label: "Included Post"
-    folder: "postsInclude/_posts"
+    folder: "postsInclude/_posts/uploads"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
