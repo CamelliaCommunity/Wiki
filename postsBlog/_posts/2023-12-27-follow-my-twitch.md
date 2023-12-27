@@ -12,16 +12,12 @@ Hey guys, I am a very cool epic stream, and you should follow my Twitch: <https:
 \
 I stream almost every day, epic gaming content, and it would be very sugoi of you to do it.
 
-
-
 ## Reasons you should follow:
 
 1. I am *epic*
 2. You're *epic*
 3. We're all *epic*
 4. **I NEED THE MONEY**
-
-
 
 > "He is a very awesome streamer" - Papertek
 >
