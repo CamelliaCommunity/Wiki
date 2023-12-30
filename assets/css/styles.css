@@ -741,6 +741,11 @@ header .header-shared #navSidebar #navWedgeContainer.sticky {
   top: 64px;
   position: sticky;
 }
+header .header-shared #navSidebar .btn-container {
+  display: flex !important;
+  justify-content: center;
+  margin-top: 8px !important;
+}
 
 /*
  * These files are split like this so 
