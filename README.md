@@ -1,4 +1,4 @@
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P6SNZFW)
+[![ko-fi](https://storage.ko-fi.com/cdn/brandasset/kofi_bg_tag_dark.png)](https://ko-fi.com/P5P6SNZFW)
 
 # papertek.github.io
 
