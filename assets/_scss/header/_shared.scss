@@ -163,6 +163,12 @@ header {
           position: sticky;
         }
       }
+
+      .btn-container {
+        display: flex !important; // bypass javascript
+        justify-content: center;
+        margin-top: 8px !important;
+      }
     }
   }
 }
