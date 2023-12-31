@@ -746,6 +746,9 @@ header .header-shared #navSidebar .btn-container {
   justify-content: center;
   margin-top: 8px !important;
 }
+header .header-shared #navSidebar .btn-container a.kofi-button {
+  box-shadow: none !important;
+}
 
 /*
  * These files are split like this so 

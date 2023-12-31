@@ -168,6 +168,10 @@ header {
         display: flex !important; // bypass javascript
         justify-content: center;
         margin-top: 8px !important;
+
+        a.kofi-button {
+          box-shadow: none !important;
+        }
       }
     }
   }
