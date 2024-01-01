@@ -4,7 +4,7 @@
 
 layout: article
 title:  "Staff Guidelines"
-author: Camellia Server Staff. These guidelines were last updated on 12/19/23
+author: Camellia Server Staff. These guidelines were last updated on 1/11/24
 ---
 
 ## A Brief History
@@ -30,7 +30,7 @@ in the past.*
 > All staff must engage with server members, contribute, or document Camellia activities to maintain a healthy community and their position.
 {: .disclaimer }
 
-## Part 1: The Dos
+## The Dos
 
 1. Punish people accordingly if they break the rules. The template
 for punishing someone is *VERBAL WARNING -> INFRACTION -> TEMPMUTE -> KICK -> 8-DAY BAN -> INDEF BAN.* The template may vary based on how severely someone is acting. Use good judgment when punishing someone. If staff members cannot decide on a consensus for a member, a verbal warning should be given by default.
@@ -54,7 +54,7 @@ is talking about political situations, redirect them to
 [#serious-discussion](https://discord.com/channels/435720333786480641/1080971258272948265). If anyone is hateful toward a specified group,
 please use the FAQ commands on bigotry (?bigot) or punish them accordingly.
 
-## Part 2: Expectations
+## Expectations
 
 1. You are expected not to take server rules and guidelines lightly. Always remember to refer to these guidelines and look in the server rules if you need a refresher. Remember, you have a significant influence on members and outsiders.
 1. You are expected to know basic moderation commands (For Discord). For using John Wick, basic commands are !warn !timeout add !purge and !kick.
@@ -67,7 +67,7 @@ please use the FAQ commands on bigotry (?bigot) or punish them accordingly.
 1. You are expected to be present when needed.
 1. You are expected to be cool. (Be cool!)
 
-## Part 3: General Advice
+## General Advice
 
 I have noticed staff members complain and some people being afraid of becoming staff members due to how large this server is. Never fear; this part of the guidelines will guide you on certain things!
 
@@ -104,7 +104,7 @@ I have noticed staff members complain and some people being afraid of becoming s
 1. If someone complains about their punishment not being listed in the rules, remind them about reading the room/common sense. Alternatively, ignore them (I really like doing this one personally!).
 1. If someone doesn't listen after an infraction, time them out for 10 minutes minimum.
 
-## Part 4: Moderation Terminology and AutoMod
+## Moderation Terminology and AutoMod
 
 ### Common Terminology
 
@@ -123,7 +123,7 @@ I have noticed staff members complain and some people being afraid of becoming s
 * 15 warning points give 1-hour timeouts. 25 warning points give 1-day timeouts, and 35 warning points kick members.
 * AutoMod also has a heating system. Each rule is defined with a certain percentage of heat before it warns a member. For example, if a user is spamming similar messages, heat is added by 22%. A member needs to send approximately 4.50 messages before getting punished, and so on.
 
-## Part 5: Events and Announcements
+## Events and Announcements
 
 *Creating events should be easy to do; keep in mind, though, it's ideal to have Discord events hosted when a new Camellia song premieres or an event Camellia is featured in.*  
   
@@ -181,7 +181,7 @@ When creating announcements for any *important* reason, these guidelines must be
 * Trademarks must be correctly typed, including games, media, music, etc. Examples include YouTube, Discord, etc.
 * Dates must be followed with a specified time (if possible). Dates could be written with [Discord integration](https://r.3v.fi/discord-timestamps) or with HH:MM TIMEZONE. Avoid using GMT; use UTC for ease of use. Date formatting should follow something like this: June 5, 2022 (00:40 UTC-5).
 
-## Part 6: Promotion Process and Roles
+## Promotion Process and Roles
 
 As a part of the staff team it's important to take note of how the promotion process works, from Trial Staff to Probationary Staff, to full Helper. Welcome in and read on!
 
@@ -197,12 +197,6 @@ After two warning messages, it's guaranteed demotion on the third!
 * All new staff members will start with the Helper role and a designated secondary role. These roles are called Trial Staff and Probationary Staff.
 * Trial Staff will be given to staff members who would normally be denied in the application process but are given a chance to prove themselves to the Admins. Trial Staff is also used as a learning experience for new staff members!
 * Probationary Staff are given to competent individuals who have proven their readiness to join the staff team. This is a way to evaluate performance before fully committing to their role.
-
-#### Auxiliary Staff Role
-
-* This role is given to members selected from the Auxiliary Staff applications.
-* Auxiliary Staff functions as stand-in staff members. When there's a staff position open, Auxiliary Staff will take the open position when needed.
-* Think of this as a wait-list for becoming a staff member.
 
 #### Community Contributor Role
 
