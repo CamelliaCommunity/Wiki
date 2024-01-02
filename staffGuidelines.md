@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: article
 title:  "Staff Guidelines"
 author: Camellia Server Staff. These guidelines were last updated on 1/1/24
