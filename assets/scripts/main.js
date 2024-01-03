@@ -71,7 +71,9 @@ for (const image of document.querySelectorAll('p > img')) {
   figure.appendChild(image.cloneNode(true));
   figure.appendChild(figcaption);
 
-  document.addEventListener('DOMContentLoaded', function() {
+  // Event listener so this runs *after* the page is loaded, a bit hacky but
+  // oh well
+  window.addEventListener('load', () => {
     figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
   });
 
