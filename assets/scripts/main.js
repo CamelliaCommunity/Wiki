@@ -162,56 +162,59 @@ window.addEventListener('scroll', function() {
 const cardContentsElements = document.querySelectorAll('.cardContents');
 
 // we were going to use an event listener for page content loaded but it doesnt
-// work Iterate through each .cardContents element
-cardContentsElements.forEach((cardContentsElement) => {
-  // Get all images within the current .cardContents element
-  const images = cardContentsElement.querySelectorAll('img');
+// work
+window.addEventListener('load', () => {
+  // Iterate through each .cardContents element
+  cardContentsElements.forEach((cardContentsElement) => {
+    // Get all images within the current .cardContents element
+    const images = cardContentsElement.querySelectorAll('img');
 
-  // Iterate through each image and assign a unique ID
-  images.forEach((image, index) => {
-    // Generate unique IDs for the modal and its components
-    const uniqueModalId = `myModal${index}`;
-    const uniqueImgId = `img${index}`;
-    const uniqueCaptionId = `caption${index}`;
+    // Iterate through each image and assign a unique ID
+    images.forEach((image, index) => {
+      // Generate unique IDs for the modal and its components
+      const uniqueModalId = `myModal${index}`;
+      const uniqueImgId = `img${index}`;
+      const uniqueCaptionId = `caption${index}`;
 
-    // Assign the unique IDs to the image and modal components
-    image.id = uniqueImgId;
+      // Assign the unique IDs to the image and modal components
+      image.id = uniqueImgId;
 
-    // Create the modal, image, and caption elements
-    const modal = document.createElement('div');
-    modal.id = uniqueModalId;
-    modal.classList.add('modal');
+      // Create the modal, image, and caption elements
+      const modal = document.createElement('div');
+      modal.id = uniqueModalId;
+      modal.classList.add('modal');
 
-    const modalImg = document.createElement('img');
-    modalImg.classList.add('modal-content');  // Apply the 'modal-content' class
+      const modalImg = document.createElement('img');
+      modalImg.classList.add(
+          'modal-content');  // Apply the 'modal-content' class
 
-    const captionText = document.createElement('div');
-    captionText.id = uniqueCaptionId;
-    captionText.classList.add('caption');  // Apply the 'caption' class
+      const captionText = document.createElement('div');
+      captionText.id = uniqueCaptionId;
+      captionText.classList.add('caption');  // Apply the 'caption' class
 
-    // Set up the modal elements
-    modal.appendChild(modalImg);
-    modal.appendChild(captionText);
+      // Set up the modal elements
+      modal.appendChild(modalImg);
+      modal.appendChild(captionText);
 
-    // Append the modal to the document body
-    document.body.appendChild(modal);
+      // Append the modal to the document body
+      document.body.appendChild(modal);
 
-    // Add a click event listener to each image
-    image.onclick = function() {
-      const modal = document.getElementById('myModal');
-      const modalImg = document.getElementById('imageModal');
-      const captionText = document.getElementById('caption');
+      // Add a click event listener to each image
+      image.onclick = function() {
+        const modal = document.getElementById('myModal');
+        const modalImg = document.getElementById('imageModal');
+        const captionText = document.getElementById('caption');
 
-      // Set the modal content based on the clicked image
-      modalImg.src = image.src;
-      captionText.innerHTML = image.alt;
+        // Set the modal content based on the clicked image
+        modalImg.src = image.src;
+        captionText.innerHTML = image.alt;
 
-      // Set the modal to display
-      modal.style.display = 'block';
-    };
+        // Set the modal to display
+        modal.style.display = 'block';
+      };
+    });
   });
 });
-
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName('close')[0];
