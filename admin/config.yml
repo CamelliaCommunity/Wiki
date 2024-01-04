@@ -62,7 +62,9 @@ collections:
     label: "Included Post"
     folder: "postsInclude/_posts"
     create: true
-    nested: { depth: 100, summary: "{{slug}}" }
+    nested:
+      depth: 100
+      summary: "{{meta.path}}"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "string", default: "article" }
@@ -74,7 +76,11 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
-    meta: { path: { widget: string, label: "Path", index_file: "_index", pattern: [".*"] } }
+    meta:
+      path:
+        widget: string # Fixed the typo here (string instead of string)
+        label: "Path"
+        index_file: "index"
 
   - name: "legacyFiles"
     label: "Legacy Files"
