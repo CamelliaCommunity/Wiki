@@ -1,11 +1,11 @@
 ---
-# layout: article
-# title: Camellia Monthly
-# date: 2023-11-14 23:55 -0600
-# category: posts
-# author: Camellia Server Staff
-# description: Camellia Monthly articles
-# permalink: camellia-server/:title
+layout: article
+title: Camellia Monthly
+date: 2023-11-14 23:55 -0600
+category: posts
+author: Camellia Server Staff
+description: Camellia Monthly articles
+permalink: camellia-server/:title
 ---
 
 ## October 2023
