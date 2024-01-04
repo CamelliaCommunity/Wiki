@@ -60,8 +60,10 @@ collections:
 
   - name: "includedPosts"
     label: "Included Post"
-    folder: "postsInclude/_posts/uploads"
+    folder: "postsInclude/_posts"
     create: true
+    nested:
+      depth: 100
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "string", default: "article" }
