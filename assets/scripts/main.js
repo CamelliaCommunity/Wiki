@@ -61,23 +61,21 @@ h2Elements.forEach((h2) => {
 // we were going to use an event listener for page content loaded but it doesnt
 // work properly - john
 
-// a better way of doing this. maybe. - thecodingguy ('for'
-// tip provided by jiminp)
+// a better way of doing this. maybe. - thecodingguy
+// ('for' tip provided by jiminp)
+// this uses the same "workaround" idea paper did, but we don't need a
+// million event listeners for load
 for (const image of document.querySelectorAll('p > img')) {
-  const figure = document.createElement('figure');
-  const figcaption = document.createElement('figcaption');
-  figcaption.textContent = image.alt;
-
-  figure.appendChild(image.cloneNode(true));
-  figure.appendChild(figcaption);
-
-  // Event listener so this runs *after* the page is loaded, a bit hacky but
-  // oh well
   window.addEventListener('load', () => {
-    figure.classList.add(image.width > 370 ? 'centerImage' : 'floatImage');
-  });
+    const figure = document.createElement('figure');
+    const figcaption = document.createElement('figcaption');
+    figcaption.textContent = image.alt;
 
-  image.replaceWith(figure);
+    figure.appendChild(image.cloneNode(true));
+    figure.appendChild(figcaption);
+
+    image.replaceWith(figure);
+  });
 };
 
 // searchbar code for hiding and showing search container
