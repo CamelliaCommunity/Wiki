@@ -60,11 +60,11 @@ collections:
 
   - name: "includedPosts"
     label: "Included Post"
-    folder: "postsInclude/_posts"
+    folder: "postsInclude/_posts/uploads"
     create: true
     nested:
       depth: 100
-      summary: "{{meta.path}}"
+      summary: "{{title}}"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "string", default: "article" }
@@ -78,9 +78,10 @@ collections:
     # moving an existing entry will move the entire sub tree of the entry to the new location
     meta:
       path:
-        widget: string # Fixed the typo here (string instead of string)
+        widget: string
         label: "Path"
         index_file: "index"
+        pattern: [".*", "Error"]
 
   - name: "legacyFiles"
     label: "Legacy Files"
