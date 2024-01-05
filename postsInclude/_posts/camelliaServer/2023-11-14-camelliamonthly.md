@@ -40,11 +40,11 @@ Even more recently, Camellia revealed [his appearance](https://twitter.com/espor
 
 ### In Other News
 
-- [かめりあ feat. STΔRLIVHT - LIVHT MY W​Δ​Y](https://www.youtube.com/watch?v=N-C_VI-gBp8) is now in Arcaea! <https://vxtwitter.com/arcaea_jp/status/1735087462848876889>
-- [かめりあ - ΩΩPARTS](https://youtu.be/lc4nTM6M9KY) is now in CHUNITHM! <https://vxtwitter.com/chunithm/status/1735155593458180284>
+- [かめりあ feat. STΔRLIVHT - LIVHT MY W​Δ​Y](https://www.youtube.com/watch?v=N-C_VI-gBp8) is now in Arcaea! [Twitter Post](<https://vxtwitter.com/arcaea_jp/status/1735087462848876889>).
+- [かめりあ - ΩΩPARTS](https://youtu.be/lc4nTM6M9KY) is now in CHUNITHM! - [Twitter Post](<https://vxtwitter.com/chunithm/status/1735155593458180284>).
 - [Beat Saber OST 6](https://distrokid.com/hyperfollow/beatsaber/beat-saber-original-game-soundtrack-volvi-2) is now available on streaming platforms, including Camellia's new song, [TEMPO KATANA](https://youtu.be/baxUutvrj2g)!
-- [Play With Fire / HIASOBI](https://youtu.be/od4QcDPpNVk) is now in Project Sekai! <https://vxtwitter.com/pj_sekai/status/1739611159588917476>.
-- [Sage](https://youtu.be/rgM5VGYToQQ) from Maimai has also been added in Project Sekai! <https://vxtwitter.com/pj_sekai/status/1739613914567254382>
+- [Play With Fire / HIASOBI](https://youtu.be/od4QcDPpNVk) is now in Project Sekai! - [Twitter Post](<https://vxtwitter.com/pj_sekai/status/1739611159588917476>).
+- [Sage](https://youtu.be/rgM5VGYToQQ) from Maimai has also been added in Project Sekai! - [Twitter Post](<https://vxtwitter.com/pj_sekai/status/1739613914567254382>).
 
 ### Server Stuff
 
