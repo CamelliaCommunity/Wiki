@@ -121,15 +121,13 @@ hamburgerBtn.addEventListener('click', function(event) {
   navSidebar.classList.toggle('active');
   stopScrolling();
 
-  // if (navSidebar.classList.contains('active')) {
-  //   // document.body.style.overflowY = 'hidden';
-  //   document.getElementById('myModal').style.display = 'block';
-  //   document.getElementById('myModal').style.zIndex = '0';
-  // } else {
-  //   // document.body.style.overflowY = 'visible';
-  //   document.getElementById('myModal').style.display = 'none';
-  //   document.getElementById('myModal').style.zIndex = '1';
-  // }
+  if (navSidebar.classList.contains('active')) {
+    document.getElementById('sidebarModal').style.display = 'block';
+    document.getElementById('sidebarModal').style.zIndex = '0';
+  } else {
+    document.getElementById('sidebarModal').style.display = 'none';
+    document.getElementById('sidebarModal').style.zIndex = '1';
+  }
 
   // stop click event from propagating to the document body
   event.stopPropagation();
@@ -139,6 +137,9 @@ hamburgerBtn.addEventListener('click', function(event) {
 sidebarX.addEventListener('click', function() {
   navSidebar.classList.remove('active');
   doScrolling();
+
+  document.getElementById('sidebarModal').style.display = 'none';
+  document.getElementById('sidebarModal').style.zIndex = '1';
 });
 
 /* add global click event listener to hide navSidebar when clicking outside of
@@ -149,6 +150,9 @@ document.addEventListener('click', function(event) {
   if (!navSidebar.contains(event.target) && event.target !== hamburgerBtn) {
     navSidebar.classList.remove('active');
     doScrolling();
+
+    document.getElementById('sidebarModal').style.display = 'none';
+    document.getElementById('sidebarModal').style.zIndex = '1';
   }
 });
 
@@ -240,12 +244,23 @@ function closeAndHideModal() {
   doScrolling();
 }
 
+// scrolling functions for the page
 function stopScrolling() {
   document.body.classList.toggle('stop-scrolling');
+
+  // mobile stuff
+  document.body.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+  });
 }
 
 function doScrolling() {
   document.body.classList.remove('stop-scrolling');
+
+  // mobile stuff
+  document.body.removeEventListener('touchmove', function(e) {
+    e.preventDefault();
+  });
 }
 
 // Test code
