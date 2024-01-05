@@ -1051,3 +1051,8 @@ figure.floatImage {
   width: 30%;
   height: 30%;
 }
+
+// some class to stop scrolling
+.stop-scrolling {
+  overflow: hidden;
+}

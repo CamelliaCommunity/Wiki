@@ -119,6 +119,7 @@ document.addEventListener('click', (evt) => {
  * button */
 hamburgerBtn.addEventListener('click', function(event) {
   navSidebar.classList.toggle('active');
+  stopScrolling();
 
   // if (navSidebar.classList.contains('active')) {
   //   // document.body.style.overflowY = 'hidden';
@@ -137,6 +138,7 @@ hamburgerBtn.addEventListener('click', function(event) {
 /* when a user click the x close the sidebar */
 sidebarX.addEventListener('click', function() {
   navSidebar.classList.remove('active');
+  doScrolling();
 });
 
 /* add global click event listener to hide navSidebar when clicking outside of
@@ -146,12 +148,8 @@ document.addEventListener('click', function(event) {
   // hamburgerBtn
   if (!navSidebar.contains(event.target) && event.target !== hamburgerBtn) {
     navSidebar.classList.remove('active');
+    doScrolling();
   }
-});
-
-/* when a user scrolls hide the nav sidebar */
-window.addEventListener('scroll', function() {
-  navSidebar.classList.remove('active');
 });
 
 /* modal images for each images in card contents */
@@ -163,8 +161,6 @@ window.addEventListener('scroll', function() {
 // Get all elements with the class .cardContents
 const cardContentsElements = document.querySelectorAll('.cardContents');
 
-// we were going to use an event listener for page content loaded but it doesnt
-// work
 window.addEventListener('load', () => {
   // Iterate through each .cardContents element
   cardContentsElements.forEach((cardContentsElement) => {
@@ -213,6 +209,8 @@ window.addEventListener('load', () => {
 
         // Set the modal to display
         modal.style.display = 'block';
+
+        stopScrolling();
       };
     });
   });
@@ -235,13 +233,19 @@ window.onclick = function(event) {
   }
 };
 
-// When the user scrolls, close the modal
-window.addEventListener('scroll', closeAndHideModal);
-
 // Function to close and hide the modal
 function closeAndHideModal() {
   const modal = document.getElementById('myModal');
   modal.style.display = 'none';
+  doScrolling();
+}
+
+function stopScrolling() {
+  document.body.classList.toggle('stop-scrolling');
+}
+
+function doScrolling() {
+  document.body.classList.remove('stop-scrolling');
 }
 
 // Test code
