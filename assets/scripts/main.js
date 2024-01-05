@@ -74,6 +74,8 @@ for (const image of document.querySelectorAll('p > img')) {
     figure.appendChild(image.cloneNode(true));
     figure.appendChild(figcaption);
 
+    figure.classList.add(
+        image.width > 370 ? 'centerImage' : 'floatImage');  // jack shit
     image.replaceWith(figure);
   });
 };
