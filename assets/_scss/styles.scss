@@ -877,6 +877,7 @@ hr {
 }
 
 mark {
+  display: contents;
   color: var(--colorSecondary);
   background-color: rgba(255, 255, 255, 0);
 }
@@ -1050,4 +1051,9 @@ figure.floatImage {
   margin-bottom: 32px;
   width: 30%;
   height: 30%;
+}
+
+// some class to stop scrolling
+.stop-scrolling {
+  overflow: hidden;
 }

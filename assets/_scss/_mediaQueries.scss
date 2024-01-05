@@ -72,6 +72,14 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+
+  figure.floatImage {
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 /* we are going to rework this later in another file */

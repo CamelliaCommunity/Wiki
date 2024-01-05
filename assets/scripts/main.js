@@ -119,16 +119,15 @@ document.addEventListener('click', (evt) => {
  * button */
 hamburgerBtn.addEventListener('click', function(event) {
   navSidebar.classList.toggle('active');
+  stopScrolling();
 
-  // if (navSidebar.classList.contains('active')) {
-  //   // document.body.style.overflowY = 'hidden';
-  //   document.getElementById('myModal').style.display = 'block';
-  //   document.getElementById('myModal').style.zIndex = '0';
-  // } else {
-  //   // document.body.style.overflowY = 'visible';
-  //   document.getElementById('myModal').style.display = 'none';
-  //   document.getElementById('myModal').style.zIndex = '1';
-  // }
+  if (navSidebar.classList.contains('active')) {
+    document.getElementById('sidebarModal').style.display = 'block';
+    document.getElementById('sidebarModal').style.zIndex = '0';
+  } else {
+    document.getElementById('sidebarModal').style.display = 'none';
+    document.getElementById('sidebarModal').style.zIndex = '1';
+  }
 
   // stop click event from propagating to the document body
   event.stopPropagation();
@@ -137,6 +136,10 @@ hamburgerBtn.addEventListener('click', function(event) {
 /* when a user click the x close the sidebar */
 sidebarX.addEventListener('click', function() {
   navSidebar.classList.remove('active');
+  doScrolling();
+
+  document.getElementById('sidebarModal').style.display = 'none';
+  document.getElementById('sidebarModal').style.zIndex = '1';
 });
 
 /* add global click event listener to hide navSidebar when clicking outside of
@@ -146,12 +149,11 @@ document.addEventListener('click', function(event) {
   // hamburgerBtn
   if (!navSidebar.contains(event.target) && event.target !== hamburgerBtn) {
     navSidebar.classList.remove('active');
-  }
-});
+    doScrolling();
 
-/* when a user scrolls hide the nav sidebar */
-window.addEventListener('scroll', function() {
-  navSidebar.classList.remove('active');
+    document.getElementById('sidebarModal').style.display = 'none';
+    document.getElementById('sidebarModal').style.zIndex = '1';
+  }
 });
 
 /* modal images for each images in card contents */
@@ -163,8 +165,6 @@ window.addEventListener('scroll', function() {
 // Get all elements with the class .cardContents
 const cardContentsElements = document.querySelectorAll('.cardContents');
 
-// we were going to use an event listener for page content loaded but it doesnt
-// work
 window.addEventListener('load', () => {
   // Iterate through each .cardContents element
   cardContentsElements.forEach((cardContentsElement) => {
@@ -213,6 +213,8 @@ window.addEventListener('load', () => {
 
         // Set the modal to display
         modal.style.display = 'block';
+
+        stopScrolling();
       };
     });
   });
@@ -235,13 +237,30 @@ window.onclick = function(event) {
   }
 };
 
-// When the user scrolls, close the modal
-window.addEventListener('scroll', closeAndHideModal);
-
 // Function to close and hide the modal
 function closeAndHideModal() {
   const modal = document.getElementById('myModal');
   modal.style.display = 'none';
+  doScrolling();
+}
+
+// scrolling functions for the page
+function stopScrolling() {
+  document.body.classList.toggle('stop-scrolling');
+
+  // mobile stuff
+  document.body.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+  });
+}
+
+function doScrolling() {
+  document.body.classList.remove('stop-scrolling');
+
+  // mobile stuff
+  document.body.removeEventListener('touchmove', function(e) {
+    e.preventDefault();
+  });
 }
 
 // Test code
