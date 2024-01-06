@@ -8,4 +8,6 @@ description: The funny happened.
 ---
 ## 😎 WE HAVE A COOL DOMAIN 😎
 
-We have finally got a cool 😎 and fancy domain on camellia.wiki! We hope these changes will be smooth and easier to share! :)
+We have finally got a cool 😎 and fancy domain on [beta.camellia.wiki](camellia.wiki)! We hope these changes will be smooth and easier to share! :)
+
+We also have a [https://beta.camellia.wiki](Beta View) of the site too! if you want to see new and upcoming changes!
