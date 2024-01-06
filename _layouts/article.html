@@ -13,7 +13,7 @@ layout: "wrapper"
     <p id="footNote">Written by {{ page.author }} {% if page.date %}on {{ page.date | date_to_string: "ordinal", "US" }}{% endif %}.</p>
     <div id="notesContainer">
       {% include breadcrumbs.html %}
-      <a id="footNoteRight" href="{{ site.url }}/admin/" target="_blank">Edit This Page!</a>
+      <a id="footNoteRight" href="/admin/" target="_blank">Edit This Page!</a>
     </div>
   </div>
   <div class="cardBackground">
