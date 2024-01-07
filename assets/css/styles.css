@@ -1934,7 +1934,6 @@ hr {
   margin-top: 0;
 }
 #navWedge #navWedgeContainer #navWedgeItems h3 {
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 #navWedge #navWedgeContainer #navWedgeItems h3::before {
@@ -1951,6 +1950,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding: 0 8px 8px 8px;
   width: 100%;
   overflow: auto;
 }
