@@ -3,7 +3,7 @@ layout: "wrapper"
 ---
 
 <!-- Main Page -->
-<!-- https://github.com/papertek/papertek.github.io/edit/beta/{{ page.path }} -->
+<!-- https://github.com/CamelliaCommunity/Wiki/edit/beta/{{ page.path }} -->
 <style>
   .card {
     max-width: 1136px;
@@ -17,7 +17,8 @@ layout: "wrapper"
     </p>
     <div id="notesContainer">
       {% include breadcrumbs.html %}
-      <a id="footNoteRight" href="/admin/" target="_blank">Edit This Page!</a>
+	  {% assign pagePath = page.path | replace: 'postsBlog', 'blogPosts' | replace: 'postsNews', 'newsPosts' | replace: '_posts', 'entries' | replace: '.md', '' %}
+      <a id="footNoteRight" href="/admin/#/collections/{{ pagePath }}" target="_blank">Edit This Page!</a>
     </div>
   </div>
   <div class="cardBackground">
