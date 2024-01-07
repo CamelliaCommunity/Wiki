@@ -714,7 +714,6 @@ header .header-shared #navSidebar #navWedgeContainer #navWedgeItems h3:first-chi
   margin-top: 0;
 }
 header .header-shared #navSidebar #navWedgeContainer #navWedgeItems h3 {
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 header .header-shared #navSidebar #navWedgeContainer #navWedgeItems h3::before {
