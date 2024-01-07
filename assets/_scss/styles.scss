@@ -336,6 +336,7 @@ blockquote {
   margin-right: 32px;
   margin-bottom: 32px;
   padding-top: 1em;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 
   /* we really want to fix this */
   p {
@@ -369,7 +370,6 @@ blockquote.tip {
     ),
     var(--colorTriary);
   display: flex;
-  // border-top: 1px solid var(--borderColor2);
   border-top: 3px solid var(--colorBorderTertiary);
   border-bottom: 3px solid var(--colorBorderTertiary);
   height: 84px;
@@ -473,6 +473,7 @@ li p {
   margin-bottom: 32px;
   background: var(--colorCardDivisor);
   border-radius: 10px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 
   li {
     display: flex;
@@ -905,6 +906,12 @@ em {
   padding: 48px;
   margin-bottom: 72px;
   min-height: 727px;
+
+  // background: linear-gradient(135deg, rgb(42, 34, 40), rgba(255, 255, 255, 0));
+  // backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
+  // border: 4px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 /* footnote, or the author */
