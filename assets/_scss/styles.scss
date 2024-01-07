@@ -219,6 +219,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   border: none;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 
   .author {
     color: var(--colorGray);
@@ -230,6 +231,7 @@ a:hover {
 .buttonDefault a:hover {
   background: var(--colorCardDivisorHover) 0% 0% no-repeat padding-box;
   color: var(--colorWhite);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 /* adds a little line to the bottom of a button. a little jank but works */
@@ -258,7 +260,7 @@ a:hover {
   // max-width: 412px;
   height: fit-content;
   block-size: fit-content;
-  border-radius: 30px;
+  border-radius: 35px;
   line-height: 26px;
   margin-block-end: 10px;
 
@@ -335,6 +337,7 @@ blockquote {
   margin-right: 32px;
   margin-bottom: 32px;
   padding-top: 1em;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 
   /* we really want to fix this */
   p {
@@ -368,7 +371,6 @@ blockquote.tip {
     ),
     var(--colorTriary);
   display: flex;
-  // border-top: 1px solid var(--borderColor2);
   border-top: 3px solid var(--colorBorderTertiary);
   border-bottom: 3px solid var(--colorBorderTertiary);
   height: 84px;
@@ -472,6 +474,7 @@ li p {
   margin-bottom: 32px;
   background: var(--colorCardDivisor);
   border-radius: 10px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 
   li {
     display: flex;
@@ -790,7 +793,7 @@ hr {
       }
 
       h3 {
-        margin-top: 8px;
+        // margin-top: 8px;
         margin-bottom: 8px;
       }
 
@@ -809,6 +812,7 @@ hr {
         display: flex;
         flex-direction: column;
         gap: 8px;
+        padding: 0 8px 8px 8px;
         width: 100%;
         overflow: auto;
 
@@ -903,6 +907,12 @@ em {
   padding: 48px;
   margin-bottom: 72px;
   min-height: 727px;
+
+  // background: linear-gradient(135deg, rgb(42, 34, 40), rgba(255, 255, 255, 0));
+  // backdrop-filter: blur(10px);
+  // -webkit-backdrop-filter: blur(10px);
+  // border: 4px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 /* footnote, or the author */

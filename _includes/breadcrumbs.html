@@ -1,12 +1,39 @@
 <div id="breadcrumbs">
-  {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-  <a href="/index.html">Homepage</a>
-  {% for crumb in crumbs offset: 1 %} {% if forloop.last %} <i class="ph-bold ph-caret-right"></i>
+{% comment %}This is probably the most JANK I've written. But, hey, it's automatic now.{% endcomment %}
+{% assign route="" %}
+{% assign breadCrumbPath = "/" %}
+{% if include.page.permalink != null and include.page.permalink != "" %}
+{% assign breadCrumbPath = include.page.permalink | replace: ':title', include.page.title %}
+{% else %}
+{% assign breadCrumbPath = include.page.title %}
+{% endif %}
 
-  {{ page.title }} {% else %} <i class="ph-bold ph-caret-right"></i>
-  <a
-    href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}"
-    >{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a
-  >
-  {% endif %} {% endfor %}
+{% assign breadCrumbs = breadCrumbPath | split:"/" %}
+
+{% assign filename_without_extension = breadCrumbs | last | split:"." | first %}
+{% if breadCrumbs contains "_posts" or filename_without_extension == "index" %}
+{% assign breadCrumbs = breadCrumbs | pop %}
+{% endif %}
+
+<a href="{{ '/' | absolute_url }}">Homepage</a>
+{% for breadCrumb in breadCrumbs %}
+{% if breadCrumb != "" %}
+<i class="ph-bold ph-caret-right"></i>
+{% assign route = route | append: '/' | append: breadCrumb %}
+{% if forloop.last %}
+{% if include.page.title %}{{include.page.title}}{% else %}{{ breadCrumb }}{% endif %}
+{% else %}
+<a href="{{ route | absolute_url }}">
+{% assign breadCrumbTitleWords = breadCrumb | replace: "-", " " | remove: ".html" | split: " " %}
+{% for breadCrumbTitleWord in breadCrumbTitleWords %}
+{% if breadCrumbTitleWord != "the" or breadCrumbTitleWord != "of" or breadCrumbTitleWord != "and" %}
+{{ breadCrumbTitleWord | capitalize }}
+{% else %}
+{{ breadCrumbTitleWord }}
+{% endif %}
+{% endfor %}
+</a> 
+{% endif %}
+{% endif %}
+{% endfor %}
 </div>

@@ -57,16 +57,15 @@ h2Elements.forEach((h2) => {
 // element. the alt text will display as figcaption
 // We will also look for images within figures, if the image is wider than
 // 370 pixels, it will remove the float and margins.
+// - john
 
-// we were going to use an event listener for page content loaded but it doesnt
-// work properly - john
-
-// a better way of doing this. maybe. - thecodingguy
+// a better way of doing this. maybe.
 // ('for' tip provided by jiminp)
-// this uses the same "workaround" idea paper did, but we don't need a
-// million event listeners for load
-for (const image of document.querySelectorAll('p > img')) {
-  window.addEventListener('load', () => {
+// this uses the same "workaround" idea paper did,
+// however, this was edited to actually excute per image has loaded
+// - thecodingguy
+window.addEventListener("load", () => {
+  for (const image of document.querySelectorAll('p > img')) {
     const figure = document.createElement('figure');
     const figcaption = document.createElement('figcaption');
     figcaption.textContent = image.alt;
@@ -75,10 +74,10 @@ for (const image of document.querySelectorAll('p > img')) {
     figure.appendChild(figcaption);
 
     figure.classList.add(
-        image.width > 370 ? 'centerImage' : 'floatImage');  // jack shit
+      image.width > 370 ? 'centerImage' : 'floatImage');  // jack shit
     image.replaceWith(figure);
-  });
-};
+  };
+});
 
 // searchbar code for hiding and showing search container
 // made by papertek and reinoblassed, fixed by thecodingguy
@@ -113,21 +112,19 @@ document.addEventListener('click', (evt) => {
 })
 
 /* add functionality to the navigation sidebar */
-// made by papertek
-
+// made by papertek, cleaned by thecodingguy
+const sideBarControl = (open) => {
+	const sidebarModal = document.getElementById('sidebarModal');
+	sidebarModal.style.display = (open) ? "block" : "none";
+	sidebarModal.style.zIndex = (!open) ? "1" : "0";
+};
 /* add event listener to toggle 'active' class when clicking the hamburger
  * button */
 hamburgerBtn.addEventListener('click', function(event) {
   navSidebar.classList.toggle('active');
   stopScrolling();
 
-  if (navSidebar.classList.contains('active')) {
-    document.getElementById('sidebarModal').style.display = 'block';
-    document.getElementById('sidebarModal').style.zIndex = '0';
-  } else {
-    document.getElementById('sidebarModal').style.display = 'none';
-    document.getElementById('sidebarModal').style.zIndex = '1';
-  }
+  sideBarControl(navSidebar.classList.contains('active'));
 
   // stop click event from propagating to the document body
   event.stopPropagation();
@@ -138,8 +135,7 @@ sidebarX.addEventListener('click', function() {
   navSidebar.classList.remove('active');
   doScrolling();
 
-  document.getElementById('sidebarModal').style.display = 'none';
-  document.getElementById('sidebarModal').style.zIndex = '1';
+  sideBarControl(false);
 });
 
 /* add global click event listener to hide navSidebar when clicking outside of
@@ -151,8 +147,7 @@ document.addEventListener('click', function(event) {
     navSidebar.classList.remove('active');
     doScrolling();
 
-    document.getElementById('sidebarModal').style.display = 'none';
-    document.getElementById('sidebarModal').style.zIndex = '1';
+    sideBarControl(false);
   }
 });
 

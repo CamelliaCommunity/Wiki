@@ -714,7 +714,6 @@ header .header-shared #navSidebar #navWedgeContainer #navWedgeItems h3:first-chi
   margin-top: 0;
 }
 header .header-shared #navSidebar #navWedgeContainer #navWedgeItems h3 {
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 header .header-shared #navSidebar #navWedgeContainer #navWedgeItems h3::before {
@@ -733,6 +732,7 @@ header .header-shared #navSidebar #navWedgeContainer #navWedgeItems ol {
   gap: 8px;
   width: 100%;
   overflow: auto;
+  padding: 0 12px 12px 12px;
 }
 header .header-shared #navSidebar #navWedgeContainer #navWedgeItems ol .buttonDefault a {
   display: flex;
@@ -879,6 +879,7 @@ header .header-shared #navSidebar .btn-container a.kofi-button {
   }
   header .header-shared #navSidebar .hideMe {
     display: none;
+    padding: 0 !important;
   }
   header .header-shared #search-container {
     /* Change the white to any color */
@@ -962,6 +963,7 @@ header .header-shared #navSidebar .btn-container a.kofi-button {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    padding: 8px;
     overflow: auto;
   }
   header .header-shared #search-container #results-container li::marker {
@@ -1413,6 +1415,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   border: none;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 .buttonDefault a .author {
   color: var(--colorGray);
@@ -1423,6 +1426,7 @@ a:hover {
 .buttonDefault a:hover {
   background: var(--colorCardDivisorHover) 0% 0% no-repeat padding-box;
   color: var(--colorWhite);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 /* adds a little line to the bottom of a button. a little jank but works */
@@ -1449,7 +1453,7 @@ a:hover {
   background: var(--colorCards) 0% 0% no-repeat padding-box;
   height: fit-content;
   block-size: fit-content;
-  border-radius: 30px;
+  border-radius: 35px;
   line-height: 26px;
   margin-block-end: 10px;
   padding-bottom: 32px;
@@ -1515,6 +1519,7 @@ blockquote {
   margin-right: 32px;
   margin-bottom: 32px;
   padding-top: 1em;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
   /* we really want to fix this */
 }
 blockquote p {
@@ -1637,6 +1642,7 @@ li p {
   margin-bottom: 32px;
   background: var(--colorCardDivisor);
   border-radius: 10px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
 .card ol li,
 .card ul li {
@@ -1931,7 +1937,6 @@ hr {
   margin-top: 0;
 }
 #navWedge #navWedgeContainer #navWedgeItems h3 {
-  margin-top: 8px;
   margin-bottom: 8px;
 }
 #navWedge #navWedgeContainer #navWedgeItems h3::before {
@@ -1948,6 +1953,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding: 0 8px 8px 8px;
   width: 100%;
   overflow: auto;
 }
@@ -2038,6 +2044,7 @@ em {
   padding: 48px;
   margin-bottom: 72px;
   min-height: 727px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 /* footnote, or the author */
