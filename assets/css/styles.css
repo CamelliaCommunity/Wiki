@@ -963,6 +963,7 @@ header .header-shared #navSidebar .btn-container a.kofi-button {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+    padding: 8px;
     overflow: auto;
   }
   header .header-shared #search-container #results-container li::marker {
