@@ -16,7 +16,7 @@ layout: "wrapper"
       Written by {{ page.author }} {% if page.date %}on {{ page.date | date_to_string: "ordinal", "US" }}{% endif %}.
     </p>
     <div id="notesContainer">
-      {% include breadcrumbs.html %}
+      {% include breadcrumbs.html page=page %}
 	  {% assign pagePath = page.path | replace: 'postsBlog', 'blogPosts' | replace: 'postsNews', 'newsPosts' | replace: '_posts', 'entries' | replace: '.md', '' %}
       <a id="footNoteRight" href="/admin/#/collections/{{ pagePath }}" target="_blank">Edit This Page!</a>
     </div>
