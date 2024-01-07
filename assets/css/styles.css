@@ -733,6 +733,7 @@ header .header-shared #navSidebar #navWedgeContainer #navWedgeItems ol {
   gap: 8px;
   width: 100%;
   overflow: auto;
+  padding: 0 12px 12px 12px;
 }
 header .header-shared #navSidebar #navWedgeContainer #navWedgeItems ol .buttonDefault a {
   display: flex;
@@ -879,6 +880,7 @@ header .header-shared #navSidebar .btn-container a.kofi-button {
   }
   header .header-shared #navSidebar .hideMe {
     display: none;
+    padding: 0 !important;
   }
   header .header-shared #search-container {
     /* Change the white to any color */
