@@ -15,7 +15,7 @@
 {% assign breadCrumbs = breadCrumbs | pop %}
 {% endif %}
 
-<a href="{{ '/' | absolute_url }}">Homepage</a>
+<a href="{{ '/' }}">Homepage</a>
 {% for breadCrumb in breadCrumbs %}
 {% if breadCrumb != "" %}
 <i class="ph-bold ph-caret-right"></i>
@@ -23,7 +23,7 @@
 {% if forloop.last %}
 {% if include.page.title %}{{include.page.title}}{% else %}{{ breadCrumb }}{% endif %}
 {% else %}
-<a href="{{ route | absolute_url }}">
+<a href="{{ route }}">
 {% assign breadCrumbTitleWords = breadCrumb | replace: "-", " " | remove: ".html" | split: " " %}
 {% for breadCrumbTitleWord in breadCrumbTitleWords %}
 {% if breadCrumbTitleWord != "the" or breadCrumbTitleWord != "of" or breadCrumbTitleWord != "and" %}
