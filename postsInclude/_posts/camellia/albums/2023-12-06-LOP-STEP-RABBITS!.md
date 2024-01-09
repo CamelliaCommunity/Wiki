@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![CFCD-0008](/assets/images/camellia/albums/CFCD-0008.jpg)
-*LOP STEP RABBITS!* is a doujin mini-album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) feat. [ななひら](#) released on 2014-12-30 (Comiket 87) by the circles [かめるかめりあ](#) & [Confetto](#).
+*LOP STEP RABBITS!* is a doujin mini-album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) feat. [ななひら](#) released on 2014-12-30 (Comiket 87) by the circles [かめるかめりあ](#) & [Confetto](#).
 
 ## Tracklist
 

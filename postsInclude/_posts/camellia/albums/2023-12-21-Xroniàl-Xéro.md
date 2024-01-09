@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![PCCA-04883](/assets/images/camellia/albums/PCCA-04883.jpg)
-*Xroniàl Xéro* is a major album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2020-03-18 on the label [PONY CANYON](#).
+*Xroniàl Xéro* is a major album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2020-03-18 on the label [PONY CANYON](#).
 
 It is the third major album by *Camellia*.
 

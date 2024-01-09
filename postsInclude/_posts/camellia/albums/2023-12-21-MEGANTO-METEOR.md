@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![QWCE-90001](/assets/images/camellia/albums/QWCE-90001.png)
-*MEGANTO METEOR* is a major album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2016-07-06 on the label [EXITTUNES Dance Production](#).
+*MEGANTO METEOR* is a major album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2016-07-06 on the label [EXITTUNES Dance Production](#).
 
 It is the first major album by *Camellia*.
 

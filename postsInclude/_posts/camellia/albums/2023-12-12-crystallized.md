@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![CTCD-012](/assets/images/camellia/albums/CTCD-012.jpg)
-*crystallized* is a doujin album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2015-12-31 (Comiket 89) by the circle [かめるかめりあ](#).
+*crystallized* is a doujin album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2015-12-31 (Comiket 89) by the circle [かめるかめりあ](#).
 
 It is the sixth intrumental album by *Camellia*.
 

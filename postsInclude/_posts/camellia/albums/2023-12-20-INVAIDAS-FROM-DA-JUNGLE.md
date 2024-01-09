@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![CTCD-016](/assets/images/camellia/albums/CTCD-016.png)
-*INVAIDAS FROM DA JUNGLE* is a doujin album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2017-08-11 (Comiket 92) by the circle [かめるかめりあ](#).
+*INVAIDAS FROM DA JUNGLE* is a doujin album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2017-08-11 (Comiket 92) by the circle [かめるかめりあ](#).
 
 It is a jungle themed album.
 

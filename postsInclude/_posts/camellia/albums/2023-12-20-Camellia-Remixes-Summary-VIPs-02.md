@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![CTCD-017](/assets/images/camellia/albums/CTCD-017.png)
-*Camellia "Remixes" Summary & VIPs 02* is a doujin compilation album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2018-08-10 (Comiket 94) by the circle [かめるかめりあ](#).
+*Camellia "Remixes" Summary & VIPs 02* is a doujin compilation album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2018-08-10 (Comiket 94) by the circle [かめるかめりあ](#).
 
 It is a compilation of *Camellia* remixes, of both his own songs and other artists.
 

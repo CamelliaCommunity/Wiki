@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![S2TB-0019](/assets/images/camellia/albums/S2TB-0019.jpg)
-*Reality Distortion* is a doujin split album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) vs [Akira Complex](#) released on 2016-12-31 (Comiket 91) by the circle [S2TB Recording](#).
+*Reality Distortion* is a doujin split album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) vs [Akira Complex](#) released on 2016-12-31 (Comiket 91) by the circle [S2TB Recording](#).
 
 ## Tracklist
 

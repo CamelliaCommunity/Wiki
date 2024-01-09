@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![CTCD-011](/assets/images/camellia/albums/CTCD-011.jpg)
-*PLANET//SHAPER* is a doujin album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2015-08-16 (Comiket 88) by the circle [かめるかめりあ](#).
+*PLANET//SHAPER* is a doujin album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2015-08-16 (Comiket 88) by the circle [かめるかめりあ](#).
 
 It is the fifth intrumental album by *Camellia*.
 
