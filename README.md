@@ -20,7 +20,7 @@ To install Jekyll, please refer to the [Jekyll Installation](https://jekyllrb.co
 Because this project uses Sass (Sassy CSS), it will automatically convert your styling to the proper CSS files.
 Please be sure to [install the .scss extension](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)!
 To learn how to use Sass [here](https://sass-lang.com/install/).
-To install Sass with NodeJS, please run: `npm install -g sass`.
+To install Sass with [NodeJS](https://nodejs.org/en), please run: `npm install -g sass`.
 
 ## Testing Locally
 
