@@ -11,14 +11,13 @@ description: Read this to figure out how to contribute. Includes directions, gui
 
 You want to help with this site and contribute? That's awesome! Let's get started with some basics.
 
-Our standards remain the same or similar when you read the announcements section of the [Staff Guidelines]({% link staffGuidelines.md %}). To point things out, the important parts of the Staff Guidelines will be listed here and reworded for ease of use.
+Our standards remain the same or similar when you read the announcements section of the [Staff Guidelines]({% link staffGuidelines.md %}). To point things out, the important parts of the Staff Guidelines will be listed here and adjusted for ease of use.
 
 ### Tone of Delivery
 
 - Posts must be neutral to the reader. No bias should show or any favoring to specific topics. Only on rare occasions should this rule be voided.
 - Grammar and styling should be consistent with previous documents. When creating or editing a copy, please check grammar with [built-in text editors](https://wordcounter.net/).
 - Documents must be easy to digest and understandable for readers. Be sure to avoid any complex or abrupt sentences. If you see a problem with a document, remember "Edit This Page!" is there for you to use!
-- Try to [preview](https://dillinger.io/) your documents on a local site before contributing. If you are unable to, don't worry! We will look at it for you.
 
 ### Keeping Consistency
 
@@ -47,7 +46,7 @@ Documents are prefered to be created using [Jekyll::Compose](https://github.com/
 
 It's required to create a document within a dedicated folder. The main folders are `postsBlog`, `postsNews`, `postsWiki`, `postsInclude`.
 
-> Documents in postsBlog, postsNews, and postsWiki will display in the homepage clearly. Documents in postsInclude will be displayed as an "included post" under a specified wiki post. More on that later.
+> Documents in `postsBlog`, `postsNews`, and `postsWiki` will display in the homepage clearly. Documents in `postsInclude` will be displayed as an "included post" under a specified wiki post. More on that later.
 {: .tip }
 
 Each document must contain "front matter" to display content properly on the site.[^2] Front matter is the metadata and settings of a document. Every document should have the layouts of `article` or `post`. Articles display the Table of Contents wedge to the left while posts do not have a Table of Contents wedge.
