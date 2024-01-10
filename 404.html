@@ -1,53 +1,79 @@
 ---
 permalink: /404.html
-layout: post
+title: 404
+layout: none
 ---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags defines metadata for an HTML document -->
+    <meta charset="UTF-8" />
 
-<style type="text/css" media="screen">
-  #container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 10px auto;
-    max-width: 600px;
-  }
-  #titleContainer {
-    display: none;
-  }
-  #listContainer {
-    width: 400px;
-    /* margin-right: 32px; */
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
-  h2::before {
-    display: none !important;
-  }
-  h2 {
-    text-align: center;
-    font-size: 42px !important;
-  }
-  .cardBackground {
-    margin-top: 200px;
-  }
-</style>
+    <!-- Helps with small smart devices so site could be sane -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/images/caramel.png" />
 
-<div id="container">
-  <h1>404</h1>
-  <p><u>Page not found :(</u></p>
-  <p>The requested page could not be found.</p>
-  <p>Invalid pages could happen for a number of reasons including:</p>
-  <ul id="listContainer">
-    <li>Having the wrong html path</li>
-    <li>A broken button</li>
-    <li>Bad luck</li>
-  </ul>
-  <div class="buttonDefault">
-    <a href="/index.html">Click to Go Home</a>
-  </div>
-  <p>
-    <figure class="centerImage"><img src={{ "assets/images/404.png" | relative_url }} alt="pageInvalid" /></figure>
-  </p>
-</div>
+    <!-- Page title CSS, and Scripts -->
+    <link rel="stylesheet" href= "{{ "assets/css/styles.css" | relative_url }}?v={{ site.time | date:'%s' }}" />
+
+    <title>{{page.title}} | {{site.title}}</title>
+	<style>
+	  body, h1 {
+		font-weight: 400;
+		font-display: swap;
+		font-style: normal;
+	  }
+      #container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      #top,
+      #top * {
+        vertical-align: middle;
+      }
+      #top img {
+        width: 54px;
+        margin-right: 12px;
+      }
+
+      #top span {
+        font-size: 42px;
+      }
+      #bottom p {
+        font-size: 18px;
+      }
+	</style>
+  </head>
+
+  <!-- Main body of the page -->
+  <body>
+    <div id="container">
+      <div id="top">
+        <h1>
+          <img
+            src="/assets/images/caramel.png"
+          /><span>Camellia &#8226; Wiki</span>
+        </h1>
+      </div>
+      <div>&nbsp;</div>
+      <div id="bottom">
+        <p id="txt">
+          There's nothing here.
+        </p>
+      </div>
+	</div>
+  </body>
+</html>
+<script>
+t=document.getElementById("txt");
+setTimeout(() => { t.innerHTML = "No, really, there's nothing here."; }, 5000);
+setTimeout(() => { t.innerHTML = "No, really, there's nothing here. Why are you still here?"; }, 7270);
+setTimeout(() => { t.innerHTML = "You know what..."; }, 10000);
+setTimeout(() => { t.innerHTML = ">:)"; window.location.href = "https://youtu.be/qbnt_vmk4fU"; }, 12000);
+</script>
