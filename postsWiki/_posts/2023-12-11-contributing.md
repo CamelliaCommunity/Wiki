@@ -9,9 +9,6 @@ description: Read this to figure out how to contribute. Includes directions, gui
 
 ## Our Standards
 
-> This page has not been updated in a while. If you're a contributor, please update this page to recent standards!
-{: .caution }
-
 You want to help with this site and contribute? That's awesome! Let's get started with some basics.
 
 Our standards remain the same or similar when you read the announcements section of the [Staff Guidelines]({% link staffGuidelines.md %}). To point things out, the important parts of the Staff Guidelines will be listed here and reworded for ease of use.
@@ -37,61 +34,73 @@ In theory, it should be effortless to contribute to articles and posts like the 
 
 !["Edit This Page!" Button](/assets/images/articleImages/contributing/edithtispage.png)
 
-When users click "Edit This Page!", they are sent to the website's Content Management System (CMS), where they can edit the Markdown contents easily.
+When users click "Edit This Page!", they are sent to the website's Content Management System (CMS), where they can edit the Markdown contents easily. Users who found their way into the CMS must also login using [GitHub](https://github.com/). GitHub will allow the user to create Pull Requests, commits, and more! Everything is done automatically in the CMS, so the average person only needs to worry about writing standards.
 
-### Articles
+### Creating Documents
 
-To add articles, you must create a new markdown file within the `_articles` folder. This allows the website to see the article and display it on the homepage. It must contain "front matter" to display content properly on the site.[^2] Front matter is the metadata and settings of a document. *Every article file should have the layout of `article`, and every post file should have the layout of `post`. More on posts later*.
+> This is for people not using the CMS and are wishing to dig into the files/codebase.
+{: .disclaimer }
 
-Since this site is relatively new and a work in progress, some front-matter contents may need to be fixed. Every document's main front matter elements are *`layout, title, categories, author, and description`*. An example for this is shown below.
+Documents are prefered to be created using [Jekyll::Compose](https://github.com/jekyll/jekyll-compose). To use Jekyll Compose, you must type `bundle exec jekyll post "My New Post"`. This will automatically create a document for you in the `_posts` folder. Once this is handled, documents must be moved to their respective folder in ordered to be displayed correctly. There are a few benefits to this, including automatically generating the front matter for you!
+
+### Displaying Documents
+
+It's required to create a document within a dedicated folder. The main folders are `postsBlog`, `postsNews`, `postsWiki`, `postsInclude`.
+
+> Documents in postsBlog, postsNews, and postsWiki will display in the homepage clearly. Documents in postsInclude will be displayed as an "included post" under a specified wiki post. More on that later.
+{: .tip }
+
+Each document must contain "front matter" to display content properly on the site.[^2] Front matter is the metadata and settings of a document. Every document should have the layouts of `article` or `post`. Articles display the Table of Contents wedge to the left while posts do not have a Table of Contents wedge.
+
+Every document's main front matter elements are `layout, title, date, category, author, and description`. An example for this is shown below.
 
 ```md
 ---
 layout: article
-title:  "How to Contribute"
-categories: articles
-author: papertek
-description: Read this to figure out how to contribute. Includes directions, guidelines, and more!
+title: Camellia
+date: 2023-12-10 13:35 -0600
+category: pages
+author: JoshuaGreatXD
+description: The one and only Camellia! Here, you can find information about Camellia's background and accomplishments.
 ---
 ```
 
-More ways to include metadata will be coming soon!
+### Linking Wiki Posts and Included Posts
 
-### Posts
+When a document is included in a Wiki Post, it will not show up on the homepage clearly. Instead, it will be shown under the Wiki Post as shown below. This is known as an *Included Post*.
 
-To add posts, you must create a new markdown file within the `_posts` folder, but there's a catch! Posts are preferable to be created using [Jekyll::Compose](https://github.com/jekyll/jekyll-compose). To use Jekyll Compose, you must type `bundle exec jekyll post "My New Post"`. This will automatically create a post for you in the `_posts` folder. As you can see, there are a few benefits, including automatically generating the front matter for you! Once this is handled, posts will show up on the homepage, ready to be read by users.
+![Wiki Post with an Included Post Attached](/assets/images/articleImages/contributing/includedpoststuff.png)
 
-### Linking posts to Articles
-
-You could also "include" posts within articles! When a post is included in an article, it will not show up on the homepage.
-
-To include a post within an article, you must add `include: (post name)` in the article's front matter. Once done, it will be displayed on the article pages' card, just like magic!
-
-![Article Page with a Post attached](/assets/images/articleImages/contributing/examplepost.png)
+To add an *Included Post* within a *Wiki Post*, you must add `include: (Wiki Post Name)` in the Wiki Posts's front matter. Once done, it will be displayed on the article pages' card, just like magic!
 
 Markdown example of using `include` in the front matter.
 
 ```md
 ---
 layout: article
-title:  "Article Example"
-categories: articles
-author: ItMePeachy
-description: this is a description for an example article. follow this layout to know about things
-include: Example Post
+title: Song Use
+date: 2024-01-09 00:43 -0600
+category: pages
+author: shiosama
+description: Camellia's Music Usage Guidelines. Where you can find information about how and when to use his music!
+include: Song Use (Official)
 ---
 ```
 
-### When to use Articles and Posts
+### When to use different Layouts
 
-While articles and posts have very similar layouts, they function differently. Articles are supposed to be used *only* when the document content is very long and there are different sections. Article layouts have features such as content wedges and IDs applied to headers. Posts are meant for smaller bits of information that usually don't have a scrollbar. This includes quick, small messages and similar. Eventually, navigating between posts and articles will be better. You are free to contribute code whenever!
+While the *Article* and *Post* layouts are similar, they function differently. Articles are supposed to be used *only* when the document content is very long and there are different sections. Article layouts have features such as content wedges and IDs applied to headers.
 
-> As a *temporary* solution to display things correctly on the Homepage, some posts may have the article layout applied to them. *THIS IS ONLY IF ABSOLUTELY NECESSARY. DO NOT DO IT YOURSELF UNLESS YOU HAVE PERMISSION*.
-{: .disclaimer }
+Posts are meant for smaller bits of information that usually don't have a scrollbar. This includes quick, small messages, news posts, and blog posts.
 
 ## Styles
 
-While this site has markdown support, it also has a extended version of markdown called [kramdown](https://kramdown.gettalong.org/index.html). Kramdown is a library for parsing and converting superset of Markdown.[^3]  Essentially, kramdown is the same as markdown but expanded. What kramdown offers is adding CSS classes or IDs to specific parts of a document. Examples will be listed below.
+> Custom classes and styles could still be applied in the CMS editor. Though, the editor will not display them correctly due to limitations we haven't solved yet. Keep this in mind!
+{: .disclaimer }
+
+While this site has markdown support, it also has a extended version of markdown called [kramdown](https://kramdown.gettalong.org/index.html). Kramdown is a library for parsing and converting superset of Markdown.[^3]  Essentially, kramdown is the same as markdown but expanded.
+
+Kramdown offers adding classes for CSS or IDs to specific parts of a document. Examples will be listed below.
 
 ### Codeblocks
 
@@ -153,25 +162,35 @@ You could skip this section if you want to get into profound contributions such 
 
 Here are some crucial parts of the readme you must remember when contributing code.
 
-### Do not edit CSS files
+### You must install Jekyll
 
-This project uses .scss (Sassy CSS)! Please be sure to know how SCSS works
-before contributing to styles. [Install the .scss extension](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)!
-You could also review how to install Sass [here](https://sass-lang.com/install/). I installed it personally by using node.js in the command line and typing `npm install -g sass`.
+To install Jekyll, please refer to the [Jekyll Installation](https://jekyllrb.com/docs/installation/) page.
 
-### Install Jekyll
+### Please never edit the CSS files
 
-Assuming you know how to program, install [Jekyll](https://jekyllrb.com/docs/installation/) and its prerequisites.
+Because this project uses Sass (Sassy CSS), it will automatically convert your styling to the proper CSS files.
+Please be sure to [install the .scss extension](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)!
+To learn how to use Sass [here](https://sass-lang.com/install/).
+To install Sass with [NodeJS](https://nodejs.org/en), please run: `npm install -g sass`.
 
 ### Testing Locally
 
-Once Jekyll is installed (and Sassy CSS, if you want to contribute to styles), open the terminal and type `bundle exec jekyll serve` to build the site on a local server. Afterward, browse to <http://localhost:4000/> to view the website locally. If you still need help, review [Jekyll Docs](https://jekyllrb.com/docs/)!
+If you want to test locally, please follow these steps:
+
+1. Install [Git](https://www.git-scm.com/downloads) and [Jekyll](https://jekyllrb.com/docs/installation/) (if you are contributing to styling, install [Sass](https://sass-lang.com/install/))
+2. Open your terminal of choice
+3. Clone the repo with `git clone https://github.com/CamelliaCommunity/Wiki`
+4. Go inside the newly created folder with the clone
+5. Run `bundle install` to install the gems required
+6. Run `bundle exec jekyll serve` to run the local server
+7. Enter the URL it provides (like <http://localhost:4000/>) in your browser to view your local copy
+Please refer to the [Jekyll Docs](https://jekyllrb.com/docs/) if you are still unsure!
 
 ## Pull Request Tip
 
-Congratulations that you made it this far! Now that you've understood everything *(in theory)*, it's time to create a pull request in the [GitHub](https://github.com/papertek/papertek.github.io/tree/beta)! When creating a pull request, you must [fork the respository](https://docs.github.com/en/get-started/quickstart/fork-a-repo). Please make sure you forked the beta branch instead of the main branch. If you click the "Edit This Page!" button, GitHub will show you a screen about forking the repository. This method is an easier way to create a fork and is preferred for first-time contributors.
+Congratulations that you made it this far! Now that you've understood everything *(in theory)*, it's time to create a pull request in the [GitHub](https://github.com/CamelliaCommunity/wiki/tree/beta)! When creating a pull request, you must [fork the respository](https://docs.github.com/en/get-started/quickstart/fork-a-repo). Please make sure you forked the beta branch instead of the live branch. If you click the "Edit This Page!" button, GitHub will show you a screen about forking the repository. This method is an easier way to create a fork and is preferred for first-time contributors.
 
-Once the repository is forked and its contents are edited, create a pull request that merges items into the beta branch. NEVER create a pull request to merge in the main branch. If you do that, you should feel bad.
+Once the repository is forked and its contents are edited, create a pull request that merges items into the beta branch. NEVER create a pull request to merge in the live branch. If you do that, you should feel bad.
 
 This is it for contribution. Almost all articles and posts are editable for the user. If you see ways to improve documents, don't hesitate to contribute!
 

@@ -21,11 +21,23 @@
   --colorWhite: #ffffff;
 }
 
-/* placeholder colors for code blocks */
+/* colors and styles for code and codeblocks */
 code {
   color: #99cc99;
   border-radius: 8px;
   background: #1a1f35;
+  vertical-align: middle;
+  padding: 0.2em;
+}
+
+p code {
+  font-size: 16px;
+}
+
+li code {
+  display: contents;
+  vertical-align: middle;
+  font-size: 16px;
 }
 
 div.highlighter-rouge,
