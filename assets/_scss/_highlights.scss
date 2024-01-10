@@ -36,6 +36,10 @@ figure.highlight {
   margin-left: 32px;
   margin-right: 32px;
   margin-bottom: 32px;
+
+  code {
+    padding: 0;
+  }
 }
 
 /* give codeblocks a scrollbar */

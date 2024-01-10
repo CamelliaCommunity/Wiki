@@ -53,6 +53,10 @@ figure.highlight {
   margin-right: 32px;
   margin-bottom: 32px;
 }
+div.highlighter-rouge code,
+figure.highlight code {
+  padding: 0;
+}
 
 /* give codeblocks a scrollbar */
 div.highlighter-rouge > pre,
