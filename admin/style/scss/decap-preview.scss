@@ -1,0 +1,95 @@
+/* import actual page css for fonts and variables */
+@import url('/assets/css/styles.css');
+
+.frame-content {
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        /* actual markdown */
+        > div:last-child {
+            width: 100%;
+            padding: 16px;
+            border-radius: 40px;
+            background-color: var(--colorContentContainer);
+            border: 4px solid var(--colorTriary);
+            margin-top: 16px;
+
+            > div {
+                background-color: var(--colorCards);
+                border-radius: 24px;
+                line-height: 26px;
+                overflow: hidden;
+
+                h2 {
+                    background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%), var(--colorTriary);
+                    border-top: 3px solid var(--colorBorderTertiary);
+                    border-bottom: 3px solid var(--colorBorderTertiary);
+                    height: 84px;
+                    display: flex;
+                    margin-bottom: 20px;
+                    align-items: center;
+                    padding: 0 32px;
+                }
+
+                h2:first-child {
+                    border-top: 1px solid var(--colorBorderTertiary);
+                    border-radius: 24px 24px 0 0;
+                }
+
+                h3 {
+                    margin: 0 20px 8px 20px;
+                    padding-bottom: 8px;
+                    border-bottom: solid 1px var(--colorGray);
+                }
+
+                h4 {
+                    margin-left: 20px;
+                    margin-bottom: 8px;
+                }
+
+                img {
+                    width: calc(100% - 40px);
+                    height: auto;
+                    margin: 0 20px 10px 20px;
+                    border-radius: 10px;
+                }
+
+                p {
+                    margin: 0 20px 20px 20px;
+
+                    img {
+                        width: 100%;
+                        margin: 0;
+                    }
+                }
+
+                ul, ol {
+                    padding-left: 0;
+                    list-style-type: none;
+                    margin: 0 20px 20px 20px;
+                    background: var(--colorCardDivisor);
+                    border-radius: 10px;
+                    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        font-size: 18px;
+                        padding: 10px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        border-bottom: 1px solid var(--colorGray);
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
