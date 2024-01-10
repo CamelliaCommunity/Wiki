@@ -37,7 +37,7 @@ In theory, it should be effortless to contribute to articles and posts like the 
 
 !["Edit This Page!" Button](/assets/images/articleImages/contributing/edithtispage.png)
 
-When users click "Edit This Page!", they are sent to the page's GitHub, where they can edit the Markdown contents easily.
+When users click "Edit This Page!", they are sent to the website's Content Management System (CMS), where they can edit the Markdown contents easily.
 
 ### Articles
 
