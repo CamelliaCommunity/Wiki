@@ -77,4 +77,17 @@
 }
 .frame-content > div > div:last-child > div ul li:last-child, .frame-content > div > div:last-child > div ol li:last-child {
   border-bottom: none;
+}
+.frame-content > div > div:last-child > div pre {
+  position: relative;
+  width: calc(100% - 40px);
+  margin: 0 20px 10px 20px;
+  border-radius: 25px;
+  padding: 1em;
+  background-color: #1a1f35;
+  border: solid 4px gray;
+  color: #eff;
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  line-height: 1.8;
+  overflow: clip;
 }/*# sourceMappingURL=decap-preview.css.map */

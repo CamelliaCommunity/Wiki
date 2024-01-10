@@ -89,6 +89,22 @@
                         }
                     }
                 }
+
+                pre {
+                    position: relative;
+                    width: calc(100% - 40px);
+                    margin: 0 20px 10px 20px;
+                    border-radius: 25px;
+                    padding: 1em;
+
+                    background-color: #1a1f35;
+                    border: solid 4px gray;
+                    color: #eff;
+
+                    font-family: Monaco, Consolas, "Lucida Console", monospace;
+                    line-height: 1.8;
+                    overflow: clip;
+                }
             }
         }
     }
