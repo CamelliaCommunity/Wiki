@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![CTCD-008](/assets/images/camellia/albums/CTCD-008.jpg)
-*\[diffraction\]* is a doujin album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2014-04-27 (M3-33) by the circle [かめるかめりあ](#).
+*\[diffraction\]* is a doujin album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2014-04-27 (M3-33) by the circle [かめるかめりあ](#).
 
 It is the second intrumental album by *Camellia*. On 2019-12-31 the CD was re-released as part of the *Camellia Archives* series of re-releases.
 

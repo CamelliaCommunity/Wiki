@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![CTCD-013](/assets/images/camellia/albums/CTCD-013.png)
-*INSANE INFLAME* is a doujin album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2016-04-24 (M3-37) by the circle [かめるかめりあ](#).
+*INSANE INFLAME* is a doujin album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2016-04-24 (M3-37) by the circle [かめるかめりあ](#).
 
 It is the seventh intrumental album by *Camellia*.
 

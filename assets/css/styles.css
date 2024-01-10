@@ -8,8 +8,8 @@
   --colorPrimary: #f06c9b;
   --colorSecondary: #b775f0;
   --colorTriary: #661f57;
-  --colorLinks: #1ad1cb;
-  --colorLinksHover: #88e7e7;
+  --colorLinks: #f06c9b;
+  --colorLinksHover: #f9c4d7;
   --colorBorderTertiary: #854c68;
   /* cards */
   --colorCards: #382e37;
@@ -462,7 +462,9 @@ div.highlight {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* Modal Content (image) */
@@ -619,6 +621,8 @@ header {
   width: 100%;
   top: 0;
   background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: height 0.2s ease-in-out;
   z-index: 1;

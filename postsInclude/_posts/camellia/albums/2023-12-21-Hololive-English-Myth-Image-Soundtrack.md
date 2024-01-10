@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![CVRD-036](/assets/images/camellia/albums/CVRD-036.png)
-*Hololive English -Myth- Image Soundtrack* is an album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2021-03-14 on the label [cover corp.](#).
+*Hololive English -Myth- Image Soundtrack* is an album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2021-03-14 on the label [cover corp.](#).
 
 ## Tracklist
 

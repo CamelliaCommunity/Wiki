@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![CTCD-004](/assets/images/camellia/albums/CTCD-004.jpg)
-*Michno-sequence* is a doujin album by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2012-07-08 (THE VOC@LOiD M@STER 21) by the circle [かめるかめりあ](#).
+*Michno-sequence* is a doujin album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2012-07-08 (THE VOC@LOiD M@STER 21) by the circle [かめるかめりあ](#).
 
 It is the fourth [Vocaloid](https://en.wikipedia.org/wiki/Vocaloid) album by *Camellia*. On 2019-12-31 the CD was re-released as part of the *Camellia Archives* series of re-releases.
 
