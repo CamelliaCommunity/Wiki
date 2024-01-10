@@ -31,7 +31,16 @@ layout: none
         display: flex;
         flex-direction: column;
         text-align: center;
+		justify-content: center;
+		align-items: center;
       }
+
+	  .buttonDefault {
+	    position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%);
+	  }
+
 
       #top,
       #top * {
@@ -48,6 +57,10 @@ layout: none
       #bottom p {
         font-size: 18px;
       }
+
+	  #bottom img {
+		width: 128px;
+	  }
 	</style>
   </head>
 
@@ -66,14 +79,21 @@ layout: none
         <p id="txt">
           There's nothing here.
         </p>
+		<br>
+		<img src="/assets/images/404.png">
+		<br>
+		<div class="buttonDefault">
+          <a href="/">Go home</a>
+        </div>
       </div>
 	</div>
   </body>
 </html>
 <script>
 t=document.getElementById("txt");
-setTimeout(() => { t.innerHTML = "No, really, there's nothing here."; }, 5000);
-setTimeout(() => { t.innerHTML = "No, really, there's nothing here. Why are you still here?"; }, 7270);
-setTimeout(() => { t.innerHTML = "You know what..."; }, 10000);
-setTimeout(() => { t.innerHTML = ">:)"; window.location.href = "https://youtu.be/qbnt_vmk4fU"; }, 12000);
+d=7270;
+setTimeout(() => { t.innerHTML = "No, really, there's nothing here."; }, d);
+setTimeout(() => { t.innerHTML = "No, really, there's nothing here. Why are you still here?"; }, (d + 2000));
+setTimeout(() => { t.innerHTML = "You know what..."; }, (d + 5000));
+setTimeout(() => { t.innerHTML = ">:)"; window.location.href = "https://youtu.be/qbnt_vmk4fU"; }, (d + 7000));
 </script>
