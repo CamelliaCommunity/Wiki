@@ -2,6 +2,10 @@
 @import url('/assets/css/styles.css');
 
 .frame-content {
+	ul li a {
+		display: contents;
+	}
+
     > div {
         display: flex;
         flex-direction: column;

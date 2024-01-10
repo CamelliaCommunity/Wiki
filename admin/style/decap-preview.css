@@ -1,5 +1,8 @@
 /* import actual page css for fonts and variables */
 @import url("/assets/css/styles.css");
+.frame-content ul li a {
+	display: contents;
+}
 .frame-content > div {
   display: flex;
   flex-direction: column;
