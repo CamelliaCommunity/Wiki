@@ -10,13 +10,13 @@ The source for the Camellia Wiki, written in Jekyll, Sassy CSS, and Markdown.
 
 If you are wanting to contribute to a single entry (like a wiki entry, etc.), you can use the "Edit This Page" button!
 
-Make sure to merge changes into the beta branch, **never** merge to main.
+Make sure to merge changes into the beta branch, **never** merge to live.
 Quality checkers will go ahead and merge your if it's good!
 
 ### Installing Jekyll
 To install Jekyll, please refer to the [Jekyll Installation](https://jekyllrb.com/docs/installation/) page.
 
-### Please, never edit the CSS files.
+### Please never edit the CSS files.
 Because this project uses Sass (Sassy CSS), it will automatically convert your styling to the proper CSS files.
 Please be sure to [install the .scss extension](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)!
 To learn how to use Sass [here](https://sass-lang.com/install/).
