@@ -111,20 +111,11 @@ document.addEventListener('click', (evt) => {
     resultsFixstuff.style.display = 'flex';
 })
 
-/* add functionality to the navigation sidebar */
-// made by papertek, cleaned by thecodingguy
-const sideBarControl = (open) => {
-	const sidebarModal = document.getElementById('sidebarModal');
-	sidebarModal.style.display = (open) ? "block" : "none";
-	sidebarModal.style.zIndex = (!open) ? "1" : "0";
-};
 /* add event listener to toggle 'active' class when clicking the hamburger
  * button */
 hamburgerBtn.addEventListener('click', function(event) {
   navSidebar.classList.toggle('active');
   stopScrolling();
-
-  sideBarControl(navSidebar.classList.contains('active'));
 
   // stop click event from propagating to the document body
   event.stopPropagation();
@@ -134,8 +125,6 @@ hamburgerBtn.addEventListener('click', function(event) {
 sidebarX.addEventListener('click', function() {
   navSidebar.classList.remove('active');
   doScrolling();
-
-  sideBarControl(false);
 });
 
 /* add global click event listener to hide navSidebar when clicking outside of
@@ -146,8 +135,6 @@ document.addEventListener('click', function(event) {
   if (!navSidebar.contains(event.target) && event.target !== hamburgerBtn) {
     navSidebar.classList.remove('active');
     doScrolling();
-
-    sideBarControl(false);
   }
 });
 

@@ -53,127 +53,139 @@ header {
       }
     }
 
-    /* navigation bar */
-    /* the rest of the styles are split between mobile and desktop */
-    #navSidebar {
-      position: absolute;
-      height: 100vh;
+    .sidebar-wrapper {
+      position: fixed;
+      width: 100vw;
+      left: 0;
+      transition-property: background-color, backdrop-filter;
+      transition-duration: 400ms;
+      pointer-events: none;
 
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 8px;
-
-      border-radius: 0px 30px 30px 0px;
-      border-right: 1px solid rgba(255, 255, 255, 0.2);
-      background: linear-gradient(
-          180deg,
-          rgba(246, 65, 141, 0) 0%,
-          rgba(246, 65, 141, 0.08) 51.04%,
-          rgba(91, 63, 75, 0.2) 100%
-        ),
-        var(--colorCards);
-      transition: 0.4s;
-
-      &.active {
-        left: 0;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+      &:has(#navSidebar.active) {
+        backdrop-filter: blur(5px);
+        background-color: rgba(56, 33, 41, .4);
+        pointer-events: all;
       }
 
-      #navWedgeContainer {
-        position: sticky;
-        padding: 16px;
-        width: 100%;
+      /* navigation bar */
+      /* the rest of the styles are split between mobile and desktop */
+      #navSidebar {
+        position: absolute;
+        height: 100vh;
 
-        #navHeader {
-          display: flex;
-          align-items: center;
-          gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
 
-          #sidebarX {
+        border-radius: 0px 30px 30px 0px;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        background: linear-gradient(180deg,
+            rgba(246, 65, 141, 0) 0%,
+            rgba(246, 65, 141, 0.08) 51.04%,
+            rgba(91, 63, 75, 0.2) 100%),
+          var(--colorCards);
+        transition: 0.4s;
+
+        &.active {
+          left: 0;
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        #navWedgeContainer {
+          position: sticky;
+          padding: 16px;
+          width: 100%;
+
+          #navHeader {
             display: flex;
             align-items: center;
-            color: var(--colorWhite);
-            background: none;
-            border: none;
-            font-size: 32px;
+            gap: 10px;
 
-            &:hover {
-              color: var(--colorGray);
+            #sidebarX {
+              display: flex;
+              align-items: center;
+              color: var(--colorWhite);
+              background: none;
+              border: none;
+              font-size: 32px;
+
+              &:hover {
+                color: var(--colorGray);
+              }
             }
           }
-        }
 
-        hr {
-          margin-top: 8px;
-          margin-bottom: 8px;
-          margin-left: 0;
-          margin-right: 0;
-          height: 2px;
-        }
-
-        #navWedgeItems {
-          display: block;
-          overflow-y: scroll;
-          overflow: auto;
-          font-size: 18px;
-          font-weight: 500;
-          max-height: calc(100vh - 144px);
-
-          h3:first-child {
-            margin-top: 0;
-          }
-
-          h3 {
-            // margin-top: 8px;
+          hr {
+            margin-top: 8px;
             margin-bottom: 8px;
+            margin-left: 0;
+            margin-right: 0;
+            height: 2px;
           }
 
-          h3::before {
-            content: "";
-            display: inline-block;
-            background: var(--colorSecondary) 0% 0% no-repeat padding-box;
-            height: 17px;
-            margin-right: 8px;
-            width: 4px;
-            position: inherit;
-            border-radius: 2px;
-          }
-
-          ol {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            width: 100%;
+          #navWedgeItems {
+            display: block;
+            overflow-y: scroll;
             overflow: auto;
-            padding: 0 12px 12px 12px;
+            font-size: 18px;
+            font-weight: 500;
+            max-height: calc(100vh - 144px);
 
-            .buttonDefault a {
+            h3:first-child {
+              margin-top: 0;
+            }
+
+            h3 {
+              // margin-top: 8px;
+              margin-bottom: 8px;
+            }
+
+            h3::before {
+              content: "";
+              display: inline-block;
+              background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+              height: 17px;
+              margin-right: 8px;
+              width: 4px;
+              position: inherit;
+              border-radius: 2px;
+            }
+
+            ol {
               display: flex;
               flex-direction: column;
-              align-items: center;
-              text-align: center;
-              height: 100%;
-              width: 100%;
-              padding: 10px;
               gap: 8px;
+              width: 100%;
+              overflow: auto;
+              padding: 0 12px 12px 12px;
+
+              .buttonDefault a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+                padding: 10px;
+                gap: 8px;
+              }
             }
+          }
+
+          &.sticky {
+            position: sticky;
           }
         }
 
-        &.sticky {
-          top: 64px;
-          position: sticky;
-        }
-      }
+        .btn-container {
+          display: flex !important; // bypass javascript
+          justify-content: center;
+          margin-top: 8px !important;
 
-      .btn-container {
-        display: flex !important; // bypass javascript
-        justify-content: center;
-        margin-top: 8px !important;
-
-        a.kofi-button {
-          box-shadow: none !important;
+          a.kofi-button {
+            box-shadow: none !important;
+          }
         }
       }
     }

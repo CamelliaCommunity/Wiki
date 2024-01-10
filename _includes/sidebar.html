@@ -1,71 +1,62 @@
-<div id="navSidebar">
-  <div id="navWedgeContainer">
-    <div id="navHeader">
-      <button id="sidebarX"><i class="ph ph-x"></i></button>
-      <h3>Main Menu</h3>
+<div class="sidebar-wrapper">
+  <div id="navSidebar">
+    <div id="navWedgeContainer">
+      <div id="navHeader">
+        <button id="sidebarX"><i class="ph ph-x"></i></button>
+        <h3>Main Menu</h3>
+      </div>
+      <hr />
+      <nav id="navWedgeItems">
+        <h3>Site Navigation</h3>
+        <ol>
+          <div class="buttonDefault">
+            <a href="/index.html">Main Page
+              <div class="author">Also known as the Homepage</div></a>
+          </div>
+          <div class="buttonDefault">
+            <a href="/staffGuidelines.html">Staff Guidelines
+              <div class="author">Camellia Server Staff Guidelines</div></a>
+          </div>
+          <div class="buttonDefault">
+            <a href="/about.html">About Page
+              <div class="author">What is this site about?</div></a>
+          </div>
+          <div class="buttonDefault">
+            <a href="/tests.html">Site Tests
+              <div class="author">Specific Pages for testing stuff</div></a>
+          </div>
+        </ol>
+        <h3 class="hideMe">News</h3>
+        <ol class="hideMe">
+          {% for post in site.categories.postsNews %}
+          <div class="buttonDefault hideMe">
+            <a href="{{ post.url }}">{{ post.title }}
+              <div class="author">Written by {{ post.author }}</div></a>
+          </div>
+          {% endfor %}
+        </ol>
+        <h3 class="hideMe">Blog Posts</h3>
+        <ol class="hideMe">
+          {% for post in site.categories.postsBlog %}
+          <div class="buttonDefault hideMe">
+            <a href="{{ post.url }}">{{ post.title }}
+              <div class="author">Written by {{ post.author }}</div></a>
+          </div>
+          {% endfor %}
+        </ol>
+        <h3>Support Us!</h3>
+        <p>
+          These funds are strictly going to be given back to the community. If you donate, you are ensuring good server
+          quality, management, and giving us the opportunity to give more back. You will also gain some Discord perks
+          such
+          as embedding messages, thread creation, and a private supporter channel! We appreciate any support we get~
+        </p>
+        <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+        <script type="text/javascript">
+          kofiwidget2.init("Support Us on Ko-fi", "#661f57", "P5P6SNZFW");
+          kofiwidget2.draw();
+        </script>
+      </nav>
     </div>
-    <hr />
-    <nav id="navWedgeItems">
-      <h3>Site Navigation</h3>
-      <ol>
-        <div class="buttonDefault">
-          <a href="/index.html"
-            >Main Page
-            <div class="author">Also known as the Homepage</div></a
-          >
-        </div>
-        <div class="buttonDefault">
-          <a href="/staffGuidelines.html"
-            >Staff Guidelines
-            <div class="author">Camellia Server Staff Guidelines</div></a
-          >
-        </div>
-        <div class="buttonDefault">
-          <a href="/about.html"
-            >About Page
-            <div class="author">What is this site about?</div></a
-          >
-        </div>
-        <div class="buttonDefault">
-          <a href="/tests.html"
-            >Site Tests
-            <div class="author">Specific Pages for testing stuff</div></a
-          >
-        </div>
-      </ol>
-      <h3 class="hideMe">News</h3>
-      <ol class="hideMe">
-        {% for post in site.categories.postsNews %}
-        <div class="buttonDefault hideMe">
-          <a href="{{ post.url }}"
-            >{{ post.title }}
-            <div class="author">Written by {{ post.author }}</div></a
-          >
-        </div>
-        {% endfor %}
-      </ol>
-      <h3 class="hideMe">Blog Posts</h3>
-      <ol class="hideMe">
-        {% for post in site.categories.postsBlog %}
-        <div class="buttonDefault hideMe">
-          <a href="{{ post.url }}"
-            >{{ post.title }}
-            <div class="author">Written by {{ post.author }}</div></a
-          >
-        </div>
-        {% endfor %}
-      </ol>
-      <h3>Support Us!</h3>
-      <p>
-        These funds are strictly going to be given back to the community. If you donate, you are ensuring good server
-        quality, management, and giving us the opportunity to give more back. You will also gain some Discord perks such
-        as embedding messages, thread creation, and a private supporter channel! We appreciate any support we get~
-      </p>
-      <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
-      <script type="text/javascript">
-        kofiwidget2.init("Support Us on Ko-fi", "#661f57", "P5P6SNZFW");
-        kofiwidget2.draw();
-      </script>
-    </nav>
   </div>
 </div>

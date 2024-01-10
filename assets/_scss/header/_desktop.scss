@@ -131,22 +131,24 @@ header {
       }
     }
 
-    /* navigation bar */
-    #navSidebar {
-      left: -406px; // in main.js, we will make this display as flex when the menu button is pressed
-      margin-top: calc(100vh + 88px);
-      width: 406px;
+    .sidebar-wrapper {
+      height: calc(100vh - 88px);
+      top: 88px;
 
-      /* weirdness being applied in the js */
-      /* workaround for now */
-      &.sticky {
-        // margin-top: calc(100vh + 64px);
-        margin-top: calc(100vh + 68px);
+      &:has(#navSidebar.sticky) {
+        height: calc(100vh - 68px);
+        top: 68px;
       }
 
-      .hideMe {
-        display: none;
-        padding: 0 !important;
+      /* navigation bar */
+      #navSidebar {
+        left: -406px; // in main.js, we will make this display as flex when the menu button is pressed
+        width: 406px;
+
+        .hideMe {
+          display: none;
+          padding: 0 !important;
+        }
       }
     }
 
