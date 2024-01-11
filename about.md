@@ -4,8 +4,6 @@ title: About
 author: papertek
 description: The about page for the Camellia Wiki. How did we get here?
 ---
-![]()
-
 ## Welcome to the Camellia Wiki
 
 This is the About page for the Camellia Wiki, where we will tell you about stuff. Wiki Stuff. Cool right?
@@ -25,6 +23,12 @@ At first, this website used to be a school project. I was approached one day by 
 At this point, I didn't want to consider other options because I wanted to keep things simple and original. There's also the whole Fandom controversy, so I tried to avoid Fandom altogether. There's a video about it [here](https://youtu.be/qcfuA_UAz3I) in case you're interested.
 
 The wiki has been through a lot these past months and is still being worked on for improvement. You can see the design process below.
+
+![Original School Project](/assets/images/uploads/designold.png)
+
+![Redesign 1](/assets/images/uploads/designold2.png)
+
+![Redesign 3 (Latest)](/assets/images/uploads/designlatest.png)
 
 ### Who runs this?
 
