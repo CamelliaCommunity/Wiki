@@ -103,7 +103,7 @@ Kramdown offers adding classes for CSS or IDs to specific parts of a document. E
 
 ### Codeblocks
 
-This is a code block example! If you're familar with Discord's markdown then you should reconize this.
+If you're familar with Discord's markdown then you should reconize this.
 
 ```md
 \```ruby
@@ -154,7 +154,7 @@ To learn more about blockquotes, please visit the kramdown cheat sheet [here](ht
 
 ## Code Contribution
 
-When contributing, you may need to familiarize yourself with GitHub and [git](https://git-scm.com/). GitHub is made for merging and collaborating code between developers.
+When contributing, you may need to familiarize yourself with [GitHub](https://github.com/) and [git](https://git-scm.com/). GitHub is made for merging and collaborating code between developers.
 It helps maintain this website and allows us to add to it easily.
 
 You could skip this section if you want to get into profound contributions such as Sassy CSS, JavaScript, and HTML.
