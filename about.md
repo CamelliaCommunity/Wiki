@@ -28,6 +28,8 @@ The wiki has been through a lot these past months and is still being worked on f
 
 ![Redesign 1](/assets/images/uploads/designold2.png)
 
+![Redesign 2](/assets/images/uploads/designold3.png)
+
 ![Redesign 3 (Latest)](/assets/images/uploads/designlatest.png)
 
 ### Who runs this?
