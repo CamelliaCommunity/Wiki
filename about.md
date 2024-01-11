@@ -4,11 +4,13 @@ title: About
 author: papertek
 description: The about page for the Camellia Wiki. How did we get here?
 ---
+![]()
+
 ## Welcome to the Camellia Wiki
 
 This is the About page for the Camellia Wiki, where we will tell you about stuff. Wiki Stuff. Cool right?
 
-This Wiki is designed with modularity in mind, as with every other Wiki out there. I tried to keep things simple so the average user could contribute and write documents themselves and know where things go. Most information about contributing and our guidelines can be found in the [Contributing]({% link postsWiki/_posts/2023-12-11-contributing.md %}) article.
+This Wiki is designed with modularity in mind, as with every other Wiki out there. I tried to keep things simple so the average user could contribute and write documents themselves and know where things go. Most information about contributing and our guidelines can be found in the \[Contributing]({% link postsWiki/_posts/2023-12-11-contributing.md %}) article.
 
 Any further questions? Speak to us in the [Wiki](https://discord.com/channels/435720333786480641/1174624963584610334) Channel in the [Discord](https://discord.gg/camellia)!
 
@@ -21,6 +23,8 @@ This Wiki aims to document as much as we can when it comes to Camellia-related c
 At first, this website used to be a school project. I was approached one day by someone saying, "There should be an official Camellia Wiki," and I thought, dang, that's a good idea! I quickly converted the school project site into the Camellia Wiki.
 
 At this point, I didn't want to consider other options because I wanted to keep things simple and original. There's also the whole Fandom controversy, so I tried to avoid Fandom altogether. There's a video about it [here](https://youtu.be/qcfuA_UAz3I) in case you're interested.
+
+The wiki has been through a lot these past months and is still being worked on for improvement. You can see the design process below.
 
 ### Who runs this?
 
