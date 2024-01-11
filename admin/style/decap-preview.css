@@ -1,7 +1,11 @@
 /* import actual page css for fonts and variables */
 @import url("/assets/css/styles.css");
-.frame-content ul li a {
-	display: contents;
+.frame-content {
+  scroll-behavior: unset;
+}
+.frame-content ul li a,
+.frame-content ol li a {
+  display: contents;
 }
 .frame-content > div {
   display: flex;
@@ -61,7 +65,8 @@
   width: 100%;
   margin: 0;
 }
-.frame-content > div > div:last-child > div ul, .frame-content > div > div:last-child > div ol {
+.frame-content > div > div:last-child > div ul,
+.frame-content > div > div:last-child > div ol {
   padding-left: 0;
   list-style-type: none;
   margin: 0 20px 20px 20px;
@@ -69,7 +74,8 @@
   border-radius: 10px;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
-.frame-content > div > div:last-child > div ul li, .frame-content > div > div:last-child > div ol li {
+.frame-content > div > div:last-child > div ul li,
+.frame-content > div > div:last-child > div ol li {
   display: flex;
   align-items: center;
   position: relative;
@@ -79,7 +85,8 @@
   margin-right: 10px;
   border-bottom: 1px solid var(--colorGray);
 }
-.frame-content > div > div:last-child > div ul li:last-child, .frame-content > div > div:last-child > div ol li:last-child {
+.frame-content > div > div:last-child > div ul li:last-child,
+.frame-content > div > div:last-child > div ol li:last-child {
   border-bottom: none;
 }
 .frame-content > div > div:last-child > div pre {
