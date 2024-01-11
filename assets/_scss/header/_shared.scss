@@ -63,7 +63,7 @@ header {
 
       &:has(#navSidebar.active) {
         backdrop-filter: blur(5px);
-        background-color: rgba(56, 33, 41, .4);
+        background-color: rgba(56, 33, 41, 0.4);
         pointer-events: all;
       }
 
@@ -80,10 +80,12 @@ header {
 
         border-radius: 0px 30px 30px 0px;
         border-right: 1px solid rgba(255, 255, 255, 0.2);
-        background: linear-gradient(180deg,
+        background: linear-gradient(
+            180deg,
             rgba(246, 65, 141, 0) 0%,
             rgba(246, 65, 141, 0.08) 51.04%,
-            rgba(91, 63, 75, 0.2) 100%),
+            rgba(91, 63, 75, 0.2) 100%
+          ),
           var(--colorCards);
         transition: 0.4s;
 

@@ -485,6 +485,10 @@ div.highlight {
   -webkit-backdrop-filter: blur(10px);
 }
 
+.active {
+  display: block;
+}
+
 /* Modal Content (image) */
 .modal-content {
   display: flex;

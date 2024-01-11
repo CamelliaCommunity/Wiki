@@ -64,7 +64,7 @@ h2Elements.forEach((h2) => {
 // this uses the same "workaround" idea paper did,
 // however, this was edited to actually excute per image has loaded
 // - thecodingguy
-window.addEventListener("load", () => {
+window.addEventListener('load', () => {
   for (const image of document.querySelectorAll('p > img')) {
     const figure = document.createElement('figure');
     const figcaption = document.createElement('figcaption');
@@ -74,7 +74,7 @@ window.addEventListener("load", () => {
     figure.appendChild(figcaption);
 
     figure.classList.add(
-      image.width > 370 ? 'centerImage' : 'floatImage');  // jack shit
+        image.width > 370 ? 'centerImage' : 'floatImage');  // jack shit
     image.replaceWith(figure);
   };
 });
@@ -194,8 +194,7 @@ window.addEventListener('load', () => {
         captionText.innerHTML = image.alt;
 
         // Set the modal to display
-        modal.style.display = 'block';
-
+        modal.classList.toggle('active');
         stopScrolling();
       };
     });
@@ -222,7 +221,7 @@ window.onclick = function(event) {
 // Function to close and hide the modal
 function closeAndHideModal() {
   const modal = document.getElementById('myModal');
-  modal.style.display = 'none';
+  modal.classList.remove('active');
   doScrolling();
 }
 
