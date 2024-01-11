@@ -1,17 +1,29 @@
 ---
 layout: post
 title: About
-author: no author!
+author: papertek
+description: The about page for the Camellia Wiki. How did we get here?
 ---
+## Welcome to the Camellia Wiki
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This is the About page for the Camellia Wiki, where we will tell you about stuff. Wiki Stuff. Cool right?
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+This Wiki is designed with modularity in mind, as with every other Wiki out there. I tried to keep things simple so the average user could contribute and write documents themselves and know where things go. Most information about contributing and our guidelines can be found in the [Contributing]({% link postsWiki/_posts/2023-12-11-contributing.md %}) article.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Any further questions? Speak to us in the [Wiki](https://discord.com/channels/435720333786480641/1174624963584610334) Channel in the [Discord](https://discord.gg/camellia)!
 
-[jekyll-organization]: https://github.com/jekyll
+### The Goal
+
+This Wiki aims to document as much as we can when it comes to Camellia-related content, such as albums, collaborations, groups, aliases, and more. This Wiki is still very new; things may not seem as organized as a traditional wiki, but we hope our contributors can bring the site up to par with design, accessibility, and information.
+
+### Why not use MediaWiki, Fandom, or anything similar?
+
+At first, this website used to be a school project. I was approached one day by someone saying, "There should be an official Camellia Wiki," and I thought, dang, that's a good idea! I quickly converted the school project site into the Camellia Wiki.
+
+At this point, I didn't want to consider other options because I wanted to keep things simple and original. There's also the whole Fandom controversy, so I tried to avoid Fandom altogether. There's a video about it [here](https://youtu.be/qcfuA_UAz3I) in case you're interested.
+
+### Who runs this?
+
+Pretty much the programmers of the Camellia Discord staff team and our occasional contributors, including me. You can view all active contributors [here](https://github.com/CamelliaCommunity/Wiki/graphs/contributors).
+
+I, papertek, am the lead of this project. Am I good at it? Not sure! But things have been smooth so far... Our group of contributors has done a great job keeping this project in a good state, including providing a custom domain! (thanks, Matt).
