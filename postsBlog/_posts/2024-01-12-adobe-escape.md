@@ -32,6 +32,4 @@ Here are some alternatives I know.
 
 *This list will be expanded eventually.*
 
-
 I hate Adobe.
-
