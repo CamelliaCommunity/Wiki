@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adobe Escape
-date: 2024-01-12T06:26:46.913Z
+date: 2024-01-12T08:30:18.512Z
 category: pages
 author: papertek
 description: How I escaped the Adobe ecosystem. Will also provide alternatives
