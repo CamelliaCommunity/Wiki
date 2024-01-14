@@ -40,11 +40,10 @@ jekyll_compose:
   default_front_matter:
     posts:
       category: pages
-      author: no author!
-      description: Insert an awesome description!
+      author: Insert an awesome author!
     drafts:
-      author: no author!
-      description: Insert an awesome description!
+      category: pages
+      author: Insert an awesome author!
 
 defaults:
   - scope:
