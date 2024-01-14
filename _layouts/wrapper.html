@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+      content="{% if page.description %}{{ page.description }}{% else %}{{ page.title }} {{ page.content | strip_html | slice: 0, 400 }}...{% endif %}"
     />
-    <meta name="keywords" content="{{ site.title }}, {{ page.author }}, {{ page.title }}" />
-    <meta name="{{ page.author }}" content="{{ page. title }}" />
+    <meta name="keywords" content="{{ site.title }}, {{ page.author }}, {{ page.title }}, camellia, producer, wiki, fandom, hardcore, music, tano*c, japanese, rhythm game, gaming, osu!" />
+    <meta name="author" content="{{ page.author }}" />
 
     <!-- Helps with small smart devices so site could be sane -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
