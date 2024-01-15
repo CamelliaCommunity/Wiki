@@ -184,7 +184,7 @@ window.addEventListener('load', () => {
       document.body.appendChild(modal);
 
       // Add a click event listener to each image
-      image.onclick = function() {
+      image.onclick = function(event) {
         const modal = document.getElementById('myModal');
         const modalImg = document.getElementById('imageModal');
         const captionText = document.getElementById('caption');
@@ -196,6 +196,7 @@ window.addEventListener('load', () => {
         // Set the modal to display
         modal.classList.toggle('active');
         stopScrolling();
+		event.stopPropagation();
       };
     });
   });
