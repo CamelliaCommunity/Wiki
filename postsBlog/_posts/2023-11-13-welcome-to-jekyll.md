@@ -2,7 +2,6 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2023-11-13 23:52:50 -0600
-categories: jekyll
 author: "the jekyll team"
 description: "Look at the default post from when the site was first created. Before anything was listed here, this was the only thing posted."
 ---
