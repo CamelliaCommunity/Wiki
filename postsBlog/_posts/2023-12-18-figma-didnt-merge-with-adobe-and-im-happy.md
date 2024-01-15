@@ -11,7 +11,7 @@ description: Figure out why I'm happy with Figma not merging with Adobe
 
 Well, I'm talking about the merge of both Adobe and Figma.
 
-This comes as great news to me! I even screamed "Woohoo!!" when I learned about it (and I'm glad my family isn't home to hear me cheer loudly). Regardless, this is great news for me, users, and potentially the entire industry. I would want one of my favorite design programs to be put into something other than Adobe's Creative Cloud (where I already have many issues with working it, including pricing).
+This comes as great news to me! I even screamed "Woohoo!!" when I learned about it (and I'm glad my family isn't home to hear me cheer loudly). Regardless, this is great news for me, users, and potentially the entire industry. I wouldn't want one of my favorite design programs to be put into something other than Adobe's Creative Cloud (where I already have many issues with working it, including pricing).
 
 If you don't know Adobe and Figma, let me give you some insight. Adobe is a creative design company dedicated to providing programs for designers. The most popular programs they provide is Photoshop, Illustrator, Acrobat (.pdf files), Premiere Pro, and more. Figma is a collaborative design program meant to make designing with teams easier. It's mainly used for UX/UI design, websites, menus, products, and all that good stuff.
 

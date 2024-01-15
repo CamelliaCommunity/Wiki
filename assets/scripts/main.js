@@ -79,38 +79,6 @@ window.addEventListener('load', () => {
   };
 });
 
-// searchbar code for hiding and showing search container
-// made by papertek and reinoblassed, fixed by thecodingguy
-const searchInput = document.querySelector('#search-input');
-const resultsFixstuff = document.getElementById(
-    'results-fixstuff');  // Get the results-fixstuff element by its id
-const resultsContainer = document.getElementById('results-container');
-
-searchInput.addEventListener('keyup', () => {
-  // Get all li elements inside the results-container
-  const resultListedItems = resultsContainer.innerHTML;
-
-  // Check if there are any li elements
-  // show, otherwise hide if none
-  resultsFixstuff.style.display = !resultListedItems == '' ? 'flex' : 'none';
-});
-
-// better ux(?) for the search container
-// made by papertek, fixed by thecodingguy
-// add event listener to hide results-fixstuff when search input loses focus
-document.addEventListener('click', (evt) => {
-  if (!evt || !evt.target) return;
-
-  // For search bar
-  const isSearchStuff =
-      (el) => [searchInput, resultsFixstuff, resultsContainer].includes(el);
-  const isSearchOpen = (resultsFixstuff.style.display != 'none');
-  if (isSearchOpen && !isSearchStuff(evt.target))
-    resultsFixstuff.style.display = 'none';
-  else if (!isSearchOpen && isSearchStuff(evt.target))
-    resultsFixstuff.style.display = 'flex';
-})
-
 /* add event listener to toggle 'active' class when clicking the hamburger
  * button */
 hamburgerBtn.addEventListener('click', function(event) {
@@ -132,7 +100,10 @@ sidebarX.addEventListener('click', function() {
 document.addEventListener('click', function(event) {
   // check if clicked element is not inside the navSidebar or is not the
   // hamburgerBtn
-  if (!navSidebar.contains(event.target) && event.target !== hamburgerBtn) {
+  if (
+	  (!navSidebar.contains(event.target) && event.target !== hamburgerBtn)
+	  && navSidebar.classList.contains("active")
+  ) {
     navSidebar.classList.remove('active');
     doScrolling();
   }
@@ -184,7 +155,7 @@ window.addEventListener('load', () => {
       document.body.appendChild(modal);
 
       // Add a click event listener to each image
-      image.onclick = function() {
+      image.onclick = function(event) {
         const modal = document.getElementById('myModal');
         const modalImg = document.getElementById('imageModal');
         const captionText = document.getElementById('caption');
@@ -196,6 +167,7 @@ window.addEventListener('load', () => {
         // Set the modal to display
         modal.classList.toggle('active');
         stopScrolling();
+		event.stopPropagation();
       };
     });
   });
@@ -243,17 +215,3 @@ function doScrolling() {
     e.preventDefault();
   });
 }
-
-// Test code
-// const IMAGES = document.querySelectorAll('img');
-
-// for (let i = 0; i < IMAGES.length; i++) {
-//   let imgSrc = IMAGES[i].getAttribute('src');
-//   imgSrc = imgSrc.slice(0, -8)
-
-//   console.log(imgSrc);
-// }
-
-// function makeSrcset(imgSrc) {
-//   let markup = [];
-// }

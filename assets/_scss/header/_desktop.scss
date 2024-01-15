@@ -255,8 +255,19 @@ header {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
-        padding: 8px;
+        padding: 0px 8px 8px 8px;
         overflow: auto;
+
+		h3::before {
+			content: "";
+			display: inline-block;
+			background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+			height: 17px;
+			margin-right: 8px;
+			width: 4px;
+			position: inherit;
+			border-radius: 2px;
+		}
 
         li::marker {
           content: "";

@@ -5,10 +5,10 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+      content="{% if page.description %}{{ page.description }}{% else %}{% assign new_desc = page.content | markdownify | strip_html | strip_newlines %}{{ page.title }}{{ new_desc | truncate: 400 | prepend: " " | strip }}{% endif %}"
     />
-    <meta name="keywords" content="{{ site.title }}, {{ page.author }}, {{ page.title }}" />
-    <meta name="{{ page.author }}" content="{{ page. title }}" />
+    <meta name="keywords" content="{{ site.title }}, {{ page.author }}, {{ page.title }}, camellia, producer, wiki, fandom, hardcore, music, tano*c, japanese, rhythm game, gaming, osu!" />
+    <meta name="author" content="{{ page.author }}" />
 
     <!-- Helps with small smart devices so site could be sane -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,6 @@
     <!-- Page title CSS, and Scripts -->
     <link rel="stylesheet" href= "{{ "assets/css/styles.css" | relative_url }}?v={{ site.time | date:'%s' }}" />
     <script src="{{ "assets/scripts/main.js" | relative_url }}?v={{ site.time | date:'%s' }}" defer=""></script>
-    <script src="{{ "assets/scripts/search-script.js" | relative_url }}?v={{ site.time | date:'%s' }}" type="text/javascript"></script>
 
     <title>{{page.title}} | {{site.title}}</title>
   </head>
@@ -41,13 +40,38 @@
 
   <!-- Configuration -->
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="{{ "assets/scripts/search-script.js" | relative_url }}?v={{ site.time | date:'%s' }}" type="text/javascript"></script>
   <script>
     SimpleJekyllSearch({
       searchInput: document.getElementById("search-input"),
       resultsContainer: document.getElementById("results-container"),
+	  searchWrapper: document.getElementById("results-fixstuff"),
       json: "{{ './search.json' | relative_url }}",
       searchResultTemplate:
         '<div class ="buttonDefault"><a href="{url}">{title}<div class="author">Written by {author}</div></a></div>',
+	  noResultsText: 'No results found!',
+	  shouldSortCategory: true,
+	  limit: 727,
+	  searchCategoryOverrides: {
+		"postsInclude": "Included Posts",
+		"postsBlog": "Blog Posts",
+		"postsNews": "News Posts",
+		"postsWiki": "Wiki Articles"
+	  },
+	  sortMiddleware: (a, b) => {
+		const important = ["postsWiki", "postsBlog", "postsNews"];
+
+		const catA = a.searchCategory;
+		const catB = b.searchCategory;
+
+		const priA = important.indexOf(catA);
+		const priB = important.indexOf(catB);
+
+		if (priA !== -1 && priB !== -1) return priA - priB;
+		if (priA !== -1) return -1;
+		if (priB !== -1) return 1;
+		return 0;
+	  }
     });
   </script>
 </html>

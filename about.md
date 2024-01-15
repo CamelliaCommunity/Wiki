@@ -2,8 +2,8 @@
 layout: post
 title: About
 author: papertek
-description: The about page for the Camellia Wiki. How did we get here?
 ---
+
 ## Welcome to the Camellia Wiki
 
 This is the About page for the Camellia Wiki, where we will tell you about stuff. Wiki Stuff. Cool right?

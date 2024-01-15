@@ -2,14 +2,19 @@
 layout: none
 ---
 [
-  {% for post in site.posts %}
+  {% for cat in site.categories %}
+    {% assign catName = cat[0] %}
+	{% if catName == "pages" or catName == "posts" %}{% continue %}{% endif %}
+	{% for post in site.categories[catName] %}
     {
       "title"    : "{{ post.title | escape }}",
       "author"    : "{{ post.author | escape }}",
       "category" : "{{ post.category }}",
+      "searchCategory": "{{ catName }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date }}"
-    } {% unless forloop.last %},{% endunless %}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+	{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

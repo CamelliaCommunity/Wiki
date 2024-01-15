@@ -27,8 +27,11 @@ Here are some alternatives I know.
 - [Figma](https://www.figma.com/) - UI/UX Design
 - [Blender](https://www.blender.org/) - 3D design, videos?
 - [Affinity Photo](https://affinity.serif.com/en-us/photo/) - Photoshop Alternative
-- [Photopea](https://www.photopea.com/) - Another Photoshop Alternative (Free)
+- [Photopea](https://www.photopea.com/) - Photoshop Alternative 
+- [GIMP](https://www.gimp.org/) - Photoshop Alternative 
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve) - Premiere Pro Alternative
+- [Kdenlive](https://kdenlive.org/en/) - Premiere Pro Alternative
+- [OpenShot](https://www.openshot.org/) - Premiere Pro Alternative
 
 *This list will be expanded eventually.*
 
