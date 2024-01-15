@@ -1167,6 +1167,9 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     left: -100%;
     width: 100%;
   }
+  header #search-container {
+    display: none;
+  }
 }
 #titleContainer {
   display: flex;
