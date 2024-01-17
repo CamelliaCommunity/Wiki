@@ -14,3 +14,5 @@ I've been in the rhythm game scene since late 2017. It's not that long ago, but 
 Since then, most electronic music had this niche meta. Include full flavor in the music, or it won't be hard enough or interesting. Eventually, it became repetitive, with a lot of new electronic music embracing this meta and "Camellia clones" being created like nothing. People may enjoy this type of music, but it's stale and unoriginal at this point, and I'm unable to listen to it.
 
 Instead of songs being harder and harder to listen to, charts and maps should be harder with any type of music. It's hard to do, but it's possible.
+
+In better news, OWC 2023's tiebreaker wasn't full flavor, so that's cool. :)
