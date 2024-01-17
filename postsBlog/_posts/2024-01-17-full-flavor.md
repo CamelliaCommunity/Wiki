@@ -5,7 +5,9 @@ date: 2024-01-17T00:58:27.247Z
 category: pages
 author: papertek
 ---
-## I don't like Full Flavor
+## Hot take
+
+I don't like full flavor.
 
 I've been in the rhythm game scene since late 2017. It's not that long ago, but it's also six years ago (wow). One day, while playing a specific circle-clicking game, I stumbled across a commissioned song for a tournament. Mind you, it's been a long time, and one of the first "official" songs to be used in the osu! World Cup was OOPARTS by Camellia himself, which was back in 2020. This song was used as an example throughout the tournament scene and possibly influenced many artists out there with new music being created.
 
