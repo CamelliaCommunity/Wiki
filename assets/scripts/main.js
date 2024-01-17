@@ -90,14 +90,31 @@ hamburgerBtn.addEventListener('click', function(event) {
 });
 
 // add shortcut for sidebar
-document.addEventListener('keydown', function(event) {
-  if (event.key === 'q') {
-    navSidebar.classList.toggle('active');
-    stopScrolling();
 
-    event.stopPropagation();
-  }
-});
+// both of these are "broken"
+
+// document.addEventListener('keydown', function(event) {
+//   if (event.key === 'q') {
+//     navSidebar.classList.toggle('active');
+//     stopScrolling();
+
+//     event.stopPropagation();
+//   }
+// });
+
+// search stuff
+// add shortcut for searchbar
+// document.addEventListener('keydown', function(event) {
+//   if (!navSidebar.classList.contains('active')) {
+//     if (event.key === 'Enter') {
+//       const searchBar = document.getElementById('search-input');
+//       searchBar.focus();
+
+//       event.stopPropagation();
+//     }
+//   }
+// });
+
 
 /* when a user click the x close the sidebar */
 sidebarX.addEventListener('click', function() {
