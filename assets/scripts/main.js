@@ -89,6 +89,16 @@ hamburgerBtn.addEventListener('click', function(event) {
   event.stopPropagation();
 });
 
+// add shortcut for sidebar
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'q') {
+    navSidebar.classList.toggle('active');
+    stopScrolling();
+
+    event.stopPropagation();
+  }
+});
+
 /* when a user click the x close the sidebar */
 sidebarX.addEventListener('click', function() {
   navSidebar.classList.remove('active');
@@ -100,10 +110,8 @@ sidebarX.addEventListener('click', function() {
 document.addEventListener('click', function(event) {
   // check if clicked element is not inside the navSidebar or is not the
   // hamburgerBtn
-  if (
-	  (!navSidebar.contains(event.target) && event.target !== hamburgerBtn)
-	  && navSidebar.classList.contains("active")
-  ) {
+  if ((!navSidebar.contains(event.target) && event.target !== hamburgerBtn) &&
+      navSidebar.classList.contains('active')) {
     navSidebar.classList.remove('active');
     doScrolling();
   }
@@ -167,7 +175,7 @@ window.addEventListener('load', () => {
         // Set the modal to display
         modal.classList.toggle('active');
         stopScrolling();
-		event.stopPropagation();
+        event.stopPropagation();
       };
     });
   });
