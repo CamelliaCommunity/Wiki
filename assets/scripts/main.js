@@ -90,30 +90,32 @@ hamburgerBtn.addEventListener('click', function(event) {
 });
 
 // add shortcut for sidebar
+// written by papertek, fixed by thecodingguy
+// note: we are simulating clicking the hamburger button, because
+// its a LOT easier to do. plus if you update the code there, you dont
+// need to do it here. :)
 
-// both of these are "broken"
-
-// document.addEventListener('keydown', function(event) {
-//   if (event.key === 'q') {
-//     navSidebar.classList.toggle('active');
-//     stopScrolling();
-
-//     event.stopPropagation();
-//   }
-// });
-
-// search stuff
-// add shortcut for searchbar
-// document.addEventListener('keydown', function(event) {
-//   if (!navSidebar.classList.contains('active')) {
-//     if (event.key === 'Enter') {
-//       const searchBar = document.getElementById('search-input');
-//       searchBar.focus();
-
-//       event.stopPropagation();
-//     }
-//   }
-// });
+document.addEventListener("keyup", function(event) {
+	const searchBar = document.getElementById("search-input");
+	const searchWrapper = document.getElementById("results-fixstuff");
+	if (event.key === "Escape") {
+		if (navSidebar.classList.contains("active") && document.activeElement !== searchBar) {
+			hamburgerBtn.click();
+		} else if (!navSidebar.classList.contains("active") && document.activeElement === searchBar) {
+			searchWrapper.style.display = "none";
+			searchBar.blur();
+		};
+	} else if (event.key === "q") { // Open the sidebar
+		if (!navSidebar.classList.contains("active") && document.activeElement !== searchBar) {
+			hamburgerBtn.click();
+		};
+	} else if (event.key === "s") {
+		if (document.activeElement !== searchBar) {
+			searchBar.focus();
+			event.stopPropagation();
+		};
+	};
+});
 
 
 /* when a user click the x close the sidebar */
