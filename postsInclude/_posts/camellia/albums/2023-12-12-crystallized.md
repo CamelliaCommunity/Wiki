@@ -31,7 +31,7 @@ Total Length: 48:11
 
 ## Credits
 
-* かめりあ – Compose
+* かめりあ – Composer
 * Ryo Asakura – Graphic Design
 * Hitomasu Modoru – DTP Design
 * murAta Yuzi – Movie
