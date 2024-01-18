@@ -20,12 +20,14 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### December
 
-- [TEMPO KATANA] (#) *Single*
+- [TEMPO KATANA] (#) (*Single*)
 - [Snacko (Official Game Soundtrack)] (#)
 ### September
-- [Parallel Universe Shifter] (#) *Single*
-- [ヒアソビ] (#) *Single*
+- [Parallel Universe Shifter] (#) (*Single*)
+- [ヒアソビ] (#) (*Single*)
 ###
-- Waifu Jam
-
+- [Waifu Jam] (#) (*Single*)
+- [Lorelei] (#) (*Single*)
+- [Ashed Wings] (#)
+- 
 
