@@ -89,6 +89,35 @@ hamburgerBtn.addEventListener('click', function(event) {
   event.stopPropagation();
 });
 
+// add shortcut for sidebar
+// written by papertek, fixed by thecodingguy
+// note: we are simulating clicking the hamburger button, because
+// its a LOT easier to do. plus if you update the code there, you dont
+// need to do it here. :)
+
+document.addEventListener("keyup", function(event) {
+	const searchBar = document.getElementById("search-input");
+	const searchWrapper = document.getElementById("results-fixstuff");
+	if (event.key === "Escape") {
+		if (navSidebar.classList.contains("active") && document.activeElement !== searchBar) {
+			hamburgerBtn.click();
+		} else if (!navSidebar.classList.contains("active") && document.activeElement === searchBar) {
+			searchWrapper.style.display = "none";
+			searchBar.blur();
+		};
+	} else if (event.key === "q") { // Open the sidebar
+		if (!navSidebar.classList.contains("active") && document.activeElement !== searchBar) {
+			hamburgerBtn.click();
+		};
+	} else if (event.key === "s") {
+		if (document.activeElement !== searchBar) {
+			searchBar.focus();
+			event.stopPropagation();
+		};
+	};
+});
+
+
 /* when a user click the x close the sidebar */
 sidebarX.addEventListener('click', function() {
   navSidebar.classList.remove('active');
@@ -100,10 +129,8 @@ sidebarX.addEventListener('click', function() {
 document.addEventListener('click', function(event) {
   // check if clicked element is not inside the navSidebar or is not the
   // hamburgerBtn
-  if (
-	  (!navSidebar.contains(event.target) && event.target !== hamburgerBtn)
-	  && navSidebar.classList.contains("active")
-  ) {
+  if ((!navSidebar.contains(event.target) && event.target !== hamburgerBtn) &&
+      navSidebar.classList.contains('active')) {
     navSidebar.classList.remove('active');
     doScrolling();
   }
@@ -167,7 +194,7 @@ window.addEventListener('load', () => {
         // Set the modal to display
         modal.classList.toggle('active');
         stopScrolling();
-		event.stopPropagation();
+        event.stopPropagation();
       };
     });
   });
