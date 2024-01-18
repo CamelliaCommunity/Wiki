@@ -20,9 +20,11 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### December
 
-- [Tempo Katana] (Single)
-- [ヒアソビ] ()
-- [Parallel Universe Shifter] ()
+- [TEMPO KATANA] (#) *Single*
+- [ヒアソビ] (#) *Single*
+- [Snacko (Official Game Soundtrack)] (#)
+### September
+- [Parallel Universe Shifter] (#) *Single*
 
 
 
