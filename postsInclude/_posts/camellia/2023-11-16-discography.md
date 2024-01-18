@@ -48,3 +48,5 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 - [FULLFLAVOR ONDO] (https://open.spotify.com/track/4n3aW8rwrT83iZvbQzFCip?si=eceb7d1532d242d1) (*Single*)
 - [Flash Me back] (https://open.spotify.com/track/1ickaIxH7HoGVOcwg4V1Nz?si=9315f0465d6942f0) (*Single*)
 - [ヒアソビ] (https://open.spotify.com/track/6TaOHCEjas8b3Mm4tNZ31g?si=c65bc5037bc34ed6) (*Single*)
+- [GHOST VS. GHOUL MASHUP] (https://open.spotify.com/track/7wfTYtfelL54VIXKjeISKa?si=afa6c01dbba14f93) (*Single*)
+- [Möbius] (https://open.spotify.com/track/5lCjiWAyjWjVElyxw79TCn?si=188ca4d71fd2423f) (*Single*)
