@@ -10,7 +10,7 @@ permalink: song-use/:title
 
 ## Guideline about use of my song
 
-> Last updateed on Nov 11, 2020.
+> Last updated on Nov 11, 2020.
 >
 > While these are the official guidelines by Camellia himself, it's still recommended to visit [his official site](https://cametek.jp/songuse_en.html) as it may be up to date sooner!
 {: .disclaimer }
