@@ -1,9 +1,9 @@
 ---
 layout: article
 title: Discography
-date: 2023-11-16 08:57 -0600
+date: 2024-01-18T08:25:00.000Z
 category: posts
-author: Various Contributors
+author: Cedric Milhau
 description: Here, you will find various songs Camellia has composed or
   contributed in. If you see anything missing, help us out by adding more pages!
 permalink: camellia/:title
