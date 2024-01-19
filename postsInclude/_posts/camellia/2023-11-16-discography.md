@@ -55,6 +55,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 - [Flash Me back] 
 (https://open.spotify.com/track/1ickaIxH7HoGVOcwg4V1Nz?si=9315f0465d6942f0) (*Single*)
+- [$100 Bills "$215-Step" (Remix)] (https://open.spotify.com/track/18m0uC1IMDlPfSWHbYU8c6?si=e1cd150d72ec49cc) (*Single*)
 
 ### April
 
@@ -67,6 +68,14 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### February
 
 - [GHOST VS. GHOUL MASHUP] (https://open.spotify.com/track/7wfTYtfelL54VIXKjeISKa?si=afa6c01dbba14f93) (*Single*)
-
-
-
+- [Final-Boss-Chan] (#) (*Single*)
+- [WOW!!!!!!!!!!] (https://open.spotify.com/track/0rkBZiFfTC8l3TC6PLnNti?si=1ed18c5b759f477f) (*Single*)
+- [Burning Aquamarine] (https://open.spotify.com/track/2CQWKCQkbAhHErEi8cxYcU?si=f861b0562c8c400b) (*Single*)
+- [U.U.F.O] (#)
+- [] (#) (**)
+- [] (#) (**)
+- [] (#) (**)
+- [] (#) (**)
+- [] (#) (**)
+- [] (#) (**)
+- [] (#) (**)
