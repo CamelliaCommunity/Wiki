@@ -124,11 +124,14 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### August
 
 - [INVAIDAS FROM DA JUNGLE] (#)
-- [Reality Distortion] (#)
 - [Cyphisonia E.P.] (#)
 - [Sleep!] (#)
 
 ## 2016
+
+### December
+
+- [Reality Distortion] (#)
 
 ### April
 
@@ -146,18 +149,31 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 - [Replay!] (#)
 - [One more time * One more time... ] (#) (*Single*)
-- [Dreamless Wanderer] (#)
+
 - [LOP STEP RABBITS!] (#)
-- [sudden shower] (#)
 - [Versus!] (#)
 - [Fly to night, tonight] (#) (*Single*)
 - [Drag the ground] (#) (*Single*)
-- [paroxysm] (#)
+
+## 2014
+
+### December
+
+- [Dreamless Wanderer] (#)
+
+### August
+
+- [sudden shower] (#)
+
+### April
+
 - [[diffraction]] (#)
+
+## 2013
+
+### December
+
+- [paroxysm] (#)
 - [] (#) (**)
-- [] (#) (**)
-- [] (#) (**)
-- [] (#) (**)
-- [] (#) (**)
-- [] (#) (**)
+
 
