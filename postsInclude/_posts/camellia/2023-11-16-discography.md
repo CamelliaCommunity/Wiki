@@ -86,7 +86,6 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 - [Beat Saber (Original Game Soundtrack), Vol. IV] (#)
 - [Unsan-musho] (#) (*Single*)
 - [AttraqtiA] (#) (*Single*)
-- [ΩΩPARTS] (#) (*Single*)
 - [Livht My Way] (#) (*Single*)
 - [No Heroes are Allowed to Enter] (#) (*Single*)
 
@@ -99,6 +98,10 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 - [PURE SILVER] (#) (*Single*)
  
 ## 2020
+
+### November
+
+- [ΩΩPARTS] (#) (*Single*)
 
 ### October
 
