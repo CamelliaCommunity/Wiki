@@ -99,11 +99,11 @@ document.addEventListener("keyup", function(event) {
 	const searchBar = document.getElementById("search-input");
 	const searchWrapper = document.getElementById("results-fixstuff");
 	if (event.key === "Escape") {
-		if (navSidebar.classList.contains("active") && document.activeElement !== searchBar) {
-			hamburgerBtn.click();
-		} else if (!navSidebar.classList.contains("active") && document.activeElement === searchBar) {
+		if (document.activeElement === searchBar) {
 			searchWrapper.style.display = "none";
 			searchBar.blur();
+		} else if (navSidebar.classList.contains("active")) {
+			hamburgerBtn.click();
 		};
 	} else if (event.key === "q") { // Open the sidebar
 		if (!navSidebar.classList.contains("active") && document.activeElement !== searchBar) {
