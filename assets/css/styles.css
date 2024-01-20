@@ -1904,7 +1904,7 @@ hr {
   font-weight: 600;
 }
 #contentWedge #wedgeContainer #wedgeItems ol li {
-  margin-left: 1em;
+  margin-left: 1.2em;
 }
 #contentWedge #wedgeContainer #wedgeItems ol li::marker {
   color: var(--colorLinks);
