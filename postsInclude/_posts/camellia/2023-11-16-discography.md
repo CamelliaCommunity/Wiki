@@ -26,11 +26,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### September
 
 - [Parallel Universe Shifter](<https://open.spotify.com/track/6eLBIXL4GZ5pCFVPNy6pYU?si=8fe6098334d04465>) (*Single*)
-
-###
-
-- [Waifu Jam](<https://open.spotify.com/album/1WChoNojWiIV9UYFk0Me4u?si=AEqpMZ0xRlmowboJRUUuqQ>) (*Single*)
-- [Lorelei] (<https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4>) (*Single*)
+- [Lorelei](<https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4>) (*Single*)
 
 ### April
 
@@ -39,6 +35,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### March
 
 - [ドクヘビ](#) (*Single*)
+- [Waifu Jam](<https://open.spotify.com/album/1WChoNojWiIV9UYFk0Me4u?si=AEqpMZ0xRlmowboJRUUuqQ>) (*Single*)
 
 ## 2022
 
@@ -65,7 +62,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### February
 
-- [GHOST VS. GHOUL MASHUP] (<https://open.spotify.com/track/7wfTYtfelL54VIXKjeISKa?si=afa6c01dbba14f93>) (*Single*)
+- [GHOST VS. GHOUL MASHUP](<https://open.spotify.com/track/7wfTYtfelL54VIXKjeISKa?si=afa6c01dbba14f93>) (*Single*)
 - [Final-Boss-Chan](#) (*Single*)
 - [WOW!!!!!!!!!!](<https://open.spotify.com/track/0rkBZiFfTC8l3TC6PLnNti?si=1ed18c5b759f477f>) (*Single*)
 
@@ -78,7 +75,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### July
 
-- [U.U.F.O] ({% link postsInclude/_posts/camellia/albums/2023-12-21-UUFO.md %})
+- [U.U.F.O]({% link postsInclude/_posts/camellia/albums/2023-12-21-UUFO.md %})
 - [ThanksFollowers40K](#)
 - [Spin Eternally](#) (*Single*)
 - [Beat Saber (Original Game Soundtrack), Vol. IV](#)
@@ -115,7 +112,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### July
 
 - [Qyoh -Nine Stars-](#) (*Single*)
-- [#1f1e33] (#)(*Single*)
+- [#1f1e33](#) (*Single*)
 
 ### May
 
