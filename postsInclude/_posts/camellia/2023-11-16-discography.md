@@ -21,7 +21,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### December
 
 - [TEMPO KATANA](<https://open.spotify.com/track/18IACsfTno406odM9xBavT?si=80bdc04e06414686>) (*Single*)
-- [Snacko (Official Game Soundtrack)] (#)
+- [Snacko (Official Game Soundtrack)](#)
 
 ### September
 
@@ -34,11 +34,11 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### April
 
-- [Ashed Wings (灰の羽搏)] (#)
+- [Ashed Wings (灰の羽搏)](#)
 
 ### March
 
-- [ドクヘビ] (#) (*Single*)
+- [ドクヘビ](#) (*Single*)
 
 ## 2022
 
@@ -52,9 +52,8 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [Flash Me back]
-(<https://open.spotify.com/track/1ickaIxH7HoGVOcwg4V1Nz?si=9315f0465d6942f0>) (*Single*)
-- [$100 Bills "$215-Step" (Remix)] (<https://open.spotify.com/track/18m0uC1IMDlPfSWHbYU8c6?si=e1cd150d72ec49cc>) (*Single*)
+- [Flash Me back](<https://open.spotify.com/track/1ickaIxH7HoGVOcwg4V1Nz?si=9315f0465d6942f0>) (*Single*)
+- [$100 Bills "$215-Step" (Remix)](<https://open.spotify.com/track/18m0uC1IMDlPfSWHbYU8c6?si=e1cd150d72ec49cc>) (*Single*)
 
 ### April
 
@@ -242,4 +241,4 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### October
 
 - [ハニージンジャーエール](#)
-- [] (#) (**)
+- [](#) (**)
