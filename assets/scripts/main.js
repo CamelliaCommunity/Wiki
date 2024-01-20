@@ -98,7 +98,7 @@ hamburgerBtn.addEventListener('click', function(event) {
 document.addEventListener("keyup", function(event) {
 	const searchBar = document.getElementById("search-input");
 	const searchWrapper = document.getElementById("results-fixstuff");
-	if (event.key === "Escape") {
+	if (event.key === "Escape") { // Escape out of the sidebar & search bar
 		if (document.activeElement === searchBar) {
 			searchWrapper.style.display = "none";
 			searchBar.blur();
@@ -109,7 +109,7 @@ document.addEventListener("keyup", function(event) {
 		if (!navSidebar.classList.contains("active") && document.activeElement !== searchBar) {
 			hamburgerBtn.click();
 		};
-	} else if (event.key === "s") {
+	} else if (event.key === "s") { // Open the search bar
 		if (document.activeElement !== searchBar) {
 			searchBar.focus();
 			event.stopPropagation();
