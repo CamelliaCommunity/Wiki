@@ -1,215 +1,247 @@
 ---
-layout: article
+layout: Article
 title: Discography
-date: 2023-11-16 08:57 -0600
+date: 2024-01-18T08:25:00.000Z
 category: posts
-author: Various Contributors
-description: Here, you will find various songs Camellia has composed or contributed in. If you see anything missing, help us out by adding more pages!
+author: Cedric Milhau
+description: Here, you will find various songs Camellia has composed or
+  contributed in. If you see anything missing, help us out by adding more pages!
 permalink: camellia/:title
 ---
 
-## Welcome to the Discography
+## Welcome to Camellia's Discography
 
 > This page has not been updated in a while. If you’re a contributor, please update this page to recent standards!
 {: .caution }
 
 Here, you will find various songs Camellia has composed or contributed in. If you see anything missing, help us out by adding more pages!
 
-## 2010
+
+## 2023
+
+### December
+
+- [TEMPO KATANA] (https://open.spotify.com/track/18IACsfTno406odM9xBavT?si=80bdc04e06414686) (*Single*)
+- [Snacko (Official Game Soundtrack)] (#)
+
+### September
+
+- [Parallel Universe Shifter] (https://open.spotify.com/track/6eLBIXL4GZ5pCFVPNy6pYU?si=8fe6098334d04465) (*Single*)
+
+###
+
+- [Waifu Jam] (https://open.spotify.com/album/1WChoNojWiIV9UYFk0Me4u?si=AEqpMZ0xRlmowboJRUUuqQ) (*Single*)
+- [Lorelei] (https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4) (*Single*)
+
+### April
+
+- [Ashed Wings (灰の羽搏)] (#)
+
+### March
+
+- [ドクヘビ] (#) (*Single*)
+
+
+## 2022
+
+### December
+
+- [Forbidden Pizza] (https://open.spotify.com/track/4oxbn7IRlkLADCzJWdYq8p?si=008b75e1129443ad) (*Single*)
+
+### November
+
+- [FULLFLAVOR ONDO] (https://open.spotify.com/track/4n3aW8rwrT83iZvbQzFCip?si=eceb7d1532d242d1) (*Single*)
+
+### August
+
+- [Flash Me back] 
+(https://open.spotify.com/track/1ickaIxH7HoGVOcwg4V1Nz?si=9315f0465d6942f0) (*Single*)
+- [$100 Bills "$215-Step" (Remix)] (https://open.spotify.com/track/18m0uC1IMDlPfSWHbYU8c6?si=e1cd150d72ec49cc) (*Single*)
+
+### April
+
+- [Möbius] (https://open.spotify.com/track/5lCjiWAyjWjVElyxw79TCn?si=188ca4d71fd2423f) (*Single*)
+
+### March
+
+- [ヒアソビ] (https://open.spotify.com/track/6TaOHCEjas8b3Mm4tNZ31g?si=c65bc5037bc34ed6) (*Single*)
+
+### February
+
+- [GHOST VS. GHOUL MASHUP] (https://open.spotify.com/track/7wfTYtfelL54VIXKjeISKa?si=afa6c01dbba14f93) (*Single*)
+- [Final-Boss-Chan] (#) (*Single*)
+- [WOW!!!!!!!!!!] (https://open.spotify.com/track/0rkBZiFfTC8l3TC6PLnNti?si=1ed18c5b759f477f) (*Single*)
+
+## 2021
+
+### November
+
+- [Burning Aquamarine] (https://open.spotify.com/track/2CQWKCQkbAhHErEi8cxYcU?si=f861b0562c8c400b) (*Single*)
+- [TremENDouS] (#) (*Single*)
+
+### July
+
+- [U.U.F.O] ({% link postsInclude\_posts\camellia\albums\2023-12-21-UUFO.md %})
+- [ThanksFollowers40K] (#)
+- [Spin Eternally] (#) (*Single*)
+- [Beat Saber (Original Game Soundtrack), Vol. IV] (#)
+- [Unsan-musho] (#) (*Single*)
+- [AttraqtiA] (#) (*Single*)
+- [Livht My Way] (#) (*Single*)
+- [No Heroes are Allowed to Enter] (#) (*Single*)
+
+### August
+
+- [Toxic Violet Cubes] (#) (*Single*)
+
+### January
+
+- [PURE SILVER] (#) (*Single*)
+ 
+## 2020
+
+### November
+
+- [ΩΩPARTS] (#) (*Single*)
 
 ### October
 
-#### [ハニージンジャーエール](#)
+- [GHOST (2020 Halloween+++++++++ VIP)] (https://open.spotify.com/track/6hQFdMfWtXzN0AA7M6Gepn?si=a3a807d6c5874553) (*Single*)
 
-Released on 2010-10-31 by かめるかめりあ
+### Semptember
 
-- [さみしがりやのゆめ](#)
-- [耳鳴り.wav](#)
-- [ライフゲーム](#)
-- [ふゆぞら方程式](#)
-- [Sinking(Extended)](#)
-- [Miku as the Virus(debugged)](#)
-- [曲名、募集中。](#)
-- [FEELSUPPRESSION](#)
-- [flowerless world](#)
-- [miningness world](#)
+- [Tera I/O] (#)
+- [THE MUZZLE FACING] (#) (*Single*)
+- [Wolves Standing Towards Enemies] (#) (*Single*)
+- [Dweller's Empty Path (Original Sound Track)] (#)
 
-## 2011
+### July
 
-### May
+- [Qyoh -Nine Stars-] (#) (*Single*)
+- [#1f1e33] (#) (*Single*)
 
-#### [TRIPPERS](#)
+### May 
 
-Released on 2011-05-01 by かめるかめりあ
+- [Looking for Edge of Ground (Feat. 初音ミク)] (#) (*Single*)
 
-- [Shouting Wheels](#)
-- [音楽中毒で死んだ猫(cat killed by overdosing music)](#)
-- [水、静動、雨](#)
-- [Monochrome Ride](#)
-- [しあわせのあおい蜘蛛](#)
-- [TELEPHONE-TELEPORT](#)
-- [８びっと を あるけば](#)
-- [Route of quanta](#)
-- [Logout Sane Dream.](#)
-- [unconsciousness world](#)
+### March
+
+- [Another Xronixle] (#) (*Single*)
+- [Xronial Xero] (#)
+- [Rip it Off (Now) Rip it Off] (#) (*Single*)
+- [Noisz Re:Verse Original Soundtrack] (#)
+- [GOIN'!] (#)
+
+## 2019
+
+### November
+
+- [Nacreous Snowmelt] (#) (*Single*)
+
+### August
+
+- [Blackmagik Blazing] (#)
+
+### February
+
+- [60+3+10K] (#) 
+
+## 2018
+
+### December
+
+- [heart of android] (#)
+- [4orce!] (#)
+
+## 2017
+
+### August
+
+- [INVAIDAS FROM DA JUNGLE] (#)
+- [Sleep!] (#)
+
+## 2016
+
+### December
+
+- [Reality Distortion] (#)
 
 ### October
 
-#### [mikUbiquity](#)
+- [Cyphisonia E.P.] (#)
 
-Released on 2011-10-30 by かめるかめりあ
+### April
 
-- [mikUbiquity - prelude](#)
-- [新月が白く丸く輝いている夜に。](#)
-- [sinlover (ver. 2.0.0)](#)
-- [てんとう虫の見た夢](#)
-- [魔法使いの絵の具](#)
-- [* (Convolution)](#)
-- [グレイロ](#)
-- [君に恋したCPU](#)
-- [Transitionless world](#)
-- [mikUbiquity - postlude](#)
+- [INSANE INFLAME] (#)
+
+### January
+
+- [THX30KFOLLOWERS] (#) 
+
+## 2015
+
+### December
+
+- [crystallized] (#)
+
+### August
+
+- [PLANET//SHAPER] (#)
+- [Replay!] (#)
+- [LOP STEP RABBITS!] (#)
+- [Versus!] (#)
+- [Drag the ground] (#) (*Single*)
+
+## 2014
+
+- [One more time * One more time... ] (#) (*Single*)
+
+### December
+
+- [Dreamless Wanderer] (#)
+
+### August
+
+- [sudden shower] (#)
+
+### April
+
+- [[diffraction]] (#)
+
+## 2013
+
+### December
+
+- [Fly to night, tonight] (#) (*Single*)
+- [paroxysm] (#)
+
+### August
+
+- [Stance on Wave] (#)
+
+### April
+
+- [flow arrow] (#)
 
 ## 2012
 
 ### July
 
-#### [Michno-sequence](#)
+- [Michno-sequence] (#)
 
-Released on 2012-07-08 by かめるかめりあ
+## 2011
 
-- [* importing *](#)
-- [∞度寝](#)
-- [Controlled dive](#)
-- [welcome to wobbling field](#)
-- [君が死ぬのを眺めているよ](#)
-- [sorairo](#)
-- [歯車フィロソフィー](#)
-- [String of the moon](#)
-- [Backslash](#)
-- [サヨナラスイングバイ(electrical flowlight remix)](#)
-- [axisymmetricness world](#)
-- [* exporting *](#)
+### October
 
-## 2013
+- [mikUbiquity] (#)
 
-### August
+### May
 
-#### [Stance on Wave](#)
+- [TRIPPERS] (#)
 
-Released on 2013-08-12 by かめるかめりあ
+## 2010
 
-- [/*encryption(instrumental)*/](#)
-- [the beginning of the war](#)
-- [電子的生死表現](#)
-- [鈍色トリガー](#)
-- [Splatter Party](#)
-- [夕焼けの缶詰](#)
-- [Quantum Entanglement](#)
-- [Merry Go Round Round Round](#)
-- [Z.A.P.](#)
-- [システマティック・ラヴ](#)
-- [extraterrestrial](#)
-- [flow arrow](#)
-- [Underground Avalanche](#)
-- [dilapidated world](#)
-- [/*decryption(instrumental)*/](#)
+### October
 
-### December
-
-#### [paroxysm](#)
-
-Released on 2013-12-31 by かめるかめりあ
-
-- [Ring](#)
-- [Nuclear drive](#)
-- [[e-]](#)
-- [Mithril](#)
-- [Fastest Crash](#)
-- [paroxysm](#)
-- [bug collection](#)
-- [#include](#)
-
-## 2014
-
-### April
-
-#### [[diffraction]](#)
-
-Released on 2014-04-27 by かめるかめりあ
-
-- [Blast your headz with the railgun](#)
-- [(This track is)NOT EPIC](#)
-- [｜И⊥○ ⊥├┤Ш ∠∧∨∧](#)
-- [Peaceful invading](#)
-- [LET'S JUMP](#)
-- [[diffraction]](#)
-- [Hello to the your first video game](#)
-- [reach the deepest one](#)
-- [Phatty Influencers](#)
-- [rohga...](#)
-- [HELIXFOSSIL](#)
-- [dream transfer](#)
-  [/dev/null](#)
-
-### August
-
-#### [sudden shower](#)
-
-Released on 2014-08-17 by かめるかめりあ
-
-- [This is Rock n Roll maybe](#)
-- [I think, it's kind of like the Some Squad](#)
-- [BLOWN WITH THE GLARE](#)
-- [memoryleak](#)
-- [SAMPLING REVOLVER](#)
-- [TYPHOON 8](#)
-- [sudden shower](#)
-- [Treaty of Peace between GlitchHop and Moombahcore](#)
-- [Turning up!](#)
-- [No kidding?](#)
-- [DARK THUNDER](#)
-- [farewell to today](#)
-- [Danger Drug](#)
-- [(blank)](#)
-
-#### [ばーさす！](#)
-
-Released 2014-08-17 by Confetto
-
-- [めいら～だえもん☆だもん](#)
-- [びっくりさせたらおこるよ！](#)
-- [雹落](#)
-- [NEKO*CHEF](#)
-- [ませまてぃっく♥ま+ま=まじっく！](#)
-- [Jump Over!生物種 -Hang Over!PHQ remix- Remixed by PHQUASE](#)
-- [Rainbow](#)
-- [ばーさす！](#)
-- [全日本お風呂化計画](#)
-- [気づいたら春夏秋冬](#)
-- [ませまてぃっく♥ま+ま=まじっく！(L×o÷n＝g♥V±e∽r!)](#)
-
-### December
-
-#### [dreamless wanderer](#)
-
-Released on 2014-12-30 by かめるかめりあ
-
-- [Doven](#)
-- [shadows of cats](#)
-- [Dance on the Mars](#)
-- [Hi-beam](#)
-- [feel my conscious](#)
-- [dreamless wanderer](#)
-- [The Night Is On Fire](#)
-- [End of this nightmare](#)
-
-#### [LOP STEP RABBITS!](#)
-
-Released on 2014-12-30 by かめるかめりあ & Confetto
-
-- [ウサキック！](#)
-- [カフェモカしゅがー](#)
-- [君の声は](#)
-- [うにゃうにゃ＊ぱっぱ](#)
-- [そろばん♡De♥ビッグバン](#)
+- [ハニージンジャーエール] (#)
+- [] (#) (**)
