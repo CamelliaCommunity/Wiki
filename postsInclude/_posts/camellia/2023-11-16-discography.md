@@ -16,22 +16,21 @@ permalink: camellia/:title
 
 Here, you will find various songs Camellia has composed or contributed in. If you see anything missing, help us out by adding more pages!
 
-
 ## 2023
 
 ### December
 
-- [TEMPO KATANA] (https://open.spotify.com/track/18IACsfTno406odM9xBavT?si=80bdc04e06414686) (*Single*)
+- [TEMPO KATANA](<https://open.spotify.com/track/18IACsfTno406odM9xBavT?si=80bdc04e06414686>) (*Single*)
 - [Snacko (Official Game Soundtrack)] (#)
 
 ### September
 
-- [Parallel Universe Shifter] (https://open.spotify.com/track/6eLBIXL4GZ5pCFVPNy6pYU?si=8fe6098334d04465) (*Single*)
+- [Parallel Universe Shifter](<https://open.spotify.com/track/6eLBIXL4GZ5pCFVPNy6pYU?si=8fe6098334d04465>) (*Single*)
 
 ###
 
-- [Waifu Jam] (https://open.spotify.com/album/1WChoNojWiIV9UYFk0Me4u?si=AEqpMZ0xRlmowboJRUUuqQ) (*Single*)
-- [Lorelei] (https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4) (*Single*)
+- [Waifu Jam](<https://open.spotify.com/album/1WChoNojWiIV9UYFk0Me4u?si=AEqpMZ0xRlmowboJRUUuqQ>) (*Single*)
+- [Lorelei] (<https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4>) (*Single*)
 
 ### April
 
@@ -41,207 +40,206 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 - [ドクヘビ] (#) (*Single*)
 
-
 ## 2022
 
 ### December
 
-- [Forbidden Pizza] (https://open.spotify.com/track/4oxbn7IRlkLADCzJWdYq8p?si=008b75e1129443ad) (*Single*)
+- [Forbidden Pizza](<https://open.spotify.com/track/4oxbn7IRlkLADCzJWdYq8p?si=008b75e1129443ad>) (*Single*)
 
 ### November
 
-- [FULLFLAVOR ONDO] (https://open.spotify.com/track/4n3aW8rwrT83iZvbQzFCip?si=eceb7d1532d242d1) (*Single*)
+- [FULLFLAVOR ONDO](<https://open.spotify.com/track/4n3aW8rwrT83iZvbQzFCip?si=eceb7d1532d242d1>) (*Single*)
 
 ### August
 
-- [Flash Me back] 
-(https://open.spotify.com/track/1ickaIxH7HoGVOcwg4V1Nz?si=9315f0465d6942f0) (*Single*)
-- [$100 Bills "$215-Step" (Remix)] (https://open.spotify.com/track/18m0uC1IMDlPfSWHbYU8c6?si=e1cd150d72ec49cc) (*Single*)
+- [Flash Me back]
+(<https://open.spotify.com/track/1ickaIxH7HoGVOcwg4V1Nz?si=9315f0465d6942f0>) (*Single*)
+- [$100 Bills "$215-Step" (Remix)] (<https://open.spotify.com/track/18m0uC1IMDlPfSWHbYU8c6?si=e1cd150d72ec49cc>) (*Single*)
 
 ### April
 
-- [Möbius] (https://open.spotify.com/track/5lCjiWAyjWjVElyxw79TCn?si=188ca4d71fd2423f) (*Single*)
+- [Möbius](<https://open.spotify.com/track/5lCjiWAyjWjVElyxw79TCn?si=188ca4d71fd2423f>) (*Single*)
 
 ### March
 
-- [ヒアソビ] (https://open.spotify.com/track/6TaOHCEjas8b3Mm4tNZ31g?si=c65bc5037bc34ed6) (*Single*)
+- [ヒアソビ](<https://open.spotify.com/track/6TaOHCEjas8b3Mm4tNZ31g?si=c65bc5037bc34ed6>) (*Single*)
 
 ### February
 
-- [GHOST VS. GHOUL MASHUP] (https://open.spotify.com/track/7wfTYtfelL54VIXKjeISKa?si=afa6c01dbba14f93) (*Single*)
-- [Final-Boss-Chan] (#) (*Single*)
-- [WOW!!!!!!!!!!] (https://open.spotify.com/track/0rkBZiFfTC8l3TC6PLnNti?si=1ed18c5b759f477f) (*Single*)
+- [GHOST VS. GHOUL MASHUP] (<https://open.spotify.com/track/7wfTYtfelL54VIXKjeISKa?si=afa6c01dbba14f93>) (*Single*)
+- [Final-Boss-Chan](#) (*Single*)
+- [WOW!!!!!!!!!!](<https://open.spotify.com/track/0rkBZiFfTC8l3TC6PLnNti?si=1ed18c5b759f477f>) (*Single*)
 
 ## 2021
 
 ### November
 
-- [Burning Aquamarine] (https://open.spotify.com/track/2CQWKCQkbAhHErEi8cxYcU?si=f861b0562c8c400b) (*Single*)
-- [TremENDouS] (#) (*Single*)
+- [Burning Aquamarine](<https://open.spotify.com/track/2CQWKCQkbAhHErEi8cxYcU?si=f861b0562c8c400b>) (*Single*)
+- [TremENDouS](#) (*Single*)
 
 ### July
 
 - [U.U.F.O] ({% link postsInclude\_posts\camellia\albums\2023-12-21-UUFO.md %})
-- [ThanksFollowers40K] (#)
-- [Spin Eternally] (#) (*Single*)
-- [Beat Saber (Original Game Soundtrack), Vol. IV] (#)
-- [Unsan-musho] (#) (*Single*)
-- [AttraqtiA] (#) (*Single*)
-- [Livht My Way] (#) (*Single*)
-- [No Heroes are Allowed to Enter] (#) (*Single*)
+- [ThanksFollowers40K](#)
+- [Spin Eternally](#) (*Single*)
+- [Beat Saber (Original Game Soundtrack), Vol. IV](#)
+- [Unsan-musho](#) (*Single*)
+- [AttraqtiA](#) (*Single*)
+- [Livht My Way](#) (*Single*)
+- [No Heroes are Allowed to Enter](#) (*Single*)
 
 ### August
 
-- [Toxic Violet Cubes] (#) (*Single*)
+- [Toxic Violet Cubes](#) (*Single*)
 
 ### January
 
-- [PURE SILVER] (#) (*Single*)
- 
+- [PURE SILVER](#) (*Single*)
+
 ## 2020
 
 ### November
 
-- [ΩΩPARTS] (#) (*Single*)
+- [ΩΩPARTS](#) (*Single*)
 
 ### October
 
-- [GHOST (2020 Halloween+++++++++ VIP)] (https://open.spotify.com/track/6hQFdMfWtXzN0AA7M6Gepn?si=a3a807d6c5874553) (*Single*)
+- [GHOST (2020 Halloween+++++++++ VIP)](<https://open.spotify.com/track/6hQFdMfWtXzN0AA7M6Gepn?si=a3a807d6c5874553>) (*Single*)
 
 ### Semptember
 
-- [Tera I/O] (#)
-- [THE MUZZLE FACING] (#) (*Single*)
-- [Wolves Standing Towards Enemies] (#) (*Single*)
-- [Dweller's Empty Path (Original Sound Track)] (#)
+- [Tera I/O](#)
+- [THE MUZZLE FACING](#) (*Single*)
+- [Wolves Standing Towards Enemies](#) (*Single*)
+- [Dweller's Empty Path (Original Sound Track)](#)
 
 ### July
 
-- [Qyoh -Nine Stars-] (#) (*Single*)
-- [#1f1e33] (#) (*Single*)
+- [Qyoh -Nine Stars-](#) (*Single*)
+- [#1f1e33] (#)(*Single*)
 
-### May 
+### May
 
-- [Looking for Edge of Ground (Feat. 初音ミク)] (#) (*Single*)
+- [Looking for Edge of Ground (Feat. 初音ミク)](#) (*Single*)
 
 ### March
 
-- [Another Xronixle] (#) (*Single*)
-- [Xronial Xero] (#)
-- [Rip it Off (Now) Rip it Off] (#) (*Single*)
-- [Noisz Re:Verse Original Soundtrack] (#)
-- [GOIN'!] (#)
+- [Another Xronixle](#) (*Single*)
+- [Xronial Xero](#)
+- [Rip it Off (Now) Rip it Off](#) (*Single*)
+- [Noisz Re:Verse Original Soundtrack](#)
+- [GOIN'!](#)
 
 ## 2019
 
 ### November
 
-- [Nacreous Snowmelt] (#) (*Single*)
+- [Nacreous Snowmelt](#) (*Single*)
 
 ### August
 
-- [Blackmagik Blazing] (#)
+- [Blackmagik Blazing](#)
 
 ### February
 
-- [60+3+10K] (#) 
+- [60+3+10K](#)
 
 ## 2018
 
 ### December
 
-- [heart of android] (#)
-- [4orce!] (#)
+- [heart of android](#)
+- [4orce!](#)
 
 ## 2017
 
 ### August
 
-- [INVAIDAS FROM DA JUNGLE] (#)
-- [Sleep!] (#)
+- [INVAIDAS FROM DA JUNGLE](#)
+- [Sleep!](#)
 
 ## 2016
 
 ### December
 
-- [Reality Distortion] (#)
+- [Reality Distortion](#)
 
 ### October
 
-- [Cyphisonia E.P.] (#)
+- [Cyphisonia E.P.](#)
 
 ### April
 
-- [INSANE INFLAME] (#)
+- [INSANE INFLAME](#)
 
 ### January
 
-- [THX30KFOLLOWERS] (#) 
+- [THX30KFOLLOWERS](#)
 
 ## 2015
 
 ### December
 
-- [crystallized] (#)
+- [crystallized](#)
 
 ### August
 
-- [PLANET//SHAPER] (#)
-- [Replay!] (#)
-- [LOP STEP RABBITS!] (#)
-- [Versus!] (#)
-- [Drag the ground] (#) (*Single*)
+- [PLANET//SHAPER](#)
+- [Replay!](#)
+- [LOP STEP RABBITS!](#)
+- [Versus!](#)
+- [Drag the ground](#) (*Single*)
 
 ## 2014
 
-- [One more time * One more time... ] (#) (*Single*)
+- [One more time * One more time...](#) (*Single*)
 
 ### December
 
-- [Dreamless Wanderer] (#)
+- [Dreamless Wanderer](#)
 
 ### August
 
-- [sudden shower] (#)
+- [sudden shower](#)
 
 ### April
 
-- [[diffraction]] (#)
+- [[diffraction]](#)
 
 ## 2013
 
 ### December
 
-- [Fly to night, tonight] (#) (*Single*)
-- [paroxysm] (#)
+- [Fly to night, tonight](#) (*Single*)
+- [paroxysm](#)
 
 ### August
 
-- [Stance on Wave] (#)
+- [Stance on Wave](#)
 
 ### April
 
-- [flow arrow] (#)
+- [flow arrow](#)
 
 ## 2012
 
 ### July
 
-- [Michno-sequence] (#)
+- [Michno-sequence](#)
 
 ## 2011
 
 ### October
 
-- [mikUbiquity] (#)
+- [mikUbiquity](#)
 
 ### May
 
-- [TRIPPERS] (#)
+- [TRIPPERS](#)
 
 ## 2010
 
 ### October
 
-- [ハニージンジャーエール] (#)
+- [ハニージンジャーエール](#)
 - [] (#) (**)
