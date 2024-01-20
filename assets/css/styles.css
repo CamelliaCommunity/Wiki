@@ -634,11 +634,20 @@ header {
   width: 100%;
   top: 0;
   background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: height 0.2s ease-in-out;
   z-index: 1;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: -1;
 }
 header .header-shared {
   display: flex;
@@ -685,9 +694,9 @@ header .header-shared .sidebar-wrapper {
   /* navigation bar */
   /* the rest of the styles are split between mobile and desktop */
 }
-header .header-shared .sidebar-wrapper:has(#navSidebar.active) {
+header .header-shared .sidebar-wrapper.active {
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   background-color: rgba(56, 33, 41, 0.4);
   pointer-events: all;
 }
