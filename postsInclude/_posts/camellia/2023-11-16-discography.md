@@ -80,7 +80,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### July
 
-- [U.U.F.O] (#)
+- [U.U.F.O] ({% link postsWiki/_posts/2023-12-11-contributing.md %})
 - [ThanksFollowers40K] (#)
 - [Spin Eternally] (#) (*Single*)
 - [Beat Saber (Original Game Soundtrack), Vol. IV] (#)
