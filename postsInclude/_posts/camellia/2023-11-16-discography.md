@@ -1,5 +1,5 @@
 ---
-layout: Article
+layout: article
 title: Discography
 date: 2024-01-18T08:25:00.000Z
 category: posts
@@ -79,7 +79,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### July
 
-- [U.U.F.O] ({% link postsInclude\_posts\camellia\albums\2023-12-21-UUFO.md %})
+- [U.U.F.O] ({% link postsInclude/_posts/camellia/albums/2023-12-21-UUFO.md %})
 - [ThanksFollowers40K](#)
 - [Spin Eternally](#) (*Single*)
 - [Beat Saber (Original Game Soundtrack), Vol. IV](#)
