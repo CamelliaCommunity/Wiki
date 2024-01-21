@@ -104,7 +104,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### Semptember
 
-- [Tera I/O](#)
+- [Tera I/O]({% link includedPosts/_posts/camellia/albums/2023-12-21-Tera-IO)
 - [THE MUZZLE FACING](https://open.spotify.com/track/3rTgoXd49oDgEpmFRXqHgW?si=e7bde5f888604cc9) (*Single*)
 - [Wolves Standing Towards Enemies](#) (*Single*)
 - [Dweller's Empty Path (Original Sound Track)](#)
@@ -134,7 +134,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [Blackmagik Blazing](#)
+- [Blackmagik Blazing]({% link includedPosts/_posts/camellia/albums/2023-12-21-Blackmagik-Blazing})
 
 ### February
 
@@ -151,22 +151,22 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [INVAIDAS FROM DA JUNGLE](#)
+- [INVAIDAS FROM DA JUNGLE]({% link includedPosts/_posts/camellia/albums/2023-12-20-INVAIDAS-FROM-DA-JUNGLE})
 - [Sleep!](#)
 
 ## 2016
 
 ### December
 
-- [Reality Distortion](#)
+- [Reality Distortion]({% link includedPosts/_posts/camellia/albums/2023-12-18-Reality-Distortion})
 
 ### October
 
-- [Cyphisonia E.P.](#)
+- [Cyphisonia E.P.]({% link includedPosts/_posts/camellia/albums/2023-12-18-Cyphisonia})
 
 ### April
 
-- [INSANE INFLAME](#)
+- [INSANE INFLAME]({% link includedPosts/_posts/camellia/albums/2023-12-18-INSANE-INFLAME)
 
 ### January
 
@@ -176,7 +176,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### December
 
-- [crystallized](#)
+- [crystallized]({% link includedPosts/_posts/camellia/albums/2023-12-12-crystallized})
 
 ### August
 
