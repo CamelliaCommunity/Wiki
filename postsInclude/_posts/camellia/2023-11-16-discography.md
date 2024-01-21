@@ -27,11 +27,11 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 - [Parallel Universe Shifter](<https://open.spotify.com/track/6eLBIXL4GZ5pCFVPNy6pYU?si=8fe6098334d04465>) (*Single*)
 - [Waifu Jam](<https://open.spotify.com/album/1WChoNojWiIV9UYFk0Me4u?si=AEqpMZ0xRlmowboJRUUuqQ>) (*Single*)
-- [Lorelei] (<https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4>) (*Single*)
+- [Lorelei](<https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4>) (*Single*)
 
 ### April
 
-- [Ashed Wings (灰の羽搏)]({% link postsInclude/_posts/camellia/albums/2023-12-21-4th-major-album.md %})
+- [Ashed Wings (灰の羽搏)](<{% link postsInclude/_posts/camellia/albums/2023-12-21-4th-major-album.md %}>)
 
 ### March
 
@@ -62,7 +62,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### February
 
-- [GHOST VS. GHOUL MASHUP] (<https://open.spotify.com/track/7wfTYtfelL54VIXKjeISKa?si=afa6c01dbba14f93>) (*Single*)
+- [GHOST VS. GHOUL MASHUP](<https://open.spotify.com/track/7wfTYtfelL54VIXKjeISKa?si=afa6c01dbba14f93>) (*Single*)
 - [Final-Boss-Chan](https://open.spotify.com/track/3gFExqKMgK02cgBKxrB4SM?si=c2ee6de0c1284bf0) (*Single*)
 - [WOW!!!!!!!!!!](<https://open.spotify.com/track/0rkBZiFfTC8l3TC6PLnNti?si=1ed18c5b759f477f>) (*Single*)
 
