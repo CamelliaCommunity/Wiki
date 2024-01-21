@@ -29,13 +29,13 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 - [Waifu Jam](<https://open.spotify.com/album/1WChoNojWiIV9UYFk0Me4u?si=AEqpMZ0xRlmowboJRUUuqQ>) (*Single*)
 - [Lorelei](<https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4>) (*Single*)
 
+### April
+
+- [Ashed Wings (灰の羽搏)](<{% link postsInclude/_posts/camellia/albums/2023-12-21-4th-major-album.md %}>)
+
 ### March
 
 - [ドクヘビ](https://open.spotify.com/track/0EgECr3jYZHwkiZOIGVM1d?si=beb295dce0bd49de) (*Single*)
-
-### February
-
-- [灰の羽搏](<{% link postsInclude/_posts/camellia/albums/2023-12-21-4th-major-album.md %}>)
 
 ## 2022
 
@@ -75,7 +75,8 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### July
 
-- [U.U.F.O.](<{% link postsInclude/_posts/camellia/albums/2023-12-21-UUFO.md %}>)
+- [U.U.F.O]({% link postsInclude/_posts/camellia/albums/2023-12-21-UUFO.md %})
+- [ThanksFollowers40K](#)
 - [Spin Eternally](https://open.spotify.com/track/1eXjWnz7I5y7Cek7bro07s?si=8eb5f4f1e7844db6) (*Single*)
 - [Beat Saber (Original Game Soundtrack), Vol. IV](#)
 - [Unsan-musho](https://open.spotify.com/track/4sIrtxdZgj0ilts6EcQidX?si=da05b6dcb46e45eb) (*Single*)
@@ -86,10 +87,6 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### August
 
 - [Toxic Violet Cubes](#) (*Single*)
-
-### March
-
-- [Hololive English -Myth- Image Soundtrack](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Hololive-English-Myth-Image-Soundtrack.md %}>)
 
 ### January
 
@@ -107,7 +104,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### Semptember
 
-- [Tera I/O](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Tera-IO.md %}>)
+- [Tera I/O]({% link postsInclude/_posts/camellia/albums/2023-12-21-Tera-IO.md %})
 - [THE MUZZLE FACING](https://open.spotify.com/track/3rTgoXd49oDgEpmFRXqHgW?si=e7bde5f888604cc9) (*Single*)
 - [Wolves Standing Towards Enemies](#) (*Single*)
 - [Dweller's Empty Path (Original Sound Track)](#)
@@ -115,7 +112,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### July
 
 - [Qyoh -Nine Stars-](https://open.spotify.com/track/5xM1Aa2i8CADAIQMSYekgH?si=9828d7d69caf449c) (*Single*)
-- [#1f1e33](<https://open.spotify.com/track/6KjMvgPBb5r6yJWcMCpuoe?si=c86970a850a44cd3>) (*Single*)
+- [#1f1e33](<https://open.spotify.com/track/6KjMvgPBb5r6yJWcMCpuoe?si=c86970a850a44cd3)(*Single>*)
 
 ### May
 
@@ -124,9 +121,10 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### March
 
 - [Another Xronixle](https://open.spotify.com/track/7ctoIcc3neTecHrC7ykgWs?si=2a6fb6bd08f34eab) (*Single*)
-- [Xroniàl Xéro](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Xroniàl-Xéro.md %}>)
+- [Xronial Xero](#)
 - [Rip it Off (Now) Rip it Off](https://open.spotify.com/track/7EMAjbe0EdOzN1fJLUceTC?si=ccb1ead1c3f74026) (*Single*)
 - [Noisz Re:Verse Original Soundtrack](#)
+- [GOIN'!](#)
 
 ## 2019
 
@@ -136,71 +134,39 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [Blackmagik Blazing](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Blackmagik-Blazing.md %}>)
-- [ごーいん！](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Goin.md %}>)
+- [Blackmagik Blazing]({% link postsInclude/_posts/camellia/albums/2023-12-21-Blackmagik-Blazing.md %})
 
 ### February
 
-- [60+3+10kE.P.](<{% link postsInclude/_posts/camellia/albums/2023-12-21-60+3+10kEP.md %}>)
+- [60+3+10K](#)
 
 ## 2018
 
 ### December
 
-- [heart of android](<{% link postsInclude/_posts/camellia/albums/2023-12-21-heart-of-android.md %}>)
-
-### August
-
-- [Camellia "Remixes" Summary & VIPs 02](<{% link postsInclude/_posts/camellia/albums/2023-12-20-Camellia-Remixes-Summary-VIPs-02.md %}>)
-
-### June
-
-- [Mira](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Mira.md %}>)
-
-### March
-
-- [GALAXY BURST](<{% link postsInclude/_posts/camellia/albums/2023-12-21-GALAXY-BURST.md %}>)
+- [heart of android](#)
+- [4orce!](#)
 
 ## 2017
 
-### December
-
-- [ふぉーす！](<{% link postsInclude/_posts/camellia/albums/2023-12-20-Force.md %}>)
-
 ### August
 
-- [INVAIDAS FROM DA JUNGLE](<{% link postsInclude/_posts/camellia/albums/2023-12-20-INVAIDAS-FROM-DA-JUNGLE.md %}>)
-
-### April
-
-- [Camellia "Guest Tracks" Summary & VIPs 01](<{% link postsInclude/_posts/camellia/albums/2023-12-20-Camellia-Guest-Tracks-Summary-VIPs-01.md %}>)
-
-### March
-
-- [TF40K(Thanks Twitter Followers 40K) E.P.](<{% link postsInclude/_posts/camellia/albums/2023-12-20-TF40KEP.md %}>)
+- [INVAIDAS FROM DA JUNGLE]({% link postsInclude/_posts/camellia/albums/2023-12-20-INVAIDAS-FROM-DA-JUNGLE.md %})
+- [Sleep!](#)
 
 ## 2016
 
 ### December
 
-- [Reality Distortion](<{% link postsInclude/_posts/camellia/albums/2023-12-18-Reality-Distortion.md %}>)
+- [Reality Distortion]({% link postsInclude/_posts/camellia/albums/2023-12-18-Reality-Distortion.md %})
 
 ### October
 
-- [Cyphisonia E.P.](<{% link postsInclude/_posts/camellia/albums/2023-12-18-Cyphisonia.md %}>)
-
-### August
-
-- [すりーぷ！](<{% link postsInclude/_posts/camellia/albums/2023-12-18-Sleep.md %}>)
-
-### July
-
-- [MEGANTO METEOR](<{% link postsInclude/_posts/camellia/albums/2023-12-21-MEGANTO-METEOR.md %}>)
+- [Cyphisonia E.P.]({% link postsInclude/_posts/camellia/albums/2023-12-18-Cyphisonia.md %})
 
 ### April
 
-- [INSANE INFLAME](<{% link postsInclude/_posts/camellia/albums/2023-12-18-INSANE-INFLAME.md %}>)
-- [Dualive](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Dualive.md %}>)
+- [INSANE INFLAME]({% link postsInclude/_posts/camellia/albums/2023-12-18-INSANE-INFLAME.md %} )
 
 ### January
 
@@ -210,12 +176,14 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### December
 
-- [crystallized](<{% link postsInclude/_posts/camellia/albums/2023-12-12-crystallized.md %}>)
+- [crystallized]({% link postsInclude/_posts/camellia/albums/2023-12-12-crystallized.md %})
 
 ### August
 
-- [PLANET//SHAPER](<{% link postsInclude/_posts/camellia/albums/2023-12-12-PLANET--SHAPER.md %}>)
-- [りぷれい！](<{% link postsInclude/_posts/camellia/albums/2023-12-12-Replay.md %}>)
+- [PLANET//SHAPER]({% link postsInclude/_posts/camellia/albums/2023-12-12-PLANET--SHAPER.md %})
+- [Replay!](#)
+- [LOP STEP RABBITS!](#)
+- [Versus!](#)
 - [Drag the ground](https://open.spotify.com/track/13DViwRuyaOQJlgLWxwCi0?si=9c61f01ebabf4161) (*Single*)
 
 ## 2014
@@ -224,28 +192,26 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### December
 
-- [LOP STEP RABBITS!](<{% link postsInclude/_posts/camellia/albums/2023-12-06-LOP-STEP-RABBITS!.md %}>)
-- [dreamless wanderer](<{% link postsInclude/_posts/camellia/albums/2023-12-05-dreamless-wanderer.md %}>)
+- [Dreamless Wanderer](#)
 
 ### August
 
-- [ばーさす！](<{% link postsInclude/_posts/camellia/albums/2023-12-06-Versus.md %}>)
-- [sudden shower](<{% link postsInclude/_posts/camellia/albums/2023-12-05-sudden-shower.md %}>)
+- [sudden shower](#)
 
 ### April
 
-- [[diffraction]](<{% link postsInclude/_posts/camellia/albums/2023-12-05-diffraction.md %}>)
+- [[diffraction]](#)
 
 ## 2013
 
 ### December
 
 - [Fly to night, tonight](https://open.spotify.com/track/3IfUyjBlxIeixyLUlYD5cF?si=1af2c2e0e987457c) (*Single*)
-- [paroxysm](<{% link postsInclude/_posts/camellia/albums/2023-12-05-paroxysm.md %}>)
+- [paroxysm](#)
 
 ### August
 
-- [Stance on Wave](<{% link postsInclude/_posts/camellia/albums/2023-12-06-Stance-on-Wave.md %}>)
+- [Stance on Wave](#)
 
 ### April
 
@@ -255,20 +221,21 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### July
 
-- [Michno-sequence](<{% link postsInclude/_posts/camellia/albums/2023-12-06-Michno-sequence.md %}>)
+- [Michno-sequence](#)
 
 ## 2011
 
 ### October
 
-- [mikUbiquity](<{% link postsInclude/_posts/camellia/albums/2023-12-06-mikUbiquity.md %}>)
+- [mikUbiquity](#)
 
 ### May
 
-- [TRIPPERS](<{% link postsInclude/_posts/camellia/albums/2023-12-06-TRIPPERS.md %}>)
+- [TRIPPERS](#)
 
 ## 2010
 
 ### October
 
-- [ハニージンジャーエール](<{% link postsInclude/_posts/camellia/albums/2023-12-06-honey-ginjer-ale.md %}>)
+- [ハニージンジャーエール](#)
+- [](#) (**)
