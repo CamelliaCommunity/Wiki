@@ -31,7 +31,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### April
 
-- [Ashed Wings (灰の羽搏)] ({% link includedPosts/_posts/camellia/albums/2023-12-21-4th-major-album})
+- [Ashed Wings (灰の羽搏)]({% link includedPosts/_posts/camellia/albums/2023-12-21-4th-major-album})
 
 ### March
 
@@ -75,7 +75,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### July
 
-- [U.U.F.O] ({% link postsInclude/_posts/camellia/albums/2023-12-21-UUFO.md %})
+- [U.U.F.O]({% link postsInclude/_posts/camellia/albums/2023-12-21-UUFO.md %})
 - [ThanksFollowers40K](#)
 - [Spin Eternally](https://open.spotify.com/track/1eXjWnz7I5y7Cek7bro07s?si=8eb5f4f1e7844db6) (*Single*)
 - [Beat Saber (Original Game Soundtrack), Vol. IV](#)
