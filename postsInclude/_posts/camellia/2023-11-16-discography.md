@@ -112,7 +112,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### July
 
 - [Qyoh -Nine Stars-](https://open.spotify.com/track/5xM1Aa2i8CADAIQMSYekgH?si=9828d7d69caf449c) (*Single*)
-- [#1f1e33] (<https://open.spotify.com/track/6KjMvgPBb5r6yJWcMCpuoe?si=c86970a850a44cd3)(*Single>*)
+- [#1f1e33](<https://open.spotify.com/track/6KjMvgPBb5r6yJWcMCpuoe?si=c86970a850a44cd3>) (*Single*)
 
 ### May
 
@@ -134,7 +134,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [Blackmagik Blazing]({% link postsInclude/_posts/camellia/albums/2023-12-21-Blackmagik-Blazing.md %})
+- [Blackmagik Blazing](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Blackmagik-Blazing.md %}>)
 
 ### February
 
