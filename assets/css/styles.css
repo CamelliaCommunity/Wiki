@@ -1218,11 +1218,15 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   font-weight: 600;
 }
 #titleContainer #notesContainer #breadcrumbs {
-  display: flex;
+  display: inline;
   align-self: flex-end;
   text-align: left;
   font-weight: 600;
   margin-left: 40px;
+}
+#titleContainer #notesContainer #breadcrumbs * {
+  vertical-align: middle;
+  display: inline;
 }
 
 #notAFullTitleContainer h1 {
@@ -1261,7 +1265,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     margin-left: 48px;
   }
   #titleContainer #notesContainer #breadcrumbs {
-    display: flex;
+    display: inline;
     align-self: flex-end;
     text-align: left;
     font-weight: 600;

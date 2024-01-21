@@ -1,27 +1,33 @@
 <div id="breadcrumbs">
-{% comment %}This is probably the most JANK I've written. But, hey, it's automatic now.{% endcomment %}
-{% assign route="" %}
-{% assign breadCrumbPath = "/" %}
-{% if include.page.permalink != null and include.page.permalink != "" %}
-{% assign breadCrumbPath = include.page.permalink | replace: ':title', include.page.title %}
-{% else %}
-{% assign breadCrumbPath = include.page.title %}
-{% endif %}
+{% comment %}
+THIS BREADCRUMB STUFF IS KILLIN ME. If you see this though, give @thecodingguy a high five ...or tell him how to do this better.
+Fun fact, this had to be rewritten like twice or three times by now.
+Also, reasoning for rewrite because TERA I/O... and we were splitting by /.. you see this issue?
+{% endcomment %}
 
-{% assign breadCrumbs = breadCrumbPath | split:"/" %}
+<a href="{{ '/' }}">Homepage</a>
+
+{% assign route = "" %}
+
+{% assign pageTitleLinkVer = include.page.title | replace: "/", "<>ASDFMOVIE<>ILIKETRAINSDONTTOUCHME<><>" %}
+
+{% if include.page.permalink != null and include.page.permalink != "" %}
+{% assign breadCrumbs = include.page.permalink | replace: ':title', pageTitleLinkVer | split: "/" %}
+{% else %}
+{% assign breadCrumbs = pageTitleLinkVer %}
+{% endif %}
 
 {% assign filename_without_extension = breadCrumbs | last | split:"." | first %}
 {% if breadCrumbs contains "_posts" or filename_without_extension == "index" %}
 {% assign breadCrumbs = breadCrumbs | pop %}
 {% endif %}
 
-<a href="{{ '/' }}">Homepage</a>
 {% for breadCrumb in breadCrumbs %}
 {% if breadCrumb != "" %}
 <i class="ph-bold ph-caret-right"></i>
 {% assign route = route | append: '/' | append: breadCrumb %}
 {% if forloop.last %}
-{% if include.page.title %}{{include.page.title}}{% else %}{{ breadCrumb }}{% endif %}
+<span>{{ breadCrumb | replace: "<>ASDFMOVIE<>ILIKETRAINSDONTTOUCHME<><>", "/" }}</span>
 {% else %}
 <a href="{{ route }}">
 {% assign breadCrumbTitleWords = breadCrumb | replace: "-", " " | remove: ".html" | split: " " %}
