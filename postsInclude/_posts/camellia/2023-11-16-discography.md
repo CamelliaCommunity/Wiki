@@ -31,7 +31,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### April
 
-- [Ashed Wings (灰の羽搏)](#)
+- [Ashed Wings (灰の羽搏)] ({% link includedPosts/_posts/camellia/albums/2023-12-21-4th-major-album})
 
 ### March
 
@@ -180,7 +180,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [PLANET//SHAPER](#)
+- [PLANET//SHAPER]({% link includedPosts/_posts/camellia/albums/2023-12-12-PLANET--SHAPER})
 - [Replay!](#)
 - [LOP STEP RABBITS!](#)
 - [Versus!](#)
