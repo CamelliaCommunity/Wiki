@@ -31,7 +31,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### April
 
-- [Ashed Wings (灰の羽搏)]({% link includedPosts/_posts/camellia/albums/2023-12-21-4th-major-album.md %})
+- [Ashed Wings (灰の羽搏)]({% link postsInclude/_posts/camellia/albums/2023-12-21-4th-major-album.md %})
 
 ### March
 
@@ -104,7 +104,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### Semptember
 
-- [Tera I/O]({% link includedPosts/_posts/camellia/albums/2023-12-21-Tera-IO.md %})
+- [Tera I/O]({% link postsInclude/_posts/camellia/albums/2023-12-21-Tera-IO.md %})
 - [THE MUZZLE FACING](https://open.spotify.com/track/3rTgoXd49oDgEpmFRXqHgW?si=e7bde5f888604cc9) (*Single*)
 - [Wolves Standing Towards Enemies](#) (*Single*)
 - [Dweller's Empty Path (Original Sound Track)](#)
@@ -134,7 +134,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [Blackmagik Blazing]({% link includedPosts/_posts/camellia/albums/2023-12-21-Blackmagik-Blazing.md %})
+- [Blackmagik Blazing]({% link postsInclude/_posts/camellia/albums/2023-12-21-Blackmagik-Blazing.md %})
 
 ### February
 
@@ -151,22 +151,22 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [INVAIDAS FROM DA JUNGLE]({% link includedPosts/_posts/camellia/albums/2023-12-20-INVAIDAS-FROM-DA-JUNGLE.md %})
+- [INVAIDAS FROM DA JUNGLE]({% link postsInclude/_posts/camellia/albums/2023-12-20-INVAIDAS-FROM-DA-JUNGLE.md %})
 - [Sleep!](#)
 
 ## 2016
 
 ### December
 
-- [Reality Distortion]({% link includedPosts/_posts/camellia/albums/2023-12-18-Reality-Distortion.md %})
+- [Reality Distortion]({% link postsInclude/_posts/camellia/albums/2023-12-18-Reality-Distortion.md %})
 
 ### October
 
-- [Cyphisonia E.P.]({% link includedPosts/_posts/camellia/albums/2023-12-18-Cyphisonia.md %})
+- [Cyphisonia E.P.]({% link postsInclude/_posts/camellia/albums/2023-12-18-Cyphisonia.md %})
 
 ### April
 
-- [INSANE INFLAME]({% link includedPosts/_posts/camellia/albums/2023-12-18-INSANE-INFLAME.md %} )
+- [INSANE INFLAME]({% link postsInclude/_posts/camellia/albums/2023-12-18-INSANE-INFLAME.md %} )
 
 ### January
 
@@ -176,11 +176,11 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### December
 
-- [crystallized]({% link includedPosts/_posts/camellia/albums/2023-12-12-crystallized.md %})
+- [crystallized]({% link postsInclude/_posts/camellia/albums/2023-12-12-crystallized.md %})
 
 ### August
 
-- [PLANET//SHAPER]({% link includedPosts/_posts/camellia/albums/2023-12-12-PLANET--SHAPER.md %})
+- [PLANET//SHAPER]({% link postsInclude/_posts/camellia/albums/2023-12-12-PLANET--SHAPER.md %})
 - [Replay!](#)
 - [LOP STEP RABBITS!](#)
 - [Versus!](#)
