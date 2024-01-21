@@ -4,7 +4,8 @@ title: Contributing
 date: 2023-12-11 06:12 -0600
 category: pages
 author: papertek
-description: Read this to figure out how to contribute. Includes directions, guidelines, and more!
+description: Read this to figure out how to contribute. Includes directions,
+  guidelines, and more!
 include: Incomplete Pages
 ---
 
@@ -71,7 +72,7 @@ When a document is included in a Wiki Post, it will not show up on the homepage 
 
 ![Wiki Post with an Included Post Attached](/assets/images/articleImages/contributing/includedpoststuff.png)
 
-To add an *Included Post* within a *Wiki Post*, you must add `include: (Wiki Post Name)` in the Wiki Posts's front matter. Once done, it will be displayed in the wiki posts' card, just like magic!
+To add an *Included Post* within a *Wiki Post*, you must add `include: (Included Post Title)` in the Wiki Posts's front matter. Once done, it will be displayed in the wiki posts' card, just like magic!
 
 Markdown example of using `include` in the front matter.
 
