@@ -2,11 +2,14 @@
 {% comment %}
 THIS BREADCRUMB STUFF IS KILLIN ME. If you see this though, give @thecodingguy a high five ...or tell him how to do this better.
 Fun fact, this had to be rewritten like twice or three times by now.
+Also, reasoning for rewrite because TERA I/O... and we were splitting by /.. you see this issue?
 {% endcomment %}
 
 <a href="{{ '/' }}">Homepage</a>
 
 {% assign route = "" %}
+
+{% assign pageTitleLinkVer = include.page.title | replace: "/", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA727AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<>ASDFMOVIE<>ILIKETRAINSDONTTOUCHME<><>" %}
 
 {% if include.page.permalink != null and include.page.permalink != "" %}
 {% assign breadCrumbs = include.page.permalink | replace: ':title', pageTitleLinkVer | split: "/" %}
@@ -24,7 +27,7 @@ Fun fact, this had to be rewritten like twice or three times by now.
 <i class="ph-bold ph-caret-right"></i>
 {% assign route = route | append: '/' | append: breadCrumb %}
 {% if forloop.last %}
-<span>{{ include.page.title }}</span>
+<span>{{ breadCrumb | replace: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA727AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<>ASDFMOVIE<>ILIKETRAINSDONTTOUCHME<><>", "/" }}</span>
 {% else %}
 <a href="{{ route }}">
 {% assign breadCrumbTitleWords = breadCrumb | replace: "-", " " | remove: ".html" | split: " " %}
