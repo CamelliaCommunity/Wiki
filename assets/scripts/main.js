@@ -2,6 +2,7 @@
 const header = document.querySelector('header');
 const main = document.querySelector('main');
 const scrollToTop = document.getElementById('scrollToTop');
+const sidebarWrapper = document.querySelector('.sidebar-wrapper');
 const navSidebar = document.getElementById('navSidebar');
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const sidebarX = document.getElementById('sidebarX');
@@ -83,6 +84,7 @@ window.addEventListener('load', () => {
  * button */
 hamburgerBtn.addEventListener('click', function(event) {
   navSidebar.classList.toggle('active');
+  sidebarWrapper.classList.toggle('active');
   stopScrolling();
 
   // stop click event from propagating to the document body
@@ -98,18 +100,18 @@ hamburgerBtn.addEventListener('click', function(event) {
 document.addEventListener("keyup", function(event) {
 	const searchBar = document.getElementById("search-input");
 	const searchWrapper = document.getElementById("results-fixstuff");
-	if (event.key === "Escape") {
-		if (navSidebar.classList.contains("active") && document.activeElement !== searchBar) {
-			hamburgerBtn.click();
-		} else if (!navSidebar.classList.contains("active") && document.activeElement === searchBar) {
+	if (event.key === "Escape") { // Escape out of the sidebar & search bar
+		if (document.activeElement === searchBar) {
 			searchWrapper.style.display = "none";
 			searchBar.blur();
+		} else if (navSidebar.classList.contains("active")) {
+			hamburgerBtn.click();
 		};
 	} else if (event.key === "q") { // Open the sidebar
 		if (!navSidebar.classList.contains("active") && document.activeElement !== searchBar) {
 			hamburgerBtn.click();
 		};
-	} else if (event.key === "s") {
+	} else if (event.key === "s") { // Open the search bar
 		if (document.activeElement !== searchBar) {
 			searchBar.focus();
 			event.stopPropagation();
@@ -121,6 +123,7 @@ document.addEventListener("keyup", function(event) {
 /* when a user click the x close the sidebar */
 sidebarX.addEventListener('click', function() {
   navSidebar.classList.remove('active');
+  sidebarWrapper.classList.remove('active');
   doScrolling();
 });
 
@@ -132,6 +135,7 @@ document.addEventListener('click', function(event) {
   if ((!navSidebar.contains(event.target) && event.target !== hamburgerBtn) &&
       navSidebar.classList.contains('active')) {
     navSidebar.classList.remove('active');
+    sidebarWrapper.classList.remove('active');
     doScrolling();
   }
 });
