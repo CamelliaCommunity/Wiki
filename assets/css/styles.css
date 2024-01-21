@@ -1218,15 +1218,14 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   font-weight: 600;
 }
 #titleContainer #notesContainer #breadcrumbs {
-  display: inline;
+  display: flex;
   align-self: flex-end;
   text-align: left;
   font-weight: 600;
   margin-left: 40px;
 }
-#titleContainer #notesContainer #breadcrumbs * {
-  vertical-align: middle;
-  display: inline;
+#titleContainer #notesContainer #breadcrumbs i.ph-caret-right {
+  margin-top: 1.5px;
 }
 
 #notAFullTitleContainer h1 {
@@ -1265,7 +1264,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     margin-left: 48px;
   }
   #titleContainer #notesContainer #breadcrumbs {
-    display: inline;
+    display: flex;
     align-self: flex-end;
     text-align: left;
     font-weight: 600;

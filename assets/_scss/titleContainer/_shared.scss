@@ -40,16 +40,15 @@
     }
 
     #breadcrumbs {
-      display: inline;
+      display: flex;
       align-self: flex-end;
       text-align: left;
       font-weight: 600;
       margin-left: 40px;
     }
 
-	#breadcrumbs * {
-		vertical-align: middle;
-		display: inline;
+	#breadcrumbs i.ph-caret-right {
+		margin-top: 1.5px;
 	}
   }
 }
