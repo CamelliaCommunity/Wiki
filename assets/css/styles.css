@@ -1224,9 +1224,6 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   font-weight: 600;
   margin-left: 40px;
 }
-#titleContainer #notesContainer #breadcrumbs i.ph-caret-right {
-  margin-top: 1.5px;
-}
 
 #notAFullTitleContainer h1 {
   font-style: italic;
