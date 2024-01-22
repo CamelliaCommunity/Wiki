@@ -239,7 +239,7 @@ function stopScrolling() {
 
   // mobile stuff
   document.body.addEventListener('touchmove', function(e) {
-    e.preventDefault();
+    e.stopPropagation();
   });
 }
 
@@ -248,6 +248,6 @@ function doScrolling() {
 
   // mobile stuff
   document.body.removeEventListener('touchmove', function(e) {
-    e.preventDefault();
+    e.stopPropagation();
   });
 }
