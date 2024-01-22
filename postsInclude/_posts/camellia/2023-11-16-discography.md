@@ -200,7 +200,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### April
 
-- [[diffraction]]({% link postsInclude/_posts/camellia/albums/2023-12-05-diffraction} )
+- [[diffraction]]({% link postsInclude/_posts/camellia/albums/2023-12-05-diffraction.md %})
 
 ## 2013
 
