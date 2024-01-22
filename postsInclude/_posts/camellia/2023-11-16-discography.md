@@ -3,7 +3,7 @@ layout: article
 title: Discography
 date: 2024-01-18T08:25:00.000Z
 category: posts
-author: Cedric Milhau
+author: Various Contributors
 description: Here, you will find various songs Camellia has composed or
   contributed in. If you see anything missing, help us out by adding more pages!
 permalink: camellia/:title
@@ -14,7 +14,7 @@ permalink: camellia/:title
 > This page has not been updated in a while. If you’re a contributor, please update this page to recent standards!
 {: .caution }
 
-Here, you will find various songs Camellia has composed or contributed in. If you see anything missing, help us out by adding more pages!
+Here, you will find various songs Camellia has composed or contributed to. If you see anything missing, help us out by adding more pages!
 
 ## 2023
 
@@ -137,7 +137,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### August
 
 - [Blackmagik Blazing](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Blackmagik-Blazing.md %}>)
-- [GOIN'!](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Goin %}>)
+- [GOIN'!](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Goin.md %}>)
 
 ### February
 
@@ -147,19 +147,19 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### December
 
-- [heart of android](<{% link postsInclude/_posts/camellia/albums/2023-12-21-heart-of-android %}>)
+- [heart of android](<{% link postsInclude/_posts/camellia/albums/2023-12-21-heart-of-android.md %}>)
 
 ### August
 
-- [Camellia "Remixes" Summary & VIPs 02](<{% link postsInclude/_posts/camellia/albums/2023-12-20-Camellia-Remixes-Summary-VIPs-02 %}>)
+- [Camellia "Remixes" Summary & VIPs 02](<{% link postsInclude/_posts/camellia/albums/2023-12-20-Camellia-Remixes-Summary-VIPs-02.md %}>)
 
 ### June
 
-- [Mira](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Mira %}>)
+- [Mira](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Mira.md %}>)
 
 ### March
 
-- [GALAXY BURST](<{% link postsInclude/_posts/camellia/albums/2023-12-21-GALAXY-BURST %}>)
+- [GALAXY BURST](<{% link postsInclude/_posts/camellia/albums/2023-12-21-GALAXY-BURST.md %}>)
 
 ## 2017
 
@@ -179,7 +179,6 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 - [TF40K(Thanks Twitter Followers 40K) E.P.](<{% link postsInclude/_posts/camellia/albums/2023-12-20-TF40KEP.md %}>)
 - [INVAIDAS FROM DA JUNGLE](<{% link postsInclude/_posts/camellia/albums/2023-12-20-INVAIDAS-FROM-DA-JUNGLE.md %}>)
-- [Sleep!](#)
 
 ## 2016
 
