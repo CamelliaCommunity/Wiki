@@ -71,7 +71,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### November
 
 - [Burning Aquamarine](<https://open.spotify.com/track/2CQWKCQkbAhHErEi8cxYcU?si=f861b0562c8c400b>) (*Single*)
-- [TremENDouS](#) (*Single*)
+- [TremENDouS](<https://www.youtube.com/watch?v=XXDNPX-oYCI>) (*Single*)
 
 ### July
 
@@ -85,7 +85,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 ### August
 
-- [Toxic Violet Cubes](#) (*Single*)
+- [Toxic Violet Cubes](<https://www.youtube.com/watch?v=yLOwX2uDJ34>) (*Single*)
 
 ### March
 
@@ -93,7 +93,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 ### January
 
-- [PURE SILVER](#) (*Single*)
+- [PURE SILVER](<https://www.youtube.com/watch?v=OlnxmYzJ7Oc>) (*Single*)
 
 ## 2020
 
