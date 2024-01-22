@@ -207,7 +207,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### December
 
 - [Fly to night, tonight](https://open.spotify.com/track/3IfUyjBlxIeixyLUlYD5cF?si=1af2c2e0e987457c) (*Single*)
-- [paroxysm](#)
+- [paroxysm]({% link postsInclude/_posts/camellia/albums/2023-12-05-paroxysm.md %})
 
 ### August
 
