@@ -12,7 +12,7 @@ permalink: camellia/discography/:title
 
 いんふぃにてぃ🐰もふりてぃ is a doujin collaborative release by [p19](#) × [ななひら](#) × [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) released on 2017-12-31 (Comiket 93) by the circle [practise](#). 
 
-It is collaboration between illustrator *p19*, vocalist *Nanahira* and composer *Camellia*. The release consists of a CD featuring 3 songs and 3 instrumentals, a DVD featuring 3 music videos and a character introduction, and a booklet featuring lyrics, illustrations and a short comic. The 3 songs were released on streaming platforms on 2019-10-19.
+It is a collaboration between illustrator *p19*, vocalist *Nanahira* and composer *Camellia*. The release consists of a CD featuring 3 songs and 3 instrumentals, a DVD featuring 3 music videos and a character introduction, and a booklet featuring lyrics, illustrations and a short comic. The 3 songs were released on streaming platforms on 2019-10-19.
 
 ## Tracklist
 
