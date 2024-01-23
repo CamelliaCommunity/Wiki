@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "いんふぃにてぃもふりてぃ"
+title: いんふぃにてぃもふりてぃ
 date: 2024-01-23T01:50:34.927Z
 category: posts
 author: Dennisonung
@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 
 ![MOFU-0001](/assets/images/uploads/1_000000001432.jpg "いんふぃにてぃもふりてぃ ")
 
-いんふぃにてぃもふりてぃ  is a doujin E.P by p19, released on 2017 of December.
+いんふぃにてぃもふりてぃ is an collaboration doujin E.P by p19, with music composed by [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) (Camellia) and vocals by ななひら (Narahira), which was presented at C93 on December 31st, 2017, and was released to streaming platforms on October 19th, 2019.
 
 ## Tracklist
 
