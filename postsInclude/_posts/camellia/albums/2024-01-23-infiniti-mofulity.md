@@ -8,25 +8,44 @@ permalink: camellia/discography/:title
 ---
 ## Overview
 
-![MOFU-0001](/assets/images/uploads/1_000000001432.jpg "いんふぃにてぃもふりてぃ ")
+![MOFU-0001](/assets/images/uploads/1_000000001432.jpg "いんふぃにてぃもふりてぃ")
 
-いんふぃにてぃもふりてぃ is an collaboration doujin E.P by p19, with music composed by [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) (Camellia) and vocals by ななひら (Narahira), which was presented at C93 on December 31st, 2017, and was released to streaming platforms on October 19th, 2019.
+いんふぃにてぃ🐰もふりてぃ is a doujin collaborative release by [p19](#) × [ななひら](#) × [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) released on 2017-12-31 (Comiket 93) by the circle [practise](#). 
+
+It is a collaboration between illustrator *p19*, vocalist *Nanahira* and composer *Camellia*. The release consists of a CD featuring 3 songs and 3 instrumentals, a DVD featuring 3 music videos and a character introduction, and a booklet featuring lyrics, illustrations and a short comic. The 3 songs were released on streaming platforms on 2019-10-19.
 
 ## Tracklist
 
-1. [いんふぃにてぃ??もふりてぃ](#) (04:00)
-2. [カラッと☆きつね色ダイヤモンド](#) (04:29)
-3. [チ・ー・ズ・バ・ク・ダ・ン](#) (04:12)
+### CD
 
-Total Length: 00:12:42
+1. [いんふぃにてぃ🐰もふりてぃ](#) (04:00)
+2. [カラッと☆きつね色ダイヤモンド](#) (04:29)
+3. [ハッピー＊テイル](#) (04:13)
+4. [いんふぃにてぃ🐰もふりてぃ (Instrumental)](#) (04:00)
+5. [カラッと☆きつね色ダイヤモンド (Instrumental)](#) (04:29)
+6. [ハッピー＊テイル (Instrumental)](#) (04:13)
+
+Total Length: 25:24
+
+### DVD
+
+1. [いんふぃにてぃ🐰もふりてぃ](#) (04:00)
+2. [カラッと☆きつね色ダイヤモンド](#) (04:29)
+3. [ハッピー＊テイル](#) (04:13)
+4. もふもふな放課後 キャラクター紹介 (00:48)
+
+Total Length: 13:30
 
 ## Credits
 
-* かめりあ – All Music, Lyrics
+* かめりあ – Compose, Arrange, Lyrics
 * ななひら – Vocals
-* p19 – Illustration, Planning
-* narutaki - MV
-* cao - Design
+* p19 – Illustration, Lettering, Web Design, Planning
+* cao. – Design
+* narutaki – Movie
+* ひなゆ – Narration
+* 大久保潤 – CD Mastering, DVD Authoring
+* らいね – Web Coding
 
 ## External Links
 
