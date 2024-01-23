@@ -21,7 +21,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### December
 
 - [TEMPO KATANA](<https://open.spotify.com/track/18IACsfTno406odM9xBavT?si=80bdc04e06414686>) (*Single*)
-- [Snacko (Official Game Soundtrack)](#)
+- [Snacko (Official Game Soundtrack)](<{% link postsInclude/_posts/camellia/albums/2024-01-22-snacko-original-game-soundtrack.md %}>)
 
 ### September
 
@@ -71,7 +71,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### November
 
 - [Burning Aquamarine](<https://open.spotify.com/track/2CQWKCQkbAhHErEi8cxYcU?si=f861b0562c8c400b>) (*Single*)
-- [TremENDouS](#) (*Single*)
+- [TremENDouS](<https://www.youtube.com/watch?v=XXDNPX-oYCI>) (*Single*)
 
 ### July
 
@@ -85,7 +85,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 ### August
 
-- [Toxic Violet Cubes](#) (*Single*)
+- [Toxic Violet Cubes](<https://www.youtube.com/watch?v=yLOwX2uDJ34>) (*Single*)
 
 ### March
 
@@ -93,7 +93,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 ### January
 
-- [PURE SILVER](#) (*Single*)
+- [PURE SILVER](<https://www.youtube.com/watch?v=OlnxmYzJ7Oc>) (*Single*)
 
 ## 2020
 
@@ -133,6 +133,10 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### November
 
 - [Nacreous Snowmelt](https://open.spotify.com/track/5qFqS2zrlkc3ojTdHnJm7m?si=ca9f8a9ca69b4ad4) (*Single*)
+
+### October
+
+- [いんふぃにてぃもふりてぃ](<{% link postsInclude/_posts/camellia/albums/2024-01-23-infiniti-mofulity.md %}>)
 
 ### August
 
