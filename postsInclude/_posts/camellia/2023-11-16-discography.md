@@ -21,7 +21,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### December
 
 - [TEMPO KATANA](<https://open.spotify.com/track/18IACsfTno406odM9xBavT?si=80bdc04e06414686>) (*Single*)
-- [Snacko (Official Game Soundtrack)](#)
+- [Snacko (Official Game Soundtrack)](<{% link postsInclude/_posts/entries/2024-01-22-snacko-original-game-soundtrack}>)
 
 ### September
 
