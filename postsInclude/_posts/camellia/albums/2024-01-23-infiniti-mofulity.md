@@ -4,6 +4,7 @@ title: "いんふぃにてぃもふりてぃ "
 date: 2024-01-23T01:50:34.927Z
 category: pages
 author: Dennisonung
+permalink: camellia/discography/:title
 ---
 ## Overview
 
