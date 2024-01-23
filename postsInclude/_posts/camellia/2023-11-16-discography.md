@@ -3,7 +3,7 @@ layout: article
 title: Discography
 date: 2024-01-18T08:25:00.000Z
 category: posts
-author: Cedric Milhau
+author: Various Contributors
 description: Here, you will find various songs Camellia has composed or
   contributed in. If you see anything missing, help us out by adding more pages!
 permalink: camellia/:title
@@ -14,14 +14,14 @@ permalink: camellia/:title
 > This page has not been updated in a while. If you’re a contributor, please update this page to recent standards!
 {: .caution }
 
-Here, you will find various songs Camellia has composed or contributed in. If you see anything missing, help us out by adding more pages!
+Here, you will find various songs Camellia has composed or contributed to. If you see anything missing, help us out by adding more pages!
 
 ## 2023
 
 ### December
 
 - [TEMPO KATANA](<https://open.spotify.com/track/18IACsfTno406odM9xBavT?si=80bdc04e06414686>) (*Single*)
-- [Snacko (Official Game Soundtrack)](#)
+- [Snacko (Official Game Soundtrack)](<{% link postsInclude/_posts/camellia/albums/2024-01-22-snacko-original-game-soundtrack.md %}>)
 
 ### September
 
@@ -35,7 +35,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### February
 
-- [灰の羽搏](<{% link postsInclude/_posts/camellia/albums/2023-12-21-4th-major-album.md %}>)
+- [Ashed Wings (灰の羽搏)](<{% link postsInclude/_posts/camellia/albums/2023-12-21-4th-major-album.md %}>)
 
 ## 2022
 
@@ -71,11 +71,11 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### November
 
 - [Burning Aquamarine](<https://open.spotify.com/track/2CQWKCQkbAhHErEi8cxYcU?si=f861b0562c8c400b>) (*Single*)
-- [TremENDouS](#) (*Single*)
+- [TremENDouS](<https://www.youtube.com/watch?v=XXDNPX-oYCI>) (*Single*)
 
 ### July
 
-- [U.U.F.O.](<{% link postsInclude/_posts/camellia/albums/2023-12-21-UUFO.md %}>)
+- [U.U.F.O](<{% link postsInclude/_posts/camellia/albums/2023-12-21-UUFO.md %}>)
 - [Spin Eternally](https://open.spotify.com/track/1eXjWnz7I5y7Cek7bro07s?si=8eb5f4f1e7844db6) (*Single*)
 - [Beat Saber (Original Game Soundtrack), Vol. IV](#)
 - [Unsan-musho](https://open.spotify.com/track/4sIrtxdZgj0ilts6EcQidX?si=da05b6dcb46e45eb) (*Single*)
@@ -85,7 +85,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [Toxic Violet Cubes](#) (*Single*)
+- [Toxic Violet Cubes](<https://www.youtube.com/watch?v=yLOwX2uDJ34>) (*Single*)
 
 ### March
 
@@ -93,7 +93,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### January
 
-- [PURE SILVER](#) (*Single*)
+- [PURE SILVER](<https://www.youtube.com/watch?v=OlnxmYzJ7Oc>) (*Single*)
 
 ## 2020
 
@@ -105,7 +105,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 - [GHOST (2020 Halloween+++++++++ VIP)](<https://open.spotify.com/track/6hQFdMfWtXzN0AA7M6Gepn?si=a3a807d6c5874553>) (*Single*)
 
-### Semptember
+### September
 
 - [Tera I/O](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Tera-IO.md %}>)
 - [THE MUZZLE FACING](https://open.spotify.com/track/3rTgoXd49oDgEpmFRXqHgW?si=e7bde5f888604cc9) (*Single*)
@@ -134,10 +134,14 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 - [Nacreous Snowmelt](https://open.spotify.com/track/5qFqS2zrlkc3ojTdHnJm7m?si=ca9f8a9ca69b4ad4) (*Single*)
 
+### October
+
+- [いんふぃにてぃもふりてぃ](<{% link postsInclude/_posts/camellia/albums/2024-01-23-infiniti-mofulity.md %}>)
+
 ### August
 
 - [Blackmagik Blazing](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Blackmagik-Blazing.md %}>)
-- [ごーいん！](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Goin.md %}>)
+- [GOIN'!](<{% link postsInclude/_posts/camellia/albums/2023-12-21-Goin.md %}>)
 
 ### February
 
@@ -165,7 +169,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### December
 
-- [ふぉーす！](<{% link postsInclude/_posts/camellia/albums/2023-12-20-Force.md %}>)
+- [4orce!](<{% link postsInclude/_posts/camellia/albums/2023-12-20-Force.md %}>)
 
 ### August
 
@@ -178,6 +182,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### March
 
 - [TF40K(Thanks Twitter Followers 40K) E.P.](<{% link postsInclude/_posts/camellia/albums/2023-12-20-TF40KEP.md %}>)
+- [INVAIDAS FROM DA JUNGLE](<{% link postsInclude/_posts/camellia/albums/2023-12-20-INVAIDAS-FROM-DA-JUNGLE.md %}>)
 
 ## 2016
 
@@ -191,7 +196,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [すりーぷ！](<{% link postsInclude/_posts/camellia/albums/2023-12-18-Sleep.md %}>)
+- [Sleep!](<{% link postsInclude/_posts/camellia/albums/2023-12-18-Sleep.md %}>)
 
 ### July
 
@@ -215,7 +220,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 ### August
 
 - [PLANET//SHAPER](<{% link postsInclude/_posts/camellia/albums/2023-12-12-PLANET--SHAPER.md %}>)
-- [りぷれい！](<{% link postsInclude/_posts/camellia/albums/2023-12-12-Replay.md %}>)
+- [Replay!](<{% link postsInclude/_posts/camellia/albums/2023-12-12-Replay.md %}>)
 - [Drag the ground](https://open.spotify.com/track/13DViwRuyaOQJlgLWxwCi0?si=9c61f01ebabf4161) (*Single*)
 
 ## 2014
@@ -229,7 +234,7 @@ Here, you will find various songs Camellia has composed or contributed in. If yo
 
 ### August
 
-- [ばーさす！](<{% link postsInclude/_posts/camellia/albums/2023-12-06-Versus.md %}>)
+- [Versus!](<{% link postsInclude/_posts/camellia/albums/2023-12-06-Versus.md %}>)
 - [sudden shower](<{% link postsInclude/_posts/camellia/albums/2023-12-05-sudden-shower.md %}>)
 
 ### April

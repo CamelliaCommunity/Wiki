@@ -100,19 +100,24 @@ hamburgerBtn.addEventListener('click', function(event) {
 document.addEventListener("keyup", function(event) {
 	const searchBar = document.getElementById("search-input");
 	const searchWrapper = document.getElementById("results-fixstuff");
+	const modalImg = document.getElementById("imageModal");
+
 	if (event.key === "Escape") { // Escape out of the sidebar & search bar
-		if (document.activeElement === searchBar) {
+		if (modalImg.parentElement.classList.contains("active")) {
+			const closeBtn = modalImg.parentElement.querySelector(".close");
+			if (closeBtn) closeBtn.click();
+		} else if (document.activeElement === searchBar) {
 			searchWrapper.style.display = "none";
 			searchBar.blur();
 		} else if (navSidebar.classList.contains("active")) {
 			hamburgerBtn.click();
 		};
 	} else if (event.key === "q") { // Open the sidebar
-		if (!navSidebar.classList.contains("active") && document.activeElement !== searchBar) {
+		if (!navSidebar.classList.contains("active") && document.activeElement !== searchBar && !modalImg.parentElement.classList.contains("active")) {
 			hamburgerBtn.click();
 		};
 	} else if (event.key === "s") { // Open the search bar
-		if (document.activeElement !== searchBar) {
+		if (document.activeElement !== searchBar && !modalImg.parentElement.classList.contains("active")) {
 			searchBar.focus();
 			event.stopPropagation();
 		};
@@ -234,7 +239,7 @@ function stopScrolling() {
 
   // mobile stuff
   document.body.addEventListener('touchmove', function(e) {
-    e.preventDefault();
+    e.stopPropagation();
   });
 }
 
@@ -243,6 +248,6 @@ function doScrolling() {
 
   // mobile stuff
   document.body.removeEventListener('touchmove', function(e) {
-    e.preventDefault();
+    e.stopPropagation();
   });
 }

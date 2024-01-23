@@ -1,18 +1,19 @@
 ---
 layout: post
-title: "灰の羽搏"
+title: 灰の羽搏
 categories: posts
 author: KatGrrrl
 description: 灰の羽搏 album page
 permalink: camellia/discography/:title
+date: 2024-01-23T02:55:24.737Z
 ---
 
 ## Overview
 
 ![BRCA-00138 / PCCA-06182](/assets/images/camellia/albums/BRCA-00138.jpg)
-*灰の羽搏* is a major album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2023-02-15 on the label [PONY CANYON](#).
+*灰の羽搏* is a major album by [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) (Camellia) released on 2023-02-15 on the label [PONY CANYON](#).
 
-It is the fourth major album by *Camellia*. There is both a regular and limited edition version of the CD. The limited edtion extras are a second disc with 5 exclusive tracks and an acrylic stand figure of *Camellia*
+It is the fourth major album by *Camellia*. There is both a regular and limited edition version of the CD. The limited edtion extras are a second disc with 5 exclusive tracks and an acrylic stand figure of *Camellia*.
 
 ## Tracklist
 
