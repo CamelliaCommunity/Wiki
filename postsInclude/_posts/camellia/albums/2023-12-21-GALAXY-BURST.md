@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "GALAXY BURST"
+title: GALAXY BURST
 categories: posts
 author: KatGrrrl
 description: GALAXY BURST album page
 permalink: camellia/discography/:title
+date: 2024-01-23T02:54:27.744Z
 ---
 
 ## Overview
 
 ![QWCE-90016](/assets/images/camellia/albums/QWCE-90016.jpg)
-*GALAXY BURST* is a major album by [かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2018-03-21 on the circle [EXITTUNES Dance Production](#).
+*GALAXY BURST* is a major album by [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) (Camellia) released on 2018-03-21 on the label [EXITTUNES Dance Production](#).
 
 It is the second major album by *Camellia*.
 
