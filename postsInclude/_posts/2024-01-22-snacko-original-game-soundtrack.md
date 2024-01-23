@@ -7,7 +7,7 @@ author: Cedric Milhau
 ---
 ## Overview
 
-![Snacko OST](/assets/images/uploads/a1074607886_10.jpg)
+![SMRC-1089](/assets/images/uploads/a1074607886_10.jpg)
 
 
 *Snacko (Original Game Soundtrack)* is an album Composed by Dale North in collaboration with \[かめりあ]({% link postsWiki/_posts/2023-12-10-camellia.md %}) (Camellia) released on 2023-07-12 by [Scarlet Moon Records](https://scarletmoonrecords.bandcamp.com).
