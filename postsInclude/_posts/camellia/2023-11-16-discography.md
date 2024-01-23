@@ -21,7 +21,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### December
 
 - [TEMPO KATANA](<https://open.spotify.com/track/18IACsfTno406odM9xBavT?si=80bdc04e06414686>) (*Single*)
-- [Snacko (Official Game Soundtrack)](<{% link postsInclude/_posts/entries/2024-01-22-snacko-original-game-soundtrack.md %}>)
+- [Snacko (Official Game Soundtrack)](<{% link postsInclude/_posts/camellia/albums/2024-01-22-snacko-original-game-soundtrack.md %}>)
 
 ### September
 
@@ -133,6 +133,10 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### November
 
 - [Nacreous Snowmelt](https://open.spotify.com/track/5qFqS2zrlkc3ojTdHnJm7m?si=ca9f8a9ca69b4ad4) (*Single*)
+
+### October
+
+- [いんふぃにてぃもふりてぃ](<{% link postsInclude/_posts/camellia/albums/2024-01-23-infiniti-mofulity.md %}>)
 
 ### August
 
