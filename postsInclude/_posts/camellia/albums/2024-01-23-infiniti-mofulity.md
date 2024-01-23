@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "いんふぃにてぃもふりてぃ "
+title: "いんふぃにてぃもふりてぃ"
 date: 2024-01-23T01:50:34.927Z
-category: pages
+category: posts
 author: Dennisonung
 permalink: camellia/discography/:title
 ---
 ## Overview
 
-![AlbumCover](/assets/images/uploads/1_000000001432.jpg "いんふぃにてぃもふりてぃ ")
+![MOFU-0001](/assets/images/uploads/1_000000001432.jpg "いんふぃにてぃもふりてぃ ")
 
 いんふぃにてぃもふりてぃ  is a doujin E.P by p19, released on 2017 of December.
 
