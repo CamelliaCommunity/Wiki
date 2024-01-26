@@ -16,6 +16,13 @@ permalink: camellia/:title
 
 Here, you will find various songs Camellia has composed or contributed to. If you see anything missing, help us out by adding more pages!
 
+## 2024
+
+### January
+
+- [Hello (BPM) 2024] (<https://youtu.be/7113wbJD3sw?si=WT5BfeojXf3UadHz>) (*Single*)
+- [Jay Eazy - Mega Man (Camellia Remix)](<https://youtu.be/b8orB2dMUKQ?si=YxDDhLCnQyOg6li->) (*Single*)
+
 ## 2023
 
 ### December
