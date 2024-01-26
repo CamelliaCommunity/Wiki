@@ -21,6 +21,15 @@ layout: none
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
+	<!-- Include extra widgets -->
+	<script src="https://unpkg.com/@netlify/netlify-cms-widget-parent@^1.0.12/dist/netlify-cms-widget-parent.js"></script>
+	
+	<!-- Initialize extra widgets -->
+	<script>
+	  const parentWidget = window.NetlifyCmsWidgetParent;
+	  CMS.registerWidget("parent", parentWidget.control, parentWidget.preview);
+	</script>
+
     <!-- mixin script for our custom css -->
     <script src="mixin.js"></script>
   </body>
