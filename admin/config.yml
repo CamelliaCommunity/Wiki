@@ -53,7 +53,7 @@ collections:
       - { label: "Category", name: "category", widget: "hidden", default: "pages" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Included Posts", name: "include", widget: "string" }
+      - { label: "Included Posts", name: "include", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "includedPosts"
