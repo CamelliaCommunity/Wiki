@@ -1424,6 +1424,7 @@ footer {
   margin-top: auto;
   height: 64px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
