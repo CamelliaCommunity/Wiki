@@ -28,7 +28,7 @@ You are solely responsible for any content you post while using our service and 
 
 ### 4. Limitation of Liability
 
-We are not liable for any direct or indirect damages arising out of or in any way connected with your use of our service. We do not guarantee the accuracy, completeness, or reliability of any content posted using our service.
+We are not liable for any direct or indirect damages arising out of or in any way connected with your use of our services. We do not guarantee the accuracy, completeness, or reliability of any content posted using our services.
 
 ### 5. Governing Law
 
@@ -36,13 +36,14 @@ These Terms of Service shall be governed in accordance with the laws of the Unit
 
 ### 6. Termination
 
-We reserve the right to terminate or suspend your access to our services at any time, without prior notice or liability, for any reason whatsoever, including if you breach these Terms. For example, if your access to our Discord server is terminated, your access to our services will also be terminated. After termination, your comments (unless termination was related to comments) will remain.
+We reserve the right to terminate or suspend your access to our services at any time, without prior notice or liability, for any reason whatsoever, including if you breach these Terms. For example, if your access to our Discord server is terminated, your access to our services will also be terminated. After termination, your discussion posts (unless termination was related to discussion posts) will remain.
 
 ### 7. Changes to Terms
 
 We reserve the right to modify or replace these Terms of Service at any time. It is your responsibility to review these terms periodically for changes. By continuing to access or use our services after any revisions become effective, you agree to be bound by the revised terms.
 
-> To view updates easier, view the [#🤖wiki-feed](https://discord.com/channels/435720333786480641/1174624963584610334) channel in the Discord! {: .tip }
+> To view updates easier, view the [#🤖wiki-feed](https://discord.com/channels/435720333786480641/1174624963584610334) channel in the Discord! 
+{: .tip }
 
 ### 8. Contact Us
 
