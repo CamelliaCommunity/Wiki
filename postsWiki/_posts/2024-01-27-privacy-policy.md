@@ -16,18 +16,18 @@ Welcome to the Camellia Wiki! We value your privacy and are committed to protect
 
 ### 1. What We Collect
 
-When submitting a discussion post, we will collect personal and non-personal identifiable information. For example, we will collect the following personal information: Discord User IDs. The non-personal information that we collect are: discussion post data (for instance, timestamps and post content).
+When submitting a discussion post, we will collect personal and non-personal identifiable information. For example, we will collect the following personal information: Discord User IDs. The non-personal information we collect is comments (for instance, timestamps and post content).
 
 ### 2. How We Use Your Information
-The information you provide to us will be publicly displayed to all users of the Camellia Wiki. However when displaying the data that is provided to our services , the Discord UserID will be converted to the Discord username.
+The information you provide to us will be publicly displayed to all users of the Camellia Wiki. However, when displaying the data provided to our services, the Discord UserID will be converted to the Discord username.
 
 ### 3. Data Retention
 
-We will retain all data for an indefinite amount of time, unless the content provided is removed, either by your request or through moderation means.
+We will retain all data indefinitely unless the provided content is removed, either by your request or through moderation.
 
 ### 4. Your Rights
 
-You have rights regarding your personal information, including the right to access, correct, or delete your information. To request any access, corrections, or to remove your information, please contact us through the means provided in the Contact Us section.
+You have rights regarding your personal information. This includes accessing, correcting, or deleting your data. To request access, corrections, or remove your information, please get in touch with us through the means provided in the Contact Us section.
 
 ### 5. Disclosure of Information
 
