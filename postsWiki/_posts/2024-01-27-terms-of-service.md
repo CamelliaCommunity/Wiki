@@ -12,7 +12,7 @@ description: The document that outlines the terms that govern the use of our ser
 > The Terms of Service were last updated on January 27th, 2024.
 {: .tip }
 
-Welcome to the Camellia Wiki! This document outlines the terms that govern your use of flowertek and the Camellia Wiki Discussions (hereinafter "our services").
+Welcome to the Camellia Wiki! This document outlines the terms that govern your use of flowertek and the Camellia Wiki Comments (hereinafter "our services").
 
 ### 1. Acceptance of Terms
 
@@ -36,7 +36,7 @@ These Terms of Service shall be governed in accordance with the laws of the Unit
 
 ### 6. Termination
 
-We reserve the right to terminate or suspend your access to our services at any time, without prior notice or liability, for any reason whatsoever, including if you breach these Terms. For example, if your access to our Discord server is terminated, your access to our services will also be terminated. After termination, your discussion posts (unless termination was related to discussion posts) will remain.
+We reserve the right to terminate or suspend your access to our services at any time, without prior notice or liability, for any reason whatsoever, including if you breach these Terms. For example, if your access to our Discord server is terminated, your access to our services will also be terminated. After termination, your comments (unless termination was related to comments) will remain.
 
 ### 7. Changes to Terms
 
