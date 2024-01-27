@@ -8,7 +8,6 @@ description: The document that outlines the terms that govern the use of our ser
 ---
 ## Terms of Service
 
-
 > The Terms of Service were last updated on January 27th, 2024.
 {: .tip }
 
@@ -20,7 +19,7 @@ By accessing and using our services, you agree to be bound by these Terms of Ser
 
 ### 2. Privacy Policy
 
-We respect your privacy and are committed to protecting the personal information you provide through our services. Please review our (Privacy Policy)[<#>] to understand how we collect, use, and disclose your information.
+We respect your privacy and are committed to protecting the personal information you provide through our services. Please review our [Privacy Policy]({% link postsWiki/_posts/2024-01-27-privacy-policy.md %}>) to understand how we collect, use, and disclose your information.
 
 ### 3. Your Responsibilities
 
