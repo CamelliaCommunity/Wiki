@@ -27,7 +27,7 @@ We will retain all data indefinitely unless the provided content is removed, eit
 
 ### 4. Your Rights
 
-You have rights regarding your personal information, including accessing, correcting, or deleting your data. To request access, corrections, or remove your information, please get in touch with us through the means provided in the Contact Us section.
+You have rights regarding your personal information. This includes accessing, correcting, or deleting your data. To request access, corrections, or remove your information, please get in touch with us through the means provided in the Contact Us section.
 
 ### 5. Disclosure of Information
 
