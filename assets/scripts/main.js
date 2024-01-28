@@ -113,7 +113,7 @@ document.addEventListener("keyup", function(event) {
 			hamburgerBtn.click();
 		};
 	} else if (event.key === "q") { // Open the sidebar
-		if (!navSidebar.classList.contains("active") && document.activeElement !== searchBar && !modalImg.parentElement.classList.contains("active")) {
+		if (document.activeElement !== searchBar && !modalImg.parentElement.classList.contains("active")) {
 			hamburgerBtn.click();
 		};
 	} else if (event.key === "s") { // Open the search bar
