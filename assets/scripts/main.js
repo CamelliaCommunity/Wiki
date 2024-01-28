@@ -275,7 +275,7 @@ loginBtn.addEventListener("click", (event) => {
 		);
 		popupWindow.focus();
 
-		const popupMsgAlert = setInterval(() => { popupWindow.postMessage('', `http://${window.location.host}/`); }, 500);
+		const popupMsgAlert = setInterval(() => { popupWindow.postMessage('', `${window.location.protocol}//${window.location.host}/`); }, 500);
 
 		window.addEventListener("message", async(event) => {
 			if (popupWindow && !popupWindow.closed && event.data.token) {
