@@ -366,8 +366,7 @@ div.highlight {
 */
 @font-face {
   font-family: "Author-Variable";
-  src: url("../fonts/Author-Variable.woff2") format("woff2"), url("../fonts/Author-Variable.woff") format("woff"),
-    url("../fonts/Author-Variable.ttf") format("truetype");
+  src: url("../fonts/Author-Variable.woff2") format("woff2"), url("../fonts/Author-Variable.woff") format("woff"), url("../fonts/Author-Variable.ttf") format("truetype");
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -384,98 +383,84 @@ div.highlight {
   */
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-Extralight.woff2") format("woff2"), url("../fonts/Author-Extralight.woff") format("woff"),
-    url("../fonts/Author-Extralight.ttf") format("truetype");
+  src: url("../fonts/Author-Extralight.woff2") format("woff2"), url("../fonts/Author-Extralight.woff") format("woff"), url("../fonts/Author-Extralight.ttf") format("truetype");
   font-weight: 200;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-ExtralightItalic.woff2") format("woff2"),
-    url("../fonts/Author-ExtralightItalic.woff") format("woff"),
-    url("../fonts/Author-ExtralightItalic.ttf") format("truetype");
+  src: url("../fonts/Author-ExtralightItalic.woff2") format("woff2"), url("../fonts/Author-ExtralightItalic.woff") format("woff"), url("../fonts/Author-ExtralightItalic.ttf") format("truetype");
   font-weight: 200;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-Light.woff2") format("woff2"), url("../fonts/Author-Light.woff") format("woff"),
-    url("../fonts/Author-Light.ttf") format("truetype");
+  src: url("../fonts/Author-Light.woff2") format("woff2"), url("../fonts/Author-Light.woff") format("woff"), url("../fonts/Author-Light.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-LightItalic.woff2") format("woff2"), url("../fonts/Author-LightItalic.woff") format("woff"),
-    url("../fonts/Author-LightItalic.ttf") format("truetype");
+  src: url("../fonts/Author-LightItalic.woff2") format("woff2"), url("../fonts/Author-LightItalic.woff") format("woff"), url("../fonts/Author-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-Regular.woff2") format("woff2"), url("../fonts/Author-Regular.woff") format("woff"),
-    url("../fonts/Author-Regular.ttf") format("truetype");
+  src: url("../fonts/Author-Regular.woff2") format("woff2"), url("../fonts/Author-Regular.woff") format("woff"), url("../fonts/Author-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-Italic.woff2") format("woff2"), url("../fonts/Author-Italic.woff") format("woff"),
-    url("../fonts/Author-Italic.ttf") format("truetype");
+  src: url("../fonts/Author-Italic.woff2") format("woff2"), url("../fonts/Author-Italic.woff") format("woff"), url("../fonts/Author-Italic.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-Medium.woff2") format("woff2"), url("../fonts/Author-Medium.woff") format("woff"),
-    url("../fonts/Author-Medium.ttf") format("truetype");
+  src: url("../fonts/Author-Medium.woff2") format("woff2"), url("../fonts/Author-Medium.woff") format("woff"), url("../fonts/Author-Medium.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-MediumItalic.woff2") format("woff2"),
-    url("../fonts/Author-MediumItalic.woff") format("woff"), url("../fonts/Author-MediumItalic.ttf") format("truetype");
+  src: url("../fonts/Author-MediumItalic.woff2") format("woff2"), url("../fonts/Author-MediumItalic.woff") format("woff"), url("../fonts/Author-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-Semibold.woff2") format("woff2"), url("../fonts/Author-Semibold.woff") format("woff"),
-    url("../fonts/Author-Semibold.ttf") format("truetype");
+  src: url("../fonts/Author-Semibold.woff2") format("woff2"), url("../fonts/Author-Semibold.woff") format("woff"), url("../fonts/Author-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-SemiboldItalic.woff2") format("woff2"),
-    url("../fonts/Author-SemiboldItalic.woff") format("woff"),
-    url("../fonts/Author-SemiboldItalic.ttf") format("truetype");
+  src: url("../fonts/Author-SemiboldItalic.woff2") format("woff2"), url("../fonts/Author-SemiboldItalic.woff") format("woff"), url("../fonts/Author-SemiboldItalic.ttf") format("truetype");
   font-weight: 600;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-Bold.woff2") format("woff2"), url("../fonts/Author-Bold.woff") format("woff"),
-    url("../fonts/Author-Bold.ttf") format("truetype");
+  src: url("../fonts/Author-Bold.woff2") format("woff2"), url("../fonts/Author-Bold.woff") format("woff"), url("../fonts/Author-Bold.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Author";
-  src: url("../fonts/Author-BoldItalic.woff2") format("woff2"), url("../fonts/Author-BoldItalic.woff") format("woff"),
-    url("../fonts/Author-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/Author-BoldItalic.woff2") format("woff2"), url("../fonts/Author-BoldItalic.woff") format("woff"), url("../fonts/Author-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-display: swap;
   font-style: italic;
@@ -535,15 +520,6 @@ div.highlight {
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
   animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
 }
 @keyframes zoom {
   from {
@@ -714,7 +690,9 @@ header .header-shared .sidebar-wrapper {
   position: fixed;
   width: 100vw;
   left: 0;
+  transition-property: background-color, -webkit-backdrop-filter;
   transition-property: background-color, backdrop-filter;
+  transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
   transition-duration: 400ms;
   pointer-events: none;
   /* navigation bar */
@@ -735,13 +713,7 @@ header .header-shared .sidebar-wrapper #navSidebar {
   gap: 8px;
   border-radius: 0px 30px 30px 0px;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(
-      180deg,
-      rgba(246, 65, 141, 0) 0%,
-      rgba(246, 65, 141, 0.08) 51.04%,
-      rgba(91, 63, 75, 0.2) 100%
-    ),
-    var(--colorCards);
+  background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards);
   transition: 0.4s;
 }
 header .header-shared .sidebar-wrapper #navSidebar.active {
@@ -912,19 +884,14 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     flex-shrink: 0;
     border-radius: 0px 0px 25px 25px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(
-        180deg,
-        rgba(246, 65, 141, 0) 0%,
-        rgba(246, 65, 141, 0.08) 51.04%,
-        rgba(91, 63, 75, 0.2) 100%
-      ),
-      var(--colorTriary);
+    background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorTriary);
   }
   header .header-shared h1 {
     font-size: 42px;
     font-weight: 281;
   }
   header .header-shared #navigationButtons > div {
+    width: -moz-fit-content;
     width: fit-content;
   }
   header .header-shared #navigationButtons > div a {
@@ -964,6 +931,10 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   header .header-shared .sidebar-wrapper #navSidebar .hideMe {
     display: none;
     padding: 0 !important;
+  }
+  header .header-shared #search-container {
+    /* Change the white to any color */
+    /*Change text in autofill textbox*/
   }
   header .header-shared #search-container input:-webkit-autofill,
   header .header-shared #search-container input:-webkit-autofill:hover,
@@ -1034,13 +1005,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(
-        180deg,
-        rgba(246, 65, 141, 0) 0%,
-        rgba(246, 65, 141, 0.08) 51.04%,
-        rgba(91, 63, 75, 0.2) 100%
-      ),
-      var(--colorCards);
+    background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transition: 0.2s;
   }
@@ -1171,13 +1136,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     transition: transform 0.2s;
     border-radius: 0px 0px 10px 25px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(
-        180deg,
-        rgba(246, 65, 141, 0) 0%,
-        rgba(246, 65, 141, 0.08) 51.04%,
-        rgba(91, 63, 75, 0.2) 100%
-      ),
-      var(--colorTriary);
+    background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorTriary);
   }
   header .header-shared .header-inner h1 a {
     gap: 5px;
@@ -1444,7 +1403,7 @@ html {
 /* Scrollbar */
 /* Common styles for Chrome, Safari, Edge */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0px;
   height: 10px;
   -webkit-border-radius: 100px;
   background-color: #3e313b;
@@ -1552,24 +1511,12 @@ p {
   flex-wrap: wrap;
   gap: 20px;
   margin: auto;
-  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
 #navigationButtons .buttonDefault a {
-  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
 #navigationButtons .buttonDefault a:hover {
-  -webkit-transition: all 0s ease-out;
-  -moz-transition: all 0s ease-out;
-  -ms-transition: all 0s ease-out;
-  -o-transition: all 0s ease-out;
   transition: all 0s ease-out;
 }
 
@@ -1644,6 +1591,7 @@ a:hover {
 .card {
   background: var(--colorCards) 0% 0% no-repeat padding-box;
   max-width: 827px;
+  height: -moz-fit-content;
   height: fit-content;
   border-radius: 35px;
   line-height: 26px;
@@ -1651,7 +1599,9 @@ a:hover {
 
 .miniCard {
   background: var(--colorCards) 0% 0% no-repeat padding-box;
+  height: -moz-fit-content;
   height: fit-content;
+  block-size: -moz-fit-content;
   block-size: fit-content;
   border-radius: 35px;
   line-height: 26px;
@@ -1744,13 +1694,7 @@ blockquote.tip {
 }
 
 .cardHeader {
-  background: linear-gradient(
-      180deg,
-      rgba(102, 31, 87, 0.3) 0%,
-      rgba(187, 58, 159, 0.12) 50.52%,
-      rgba(217, 130, 198, 0) 100%
-    ),
-    var(--colorTriary);
+  background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%), var(--colorTriary);
   display: flex;
   border-top: 3px solid var(--colorBorderTertiary);
   border-bottom: 3px solid var(--colorBorderTertiary);
@@ -2014,12 +1958,16 @@ hr {
 .masonryLayout {
   --masonry-gap: 10px;
   --masonry-brick-width: 304px;
-  column-gap: var(--masonry-gap);
-  column-fill: initial;
-  column-width: var(--masonry-brick-width);
+  -moz-column-gap: var(--masonry-gap);
+       column-gap: var(--masonry-gap);
+  -moz-column-fill: initial;
+       column-fill: initial;
+  -moz-column-width: var(--masonry-brick-width);
+       column-width: var(--masonry-brick-width);
 }
 .masonryLayout > *:not(.card) {
-  break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
   margin-bottom: var(--masonry-gap);
 }
 @supports (grid-template-rows: masonry) {
@@ -2073,10 +2021,6 @@ hr {
 }
 #contentWedge #wedgeContainer #wedgeItems ol li::marker {
   color: var(--colorLinks);
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 #contentWedge #wedgeContainer #wedgeItems ol li:hover::marker {
@@ -2102,10 +2046,6 @@ hr {
 
 #wedgeItems a {
   display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -2117,13 +2057,7 @@ hr {
 #navWedge {
   flex-shrink: 0;
   flex-direction: column;
-  background: linear-gradient(
-      180deg,
-      rgba(246, 65, 141, 0) 0%,
-      rgba(246, 65, 141, 0.08) 51.04%,
-      rgba(91, 63, 75, 0.2) 100%
-    ),
-    var(--colorCards);
+  background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%), var(--colorCards);
   border-radius: 35px;
   width: 283px;
 }
@@ -2194,10 +2128,6 @@ hr {
   margin: 32px;
   opacity: 60%;
   cursor: pointer;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -ms-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
   z-index: 1;
 }
@@ -2344,10 +2274,6 @@ sup {
   margin-top: 24px;
   margin-left: 40px;
   margin-right: 40px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -2362,7 +2288,8 @@ sup {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 24px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
 }
 
 /* markdown support for images */
@@ -2384,10 +2311,6 @@ figure img {
   border-radius: 6px;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 figure img:hover {
@@ -2410,4 +2333,4 @@ figure.floatImage {
 
 .stop-scrolling {
   overflow: hidden;
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
