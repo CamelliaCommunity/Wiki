@@ -35,7 +35,6 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 - [Parallel Universe Shifter](<https://open.spotify.com/track/6eLBIXL4GZ5pCFVPNy6pYU?si=8fe6098334d04465>) (*Single*)
 - [Waifu Jam](<https://open.spotify.com/album/1WChoNojWiIV9UYFk0Me4u?si=AEqpMZ0xRlmowboJRUUuqQ>) (*Single*)
-- [Lorelei](<https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4>) (*Single*)
 
 ### March
 
@@ -44,6 +43,9 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### February
 
 - [Ashed Wings (灰の羽搏)](<{% link postsInclude/_posts/camellia/albums/4th-major-album/2023-12-21-4th-major-album.md %}>)
+### January
+
+- [Lorelei](<https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4>) (*Single*)
 
 ## 2022
 
