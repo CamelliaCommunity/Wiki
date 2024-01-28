@@ -11,7 +11,7 @@ const sync = () => {
         <html>
             <head>
                 <base target="_blank"/>
-                <link rel="stylesheet" href="style/decap-preview.css">
+                <link rel="stylesheet" href="/assets/css/decap-preview.css">
             </head>
             <body>
                 <div></div>

@@ -269,13 +269,13 @@ loginBtn.addEventListener("click", (event) => {
 		const DISCORD_CLIENT_ID = "1169155506988929024";
 		const popupParams = "scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=833,height=654";
 		popupWindow = window.open(
-			`https://discord.com/oauth2/authorize?response_type=token&client_id=${DISCORD_CLIENT_ID}&scope=identify&redirect_uri=http://${window.location.host}/oauthComplete`,
+			`https://discord.com/oauth2/authorize?response_type=token&client_id=${DISCORD_CLIENT_ID}&scope=identify&redirect_uri=${window.location.protocol}//${window.location.host}/oauthComplete`,
 			"popup",
 			popupParams
 		);
 		popupWindow.focus();
 
-		const popupMsgAlert = setInterval(() => { popupWindow.postMessage('', `http://${window.location.host}/`); }, 500);
+		const popupMsgAlert = setInterval(() => { popupWindow.postMessage('', `${window.location.protocol}//${window.location.host}/`); }, 500);
 
 		window.addEventListener("message", async(event) => {
 			if (popupWindow && !popupWindow.closed && event.data.token) {
