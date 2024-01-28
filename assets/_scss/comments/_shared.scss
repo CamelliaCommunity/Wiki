@@ -1,0 +1,30 @@
+#commentSection {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 35px;
+  background: var(--colorCards);
+
+  h3 {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: solid 1px var(--colorGray);
+
+    &:before {
+      content: "";
+      display: inline-block;
+      background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+      height: 17px;
+      margin-right: 8px;
+      width: 4px;
+      position: inherit;
+      border-radius: 2px;
+    }
+  }
+}

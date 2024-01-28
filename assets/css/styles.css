@@ -520,6 +520,15 @@ div.highlight {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
 @keyframes zoom {
   from {
     transform: scale(0);
@@ -686,9 +695,7 @@ header .header-shared .sidebar-wrapper {
   position: fixed;
   width: 100vw;
   left: 0;
-  transition-property: background-color, -webkit-backdrop-filter;
   transition-property: background-color, backdrop-filter;
-  transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
   transition-duration: 400ms;
   pointer-events: none;
   /* navigation bar */
@@ -884,7 +891,6 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     font-weight: 281;
   }
   header .header-shared #navigationButtons > div {
-    width: -moz-fit-content;
     width: fit-content;
   }
   header .header-shared #navigationButtons > div a {
@@ -1281,6 +1287,34 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     margin-right: 0;
   }
 }
+#commentSection {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 35px;
+  background: var(--colorCards);
+}
+#commentSection h3 {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: solid 1px var(--colorGray);
+}
+#commentSection h3:before {
+  content: "";
+  display: inline-block;
+  background: var(--colorSecondary) 0% 0% no-repeat padding-box;
+  height: 17px;
+  margin-right: 8px;
+  width: 4px;
+  position: inherit;
+  border-radius: 2px;
+}
+
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
 html {
@@ -1408,12 +1442,24 @@ p {
   flex-wrap: wrap;
   gap: 20px;
   margin: auto;
+  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
 #navigationButtons .buttonDefault a {
+  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
+  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
 #navigationButtons .buttonDefault a:hover {
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -ms-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
   transition: all 0s ease-out;
 }
 
@@ -1488,7 +1534,6 @@ a:hover {
 .card {
   background: var(--colorCards) 0% 0% no-repeat padding-box;
   max-width: 827px;
-  height: -moz-fit-content;
   height: fit-content;
   border-radius: 35px;
   line-height: 26px;
@@ -1496,9 +1541,7 @@ a:hover {
 
 .miniCard {
   background: var(--colorCards) 0% 0% no-repeat padding-box;
-  height: -moz-fit-content;
   height: fit-content;
-  block-size: -moz-fit-content;
   block-size: fit-content;
   border-radius: 35px;
   line-height: 26px;
@@ -1855,16 +1898,12 @@ hr {
 .masonryLayout {
   --masonry-gap: 10px;
   --masonry-brick-width: 304px;
-  -moz-column-gap: var(--masonry-gap);
-       column-gap: var(--masonry-gap);
-  -moz-column-fill: initial;
-       column-fill: initial;
-  -moz-column-width: var(--masonry-brick-width);
-       column-width: var(--masonry-brick-width);
+  column-gap: var(--masonry-gap);
+  column-fill: initial;
+  column-width: var(--masonry-brick-width);
 }
 .masonryLayout > *:not(.card) {
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
+  break-inside: avoid;
   margin-bottom: var(--masonry-gap);
 }
 @supports (grid-template-rows: masonry) {
@@ -1918,6 +1957,10 @@ hr {
 }
 #contentWedge #wedgeContainer #wedgeItems ol li::marker {
   color: var(--colorLinks);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 #contentWedge #wedgeContainer #wedgeItems ol li:hover::marker {
@@ -1943,6 +1986,10 @@ hr {
 
 #wedgeItems a {
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -2025,6 +2072,10 @@ hr {
   margin: 32px;
   opacity: 60%;
   cursor: pointer;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -ms-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
   z-index: 1;
 }
@@ -2073,7 +2124,7 @@ em {
 .cardBackground {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
   flex-shrink: 0;
   background: var(--colorContentContainer) 0% 0% no-repeat padding-box;
@@ -2084,6 +2135,15 @@ em {
   margin-bottom: 72px;
   min-height: 727px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* add a layout wrapper to keep things sane with new comment section */
+#wikiArticle {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 /* footnote, or the author */
@@ -2162,6 +2222,10 @@ sup {
   margin-top: 24px;
   margin-left: 40px;
   margin-right: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -2176,8 +2240,7 @@ sup {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
 }
 
 /* markdown support for images */
@@ -2199,6 +2262,10 @@ figure img {
   border-radius: 6px;
   width: 100%;
   height: 100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 figure img:hover {

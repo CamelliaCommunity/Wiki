@@ -41,7 +41,7 @@ We reserve the right to terminate or suspend your access to our services at any 
 
 We reserve the right to modify or replace these Terms of Service at any time. It is your responsibility to review these terms periodically for changes. By continuing to access or use our services after any revisions become effective, you agree to be bound by the revised terms.
 
-> To view updates easier, view the [#🤖wiki-feed](https://discord.com/channels/435720333786480641/1174624963584610334) channel in the Discord! 
+> To view updates easier, view the [#🤖wiki-feed](https://discord.com/channels/435720333786480641/1174624963584610334) channel in the Discord!
 {: .tip }
 
 ### 8. Contact Us

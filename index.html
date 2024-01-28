@@ -30,78 +30,80 @@ description: The Camellia Wiki includes the focus on Camellia, his works, and rh
     <p id="footNote">Where most of Camellia's work is documented. Including the fandom.</p>
   </div>
   <div class="cardBackground">
-    <div class="alignmentContainer">
-      <div class="card">
-        <div class="cardContents">
-          <div class="cardHeader">
-            <h2>Let's Get Started!</h2>
-          </div>
-          <p>
-            The Header has important buttons to keep in mind. The navigation bar, the search bar, the GitHub button, and
-            the Discord button.
-          </p>
-          <p>
-            Each of these buttons serves a purpose with navigation, including navigating you out of the site! It is
-            recommended to use this homepage or the sidebar when exploring the site (to access the sidebar, click the
-            hamburger icon on the top far left). If you don't know what you're looking for, use the search bar in the
-            header to search for an article. You can search for author names, too!
-          </p>
-        </div>
-      </div>
-      <div class="masonryLayout">
-        {% for post in site.categories.postsWiki %}
-        <div class="miniCard">
+    <div id="wikiArticle">
+      <div class="alignmentContainer">
+        <div class="card">
           <div class="cardContents">
             <div class="cardHeader">
-              <h2>{{ post.title }}</h2>
+              <h2>Let's Get Started!</h2>
             </div>
-            <p>{{ post.description }}</p>
-            <div class="buttonDefault">
-              <a href="{{ post.url }}">Click Here to View </a>
-            </div>
-            {% assign includedCategories = post.include | split: ', ' %} {% assign includedPosts =
-            site.categories.postsInclude | where_exp: "incPost", "includedCategories contains incPost.title" %} {% if
-            includedPosts.size > 0 %}
-            <h3>What's also Included</h3>
-            <hr />
-            <ul>
-              {% for includedPost in includedPosts %}
-              <li><a href="{{ includedPost.url }}">{{ includedPost.title }}</a></li>
-              {% endfor %} {% endif %}
-            </ul>
+            <p>
+              The Header has important buttons to keep in mind. The navigation bar, the search bar, the GitHub button,
+              and the Discord button.
+            </p>
+            <p>
+              Each of these buttons serves a purpose with navigation, including navigating you out of the site! It is
+              recommended to use this homepage or the sidebar when exploring the site (to access the sidebar, click the
+              hamburger icon on the top far left). If you don't know what you're looking for, use the search bar in the
+              header to search for an article. You can search for author names, too!
+            </p>
           </div>
         </div>
-        {% endfor %}
+        <div class="masonryLayout">
+          {% for post in site.categories.postsWiki %}
+          <div class="miniCard">
+            <div class="cardContents">
+              <div class="cardHeader">
+                <h2>{{ post.title }}</h2>
+              </div>
+              <p>{{ post.description }}</p>
+              <div class="buttonDefault">
+                <a href="{{ post.url }}">Click Here to View </a>
+              </div>
+              {% assign includedCategories = post.include | split: ', ' %} {% assign includedPosts =
+              site.categories.postsInclude | where_exp: "incPost", "includedCategories contains incPost.title" %} {% if
+              includedPosts.size > 0 %}
+              <h3>What's also Included</h3>
+              <hr />
+              <ul>
+                {% for includedPost in includedPosts %}
+                <li><a href="{{ includedPost.url }}">{{ includedPost.title }}</a></li>
+                {% endfor %} {% endif %}
+              </ul>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
       </div>
-    </div>
-    <div id="navWedge">
-      <div id="navWedgeContainer">
-        <h3>Community Posts</h3>
-        <hr />
-        <nav id="navWedgeItems">
-          <h3>News</h3>
-          <ol>
-            {% for post in site.categories.postsNews %}
-            <div class="buttonDefault">
-              <a href="{{ post.url }}"
-                >{{ post.title }}
-                <div class="author">Written by {{ post.author }}</div></a
-              >
-            </div>
-            {% endfor %}
-          </ol>
-          <h3>Blog Posts</h3>
-          <ol>
-            {% for post in site.categories.postsBlog %}
-            <div class="buttonDefault">
-              <a href="{{ post.url }}"
-                >{{ post.title }}
-                <div class="author">Written by {{ post.author }}</div></a
-              >
-            </div>
-            {% endfor %}
-          </ol>
-        </nav>
+      <div id="navWedge">
+        <div id="navWedgeContainer">
+          <h3>Community Posts</h3>
+          <hr />
+          <nav id="navWedgeItems">
+            <h3>News</h3>
+            <ol>
+              {% for post in site.categories.postsNews %}
+              <div class="buttonDefault">
+                <a href="{{ post.url }}"
+                  >{{ post.title }}
+                  <div class="author">Written by {{ post.author }}</div></a
+                >
+              </div>
+              {% endfor %}
+            </ol>
+            <h3>Blog Posts</h3>
+            <ol>
+              {% for post in site.categories.postsBlog %}
+              <div class="buttonDefault">
+                <a href="{{ post.url }}"
+                  >{{ post.title }}
+                  <div class="author">Written by {{ post.author }}</div></a
+                >
+              </div>
+              {% endfor %}
+            </ol>
+          </nav>
+        </div>
       </div>
     </div>
   </div>
