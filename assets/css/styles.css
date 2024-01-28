@@ -589,6 +589,9 @@ div.highlight {
     padding: 8px !important;
     flex-direction: column !important;
   }
+  #wikiArticle {
+    flex-direction: column !important;
+  }
   .cardHeader {
     flex-wrap: wrap !important;
     min-height: 84px !important;
