@@ -28,18 +28,18 @@
   }
 
   .comment-wrapper {
-	padding: 0 10px;
-	border-radius: 10px;
-	background: var(--colorCardDivisor);
-	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
-	&:first-child {
+    padding: 0 10px;
+    border-radius: 10px;
+    background: var(--colorCardDivisor);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+    &:first-child {
       border-radius: 20px 20px 10px 10px;
-	}
-	&:last-child {
+    }
+    &:last-child {
       border-radius: 10px 10px 20px 20px;
-	}
+    }
 
-	.comment-card {
+    .comment-card {
       height: 60px;
       display: flex;
       padding: 10px;
@@ -48,58 +48,87 @@
       align-self: stretch;
 
       .profile-left {
-	    display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 10px;
-		
-		#pfp {
-		  width: 40px;
-		  height: 40px;
-		  
-		  border-radius: 20px;
-		  outline: 2px solid var(--profile-accent);
-		}
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 10px;
+        gap: 10px;
+
+        #pfp {
+          width: 40px;
+          height: 40px;
+
+          border-radius: 20px;
+          outline: 2px solid var(--profile-accent);
+        }
       }
 
-	  .comment-poster {
-		border-radius: 5px;
-		background: var(--colorLight);
-		display: flex;
-		width: 100%;
-		padding: 0px 10px 0px 12px;
-		border-radius: 10px;
+      .comment-poster {
+        /* Change the white to any color */
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 30px var(--colorCards) inset !important;
+        }
+        /*Change text in autofill textbox*/
+        input:-webkit-autofill {
+          -webkit-text-fill-color: white !important;
+        }
 
-		.buttonPost {
-		  display: flex;
-		  width: 40px;
-		  height: 40px;
-		  flex-direction: column;
-		  justify-content: center;
-		  align-items: center;
-		
-		  font-size: 14px;
-		  line-height: normal;
-		  color: var(--colorWhite);
-		  transition: 200ms;
+        border-radius: 5px;
+        background: var(--colorLight);
+        display: flex;
+        width: 100%;
+        padding: 0px 10px 0px 12px;
+        border-radius: 10px;
 
-		  i {
-		   color: var(--colorGray);
-		   font-size: 26px;
-		   transition: 200ms;
-		  }
-		
-		   &:hover {
-		    background: var(--colorCardDivisorHover);
-		    transition: 50ms;
-		  
-		    i {
-		      color: var(--colorWhite);
-		      transition: 50ms;
-		    }
-		  }
-		}
-	  }
-	}
+        #comment-input {
+          width: 100%;
+          background: var(--colorLight);
+          border: none;
+          color: white;
+
+          font-family: "Author", sans-serif;
+          font-size: 18px;
+
+          &:focus-visible {
+            outline: none;
+          }
+        }
+
+        .buttonPost {
+          display: flex;
+          width: 40px;
+          height: 40px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          border-radius: 5px;
+
+          font-size: 14px;
+          line-height: normal;
+          color: var(--colorWhite);
+          transition: 200ms;
+
+          i {
+            color: var(--colorGray);
+            font-size: 26px;
+            transition: 200ms;
+          }
+
+          &:hover {
+            background: var(--colorCardDivisorHover);
+            transition: 50ms;
+
+            i {
+              color: var(--colorWhite);
+              transition: 50ms;
+            }
+          }
+        }
+      }
+    }
   }
 }
