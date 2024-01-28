@@ -20,6 +20,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 ### January
 
+- [堕天ダンス](<https://youtu.be/7o6Vav8SZyo?si=8hJdyV9r1kwiUKRB>) (*Single*)
 - [Hello (BPM) 2024](<https://youtu.be/7113wbJD3sw?si=WT5BfeojXf3UadHz>) (*Single*)
 - [Jay Eazy - Mega Man (Camellia Remix)](<https://youtu.be/b8orB2dMUKQ?si=YxDDhLCnQyOg6li->) (*Single*)
 
