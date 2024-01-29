@@ -30,20 +30,30 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 - [TEMPO KATANA](<https://open.spotify.com/track/18IACsfTno406odM9xBavT?si=80bdc04e06414686>) (*Single*)
 - [Snacko (Official Game Soundtrack)](<{% link postsInclude/_posts/camellia/albums/snacko-original-game-soundtrack/2024-01-22-snacko-original-game-soundtrack.md %}>)
+- [ANTINEUTRINO WITCHCRAFT](https://www.youtube.com/watch?v=BQS57GsE7UQ) (*Single*)
 
 ### September
 
 - [Parallel Universe Shifter](<https://open.spotify.com/track/6eLBIXL4GZ5pCFVPNy6pYU?si=8fe6098334d04465>) (*Single*)
 - [Waifu Jam](<https://open.spotify.com/album/1WChoNojWiIV9UYFk0Me4u?si=AEqpMZ0xRlmowboJRUUuqQ>) (*Single*)
-- [Lorelei](<https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4>) (*Single*)
+
+### July
+- [Käärijä - Cha Cha Cha (Camellia Remix)](https://www.youtube.com/watch?v=BerNRUE4Z4o) (*Single*)
 
 ### March
 
 - [ドクヘビ](https://open.spotify.com/track/0EgECr3jYZHwkiZOIGVM1d?si=beb295dce0bd49de) (*Single*)
+- [999 ("666" Camellia's Unofficial / Rejected Remix)](https://www.youtube.com/watch?v=sts2huKKzLU) (*Single*)
 
 ### February
 
 - [Ashed Wings (灰の羽搏)](<{% link postsInclude/_posts/camellia/albums/4th-major-album/2023-12-21-4th-major-album.md %}>)
+- [Lorelei](<https://open.spotify.com/track/7cEZld0rEQoHv1wcdnoOj1?si=631bd3a4cc5741d4>) (*Single*)
+- [METAVERSE DO BE LIKE THIS](https://www.youtube.com/watch?v=VFDpIJiupw8) (*Single*)
+- [Hello BPM 2023](https://www.youtube.com/watch?v=pDUQ-FuGv80) (*Single*)
+
+### January
+- [Never Gonna Give You Up (Camellia Remix)](https://www.youtube.com/watch?v=qbnt_vmk4fU) (*Single*)
 
 ## 2022
 
@@ -54,6 +64,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### November
 
 - [FULLFLAVOR ONDO](<https://open.spotify.com/track/4n3aW8rwrT83iZvbQzFCip?si=eceb7d1532d242d1>) (*Single*)
+- [Future-Respawning Button](https://www.youtube.com/watch?v=lBZeMeZrDEE) (*Single*)
 
 ### August
 
