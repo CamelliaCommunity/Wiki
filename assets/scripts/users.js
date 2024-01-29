@@ -109,7 +109,7 @@ const updateUserData = async() => {
 
 		profileHeader.innerText = user.name ? user.name : defaults.name;
 		// TODO: Once we check how many comments by the user has made been in the API, we use it here: profileSubHeader.innerText = 
-		profileSubHeader.innerText = user.name ? `Joined ${Functions.convertTimestamp((user.join * 1000), "M/DD/yy")} - 0 Comments` : "Login to access more features...";
+		profileSubHeader.innerText = user.name ? `Joined ${Functions.convertTimestamp((user.join * 1000), "M/DD/yy")} - ${user.comments} Comments` : "Login to access more features...";
 		profileLoginIcon.className = `ph-bold ph-sign-${user.name ? "out" : "in"}`;
 	};
 	await setData();
