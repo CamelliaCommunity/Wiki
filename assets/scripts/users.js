@@ -98,14 +98,18 @@ const updateUserData = async() => {
 		const profileCard = document.querySelector(".profile-card");
 		const profileHeader = profileCard.querySelector("#profile-details #profile-header");
 		const profileSubHeader = profileCard.querySelector("#profile-details #profile-subheader");
-		const profilePfp = profileCard.querySelector(".profile-left #pfp");
 		const profileLoginIcon = profileCard.querySelector(".buttonLogin i");
 
-		profileCard.style.setProperty("--profile-accent", user.color ? user.color : defaults.color);
+		// Checking for all pfp references of the user
+		const selfCards = document.body.querySelectorAll(".my-card");
+		selfCards.forEach(selfCard => {
+			selfCard.querySelector("#pfp").src = user.avatar ? user.avatar : defaults.avatar;
+			selfCard.style.setProperty("--profile-accent", user.color ? user.color : defaults.color);
+		});
+
 		profileHeader.innerText = user.name ? user.name : defaults.name;
 		// TODO: Once we check how many comments by the user has made been in the API, we use it here: profileSubHeader.innerText = 
 		profileSubHeader.innerText = user.name ? `Joined ${Functions.convertTimestamp((user.join * 1000), "M/DD/yy")} - 0 Comments` : "Login to access more features...";
-		profilePfp.src = user.avatar ? user.avatar : defaults.avatar;
 		profileLoginIcon.className = `ph-bold ph-sign-${user.name ? "out" : "in"}`;
 	};
 	await setData();
