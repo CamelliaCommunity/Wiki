@@ -1367,7 +1367,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 #commentSection .comment-wrapper .comment-card .comment-poster input:-webkit-autofill:hover,
 #commentSection .comment-wrapper .comment-card .comment-poster input:-webkit-autofill:focus,
 #commentSection .comment-wrapper .comment-card .comment-poster input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px var(--colorCards) inset !important;
+  -webkit-box-shadow: 0 0 0 30px var(--colorLight) inset !important;
 }
 #commentSection .comment-wrapper .comment-card .comment-poster input:-webkit-autofill {
   -webkit-text-fill-color: white !important;
@@ -1386,7 +1386,9 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 }
 #commentSection .comment-wrapper .comment-card .comment-poster #comment-input::-webkit-input-placeholder {
   font-style: italic;
-  font-weight: 600;
+  font-weight: 500;
+  color: var(--colorWhite) !important;
+  opacity: 0.5 !important;
 }
 #commentSection .comment-wrapper .comment-card .comment-poster .buttonPost {
   display: flex;

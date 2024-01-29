@@ -69,7 +69,7 @@
         input:-webkit-autofill:hover,
         input:-webkit-autofill:focus,
         input:-webkit-autofill:active {
-          -webkit-box-shadow: 0 0 0 30px var(--colorCards) inset !important;
+          -webkit-box-shadow: 0 0 0 30px var(--colorLight) inset !important;
         }
         /*Change text in autofill textbox*/
         input:-webkit-autofill {
@@ -99,7 +99,9 @@
 
           &::-webkit-input-placeholder {
             font-style: italic;
-            font-weight: 600;
+            font-weight: 500;
+            color: var(--colorWhite) !important;
+            opacity: 0.5 !important;
           }
         }
 
