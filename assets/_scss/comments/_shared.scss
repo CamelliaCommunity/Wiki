@@ -12,7 +12,6 @@
 
   h3 {
     padding-bottom: 8px;
-    margin-bottom: 8px;
     border-bottom: solid 1px var(--colorGray);
 
     &:before {
@@ -54,6 +53,7 @@
         padding-right: 10px;
         gap: 10px;
         flex-direction: column;
+        align-self: flex-start;
 
         #pfp {
           width: 40px;
@@ -73,28 +73,39 @@
       .comment-holder {
         display: flex;
         flex-direction: column;
+        align-self: flex-start;
 
         .comment-details-header {
-          display: inline;
-          justify-content: space-between;
-          vertical-align: middle;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          align-self: stretch;
 
           #username {
-            display: inline;
-            vertical-align: middle;
             color: var(--colorPrimary);
-            font-weight: 600;
             font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
           }
 
           #data {
-            display: inline;
-            vertical-align: middle;
             color: var(--colorGray);
-            font-weight: 600;
-            font-style: italic;
             font-size: 16px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: normal;
           }
+        }
+
+        .content {
+          align-self: stretch;
+
+          color: var(--colorWhite, #fff);
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 375;
+          line-height: 26px; /* 144.444% */
         }
       }
 
@@ -141,8 +152,14 @@
             outline: none;
           }
 
-          &::-webkit-input-placeholder,
-          &::-moz-input-placeholder {
+          &::-webkit-input-placeholder {
+            font-style: italic;
+            font-weight: 500;
+            color: var(--colorWhite) !important;
+            opacity: 0.5 !important;
+          }
+
+          &::-moz-placeholder {
             font-style: italic;
             font-weight: 500;
             color: var(--colorWhite) !important;
