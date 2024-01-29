@@ -183,3 +183,19 @@ loginBtn.addEventListener("click", (event) => {
 
 // Attempt to laod in user data once loaded (this requires the script to be executed last in the body)
 updateUserData();
+
+// Comments
+const commentInput = document.getElementById("comment-input");
+const commentInputForm = document.getElementById("my-comment-form");
+commentInput.addEventListener("input", (event) => {
+
+
+	// Check if this is new line crap
+	if (!event.shiftKey && event.key === "Enter") {
+		commentInputForm.submit();
+		event.preventDefault();
+	};
+
+	commentInput.style.height = "auto";
+	commentInput.style.height = (commentInput.scrollHeight) + "px";
+});

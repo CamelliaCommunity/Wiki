@@ -116,6 +116,7 @@ document.addEventListener("keyup", function (event) {
     // Open & close the sidebar
     if (
       document.activeElement.tagName !== "INPUT" &&
+      document.activeElement.tagName !== "TEXTAREA" &&
       !modalImg.parentElement.classList.contains("active")
     ) {
       hamburgerBtn.click();
@@ -124,6 +125,7 @@ document.addEventListener("keyup", function (event) {
     // Open the search bar
     if (
       document.activeElement.tagName !== "INPUT" &&
+      document.activeElement.tagName !== "TEXTAREA" &&
       !modalImg.parentElement.classList.contains("active")
     ) {
       searchBar.focus();
