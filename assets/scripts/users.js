@@ -4,6 +4,11 @@
 	Please, do not bother this, unless you know what it does - this took TOO long to write :sob:
 */
 
+const commentSection = document.getElementById("commentSection");
+const commentInput = document.getElementById("comment-input");
+const commentInputForm = document.getElementById("my-comment-form");
+const commentLoader = document.getElementById("comment-loader");
+
 const Functions = {
 	Cookie: {		
 		get: (cname) => {
@@ -37,7 +42,7 @@ const Functions = {
 			};
 			const data = await response.json();
 
-			if (data.status > 204) throw new Error(data.message)
+			if (data.code != 0) throw new Error(data.message)
 			return data;
 		} catch (error) {
 			return { error };
@@ -74,14 +79,14 @@ const Functions = {
 		return format.replace(/mm|MM|m|M|dd|DD|yyyy|YYYY|yy|YY|hh|HH|ii|II|ss|SS/g, match => formats[match]);
 	}
 };
+let userDefaults = {
+	name: "Not Logged in!",
+	avatar: "/assets/images/avatar.png",
+	color: "var(--colorWhite)"
+};
 
 // Update user data to reflect
 const updateUserData = async() => {
-	let defaults = {
-		name: "Not Logged in!",
-		avatar: "/assets/images/avatar.png",
-		color: "var(--colorWhite)"
-	};
 
 	let cookieData = Functions.Cookie.get("wiki_auth");
 
@@ -103,11 +108,11 @@ const updateUserData = async() => {
 		// Checking for all pfp references of the user
 		const selfCards = document.body.querySelectorAll(".my-card");
 		selfCards.forEach(selfCard => {
-			selfCard.querySelector("#pfp").src = user.avatar ? user.avatar : defaults.avatar;
-			selfCard.style.setProperty("--profile-accent", user.color ? user.color : defaults.color);
+			selfCard.querySelector("#pfp").src = user.avatar ? user.avatar : userDefaults.avatar;
+			selfCard.style.setProperty("--profile-accent", user.color ? user.color : userDefaults.color);
 		});
 
-		profileHeader.innerText = user.name ? user.name : defaults.name;
+		profileHeader.innerText = user.name ? user.name : userDefaults.name;
 		// TODO: Once we check how many comments by the user has made been in the API, we use it here: profileSubHeader.innerText = 
 		profileSubHeader.innerText = user.name ? `Joined ${Functions.convertTimestamp((user.join * 1000), "M/DD/yy")} - ${user.comments} Comments` : "Login to access more features...";
 		profileLoginIcon.className = `ph-bold ph-sign-${user.name ? "out" : "in"}`;
@@ -131,6 +136,38 @@ const updateUserData = async() => {
 	};
 };
 
+const updateCommentInput = () => {
+	let cookieData = Functions.Cookie.get("wiki_auth");
+
+	let dh;
+	let user;
+	if (cookieData) {
+		cookieData = JSON.parse(cookieData);
+
+		dh = cookieData.dh;
+		user = cookieData.user;
+	};
+	console.log(cookieData)
+	if (dh && user) {
+		commentInput.placeholder = "Type some text here! Press enter to post. Use shift+enter for a new line.";
+		commentInput.disabled = false;
+		commentInput.style.cursor = "text";
+		commentInput.parentElement.querySelector(".buttonPost").style.display = "flex";
+	} else {
+		commentInput.placeholder = "Please login to comment.";
+		commentInput.disabled = true;
+		commentInput.style.cursor = "not-allowed";
+		commentInput.parentElement.querySelector(".buttonPost").style.display = "none";
+	};
+};
+
+const updateSite = async() => {
+	updateUserData();
+	if (commentSection) {
+		updateCommentInput();
+	};
+};
+
 
 // Login & Logout stuff
 const loginBtn = document.querySelector(".profile-card .buttonLogin");
@@ -141,7 +178,7 @@ loginBtn.addEventListener("click", (event) => {
 
 	if (loginBtn.querySelector("i").className == "ph-bold ph-sign-out") {
 		Functions.Cookie.set("wiki_auth", JSON.stringify({}), 0);
-		updateUserData();
+		updateSite();
 	} else {
 		const DISCORD_CLIENT_ID = "1169155506988929024";
 		const popupParams = "scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=833,height=654";
@@ -168,7 +205,7 @@ loginBtn.addEventListener("click", (event) => {
 				}), 7);
 
 				// Now that we are logged in, let's GOOOOOOOOOOOOOOOOOOOOOO
-				updateUserData();
+				updateSite();
 			};
 		});
 
@@ -181,21 +218,98 @@ loginBtn.addEventListener("click", (event) => {
 });
 
 
-// Attempt to laod in user data once loaded (this requires the script to be executed last in the body)
-updateUserData();
-
-// Comments
-const commentInput = document.getElementById("comment-input");
-const commentInputForm = document.getElementById("my-comment-form");
-commentInput.addEventListener("input", (event) => {
+// Attempt to laod in the site stuff (this requires the script to be executed last in the body)
+updateSite();
 
 
-	// Check if this is new line crap
-	if (!event.shiftKey && event.key === "Enter") {
+if (commentSection) {
+	// Comments
+	const postBtn = commentInputForm.querySelector(".buttonPost");
+	commentInputForm.addEventListener("submit", (event) => {
+		event.preventDefault();
+		if (this.submitting) return;
+	});
+	postBtn.addEventListener("click", (event) => {
+		postBtn.disabled = true;
+		postBtn.cursor = "not-allowed";
+		commentInputForm.querySelector(".buttonPost i").style = "display: inline-block; animation: spin-spin-spin 1.2s linear infinite;";
+		commentInputForm.querySelector(".buttonPost i").className = "ph-bold ph-spinner-gap";
+
 		commentInputForm.submit();
 		event.preventDefault();
-	};
+	});
+	commentInput.addEventListener("keydown", (event) => {
+		if (!event.shiftKey && event.key === "Enter") {
+			postBtn.click();
+			event.preventDefault();
+			return;
+		};
+	});
+	commentInput.addEventListener("input", (event) => {
+		// Check if this is new line crap
+		commentInput.style.height = "auto";
+		commentInput.style.height = (commentInput.clientHeight) + "px";
+	});
 
-	commentInput.style.height = "auto";
-	commentInput.style.height = (commentInput.scrollHeight) + "px";
-});
+	const fetchComments = async() => {
+		const commentSection = document.getElementById("commentSection");
+
+		const slug = window.location.pathname.replace("/", "").replaceAll("/","-");
+
+		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`);
+
+		commentLoader.style.display = "none";
+
+		if (data.data.length < 1) {
+			console.log("The slug has no comments.");
+			return;
+		};
+
+		data.data.forEach(comment => {
+			const commentWrapper = document.createElement("div");
+			commentWrapper.className = "comment-wrapper";
+			commentWrapper.id = `comment-${comment.id}`;
+
+			const commentForm = document.createElement("form");
+			commentForm.method = "POST";
+			commentForm.action = "#";
+			commentForm.id = `comment-form-${comment.id}`;
+
+			const commentCard = document.createElement("div");
+			commentCard.className = "comment-card";
+			commentCard.style = `--profile-accent: ${comment.author.color ? comment.author.color : userDefaults.color}`;
+
+			const commentProfile = document.createElement("div");
+			commentProfile.className = "profile-left";
+
+			const commentProfileImg = document.createElement("img");
+			commentProfileImg.id = "pfp";
+			commentProfileImg.src = `${comment.author.avatar ? comment.author.avatar : userDefaults.avatar}`;
+			commentProfile.appendChild(commentProfileImg);
+
+			// TODO: Nested
+
+			commentCard.appendChild(commentProfile);
+
+			const commentHolder = document.createElement("div");
+			commentHolder.className = "comment-holder";
+
+			const commentDetailsHeader = document.createElement("div");
+			commentDetailsHeader.className = "comment-details-header";
+			commentDetailsHeader.innerHTML = `<p id="username">${comment.author.name}</p><p id="data">${Functions.convertTimestamp(comment.time * 1000, "mm dd, YYYY")}</p>`
+			commentHolder.appendChild(commentDetailsHeader);
+
+			const commentDetailsContent = document.createElement("div");
+			commentDetailsContent.className = "content";
+			commentDetailsContent.innerHTML = `<p>${comment.content}</p>`;
+			commentHolder.appendChild(commentDetailsContent);
+
+			// Build-A-Comment(TM)
+			commentCard.appendChild(commentHolder);
+			commentForm.appendChild(commentCard);
+			commentWrapper.appendChild(commentForm);
+			commentSection.appendChild(commentWrapper);
+		});
+	};
+	fetchComments();
+};

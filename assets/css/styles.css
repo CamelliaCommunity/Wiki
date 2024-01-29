@@ -1313,6 +1313,22 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   position: inherit;
   border-radius: 2px;
 }
+@keyframes spin-spin-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#commentSection #comment-loader {
+  font-size: 36px;
+  align-self: center;
+}
+#commentSection #comment-loader i {
+  display: inline-block;
+  animation: spin-spin-spin 1.2s linear infinite;
+}
 #commentSection .comment-wrapper {
   padding: 0;
   border-radius: 10px;
@@ -1452,6 +1468,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  cursor: pointer;
   border-radius: 5px;
   font-size: 14px;
   line-height: normal;
