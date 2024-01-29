@@ -34,11 +34,16 @@
       transform: rotate(360deg);
     }
   }
+
   #comment-loader {
-    font-size: 36px;
+    font-size: 32px;
     align-self: center;
+
     i {
       display: inline-block;
+      background: var(--colorCardDivisor);
+      padding: 4px;
+      border-radius: 10px;
       animation: spin-spin-spin 1.2s linear infinite;
     }
   }
