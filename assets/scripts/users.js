@@ -396,6 +396,7 @@ if (commentSection) {
 			if (commentDetailsContent.clientHeight >= 100) {
 				const commentDetailsContentData = commentDetailsContent.querySelector("p");
 				commentDetailsContentData.style["max-height"] = "76px";
+				commentDetailsContentData.classList.add("imFading");
 
 				const readMoreBtn = document.createElement("a");
 				readMoreBtn.id = "readMore";
@@ -405,6 +406,7 @@ if (commentSection) {
 					event.preventDefault();
 
 					commentDetailsContentData.style["max-height"] = "none";
+					commentDetailsContentData.classList.remove("imFading");
 					commentCard.style["max-height"] = "none";
 					readMoreBtn.remove();
 				})

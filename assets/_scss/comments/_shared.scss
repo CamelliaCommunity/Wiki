@@ -149,6 +149,17 @@
           p {
             overflow: hidden;
             text-overflow: ellipsis;
+
+            &.imFading {
+              background: linear-gradient(
+                180deg,
+                #fff 53%,
+                rgba(255, 255, 255, 0) 100%
+              );
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
           }
 
           #readMore {
