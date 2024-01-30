@@ -196,8 +196,10 @@ loginBtn.addEventListener("click", (event) => {
 	event.preventDefault();
 
 	if (loginBtn.querySelector("i").className == "ph-bold ph-sign-out") {
-		Functions.Cookie.set("wiki_auth", JSON.stringify({}), 0);
-		updateSite();
+		if (confirm("Are you sure you want to logout?")) {
+			Functions.Cookie.set("wiki_auth", JSON.stringify({}), 0);
+			updateSite();
+		};
 	} else {
 		const DISCORD_CLIENT_ID = "1169155506988929024";
 		const popupParams = "scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=833,height=654";
