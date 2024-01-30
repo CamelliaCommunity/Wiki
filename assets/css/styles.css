@@ -1408,7 +1408,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   gap: 4px;
 }
 #commentSection .comment-wrapper .comment-card .comment-holder .comment-details-header #data {
-  margin-top: 2px;
+  margin-top: 1px;
   color: var(--colorGray);
   font-size: 16px;
   font-style: italic;
