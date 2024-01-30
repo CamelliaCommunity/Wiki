@@ -1293,7 +1293,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     background: var(--colorLight);
   }
   100% {
-    background: inherit;
+    background: var(--colorCardDivisor);
   }
 }
 #commentSection {

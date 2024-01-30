@@ -311,7 +311,7 @@ if (commentSection) {
 		commentInput.style.height = (commentInput.clientHeight) + "px";
 	});
 
-	Functions.fetchComments = async() => {
+	Functions.fetchComments = async(doHighlight = false) => {
 		const commentSection = document.getElementById("commentSection");
 
 		const slug = Functions.makeSlug(window.location.pathname);
@@ -394,6 +394,19 @@ if (commentSection) {
 				document.querySelector(`#comment-${comment.id} .content`).appendChild(readMoreBtn);
 			};
 		});
+
+		if (doHighlight) {
+			// go to the comment that the user wants.
+			if (window.location.hash) {
+				const theHash = window.location.hash.replace("#", "");
+				if (!theHash.startsWith("comment-")) return;
+				const theComment = document.getElementById(theHash);
+				if (theComment) {
+					theComment.scrollIntoView();
+					theComment.classList.add("highlight");
+				};
+			}
+		}
 	};
-	Functions.fetchComments();
+	Functions.fetchComments(true);
 };
