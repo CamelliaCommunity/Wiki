@@ -77,7 +77,8 @@ const Functions = {
 		};
 
 		return format.replace(/mm|MM|m|M|dd|DD|yyyy|YYYY|yy|YY|hh|HH|ii|II|ss|SS/g, match => formats[match]);
-	}
+	},
+	sleep: (ms) => new Promise(resolve => setTimeout(resolve, ms))
 };
 let userDefaults = {
 	name: "Not Logged in!",
@@ -225,17 +226,49 @@ updateSite();
 if (commentSection) {
 	// Comments
 	const postBtn = commentInputForm.querySelector(".buttonPost");
-	commentInputForm.addEventListener("submit", (event) => {
+	const theSendIcon = commentInputForm.querySelector(".buttonPost i");
+
+	commentInputForm.addEventListener("submit", async(event) => {
 		event.preventDefault();
+		event.stopPropagation();
 		if (this.submitting) return;
-	});
-	postBtn.addEventListener("click", (event) => {
+		const handleError = async(txt) => {
+			theSendIcon.style.setProperty("animation", "none");
+			theSendIcon.className = "ph-bold ph-x-circle";
+
+			await Functions.sleep(100);
+			alert(txt);
+
+			// After closing the error, please set things back.
+			theSendIcon.style.setProperty("animation", "none");
+			theSendIcon.className = "ph-bold ph-paper-plane-right";
+		};
+
+		// Processing
 		postBtn.disabled = true;
 		postBtn.cursor = "not-allowed";
-		commentInputForm.querySelector(".buttonPost i").style = "display: inline-block; animation: spin-spin-spin 1.2s linear infinite;";
-		commentInputForm.querySelector(".buttonPost i").className = "ph-bold ph-spinner-gap";
+		theSendIcon.style = "display: inline-block; animation: spin-spin-spin 1.2s linear infinite;";
+		theSendIcon.className = "ph-bold ph-arrow-clockwise";
+		commentInput.disabled = true;
+		commentInput.cursor = "not-allowed";
+		this.submitting = true;
+		await Functions.sleep(100); // give a few moments to catch up.
 
-		commentInputForm.submit();
+		let cookieData = Functions.Cookie.get("wiki_auth");
+
+		let dh;
+		let user;
+		if (cookieData) {
+			cookieData = JSON.parse(cookieData);
+
+			dh = cookieData.dh;
+			user = cookieData.user;
+		};
+		if (!dh || !user) return await handleError("You are not logged in. Please login.");
+		alert("almost there. :)")
+	});
+	postBtn.addEventListener("click", (event) => {
+		commentInputForm.dispatchEvent(new Event("submit", { cancelable: true }));
 		event.preventDefault();
 	});
 	commentInput.addEventListener("keydown", (event) => {
