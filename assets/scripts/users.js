@@ -30,12 +30,14 @@ const Functions = {
 			document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 		}
 	},
-	sendAPIRequest: async(url, headers) => {
+	sendAPIRequest: async(url, headers, method = "GET", body = null) => {
 		if (!headers) headers = {};
 		if (!headers["Content-Type"]) headers["Content-Type"] = "application/json";
 
+		if (method == "POST" && !body) return "give me the body.";
+
 		try {
-			const response = await fetch(`https://backend.camellia.wiki/${url}`, { headers });
+			const response = await fetch(`https://backend.camellia.wiki/${url}`, { headers, method, body});
 			if (!response.ok) {
 				console.log(response);
 				throw new Error("API Error!");
@@ -78,7 +80,9 @@ const Functions = {
 
 		return format.replace(/mm|MM|m|M|dd|DD|yyyy|YYYY|yy|YY|hh|HH|ii|II|ss|SS/g, match => formats[match]);
 	},
-	sleep: (ms) => new Promise(resolve => setTimeout(resolve, ms))
+	sleep: (ms) => new Promise(resolve => setTimeout(resolve, ms)),
+	makeSlug: (i) => i.replace("/", "").replaceAll("/","-"),
+	basicSanitize: (str) => { const m = { "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#x27;", "/": "&#x2F;"}; const r = /[<>"'/]/ig; return str.replace(r, (ma) => m[ma]); }
 };
 let userDefaults = {
 	name: "Not Logged in!",
@@ -232,25 +236,40 @@ if (commentSection) {
 		event.preventDefault();
 		event.stopPropagation();
 		if (this.submitting) return;
+
+		// this js is so stupid
+		const resetInputForm = (shouldClearInput) => {
+			// please set things back.
+			postBtn.disabled = false;
+			postBtn.style.cursor = "pointer";
+			theSendIcon.style.animation = "none";
+			theSendIcon.style.transform = "rotate(0deg)";
+			theSendIcon.className = "ph-bold ph-paper-plane-right";
+			commentInput.disabled = false;
+			commentInput.style.cursor = "text";
+
+			this.submitting = false;
+			if (shouldClearInput) commentInput.value = "";
+		}
 		const handleError = async(txt) => {
-			theSendIcon.style.setProperty("animation", "none");
+			// this stupid alert thing is so stupid; please save me and let me implement stupid toast notifications
+			theSendIcon.style.animation = "none";
+			theSendIcon.style.transform = "rotate(0deg)";
 			theSendIcon.className = "ph-bold ph-x-circle";
 
-			await Functions.sleep(100);
+			await Functions.sleep(250);
 			alert(txt);
 
-			// After closing the error, please set things back.
-			theSendIcon.style.setProperty("animation", "none");
-			theSendIcon.className = "ph-bold ph-paper-plane-right";
+			resetInputForm();
 		};
 
 		// Processing
 		postBtn.disabled = true;
-		postBtn.cursor = "not-allowed";
+		postBtn.style.cursor = "not-allowed";
 		theSendIcon.style = "display: inline-block; animation: spin-spin-spin 1.2s linear infinite;";
 		theSendIcon.className = "ph-bold ph-arrow-clockwise";
 		commentInput.disabled = true;
-		commentInput.cursor = "not-allowed";
+		commentInput.style.cursor = "not-allowed";
 		this.submitting = true;
 		await Functions.sleep(100); // give a few moments to catch up.
 
@@ -265,7 +284,15 @@ if (commentSection) {
 			user = cookieData.user;
 		};
 		if (!dh || !user) return await handleError("You are not logged in. Please login.");
-		alert("almost there. :)")
+
+		const slug = Functions.makeSlug(window.location.pathname);
+		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`, { Authorization: dh }, "POST", Functions.basicSanitize(commentInput.value));
+		if (data.error) {
+			return await handleError("Something went wrong while posting.\nCheck to make sure your comment is not empty.");
+		};
+
+		Functions.fetchComments();
+		resetInputForm(true);
 	});
 	postBtn.addEventListener("click", (event) => {
 		commentInputForm.dispatchEvent(new Event("submit", { cancelable: true }));
@@ -280,18 +307,18 @@ if (commentSection) {
 	});
 	commentInput.addEventListener("input", (event) => {
 		// Check if this is new line crap
-		commentInput.style.height = "auto";
 		commentInput.style.height = (commentInput.clientHeight) + "px";
 	});
 
-	const fetchComments = async() => {
+	Functions.fetchComments = async() => {
 		const commentSection = document.getElementById("commentSection");
 
-		const slug = window.location.pathname.replace("/", "").replaceAll("/","-");
-
+		const slug = Functions.makeSlug(window.location.pathname);
 		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`);
-
 		commentLoader.style.display = "none";
+
+		// Reset the comment section
+		commentSection.querySelectorAll(".comment-wrapper form:not(#my-comment-form)").forEach(cs => cs.parentElement.remove());
 
 		if (data.data.length < 1) {
 			console.log("The slug has no comments.");
@@ -344,5 +371,5 @@ if (commentSection) {
 			commentSection.appendChild(commentWrapper);
 		});
 	};
-	fetchComments();
+	Functions.fetchComments();
 };

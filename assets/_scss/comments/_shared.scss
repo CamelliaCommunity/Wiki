@@ -123,6 +123,7 @@
 
         .content {
           align-self: stretch;
+          word-wrap: anywhere;
 
           color: var(--colorWhite, #fff);
           font-size: 18px;
