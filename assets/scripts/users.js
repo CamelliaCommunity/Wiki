@@ -308,6 +308,7 @@ if (commentSection) {
 
 		Functions.fetchComments();
 		resetInputForm(true);
+		updateUserData();
 	});
 	postBtn.addEventListener("click", (event) => {
 		commentInputForm.dispatchEvent(new Event("submit", { cancelable: true }));
