@@ -1402,7 +1402,13 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   font-weight: 600;
   line-height: normal;
 }
+#commentSection .comment-wrapper .comment-card .comment-holder .comment-details-header .badges {
+  display: flex;
+  margin-top: 3px;
+  gap: 4px;
+}
 #commentSection .comment-wrapper .comment-card .comment-holder .comment-details-header #data {
+  margin-top: 2px;
   color: var(--colorGray);
   font-size: 16px;
   font-style: italic;
