@@ -285,11 +285,12 @@ if (commentSection) {
 		};
 		if (!dh || !user) return await handleError("You are not logged in. Please login.");
 
+		let comcon = commentInput.value.trim();
+		if (comcon == null || comcon == "") return await handleError("Something went wrong while posting.\nCheck to make sure your comment is not empty.");
+
 		const slug = Functions.makeSlug(window.location.pathname);
 		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`, { Authorization: dh }, "POST", Functions.basicSanitize(commentInput.value));
-		if (data.error) {
-			return await handleError("Something went wrong while posting.\nCheck to make sure your comment is not empty.");
-		};
+		if (data.error) return await handleError("Something went wrong while posting.\nCheck to make sure your comment is not empty.");
 
 		Functions.fetchComments();
 		resetInputForm(true);
@@ -360,8 +361,9 @@ if (commentSection) {
 			commentHolder.appendChild(commentDetailsHeader);
 
 			const commentDetailsContent = document.createElement("div");
+			let comcon = comment.content.replaceAll("\n", "<br>");
 			commentDetailsContent.className = "content";
-			commentDetailsContent.innerHTML = `<p>${comment.content}</p>`;
+			commentDetailsContent.innerHTML = `<p>${comcon}</p>`;
 			commentHolder.appendChild(commentDetailsContent);
 
 			// Build-A-Comment(TM)
