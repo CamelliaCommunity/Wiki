@@ -80,6 +80,20 @@ const Functions = {
 
 		return format.replace(/mm|MM|m|M|dd|DD|yyyy|YYYY|yy|YY|hh|HH|ii|II|ss|SS/g, match => formats[match]);
 	},
+	convertHumanFromStamp: (secs) => {
+		let months = Math.floor(secs / 2592000);
+		let days = Math.floor(secs / 86400);
+		let hours = Math.floor(secs / 3600);
+		let minutes = Math.floor(secs / 60); let seconds = Math.floor(secs % 60);
+
+		if (months > 0) return (months > 1) ? (months + " months ") : (months + " month ");
+		if (days > 0) return (days > 1) ? (days + " days ") : (days + " day ");
+		if (hours > 0) return (hours > 1) ? (hours + " hours ") : (hours + " hour ");
+		if (minutes > 0) return (minutes > 1) ? (minutes + " minutes ") : (minutes + " minute ");
+		if (seconds >= 30) return (seconds > 1) ? (seconds + " seconds") : (seconds + " second");
+
+		return "just now";
+	},
 	sleep: (ms) => new Promise(resolve => setTimeout(resolve, ms)),
 	makeSlug: (i) => i.replace("/", "").replaceAll("/","-"),
 	basicSanitize: (str) => { const m = { "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#x27;", "/": "&#x2F;"}; const r = /[<>"'/]/ig; return str.replace(r, (ma) => m[ma]); }
@@ -359,7 +373,8 @@ if (commentSection) {
 
 			const commentDetailsHeader = document.createElement("div");
 			commentDetailsHeader.className = "comment-details-header";
-			commentDetailsHeader.innerHTML = `<p id="username">${comment.author.name}</p><p id="data">${Functions.convertTimestamp(comment.time * 1000, "mm dd, YYYY")}</p>`
+			const commentTime = Functions.convertHumanFromStamp((Date.now() / 1000) - comment.time);
+			commentDetailsHeader.innerHTML = `<p id="username">${comment.author.name}</p><p id="data">${Functions.convertTimestamp(comment.time * 1000, "mm dd, YYYY")} - ${commentTime == "just now" ? commentTime : (commentTime + " ago")}</p>`;
 			commentHolder.appendChild(commentDetailsHeader);
 
 			const commentDetailsContent = document.createElement("div");
