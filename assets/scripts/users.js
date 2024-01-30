@@ -38,13 +38,13 @@ const Functions = {
 
 		try {
 			const response = await fetch(`https://backend.camellia.wiki/${url}`, { headers, method, body});
-			if (!response.ok) {
-				console.log(response);
+			if (!response.ok || response.status != 200) {
+				alert("Something went wrong while performing an API request.\nYou may try reloading.\nIf you keep seeing this, please report it to us.")
 				throw new Error("API Error!");
 			};
 			const data = await response.json();
 
-			if (data.code != 0) throw new Error(data.message)
+			if (data.code != 0) throw new Error(data.message);
 			return data;
 		} catch (error) {
 			return { error };
@@ -318,15 +318,17 @@ if (commentSection) {
 		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`);
 		commentLoader.style.display = "none";
 
-		// Reset the comment section
-		commentSection.querySelectorAll(".comment-wrapper form:not(#my-comment-form)").forEach(cs => cs.parentElement.remove());
+		const comments = data.data;
 
-		if (data.data.length < 1) {
+		if (!comments || comments.length < 1) {
 			console.log("The slug has no comments.");
 			return;
 		};
 
-		data.data.forEach(comment => {
+		// Reset the comment section
+		commentSection.querySelectorAll(".comment-wrapper form:not(#my-comment-form)").forEach(cs => cs.parentElement.remove());
+
+		comments.sort((a, b) => b.time - a.time).forEach(comment => {
 			const commentWrapper = document.createElement("div");
 			commentWrapper.className = "comment-wrapper";
 			commentWrapper.id = `comment-${comment.id}`;
@@ -371,6 +373,26 @@ if (commentSection) {
 			commentForm.appendChild(commentCard);
 			commentWrapper.appendChild(commentForm);
 			commentSection.appendChild(commentWrapper);
+
+			// determine if to "Read more"
+			if (commentDetailsContent.clientHeight >= 100) {
+				const commentDetailsContentData = commentDetailsContent.querySelector("p");
+				commentDetailsContentData.style["max-height"] = "76px";
+
+				const readMoreBtn = document.createElement("a");
+				readMoreBtn.id = "readMore";
+				readMoreBtn.href = "#";
+				readMoreBtn.innerHTML = "Read more";
+				readMoreBtn.addEventListener("click", (event) => {
+					event.preventDefault();
+
+					commentDetailsContentData.style["max-height"] = "none";
+					commentCard.style["max-height"] = "none";
+					readMoreBtn.remove();
+				})
+
+				document.querySelector(`#comment-${comment.id} .content`).appendChild(readMoreBtn);
+			};
 		});
 	};
 	Functions.fetchComments();

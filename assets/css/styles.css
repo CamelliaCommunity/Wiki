@@ -1288,6 +1288,14 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     margin-right: 0;
   }
 }
+@keyframes highlight {
+  0%, 50% {
+    background: var(--colorLight);
+  }
+  100% {
+    background: inherit;
+  }
+}
 #commentSection {
   display: flex;
   max-width: 1136px;
@@ -1298,6 +1306,10 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   gap: 8px;
   border-radius: 35px;
   background: var(--colorCards);
+}
+#commentSection .highlight {
+  animation: highlight 2s ease-out;
+  border-radius: 35px;
 }
 #commentSection h3 {
   padding-bottom: 8px;
@@ -1346,7 +1358,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 }
 #commentSection .comment-wrapper .comment-card {
   min-height: 60px;
-  max-height: 100px;
+  max-height: 146px;
   display: flex;
   padding: 10px;
   align-items: center;
@@ -1405,6 +1417,13 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   font-style: normal;
   font-weight: 375;
   line-height: 26px; /* 144.444% */
+}
+#commentSection .comment-wrapper .comment-card .comment-holder .content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#commentSection .comment-wrapper .comment-card .comment-holder .content #readMore {
+  font-size: 16px;
 }
 #commentSection .comment-wrapper .comment-card .comment-poster {
   height: 100%;
