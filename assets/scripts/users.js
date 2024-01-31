@@ -265,7 +265,10 @@ if (commentSection) {
 			commentInput.style.cursor = "text";
 
 			this.submitting = false;
-			if (shouldClearInput) commentInput.value = "";
+			if (shouldClearInput) {
+				commentInput.value = "";
+				commentInput.dispatchEvent(new Event("input"));
+			};
 		}
 		const handleError = async(txt) => {
 			// this stupid alert thing is so stupid; please save me and let me implement stupid toast notifications
@@ -325,8 +328,10 @@ if (commentSection) {
 	});
 	commentInput.addEventListener("input", (event) => {
 		// Check if this is new line crap
-		commentInput.style.height = (commentInput.clientHeight) + "px";
+		commentInput.style.height = "";
+		commentInput.style.height = (commentInput.scrollHeight) + "px";
 	});
+
 
 	Functions.fetchComments = async(doHighlight = false) => {
 		const commentSection = document.getElementById("commentSection");
