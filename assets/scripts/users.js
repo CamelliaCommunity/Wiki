@@ -363,7 +363,7 @@ if (commentSection) {
 
 		const slug = Functions.makeSlug(window.location.pathname);
 		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`);
-		commentLoader.style.display = "none";
+		commentLoader.remove();
 
 		const comments = data.data;
 

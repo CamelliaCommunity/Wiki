@@ -524,15 +524,6 @@ div.highlight {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
 @keyframes zoom {
   from {
     transform: scale(0);
@@ -702,7 +693,9 @@ header .header-shared .sidebar-wrapper {
   position: fixed;
   width: 100vw;
   left: 0;
+  transition-property: background-color, -webkit-backdrop-filter;
   transition-property: background-color, backdrop-filter;
+  transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
   transition-duration: 400ms;
   pointer-events: none;
   /* navigation bar */
@@ -901,6 +894,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
     font-weight: 281;
   }
   header .header-shared #navigationButtons > div {
+    width: -moz-fit-content;
     width: fit-content;
   }
   header .header-shared #navigationButtons > div a {
@@ -1355,14 +1349,14 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 }
 #commentSection .comment-wrapper {
   padding: 0;
-  border-radius: 10px;
+  border-radius: 20px;
   background: var(--colorCardDivisor);
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
 }
-#commentSection .comment-wrapper:first-of-type {
+#commentSection .comment-wrapper:first-of-type:not(:last-of-type) {
   border-radius: 20px 20px 10px 10px;
 }
-#commentSection .comment-wrapper:last-of-type {
+#commentSection .comment-wrapper:last-of-type:not(:first-of-type) {
   border-radius: 10px 10px 20px 20px;
 }
 #commentSection .comment-wrapper .comment-card {
@@ -1675,7 +1669,9 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 }
 
 .toast-notification .toast-notification-close {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -1859,24 +1855,12 @@ p {
   flex-wrap: wrap;
   gap: 20px;
   margin: auto;
-  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
 #navigationButtons .buttonDefault a {
-  -webkit-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -moz-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -ms-transition: position 0.2s, border-radius, 0.2s ease-in-out;
-  -o-transition: position 0.2s, border-radius, 0.2s ease-in-out;
   transition: position 0.2s, border-radius, 0.2s ease-in-out;
 }
 #navigationButtons .buttonDefault a:hover {
-  -webkit-transition: all 0s ease-out;
-  -moz-transition: all 0s ease-out;
-  -ms-transition: all 0s ease-out;
-  -o-transition: all 0s ease-out;
   transition: all 0s ease-out;
 }
 
@@ -1951,6 +1935,7 @@ a:hover {
 .card {
   background: var(--colorCards) 0% 0% no-repeat padding-box;
   max-width: 827px;
+  height: -moz-fit-content;
   height: fit-content;
   border-radius: 35px;
   line-height: 26px;
@@ -1958,7 +1943,9 @@ a:hover {
 
 .miniCard {
   background: var(--colorCards) 0% 0% no-repeat padding-box;
+  height: -moz-fit-content;
   height: fit-content;
+  block-size: -moz-fit-content;
   block-size: fit-content;
   border-radius: 35px;
   line-height: 26px;
@@ -2315,12 +2302,16 @@ hr {
 .masonryLayout {
   --masonry-gap: 10px;
   --masonry-brick-width: 304px;
-  column-gap: var(--masonry-gap);
-  column-fill: initial;
-  column-width: var(--masonry-brick-width);
+  -moz-column-gap: var(--masonry-gap);
+       column-gap: var(--masonry-gap);
+  -moz-column-fill: initial;
+       column-fill: initial;
+  -moz-column-width: var(--masonry-brick-width);
+       column-width: var(--masonry-brick-width);
 }
 .masonryLayout > *:not(.card) {
-  break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
   margin-bottom: var(--masonry-gap);
 }
 @supports (grid-template-rows: masonry) {
@@ -2374,10 +2365,6 @@ hr {
 }
 #contentWedge #wedgeContainer #wedgeItems ol li::marker {
   color: var(--colorLinks);
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 #contentWedge #wedgeContainer #wedgeItems ol li:hover::marker {
@@ -2403,10 +2390,6 @@ hr {
 
 #wedgeItems a {
   display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -2489,10 +2472,6 @@ hr {
   margin: 32px;
   opacity: 60%;
   cursor: pointer;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -ms-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
   z-index: 1;
 }
@@ -2639,10 +2618,6 @@ sup {
   margin-top: 24px;
   margin-left: 40px;
   margin-right: 40px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -2657,7 +2632,8 @@ sup {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 24px;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
 }
 
 /* markdown support for images */
@@ -2679,10 +2655,6 @@ figure img {
   border-radius: 6px;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 figure img:hover {
