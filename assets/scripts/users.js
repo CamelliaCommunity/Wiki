@@ -1,5 +1,5 @@
 /*
-	Discord OAuth Script
+	Camellia Wiki User, Comments, & OAuth Scripts
 	Created by thecodingguy
 	Please, do not bother this, unless you know what it does - this took TOO long to write :sob:
 */
@@ -8,6 +8,17 @@ const commentSection = document.getElementById("commentSection");
 const commentInput = document.getElementById("comment-input");
 const commentInputForm = document.getElementById("my-comment-form");
 const commentLoader = document.getElementById("comment-loader");
+
+const Logger = {
+	genDT: () => {
+		const now = new Date();
+		return `${now.toISOString().slice(0, 10)} ${now.toTimeString().slice(0, 8)}`;
+	},
+	log: (msg, type, color) => console[type](`%c[${Logger.genDT()} • ${type.toUpperCase()}] ${msg}`, `color: ${color}`),
+	info: (msg) => Logger.log(msg, "info", "lightblue"),
+	error: (msg) => Logger.log(msg, "error", "#ffbbbb"),
+	warn: (msg) => Logger.log(msg, "warn", "#ffff22")
+};
 
 const Functions = {
 	Cookie: {		
@@ -39,14 +50,15 @@ const Functions = {
 		try {
 			const response = await fetch(`https://backend.camellia.wiki/${url}`, { headers, method, body});
 			if (!response.ok || response.status != 200) {
-				Functions.sendToast({ title: "API Request Failed!", content: "Please try reloading. If you keep seeing this, please report to the developers.", style: "error" });
-				throw new Error("API Error!");
+				throw new Error(`Failed to communicate to API (response was ${response.ok ? "OK" : "NOT OK"}; status ${response.status})!`);
 			};
 			const data = await response.json();
 
-			if (data.code != 0) throw new Error(data.message);
+			if (data.code != 0) throw new Error(`API returned code ${data.code}`);
 			return data;
 		} catch (error) {
+			Functions.sendToast({ title: "API Request Failed!", content: "Please try reloading. If this keeps happening, please report to the developers.", style: "error" });
+			Logger.error(error);
 			return { error };
 		};
 	},
@@ -135,7 +147,6 @@ const updateUserData = async() => {
 		});
 
 		profileHeader.innerText = user.name ? user.name : userDefaults.name;
-		// TODO: Once we check how many comments by the user has made been in the API, we use it here: profileSubHeader.innerText = 
 		profileSubHeader.innerText = user.name ? `Joined ${Functions.convertTimestamp((user.join * 1000), "M/DD/yy")} - ${user.comments} Comments` : "Login to access more features...";
 		profileLoginIcon.className = `ph-bold ph-sign-${user.name ? "out" : "in"}`;
 	};
@@ -143,10 +154,14 @@ const updateUserData = async() => {
 
 	if (dh) {
 		const data = await Functions.sendAPIRequest("account", { Authorization: dh });
-		if (data.error) {
-			// custom error handling here...
+		if (data.code != 0 || data.error) {
+			Functions.sendToast({ title: "Authentication", content: "Failed to login!\nPlease try again. If this keeps happening, please report to the developers.", style: "error" });
+			console.log(data);
 			return;
 		};
+
+		if (user == "new_login")
+			Functions.sendToast({ title: "Authentication", content: "Successfully logged in!", style: "success" });
 
 		Functions.Cookie.set("wiki_auth", JSON.stringify({
 			dh,
@@ -200,6 +215,7 @@ loginBtn.addEventListener("click", (event) => {
 	if (loginBtn.querySelector("i").className == "ph-bold ph-sign-out") {
 		if (confirm("Are you sure you want to logout?")) {
 			Functions.Cookie.set("wiki_auth", JSON.stringify({}), 0);
+			Functions.sendToast({ title: "Authentication", content: "Successfully logged out!", style: "success" });
 			updateSite();
 		};
 	} else {
@@ -224,7 +240,7 @@ loginBtn.addEventListener("click", (event) => {
 
 				Functions.Cookie.set("wiki_auth", JSON.stringify({
 					dh: event.data.token,
-					user: {}
+					user: "new_login"
 				}), 7);
 
 				// Now that we are logged in, let's GOOOOOOOOOOOOOOOOOOOOOO
@@ -336,16 +352,44 @@ if (commentSection) {
 
 	Functions.handleIconClick = async(event, commentID) => {
 		if (!event || !commentID) return;
-		// TODO: make sure function call is from actual comment ID, etc.
+
+		const comment = document.getElementById(`comment-${commentID}`);
+		if (!comment) return;
+		const commentForm = comment.querySelector(`#comment-form-${commentID}`);
+		if (!commentForm) return;
 
 		const commentIcon = event.target.id;
 		if (!commentIcon) return;
+
+		let cookieData = Functions.Cookie.get("wiki_auth");
+		let dh;
+		let user;
+		if (cookieData) {
+			cookieData = JSON.parse(cookieData);
+
+			dh = cookieData.dh;
+			user = cookieData.user;
+		};
 
 		if (commentIcon == "comment-link") {
 			if (navigator.clipboard) {
 				navigator.clipboard.writeText(`${window.location.href}#comment-${commentID}`);
 				Functions.sendToast({ title: "Success!", content: "Permalink copied to your clipboard!", style: "success" });
 			} else Functions.sendToast({ title: "Uh-oh...", content: "Could not copy permalink to your clipboard.", style: "error" });
+		} else if (commentIcon == "comment-delete") {
+			if (!dh || !user) return;
+			if (confirm(`Are you sure you want to delete this comment (id: ${commentID})?`)) {
+				const data = await Functions.sendAPIRequest(`comments/${commentID}`, { Authorization: dh }, "DELETE");
+				if (data.code != 0 || data.error) {
+					Functions.sendToast({ title: "Comment Deletion", content: "Failed to delete comment!\nPlease try again. If this keeps happening, please report to the developers.", style: "error" });
+					Logger.error(`Failed to delete comment ${commentID}`);
+					console.log(data);
+					return;
+				};
+				Functions.sendToast({ title: "Comment Deletion", content: "Successfully deleted comment!", style: "success" });
+				Functions.fetchComments();
+				updateUserData();
+			};
 		}
 	}
 	Functions.fetchComments = async(doHighlight = false) => {
@@ -363,12 +407,12 @@ if (commentSection) {
 
 		const slug = Functions.makeSlug(window.location.pathname);
 		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`);
-		commentLoader.remove();
 
 		const comments = data.data;
+		commentLoader.remove();
 
 		if (!comments || comments.length < 1) {
-			console.log("The slug has no comments.");
+			Logger.info(`The slug ${slug} has no comments.`);
 			return;
 		};
 
@@ -429,7 +473,12 @@ if (commentSection) {
 			commentIconsContainer.appendChild(commentIcons1);
 
 			const commentIcons2 = document.createElement("div");
-			const commentIcons2Ex = ((dh && user) && comment.author.id === user.id) ? `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>` : `<div class="comment-icon ph-bold ph-flag" id="comment-report"></div>`;
+			const commentIcons2Ex =
+				((dh && user) && comment.author.id === user.id)
+				? `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`
+				: (user.staff)
+					? `<div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`
+					: `<div class="comment-icon ph-bold ph-flag" id="comment-report"></div>`;
 			commentIcons2.className = "comment-icons";
 			commentIcons2.innerHTML = `<div class="comment-icon ph-bold ph-link" id="comment-link"></div><div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply"></div>${commentIcons2Ex}`;
 			commentIconsContainer.appendChild(commentIcons2);
