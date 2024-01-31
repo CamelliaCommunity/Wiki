@@ -94,7 +94,10 @@ const Functions = {
 		return "just now";
 	},
 	sleep: (ms) => new Promise(resolve => setTimeout(resolve, ms)),
-	makeSlug: (i) => i.replace("/", "").replaceAll("/","-"),
+	makeSlug: (i) => {
+		if (i.endsWith("/")) i = i.slice(0, -1);
+		return i.replace("/", "").replaceAll("/", "-");
+	},
 	basicSanitize: (str) => { const m = { "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#x27;", "/": "&#x2F;"}; const r = /[<>"'/]/ig; return str.replace(r, (ma) => m[ma]); },
 	sendToast: (data) => { if (!window.toastMan) alert(data.content); else window.toastMan.push(data); }
 };
