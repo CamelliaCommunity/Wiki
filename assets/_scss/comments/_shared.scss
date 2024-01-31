@@ -78,7 +78,7 @@
 
     .comment-card {
       min-height: 60px;
-      max-height: 146px;
+      //   max-height: 146px;
       display: flex;
       padding: 10px;
       align-items: center;
@@ -226,7 +226,7 @@
           background: var(--colorLight);
           border: none;
           color: white;
-          max-height: 80px;
+          //   max-height: 80px;
 
           overflow: hidden;
           overflow-wrap: break-word;

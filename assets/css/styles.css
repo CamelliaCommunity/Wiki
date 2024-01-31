@@ -1364,7 +1364,6 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 }
 #commentSection .comment-wrapper .comment-card {
   min-height: 60px;
-  max-height: 146px;
   display: flex;
   padding: 10px;
   align-items: center;
@@ -1485,7 +1484,6 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   background: var(--colorLight);
   border: none;
   color: white;
-  max-height: 80px;
   overflow: hidden;
   overflow-wrap: break-word;
   margin: 0;
