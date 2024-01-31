@@ -9,14 +9,16 @@ description: The document outlines that what we collect, how we use, and what
 ---
 ## Privacy Policy
 
-> The Privacy Policy was last updated on January 27th, 2024.
+> The Privacy Policy was last updated on January 31st, 2024.
+>
+> TL;DR: We only collect Discord IDs, timestamps, and comments.
 {: .tip }
 
 Welcome to the Camellia Wiki! We value your privacy and are committed to protecting your personal information. This document outlines what we collect, how we use, and what information we disclose you provide through flowertek and the Camellia Wiki Comments (hereinafter "our services").
 
 ### 1. What We Collect
 
-When submitting a discussion post, we will collect personal and non-personal identifiable information. For example, we will collect the following personal information: Discord User IDs. The non-personal information we collect is comments (for instance, timestamps and post content).
+When submitting a comment, we will collect personal and non-personal identifiable information. For example, we will collect the following personal information: Discord User IDs. The non-personal information we collect is comments (for instance, timestamps and post content).
 
 ### 2. How We Use Your Information
 The information you provide to us will be publicly displayed to all users of the Camellia Wiki. However, when displaying the data provided to our services, the Discord UserID will be converted to the Discord username.
