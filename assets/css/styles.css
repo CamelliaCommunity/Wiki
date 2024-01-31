@@ -1643,7 +1643,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   z-index: 999999;
   max-width: 300px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border-radius: 10px;
   display: flex;
   padding: 10px;
   transform: translate(150%, 76px);

@@ -4,17 +4,12 @@
   z-index: 999999;
   max-width: 300px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  border-radius: 10px;
   display: flex;
   padding: 10px;
   transform: translate(150%, 76px);
 
-  background: linear-gradient(
-      180deg,
-      rgba(246, 65, 141, 0) 0%,
-      rgba(246, 65, 141, 0.08) 51.04%,
-      rgba(91, 63, 75, 0.2) 100%
-    ),
+  background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%),
     var(--colorCards);
   transition: 0.4s;
 }
