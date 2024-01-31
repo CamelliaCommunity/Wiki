@@ -165,18 +165,16 @@
           p {
             overflow: hidden;
             text-overflow: ellipsis;
+
             &.imFading {
               position: relative;
+
               &:after {
-                background-image: linear-gradient(
-                  180deg,
-                  transparent,
-                  var(--colorCardDivisor)
-                );
+                background-image: linear-gradient(180deg, transparent, var(--colorCardDivisor));
                 bottom: 0;
                 content: "";
                 display: block;
-                height: 76px;
+                height: 38px;
                 left: 0;
                 pointer-events: none;
                 position: absolute;
