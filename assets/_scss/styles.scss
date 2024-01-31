@@ -12,7 +12,8 @@
 /* Import files */
 @import "./variables", "./highlights", "./author", "./modals", "./mediaQueries";
 
-@import "./header/shared", "./titleContainer/shared", "./comments/shared", "./profile/shared";
+@import "./header/shared", "./titleContainer/shared", "./comments/shared",
+  "./profile/shared", "./toast/shared";
 
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
@@ -79,7 +80,12 @@ html {
 body {
   font-family: var(--font-default);
   font-size: 16px;
-  background: linear-gradient(180deg, rgba(240, 108, 155, 0.2) 0%, rgba(48, 37, 41, 0.2) 100%), #111;
+  background: linear-gradient(
+      180deg,
+      rgba(240, 108, 155, 0.2) 0%,
+      rgba(48, 37, 41, 0.2) 100%
+    ),
+    #111;
   color: var(--colorWhite);
   min-height: 100vh;
 
@@ -181,7 +187,12 @@ p {
 /* footer */
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #2a2228 0%,
+    rgba(42, 34, 40, 0.52) 48.96%,
+    rgba(42, 34, 40, 0) 100%
+  );
   margin-top: auto;
   height: 64px;
   display: flex;
@@ -663,7 +674,10 @@ hr {
     display: grid;
     gap: var(--masonry-gap);
     grid-template-rows: masonry;
-    grid-template-columns: repeat(auto-fill, minmax(var(--masonry-brick-width), 1fr));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--masonry-brick-width), 1fr)
+    );
     align-tracks: stretch;
 
     > *:not(.card) {

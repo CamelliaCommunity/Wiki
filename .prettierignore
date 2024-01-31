@@ -1,2 +1,3 @@
 # Ignore some files:
 assets/scripts/users.js
+assets/scripts/toastman.js

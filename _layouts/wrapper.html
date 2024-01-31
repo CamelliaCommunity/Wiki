@@ -19,6 +19,27 @@
     <!-- Page CSS and Scripts -->
     <link rel="stylesheet" href= "{{ "assets/css/styles.css" | relative_url }}?v={{ versionTime }}" />
     <script src="{{ "assets/scripts/main.js" | relative_url }}?v={{ versionTime }}" defer=""></script>
+    <script src="{{ "assets/scripts/toastman.js" | relative_url }}?v={{ versionTime }}" defer=""></script>
+    <script type="text/javascript">
+
+      document.addEventListener("DOMContentLoaded", () => {
+		// Create Toast Notifications
+		window.toastMan = new ToastManager({ // the only manly man. :)
+		  width: 300,
+          timing: "ease",
+          duration: ".5s",
+          dimOld: true,
+          position: "top-right",
+		  offsetX: 0,
+		  offsetY: 98,
+		  autoCloseToasts: {
+			enabled: true,
+			hoverStops: true,
+			afterDuration: 6000
+		  }
+		});
+      });
+    </script>
   </head>
 
   <!-- Main body of the page -->

@@ -39,7 +39,7 @@ const Functions = {
 		try {
 			const response = await fetch(`https://backend.camellia.wiki/${url}`, { headers, method, body});
 			if (!response.ok || response.status != 200) {
-				alert("Something went wrong while performing an API request.\nYou may try reloading.\nIf you keep seeing this, please report it to us.")
+				Functions.sendToast({ title: "API Request Failed!", content: "Please try reloading. If you keep seeing this, please report to the developers.", style: "error" });
 				throw new Error("API Error!");
 			};
 			const data = await response.json();
@@ -86,17 +86,17 @@ const Functions = {
 		let hours = Math.floor(secs / 3600);
 		let minutes = Math.floor(secs / 60); let seconds = Math.floor(secs % 60);
 
-		if (months > 0) return (months > 1) ? (months + " months ") : (months + " month ");
-		if (days > 0) return (days > 1) ? (days + " days ") : (days + " day ");
-		if (hours > 0) return (hours > 1) ? (hours + " hours ") : (hours + " hour ");
-		if (minutes > 0) return (minutes > 1) ? (minutes + " minutes ") : (minutes + " minute ");
-		if (seconds >= 30) return (seconds > 1) ? (seconds + " seconds") : (seconds + " second");
-
+		if (months > 0) return `${months} month${months > 1 ? "s" : ""}`;
+		if (days > 0) return `${days} day${days > 1 ? "s" : ""}`;
+		if (hours > 0) return `${hours} hour${hours > 1 ? "s" : ""}`;
+		if (minutes > 0) return `${minutes} minute${minutes > 1 ? "s" : ""}`;
+		if (seconds >= 30) return `${seconds} second${seconds > 1 ? "s" : ""}`;
 		return "just now";
 	},
 	sleep: (ms) => new Promise(resolve => setTimeout(resolve, ms)),
 	makeSlug: (i) => i.replace("/", "").replaceAll("/","-"),
-	basicSanitize: (str) => { const m = { "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#x27;", "/": "&#x2F;"}; const r = /[<>"'/]/ig; return str.replace(r, (ma) => m[ma]); }
+	basicSanitize: (str) => { const m = { "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#x27;", "/": "&#x2F;"}; const r = /[<>"'/]/ig; return str.replace(r, (ma) => m[ma]); },
+	sendToast: (data) => { if (!window.toastMan) alert(data.content); else window.toastMan.push(data); }
 };
 let userDefaults = {
 	name: "Not Logged in!",
@@ -166,7 +166,6 @@ const updateCommentInput = () => {
 		dh = cookieData.dh;
 		user = cookieData.user;
 	};
-	console.log(cookieData)
 	if (dh && user) {
 		commentInput.placeholder = "Type some text here! Press enter to post. Use shift+enter for a new line.";
 		commentInput.disabled = false;
@@ -276,8 +275,8 @@ if (commentSection) {
 			theSendIcon.style.transform = "rotate(0deg)";
 			theSendIcon.className = "ph-bold ph-x-circle";
 
+			Functions.sendToast({ title: "Comment Submission Failed!", content: txt, style: "error" });
 			await Functions.sleep(250);
-			alert(txt);
 
 			resetInputForm();
 		};
@@ -332,9 +331,32 @@ if (commentSection) {
 		commentInput.style.height = (commentInput.scrollHeight) + "px";
 	});
 
+	Functions.handleIconClick = async(event, commentID) => {
+		if (!event || !commentID) return;
+		// TODO: make sure function call is from actual comment ID, etc.
 
+		const commentIcon = event.target.id;
+		if (!commentIcon) return;
+
+		if (commentIcon == "comment-link") {
+			if (navigator.clipboard) {
+				navigator.clipboard.writeText(`${window.location.href}#comment-${commentID}`);
+				Functions.sendToast({ title: "Success!", content: "Permalink copied to your clipboard!", style: "success" });
+			} else Functions.sendToast({ title: "Uh-oh...", content: "Could not copy permalink to your clipboard.", style: "error" });
+		}
+	}
 	Functions.fetchComments = async(doHighlight = false) => {
 		const commentSection = document.getElementById("commentSection");
+
+		let cookieData = Functions.Cookie.get("wiki_auth");
+		let dh;
+		let user;
+		if (cookieData) {
+			cookieData = JSON.parse(cookieData);
+
+			dh = cookieData.dh;
+			user = cookieData.user;
+		};
 
 		const slug = Functions.makeSlug(window.location.pathname);
 		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`);
@@ -393,8 +415,25 @@ if (commentSection) {
 			commentDetailsContent.innerHTML = `<p>${comcon}</p>`;
 			commentHolder.appendChild(commentDetailsContent);
 
-			// Build-A-Comment(TM)
 			commentCard.appendChild(commentHolder);
+
+			const commentIconsContainer = document.createElement("div");
+			commentIconsContainer.className = "comment-icons-container";
+
+			const commentIcons1 = document.createElement("div");
+			commentIcons1.className = "comment-icons";
+			commentIcons1.innerHTML = `<div class="comment-icon ph-bold ph-arrow-fat-up" id="comment-upvote"></div><p id="comment-upvotecount">0</p><div class="comment-icon ph-bold ph-arrow-fat-down" id="comment-downvote"></div>`;
+			commentIconsContainer.appendChild(commentIcons1);
+
+			const commentIcons2 = document.createElement("div");
+			const commentIcons2Ex = ((dh && user) && comment.author.id === user.id) ? `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>` : `<div class="comment-icon ph-bold ph-flag" id="comment-report"></div>`;
+			commentIcons2.className = "comment-icons";
+			commentIcons2.innerHTML = `<div class="comment-icon ph-bold ph-link" id="comment-link"></div><div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply"></div>${commentIcons2Ex}`;
+			commentIconsContainer.appendChild(commentIcons2);
+
+			commentCard.appendChild(commentIconsContainer);
+
+			// Build-A-Comment(TM)
 			commentForm.appendChild(commentCard);
 			commentWrapper.appendChild(commentForm);
 			commentSection.appendChild(commentWrapper);
@@ -420,6 +459,12 @@ if (commentSection) {
 
 				document.querySelector(`#comment-${comment.id} .content`).appendChild(readMoreBtn);
 			};
+
+
+			// Handle comment icon presses
+			commentIconsContainer.querySelectorAll(".comment-icon").forEach(ic => {
+				ic.addEventListener("click", (e) => { e.preventDefault(); return Functions.handleIconClick(e, comment.id); });
+			});
 		});
 
 		if (doHighlight) {
