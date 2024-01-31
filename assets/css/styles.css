@@ -1472,7 +1472,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 #commentSection .comment-wrapper .comment-card .comment-icons-container .comment-icons .comment-icon {
   cursor: pointer;
   color: var(--colorGray);
-  font-size: 20px;
+  font-size: 22px;
 }
 #commentSection .comment-wrapper .comment-card .comment-icons-container .comment-icons .comment-icon:hover {
   color: var(--colorWhite);
@@ -1557,7 +1557,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 }
 #commentSection .comment-wrapper .comment-card .comment-poster .buttonPost i {
   color: var(--colorGray);
-  font-size: 20px;
+  font-size: 22px;
   transition: 200ms;
 }
 #commentSection .comment-wrapper .comment-card .comment-poster .buttonPost:hover {
