@@ -213,6 +213,8 @@
           .comment-icon {
             cursor: pointer;
             color: var(--colorGray);
+            font-size: 20px;
+
             &:hover {
               color: var(--colorWhite);
             }

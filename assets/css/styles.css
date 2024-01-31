@@ -1466,6 +1466,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 #commentSection .comment-wrapper .comment-card .comment-icons-container .comment-icons .comment-icon {
   cursor: pointer;
   color: var(--colorGray);
+  font-size: 20px;
 }
 #commentSection .comment-wrapper .comment-card .comment-icons-container .comment-icons .comment-icon:hover {
   color: var(--colorWhite);
