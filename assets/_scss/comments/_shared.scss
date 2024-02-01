@@ -91,7 +91,6 @@
 
       .profile-left {
         display: flex;
-        flex-direction: row;
         padding-right: 10px;
         gap: 10px;
         flex-direction: column;
@@ -176,7 +175,11 @@
               position: relative;
 
               &:after {
-                background-image: linear-gradient(180deg, transparent, var(--colorCardDivisor));
+                background-image: linear-gradient(
+                  180deg,
+                  transparent,
+                  var(--colorCardDivisor)
+                );
                 bottom: 0;
                 content: "";
                 display: block;
@@ -191,6 +194,16 @@
 
           #readMore {
             font-size: 16px;
+          }
+        }
+
+        .comment-wrapper {
+          padding: 10px 0;
+          box-shadow: none;
+          border: none;
+
+          .comment-card {
+            padding: 0;
           }
         }
       }

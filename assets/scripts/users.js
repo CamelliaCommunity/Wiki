@@ -516,6 +516,7 @@ if (commentSection) {
 		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`);
 
 		const comments = data.data;
+		const commentReplies = [];
 		commentLoader.remove();
 
 		if (!comments || comments.length < 1) {
@@ -526,7 +527,7 @@ if (commentSection) {
 		// Reset the comment section
 		commentSection.querySelectorAll(".comment-wrapper form:not(#my-comment-form)").forEach(cs => cs.parentElement.remove());
 
-		comments.sort((a, b) => b.time - a.time).forEach(comment => {
+		await comments.sort((a, b) => b.time - a.time).forEach(comment => {
 			const commentWrapper = document.createElement("div");
 			commentWrapper.className = "comment-wrapper";
 			commentWrapper.id = `comment-${comment.id}`;
@@ -547,8 +548,6 @@ if (commentSection) {
 			commentProfileImg.id = "pfp";
 			commentProfileImg.src = `${comment.author.avatar ? comment.author.avatar : userDefaults.avatar}`;
 			commentProfile.appendChild(commentProfileImg);
-
-			// TODO: Nested
 
 			commentCard.appendChild(commentProfile);
 
@@ -582,7 +581,7 @@ if (commentSection) {
 			const commentIcons2 = document.createElement("div");
 			let commentIcons2Ex = "";
 			if ((dh && user)) {
-				commentIcons2Ex += `<div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply"></div>`;
+				commentIcons2Ex += !comment.parent ? `<div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply"></div>` : "";
 				if (comment.author.id === user.id) commentIcons2Ex += `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`;
 				else if (user.staff) commentIcons2Ex += `<div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`;
 				else `<div class="comment-icon ph-bold ph-flag" id="comment-report"></div>`;
@@ -596,7 +595,11 @@ if (commentSection) {
 			// Build-A-Comment(TM)
 			commentForm.appendChild(commentCard);
 			commentWrapper.appendChild(commentForm);
-			commentSection.appendChild(commentWrapper);
+			if (comment.parent) { // oh fuck its a reply!
+				commentWrapper.className += ` reply-${comment.parent}`;
+				commentReplies.push({ parentID: comment.parent, commentID: comment.id, commentWrapper });
+			} else
+				commentSection.appendChild(commentWrapper);
 
 			// determine if to "Read more"
 			if (commentDetailsContent.clientHeight >= 100) {
@@ -626,6 +629,49 @@ if (commentSection) {
 				ic.addEventListener("click", (e) => { e.preventDefault(); return Functions.handleIconClick(e, comment.id); });
 			});
 		});
+
+		commentReplies.forEach(reply => { 
+			if (!reply.parentID || !reply.commentWrapper) return;
+
+			try {
+				const commentParent = commentSection.querySelector(`#comment-${reply.parentID}`);
+				const commentHolder = commentParent.querySelector(".comment-holder");
+				commentHolder.appendChild(reply.commentWrapper);
+			} catch (Ex) {
+				console.log(Ex);
+				Functions.sendToast({ title: "Comment Reply", content: `Could not find reply parent..?\np-${reply.parentID}\nc-${reply.commentID}`, style: "error" });
+			};
+		});
+
+		// If I had to say anything, this is was the most stupidest shit I ever had to write.
+		// Nesting is pain, and I bet when reply nesting is a thing, this is gonna get fucky.
+		// ~ thecodingguy
+		// its broken, so ive commented it out.
+		// commentSection.childNodes.forEach(commentParent => {
+		// 	if (commentParent.tagName != "DIV") return;
+		// 	if (commentParent.classList.contains("my-card") || !commentParent.id) return;
+		// 	commentParent = document.getElementById(commentParent.id);
+
+		// 	const profileLeft = commentParent.querySelector(".profile-left");
+		// 	let nestHeight = commentParent.querySelector(".comment-holder").querySelector(".content").clientHeight - 20;
+		// 	// let nestHeight = 60;
+		// 	let replyWrappers = 0;
+		// 	commentParent.querySelector(".comment-holder").childNodes.forEach(commentData => {
+		// 		if (commentData.tagName != "DIV") return;
+		// 		// if (commentData.id.startsWith("comment-") || commentData.className == "content") {
+		// 		if (commentData.id.startsWith("comment-")) {
+		// 			nestHeight += ((commentData.offsetHeight) / 2 - 5);
+		// 			replyWrappers += 1;
+		// 		};
+		// 	});
+		// 	let commentNester = profileLeft.querySelector(".nested");
+		// 	if (!commentNester) {
+		// 		commentNester = document.createElement("div");
+		// 		commentNester.className = "nested";
+		// 		profileLeft.appendChild(commentNester);
+		// 	};
+		// 	commentNester.style.height = nestHeight + "px";
+		// });
 
 		if (doHighlight) {
 			// go to the comment that the user wants.

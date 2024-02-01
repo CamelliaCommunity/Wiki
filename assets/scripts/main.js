@@ -8,7 +8,7 @@ const hamburgerBtn = document.getElementById("hamburgerBtn");
 const sidebarX = document.getElementById("sidebarX");
 
 // If scrollToTop element is found, run this code
-// the code is less fucky ~ codertek
+// the code is less fucky ~ thecodingguy
 if (scrollToTop) {
   let prevScrollPosition = 0;
   let isReturning = false;

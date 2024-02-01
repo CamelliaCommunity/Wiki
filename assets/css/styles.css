@@ -1371,7 +1371,6 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 }
 #commentSection .comment-wrapper .comment-card .profile-left {
   display: flex;
-  flex-direction: row;
   padding-right: 10px;
   gap: 10px;
   flex-direction: column;
@@ -1450,6 +1449,14 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 }
 #commentSection .comment-wrapper .comment-card .comment-holder .content #readMore {
   font-size: 16px;
+}
+#commentSection .comment-wrapper .comment-card .comment-holder .comment-wrapper {
+  padding: 10px 0;
+  box-shadow: none;
+  border: none;
+}
+#commentSection .comment-wrapper .comment-card .comment-holder .comment-wrapper .comment-card {
+  padding: 0;
 }
 #commentSection .comment-wrapper .comment-card .comment-icons-container {
   display: flex;
