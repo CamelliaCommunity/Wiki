@@ -283,6 +283,7 @@ if (commentSection) {
 			theSendIcon.className = "ph-bold ph-paper-plane-right";
 			commentInput.disabled = false;
 			commentInput.style.cursor = "text";
+			commentInput.focus();
 
 			this.submitting = false;
 			if (shouldClearInput) {
@@ -438,6 +439,18 @@ if (commentSection) {
 			});
 			commentPoster.appendChild(commentEditCancel);
 
+			commentEditInput.addEventListener("keydown", (event) => {
+				if (!event.shiftKey && event.key === "Enter") {
+					commentEditPost.click();
+					event.preventDefault();
+					return;
+				} else if (event.key === "Escape") {
+					commentEditCancel.click();
+					event.preventDefault();
+					return;
+				};
+			});
+
 			commentForm.onsubmit = async(event) => {
 				event.preventDefault();
 				event.stopPropagation();
@@ -454,6 +467,7 @@ if (commentSection) {
 					theEditIcon.className = "ph-bold ph-pencil";
 					commentEditInput.disabled = false;
 					commentEditInput.style.cursor = "text";
+					commentEditInput.focus();
 
 					this.submitting = false;
 					if (shouldClearInput) {
@@ -497,7 +511,135 @@ if (commentSection) {
 			};
 
 			commentHolder.appendChild(commentPoster);
+		} else if (commentIcon == "comment-reply") {
+			if (!dh || !user) return;
+
+			const commentHolder = commentCard.querySelector(".comment-holder");
+			const commentWrapper = document.createElement("div");
+			commentWrapper.className = "comment-wrapper";
+			commentWrapper.id = `comment-${comment.id}`;
+
+			const commentForm = document.createElement("form");
+			commentForm.method = "POST";
+			commentForm.action = "#";
+			commentForm.id = `comment-form-${comment.id}`;
+
+			const commenReplyCard = document.createElement("div");
+			commenReplyCard.className = "comment-card";
+			commenReplyCard.style = `--profile-accent: ${user.color ? user.color : userDefaults.color}`;
+
+			const commentProfile = document.createElement("div");
+			commentProfile.className = "profile-left";
+
+			const commentProfileImg = document.createElement("img");
+			commentProfileImg.id = "pfp";
+			commentProfileImg.src = `${user.avatar ? user.avatar : userDefaults.avatar}`;
+			commentProfile.appendChild(commentProfileImg);
+
+			commenReplyCard.appendChild(commentProfile);
+
+			const commentPoster = document.createElement("div");
+			commentPoster.className = "comment-poster";
+			const commentReplyInput = document.createElement("textarea");
+			commentReplyInput.id = "comment-input";
+			commentReplyInput.placeholder = "Type some text here! Press enter to post. Use shift+enter for a new line.";
+			commentReplyInput.addEventListener("input", inputHeightEvent);
+			commentPoster.appendChild(commentReplyInput);
+			const commentReplyPost = document.createElement("div");
+			commentReplyPost.className = "buttonPost";
+			commentReplyPost.innerHTML = `<i class="ph-bold ph-paper-plane-right"></i>`;
+			commentReplyPost.addEventListener("click", (event) => {
+				commentForm.dispatchEvent(new Event("submit", { cancelable: true }));
+				event.preventDefault();
+			});
+			commentPoster.appendChild(commentReplyPost);
+			const commentReplyCancel = document.createElement("div");
+			commentReplyCancel.className = "buttonPost";
+			commentReplyCancel.innerHTML = `<i class="ph-bold ph-x"></i>`;
+			commentReplyCancel.addEventListener("click", (event) => {
+				commentWrapper.remove();
+			});
+			commentPoster.appendChild(commentReplyCancel);
+
+			commentReplyInput.addEventListener("keydown", (event) => {
+				if (!event.shiftKey && event.key === "Enter") {
+					commentReplyPost.click();
+					event.preventDefault();
+					return;
+				} else if (event.key === "Escape") {
+					commentReplyCancel.click();
+					event.preventDefault();
+					return;
+				};
+			});
+
+			commentForm.onsubmit = async(event) => {
+				event.preventDefault();
+				event.stopPropagation();
+				if (this.submitting) return;
+
+				const theSendIcon = commentReplyPost.querySelector("i");
+
+				const resetInputForm = (shouldClearInput) => {
+					// please set things back.
+					commentReplyPost.disabled = false;
+					commentReplyPost.style.cursor = "pointer";
+					theSendIcon.style.animation = "none";
+					theSendIcon.style.transform = "rotate(0deg)";
+					theSendIcon.className = "ph-bold ph-paper-plane-right";
+					commentReplyInput.disabled = false;
+					commentReplyInput.style.cursor = "text";
+					commentReplyInput.focus();
+
+					this.submitting = false;
+					if (shouldClearInput) {
+						commentWrapper.remove();
+					};
+				}
+				const handleError = async(txt) => {
+					// this stupid alert thing is so stupid; please save me and let me implement stupid toast notifications
+					theSendIcon.style.animation = "none";
+					theSendIcon.style.transform = "rotate(0deg)";
+					theSendIcon.className = "ph-bold ph-x-circle";
+
+					Functions.sendToast({ title: "Comment Reply Failed!", content: txt, style: "error" });
+					await Functions.sleep(250);
+
+					resetInputForm();
+				};
+
+				// Processing
+				commentReplyPost.disabled = true;
+				commentReplyPost.style.cursor = "not-allowed";
+				theSendIcon.style = "display: inline-block; animation: spin-spin-spin 1.2s linear infinite;";
+				theSendIcon.className = "ph-bold ph-arrow-clockwise";
+				commentReplyInput.disabled = true;
+				commentReplyInput.style.cursor = "not-allowed";
+				this.submitting = true;
+				await Functions.sleep(100); // give a few moments to catch up.
+
+				let comcon = commentReplyInput.value.trim();
+				if (comcon == null || comcon == "") return await handleError("Something went wrong while replying.\nCheck to make sure your comment is not empty.");
+
+				const data = await Functions.sendAPIRequest(`comments/${commentID}/reply`, { Authorization: dh }, "POST", Functions.basicSanitize(commentReplyInput.value));
+				if (data.error) return await handleError("Something went wrong while replying.\nCheck to make sure your comment is not empty.");
+
+				Functions.fetchComments();
+				resetInputForm(true);
+				updateUserData();
+			};
+
+			commenReplyCard.appendChild(commentPoster);
+
+			commentForm.appendChild(commenReplyCard);
+			commentWrapper.appendChild(commentForm);
+			commentHolder.insertBefore(commentWrapper, commentHolder.querySelectorAll(`.reply-${commentID}`)[0]);
+
+		} else if (commentIcon == "comment-upvote" || commentIcon == "comment-downvote" || commentIcon == "comment-report") {
+			if (!dh || !user) return;
+			Functions.sendToast({ title: "A new feature?", content: "That feature is not implemented yet but will be soon!", style: "error" });
 		};
+		return;
 	}
 	Functions.fetchComments = async(doHighlight = false) => {
 		const commentSection = document.getElementById("commentSection");
