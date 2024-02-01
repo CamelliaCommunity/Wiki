@@ -111,7 +111,7 @@ const Functions = {
 		return i.replace("/", "").replaceAll("/", "-");
 	},
 	basicSanitize: (str) => { const m = { "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#x27;", "/": "&#x2F;"}; const r = /[<>"'/]/ig; return str.replace(r, (ma) => m[ma]); },
-	sendToast: (data) => { if (!window.toastMan) alert(data.content); else window.toastMan.push(data); }
+	sendToast: (data) => { data.content = data.content.replaceAll("\n", "<br>"); if (!window.toastMan) alert(data.content); else window.toastMan.push(data); }
 };
 let userDefaults = {
 	name: "Not Logged in!",
@@ -346,11 +346,13 @@ if (commentSection) {
 			return;
 		};
 	});
-	commentInput.addEventListener("input", (event) => {
+
+	const inputHeightEvent = (e) => {
 		// Check if this is new line crap
-		commentInput.style.height = "";
-		commentInput.style.height = (commentInput.scrollHeight) + "px";
-	});
+		e.target.style.height = "";
+		e.target.style.height = (e.target.scrollHeight) + "px";
+	}
+	commentInput.addEventListener("input", inputHeightEvent);
 
 	Functions.handleIconClick = async(event, commentID) => {
 		if (!event || !commentID) return;
@@ -359,6 +361,8 @@ if (commentSection) {
 		if (!comment) return;
 		const commentForm = comment.querySelector(`#comment-form-${commentID}`);
 		if (!commentForm) return;
+		const commentCard = commentForm.querySelector(".comment-card");
+		if (!commentCard) return;
 
 		const commentIcon = event.target.id;
 		if (!commentIcon) return;
@@ -394,7 +398,105 @@ if (commentSection) {
 			};
 		} else if (commentIcon == "comment-edit") {
 			if (!dh || !user) return;
-			
+
+			const commentHolder = commentCard.querySelector(".comment-holder");
+			const commentContent = commentHolder.querySelector(".content");
+			commentContent.style.display = "none";
+			const commentContentActually = commentContent.querySelector("p");
+
+			const commentIconsContainer = commentCard.querySelector(".comment-icons-container");
+			commentIconsContainer.style.display = "none";
+
+			const commentPoster = document.createElement("div");
+			commentPoster.className = "comment-poster";
+			const commentEditInput = document.createElement("textarea");
+			commentEditInput.id = "comment-input";
+			commentEditInput.value = commentContentActually.innerHTML || "";
+			commentEditInput.placeholder = "Type some text here! Press enter to post. Use shift+enter for a new line.";
+			commentEditInput.addEventListener("input", inputHeightEvent);
+			commentEditInput.addEventListener("input", (event) => {
+				const isValueSame = (commentEditInput.value == commentContentActually.innerHTML);
+				commentEditPost.disabled = (isValueSame);
+				commentEditPost.style.display = (isValueSame) ? "none" : "flex";
+			});
+			commentPoster.appendChild(commentEditInput);
+			const commentEditPost = document.createElement("div");
+			commentEditPost.className = "buttonPost";
+			commentEditPost.innerHTML = `<i class="ph-bold ph-pencil"></i>`;
+			commentEditPost.addEventListener("click", (event) => {
+				commentForm.dispatchEvent(new Event("submit", { cancelable: true }));
+				event.preventDefault();
+			});
+			commentPoster.appendChild(commentEditPost);
+			const commentEditCancel = document.createElement("div");
+			commentEditCancel.className = "buttonPost";
+			commentEditCancel.innerHTML = `<i class="ph-bold ph-x"></i>`;
+			commentEditCancel.addEventListener("click", (event) => {
+				commentPoster.remove();
+				commentContent.style.display = null;
+				commentIconsContainer.style.display = "flex";
+			});
+			commentPoster.appendChild(commentEditCancel);
+
+			commentForm.onsubmit = async(event) => {
+				event.preventDefault();
+				event.stopPropagation();
+				if (this.submitting) return;
+
+				const theEditIcon = commentEditPost.querySelector("i");
+
+				const resetInputForm = (shouldClearInput) => {
+					// please set things back.
+					commentEditPost.disabled = false;
+					commentEditPost.style.cursor = "pointer";
+					theEditIcon.style.animation = "none";
+					theEditIcon.style.transform = "rotate(0deg)";
+					theEditIcon.className = "ph-bold ph-pencil";
+					commentEditInput.disabled = false;
+					commentEditInput.style.cursor = "text";
+
+					this.submitting = false;
+					if (shouldClearInput) {
+						commentPoster.remove();
+						commentContent.style.display = null;
+						commentIconsContainer.style.display = "flex";
+					};
+				}
+				const handleError = async(txt) => {
+					// this stupid alert thing is so stupid; please save me and let me implement stupid toast notifications
+					theEditIcon.style.animation = "none";
+					theEditIcon.style.transform = "rotate(0deg)";
+					theEditIcon.className = "ph-bold ph-x-circle";
+
+					Functions.sendToast({ title: "Comment Edit Failed!", content: txt, style: "error" });
+					await Functions.sleep(250);
+
+					resetInputForm();
+				};
+
+				// Processing
+				commentEditPost.disabled = true;
+				commentEditPost.style.cursor = "not-allowed";
+				theEditIcon.style = "display: inline-block; animation: spin-spin-spin 1.2s linear infinite;";
+				theEditIcon.className = "ph-bold ph-arrow-clockwise";
+				commentEditInput.disabled = true;
+				commentEditInput.style.cursor = "not-allowed";
+				this.submitting = true;
+				await Functions.sleep(100); // give a few moments to catch up.
+
+				let comcon = commentEditInput.value.trim();
+				if (comcon == null || comcon == "") return await handleError("Something went wrong while editing.\nCheck to make sure your comment is not empty.");
+				else if (comcon == commentContentActually.innerHTML.trim()) return await handleError("Something went wrong while editing.\nYour comment is the same...");
+
+				const data = await Functions.sendAPIRequest(`comments/${commentID}`, { Authorization: dh }, "PATCH", Functions.basicSanitize(commentEditInput.value));
+				if (data.error) return await handleError("Something went wrong while editing.\nCheck to make sure your comment is not empty.");
+
+				Functions.fetchComments();
+				resetInputForm(true);
+				updateUserData();
+			};
+
+			commentHolder.appendChild(commentPoster);
 		};
 	}
 	Functions.fetchComments = async(doHighlight = false) => {
@@ -458,7 +560,7 @@ if (commentSection) {
 			const commentTime = Functions.convertHumanFromStamp((Date.now() / 1000) - comment.time);
 			let badges = "";
 			if (comment.author.staff) badges += `<div class="badges"><i class="ph-bold ph-gavel" style="color: var(--profile-accent);"></i></div>`;
-			commentDetailsHeader.innerHTML = `<p id="username">${comment.author.name}</p>${badges}<p id="data">${Functions.convertTimestamp(comment.time * 1000, "mm dd, YYYY")} - ${commentTime == "just now" ? commentTime : (commentTime + " ago")}</p>`;
+			commentDetailsHeader.innerHTML = `<p id="username">${comment.author.name}</p>${badges}<p id="data">${Functions.convertTimestamp(comment.time * 1000, "mm dd, YYYY")} - ${commentTime == "just now" ? commentTime : (commentTime + " ago")}${comment.edited ? ' <span id="edited">(edited)</span>' : ""}</p>`;
 			commentHolder.appendChild(commentDetailsHeader);
 
 			const commentDetailsContent = document.createElement("div");
