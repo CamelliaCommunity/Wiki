@@ -198,9 +198,9 @@ const updateCommentInput = () => {
 };
 
 const updateSite = async() => {
-	updateUserData();
+	await updateUserData();
 	if (commentSection) {
-		updateCommentInput();
+		await updateCommentInput();
 	};
 };
 
@@ -217,6 +217,7 @@ loginBtn.addEventListener("click", (event) => {
 			Functions.Cookie.set("wiki_auth", JSON.stringify({}), 0);
 			Functions.sendToast({ title: "Authentication", content: "Successfully logged out!", style: "success" });
 			updateSite();
+			Functions.fetchComments();
 		};
 	} else {
 		const DISCORD_CLIENT_ID = "1169155506988929024";
@@ -244,7 +245,8 @@ loginBtn.addEventListener("click", (event) => {
 				}), 7);
 
 				// Now that we are logged in, let's GOOOOOOOOOOOOOOOOOOOOOO
-				updateSite();
+				await updateSite();
+				Functions.fetchComments();
 			};
 		});
 
@@ -390,7 +392,10 @@ if (commentSection) {
 				Functions.fetchComments();
 				updateUserData();
 			};
-		}
+		} else if (commentIcon == "comment-edit") {
+			if (!dh || !user) return;
+			
+		};
 	}
 	Functions.fetchComments = async(doHighlight = false) => {
 		const commentSection = document.getElementById("commentSection");
@@ -473,14 +478,15 @@ if (commentSection) {
 			commentIconsContainer.appendChild(commentIcons1);
 
 			const commentIcons2 = document.createElement("div");
-			const commentIcons2Ex =
-				((dh && user) && comment.author.id === user.id)
-				? `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`
-				: (user.staff)
-					? `<div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`
-					: `<div class="comment-icon ph-bold ph-flag" id="comment-report"></div>`;
+			let commentIcons2Ex = "";
+			if ((dh && user)) {
+				commentIcons2Ex += `<div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply"></div>`;
+				if (comment.author.id === user.id) commentIcons2Ex += `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`;
+				else if (user.staff) commentIcons2Ex += `<div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`;
+				else `<div class="comment-icon ph-bold ph-flag" id="comment-report"></div>`;
+			};
 			commentIcons2.className = "comment-icons";
-			commentIcons2.innerHTML = `<div class="comment-icon ph-bold ph-link" id="comment-link"></div><div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply"></div>${commentIcons2Ex}`;
+			commentIcons2.innerHTML = `<div class="comment-icon ph-bold ph-link" id="comment-link"></div>${commentIcons2Ex}`;
 			commentIconsContainer.appendChild(commentIcons2);
 
 			commentCard.appendChild(commentIconsContainer);
