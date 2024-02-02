@@ -1926,6 +1926,11 @@ footer {
 footer #footerText {
   font-size: 20.25px;
   font-style: normal;
+  text-align: center;
+}
+
+#legalText {
+  font-size: 20.25px;
 }
 
 /* links */
