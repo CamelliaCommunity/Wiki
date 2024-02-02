@@ -403,20 +403,22 @@ if (commentSection) {
 			const commentHolder = commentCard.querySelector(".comment-holder");
 			const commentContent = commentHolder.querySelector(".content");
 			commentContent.style.display = "none";
-			const commentContentActually = commentContent.querySelector("p");
+			let commentContentActually = commentContent.querySelector("p").innerHTML;
 
 			const commentIconsContainer = commentCard.querySelector(".comment-icons-container");
 			commentIconsContainer.style.display = "none";
+
+			commentContentActually = commentContentActually.replaceAll("<br>", "\n");
 
 			const commentPoster = document.createElement("div");
 			commentPoster.className = "comment-poster";
 			const commentEditInput = document.createElement("textarea");
 			commentEditInput.id = "comment-input";
-			commentEditInput.value = commentContentActually.innerHTML || "";
+			commentEditInput.value = commentContentActually || "";
 			commentEditInput.placeholder = "Type some text here! Press enter to post. Use shift+enter for a new line.";
 			commentEditInput.addEventListener("input", inputHeightEvent);
 			commentEditInput.addEventListener("input", (event) => {
-				const isValueSame = (commentEditInput.value == commentContentActually.innerHTML);
+				const isValueSame = (commentEditInput.value == commentContentActually);
 				commentEditPost.disabled = (isValueSame);
 				commentEditPost.style.display = (isValueSame) ? "none" : "flex";
 			});
@@ -500,7 +502,7 @@ if (commentSection) {
 
 				let comcon = commentEditInput.value.trim();
 				if (comcon == null || comcon == "") return await handleError("Something went wrong while editing.\nCheck to make sure your comment is not empty.");
-				else if (comcon == commentContentActually.innerHTML.trim()) return await handleError("Something went wrong while editing.\nYour comment is the same...");
+				else if (comcon == commentContentActually.trim()) return await handleError("Something went wrong while editing.\nYour comment is the same...");
 
 				const data = await Functions.sendAPIRequest(`comments/${commentID}`, { Authorization: dh }, "PATCH", Functions.basicSanitize(commentEditInput.value));
 				if (data.error) return await handleError("Something went wrong while editing.\nCheck to make sure your comment is not empty.");
@@ -511,6 +513,7 @@ if (commentSection) {
 			};
 
 			commentHolder.appendChild(commentPoster);
+			commentEditInput.dispatchEvent(new Event("input")); // force
 		} else if (commentIcon == "comment-reply") {
 			if (!dh || !user) return;
 
