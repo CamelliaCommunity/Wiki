@@ -662,15 +662,15 @@ if (commentSection) {
 
 		const comments = data.data;
 		const commentReplies = [];
-		commentLoader.remove();
+		if (commentLoader) commentLoader.remove();
+
+		// Reset the comment section
+		commentSection.querySelectorAll(".comment-wrapper form:not(#my-comment-form)").forEach(cs => cs.parentElement.remove());
 
 		if (!comments || comments.length < 1) {
 			Logger.info(`The slug ${slug} has no comments.`);
 			return;
 		};
-
-		// Reset the comment section
-		commentSection.querySelectorAll(".comment-wrapper form:not(#my-comment-form)").forEach(cs => cs.parentElement.remove());
 
 		await comments.sort((a, b) => b.time - a.time).forEach(comment => {
 			const commentWrapper = document.createElement("div");
