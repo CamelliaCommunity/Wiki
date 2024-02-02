@@ -119,7 +119,6 @@
 
         .comment-details-header {
           display: flex;
-          align-items: center;
           gap: 5px;
           align-self: stretch;
 
@@ -174,11 +173,7 @@
               position: relative;
 
               &:after {
-                background-image: linear-gradient(
-                  180deg,
-                  transparent,
-                  var(--colorCardDivisor)
-                );
+                background-image: linear-gradient(180deg, transparent, var(--colorCardDivisor));
                 bottom: 0;
                 content: "";
                 display: block;
@@ -275,7 +270,7 @@
 
         #comment-input {
           width: 100%;
-          height: 40px;
+          // height: 40px;
           background: var(--colorLight);
           border: none;
           color: white;
@@ -344,4 +339,17 @@
       }
     }
   }
+}
+
+/*
+ * These files are split like this so 
+ * that we don't have to spam !important
+ */
+
+@media screen and not (max-width: 645px) {
+  @import "./desktop";
+}
+
+@media screen and (max-width: 645px) {
+  @import "./mobile";
 }
