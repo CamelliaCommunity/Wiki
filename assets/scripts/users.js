@@ -744,7 +744,7 @@ if (commentSection) {
 			commentWrapper.appendChild(commentForm);
 			if (comment.parent) { // oh fuck its a reply!
 				commentWrapper.className += ` reply-${comment.parent}`;
-				commentReplies.push({ parentID: comment.parent, commentID: comment.id, commentWrapper });
+				commentReplies.push({ parentID: comment.parent, commentID: comment.id, commentWrapper, time: comment.time });
 			} else
 				commentSection.appendChild(commentWrapper);
 
@@ -777,7 +777,7 @@ if (commentSection) {
 			});
 		});
 
-		commentReplies.forEach(reply => { 
+		await commentReplies.sort((a, b) => a.time - b.time).forEach(reply => { 
 			if (!reply.parentID || !reply.commentWrapper) return;
 
 			try {
