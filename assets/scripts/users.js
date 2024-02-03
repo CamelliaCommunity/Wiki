@@ -380,7 +380,7 @@ if (commentSection) {
 
 		if (commentIcon == "comment-link") {
 			if (navigator.clipboard) {
-				navigator.clipboard.writeText(`${window.location.href}#comment-${commentID}`);
+				navigator.clipboard.writeText(`${window.location.protocol}//${window.location.host}${window.location.pathname}#comment-${commentID}`);
 				Functions.sendToast({ title: "Success!", content: "Permalink copied to your clipboard!", style: "success" });
 			} else Functions.sendToast({ title: "Uh-oh...", content: "Could not copy permalink to your clipboard.", style: "error" });
 		} else if (commentIcon == "comment-delete") {
@@ -792,31 +792,24 @@ if (commentSection) {
 		// Nesting is pain, and I bet when reply nesting is a thing, this is gonna get fucky.
 		// ~ thecodingguy
 		// its broken, so ive commented it out.
-		// commentSection.childNodes.forEach(commentParent => {
-		// 	if (commentParent.tagName != "DIV") return;
-		// 	if (commentParent.classList.contains("my-card") || !commentParent.id) return;
-		// 	commentParent = document.getElementById(commentParent.id);
+		commentSection.childNodes.forEach(commentParent => {
+			if (commentParent.tagName != "DIV") return;
+			if (commentParent.classList.contains("my-card") || !commentParent.id) return;
+			commentParent = document.getElementById(commentParent.id);
 
-		// 	const profileLeft = commentParent.querySelector(".profile-left");
-		// 	let nestHeight = commentParent.querySelector(".comment-holder").querySelector(".content").clientHeight - 20;
-		// 	// let nestHeight = 60;
-		// 	let replyWrappers = 0;
-		// 	commentParent.querySelector(".comment-holder").childNodes.forEach(commentData => {
-		// 		if (commentData.tagName != "DIV") return;
-		// 		// if (commentData.id.startsWith("comment-") || commentData.className == "content") {
-		// 		if (commentData.id.startsWith("comment-")) {
-		// 			nestHeight += ((commentData.offsetHeight) / 2 - 5);
-		// 			replyWrappers += 1;
-		// 		};
-		// 	});
-		// 	let commentNester = profileLeft.querySelector(".nested");
-		// 	if (!commentNester) {
-		// 		commentNester = document.createElement("div");
-		// 		commentNester.className = "nested";
-		// 		profileLeft.appendChild(commentNester);
-		// 	};
-		// 	commentNester.style.height = nestHeight + "px";
-		// });
+			const profileLeft = commentParent.querySelector(".profile-left");
+			let nestHeight = commentParent.querySelector(".comment-holder").clientHeight - profileLeft.querySelector("#pfp").clientHeight - 42.5;
+
+			let commentNester = profileLeft.querySelector(".nested");
+			if (!commentNester) {
+				commentNester = document.createElement("div");
+				commentNester.className = "nested";
+				profileLeft.appendChild(commentNester);
+			};
+
+			if (nestHeight < 20) return;
+			commentNester.style.height = nestHeight + "px";
+		});
 
 		if (doHighlight) {
 			// go to the comment that the user wants.
