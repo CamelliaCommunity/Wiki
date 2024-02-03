@@ -28,17 +28,17 @@ The information you provide to us will be publicly displayed to all users of the
 
 We take the protection of your information seriously and employ various security measures to safeguard it against unauthorized access, alteration, disclosure, or destruction. These measures include but are not limited to:
 
-- Limiting the access to the hosting server that hosts our services to very a select few.
+- Limiting the access to the hosting server that hosts our services to the main developers (mainly the hoster, <mark>@thecodingguy</mark>).
 - Conducting regular audits and assessments to identify and address any potential vulnerabilities or weaknesses in our systems.
 - Collecting only what we need for our services, which helps reduce the risk associated with storing excessive or unnecessary data.
 
 ### 4. Data Retention
 
-We will retain all provided data unless it is removed at your request or through moderation. After processing a deletion request, our services may display a 'Comment was deleted' message. However, apart from the Comment ID, all connected data will be promptly erased unless otherwise. Users accessing the services after the deletion will only encounter the deleted message, with the Comment ID being the remaining identifier.
+We will retain all provided data unless it is removed at your request or through moderation. After processing a deletion request, all data, apart from the Comment ID, will be promptly erased unless otherwise. If a comment needs to be removed due to moderation reasons, we may retain the comment data for a brief period internally for investigative and moderation purposes. Users accessing the services after the deletion, regardless of why it was removed, will only encounter the 'Comment was deleted' message, with the Comment ID being the remaining identifier.
 
 ### 5. Your Rights
 
-You have rights regarding your personal information. This includes accessing, correcting, or deleting your data. To request access, corrections, or remove your information, please get in touch with us through the means provided in the Contact Us section.
+You have rights regarding your personal information. This includes accessing, correcting, or deleting your data. To request a copy, corrections, or remove your information, please get in touch with us through the means provided in the Contact Us section.
 
 ### 6. Disclosure of Information
 
