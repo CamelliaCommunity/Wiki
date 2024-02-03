@@ -12,7 +12,7 @@ description: The document that outlines what information we collect, use, and di
 > The Privacy Policy was last updated on February 3rd, 2024.
 >
 > TL;DR: We only collect Discord IDs, timestamps, and comments.
-> {: .tip }
+{: .tip }
 
 Welcome to the Camellia Wiki! We value your privacy and are committed to protecting your personal information. This document outlines what we collect, how we use, and what information we disclose you provide through flowertek and the Camellia Wiki Comments (hereinafter "our services").
 
@@ -49,7 +49,7 @@ We do not sell nor disclose your information to third parties. Doing this is bad
 We reserve the right to modify or replace this Privacy Policy at any time. It is your responsibility to review this policy periodically for changes. By continuing to access or use our services after any revisions become effective, you agree to be bound by the revised policy.
 
 > To view updates easier, view the [#🤖wiki-feed](https://discord.com/channels/435720333786480641/1174624963584610334) channel in the Discord!
-> {: .tip }
+{: .tip }
 
 ### 8. Contact Us
 
