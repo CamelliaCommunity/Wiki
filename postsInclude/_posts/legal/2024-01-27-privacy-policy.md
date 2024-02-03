@@ -34,7 +34,7 @@ We take the protection of your information seriously and employ various security
 
 ### 4. Data Retention
 
-We will retain all provided data unless it is removed at your request or through moderation. After processing a deletion request, our services may display a 'Comment was deleted' message. However, apart from the Comment ID, all connected data will be promptly erased unless otherwise. Users accessing the services after the deletion will only encounter the deleted message, with the Comment ID being the remaining identifier.
+We will retain all provided data unless it is removed at your request or through moderation. After processing a deletion request, all data, apart from the Comment ID, will be promptly erased unless otherwise. If a comment needs to be removed for moderation reasons, we may retain the comment data briefly for investigative and moderation purposes. Users accessing the services after the deletion, regardless of why it was removed, will only encounter the 'Comment was deleted' message, with the Comment ID being the remaining identifier.
 
 ### 5. Your Rights
 
