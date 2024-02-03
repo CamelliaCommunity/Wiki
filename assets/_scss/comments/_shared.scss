@@ -173,7 +173,11 @@
               position: relative;
 
               &:after {
-                background-image: linear-gradient(180deg, transparent, var(--colorCardDivisor));
+                background-image: linear-gradient(
+                  180deg,
+                  transparent,
+                  var(--colorCardDivisor)
+                );
                 bottom: 0;
                 content: "";
                 display: block;
@@ -192,13 +196,20 @@
         }
 
         .comment-wrapper {
-          padding: 10px 0;
+          padding: 10px;
           box-shadow: none;
           border: none;
 
           .comment-card {
             padding: 0;
           }
+        }
+
+        .comment-wrapper:not(:nth-child(3)) {
+          padding: 5px 10px;
+        }
+        .comment-wrapper:last-of-type {
+          padding-bottom: 0;
         }
       }
 

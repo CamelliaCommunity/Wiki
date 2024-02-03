@@ -512,7 +512,9 @@ if (commentSection) {
 				updateUserData();
 			};
 
-			commentHolder.appendChild(commentPoster);
+			if (commentHolder.querySelectorAll(`.reply-${commentID}`))
+				commentHolder.insertBefore(commentPoster, commentHolder.querySelectorAll(`.reply-${commentID}`)[0]);
+			else commentHolder.appendChild(commentPoster);
 			commentEditInput.dispatchEvent(new Event("input")); // force
 		} else if (commentIcon == "comment-reply") {
 			if (!dh || !user) return;
