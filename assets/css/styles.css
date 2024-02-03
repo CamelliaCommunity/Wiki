@@ -1456,8 +1456,11 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
 #commentSection .comment-wrapper .comment-card .comment-holder .comment-wrapper .comment-card {
   padding: 0;
 }
+#commentSection .comment-wrapper .comment-card .comment-holder .comment-wrapper:nth-child(3) {
+  padding-bottom: 0;
+}
 #commentSection .comment-wrapper .comment-card .comment-holder .comment-wrapper:not(:nth-child(3)) {
-  padding: 5px 10px;
+  padding: 10px 10px 0 10px;
 }
 #commentSection .comment-wrapper .comment-card .comment-holder .comment-wrapper:last-of-type {
   padding-bottom: 0;

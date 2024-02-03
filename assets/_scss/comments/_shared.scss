@@ -205,8 +205,12 @@
           }
         }
 
+        .comment-wrapper:nth-child(3) {
+          padding-bottom: 0;
+        }
+
         .comment-wrapper:not(:nth-child(3)) {
-          padding: 5px 10px;
+          padding: 10px 10px 0 10px;
         }
         .comment-wrapper:last-of-type {
           padding-bottom: 0;
