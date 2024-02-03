@@ -20,7 +20,7 @@ By accessing and using our services, you agree to be bound by these Terms of Ser
 
 ### 2. Privacy Policy
 
-We respect your privacy and are committed to protecting the personal information you provide through our services. Please review our [Privacy Policy]({% link postsInclude/_posts/legal/2024-01-27-privacy-policy.md %}>) to understand how we collect, use, and disclose your information.
+We respect your privacy and are committed to protecting the personal information you provide through our services. Please review our [Privacy Policy](<{% link postsInclude/_posts/legal/2024-01-27-privacy-policy.md %}>) to understand how we collect, use, and disclose your information.
 
 ### 3. Your Responsibilities
 

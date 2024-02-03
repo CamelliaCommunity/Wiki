@@ -9,7 +9,7 @@ description: The document that outlines what information we collect, use, and di
 
 ## Privacy Policy
 
-> The Privacy Policy was last updated on February 2nd, 2024.
+> The Privacy Policy was last updated on February 3rd, 2024.
 >
 > TL;DR: We only collect Discord IDs, timestamps, and comments.
 > {: .tip }
@@ -28,7 +28,7 @@ The information you provide to us will be publicly displayed to all users of the
 
 We take the protection of your information seriously and employ various security measures to safeguard it against unauthorized access, alteration, disclosure, or destruction. These measures include but are not limited to:
 
-- Limiting the access to the hosting server that hosts our services to very a select few.
+- Limiting the access to the hosting server that hosts our services to the main developers (mainly the hoster, <mark>@thecodingguy</mark>).
 - Conducting regular audits and assessments to identify and address any potential vulnerabilities or weaknesses in our systems.
 - Collecting only what we need for our services, which helps reduce the risk associated with storing excessive or unnecessary data.
 
@@ -38,7 +38,7 @@ We will retain all provided data unless it is removed at your request or through
 
 ### 5. Your Rights
 
-You have rights regarding your personal information. This includes accessing, correcting, or deleting your data. To request access, corrections, or remove your information, please get in touch with us through the means provided in the Contact Us section.
+You have rights regarding your personal information. This includes accessing, correcting, or deleting your data. To request a copy, corrections, or remove your information, please get in touch with us through the means provided in the Contact Us section.
 
 ### 6. Disclosure of Information
 
