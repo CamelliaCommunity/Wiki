@@ -6,10 +6,11 @@ category: pages
 author: Camellia Server Staff
 description: The document that outlines the terms that govern the use of our services.
 ---
+
 ## Terms of Service
 
 > The Terms of Service were last updated on January 27th, 2024.
-{: .tip }
+> {: .tip }
 
 Welcome to the Camellia Wiki! This document outlines the terms that govern your use of flowertek and the Camellia Wiki Comments (hereinafter "our services").
 
@@ -19,11 +20,11 @@ By accessing and using our services, you agree to be bound by these Terms of Ser
 
 ### 2. Privacy Policy
 
-We respect your privacy and are committed to protecting the personal information you provide through our services. Please review our [Privacy Policy]({% link postsWiki/_posts/2024-01-27-privacy-policy.md %}>) to understand how we collect, use, and disclose your information.
+We respect your privacy and are committed to protecting the personal information you provide through our services. Please review our [Privacy Policy](<{% link postsInclude/_posts/legal/2024-01-27-privacy-policy.md %}>) to understand how we collect, use, and disclose your information.
 
 ### 3. Your Responsibilities
 
-You are solely responsible for any content you post while using our service and any consequences that may arise from such content. Prohibited content or behaviors include, but are not limited to, spamming, harassment, and violation of intellectual property laws. *Our Discord server rules apply to your use of our services*.
+You are solely responsible for any content you post while using our service and any consequences that may arise from such content. Prohibited content or behaviors include, but are not limited to, spamming, harassment, and violation of intellectual property laws. _Our Discord server rules apply to your use of our services_.
 
 ### 4. Limitation of Liability
 
@@ -42,7 +43,7 @@ We reserve the right to terminate or suspend your access to our services at any 
 We reserve the right to modify or replace these Terms of Service at any time. It is your responsibility to review these terms periodically for changes. By continuing to access or use our services after any revisions become effective, you agree to be bound by the revised terms.
 
 > To view updates easier, view the [#🤖wiki-feed](https://discord.com/channels/435720333786480641/1174624963584610334) channel in the Discord!
-{: .tip }
+> {: .tip }
 
 ### 8. Contact Us
 
