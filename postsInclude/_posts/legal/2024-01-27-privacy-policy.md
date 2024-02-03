@@ -9,7 +9,7 @@ description: The document that outlines what information we collect, use, and di
 
 ## Privacy Policy
 
-> The Privacy Policy was last updated on February 2nd, 2024.
+> The Privacy Policy was last updated on February 3rd, 2024.
 >
 > TL;DR: We only collect Discord IDs, timestamps, and comments.
 > {: .tip }
