@@ -405,8 +405,22 @@ if (commentSection) {
 			commentContent.style.display = "none";
 			let commentContentActually = commentContent.querySelector("p").innerHTML;
 
-			const commentIconsContainer = commentCard.querySelector(".comment-icons-container");
-			commentIconsContainer.style.display = "none";
+			let commentIconsContainer;
+			commentCard.childNodes.forEach(cccn => {
+				if (cccn.tagName == "DIV" && cccn.className == "comment-icons-container") {
+					return commentIconsContainer = cccn;
+				};
+			});
+
+			let hasReplies = false;
+			commentHolder.childNodes.forEach(cccn => {
+				if (cccn.tagName == "DIV" && cccn.className.includes("reply-")) {
+					return hasReplies = true;
+				};
+			});
+
+			if (hasReplies) commentIconsContainer.style.opacity = 0;
+			else commentIconsContainer.style.display = "none";
 
 			commentContentActually = commentContentActually.replaceAll("<br>", "\n");
 
@@ -437,7 +451,8 @@ if (commentSection) {
 			commentEditCancel.addEventListener("click", (event) => {
 				commentPoster.remove();
 				commentContent.style.display = null;
-				commentIconsContainer.style.display = "flex";
+				if (hasReplies) commentIconsContainer.style.opacity = 1;
+				else commentIconsContainer.style.display = "flex";
 			});
 			commentPoster.appendChild(commentEditCancel);
 
@@ -475,7 +490,8 @@ if (commentSection) {
 					if (shouldClearInput) {
 						commentPoster.remove();
 						commentContent.style.display = null;
-						commentIconsContainer.style.display = "flex";
+						if (hasReplies) commentIconsContainer.style.opacity = 1;
+						else commentIconsContainer.style.display = "flex";
 					};
 				}
 				const handleError = async(txt) => {
@@ -793,25 +809,32 @@ if (commentSection) {
 		// If I had to say anything, this is was the most stupidest shit I ever had to write.
 		// Nesting is pain, and I bet when reply nesting is a thing, this is gonna get fucky.
 		// ~ thecodingguy
-		// its broken, so ive commented it out.
-		commentSection.childNodes.forEach(commentParent => {
-			if (commentParent.tagName != "DIV") return;
-			if (commentParent.classList.contains("my-card") || !commentParent.id) return;
-			commentParent = document.getElementById(commentParent.id);
+		// still broken
+		// commentSection.childNodes.forEach(commentParent => {
+		// 	if (commentParent.tagName != "DIV") return;
+		// 	if (commentParent.classList.contains("my-card") || !commentParent.id) return;
+		// 	commentParent = document.getElementById(commentParent.id);
 
-			const profileLeft = commentParent.querySelector(".profile-left");
-			let nestHeight = commentParent.querySelector(".comment-holder").clientHeight - profileLeft.querySelector("#pfp").clientHeight - 42.5;
+		// 	const profileLeft = commentParent.querySelector(".profile-left");
+		// 	let nestHeight = commentParent.querySelector(".comment-holder").clientHeight / 1.6;
 
-			let commentNester = profileLeft.querySelector(".nested");
-			if (!commentNester) {
-				commentNester = document.createElement("div");
-				commentNester.className = "nested";
-				profileLeft.appendChild(commentNester);
-			};
+		// 	let shouldLine = false;
+		// 	commentParent.querySelector(".comment-holder").childNodes.forEach(c=> {
+		// 		if (c.tagName == "DIV" && c.className.startsWith("reply-"))
+		// 			return true;
+		// 	});
 
-			if (nestHeight < 20) return;
-			commentNester.style.height = nestHeight + "px";
-		});
+		// 	if (!shouldLine) return;
+		// 	let commentNester = profileLeft.querySelector(".nested");
+		// 	if (!commentNester) {
+		// 		commentNester = document.createElement("div");
+		// 		commentNester.className = "nested";
+		// 		profileLeft.appendChild(commentNester);
+		// 	};
+
+		// 	commentNester.style.height = nestHeight + "px";
+
+		// });
 
 		if (doHighlight) {
 			// go to the comment that the user wants.
