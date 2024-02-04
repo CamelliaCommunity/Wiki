@@ -800,41 +800,23 @@ if (commentSection) {
 				const commentParent = commentSection.querySelector(`#comment-${reply.parentID}`);
 				const commentHolder = commentParent.querySelector(".comment-holder");
 				commentHolder.appendChild(reply.commentWrapper);
+
+				// Update nesting line for that.
+				// This seems to be the LOT easier approach.				
+				let commentNester = commentParent.querySelector(".nested");
+				if (!commentNester) {
+					commentNester = document.createElement("div");
+					commentNester.className = "nested";
+					commentNester.innerHTML = `<div class="line"></div>`;
+					commentParent.querySelector("form").insertBefore(commentNester, commentParent.querySelector(".comment-card"));
+				};
+				commentNester.style.display = "block";
+
 			} catch (Ex) {
 				console.log(Ex);
 				Functions.sendToast({ title: "Comment Reply", content: `Could not find reply parent..?\np-${reply.parentID}\nc-${reply.commentID}`, style: "error" });
 			};
 		});
-
-		// If I had to say anything, this is was the most stupidest shit I ever had to write.
-		// Nesting is pain, and I bet when reply nesting is a thing, this is gonna get fucky.
-		// ~ thecodingguy
-		// still broken
-		// commentSection.childNodes.forEach(commentParent => {
-		// 	if (commentParent.tagName != "DIV") return;
-		// 	if (commentParent.classList.contains("my-card") || !commentParent.id) return;
-		// 	commentParent = document.getElementById(commentParent.id);
-
-		// 	const profileLeft = commentParent.querySelector(".profile-left");
-		// 	let nestHeight = commentParent.querySelector(".comment-holder").clientHeight / 1.6;
-
-		// 	let shouldLine = false;
-		// 	commentParent.querySelector(".comment-holder").childNodes.forEach(c=> {
-		// 		if (c.tagName == "DIV" && c.className.startsWith("reply-"))
-		// 			return true;
-		// 	});
-
-		// 	if (!shouldLine) return;
-		// 	let commentNester = profileLeft.querySelector(".nested");
-		// 	if (!commentNester) {
-		// 		commentNester = document.createElement("div");
-		// 		commentNester.className = "nested";
-		// 		profileLeft.appendChild(commentNester);
-		// 	};
-
-		// 	commentNester.style.height = nestHeight + "px";
-
-		// });
 
 		if (doHighlight) {
 			// go to the comment that the user wants.
