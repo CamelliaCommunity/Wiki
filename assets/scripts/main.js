@@ -45,21 +45,21 @@ if (scrollToTop) {
 
   // event listener when the user clicks on the button to scroll to the top
   scrollToTop.addEventListener("click", () => {
-    if (prevScrollPosition > 0 || prevScrollPosition == window.scrollY) {
+    if (prevScrollPosition > 0) {
       window.scrollTo({ top: prevScrollPosition, behavior: "smooth" });
       prevScrollPosition = 0;
       changeScrollBtn(true);
-      isReturning = false;
     } else {
       prevScrollPosition = window.scrollY;
       window.scrollTo({ top: 0, behavior: "smooth" });
       changeScrollBtn(false);
-      isReturning = true;
-      setTimeout(() => {
-        isReturning = false;
-      }, 1000);
     }
-    return false;
+    isReturning = true;
+    scrollToTop.style.pointerEvents = "none";
+    setTimeout(() => {
+      isReturning = false;
+      scrollToTop.style.pointerEvents = "auto";
+    }, 700);
   });
 }
 

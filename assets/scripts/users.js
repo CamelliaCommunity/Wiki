@@ -108,7 +108,9 @@ const Functions = {
 	sleep: (ms) => new Promise(resolve => setTimeout(resolve, ms)),
 	makeSlug: (i) => {
 		if (i.endsWith("/")) i = i.slice(0, -1);
-		return i.replace("/", "").replaceAll("/", "-");
+		i = i.replace("/", "").replaceAll("/", "-");
+		i = i.replaceAll(".html", "");
+		return i;
 	},
 	basicSanitize: (str) => { const m = { "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#x27;", "/": "&#x2F;"}; const r = /[<>"'/]/ig; return str.replace(r, (ma) => m[ma]); },
 	sendToast: (data) => { data.content = data.content.replaceAll("\n", "<br>"); if (!window.toastMan) alert(data.content); else window.toastMan.push(data); }
@@ -726,9 +728,13 @@ if (commentSection) {
 			commentHolder.appendChild(commentDetailsHeader);
 
 			const commentDetailsContent = document.createElement("div");
-			let comcon = comment.content.replaceAll("\n", "<br>");
 			commentDetailsContent.className = "content";
-			commentDetailsContent.innerHTML = `<p>${comcon}</p>`;
+			if (comment.content != null) {
+				let comcon = comment.content.replaceAll("\n", "<br>");
+				commentDetailsContent.innerHTML = `<p>${comcon}</p>`;
+			} else {
+				commentDetailsContent.innerHTML = `<p><i>Comment was deleted</i></p>`;
+			};
 			commentHolder.appendChild(commentDetailsContent);
 
 			commentCard.appendChild(commentHolder);
