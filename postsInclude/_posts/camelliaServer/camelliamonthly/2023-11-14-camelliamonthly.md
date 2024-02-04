@@ -8,6 +8,46 @@ description: Camellia Monthly articles
 permalink: camellia-server/:title
 ---
 
+## January 2024
+
+Happy New Year everyone! Camellia has managed to up the BPM once more and kick 2024 off with several bangers, and we'd love to see it! So how did he do it? Let's find out!
+
+![January 2024 Monthly Logo](https://media.discordapp.net/attachments/1033655103955144704/1202638208731582524/Untitled17_20240201202705.png)
+
+### Camellia News
+
+**"Sage" joins Proseka:** Project Sekai gains a new chart in the form of Camellia's song "Sage" from Maimai! With a challenging Append difficulty at level 35, it's a unique and difficult song that'll be sure to give you a run for your money!
+
+### New Releases
+
+**Jay Eazy - Mega Man (Camellia Remix):** I was never book smart; I'm money smart, makes me more intelligent 🗣️ 🗣️ ‼️ ‼️ 🔥 🔥 Check out this short little remix of Jay Eazy's rap song "Mega Man" [here on YouTube](https://youtu.be/b8orB2dMUKQ)!
+
+**Daten Dance (堕天ダンス):** Camellia collaborates with VTuber and singer Amanofu Stella on a [catchy new electro swing track](https://youtu.be/7o6Vav8SZyo)!
+
+**Hello BPM 2024:** Tick tock, the metronome is ticking faster! With the introduction of the new year comes the fourth installment of the Hello BPM series. This [BPM-shifting extratone song](https://youtu.be/7113wbJD3sw)'s sure to make your ears (and every rhythm gamer's hands and fingers) bleed!
+
+**Chocolat Cadabra (ショコラカタブラ):** LOTTE's chocolate celebrates its 60th anniversary! What better way to commemorate than by creating a one of a kind, [banger joint song](https://www.youtube.com/watch?v=c5j7lpWprro) between Ado (singer), Taku Inoue (composer), and Camellia (lyricist) for a Studio Trigger MV?
+
+**Camellia ft. Nanahira - MAXIMUM CHEAT GIRL:** Wow, another Nanahira collab! Who would've guessed? You can unlock this song in Beatmania IIDX's newest event, so get out there and show Camellia your chea—we mean, pro gamer moves!
+
+**Lioness' Pride Bandori Cover:** BanG Dream! collabs with Shishiro Botan on a new cover of her hit song "Lioness' Pride" with Camellia! You can find this new arrangement [over here](https://youtu.be/dVTEC_U2wSQ)!
+
+### Server Events
+
+**Server Elections:** It's that time again for breakfast elections - waffles vs. pancakes! Show some love to your favorite breakfast item by voting for your preferred team [here](https://strawpoll.com/w4nWr6Q8YyA)! Feel free to share the poll around and garner support. There are still 9 days left to cast your vote!
+
+### Server Updates
+
+**New Staff:** Let's welcome in our newly-promoted Temp-Admin <mark>@thecodingguy</mark> and Helper <mark>@hypertone</mark>
+
+**Current State of the Camellia Wiki:** The Camellia Wiki has seen some new updates and bug fixes! We've been hard at work with our newest feature, "Comments!" You can seek a preview on our [Beta View](https://beta.camellia.wiki) of the wiki! This will eventually be merged into the [main live branch](https://github.com/CamelliaCommunity/Wiki/live). See something missing? Read our [contributing article](https://camellia.wiki/contributing) to get started!
+
+**Archival of News and Releases JP:** We've decided to merge the EN and JP news as a means of consolidating all the information into a single channel. Now, it looks more concise!
+
+**Return of Suggestion Forums:** Missed the suggestion forums? Did we not see your suggestion? Not to worry! Now, with the [⁠#💡suggestion-forums](https://discord.com/channels/435720333786480641/1046122599064817765) back, no suggestions will be missed!
+
+**AI "Art" Restrictions:** AI-generated artwork will no longer be allowed in art channels. Why? We feel that it brings a level of "cheating" when artists spend years refining their art, whereas AI can do it in just seconds, primarily by using said artists' work for reference without authorization. While AI artwork is not allowed in the art channels, the rest of the server should not be affected. Still, we strongly discourage the use of AI content. 
+
 ## December 2023
 
 With 2023 finally ending, let's take a moment to think about all that's gone on this year... For now, though, let's review what happened in the last month of the year: December!
@@ -97,11 +137,11 @@ Camellia has also produced another song named "「Trick star」" by るなっち
 
 ### New Staff Members
 
- Some of you might notice that three new admins have joined us - <mark>@azunyan0007, @ungrave, and @nicocchi_,</mark> have come over from the Nanahira community to offer help! Feel free to welcome them if you see them interacting in general chat. With them helping out, our admin team now forms a cool heptagon (probably a more relaxed shape than a square?). We’re grateful they’ll be volunteering their time to help all of us out, and we look forward to working with them!
+Some of you might notice that three new admins have joined us - <mark>@azunyan0007, @ungrave, and @nicocchi_,</mark> have come over from the Nanahira community to offer help! Feel free to welcome them if you see them interacting in general chat. With them helping out, our admin team now forms a cool heptagon (probably a more relaxed shape than a square?). We’re grateful they’ll be volunteering their time to help all of us out, and we look forward to working with them!
 
 ### Staff and Rules Updates
 
-We have cut down *many* rules and combined some to make things more sane for new and existing members (from 17 down to 7!). We also added some clarification on current disclaimers as well as old ones. Please give them a read: <#1121280346638524456>. In parallel, we have also updated the Staff Guidelines again, adding an entirely [new section](https://discord.com/channels/435720333786480641/1088625892105924648/1164858060578230326) to it. An autobiography/transparency document was also [uploaded by papertek](https://discord.com/channels/435720333786480641/1088625892105924648/1167233462927904858), documenting his time in the community. Lastly, server moderation systems have switched off from Dyno to Wick. The full announcement is [here](https://discord.com/channels/435720333786480641/1088625892105924648/1169401636754563145). With these changes and updates, we hope you enjoy your time in the server even more~
+We have cut down *many* rules and combined some to make things more sane for new and existing members (from 17 down to 7!). We also added some clarification on current disclaimers as well as old ones. Please give them a read: [#🧾rules-and-info](https://discord.com/channels/435720333786480641/1121280346638524456). In parallel, we have also updated the Staff Guidelines again, adding an entirely [new section](https://discord.com/channels/435720333786480641/1088625892105924648/1164858060578230326) to it. An autobiography/transparency document was also [uploaded by papertek](https://discord.com/channels/435720333786480641/1088625892105924648/1167233462927904858), documenting his time in the community. Lastly, server moderation systems have switched off from Dyno to Wick. The full announcement is [here](https://discord.com/channels/435720333786480641/1088625892105924648/1169401636754563145). With these changes and updates, we hope you enjoy your time in the server even more~
 
 ### Chinese Thread
 
@@ -109,7 +149,7 @@ After some pestering from server members, we’ve created the new [Chinese threa
 
 ### Aesthetic Changes
 
-It’s time to spice things up with new-level role names and colors! We hope this will bring a fresh new look to parts of the server. We also took the time to add some icons to the side of channels and change up the welcome message in <#1033585407285272596>. As always, we welcome your suggestions on these changes in <#1034240760154947584>. We hope you enjoy the improvement! Cheers to next month~
+It’s time to spice things up with new-level role names and colors! We hope this will bring a fresh new look to parts of the server. We also took the time to add some icons to the side of channels and change up the welcome message in [#👋hello-there](https://discord.com/channels/435720333786480641/1033585407285272596). As always, we welcome your suggestions on these changes in [#💡server-direction](https://discord.com/channels/435720333786480641/1034240760154947584). We hope you enjoy the improvement! Cheers to next month~
 
 ## September 2023
 

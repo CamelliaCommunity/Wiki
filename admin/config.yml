@@ -53,7 +53,7 @@ collections:
       - { label: "Category", name: "category", widget: "hidden", default: "pages" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Included Posts", name: "include", widget: "string" }
+      - { label: "Included Posts", name: "include", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "includedPosts"
@@ -74,12 +74,13 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
     # adding a meta object with a path property allows editing the path of entries
     # moving an existing entry will move the entire sub tree of the entry to the new location
-    # meta:
-    #   path:
-    #     widget: string
-    #     label: "Path"
-    #     index_file: "index"
-    #     pattern: [".*", "Error"]
+    meta:
+      path:
+        widget: "parent"
+        label: "Path"
+        index_file: "index"
+        # This is a really hacky way.
+        # Thankfully, existing files won't be called 'index'.
 
   - name: "legacyFiles"
     label: "Legacy Files"

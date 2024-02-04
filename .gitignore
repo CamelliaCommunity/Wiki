@@ -5,6 +5,4 @@ _site
 .jekyll-metadata
 vendor
 
-/assets/css
-
 CNAME
