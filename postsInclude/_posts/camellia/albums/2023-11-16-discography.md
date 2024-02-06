@@ -183,7 +183,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 - [Mira](<{% link postsInclude/_posts/camellia/albums/Mira/2023-12-21-Mira.md %}>)
 
 ### May
-- [Swing World](<https://open.spotify.com/track/6Muv2oOlmjqw7ik7DoXLSW?si=d9f7b77b79464d9a>)
+- [Swing World](<https://open.spotify.com/track/6Muv2oOlmjqw7ik7DoXLSW?si=d9f7b77b79464d9a>) (*from [POP|CULTURE 8](<https://open.spotify.com/album/4YdVBqlld39L88IHhCby2M>)*)
 
 ### March
 
@@ -194,7 +194,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### December
 
 - [4orce!](<{% link postsInclude/_posts/camellia/albums/Force/2023-12-20-Force.md %}>)
-- [White Crow](<https://open.spotify.com/track/23FomAJrR428uVECx0cs0e?si=9d23f370fcf04a8e>)
+- [White Crow](<https://open.spotify.com/track/23FomAJrR428uVECx0cs0e?si=9d23f370fcf04a8e>) (*from [POP|CULTURE 7](<https://open.spotify.com/album/4lQHN1JJImfk4iedthKWMI?si=LoILQ5uyQ76JqQE0VbaLRA>)*)
 
 ### August
 
