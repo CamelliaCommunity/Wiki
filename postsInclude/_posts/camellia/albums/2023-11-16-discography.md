@@ -234,6 +234,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 ### December
 
 - [crystallized](<{% link postsInclude/_posts/camellia/albums/crystallized/2023-12-12-crystallized.md %}>)
+- [ZYTOKINE - WAVE WAVE WAVE feat. itori - Camellia's "NUDISCO RE-WAVING" Remix](<https://open.spotify.com/track/33CO49MNaLn1USLa5pXF9w?si=964128a00bb5423a>)
 
 ### August
 
@@ -241,14 +242,18 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 - [Replay!](<{% link postsInclude/_posts/camellia/albums/Replay/2023-12-12-Replay.md %}>)
 - [Drag the ground](https://open.spotify.com/track/13DViwRuyaOQJlgLWxwCi0?si=9c61f01ebabf4161) (*Single*)
 
-## 2014
+### January
+- [One more time * One more time...](<https://open.spotify.com/track/7FKRioiL5RtNwtFu2TJlRi?si=472d2128cfc647c6>) (*Single*)
 
-- [One more time * One more time...](https://open.spotify.com/track/7FKRioiL5RtNwtFu2TJlRi?si=472d2128cfc647c6) (*Single*)
+## 2014
 
 ### December
 
 - [LOP STEP RABBITS!](<{% link postsInclude/_posts/camellia/albums/LOP-STEP-RABBITS!/2023-12-06-LOP-STEP-RABBITS!.md %}>)
 - [dreamless wanderer](<{% link postsInclude/_posts/camellia/albums/dreamless-wanderer/2023-12-05-dreamless-wanderer.md %}>)
+
+### October
+- [ZYTOKINE - DEATHANDREBIRTH feat. nachi - Camellia's "DEADLYREVIVE" Remix](<https://open.spotify.com/track/2RNrnB3qJUH9Zq8iTNdU4U?si=fc82448566a142bb>)
 
 ### August
 
@@ -263,12 +268,14 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 ### December
 
+- [Hinode](<https://open.spotify.com/track/1snGg4ipmQ1fkFpwcnzymw?si=38c964e33e51498b>)
 - [Fly to night, tonight](https://open.spotify.com/track/3IfUyjBlxIeixyLUlYD5cF?si=1af2c2e0e987457c) (*Single*)
 - [paroxysm](<{% link postsInclude/_posts/camellia/albums/paroxysm/2023-12-05-paroxysm.md %}>)
 
 ### August
 
 - [Stance on Wave](<{% link postsInclude/_posts/camellia/albums/Stance-on-Wave/2023-12-06-Stance-on-Wave.md %}>)
+- [ZYTOKINE - LOST CHILD feat. 綾倉盟 - Camellia Remix](<https://open.spotify.com/track/4gPyOP5nGQW26q6RFRTTbL?si=e58173f6e29e4093>)
 
 ### April
 
