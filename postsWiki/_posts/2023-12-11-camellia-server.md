@@ -14,6 +14,15 @@ include: Camellia Monthly, Meetings
 
 ## History
 
+### 8/25-26/2018
+The Camellia server was created. KonekoKitten has made the server, later passing ownership to Camellia himself. The original suggestions channel was created. The server was *semi-private* at the time. Korean and Japanese announcements/channels are made.
+
+### 8/28-29/2018
+Microsoft Excel is the biggest inside joke. We love the DAW Microsoft Excel. The server reaches the 1000-member milestone. Camellia teases a track preview for server members.
+
+### 9/3-4-5/2018
+Microsoft Excel and Windows 95 are still memes. Emote suggestions and requests are being considered. Microsoft Excel emotes were added and are still on the server today.
+
 ## Events
 
 ### Elections
