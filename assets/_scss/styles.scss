@@ -13,7 +13,7 @@
 @import "./variables", "./highlights", "./author", "./modals", "./mediaQueries";
 
 @import "./header/shared", "./titleContainer/shared", "./comments/shared",
-  "./profile/shared", "./toast/shared", "./tooltip/shared";
+  "./profile/shared", "./toast/shared";
 
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
@@ -378,6 +378,7 @@ blockquote.tip {
     ),
     var(--colorTriary);
   display: flex;
+  justify-content: space-between;
   border-top: 3px solid var(--colorBorderTertiary);
   border-bottom: 3px solid var(--colorBorderTertiary);
   height: 84px;
@@ -410,6 +411,26 @@ blockquote.tip {
   a:last-of-type {
     margin-right: 46px;
   }
+}
+
+.header-permalink {
+  margin-left: 32px;
+  margin-right: 32px;
+  line-height: initial;
+  overflow: hidden;
+  align-self: center;
+  color: var(--colorGray);
+  font-size: 24px;
+  float: right;
+  @include transition(all 0.2s ease-in-out);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--colorWhite);
+  }
+}
+.cardContents h3 .header-permalink {
+  margin-right: 0;
 }
 
 .card .cardHeader {

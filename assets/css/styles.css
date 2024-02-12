@@ -1785,17 +1785,6 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   opacity: 1;
 }
 
-.tooltip {
-  position: absolute;
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 5px;
-  font-size: 14px;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
 html {
@@ -2118,6 +2107,7 @@ blockquote.tip {
 .cardHeader {
   background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%), var(--colorTriary);
   display: flex;
+  justify-content: space-between;
   border-top: 3px solid var(--colorBorderTertiary);
   border-bottom: 3px solid var(--colorBorderTertiary);
   height: 84px;
@@ -2145,6 +2135,26 @@ blockquote.tip {
 }
 .cardHeader a:last-of-type {
   margin-right: 46px;
+}
+
+.header-permalink {
+  margin-left: 32px;
+  margin-right: 32px;
+  line-height: initial;
+  overflow: hidden;
+  align-self: center;
+  color: var(--colorGray);
+  font-size: 24px;
+  float: right;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.header-permalink:hover {
+  color: var(--colorWhite);
+}
+
+.cardContents h3 .header-permalink {
+  margin-right: 0;
 }
 
 .card .cardHeader {
