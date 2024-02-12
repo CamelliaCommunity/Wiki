@@ -157,7 +157,12 @@ const updateUserData = async() => {
 	if (dh) {
 		const data = await Functions.sendAPIRequest("account", { Authorization: dh });
 		if (data.code != 0 || data.error) {
-			Functions.sendToast({ title: "Authentication", content: "Failed to login!\nPlease try again. If this keeps happening, please report to the developers.", style: "error" });
+			if (data.error ? data.error.message.includes("re" + "turned" + " co" + "de 81") : (data.code == 81)) {
+				Functions.sendToast({ title: "Authentication", content: "Failed to login as you are not in the server!\nClick this toast to open the Discord server invite in a new tab!", style: "error", link: "https://discord.gg/camellia", linkTarget: "_blank" });
+				Functions.Cookie.set("wiki_auth", JSON.stringify({}), 0);
+			} else {
+				Functions.sendToast({ title: "Authentication", content: "Failed to login!\nPlease try again. If this keeps happening, please report to the developers.", style: "error" });
+			};
 			console.log(data);
 			return;
 		};
@@ -219,7 +224,7 @@ loginBtn.addEventListener("click", (event) => {
 			Functions.Cookie.set("wiki_auth", JSON.stringify({}), 0);
 			Functions.sendToast({ title: "Authentication", content: "Successfully logged out!", style: "success" });
 			updateSite();
-			Functions.fetchComments();
+			if (typeof Functions.fetchComments == "function") Functions.fetchComments();
 		};
 	} else {
 		const DISCORD_CLIENT_ID = "1169155506988929024";
@@ -248,7 +253,7 @@ loginBtn.addEventListener("click", (event) => {
 
 				// Now that we are logged in, let's GOOOOOOOOOOOOOOOOOOOOOO
 				await updateSite();
-				Functions.fetchComments();
+				if (typeof Functions.fetchComments == "function") Functions.fetchComments();
 			};
 		});
 
@@ -294,7 +299,6 @@ if (commentSection) {
 			};
 		}
 		const handleError = async(txt) => {
-			// this stupid alert thing is so stupid; please save me and let me implement stupid toast notifications
 			theSendIcon.style.animation = "none";
 			theSendIcon.style.transform = "rotate(0deg)";
 			theSendIcon.className = "ph-bold ph-x-circle";
@@ -497,7 +501,6 @@ if (commentSection) {
 					};
 				}
 				const handleError = async(txt) => {
-					// this stupid alert thing is so stupid; please save me and let me implement stupid toast notifications
 					theEditIcon.style.animation = "none";
 					theEditIcon.style.transform = "rotate(0deg)";
 					theEditIcon.className = "ph-bold ph-x-circle";
@@ -620,7 +623,6 @@ if (commentSection) {
 					};
 				}
 				const handleError = async(txt) => {
-					// this stupid alert thing is so stupid; please save me and let me implement stupid toast notifications
 					theSendIcon.style.animation = "none";
 					theSendIcon.style.transform = "rotate(0deg)";
 					theSendIcon.className = "ph-bold ph-x-circle";
@@ -750,13 +752,14 @@ if (commentSection) {
 			const commentIcons2 = document.createElement("div");
 			let commentIcons2Ex = "";
 			if ((dh && user)) {
-				commentIcons2Ex += !comment.parent ? `<div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply"></div>` : "";
-				if (comment.author.id === user.id) commentIcons2Ex += `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`;
-				else if (user.staff) commentIcons2Ex += `<div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`;
-				else `<div class="comment-icon ph-bold ph-flag" id="comment-report"></div>`;
+				commentIcons2Ex += !comment.parent ? `<div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply" title="Reply"></div>` : "";
+
+				if (comment.author.id === user.id) commentIcons2Ex += `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"  title="Edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete" title="Delete"></div>`;
+				else if (user.staff) commentIcons2Ex += `<div class="comment-icon ph-bold ph-trash" id="comment-delete" title="Delete"></div>`;
+				else commentIcons2Ex += `<div class="comment-icon ph-bold ph-flag" id="comment-report" title="Report"></div>`;
 			};
 			commentIcons2.className = "comment-icons";
-			commentIcons2.innerHTML = `<div class="comment-icon ph-bold ph-link" id="comment-link"></div>${commentIcons2Ex}`;
+			commentIcons2.innerHTML = `<div class="comment-icon ph-bold ph-link" id="comment-link" title="Permalink"></div>${commentIcons2Ex}`;
 			commentIconsContainer.appendChild(commentIcons2);
 
 			commentCard.appendChild(commentIconsContainer);

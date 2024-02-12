@@ -12,7 +12,8 @@
 /* Import files */
 @import "./variables", "./highlights", "./author", "./modals", "./mediaQueries";
 
-@import "./header/shared", "./titleContainer/shared", "./comments/shared", "./profile/shared", "./toast/shared";
+@import "./header/shared", "./titleContainer/shared", "./comments/shared",
+  "./profile/shared", "./toast/shared", "./tooltip/shared";
 
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
@@ -52,20 +53,10 @@ html {
 }
 
 /* Firefox */
-// * {
-//   scrollbar-color: var(--colorPrimary) transparent;
-//   scrollbar-width: thin;
-// }
-
-// *::-webkit-scrollbar-thumb {
-//   border-radius: 20px;
-//   border: 6px solid transparent;
-//   background-clip: content-box;
-// }
-
-// *::-webkit-scrollbar-thumb:hover {
-//   background-color: #ffffff;
-// }
+* {
+  scrollbar-width: none;
+  scrollbar-color: var(--colorPrimary) transparent;
+}
 
 /* Edge */
 // * {
@@ -79,7 +70,12 @@ html {
 body {
   font-family: var(--font-default);
   font-size: 16px;
-  background: linear-gradient(180deg, rgba(240, 108, 155, 0.2) 0%, rgba(48, 37, 41, 0.2) 100%), #111;
+  background: linear-gradient(
+      180deg,
+      rgba(240, 108, 155, 0.2) 0%,
+      rgba(48, 37, 41, 0.2) 100%
+    ),
+    #111;
   color: var(--colorWhite);
   min-height: 100vh;
 
@@ -181,7 +177,12 @@ p {
 /* footer */
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #2a2228 0%,
+    rgba(42, 34, 40, 0.52) 48.96%,
+    rgba(42, 34, 40, 0) 100%
+  );
   margin-top: auto;
   height: 64px;
   display: flex;
@@ -369,7 +370,12 @@ blockquote.tip {
 }
 
 .cardHeader {
-  background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%),
+  background: linear-gradient(
+      180deg,
+      rgba(102, 31, 87, 0.3) 0%,
+      rgba(187, 58, 159, 0.12) 50.52%,
+      rgba(217, 130, 198, 0) 100%
+    ),
     var(--colorTriary);
   display: flex;
   border-top: 3px solid var(--colorBorderTertiary);
@@ -663,7 +669,10 @@ hr {
     display: grid;
     gap: var(--masonry-gap);
     grid-template-rows: masonry;
-    grid-template-columns: repeat(auto-fill, minmax(var(--masonry-brick-width), 1fr));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--masonry-brick-width), 1fr)
+    );
     align-tracks: stretch;
 
     > *:not(.card) {
@@ -760,7 +769,12 @@ hr {
 #navWedge {
   flex-shrink: 0;
   flex-direction: column;
-  background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%),
+  background: linear-gradient(
+      180deg,
+      rgba(246, 65, 141, 0) 0%,
+      rgba(246, 65, 141, 0.08) 51.04%,
+      rgba(91, 63, 75, 0.2) 100%
+    ),
     var(--colorCards);
   border-radius: 35px;
   width: 283px;

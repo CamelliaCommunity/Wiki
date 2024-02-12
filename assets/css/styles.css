@@ -1785,6 +1785,17 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   opacity: 1;
 }
 
+.tooltip {
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
 html {
@@ -1823,6 +1834,11 @@ html {
 }
 
 /* Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: var(--colorPrimary) transparent;
+}
+
 /* Edge */
 body {
   font-family: var(--font-default);
