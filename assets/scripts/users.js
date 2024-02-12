@@ -163,7 +163,6 @@ const updateUserData = async() => {
 			} else {
 				Functions.sendToast({ title: "Authentication", content: "Failed to login!\nPlease try again. If this keeps happening, please report to the developers.", style: "error" });
 			};
-			console.log(data);
 			return;
 		};
 
