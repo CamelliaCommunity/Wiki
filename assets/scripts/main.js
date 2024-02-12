@@ -331,7 +331,7 @@ const createPermaHeaders = () => {
   const theH3s = cardContents.querySelectorAll("h3");
 
   for (const h2 of theH2s) {
-    if (!h3.id) continue;
+    if (!h2.id) continue;
     if (
       h2.parentElement
         ? h2.parentElement.classList.contains("cardHeader")
