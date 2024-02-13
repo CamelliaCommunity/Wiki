@@ -659,7 +659,17 @@ if (commentSection) {
 			commentWrapper.appendChild(commentForm);
 			commentHolder.insertBefore(commentWrapper, commentHolder.querySelectorAll(`.reply-${commentID}`)[0]);
 
-		} else if (commentIcon == "comment-upvote" || commentIcon == "comment-downvote" || commentIcon == "comment-report") {
+		} else if (commentIcon == "comment-upvote" || commentIcon == "comment-downvote") {
+			if (!dh || !user) return;
+			const voteType = (commentIcon == "comment-upvote" ? 1 : -1);
+
+			const data = await Functions.sendAPIRequest(`comments/${commentID}/vote`, { Authorization: dh }, "POST", voteType);
+			if (data.error) return await Functions.sendToast({ title: `Comment ${(voteType ? "Up" : "Down")}Vote Failed!`, content: "Something went wrong while voting.\nPlease try again?", style: "error" });
+
+			Functions.fetchComments();
+			updateUserData();
+
+		} else if (commentIcon == "comment-report") {
 			if (!dh || !user) return;
 			Functions.sendToast({ title: "A new feature?", content: "That feature is not implemented yet but will be soon!", style: "error" });
 		};
@@ -679,7 +689,7 @@ if (commentSection) {
 		};
 
 		const slug = Functions.makeSlug(window.location.pathname);
-		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`);
+		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`, { Authorization: dh });
 
 		const comments = data.data;
 		const commentReplies = [];
@@ -740,11 +750,15 @@ if (commentSection) {
 			commentCard.appendChild(commentHolder);
 
 			const commentIconsContainer = document.createElement("div");
-			commentIconsContainer.className = "comment-icons-container";
+			commentIconsContainer.className = "comment-icons-container"; 
 
 			const commentIcons1 = document.createElement("div");
 			commentIcons1.className = "comment-icons";
-			commentIcons1.innerHTML = `<div class="comment-icon ph-bold ph-arrow-fat-up" id="comment-upvote"></div><p id="comment-upvotecount">0</p><div class="comment-icon ph-bold ph-arrow-fat-down" id="comment-downvote"></div>`;
+			
+			let funnyIconsData = `<div class="comment-icon ph-bold ph-arrow-fat-up" id="comment-upvote" ${(comment.vote == 1) ? 'style="color:var(--colorPrimary);"' : ""}></div>`;
+			funnyIconsData += `<p id="comment-upvotecount">${comment.ups - comment.downs}</p>`;
+			funnyIconsData += `<div class="comment-icon ph-bold ph-arrow-fat-down" id="comment-downvote" ${(comment.vote == -1) ? 'style="color:var(--colorPrimary);"' : ""}></div>`;
+			commentIcons1.innerHTML = funnyIconsData;
 			commentIconsContainer.appendChild(commentIcons1);
 
 			const commentIcons2 = document.createElement("div");
