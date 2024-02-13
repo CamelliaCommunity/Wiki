@@ -1,4 +1,5 @@
 # Ignore some files:
 assets/scripts/users.js
 assets/scripts/toastman.js
+assets/scripts/tooltipman.js
 assets/scripts/users.js

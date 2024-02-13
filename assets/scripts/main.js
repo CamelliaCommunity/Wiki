@@ -297,3 +297,53 @@ function doScrolling() {
     e.stopPropagation();
   });
 }
+
+// add funny permalinks to headers
+// thecodingguy was here to write it
+const createPermaHeaders = () => {
+  const cLH = (hID) => {
+    const permaLinkHeader = document.createElement("i");
+    permaLinkHeader.className = "header-permalink ph-bold ph-link";
+    permaLinkHeader.onclick = (e) => {
+      e.preventDefault();
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(
+          `${window.location.protocol}//${window.location.host}${window.location.pathname}#${hID}`
+        );
+        Functions.sendToast({
+          title: "Success!",
+          content: "Permalink copied to your clipboard!",
+          style: "success",
+        });
+      } else
+        Functions.sendToast({
+          title: "Uh-oh...",
+          content: "Could not copy permalink to your clipboard.",
+          style: "error",
+        });
+    };
+    return permaLinkHeader;
+  };
+
+  const cardContents = document.getElementsByClassName("cardContents")[0];
+
+  const theH2s = cardContents.querySelectorAll("h2");
+  const theH3s = cardContents.querySelectorAll("h3");
+
+  for (const h2 of theH2s) {
+    if (!h2.id) continue;
+    if (
+      h2.parentElement
+        ? h2.parentElement.classList.contains("cardHeader")
+        : false
+    ) {
+      h2.parentElement.appendChild(cLH(h2.id));
+    }
+  }
+
+  for (const h3 of theH3s) {
+    if (!h3.id) continue;
+    h3.appendChild(cLH(h3.id));
+  }
+};
+createPermaHeaders();

@@ -157,8 +157,12 @@ const updateUserData = async() => {
 	if (dh) {
 		const data = await Functions.sendAPIRequest("account", { Authorization: dh });
 		if (data.code != 0 || data.error) {
-			Functions.sendToast({ title: "Authentication", content: "Failed to login!\nPlease try again. If this keeps happening, please report to the developers.", style: "error" });
-			console.log(data);
+			if (data.error ? data.error.message.includes("re" + "turned" + " co" + "de 81") : (data.code == 81)) {
+				Functions.sendToast({ title: "Authentication", content: "Failed to login as you are not in the server!\nClick this toast to open the Discord server invite in a new tab!", style: "error", link: "https://discord.gg/camellia", linkTarget: "_blank" });
+				Functions.Cookie.set("wiki_auth", JSON.stringify({}), 0);
+			} else {
+				Functions.sendToast({ title: "Authentication", content: "Failed to login!\nPlease try again. If this keeps happening, please report to the developers.", style: "error" });
+			};
 			return;
 		};
 
@@ -219,7 +223,7 @@ loginBtn.addEventListener("click", (event) => {
 			Functions.Cookie.set("wiki_auth", JSON.stringify({}), 0);
 			Functions.sendToast({ title: "Authentication", content: "Successfully logged out!", style: "success" });
 			updateSite();
-			Functions.fetchComments();
+			if (typeof Functions.fetchComments == "function") Functions.fetchComments();
 		};
 	} else {
 		const DISCORD_CLIENT_ID = "1169155506988929024";
@@ -248,7 +252,7 @@ loginBtn.addEventListener("click", (event) => {
 
 				// Now that we are logged in, let's GOOOOOOOOOOOOOOOOOOOOOO
 				await updateSite();
-				Functions.fetchComments();
+				if (typeof Functions.fetchComments == "function") Functions.fetchComments();
 			};
 		});
 
@@ -294,7 +298,6 @@ if (commentSection) {
 			};
 		}
 		const handleError = async(txt) => {
-			// this stupid alert thing is so stupid; please save me and let me implement stupid toast notifications
 			theSendIcon.style.animation = "none";
 			theSendIcon.style.transform = "rotate(0deg)";
 			theSendIcon.className = "ph-bold ph-x-circle";
@@ -497,7 +500,6 @@ if (commentSection) {
 					};
 				}
 				const handleError = async(txt) => {
-					// this stupid alert thing is so stupid; please save me and let me implement stupid toast notifications
 					theEditIcon.style.animation = "none";
 					theEditIcon.style.transform = "rotate(0deg)";
 					theEditIcon.className = "ph-bold ph-x-circle";
@@ -620,7 +622,6 @@ if (commentSection) {
 					};
 				}
 				const handleError = async(txt) => {
-					// this stupid alert thing is so stupid; please save me and let me implement stupid toast notifications
 					theSendIcon.style.animation = "none";
 					theSendIcon.style.transform = "rotate(0deg)";
 					theSendIcon.className = "ph-bold ph-x-circle";
@@ -658,7 +659,17 @@ if (commentSection) {
 			commentWrapper.appendChild(commentForm);
 			commentHolder.insertBefore(commentWrapper, commentHolder.querySelectorAll(`.reply-${commentID}`)[0]);
 
-		} else if (commentIcon == "comment-upvote" || commentIcon == "comment-downvote" || commentIcon == "comment-report") {
+		} else if (commentIcon == "comment-upvote" || commentIcon == "comment-downvote") {
+			if (!dh || !user) return;
+			const commentIconContainer = event.target;
+			const voteType = commentIconContainer.style.color == "var(--colorPrimary)" ? 0 : (commentIcon == "comment-upvote" ? 1 : -1);
+			const data = await Functions.sendAPIRequest(`comments/${commentID}/vote`, { Authorization: dh }, "POST", voteType.toString());
+			if (data.error) return await Functions.sendToast({ title: `Comment ${(voteType ? "Up" : "Down")}Vote Failed!`, content: "Something went wrong while voting.\nPlease try again?", style: "error" });
+
+			Functions.fetchComments();
+			updateUserData();
+
+		} else if (commentIcon == "comment-report") {
 			if (!dh || !user) return;
 			Functions.sendToast({ title: "A new feature?", content: "That feature is not implemented yet but will be soon!", style: "error" });
 		};
@@ -678,7 +689,7 @@ if (commentSection) {
 		};
 
 		const slug = Functions.makeSlug(window.location.pathname);
-		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`);
+		const data = await Functions.sendAPIRequest(`posts/${slug}/comments`, { Authorization: dh });
 
 		const comments = data.data;
 		const commentReplies = [];
@@ -693,6 +704,10 @@ if (commentSection) {
 		};
 
 		await comments.sort((a, b) => b.time - a.time).forEach(comment => {
+			if (!comment.author) {
+				comment.author = userDefaults;
+				comment.author.name = "[deleted]";
+			};
 			const commentWrapper = document.createElement("div");
 			commentWrapper.className = "comment-wrapper";
 			commentWrapper.id = `comment-${comment.id}`;
@@ -724,39 +739,41 @@ if (commentSection) {
 			const commentTime = Functions.convertHumanFromStamp((Date.now() / 1000) - comment.time);
 			let badges = "";
 			if (comment.author.staff) badges += `<div class="badges"><i class="ph-bold ph-gavel" style="color: var(--profile-accent);"></i></div>`;
-			commentDetailsHeader.innerHTML = `<p id="username">${comment.author.name}</p>${badges}<p id="data">${Functions.convertTimestamp(comment.time * 1000, "mm dd, YYYY")} - ${commentTime == "just now" ? commentTime : (commentTime + " ago")}${comment.edited ? ' <span id="edited">(edited)</span>' : ""}</p>`;
+			commentDetailsHeader.innerHTML = `<p id="username">${comment.author.nick || comment.author.name}</p>${badges}<p id="data">${Functions.convertTimestamp(comment.time * 1000, "mm dd, YYYY")} - ${commentTime == "just now" ? commentTime : (commentTime + " ago")}${comment.edited ? ' <span id="edited">(edited)</span>' : ""}</p>`;
 			commentHolder.appendChild(commentDetailsHeader);
 
 			const commentDetailsContent = document.createElement("div");
 			commentDetailsContent.className = "content";
-			if (comment.content != null) {
-				let comcon = comment.content.replaceAll("\n", "<br>");
-				commentDetailsContent.innerHTML = `<p>${comcon}</p>`;
-			} else {
-				commentDetailsContent.innerHTML = `<p><i>Comment was deleted</i></p>`;
-			};
+			commentDetailsContent.innerHTML = `<p>${comment.content ? comment.content.replaceAll("\n", "<br>"): "<i>Comment was deleted</i>"}</p>`;
 			commentHolder.appendChild(commentDetailsContent);
 
 			commentCard.appendChild(commentHolder);
 
 			const commentIconsContainer = document.createElement("div");
-			commentIconsContainer.className = "comment-icons-container";
+			commentIconsContainer.className = "comment-icons-container"; 
 
 			const commentIcons1 = document.createElement("div");
 			commentIcons1.className = "comment-icons";
-			commentIcons1.innerHTML = `<div class="comment-icon ph-bold ph-arrow-fat-up" id="comment-upvote"></div><p id="comment-upvotecount">0</p><div class="comment-icon ph-bold ph-arrow-fat-down" id="comment-downvote"></div>`;
+			
+			let funnyIconsData = `<div class="comment-icon ph-bold ph-arrow-fat-up" id="comment-upvote" ${(comment.vote == 1) ? 'style="color:var(--colorPrimary);"' : ""}></div>`;
+			funnyIconsData += `<p id="comment-upvotecount">${comment.ups - comment.downs}</p>`;
+			funnyIconsData += `<div class="comment-icon ph-bold ph-arrow-fat-down" id="comment-downvote" ${(comment.vote == -1) ? 'style="color:var(--colorPrimary);"' : ""}></div>`;
+			commentIcons1.innerHTML = funnyIconsData;
 			commentIconsContainer.appendChild(commentIcons1);
 
 			const commentIcons2 = document.createElement("div");
 			let commentIcons2Ex = "";
 			if ((dh && user)) {
-				commentIcons2Ex += !comment.parent ? `<div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply"></div>` : "";
-				if (comment.author.id === user.id) commentIcons2Ex += `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`;
-				else if (user.staff) commentIcons2Ex += `<div class="comment-icon ph-bold ph-trash" id="comment-delete"></div>`;
-				else `<div class="comment-icon ph-bold ph-flag" id="comment-report"></div>`;
+				commentIcons2Ex += !comment.parent ? `<div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply" title="Reply"></div>` : "";
+
+				if (comment.author.id && comment.content) {
+					if (comment.author.id === user.id) commentIcons2Ex += `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"  title="Edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete" title="Delete"></div>`;
+					else if (user.staff) commentIcons2Ex += `<div class="comment-icon ph-bold ph-trash" id="comment-delete" title="Delete"></div>`;
+					else commentIcons2Ex += `<div class="comment-icon ph-bold ph-flag" id="comment-report" title="Report"></div>`;
+				};
 			};
 			commentIcons2.className = "comment-icons";
-			commentIcons2.innerHTML = `<div class="comment-icon ph-bold ph-link" id="comment-link"></div>${commentIcons2Ex}`;
+			commentIcons2.innerHTML = `<div class="comment-icon ph-bold ph-link" id="comment-link" title="Permalink"></div>${commentIcons2Ex}`;
 			commentIconsContainer.appendChild(commentIcons2);
 
 			commentCard.appendChild(commentIconsContainer);
