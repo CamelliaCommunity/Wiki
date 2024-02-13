@@ -694,6 +694,10 @@ if (commentSection) {
 		};
 
 		await comments.sort((a, b) => b.time - a.time).forEach(comment => {
+			if (!comment.author) {
+				comment.author = userDefaults;
+				comment.author.name = "[deleted]";
+			};
 			const commentWrapper = document.createElement("div");
 			commentWrapper.className = "comment-wrapper";
 			commentWrapper.id = `comment-${comment.id}`;
@@ -730,12 +734,7 @@ if (commentSection) {
 
 			const commentDetailsContent = document.createElement("div");
 			commentDetailsContent.className = "content";
-			if (comment.content != null) {
-				let comcon = comment.content.replaceAll("\n", "<br>");
-				commentDetailsContent.innerHTML = `<p>${comcon}</p>`;
-			} else {
-				commentDetailsContent.innerHTML = `<p><i>Comment was deleted</i></p>`;
-			};
+			commentDetailsContent.innerHTML = `<p>${comment.content ? comment.content.replaceAll("\n", "<br>"): "<i>Comment was deleted</i>"}</p>`;
 			commentHolder.appendChild(commentDetailsContent);
 
 			commentCard.appendChild(commentHolder);
@@ -753,9 +752,11 @@ if (commentSection) {
 			if ((dh && user)) {
 				commentIcons2Ex += !comment.parent ? `<div class="comment-icon ph-bold ph-arrow-bend-up-left" id="comment-reply" title="Reply"></div>` : "";
 
-				if (comment.author.id === user.id) commentIcons2Ex += `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"  title="Edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete" title="Delete"></div>`;
-				else if (user.staff) commentIcons2Ex += `<div class="comment-icon ph-bold ph-trash" id="comment-delete" title="Delete"></div>`;
-				else commentIcons2Ex += `<div class="comment-icon ph-bold ph-flag" id="comment-report" title="Report"></div>`;
+				if (comment.author.id && comment.content) {
+					if (comment.author.id === user.id) commentIcons2Ex += `<div class="comment-icon ph-bold ph-pencil" id="comment-edit"  title="Edit"></div><div class="comment-icon ph-bold ph-trash" id="comment-delete" title="Delete"></div>`;
+					else if (user.staff) commentIcons2Ex += `<div class="comment-icon ph-bold ph-trash" id="comment-delete" title="Delete"></div>`;
+					else commentIcons2Ex += `<div class="comment-icon ph-bold ph-flag" id="comment-report" title="Report"></div>`;
+				};
 			};
 			commentIcons2.className = "comment-icons";
 			commentIcons2.innerHTML = `<div class="comment-icon ph-bold ph-link" id="comment-link" title="Permalink"></div>${commentIcons2Ex}`;
