@@ -729,7 +729,7 @@ if (commentSection) {
 			const commentTime = Functions.convertHumanFromStamp((Date.now() / 1000) - comment.time);
 			let badges = "";
 			if (comment.author.staff) badges += `<div class="badges"><i class="ph-bold ph-gavel" style="color: var(--profile-accent);"></i></div>`;
-			commentDetailsHeader.innerHTML = `<p id="username">${comment.author.name}</p>${badges}<p id="data">${Functions.convertTimestamp(comment.time * 1000, "mm dd, YYYY")} - ${commentTime == "just now" ? commentTime : (commentTime + " ago")}${comment.edited ? ' <span id="edited">(edited)</span>' : ""}</p>`;
+			commentDetailsHeader.innerHTML = `<p id="username">${comment.author.nick || comment.author.name}</p>${badges}<p id="data">${Functions.convertTimestamp(comment.time * 1000, "mm dd, YYYY")} - ${commentTime == "just now" ? commentTime : (commentTime + " ago")}${comment.edited ? ' <span id="edited">(edited)</span>' : ""}</p>`;
 			commentHolder.appendChild(commentDetailsHeader);
 
 			const commentDetailsContent = document.createElement("div");
