@@ -661,9 +661,9 @@ if (commentSection) {
 
 		} else if (commentIcon == "comment-upvote" || commentIcon == "comment-downvote") {
 			if (!dh || !user) return;
-			const voteType = (commentIcon == "comment-upvote" ? 1 : -1);
-
-			const data = await Functions.sendAPIRequest(`comments/${commentID}/vote`, { Authorization: dh }, "POST", voteType);
+			const commentIconContainer = event.target;
+			const voteType = commentIconContainer.style.color == "var(--colorPrimary)" ? 0 : (commentIcon == "comment-upvote" ? 1 : -1);
+			const data = await Functions.sendAPIRequest(`comments/${commentID}/vote`, { Authorization: dh }, "POST", voteType.toString());
 			if (data.error) return await Functions.sendToast({ title: `Comment ${(voteType ? "Up" : "Down")}Vote Failed!`, content: "Something went wrong while voting.\nPlease try again?", style: "error" });
 
 			Functions.fetchComments();
