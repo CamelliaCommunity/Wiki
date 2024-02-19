@@ -12,8 +12,7 @@
 /* Import files */
 @import "./variables", "./highlights", "./author", "./modals", "./mediaQueries";
 
-@import "./header/shared", "./titleContainer/shared", "./comments/shared",
-  "./profile/shared", "./toast/shared";
+@import "./header/shared", "./titleContainer/shared", "./comments/shared", "./profile/shared", "./toast/shared";
 
 /* Global elements, such as headers, footers, and body. */
 /* very dark theme, tried to keep this simple */
@@ -70,12 +69,7 @@ html {
 body {
   font-family: var(--font-default);
   font-size: 16px;
-  background: linear-gradient(
-      180deg,
-      rgba(240, 108, 155, 0.2) 0%,
-      rgba(48, 37, 41, 0.2) 100%
-    ),
-    #111;
+  background: linear-gradient(180deg, rgba(240, 108, 155, 0.2) 0%, rgba(48, 37, 41, 0.2) 100%), #111;
   color: var(--colorWhite);
   min-height: 100vh;
 
@@ -177,12 +171,7 @@ p {
 /* footer */
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  background: linear-gradient(
-    180deg,
-    #2a2228 0%,
-    rgba(42, 34, 40, 0.52) 48.96%,
-    rgba(42, 34, 40, 0) 100%
-  );
+  background: linear-gradient(180deg, #2a2228 0%, rgba(42, 34, 40, 0.52) 48.96%, rgba(42, 34, 40, 0) 100%);
   margin-top: auto;
   height: 64px;
   display: flex;
@@ -225,8 +214,11 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: none;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box; // attempt some fix
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-top: 1px solid var(--colorLight); // we need to not shift button with borders
 
   .author {
     color: var(--colorGray);
@@ -278,8 +270,14 @@ a:hover {
   }
 
   .buttonDefault a {
-    font-style: italic;
     width: 100%;
+    position: relative;
+  }
+
+  .buttonDefault a i {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
   }
 
   .buttonDefault {
@@ -370,17 +368,12 @@ blockquote.tip {
 }
 
 .cardHeader {
-  background: linear-gradient(
-      180deg,
-      rgba(102, 31, 87, 0.3) 0%,
-      rgba(187, 58, 159, 0.12) 50.52%,
-      rgba(217, 130, 198, 0) 100%
-    ),
+  background: linear-gradient(180deg, rgba(102, 31, 87, 0.3) 0%, rgba(187, 58, 159, 0.12) 50.52%, rgba(217, 130, 198, 0) 100%),
     var(--colorTriary);
   display: flex;
   justify-content: space-between;
-  border-top: 3px solid var(--colorBorderTertiary);
-  border-bottom: 3px solid var(--colorBorderTertiary);
+  border-top: 2px solid var(--colorBorderTertiary);
+  border-bottom: 2px solid var(--colorBorderTertiary);
   height: 84px;
   width: 100%;
 
@@ -690,10 +683,7 @@ hr {
     display: grid;
     gap: var(--masonry-gap);
     grid-template-rows: masonry;
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(var(--masonry-brick-width), 1fr)
-    );
+    grid-template-columns: repeat(auto-fill, minmax(var(--masonry-brick-width), 1fr));
     align-tracks: stretch;
 
     > *:not(.card) {
@@ -790,12 +780,7 @@ hr {
 #navWedge {
   flex-shrink: 0;
   flex-direction: column;
-  background: linear-gradient(
-      180deg,
-      rgba(246, 65, 141, 0) 0%,
-      rgba(246, 65, 141, 0.08) 51.04%,
-      rgba(91, 63, 75, 0.2) 100%
-    ),
+  background: linear-gradient(180deg, rgba(246, 65, 141, 0) 0%, rgba(246, 65, 141, 0.08) 51.04%, rgba(91, 63, 75, 0.2) 100%),
     var(--colorCards);
   border-radius: 35px;
   width: 283px;
