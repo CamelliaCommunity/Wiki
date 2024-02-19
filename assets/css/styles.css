@@ -2023,8 +2023,13 @@ a:hover {
   padding-bottom: 16px;
 }
 .miniCard .buttonDefault a {
-  font-style: italic;
   width: 100%;
+  position: relative;
+}
+.miniCard .buttonDefault a i {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
 }
 .miniCard .buttonDefault {
   margin-left: 32px;

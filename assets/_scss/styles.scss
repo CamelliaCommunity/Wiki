@@ -278,8 +278,14 @@ a:hover {
   }
 
   .buttonDefault a {
-    font-style: italic;
     width: 100%;
+    position: relative;
+  }
+
+  .buttonDefault a i {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
   }
 
   .buttonDefault {
