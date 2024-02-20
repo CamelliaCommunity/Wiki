@@ -13,7 +13,7 @@ permalink: camellia/discography/:title
 
 *恋感♥キミイロDelight!* is a song by [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) feat. [ななひら](#) first released on 2015-08-16.
 
-* Composition: かめりあ
+* Composition: DJ Genki & かめりあ
 * Lyrics: かめりあ
 * Vocals: ななひら
 * Length: 04:34
