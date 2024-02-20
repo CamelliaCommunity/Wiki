@@ -11,10 +11,10 @@ permalink: camellia/:title
 
 ## Welcome to Camellia's Discography
 
-> This page has not been updated in a while. If you’re a contributor, please update this page to recent standards!
-{: .caution }
+> This page is constantly being updated. If you see anything missing, help us out by adding more links and pages!
+{: .disclaimer}
 
-Here, you will find various songs Camellia has composed or contributed to. If you see anything missing, help us out by adding more pages!
+Here, you will find various songs Camellia has composed or contributed to. If you see anything missing, help us out by adding more links and pages!
 
 ## 2024
 

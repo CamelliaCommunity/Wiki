@@ -24,6 +24,8 @@ description: The Camellia Wiki includes the focus on Camellia, his works, and rh
   }
 </style>
 
+<!-- For some odd shit reason, the cardHeader class is being applied to h2 by default -->
+<!-- Let's not add the cardHeader class to h2s in this home page -john -->
 <main>
   <div id="titleContainer">
     <h1>Welcome to the Camellia Wiki</h1>
@@ -34,18 +36,17 @@ description: The Camellia Wiki includes the focus on Camellia, his works, and rh
       <div class="alignmentContainer">
         <div class="card">
           <div class="cardContents">
-            <div class="cardHeader">
-              <h2>Let's Get Started!</h2>
-            </div>
+            <h2>Let's Get Started!</h2>
+
             <p>
-              The Header has important buttons to keep in mind. The navigation bar, the search bar, the GitHub button,
-              and the Discord button.
+              The Header has important buttons to keep in mind. The navigation bar, the search bar, the GitHub button, and the Discord
+              button.
             </p>
             <p>
-              Each of these buttons serves a purpose with navigation, including navigating you out of the site! It is
-              recommended to use this homepage or the sidebar when exploring the site (to access the sidebar, click the
-              hamburger icon on the top far left). If you don't know what you're looking for, use the search bar in the
-              header to search for an article. You can search for author names, too!
+              Each of these buttons serves a purpose with navigation, including navigating you out of the site! It is recommended to use
+              this homepage or the sidebar when exploring the site (to access the sidebar, click the hamburger icon on the top far left). If
+              you don't know what you're looking for, use the search bar in the header to search for an article. You can search for author
+              names, too!
             </p>
           </div>
         </div>
@@ -53,21 +54,20 @@ description: The Camellia Wiki includes the focus on Camellia, his works, and rh
           {% for post in site.categories.postsWiki %}
           <div class="miniCard">
             <div class="cardContents">
-              <div class="cardHeader">
-                <h2>{{ post.title }}</h2>
-              </div>
+              <h2>{{ post.title }}</h2>
               <p>{{ post.description }}</p>
               <div class="buttonDefault">
-                <a href="{{ post.url }}">Click Here to View </a>
+                <a href="{{ post.url }}">Read this Article <i class="ph-bold ph-caret-right"></i></a>
               </div>
-              {% assign includedCategories = post.include | split: ', ' %} {% assign includedPosts =
-              site.categories.postsInclude | where_exp: "incPost", "includedCategories contains incPost.title" %} {% if
-              includedPosts.size > 0 %}
+              {% assign includedCategories = post.include | split: ', ' %} {% assign includedPosts = site.categories.postsInclude |
+              where_exp: "incPost", "includedCategories contains incPost.title" %} {% if includedPosts.size > 0 %}
               <h3>What's also Included</h3>
               <hr />
               <ul>
                 {% for includedPost in includedPosts %}
-                <li><a href="{{ includedPost.url }}">{{ includedPost.title }}</a></li>
+                <li>
+                  <a href="{{ includedPost.url }}">{{ includedPost.title }}</a>
+                </li>
                 {% endfor %} {% endif %}
               </ul>
             </div>
