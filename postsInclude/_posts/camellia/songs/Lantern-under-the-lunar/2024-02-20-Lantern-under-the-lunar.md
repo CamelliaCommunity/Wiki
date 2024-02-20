@@ -21,7 +21,7 @@ permalink: camellia/discography/:title
 
 ### 月燈籠 (Lite Show Magic Remix)
 
-*月燈籠 (Lite Show Magic Remix)* is a song by [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) feat. [ななひら](#) first released on 2017-12-29.
+*月燈籠 (Lite Show Magic Remix)* is a song by [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) feat. [ななひら](#) remixed by [Lite Show Magic](#) first released on 2017-12-29.
 
 * Composition: かめりあ
 * Lyrics: かめりあ
