@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "コンベア速度 Max!? しゃいにん☆廻転ズシ"Sushi & Peace""
+title: "コンベア速度 Max!? しゃいにん☆廻転ズシ\"Sushi & Peace\""
 categories: posts
 author: KatGrrrl
 description: コンベア速度 Max!? しゃいにん☆廻転ズシ"Sushi & Peace" song page
