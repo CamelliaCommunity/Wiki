@@ -17,6 +17,7 @@ permalink: camellia/discography/:title
 * Lyrics: かめりあ
 * Vocals: ななひら
 * Length: 01:54
+* BPM: 210
 * Album Appearances: [りぷれい！](<{% link postsInclude/_posts/camellia/albums/Replay/2023-12-12-Replay.md %}>)
 * Game Appearances: [SOUND VOLTEX II -infinite infection-](https://remywiki.com/AC_SDVX_II)
 
