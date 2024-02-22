@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MEGANTO METEOR"
+title: "MEGANTO METEOR (Song)"
 categories: posts
 author: KatGrrrl
 description: MEGANTO METEOR song page
