@@ -3,7 +3,7 @@ layout: post
 title: "Bass Weapon LAZERFLAME"
 categories: posts
 author: KatGrrrl
-description: Bass Weapon: LAZERFLAME song page
+description: Bass Weapon LAZERFLAME song page
 permalink: camellia/discography/:title
 ---
 
