@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bass Weapon\: LAZERFLAME"
+title: "Bass Weapon LAZERFLAME"
 categories: posts
 author: KatGrrrl
 description: Bass Weapon: LAZERFLAME song page
