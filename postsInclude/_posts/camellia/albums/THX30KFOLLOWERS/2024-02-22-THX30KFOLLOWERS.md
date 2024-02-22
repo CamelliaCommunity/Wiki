@@ -14,8 +14,8 @@ permalink: camellia/discography/:title
 
 ## Tracklist
 
-1. [Bloody Kiss](#) (03:38)
-2. [Bass In Da House](#) (04:29)
+1. [Bloody Kiss](<{% link postsInclude/_posts/camellia/songs/Bloody-Kiss/2024-02-22-Bloody-Kiss.md %}>) (03:38)
+2. [Bass In Da House](<{% link postsInclude/_posts/camellia/songs/Bass-In-Da-House/2024-02-22-Bass-In-Da-House.md %}>) (04:29)
 
 Total Length: 08:07
 
