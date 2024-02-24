@@ -36,10 +36,10 @@ Total Length: 01:05:28
 
 ## Credits
 
-* かめりあ – Produce, Lyrics (Tr.12)
-* やんわり – Lyrics (Tr.09)
+* かめりあ – Produce, Lyrics (Tr.02-09,11,13-14)
+* れいたん – Lyrics (Tr.09)
 * さつき が てんこもり – Lyrics (Tr.10)
-* れいたん – Lyrics (Tr.12)
+* やんわり – Lyrics (Tr.12)
 * 芋井もい – Illustrations
 * WHY# – Design Support
 
