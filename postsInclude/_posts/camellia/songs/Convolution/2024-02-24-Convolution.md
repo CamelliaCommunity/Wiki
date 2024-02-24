@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "\* (Convolution)"
+title: "(Convolution)"
 categories: posts
 author: KatGrrrl
 description: \* (Convolution) song page
