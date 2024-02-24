@@ -19,7 +19,7 @@ permalink: camellia/discography/:title
 * Length: 05:38
 * Album Appearances: [flow arrow](<{% link postsInclude/_posts/camellia/albums/flow-arrow/2024-02-24-flow-arrow.md %}>) and [Stance on Wave](<{% link postsInclude/_posts/camellia/albums/Stance-on-Wave/2023-12-06-Stance-on-Wave.md %}>)
 
-* ### flow arrow(inst.)
+### flow arrow(inst.)
 
 *flow arrow(inst.)* is a instrumental by [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) (Camellia) first released on 2013-04-29.
 
