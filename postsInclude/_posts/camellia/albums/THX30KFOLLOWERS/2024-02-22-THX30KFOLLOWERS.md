@@ -10,7 +10,7 @@ permalink: camellia/discography/:title
 ## Overview
 
 ![No catalog number](/assets/images/camellia/albums/THX30KFOLLOWERS.jpg)
-*THX30KFOLLOWERS* is an EP by [かめりあ](/postsWiki/_posts/camellia/2023-12-10-camellia.md) (Camellia) released on 2016-01-06.
+*THX30KFOLLOWERS* is an EP by [かめりあ](<{% link postsWiki/_posts/2023-12-10-camellia.md %}>) (Camellia) released on 2016-01-06.
 
 ## Tracklist
 
