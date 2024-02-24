@@ -35,10 +35,10 @@ Total Length: 01:07:25
 
 * かめりあ – Music
 * DJ megsis – Title (Tr.04)
-* れいたん – Lyrics
+* れいたん – Lyrics (Tr.04)
 * タカナシトリコ – Lyrics (Tr.08)
 * 佐藤 – Lyrics (Tr.07)
-* ELC – Guitar
+* ELC – Guitar (Tr.07)
 
 ## External Links
 
