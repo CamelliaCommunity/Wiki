@@ -1,7 +1,7 @@
 ---
 layout: article
-title:  "Staff Guidelines"
-author: Camellia Server Staff. These guidelines were last updated on 1/1/24
+title: Staff Guidelines
+author: Camellia Server Staff. These guidelines were last updated on 2/24/24
 ---
 
 ## A Brief History
@@ -141,7 +141,7 @@ I have noticed staff members complain and some people being afraid of becoming s
 
 ### Event Posts
 
-If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, the general idea of event hosting should be as follows. Please keep a mental note of each contribution you've made (or fill out a contribution form!). These contributions will be asked for when necessary and are usually asked for every 4 months.
+If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, the general idea of event hosting should be as follows. Please note each contribution you've made (or fill out a contribution form!). These contributions will be asked for when necessary and are usually asked for every three months (Q1, Q2, Q3, Q4).
 
 > To submit a contribution form, please refer to [this link](https://forms.gle/EdpTu9BF3BtdYgm5A).
 {: .tip }
@@ -163,7 +163,7 @@ When making events about Camellia, you should keep an eye out for these.
 - Music fests featuring Camellia (VRChat, Comiket, etc.)
 - Anything involving Camellia!
 
-> Staff members are expected to contribute to events at least once every 4 months. This is to ensure that consistent contribution requirements are met.
+> Staff members are expected to contribute to events at least once every three months. This is to ensure that consistent contribution requirements are met.
 {: .disclaimer }
 
 ### Announcement posts
