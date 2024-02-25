@@ -19,7 +19,7 @@ permalink: camellia/discography/:title
 * Guitar: つこ
 * Bass: つこ
 * Length: 04:38
-* Album Appearances: [LOP STEP RABBITS!](<{% link postsInclude/_posts/camellia/albums/LOP-STEP-RABBITS!/2023-12-06-LOP-STEP-RABBITS!.md %}>) and [すりーぷ！](<{% link postsInclude/_posts/camellia/albums/LOP-STEP-RABBITS!/Sleep/2023-12-18-Sleep.md %}>)
+* Album Appearances: [LOP STEP RABBITS!](<{% link postsInclude/_posts/camellia/albums/LOP-STEP-RABBITS!/2023-12-06-LOP-STEP-RABBITS!.md %}>) and [すりーぷ！](<{% link postsInclude/_posts/camellia/albums/Sleep/2023-12-18-Sleep.md %}>)
 
 ## External Links
 

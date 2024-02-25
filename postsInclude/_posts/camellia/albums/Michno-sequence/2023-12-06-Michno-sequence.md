@@ -25,8 +25,8 @@ It is the fourth [Vocaloid](https://en.wikipedia.org/wiki/Vocaloid) album by *Ca
 7. [歯車フィロソフィー](<{% link postsInclude/_posts/camellia/songs/Haguruma-Philosophy/2024-02-24-Haguruma-Philosophy.md %}>) (04:35)
 8. [String of the moon](<{% link postsInclude/_posts/camellia/songs/String-of-the-moon/2024-02-24-String-of-the-moon.md %}>) (05:57)
 9. [Backslash](<{% link postsInclude/_posts/camellia/songs/Backslash/2024-02-24-Backslash.md %}>) (06:35)
-10. [サヨナラスイングバイ(electrical flowlight remix)](<{% link postsInclude/_posts/camellia/songs/ %}>) (6:18)
-11. [axisymmetricness world](<{% link postsInclude/_posts/camellia/songs/Sayonara-Swing-by/2024-02-24-Sayonara-Swing-by.md %}>) (05:35)
+10. [サヨナラスイングバイ(electrical flowlight remix)](<{% link postsInclude/_posts/camellia/songs/Sayonara-Swing-by/2024-02-24-Sayonara-Swing-by.md %}>) (6:18)
+11. [axisymmetricness world](<{% link postsInclude/_posts/camellia/songs/axisymmetricness-world/2024-02-24-axisymmetricness-world.md %}>) (05:35)
 12. [\* exporting \*](<{% link postsInclude/_posts/camellia/songs/exporting/2024-02-24-exporting.md %}>) (05:36)
 
 Total Length: 01:07:25
