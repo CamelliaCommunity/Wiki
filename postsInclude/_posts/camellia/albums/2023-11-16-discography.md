@@ -227,7 +227,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 ### January
 
-- [THX30KFOLLOWERS](#)
+- [THX30KFOLLOWERS](<{% link postsInclude/_posts/camellia/albums/THX30KFOLLOWERS/2024-02-22-THX30KFOLLOWERS.md %}>)
 
 ## 2015
 
@@ -272,7 +272,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 ### April
 
-- [flow arrow](#)
+- [flow arrow](<{% link postsInclude/_posts/camellia/albums/flow-arrow/2024-02-24-flow-arrow.md %}>)
 
 ## 2012
 

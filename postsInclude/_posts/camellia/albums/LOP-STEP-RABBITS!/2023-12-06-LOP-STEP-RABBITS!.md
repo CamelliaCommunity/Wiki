@@ -14,11 +14,11 @@ permalink: camellia/discography/:title
 
 ## Tracklist
 
-1. [ウサキック！](#) (04:10)
-2. [カフェモカしゅがー](#) (04:11)
-3. [君の声は](#) (04:38)
-4. [うにゃうにゃ＊ぱっぱ](#) (04:44)
-5. [そろばん♡De♥ビッグバン](#) (04:06)
+1. [ウサキック！](<{% link postsInclude/_posts/camellia/songs/Usakick/2024-02-20-Usakick.md %}>) (04:10)
+2. [カフェモカしゅがー](<{% link postsInclude/_posts/camellia/songs/Cafe-Mocha-Sugar/2024-02-20-Cafe-Mocha-Sugar.md %}>) (04:11)
+3. [君の声は](<{% link postsInclude/_posts/camellia/songs/Kimi-no-Koe-wa/2024-02-20-Kimi-no-Koe-wa.md %}>) (04:38)
+4. [うにゃうにゃ＊ぱっぱ](<{% link postsInclude/_posts/camellia/songs/Unya-Unya-Pappa/2024-02-20-Unya-Unya-Pappa.md %}>) (04:44)
+5. [そろばん♡De♥ビッグバン](<{% link postsInclude/_posts/camellia/songs/Soroban-De-Big-Bang/2024-02-24-Soroban-De-Big-Bang.md %}>) (04:06)
 
 Total Length: 21:49
 

@@ -17,15 +17,15 @@ It is the sixth intrumental album by *Camellia*.
 
 ## Tracklist
 
-1. [Rain of Amethyst](<https://open.spotify.com/track/15ktwi9QE0nz7r1yuWfbzO?si=670e0fbfa9014056>) (07:21)
-2. [Artificial Snow](<https://open.spotify.com/track/3Dh4y8wlUy2g58KkcOe19A?si=b55ac73c395e4bf0>) (04:26)
-3. [amorphous](<https://open.spotify.com/track/2M3lIJmuHqwq4ePm3G9mo1?si=6c274cd916a34423>) (06:46)
-4. [First Town Of This Journey](<https://open.spotify.com/track/10B0XidWqJbw3JaYtgGyTH?si=b98621ec1c384eca>) (03:43)
-5. [yesterday](<https://open.spotify.com/track/2MuVmb0UZSGUGk6YYBC7j9?si=8251818c92bd4250>) (05:04)
-6. [Light It Up](<https://open.spotify.com/track/3MA7N8ALJzg4I696jxdk8d?si=f886af8efab44acb>) (06:14)
-7. [NUCLEAR-STAR](<https://open.spotify.com/track/3lQlRUeljgJac0Isebb5Ug?si=2bc77e7bb21c4d0a>) (04:54)
-8. [crystallized](<https://open.spotify.com/track/6HBznW6Doe0w8WBazMavO5?si=d0eb1b6ad30c40c5>) (04:37)
-9. [liquated](<https://open.spotify.com/track/5otx5srMTfHzpUJ7lv5WWo?si=22cf7fda2b944407>) (05:06)
+1. [Rain of Amethyst](<{% link postsInclude/_posts/camellia/songs/Rain-of-Amethyst/2024-02-20-Rain-of-Amethyst.md %}>) (07:21)
+2. [Artificial Snow](<{% link postsInclude/_posts/camellia/songs/Artificial-Snow/2024-02-20-Artificial-Snow.md %}>) (04:26)
+3. [amorphous](<{% link postsInclude/_posts/camellia/songs/amorphous/2024-02-20-amorphous.md %}>) (06:46)
+4. [First Town Of This Journey](<{% link postsInclude/_posts/camellia/songs/First-Town-Of-This-Journey/2024-02-20-First-Town-Of-This-Journey.md %}>) (03:43)
+5. [yesterday](<{% link postsInclude/_posts/camellia/songs/yesterday/2024-02-20-yesterday.md %}>) (05:04)
+6. [Light It Up](<{% link postsInclude/_posts/camellia/songs/Light-It-Up/2024-02-20-Light-It-Up.md %}>) (06:14)
+7. [NUCLEAR-STAR](<{% link postsInclude/_posts/camellia/songs/NUCLEAR-STAR/2024-02-20-NUCLEAR-STAR.md %}>) (04:54)
+8. [crystallized](<{% link postsInclude/_posts/camellia/songs/crystallized-song/2024-02-20-crystallized-song.md %}>) (04:37)
+9. [liquated](<{% link postsInclude/_posts/camellia/songs/liquated/2024-02-20-liquated.md %}>) (05:06)
 
 Total Length: 48:11
 
