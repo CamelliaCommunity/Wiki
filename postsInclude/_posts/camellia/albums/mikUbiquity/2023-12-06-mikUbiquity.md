@@ -16,16 +16,16 @@ It is the third [Vocaloid](https://en.wikipedia.org/wiki/Vocaloid) album by *Cam
 
 ## Tracklist
 
-1. [mikUbiquity - prelude](#) (01:44)
-2. [新月が白く丸く輝いている夜に。](#) (05:01)
-3. [sinlover (ver. 2.0.0)](#) (04:45)
-4. [てんとう虫の見た夢](#) (05:03)
-5. [魔法使いの絵の具](#) (04:54)
-6. [\* (Convolution)](#) (04:36)
-7. [グレイロ](#) (04:38)
-8. [君に恋したCPU](#) (05:50)
-9. [Transitionless world](#) (05:34)
-10. [mikUbiquity - postlude](#) (01:48)
+1. [mikUbiquity - prelude](<{% link postsInclude/_posts/camellia/songs/mikUbiquity-prelude/2024-02-24-mikUbiquity-prelude.md %}>) (01:44)
+2. [新月が白く丸く輝いている夜に。](<{% link postsInclude/_posts/camellia/songs/Shingetsu-ga-Shiroku-Maruku-Kagayaiteiru-Yoru-ni/2024-02-24-Shingetsu-ga-Shiroku-Maruku-Kagayaiteiru-Yoru-ni.md %}>) (05:01)
+3. [sinlover (ver. 2.0.0)](<{% link postsInclude/_posts/camellia/songs/sinlover/2024-02-24-sinlover.md %}>) (04:45)
+4. [てんとう虫の見た夢](<{% link postsInclude/_posts/camellia/songs/Tentoumushi-no-Mita-Yume/2024-02-24-Tentoumushi-no-Mita-Yume.md %}>) (05:03)
+5. [魔法使いの絵の具](<{% link postsInclude/_posts/camellia/songs/Mahoutsukai-no-Enogu/2024-02-24-Mahoutsukai-no-Enogu.md %}>) (04:54)
+6. [\* (Convolution)](<{% link postsInclude/_posts/camellia/songs/Convolution/2024-02-24-Convolution.md %}>) (04:36)
+7. [グレイロ](<{% link postsInclude/_posts/camellia/songs/Gureiro/2024-02-24-Gureiro.md %}>) (04:38)
+8. [君に恋したCPU](<{% link postsInclude/_posts/camellia/songs/Kimi-ni-Koishita-CPU/2024-02-24-Kimi-ni-Koishita-CPU.md %}>) (05:50)
+9. [Transitionless world](<{% link postsInclude/_posts/camellia/songs/Transitionless-world/2024-02-24-Transitionless-world.md %}>) (05:34)
+10. [mikUbiquity - postlude](<{% link postsInclude/_posts/camellia/songs/mikUbiquity-postlude/2024-02-24-mikUbiquity-postlude.md %}>) (01:48)
 
 Total Length: 43:53
 
