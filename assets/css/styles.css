@@ -1226,7 +1226,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   text-align: right;
   font-weight: 600;
   margin-left: 14px;
-  margin-right: 40px;
+  margin-right: 48px;
 }
 #titleContainer #notesContainer #footNoteLeft {
   align-self: flex-end;
@@ -1238,7 +1238,7 @@ header .header-shared .sidebar-wrapper #navSidebar .btn-container a.kofi-button 
   align-self: flex-end;
   text-align: left;
   font-weight: 600;
-  margin-left: 40px;
+  margin-left: 48px;
 }
 
 #notAFullTitleContainer h1 {
