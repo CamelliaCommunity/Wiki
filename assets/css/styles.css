@@ -1992,7 +1992,6 @@ a:hover {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border-top: 1px solid var(--colorLight);
 }
 .buttonDefault a .author {
   color: var(--colorGray);
@@ -2648,7 +2647,7 @@ em {
   box-sizing: border-box;
   border: 2px solid var(--colorCardDivisor);
   border-radius: 40px;
-  padding: 48px;
+  padding: 32px;
   margin-bottom: 72px;
   min-height: 727px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
