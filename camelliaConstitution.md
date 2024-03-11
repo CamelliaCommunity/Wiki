@@ -60,36 +60,36 @@ The server's hierarchy is broken into six major roles;
 
 ## Part 2: Rules for the Server
 
-### The Seven Rules
+### The Eight Rules
 
 #### **1.** Elitism/toxicity is not allowed (don't be a dick)
 
 - This server is going to have a mixture of communities from all over the place (SDVX, IIDX, osu!, GD, etc.). Saying stuff like "osu! is a garbage game IIDX is better" will get you warned. We do not need this kind of elitism on this server. Everyone is equal. Harassment with malicious intent will not be tolerated.
 - We don't allow mini-modding. A helpful hand is always okay but do not try to handle staff-related situations yourself!
 
-#### **2.** Hate speech, hateful acts, excessive harassment, is not welcomed
+#### **2.** Hate speech, hateful acts, and excessive harassment, are not welcomed
 
 - Racism, homophobia, and bigotry fall within discrimination/harassment and are not allowed in any content posted.
 - Loopholes around slur usage, such as nibba, etc.; is not welcomed. Other terms/memes to attack groups are not permitted as well.
-- For raids, we will report any accounts involved directly to Discord. For witch hunting, all associated members involved will be banned from this server with the possibility of being banned from neighboring servers.
+- For raids, we will report any accounts involved directly to Discord. For witch hunting, all associated members involved will be banned from this server and possibly banned from neighboring servers.
 
 #### **3.** NSFW/NSFL content is not allowed (porn, gore, etc.)
 
 - This server does not need an 18+ channel for the sake of having one.
-- Please consult a staff member if you have any questions regarding whether something is allowed or not.
+- Please consult a staff member if you have questions about whether something is allowed.
 
 #### **4.** Use channels correctly and keep discussion in English
 
-- Sensitive or controversial topics such as religion, politics and mental triggers belong in [#serious-discussion](https://discord.com/channels/435720333786480641/1080971258272948265) (accessible to level 10 users and up).
+- Sensitive or controversial topics such as religion, politics, and mental triggers belong in [#serious-discussion](https://discord.com/channels/435720333786480641/1080971258272948265) (accessible to level 10 users and up).
 - The majority of the people here speak English. If you want to speak another language, locate the correct language channels.
 
 #### **5.** No spamming or advertising
 
 - For spam, this includes ALL spam. (Text spam, Soundboard spam, Mic spam, etc.)
-- For advertising, this includes DMs and other Discords. If you would like to advertise your original work, please locate the correct channels. For music, read [#production-rules](https://discord.com/channels/435720333786480641/1038693772260802612).
+- Advertising includes DMs and other Discords. If you would like to advertise your original work, please locate the correct channels. For music, read [#production-rules](https://discord.com/channels/435720333786480641/1038693772260802612).
 - Posting your AutoMod punishments is also not allowed.
 
-#### **6.** Avoid unhinged/obsessive discussion about artists or celebrities
+#### **6.** Avoid unhinged/obsessive discussions about artists or celebrities
 
 - Please be respectful when talking about artists and celebrities. They're humans, too! Impersonation is also not allowed. Doing this will result in a ban.
 - This includes pinging Camellia or any verified members without reason. Pinging them excessively/obnoxiously in an attempt to get their attention will result in punishment.
@@ -99,6 +99,11 @@ The server's hierarchy is broken into six major roles;
 
 - Posting AI "art" will result in deletion. Continuous infractions will result in warnings!
 - It is also discouraged to post any AI content in general unless you're really clever with humor.
+
+#### **8.** No discussion of KONAMI warez/piracy
+
+- This includes Bemani games, albums and soforth.
+- Distribution of pirated content is also not allowed.*
 
 > These rules are subject to change but not up for public discussion, unless brought up solely in the server direction channel.
 {: .disclaimer }
