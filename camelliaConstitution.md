@@ -20,11 +20,11 @@ The server's hierarchy is broken into six major roles;
 
 **Admins** - J6papertek, dwqt (David), Nicocchi, thecodingguy (Matt)
 
-**Elder Mods** - seddywolf, flustix
+**Elder Mods** - seddywolf (cedric), flustix (scissortek)
 
-**Moderators** - avidmusicenjoyer, gridgalaxy (Casey), manutoad (shar), piavamusic, exalvus
+**Moderators** - avidmusicenjoyer, gridgalaxy (Casey), manutoad (shar), piavamusic (piquatek), exalvus (rocktek)
 
-**Helpers** - burst06, foundbread, h.i.p.e, jiminp, moonthedarkwolf, optelate, naska_link, hypertone, toxism
+**Helpers** - burst06, foundbread, h.i.p.e, jiminp, moonthedarkwolf (lunartek), optelate, naska_link, hypertone, toxism
 
 **People's Roles** - (Member, Verified, Waffle/Pancake Leader, Level Roles, Nitro Boosters, Ko-Fi Donator)
 
