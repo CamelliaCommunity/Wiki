@@ -7,7 +7,7 @@ author: Camellia Server Staff. These guidelines were last updated on 2/24/24
 ## A Brief History
 
 *The Staff Guidelines were implemented for a general view of
-guidance, advice, and staff quality. Parts One and Two of these
+guidance, advice, and quality assurance. Parts One and Two of these
 guidelines were written and established on October 24, 2022. Since
 then, users have had concerns regarding our decisions and stances
 in particular situations. As a result, the Staff Guidelines were
@@ -38,10 +38,8 @@ in the past.*
 1. Punish people accordingly if they break the rules. The template
 for punishing someone is *VERBAL WARNING -> INFRACTION -> TEMPMUTE -> KICK -> 8-DAY BAN -> INDEF BAN.* The template may vary based on how severely someone is acting. Use good judgment when punishing someone. If staff members cannot decide on a consensus for a member, a verbal warning should be given by default.
 1. Try to be nice. This place is supposed to welcome everyone regardless of who they are.
-1. Try not to be an arbitrary person or make arbitrary decisions in
-a situation; doing this is not ideal.
-1. Try not to be arrogant and avoid brown-nosing. Doing this makes
-you look stupid and does not fall within the ideals of the staff team. Remind yourself that we are all one!
+1. Try not to be an arbitrary person or make arbitrary decisions in a situation; doing this is not ideal.
+1. Try not to be arrogant and avoid brown-nosing. Doing this makes you look stupid and does not fall within the ideals of the staff team. Remind yourself that we are all one!
 1. Treat others how you want to be treated, and try to be approachable to other members.
 1. Before making server changes or creating events, please mention it to other staff members so it can be noticed!
 1. Contact another staff member if you're feeling burnt out and/or
