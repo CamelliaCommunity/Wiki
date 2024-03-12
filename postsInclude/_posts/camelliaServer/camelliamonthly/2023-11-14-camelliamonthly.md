@@ -8,11 +8,50 @@ description: Camellia Monthly articles
 permalink: camellia-server/:title
 ---
 
+## February 2024
+
+Hey, we’re early this time. Looks like Camellia's been all over the place these past few weeks. Let's recap some new Camellia songs this February!
+
+![February 2024 Monthly Logo](/assets/images/camellia/server/monthly/2024-february.png)
+
+### 📰 Camellia News:
+**YouTube Channel Music Upgrade**: Camellia’s channel has received a musical note; prior soundtracks released under “Camellia - Topic” can now be found in select albums [underneath his channel’s “Releases” section](https://www.youtube.com/@Cametek.CamelliaOfficial/featured). All of your favorite songs, all in one place!
+
+**Camellia Joins Geometry Dash**: A total of 180+ songs by Camellia were added to Geometry Dash! Enjoy creating and playing through brand-new maps based on your favorite Camellia hits, now available in the music library.
+
+**Camellia at The Crowbar**: Camellia has joined Banzoin Hakka as the first guest in his new talk show, The Crowbar! Check out their stream [here](https://www.youtube.com/watch?v=U1uMyQzf6nY) and get up to date with all the fun chaos they’ve shared.
+
+**Azure Vixen now in Maimai International**: maimai International ver. picks up Camellia’s Azure Vixen from CHUNITHM. Now it's possible to play another Camellia banger on a washing machine!
+
+### 🎵 New Releases:
+
+**USHIEST RUSH**: Camellia’s made a brand new song for Dancerush Stardom. In the latest event, you can find Rushiest Rush as a ONE MORE EXTRA STAGE song. This will make you end up in a rush~
+
+**Rodent’s Kingdom**: Vtuber sensation Ironmouse held a concert this past month. With her stream comes the premiere of a [brand-new song](https://youtu.be/SMn5hivjw7k) from herself and Camellia!
+
+**GEKIRIN**: Camellia and Hakos Baelz have joined again for two collaborations on her new album ZODIAC! The first of these collabs, [GEKIRIN](https://youtu.be/O1BdX87wpes), is track 5 on the album.
+
+**Ohayo-EST Gozai-MASTER ♡**: Track 10 of ZODIAC, [Ohayo-EST Gozai-MASTER ♡](https://youtu.be/A7qfYF3wZH4), is the second collab song in the album by Camellia and Bae. We hope you’ll enjoy listening to ZODIAC and its amazing tracks.
+
+### ❤️ Server Events:
+
+**Second Music Production Event**: Toxism has hosted yet another music production event, this time with the criteria of incorporating BPM changes and chiptune sections; after a long and intense battle. <mark>@divemusic</mark> has come out on top with an incredibly well-produced song to boot! Honorable mentions to <mark>@yubutek</mark> and <mark>@verlexin</mark> for taking the runner-up positions in this contest.
+
+**Server Election Results**: The winners of the Camellia server’s 4th round of elections are none other than Team Pancakes! With the aid of their mascot, Cirno, they’ve defeated the opposing Team Waffles by a significant number of votes. Congratulations~
+
+**Camellia Jeopardy**: Sponsored by <mark>@burst06</mark>, we have pitted Team Final-Boss Clan against Team Ashed Chicken Wings in an exciting trivia game all about Camellia, with Final-Boss Clan barely managing to snag victory at the very end!
+
+### 🚀 Server News:
+
+**Staff Updates**: Our former admin, Ungrave, and elder mod, Peachy, have decided to step down from server management duties to focus on other priorities. We send them our best wishes. We also had the great pleasure of finding new and willing volunteers to help with our work; welcome in our new helper <mark>@moonthedarkwolf</mark> and our new moderators <mark>@avidmusicenjoyer.</mark>, <mark>@piavamusic</mark>, and <mark>@manutoad</mark>! Let's also congratulate <mark>@gridgalaxy</mark> for his promotion to moderator.
+
+Thank you for reading this edition of Camellia Monthly. We hope you enjoyed it. Remember to "keep on rockin'"!
+
 ## January 2024
 
 Happy New Year everyone! Camellia has managed to up the BPM once more and kick 2024 off with several bangers, and we'd love to see it! So how did he do it? Let's find out!
 
-![January 2024 Monthly Logo](https://media.discordapp.net/attachments/1033655103955144704/1202638208731582524/Untitled17_20240201202705.png)
+![January 2024 Monthly Logo](/assets/images/camellia/server/monthly/2024-january.png)
 
 ### Camellia News
 
@@ -52,7 +91,7 @@ Happy New Year everyone! Camellia has managed to up the BPM once more and kick 2
 
 With 2023 finally ending, let's take a moment to think about all that's gone on this year... For now, though, let's review what happened in the last month of the year: December!
 
-![December 2023 Monthly Logo](https://media.discordapp.net/attachments/483188272256778250/1192629591018307594/Untitled16_20240105074044.png)
+![December 2023 Monthly Logo](/assets/images/camellia/server/monthly/2023-december.png)
 
 ### We're back to the canvas again, with more Camellia to be drawn
 
@@ -115,7 +154,7 @@ Thank you all for a great 2023, let's work together to have even more fun in 202
 
 The spooky month is officially over, but what isn’t? Camellia Monthly!
 
-![October 2023 Monthly Logo](https://cdn.discordapp.com/attachments/483188272256778250/1171244862767640637/camelliaHeaderOctober2023.png?ex=655bf9c7&is=654984c7&hm=3e8853d9725f6b50c27babef2dc8bddbf2262003fc00644cf118f27c88e23392&)
+![October 2023 Monthly Logo](/assets/images/camellia/server/monthly/2023-october.png)
 
 ### We Drew Camellia Together, Again
 
@@ -155,7 +194,7 @@ It’s time to spice things up with new-level role names and colors! We hope thi
 
 It's time to get spooky, everyone, because Halloween is near, and your September monthly is here!
 
-![September 2023 Monthly Logo](https://cdn.discordapp.com/attachments/483188272256778250/1158307165078048808/camelliaHeaderSeptember2023.png?ex=651bc51c&is=651a739c&hm=1f7fd63de19b6af5e5f0f47c4e0661163e1ccb7a767895260efb99641f8bd354&)
+![September 2023 Monthly Logo](/assets/images/camellia/server/monthly/2023-september.png)
 
 ### Happy Birthday, Camellia
 
