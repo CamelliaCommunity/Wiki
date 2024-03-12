@@ -16,14 +16,14 @@ It is the seventh intrumental album by *Camellia*.
 
 ## Tracklist
 
-1. [introduction - INSANE INFLAME](#) (02:03)
-2. [NEURO-CLOUD-9](#) (04:56)
-3. [Darkness Overload](#) (04:26)
-4. [Break The Silence](#) (05:03)
-5. [INSANE INFLAME](#) (04:21)
-6. [Do The Big Kick](#) (04:49)
-7. [Blast your headz with the railgun (BassHouse VIP)](#) (03:13)
-8. [(The) Immortal Scream](#) (04:33)
+1. [introduction - INSANE INFLAME](<{% link postsInclude/_posts/camellia/songs/introduction-INSANE-INFLAME/2024-02-22-introduction-INSANE-INFLAME.md %}>) (02:03)
+2. [NEURO-CLOUD-9](<{% link postsInclude/_posts/camellia/songs/NEURO-CLOUD-9/2024-02-22-NEURO-CLOUD-9.md %}>) (04:56)
+3. [Darkness Overload](<{% link postsInclude/_posts/camellia/songs/Darkness-Overload/2024-02-22-Darkness-Overload.md %}>) (04:26)
+4. [Break The Silence](<{% link postsInclude/_posts/camellia/songs/Break-The-Silence/2024-02-22-Break-The-Silence.md %}>) (05:03)
+5. [INSANE INFLAME](<{% link postsInclude/_posts/camellia/songs/INSANE-INFLAME-song/2024-02-22-INSANE-INFLAME-song.md %}>) (04:21)
+6. [Do The Big Kick](<{% link postsInclude/_posts/camellia/songs/Do-The-Big-Kick/2024-02-22-Do-The-Big-Kick.md %}>) (04:49)
+7. [Blast your headz with the railgun (BassHouse VIP)](<{% link postsInclude/_posts/camellia/songs/Blast-your-headz-with-the-railgun/2024-02-19-Blast-your-headz-with-the-railgun.md %}>) (03:13)
+8. [(The) Immortal Scream](<{% link postsInclude/_posts/camellia/songs/The-Immortal-Scream/2024-02-22-The-Immortal-Scream.md %}>) (04:33)
 
 Total Length: 33:24
 

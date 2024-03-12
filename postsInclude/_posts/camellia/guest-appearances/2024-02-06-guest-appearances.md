@@ -294,7 +294,7 @@ Here, you will find various Camellia guest appearances. If you see anything miss
 - [Toho-Assisted-Speedrun!!!](#) (_from [イノセントキー VS 虎](https://web.archive.org/web/20150206131014/http://innocent-key.com/discog.php?page=27)_)
 - [CLOUDY WITH INTERMITTENT RAIN](#) (_from [DECADE OF EXPOSE](https://web.archive.org/web/20140104131256/http://alst.net/2013/12/25/arcd0042-decade-of-expose/)_)
 - [LAPSE](#) (_from [DECADE OF EXPOSE](https://web.archive.org/web/20140104131256/http://alst.net/2013/12/25/arcd0042-decade-of-expose/)_)
-- [鈍色トリガー](#) (_from [Circle Jerk Galactic](https://www.nicovideo.jp/watch/sm22516063)_)
+- [鈍色トリガー](<{% link postsInclude/_posts/camellia/songs/Nibiiro-Trigger/2024-02-24-Nibiiro-Trigger.md %}>) (_from [Circle Jerk Galactic](https://www.nicovideo.jp/watch/sm22516063)_)
 - [Fly to night, tonight](#) (_from [Circle Jerk Galactic](https://www.nicovideo.jp/watch/sm22516063)_)
 - [HINODE](#) (_from [ARATOSHI](https://web.archive.org/web/20131225225842/http://www.massivecirclez.com/aratoshi.php)_)
 - [Remember(Camellia's "reconstruction of recollection" Remix)](#) (_from [TANO\*C REMIXES 3](https://www.tano-c.net/release/tcplus-0012/)_)
@@ -311,7 +311,7 @@ Here, you will find various Camellia guest appearances. If you see anything miss
 
 ### August
 
-- [びっくりさせたらおこるよ！](#) (_from [Free Pl@ying](https://confetto.chu.jp/freeplaying/)_)
+- [びっくりさせたらおこるよ！](<{% link postsInclude/_posts/camellia/songs/Bikkuri-Sasetara-Okoruyo/2024-02-19-Bikkuri-Sasetara-Okoruyo.md %}>) (_from [Free Pl@ying](https://confetto.chu.jp/freeplaying/)_)
 - [とりぷる x3 ゴキゲン中飛車 ⇒OHTE & DASH!!!](#) (_from [ももいろ Holiday](https://web.archive.org/web/20221211042834/https://www.orc2000.com/spi/holiday/index.html)_)
 - [wanna go to a beach](#) (_from [SUPER SONIC!!](https://web.archive.org/web/20130914033750/http://www.massivecirclez.com/super-sonic.php)_)
 - [landgridding](#) (_from [Driven' De:st-ructure3](https://web.archive.org/web/20130808231842/http://soundave.net/sacd0020_dd3/)_)
@@ -341,12 +341,12 @@ Here, you will find various Camellia guest appearances. If you see anything miss
 
 ### December
 
-- [∞ 度寝](#) (_from [Party Junkie](https://www.nicovideo.jp/watch/sm19696423)_)
-- [＼ - Backslash](#) (_from [Party Junkie](https://www.nicovideo.jp/watch/sm19696423)_)
-- [システマティック・ラヴ](#) (_from [Party Junkie](https://www.nicovideo.jp/watch/sm19696423)_)
+- [∞ 度寝](<{% link postsInclude/_posts/camellia/songs/Infinite-Sleep/2024-02-24-Infinite-Sleep.md %}>) (_from [Party Junkie](https://www.nicovideo.jp/watch/sm19696423)_)
+- [＼ - Backslash](<{% link postsInclude/_posts/camellia/songs/Backslash/2024-02-24-Backslash.md %}>) (_from [Party Junkie](https://www.nicovideo.jp/watch/sm19696423)_)
+- [システマティック・ラヴ](<{% link postsInclude/_posts/camellia/songs/Systematic-Love/2024-02-24-Systematic-Love.md %}>) (_from [Party Junkie](https://www.nicovideo.jp/watch/sm19696423)_)
 - [早速ですが SHAKING PINK はインベーダーだったようです](#) (_from [しぇいきんぐ！](https://web.archive.org/web/20231202053100/https://www.orc2000.com/spi/shaking/index.html)_)
 - [ひとりぼっちで眠る LED](#) (_from [月の詩 II - ツキノウタ -](https://www.vocalomakets.com/yukari_CD/002/)_)
-- [Jump Over!生物種](#) (_from [KEMOLOVE♥](https://confetto.chu.jp/kemolove/)_)
+- [Jump Over!生物種](<{% link postsInclude/_posts/camellia/songs/Jump-Over-Seibutsushu/2024-02-19-Jump-Over-Seibutsushu.md %}>) (_from [KEMOLOVE♥](https://confetto.chu.jp/kemolove/)_)
 - [WI[RE/ED] PUZZLE](#) (_from [DOMINATED DANCEHALL](https://web.archive.org/web/20130101063941/http://alst.net/2012/12/22/arcd0039-dominated-dancehall/)_)
 - [See you(Camellia's Farewell Remix)](#) (_from [ShandyBass](https://web.archive.org/web/20160907004051/http://www.voiceblog.jp/kimu25/1849136.html)_)
 - [ふわり、ピンクの恋](#) (_from [Innocent Key the BEST](https://web.archive.org/web/20130630201518/https://innocent-key.com/discog.php?page=24)_)

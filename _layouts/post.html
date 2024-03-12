@@ -5,9 +5,9 @@ layout: "wrapper"
 <!-- Main Page -->
 <!-- https://github.com/CamelliaCommunity/Wiki/edit/beta/{{ page.path }} -->
 <style>
-  .card {
-    max-width: 1136px;
-  }
+  .card { max-width: 1136px; }
+  @media screen and (min-width: 1136px) { .card { min-width: 1136px; } }
+  @media screen and (min-width: 720px) and (max-width: 1136px) { .cardBackground, .card { width: 100%; } }
 </style>
 <main>
   <div id="titleContainer">

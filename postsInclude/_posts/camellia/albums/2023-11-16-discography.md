@@ -11,10 +11,10 @@ permalink: camellia/:title
 
 ## Welcome to Camellia's Discography
 
-> This page has not been updated in a while. If you’re a contributor, please update this page to recent standards!
-{: .caution }
+> This page is constantly being updated. If you see anything missing, help us out by adding more links and pages!
+{: .disclaimer}
 
-Here, you will find various songs Camellia has composed or contributed to. If you see anything missing, help us out by adding more pages!
+Here, you will find various songs Camellia has composed or contributed to. If you see anything missing, help us out by adding more links and pages!
 
 ## 2024
 
@@ -227,7 +227,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 ### January
 
-- [THX30KFOLLOWERS](#)
+- [THX30KFOLLOWERS](<{% link postsInclude/_posts/camellia/albums/THX30KFOLLOWERS/2024-02-22-THX30KFOLLOWERS.md %}>)
 
 ## 2015
 
@@ -272,7 +272,7 @@ Here, you will find various songs Camellia has composed or contributed to. If yo
 
 ### April
 
-- [flow arrow](#)
+- [flow arrow](<{% link postsInclude/_posts/camellia/albums/flow-arrow/2024-02-24-flow-arrow.md %}>)
 
 ## 2012
 
