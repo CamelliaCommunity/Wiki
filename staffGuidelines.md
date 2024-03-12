@@ -35,7 +35,7 @@ in the past.*
 > All staff must engage with server members, contribute, or document Camellia activities to maintain a healthy community and their position.
 {: .disclaimer }
 
-## Behavior
+## Behavioral Guidelines
 
 1. Try to be nice. This place is supposed to welcome everyone regardless of who they are.
 1. Try not to be an arbitrary person or make arbitrary decisions in a situation; doing this is unfair.
