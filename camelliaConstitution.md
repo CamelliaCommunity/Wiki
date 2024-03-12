@@ -133,3 +133,5 @@ With each case given to us, we must follow the [Staff Guidelines'](/staffGuideli
 Some transgressions against the Rules will result in a ban, some may experience a kick or a mute, and we will generally not divulge details about moderator actions unless an Admin grants permission (or an Admin willingly shares this information).
 
 If you wish to be unbanned from Discord, do not visit any of the staff team's social media or unnecessarily stalk them. Wick's ban appeal system is there for a reason!
+
+Ban evading or aiding a ban will also be met with a ban without warning.
