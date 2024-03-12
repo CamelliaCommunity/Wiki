@@ -128,7 +128,7 @@ Direct messaging Camellia is strongly discouraged as he is a very busy person. M
 
 ## Part 5: Banishment system
 
-With each case given to us, we must follow the [Staff Guidelines'](/staffGuidelines.html#general-advice) way of handling most situations. For bans, moderators may discuss internally but they aren't obligated to.
+With each case given to us, we must follow the [Staff Guidelines'](/staffGuidelines.html) way of handling most situations. For bans, moderators may discuss internally but they aren't obligated to.
 
 Some transgressions against the Rules will result in a ban, some may experience a kick or a mute, and we will generally not divulge details about moderator actions unless an Admin grants permission (or an Admin willingly shares this information).
 
