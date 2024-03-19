@@ -110,6 +110,17 @@ The template for punishing someone is *VERBAL WARNING -> INFRACTION/WARNING -> T
 1. De-escalate by reassuring people that this action was needed or is being re-evaluated.
 1. Listen to what people say and tell them what they want to hear (unless otherwise). Try to be patient with them so they can feel comfortable with what's happening. By doing this method, it should be easier to diverge a heated topic/discussion and talk about something else.
 
+### Wellness Checking
+
+> If you are suicidal or thinking of self-harm, please remember you're not alone. Instead of relying on this server for these kinds of topics, please contact mental health professionals. Detailed discussions regarding wellness checks are handled internally and are not disclosed to the public.
+{: .disclaimer }
+
+*In the event of a member having crises, breakdown, or rant in a public space, staff members must do a very simple wellness check on them (in DMs or in [#serious-discussion](https://discord.com/channels/435720333786480641/1080971258272948265)). If a member falls within these conditions, action is required.*
+
+1. The user threatens suicide or self-harm.
+1. The user shows dangerous or concerning behavior in [#serious-discussion](https://discord.com/channels/435720333786480641/1080971258272948265).
+1. A fellow member shows concern for their other fellow member regarding the two conditions above.
+
 ## Moderation Terminology and AutoMod
 
 ### Common Terminology
