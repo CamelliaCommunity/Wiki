@@ -125,7 +125,7 @@ The template for punishing someone is *VERBAL WARNING -> INFRACTION/WARNING -> T
 
 Don't be afraid to ask for help. If you're in a crisis please reach out to any of the resources listed below.
 
-1. Call or Text 988 or visit their site [here (United States only)](https://988lifeline.org/)
+1. Call or Text 988 or visit their site [here](https://988lifeline.org/) (United States only)
 1. [The Trevor Project (24/7 LGBTQ+ crisis support)](https://www.thetrevorproject.org/get-help/#tc)
 1. [Wikipedia's Suicide Crisis Lines](https://en.wikipedia.org/wiki/List_of_suicide_crisis_lines)
 1. [Take This (emergency and non-emergency mental health resources)](https://www.takethis.org/mental-health-resources/)
