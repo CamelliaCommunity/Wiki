@@ -136,7 +136,7 @@ If you are not in immediate crises or danger and would like to find help reach o
 1. [So You Feel Like Shit (interactive flow chart)](https://philome.la/jace_harr/you-feel-like-shit-an-interactive-self-care-guide/play/index.html)
 1. [Self Help Resources](https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself)
 1. [Finding affordable treatment services](https://mhanational.org/finding-therapy)
-1. [Bo Burnham](https://youtu.be/J-zC46Tiygk)
+1. [Problem Solving song](https://youtu.be/J-zC46Tiygk)
 
 ## Moderation Terminology and AutoMod
 
