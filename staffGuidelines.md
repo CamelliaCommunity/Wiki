@@ -119,7 +119,7 @@ The template for punishing someone is *VERBAL WARNING -> INFRACTION/WARNING -> T
 
 1. The user threatens suicide or self-harm.
 1. The user shows dangerous or concerning behavior in [#serious-discussion](https://discord.com/channels/435720333786480641/1080971258272948265).
-1. A fellow member shows concern for their other fellow member regarding the two conditions above.
+1. A fellow member shows concern for their other fellow member regarding the conditions above.
 
 ## Moderation Terminology and AutoMod
 
