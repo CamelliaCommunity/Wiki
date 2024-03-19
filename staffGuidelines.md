@@ -110,27 +110,27 @@ The template for punishing someone is *VERBAL WARNING -> INFRACTION/WARNING -> T
 1. De-escalate by reassuring people that this action was needed or is being re-evaluated.
 1. Listen to what people say and tell them what they want to hear (unless otherwise). Try to be patient with them so they can feel comfortable with what's happening. By doing this method, it should be easier to diverge a heated topic/discussion and talk about something else.
 
-### Crises handling
+### Crisis handling
 
-> Detailed discussions regarding crises handling are handled internally and are not disclosed to the public. If a member is suicidal or thinking of self-harm, they will be sent services that could provide them with support and wellness checks.
+> Detailed discussions regarding crisis handling are handled internally and are not disclosed to the public.
 {: .disclaimer }
 
-*In the event of a member having crises, breakdown, or rant in a public space, staff members must provide a list of hotline services to support the member (in DMs or in [#serious-discussion](https://discord.com/channels/435720333786480641/1080971258272948265)). If a member falls within these conditions, action is required.*
+*In the event of a member having crisis, breakdown, or rant in a public space, staff members must provide a list of hotline services to support the member (in DMs or in [#serious-discussion](https://discord.com/channels/435720333786480641/1080971258272948265)). If a member falls within these conditions, action is required.*
 
 1. The user threatens suicide or self-harm.
 1. The user shows dangerous or concerning behavior in [#serious-discussion](https://discord.com/channels/435720333786480641/1080971258272948265).
 1. A fellow member shows concern for their other fellow member regarding the conditions above.
 
-*If a staff member wishes to engage silently on crises handling, they are required to report all concerning messages to Discord.*
+*If a staff member wishes to engage silently on crisis handling, they are required to report all concerning messages to Discord.*
 
-Don't be afraid to ask for help. If you're in a crises please reach out to any of the resources listed below.
+Don't be afraid to ask for help. If you're in a crisis please reach out to any of the resources listed below.
 
 1. Call or Text 988 or visit their site [here (United States only)](https://988lifeline.org/)
-1. [The Trevor Project (24/7 LGBTQ+ crises support)](https://www.thetrevorproject.org/get-help/#tc)
-1. [Wikipedia's Suicide Crises Lines](https://en.wikipedia.org/wiki/List_of_suicide_crisis_lines)
+1. [The Trevor Project (24/7 LGBTQ+ crisis support)](https://www.thetrevorproject.org/get-help/#tc)
+1. [Wikipedia's Suicide Crisis Lines](https://en.wikipedia.org/wiki/List_of_suicide_crisis_lines)
 1. [Take This (emergency and non-emergency mental health resources)](https://www.takethis.org/mental-health-resources/)
 
-If you are not in immediate crises or danger and would like to find help reach out to the resources listed below.
+If you are not in immediate crisis or danger and would like to find help reach out to the resources listed below.
 
 1. [7 Cups of Tea (24/7 online chat)](https://www.7cups.com/)
 1. [So You Feel Like Shit (interactive flow chart)](https://philome.la/jace_harr/you-feel-like-shit-an-interactive-self-care-guide/play/index.html)
