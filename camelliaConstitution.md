@@ -112,7 +112,7 @@ The server's hierarchy is broken into six major roles;
 
 We expect members to respect each other and the staff team. We also have minors in the community, so sexual discussions and degeneracy should be kept to a minimum. Remember to follow [Discord's TOS](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines). The higher your role is (including levels), the more we expect from you. If a rule is broken, we ask you to act on it and notify the staff team instead of escalating.
 
-## Part 3: Expectation of Conduct
+## Part 3: Expectation of Conduct from Staff Members
 
 The staff team's role is to uphold the server rules and keep peace within the server. Helpers can mute, kick, and warn members to achieve this goal. Moderators and up have full powers to mute, kick, ban, and warn and will utilize these permissions as needed. Staff members must also follow the [Staff Guidelines](/staffGuidelines.html). *All* staff members will be biased towards some members because this is part of being in a community. However, bias will be ignored once we discuss actions necessary to uphold this constitution. A staff member's decision is final and can only be overturned by appealing or submitting an Admin Ticket for in-depth discussion.
 
@@ -133,3 +133,5 @@ With each case given to us, we must follow the [Staff Guidelines'](/staffGuideli
 Some transgressions against the Rules will result in a ban, some may experience a kick or a mute, and we will generally not divulge details about moderator actions unless an Admin grants permission (or an Admin willingly shares this information).
 
 If you wish to be unbanned from Discord, do not visit any of the staff team's social media or unnecessarily stalk them. Wick's ban appeal system is there for a reason!
+
+Ban evading or aiding a ban will also be met with a ban without warning.
