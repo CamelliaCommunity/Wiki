@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Staff Guidelines
-author: Camellia Server Staff. These guidelines were last updated on 3/12/24
+author: Camellia Server Staff. These guidelines were last updated on 3/22/24
 ---
 
 ## A Brief History
@@ -90,6 +90,7 @@ The template for punishing someone is *VERBAL WARNING -> INFRACTION/WARNING -> T
 
 1. The posted content is illegal (i.e., drugs, potential piracy).
 1. The posted content is reported in the ticket channels.
+1. The user or content bears bigotry and/or hate (such as profiles, bios, or nicknames).
 1. The content being posted violates Discord's [Terms of Service](https://discord.com/terms) or [Community Guidelines](https://discord.com/guidelines).
 1. The content being posted implies anything that breaks the server constitution in a malicious tone.
 
