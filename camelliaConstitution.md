@@ -73,7 +73,7 @@ The server's hierarchy is broken into six major roles;
 
 - Racism, homophobia, and bigotry fall within discrimination/harassment and are not allowed in any content posted.
 - Loopholes around slur usage, such as nibba, etc.; is not welcomed. Other terms/memes to attack groups are not permitted as well.
-- Bigoted profiles with iconography, bigoted nicknames or bios, are not welcomed.
+- Bigoted profiles with iconography, bigoted nicknames, or bios are not welcomed.
 - For raids, we will report any accounts involved directly to Discord. For witch hunting, all associated members involved will be banned from this server and possibly banned from neighboring servers.
 
 #### **3.** NSFW/NSFL content is not allowed (porn, gore, etc.)
