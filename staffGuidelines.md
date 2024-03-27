@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Staff Guidelines
-author: Camellia Server Staff. These guidelines were last updated on 3/22/24
+author: Camellia Server Staff. These guidelines were last updated on 3/26/24
 ---
 
 ## A Brief History
@@ -111,6 +111,13 @@ The template for punishing someone is *VERBAL WARNING -> INFRACTION/WARNING -> T
 1. De-escalate by reassuring people that this action was needed or is being re-evaluated.
 1. Listen to what people say and tell them what they want to hear (unless otherwise). Try to be patient with them so they can feel comfortable with what's happening. By doing this method, it should be easier to diverge a heated topic/discussion and talk about something else.
 
+### Contribution forms
+
+We are looking for active contributors who can help the Camellia Server thrive! To do so, please note each contribution you've made (or fill out a contribution form!). These contributions will be asked for when necessary and are usually asked for every three months (Q1, Q2, Q3, Q4).
+
+> To submit a contribution form, please refer to [this link](https://forms.gle/EdpTu9BF3BtdYgm5A).
+{: .tip }
+
 ### Crisis handling
 
 > Detailed discussions regarding crisis handling are handled internally and are not disclosed to the public.
@@ -173,10 +180,7 @@ If you are not in immediate crisis or danger and would like to find help reach o
 
 ### Events
 
-If you have any ideas or experiments to try yourself, please do so! We are looking for active contributors who can help the Camellia Server thrive! However, the general idea of event hosting should be as follows. Please note each contribution you've made (or fill out a contribution form!). These contributions will be asked for when necessary and are usually asked for every three months (Q1, Q2, Q3, Q4).
-
-> To submit a contribution form, please refer to [this link](https://forms.gle/EdpTu9BF3BtdYgm5A).
-{: .tip }
+If you have any ideas or experiments to try yourself, please do so! However, the general idea of event hosting should be as follows. Please note each event contribution you've made (or fill out a contribution form!). This is for documentation's sake!
 
 #### Events: Hosting Requirements
 
@@ -184,7 +188,7 @@ If you have any ideas or experiments to try yourself, please do so! We are looki
 - Promote and participate in the event you're hosting. This is to get community members interested in them.
 - Make events easy to participate in and as welcoming as possible. The goal is to create retention!
 
-#### Events: Camellia Specific
+#### Events: Camellia Orientated
 
 When Camellia does something awesome, it is preferred to create a Discord event so it can be marked in the calendar. There should be an image demonstrating how to create Discord events above.
 
